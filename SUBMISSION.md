@@ -124,40 +124,40 @@ Everything needed to inspect the workflow is in the repository: the evidence ind
 
 | Run | Actual date | Run artifacts and logs | Elapsed time | Approximate cost |
 | --- | --- | --- | --- | --- |
-| First live run | 2026-10-16 | [`runs/20261016T153413218193Z/`](runs/20261016T153413218193Z/) | 864 s (14 min) | Unknown: Codex CLI does not report cost |
+| First live run | 2026-10-15 | [`runs/20261015T202519414242Z/`](runs/20261015T202519414242Z/) | 1,400 s (23 min) | Unknown: Codex CLI does not report cost |
 | Second live run | 2026-10-16 | [`runs/20261016T164638172713Z/`](runs/20261016T164638172713Z/) | 1,299 s (22 min) | Unknown: cost recorded as `null` for every model stage |
 
 Elapsed time runs from `run.json` → `started_at` to the end of the run's workflows. Codex CLI does not report spend, so every stage records cost as `null`.
 
 ### How the pipeline developed
 
-**1. Building and testing (Oct 15 to 16).** The earlier folders in `runs/` are build-and-test runs. The Oct 15 test run (`runs/20261015T202519414242Z/`) took policy version 1 through selection: 22 items discovered, 6 accepted, 9 rejected, 4 deferred. It showed me that my first topic was too narrow and that manufacturing news moves slowly, so there was little to work with. The AI deferred timestamped podcasts with quotable passages and treated vendors' own claims as too weak to use. The run also stopped at the brief stage on a Codex CLI error (`logs/create-briefs-failed-20261015T204839588941Z.json`), which I fixed. The other test runs exercised failure recovery and the labeled replays described below.
+**1. Run 1 (Oct 15): testing and the first live run.** Run 1 (`runs/20261015T202519414242Z/`) was both a test and my first live run, under policy version 1 with a 45-day window. It took the policy through selection: 22 items discovered, 6 accepted, 9 rejected, 4 deferred. It showed me that my first topic was too narrow and that manufacturing news moves slowly, so there was little to work with. The AI deferred timestamped podcasts with quotable passages and treated vendors' own claims as too weak to use. The run also stopped at the brief stage on a Codex CLI error (`logs/create-briefs-failed-20261015T204839588941Z.json`), which I fixed. The other folders in `runs/` are the iterations around it, including failure recovery and the labeled replays described below.
 
-**2. Rethinking what matters to the audience.** I asked what actually matters to technical product and engineering leaders: what vendors are shipping, labeled as their claims, and manufacturing-design decisions where AI produces or checks geometry, process or cost. Policy version 2 widens the scope to manufacturing design, accepts commercial claims when they are labeled, narrows deferral, and makes startups optional. I changed the sources: added `engineering-com-ai`, `onshape-blog`, `twiml-ai-podcast` and `world-labs`; removed `cadalyst`, `xometry-blog` and `yt-onshape`. I kept the assignment's standard 30-day window and capped each source at 2 items. Both live runs use this policy.
+**2. Rethinking what matters to the audience.** I asked what actually matters to technical product and engineering leaders: what vendors are shipping, labeled as their claims, and manufacturing-design decisions where AI produces or checks geometry, process or cost. Policy version 2 widens the scope to manufacturing design, accepts commercial claims when they are labeled, narrows deferral, and makes startups optional. I changed the sources: added `engineering-com-ai`, `onshape-blog`, `twiml-ai-podcast` and `world-labs`; removed `cadalyst`, `xometry-blog` and `yt-onshape`. I moved from the 45-day window to the assignment's standard 30 days and capped each source at 2 items instead of 3.
 
-**3. First live run (Oct 16, 15:34).** With the new policy, the four podcasts deferred in testing were accepted, and selection produced 13 accepted, 7 rejected and 0 deferred items. The run wrote all three briefs, articles and scripts. But the three pieces made one argument in three forms: "CAD AI Moves Into Engineering Workflows, While Verification Stays Separate", "The Check Is the Capability", and "Adopt the Workflow, Not the Unchecked Output".
+**3. An intermediate run (Oct 16, 15:34, `runs/20261016T153413218193Z/`).** With the new policy, the four podcasts deferred in testing were accepted, and selection produced 13 accepted, 7 rejected and 0 deferred items. The run wrote all three briefs, articles and scripts. But the three pieces made one argument in three forms: "CAD AI Moves Into Engineering Workflows, While Verification Stays Separate", "The Check Is the Capability", and "Adopt the Workflow, Not the Unchecked Output".
 
 **4. One prompt change.** I revised the brief prompt (`prompts/create_briefs.md`, "Keep the three pieces distinct"). Each piece must argue something the other two do not, have its own synthesis, and lead with at least two items the others do not lead with. Policy, sources and evidence stayed the same.
 
-**5. Second live run (Oct 16, 16:46).** The same 20 eligible items produced three distinct pieces: what changed (AI at two engineering handoffs), which claims hold up (a CAD file passing a mass check is not a finished design), and what to do (pilot where mistakes are easy to fix). My review against the stored transcripts found and fixed a misattributed result (`human_corrections.md`). I then rewrote the articles under my writing rules, produced the videos, published the series, recorded approval, and packaged the run (`approval.json`, `package/`; status `ready_for_production`).
+**5. Run 2 (Oct 16, 16:46).** The same 20 eligible items produced three distinct pieces: what changed (AI at two engineering handoffs), which claims hold up (a CAD file passing a mass check is not a finished design), and what to do (pilot where mistakes are easy to fix). My review against the stored transcripts found and fixed a misattributed result (`human_corrections.md`). I then rewrote the articles under my writing rules, produced the videos, published the series, recorded approval, and packaged the run (`approval.json`, `package/`; status `ready_for_production`).
 
-| Count (`summary.json`) | First live run | Second live run |
-| --- | ---: | ---: |
-| Discovered / extracted | 17 / 16 | 17 / 16 |
-| New / unchanged | 0 / 16 | 0 / 16 |
-| Eligible / excluded | 20 / 16 | 20 / 16 |
-| Accepted / rejected / deferred | 13 / 7 / 0 | 13 / 7 / 0 |
-| Articles and scripts | 3 and 3 | 3 and 3 |
+| Count (`summary.json`) | Run 1 (Oct 15) | Intermediate (Oct 16, 15:34) | Run 2 (Oct 16, 16:46) |
+| --- | ---: | ---: | ---: |
+| Discovered / extracted | 22 / 21 | 17 / 16 | 17 / 16 |
+| New / unchanged | 11 / 10 | 0 / 16 | 0 / 16 |
+| Eligible / excluded | 19 / 2 | 20 / 16 | 20 / 16 |
+| Accepted / rejected / deferred | 6 / 9 / 4 | 13 / 7 / 0 | 13 / 7 / 0 |
+| Articles and scripts | none (stopped at briefs) | 3 and 3 | 3 and 3 |
 
-No meaningful new material appeared between the two live runs, 72 minutes apart: the counts are identical, and the only change is the brief prompt.
+No meaningful new material appeared between the intermediate run and run 2, 72 minutes apart: the counts are identical, and the only change is the brief prompt.
 
 ### Duplicate handling
 
-The store keys each item by `item_id` plus `version_id` (a hash of its content). A repeat sighting is logged as an observation; nothing is extracted or stored twice. By the live runs, the store already held every item from testing: both live runs found all 16 extracted items unchanged and processed none of them again (`summary.json` → `counts`, `duplicate_observations`; `changes.jsonl`).
+The store keys each item by `item_id` plus `version_id` (a hash of its content). A repeat sighting is logged as an observation; nothing is extracted or stored twice. In run 1, 10 of the 21 extracted items were already in the store and only the 11 new ones were processed. By run 2 the store held every item: all 16 extracted items came back unchanged and none was processed again (`summary.json` → `counts`, `duplicate_observations`; `changes.jsonl`).
 
 ### Date-window checks
 
-`item_ages.jsonl` records each item's age in days against the run's `as_of_date`. `exclusions.jsonl` records why an item was left out; in each live run: 14 from inactive sources and 2 outside the 30-day window.
+`item_ages.jsonl` records each item's age in days against the run's `as_of_date`. `exclusions.jsonl` records why an item was left out; in run 2: 14 from inactive sources and 2 outside the 30-day window. Run 1 used a 45-day window and excluded 2 items.
 
 ### Collection failure and recovery
 
@@ -177,11 +177,11 @@ Three replays read the stored items as of earlier dates: `runs/20261016T04460928
 | Source version | `item_id` `feed:https://www.engineering.com/?p=151563`, `version_id` `90e3adc0a87a45dc20689ae62db7125fe378f8191522f5954fae4ace5e96c803` |
 | Exact passage | "I can verify that Backflip got it exactly correct." (`data/assets/feed_https_www.engineering.com_p_151563/90e3adc0….txt`) |
 
-The content check (`review/check_content.sh`) repeats these lookups without a model. The second live run's `review.json` passed with no issues (`review_id` `ae074c7b…`), `approval.json` matches it, and `bash run.sh --package` built `package/` with the six publication links; the run's status is `ready_for_production`.
+The content check (`review/check_content.sh`) repeats these lookups without a model. Run 2's `review.json` passed with no issues (`review_id` `ae074c7b…`), `approval.json` matches it, and `bash run.sh --package` built `package/` with the six publication links; the run's status is `ready_for_production`.
 
 ## Editorial Review
 
-- Policy: [`config/editorial_policy.md`](config/editorial_policy.md). Version 1 is in the Oct 15 test run (`runs/20261015T202519414242Z/config/`); version 2 is in both live runs (`runs/20261016T153413218193Z/config/`, `runs/20261016T164638172713Z/config/`).
+- Policy: [`config/editorial_policy.md`](config/editorial_policy.md). Version 1 is in run 1 (`runs/20261015T202519414242Z/config/`); version 2 is in run 2 (`runs/20261016T164638172713Z/config/`) and the intermediate run.
 - Prompts: [`prompts/`](prompts/), snapshotted in each run's `prompts/`.
 - Item-by-item review, policy before and after, corrections and approval: [`docs/editorial_review.md`](docs/editorial_review.md).
 
