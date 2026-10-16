@@ -1,3 +1,5 @@
+> **Submission:** my submission details (publication, published articles and videos, demo video, setup, runs, editorial review and reflection) are in [SUBMISSION.md](SUBMISSION.md). The rest of this README is the course's assignment instructions.
+
 # Problem Set 4 Intelligence and Influence
 
 **MIT 1.125**  
