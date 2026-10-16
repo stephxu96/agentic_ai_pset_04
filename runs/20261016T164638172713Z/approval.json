@@ -1,0 +1,7 @@
+{
+  "review_id": "ae074c7b7e194db08599ce0784d7a474290db17e287d404c570e245c9c9ea809",
+  "decision": "approve",
+  "reviewer": "Steph Xu",
+  "reviewed_at": "2026-10-16T23:33:25Z",
+  "notes": "Read all three articles and scripts against the stored sources and transcripts before publishing. Corrections are recorded in human_corrections.md: the 63-of-84 result in piece 02 was moved from RoboDojo to the Robot World paper (claim 02-c8), a pipeline-internal sentence was removed from piece 02, piece 03 was retitled, and inference claim 01-c7 was added to piece 01. The published articles were then rewritten under the author's writing rules, keeping every citation, number and attribution, and each video was given a narrated opening with an executive summary."
+}

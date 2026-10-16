@@ -172,7 +172,10 @@ def summarize(run_path):
     unknown_costs = sum(1 for rec in receipts if any(v is None for v in find_values(rec, "cost")))
 
     started = parse_time(run.get("started_at"))
-    finishes = [parse_time(v) for rec in receipts for v in find_values(rec, "finish")]
+    # Elapsed time ends when the run's workflows finish; later re-checks and packaging do not extend it.
+    workflow_receipts = [rec for rec in receipts
+                         if any(str(st).startswith("workflows/") for st in find_values(rec, "stage"))]
+    finishes = [parse_time(v) for rec in (workflow_receipts or receipts) for v in find_values(rec, "finish")]
     finishes = [v for v in finishes if v is not None]
     if started and finishes:
         elapsed_seconds = max(0, int((max(finishes) - started).total_seconds()))
@@ -205,7 +208,7 @@ def summarize(run_path):
         manual_actions.append("Complete and review the three article and video-script drafts.")
     if not package_manifest:
         manual_actions.append("Complete human editorial review and prepare the production package.")
-    if counts["video_scripts"] == 3:
+    if counts["video_scripts"] == 3 and len(published_links) < 3:
         manual_actions.append("Build the three slide decks, generate the Chatterbox voiceover, then render and review the videos.")
     if len(published_links) < 3:
         manual_actions.extend(["Publish the articles on Substack and record their URLs.",

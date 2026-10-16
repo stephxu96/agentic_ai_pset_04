@@ -1,0 +1,37 @@
+Agentic 3D technical demo: voiceover, timed to your recording (run sheet)
+
+0:00–0:37  (slide 1)
+This is Agentic 3 D, a publication for engineering leaders deciding where to build on frontier models for 3 D, CAD and manufacturing design. Behind it is a pipeline that collects sources, has Codex make editorial calls, and drafts articles and video scripts with traceable evidence. I'll show the architecture, the second run, and one claim from source to sentence. There are three stages, collect evidence, turn it into drafts, then a human review gate before anything leaves the pipeline. Codex runs only in the blue-tagged steps, the rest is deterministic code.
+
+0:37–0:50  (slide 2)
+The entry point, bash run dot sh, validates the config and creates a run folder with a copy of the settings, sources, policy and prompts, so every run keeps the instructions it ran under.
+
+0:50–1:01  (slide 3)
+run dot json records the mode, the as-of date and the previous run. It then calls both workflows and always writes a summary, even when a stage fails.
+
+1:01–1:14  (slide 4)
+Collection has five steps, three collectors, extraction, two store calls and the freshness filter. Only store dot sh touches the S Q Lite index, and each item's version is a hash of its content.
+
+1:14–1:42  (slide 5)
+In the second live run, on October 16, 17 items were discovered, 16 extracted, and all 16 came back unchanged, so nothing was processed twice. The October 15 run had found 11 new items but stopped at the brief stage, which I fixed. Of 36 stored items, 20 fell inside the 30-day window. Fourteen came from inactive sources and two were too old, and each reason is logged.
+
+1:42–2:03  (slide 6)
+A real failure, Onshape's YouTube feed returned a 404. The collector logged it, kept the other results and exited 1, and the run continued. The receipt marks the stage failed, so the incomplete coverage is on record. Since the channel is optional, it's now flagged warn on 404, and any other failure still blocks.
+
+2:03–2:10  (slide 7)
+Phase three is selection, briefs, two writers and a content check. Here's one claim end to end.
+
+2:10–2:26  (slide 8)
+Piece two says Engineering.com imported a Backflip STEP file into Fusion and found the mass exactly correct. In the brief, that's claim zero two C one, a reported fact pointing to one item, one version hash and two verbatim quotes.
+
+2:26–2:48  (slide 9)
+The decision file shows why Codex accepted the source, an independent publication ran its own checks. And the stored text reads, I can verify that Backflip got it exactly correct. Across runs, this source was new once and unchanged after. The content check repeats these lookups without a model, and this run's review passed.
+
+2:48–3:15  (slide 10)
+Checks prove a quote exists, not that the model read it correctly. In piece two, the draft credited a 63 of 84 result to RoboDojo, the transcript ties it to the Robot World paper. The error began in the AI's selection reason. I fixed the brief, article and script kept the originals, and logged the change here. Nothing is packaged until an approval matches the current review.
+
+3:15–3:58  (slide 11)
+My main tradeoff, every model call runs through Codex C L I with strict J S O N L and one retry. Each stage reads and writes files, bad output is rejected, and every attempt is saved, like this brief draft rejected twice for a quote that wasn't verbatim. The costs, spend is recorded as unknown, and inspecting a failure means reading raw JSON logs. My review also happens on drafts, not sources, so the RoboDojo misread passed through three stages before I caught it, and one source problem became three edits. For a one-person publication, I chose traceability over convenience. Next, I'd add a source-level review right after selection.
+
+3:58–4:06  (slide 12)
+Everything shown here, including the diagrams, both runs and the editorial review, is linked from the submission file. Thanks for watching.

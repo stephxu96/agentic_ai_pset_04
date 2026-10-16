@@ -1,0 +1,59 @@
+{
+  "review_id": "ae074c7b7e194db08599ce0784d7a474290db17e287d404c570e245c9c9ea809",
+  "approval_reviewer": "Steph Xu",
+  "assets": [
+    {
+      "piece_id": "01",
+      "type": "article",
+      "path": "package/articles/01.md"
+    },
+    {
+      "piece_id": "01",
+      "type": "video_script",
+      "path": "package/video_scripts/01.md"
+    },
+    {
+      "piece_id": "01",
+      "type": "source_notes",
+      "path": "package/source_notes/01.md"
+    },
+    {
+      "piece_id": "02",
+      "type": "article",
+      "path": "package/articles/02.md"
+    },
+    {
+      "piece_id": "02",
+      "type": "video_script",
+      "path": "package/video_scripts/02.md"
+    },
+    {
+      "piece_id": "02",
+      "type": "source_notes",
+      "path": "package/source_notes/02.md"
+    },
+    {
+      "piece_id": "03",
+      "type": "article",
+      "path": "package/articles/03.md"
+    },
+    {
+      "piece_id": "03",
+      "type": "video_script",
+      "path": "package/video_scripts/03.md"
+    },
+    {
+      "piece_id": "03",
+      "type": "source_notes",
+      "path": "package/source_notes/03.md"
+    },
+    {
+      "type": "publication_links",
+      "path": "package/publication_links.json"
+    },
+    {
+      "type": "manual_handoff",
+      "path": "package/README.md"
+    }
+  ]
+}
