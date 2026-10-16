@@ -20,7 +20,8 @@
 | 2 | An AI-Made Design File Is Not a Finished Design | [Article](https://stepuni.substack.com/p/an-ai-made-design-file-is-not-a-finished) | [Video](https://www.youtube.com/watch?v=IdhPfQE0yzY) |
 | 3 | CAD Engineering Teams Should Try AI First Where Mistakes Are Easy to Fix | [Article](https://stepuni.substack.com/p/start-where-ai-mistakes-are-easy) | [Video](https://www.youtube.com/watch?v=06Vi4mkEthE) |
 
-**Separate technical demonstration video:** [YouTube (unlisted)](https://www.youtube.com/watch?v=kdQgnl_vYYQ)
+**Separate technical demonstration video:** [YouTube (unlisted)](https://www.youtube.com/watch?v=kdQgnl_vYYQ)  
+A screen recording of [`docs/demo/demo.html`](docs/demo/demo.html) with a voiceover added in Google Vids. The narration run sheet, timed to the recording, and stills of the 12 recorded slides are in [`docs/demo/vids/`](docs/demo/vids/).
 
 ## Setup and Execution
 
