@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>World Labs Blog — manually curated articles</title>
+    <link>https://www.worldlabs.ai/blog</link>
+    <description>Manually curated discovery feed for four dated World Labs blog posts. World Labs provides no RSS or Atom feed, so this file will not discover future posts automatically. Titles and dates were read from each post's page on 2026-10-16.</description>
+    <item>
+      <title>World Labs is Joining AMD</title>
+      <link>https://www.worldlabs.ai/blog/amd-announcement</link>
+      <guid isPermaLink="true">https://www.worldlabs.ai/blog/amd-announcement</guid>
+      <pubDate>Mon, 28 Sep 2026 00:00:00 GMT</pubDate>
+      <description>World Labs dates the post 2026-09-28. Midnight UTC encodes the published date; no time is shown on the page. Company announcement of an agreement to combine with AMD, subject to regulatory approval; a company claim.</description>
+    </item>
+    <item>
+      <title>Atlas: A World Model for Spatial Intelligence</title>
+      <link>https://www.worldlabs.ai/blog/atlas</link>
+      <guid isPermaLink="true">https://www.worldlabs.ai/blog/atlas</guid>
+      <pubDate>Tue, 01 Sep 2026 00:00:00 GMT</pubDate>
+      <description>World Labs dates the post 2026-09-01. Midnight UTC encodes the published date; no time is shown on the page. Benchmark results are the company's own.</description>
+    </item>
+    <item>
+      <title>Building Worlds That Train Robots</title>
+      <link>https://www.worldlabs.ai/blog/real-to-sim-to-real</link>
+      <guid isPermaLink="true">https://www.worldlabs.ai/blog/real-to-sim-to-real</guid>
+      <pubDate>Tue, 28 Jul 2026 00:00:00 GMT</pubDate>
+      <description>World Labs dates the post 2026-07-28. Midnight UTC encodes the published date; no time is shown on the page.</description>
+    </item>
+    <item>
+      <title>A Functional Taxonomy of World Models</title>
+      <link>https://www.worldlabs.ai/blog/taxonomy-of-world-models</link>
+      <guid isPermaLink="true">https://www.worldlabs.ai/blog/taxonomy-of-world-models</guid>
+      <pubDate>Wed, 03 Jun 2026 00:00:00 GMT</pubDate>
+      <description>World Labs dates the post 2026-06-03. Midnight UTC encodes the published date; no time is shown on the page.</description>
+    </item>
+  </channel>
+</rss>

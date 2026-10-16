@@ -1,0 +1,9 @@
+{
+  "piece_id": "01",
+  "ready": false,
+  "issues": [
+    "01-c1 evidence locators do not support the full two-test/material-import claim; they omit the second exact-mass result and the specified-material step.",
+    "01-c3’s “identified the potential impact” locator does not support the claimed availability-status distinction or connected-workflow characterization.",
+    "01-c3 lacks a locator supporting that Fusion agentic-PLM was covered as part of the stated status mix."
+  ]
+}

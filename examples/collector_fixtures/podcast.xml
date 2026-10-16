@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel><title>Fictional manufacturing podcast</title>
+<item><title>Fixture episode 3</title><guid>episode-3</guid><pubDate>Wed, 14 Oct 2026 12:00:00 GMT</pubDate><enclosure url="https://fixture.example/e3.mp3" type="audio/mpeg" length="100"/></item>
+<item><title>Fixture episode 2</title><guid>episode-2</guid><pubDate>Tue, 13 Oct 2026 12:00:00 GMT</pubDate><enclosure url="https://fixture.example/e2.mp3" type="audio/mpeg" length="100"/></item>
+<item><title>Fixture episode 1</title><guid>episode-1</guid><pubDate>Mon, 12 Oct 2026 12:00:00 GMT</pubDate><enclosure url="https://fixture.example/e1.mp3" type="audio/mpeg" length="100"/></item>
+<item><title>Fixture episode older</title><guid>episode-0</guid><pubDate>Sun, 11 Oct 2026 12:00:00 GMT</pubDate><enclosure url="https://fixture.example/e0.mp3" type="audio/mpeg" length="100"/></item>
+</channel></rss>

@@ -1,0 +1,10 @@
+{
+  "run_id": "20261016T044609488268Z",
+  "started_at": "2026-10-16T04:46:09Z",
+  "as_of_date": "2026-10-02",
+  "mode": "replay",
+  "previous_run_id": "20261016T044609285249Z",
+  "replay_note": "Replay: reads items already in the evidence store and applies the freshness window as of as_of_date. Nothing was collected on that date. Items published after as_of_date are excluded as future_date. The store holds the latest saved version of each item, and the per-source item cap is not applied. This is a labeled simulation, not a live run.",
+  "replay_through": "eligible",
+  "executed_at": "2026-10-16T04:46:09Z"
+}

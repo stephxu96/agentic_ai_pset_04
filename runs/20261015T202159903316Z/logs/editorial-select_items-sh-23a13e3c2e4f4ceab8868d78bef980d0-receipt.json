@@ -1,0 +1,1 @@
+{"attempts": [{"attempt": 1, "exit_code": 0}], "cost_usd": null, "finished_at": "2026-10-15T20:24:28Z", "input_count": 8, "model": "default, name not reported", "output_count": 8, "stage": "editorial/select_items.sh", "started_at": "2026-10-15T20:23:45Z", "status": "completed", "tools": ["Codex CLI"]}

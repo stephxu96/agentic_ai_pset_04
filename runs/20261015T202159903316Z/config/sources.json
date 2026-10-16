@@ -1,0 +1,51 @@
+[
+  {
+    "source_id": "cadalyst",
+    "publisher_id": "cadalyst",
+    "kind": "feed",
+    "url": "https://blog.cadalyst.com/cadmanagement/rss.xml"
+  },
+  {
+    "source_id": "mit-cdfg-survey",
+    "publisher_id": "mit-cdfg",
+    "kind": "feed",
+    "url": "file:config/manual_feeds/mit_cdfg_survey.xml",
+    "note": "One-item manual RSS for the survey webpage. Its 2026-09-22 date is the page's citation_publication_date, not a repository commit date."
+  },
+  {
+    "source_id": "xometry-blog",
+    "publisher_id": "xometry",
+    "kind": "feed",
+    "url": "https://www.xometry.com/rss.xml"
+  },
+  {
+    "source_id": "practical-ai",
+    "publisher_id": "changelog-media",
+    "kind": "podcast",
+    "url": "https://feeds.transistor.fm/practical-ai-machine-learning-data-science-llm"
+  },
+  {
+    "source_id": "researchers-guide-physical-ai",
+    "publisher_id": "physical-ai-podcast",
+    "kind": "podcast",
+    "url": "https://physicalaipodcast.co/feed.xml"
+  },
+  {
+    "source_id": "yt-autodesk-fusion",
+    "publisher_id": "autodesk",
+    "kind": "youtube",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCiMwMz3RMbW5mbx0iDcRQ2g"
+  },
+  {
+    "source_id": "yt-onshape",
+    "publisher_id": "ptc",
+    "kind": "youtube",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCTvd5lUSLtTH8Qcd7Pl1nQg"
+  },
+  {
+    "source_id": "yt-nvidia-omniverse",
+    "publisher_id": "nvidia",
+    "kind": "youtube",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCSKUoczbGAcMld7HjpCR8OA"
+  }
+]

@@ -1,0 +1,2426 @@
+[
+  {
+    "segment_id": "s0001",
+    "start_seconds": 1.87,
+    "end_seconds": 6.47,
+    "text": "Welcome to the Practical AI Podcast, where we break down the real world"
+  },
+  {
+    "segment_id": "s0002",
+    "start_seconds": 6.47,
+    "end_seconds": 10.83,
+    "text": "applications of artificial intelligence, and how it's shaping the way we live,"
+  },
+  {
+    "segment_id": "s0003",
+    "start_seconds": 10.83,
+    "end_seconds": 15.95,
+    "text": "work, and create. Our goal is to help make AI technology practical,"
+  },
+  {
+    "segment_id": "s0004",
+    "start_seconds": 15.95,
+    "end_seconds": 20.35,
+    "text": "productive, and accessible to everyone. Whether you're a developer, business"
+  },
+  {
+    "segment_id": "s0005",
+    "start_seconds": 20.35,
+    "end_seconds": 23.87,
+    "text": "leader, or just curious about the tech behind the buzz, you're in the right"
+  },
+  {
+    "segment_id": "s0006",
+    "start_seconds": 23.87,
+    "end_seconds": 28.75,
+    "text": "place. Be sure to connect with us on LinkedIn, X or Blue Sky to stay up to date"
+  },
+  {
+    "segment_id": "s0007",
+    "start_seconds": 28.75,
+    "end_seconds": 33.27,
+    "text": "with episode drops, behind the scenes content, and AI insights. You can learn"
+  },
+  {
+    "segment_id": "s0008",
+    "start_seconds": 33.27,
+    "end_seconds": 37.43,
+    "text": "more at PracticalAI.fm. Now, onto the show."
+  },
+  {
+    "segment_id": "s0009",
+    "start_seconds": 37.43,
+    "end_seconds": 47.38,
+    "text": "Welcome to another episode of the Practical AI Podcast. In this episode, it's"
+  },
+  {
+    "segment_id": "s0010",
+    "start_seconds": 47.38,
+    "end_seconds": 52.5,
+    "text": "just Chris and I, my co-host, in these episodes, where we don't have a guest,"
+  },
+  {
+    "segment_id": "s0011",
+    "start_seconds": 52.5,
+    "end_seconds": 56.74,
+    "text": "it's a lot of fun to just dive into some of the topics that are of interest"
+  },
+  {
+    "segment_id": "s0012",
+    "start_seconds": 56.74,
+    "end_seconds": 63.14,
+    "text": "to us, and that are in the news, or at the top of our minds, or guests, or"
+  },
+  {
+    "segment_id": "s0013",
+    "start_seconds": 63.14,
+    "end_seconds": 68.54,
+    "text": "listeners' minds, as they've expressed them to us. So excited to dig in with"
+  },
+  {
+    "segment_id": "s0014",
+    "start_seconds": 68.54,
+    "end_seconds": 74.02,
+    "text": "my co-host Chris Benson today, who is a principal AI and autonomy research engineer."
+  },
+  {
+    "segment_id": "s0015",
+    "start_seconds": 74.02,
+    "end_seconds": 79.18,
+    "text": "I'm Daniel White-Nac, I'm CEO at Prediction Guard. How you doing Chris? I'm doing"
+  },
+  {
+    "segment_id": "s0016",
+    "start_seconds": 79.18,
+    "end_seconds": 83.9,
+    "text": "great today. How is it going? It's going, it's going wonderful. It's a very"
+  },
+  {
+    "segment_id": "s0017",
+    "start_seconds": 83.9,
+    "end_seconds": 91.3,
+    "text": "exciting time in my life, both business-wise, lots of cool stuff going on, but I"
+  },
+  {
+    "segment_id": "s0018",
+    "start_seconds": 91.3,
+    "end_seconds": 96.98,
+    "text": "know you and I talking before, and even about some of the things that we'll maybe"
+  },
+  {
+    "segment_id": "s0019",
+    "start_seconds": 96.98,
+    "end_seconds": 102.66,
+    "text": "talk about today, thinking a lot about kids recently, so for listeners that don't"
+  },
+  {
+    "segment_id": "s0020",
+    "start_seconds": 102.66,
+    "end_seconds": 111.22,
+    "text": "know, I am expecting my first child in a couple months here, and or less than"
+  },
+  {
+    "segment_id": "s0021",
+    "start_seconds": 111.22,
+    "end_seconds": 120.14,
+    "text": "a couple months coming up rapidly, and I've been saying a couple months, but it's past"
+  },
+  {
+    "segment_id": "s0022",
+    "start_seconds": 120.14,
+    "end_seconds": 130.74,
+    "text": "that time. So yeah, very rapidly, and so I'm for listeners that don't know, I'm about"
+  },
+  {
+    "segment_id": "s0023",
+    "start_seconds": 130.74,
+    "end_seconds": 136.94,
+    "text": "40 years old, so it's been my wife and I, it's been a little while, been married quite"
+  },
+  {
+    "segment_id": "s0024",
+    "start_seconds": 136.94,
+    "end_seconds": 142.06,
+    "text": "a while, and so I'm going to be an older dad, and I've been thinking about things like,"
+  },
+  {
+    "segment_id": "s0025",
+    "start_seconds": 142.06,
+    "end_seconds": 148.06,
+    "text": "oh man, I'm going to be an older dad going into these like parent teacher meetings or"
+  },
+  {
+    "segment_id": "s0026",
+    "start_seconds": 148.06,
+    "end_seconds": 154.94,
+    "text": "school meetings. All of these teachers are going to be, you know, 20, 24 years old or 25 years"
+  },
+  {
+    "segment_id": "s0027",
+    "start_seconds": 154.94,
+    "end_seconds": 161.78,
+    "text": "old, and I wonder what my perspectives will be as I come into these situations, and not"
+  },
+  {
+    "segment_id": "s0028",
+    "start_seconds": 161.78,
+    "end_seconds": 166.34,
+    "text": "only that, but there's a lot of things changing technology-wise, which I know has been"
+  },
+  {
+    "segment_id": "s0029",
+    "start_seconds": 166.38,
+    "end_seconds": 174.26,
+    "text": "at the top of your mind, Chris. Yeah, and you're not too, so like to talk about my background"
+  },
+  {
+    "segment_id": "s0030",
+    "start_seconds": 174.26,
+    "end_seconds": 180.26,
+    "text": "and, you know, after coming to school myself, and then I had a previous marriage where I raised"
+  },
+  {
+    "segment_id": "s0031",
+    "start_seconds": 180.26,
+    "end_seconds": 186.42,
+    "text": "a contributed to raising two stepkids that I love, and I'm still very close to, as we were"
+  },
+  {
+    "segment_id": "s0032",
+    "start_seconds": 186.42,
+    "end_seconds": 191.74,
+    "text": "talking about a little while ago, who are now grown and out in the world doing their stuff,"
+  },
+  {
+    "segment_id": "s0033",
+    "start_seconds": 191.82,
+    "end_seconds": 196.7,
+    "text": "and kind of went through the educational process with them as a step dad and showing up at"
+  },
+  {
+    "segment_id": "s0034",
+    "start_seconds": 196.7,
+    "end_seconds": 201.1,
+    "text": "those meetings. And then, in a second marriage, I have my current daughter, I know I mentioned"
+  },
+  {
+    "segment_id": "s0035",
+    "start_seconds": 201.1,
+    "end_seconds": 208.38,
+    "text": "her periodically on the show. She's now a freshman in high school, 14, and so I'm doing all"
+  },
+  {
+    "segment_id": "s0036",
+    "start_seconds": 208.38,
+    "end_seconds": 215.82,
+    "text": "that over again, and so have caught, you know, kind of went through two series of public school"
+  },
+  {
+    "segment_id": "s0037",
+    "start_seconds": 215.82,
+    "end_seconds": 222.22,
+    "text": "all the way up through. In addition, just as I know you do, I work with a couple of universities"
+  },
+  {
+    "segment_id": "s0038",
+    "start_seconds": 222.22,
+    "end_seconds": 227.9,
+    "text": "in a advisory role and stuff, the different roles with different universities, but I get to see"
+  },
+  {
+    "segment_id": "s0039",
+    "start_seconds": 227.9,
+    "end_seconds": 234.3,
+    "text": "up close and personal, the education at that level well, and get to contribute a little bit"
+  },
+  {
+    "segment_id": "s0040",
+    "start_seconds": 234.3,
+    "end_seconds": 240.7,
+    "text": "to the thinking around what should be done and stuff. And, you know, since we always kind of"
+  },
+  {
+    "segment_id": "s0041",
+    "start_seconds": 240.7,
+    "end_seconds": 245.98,
+    "text": "tend to start the show with a pun, we have all this beautiful fall weather. I took a walk with"
+  },
+  {
+    "segment_id": "s0042",
+    "start_seconds": 245.98,
+    "end_seconds": 251.34,
+    "text": "my dogs a little while ago, and I was thinking about how education is falling short right now"
+  },
+  {
+    "segment_id": "s0043",
+    "start_seconds": 252.54,
+    "end_seconds": 258.94,
+    "text": "in terms of all the changes, you know, happiness, the season, it's a dad pun right there, dad."
+  },
+  {
+    "segment_id": "s0044",
+    "start_seconds": 258.94,
+    "end_seconds": 263.34,
+    "text": "Yeah, there you go. It's a, you got to get the dad joke, yeah. So, you know,"
+  },
+  {
+    "segment_id": "s0045",
+    "start_seconds": 264.22,
+    "end_seconds": 268.62,
+    "text": "it's been on my mind a lot. I've been in parent teacher conferences, we're looking at"
+  },
+  {
+    "segment_id": "s0046",
+    "start_seconds": 268.62,
+    "end_seconds": 274.94,
+    "text": "college once again, and I'm thinking of all the things that we talk about on the show all the"
+  },
+  {
+    "segment_id": "s0047",
+    "start_seconds": 274.94,
+    "end_seconds": 279.98,
+    "text": "time, how fast things are changing, people are worried about jobs, they're worried about the"
+  },
+  {
+    "segment_id": "s0048",
+    "start_seconds": 279.98,
+    "end_seconds": 286.94,
+    "text": "future, what are they going to do, and as I have mentioned, I spend a lot of time thinking about"
+  },
+  {
+    "segment_id": "s0049",
+    "start_seconds": 286.94,
+    "end_seconds": 295.58,
+    "text": "this partly because I'm actively working on a book about what life for humans will be like going"
+  },
+  {
+    "segment_id": "s0050",
+    "start_seconds": 295.66,
+    "end_seconds": 302.06,
+    "text": "forward as agentex are pervasive in all parts of life. It's a very, it's for general audience, it's a"
+  },
+  {
+    "segment_id": "s0051",
+    "start_seconds": 302.06,
+    "end_seconds": 308.54,
+    "text": "very future forward book, but that gets me thinking about, you know, what is my, when, when my 14-year-old"
+  },
+  {
+    "segment_id": "s0052",
+    "start_seconds": 308.54,
+    "end_seconds": 314.78,
+    "text": "is now 40, and she's trying to deal with life at that point, what does that look like, how, you know,"
+  },
+  {
+    "segment_id": "s0053",
+    "start_seconds": 314.78,
+    "end_seconds": 319.5,
+    "text": "what can we predict, or what can we only, you know, speculate a little bit less, and so I'm going"
+  },
+  {
+    "segment_id": "s0054",
+    "start_seconds": 319.5,
+    "end_seconds": 326.62,
+    "text": "through that thinking process. And as I do that and show up at today's, you know, school events and"
+  },
+  {
+    "segment_id": "s0055",
+    "start_seconds": 326.62,
+    "end_seconds": 332.06,
+    "text": "all that, I'm just constantly going, oh my god, this is a disaster. So I'm not trying to pick"
+  },
+  {
+    "segment_id": "s0056",
+    "start_seconds": 332.06,
+    "end_seconds": 339.42,
+    "text": "on our school system, which I'll leave unnamed, or the universities that I'm recognizing that"
+  },
+  {
+    "segment_id": "s0057",
+    "start_seconds": 339.42,
+    "end_seconds": 345.42,
+    "text": "education just as the job market needs to kind of level up with AI, as we talk about quite a lot,"
+  },
+  {
+    "segment_id": "s0058",
+    "start_seconds": 345.5,
+    "end_seconds": 351.34,
+    "text": "education does too. And I was proposing that we have a conversation about that, and I know you're"
+  },
+  {
+    "segment_id": "s0059",
+    "start_seconds": 351.34,
+    "end_seconds": 358.22,
+    "text": "willing to jump in as a, as a new dad here. And one to just kind of talk about where things were at,"
+  },
+  {
+    "segment_id": "s0060",
+    "start_seconds": 358.22,
+    "end_seconds": 364.78,
+    "text": "and what those gaps are, and maybe bring some insights as to people who think a lot about these topics"
+  },
+  {
+    "segment_id": "s0061",
+    "start_seconds": 364.78,
+    "end_seconds": 371.58,
+    "text": "on where the future of education might be able to, to navigate to. Yeah, I, I think I was trying to"
+  },
+  {
+    "segment_id": "s0062",
+    "start_seconds": 371.58,
+    "end_seconds": 377.9,
+    "text": "think of some other transitions that, you know, where I could drop parallels. And it's, it's a little"
+  },
+  {
+    "segment_id": "s0063",
+    "start_seconds": 377.9,
+    "end_seconds": 383.34,
+    "text": "bit hard to, like maybe you could say, you know, computing in general or personal computers,"
+  },
+  {
+    "segment_id": "s0064",
+    "start_seconds": 383.34,
+    "end_seconds": 387.98,
+    "text": "or that sort of thing, and maybe those, you could drop parallels there. I was thinking even with"
+  },
+  {
+    "segment_id": "s0065",
+    "start_seconds": 387.98,
+    "end_seconds": 393.18,
+    "text": "social media, I think a lot of what we've learned about social media is that"
+  },
+  {
+    "segment_id": "s0066",
+    "start_seconds": 395.02,
+    "end_seconds": 400.94,
+    "text": "maybe those of us that were in that first generation to adopt social media, we really had no idea"
+  },
+  {
+    "segment_id": "s0067",
+    "start_seconds": 400.94,
+    "end_seconds": 407.26,
+    "text": "what we were getting into. And in some sense, it's like the introduction of opioids or"
+  },
+  {
+    "segment_id": "s0068",
+    "start_seconds": 407.26,
+    "end_seconds": 412.94,
+    "text": "something where everybody is like, you know, or some substance where it's like, oh, we're going to"
+  },
+  {
+    "segment_id": "s0069",
+    "start_seconds": 412.94,
+    "end_seconds": 420.86,
+    "text": "put this in everything, and now we realize looking back, maybe that was not the best way to handle things,"
+  },
+  {
+    "segment_id": "s0070",
+    "start_seconds": 420.86,
+    "end_seconds": 427.26,
+    "text": "but even with social media, obviously social media affects all of our lives, but it, it's not"
+  },
+  {
+    "segment_id": "s0071",
+    "start_seconds": 427.26,
+    "end_seconds": 435.74,
+    "text": "as connected maybe to the way each of us individually work, and our roles in our work as AI is,"
+  },
+  {
+    "segment_id": "s0072",
+    "start_seconds": 435.74,
+    "end_seconds": 441.26,
+    "text": "right, unless you're doing digital marketing or something like that, or maybe if you're in"
+  },
+  {
+    "segment_id": "s0073",
+    "start_seconds": 441.26,
+    "end_seconds": 447.42,
+    "text": "HR trying to look up people's social media to see if there's problematic things coming your"
+  },
+  {
+    "segment_id": "s0074",
+    "start_seconds": 447.42,
+    "end_seconds": 453.26,
+    "text": "your direction. But yeah, I think generally like if you were a mechanical engineer before"
+  },
+  {
+    "segment_id": "s0075",
+    "start_seconds": 453.42,
+    "end_seconds": 460.86,
+    "text": "or before or after social media, like maybe you have a LinkedIn now and there's some level of"
+  },
+  {
+    "segment_id": "s0076",
+    "start_seconds": 460.86,
+    "end_seconds": 468.22,
+    "text": "professional side of that, but it didn't really necessarily change the way that you did your"
+  },
+  {
+    "segment_id": "s0077",
+    "start_seconds": 468.22,
+    "end_seconds": 475.66,
+    "text": "day-to-day work, but AI has come on both more rapidly than social media, and it actually is"
+  },
+  {
+    "segment_id": "s0078",
+    "start_seconds": 475.66,
+    "end_seconds": 481.34,
+    "text": "affecting the way we all do our jobs, the way we all do our work, and the way that we learn,"
+  },
+  {
+    "segment_id": "s0079",
+    "start_seconds": 481.34,
+    "end_seconds": 488.3,
+    "text": "right, in our educational system, so in a sense it's both more impactful and happening faster"
+  },
+  {
+    "segment_id": "s0080",
+    "start_seconds": 488.3,
+    "end_seconds": 496.38,
+    "text": "than other things. And I think we hear a lot about educational institutions at all levels,"
+  },
+  {
+    "segment_id": "s0081",
+    "start_seconds": 496.38,
+    "end_seconds": 504.22,
+    "text": "struggling with that, and the initial guidance was kind of, you're not allowed to use AI,"
+  },
+  {
+    "segment_id": "s0082",
+    "start_seconds": 504.22,
+    "end_seconds": 509.74,
+    "text": "and you got to do the work yourself, and that was largely I think because there was no concept"
+  },
+  {
+    "segment_id": "s0083",
+    "start_seconds": 509.74,
+    "end_seconds": 515.18,
+    "text": "of how to integrate AI, the reality of that into that workstream that students are producing"
+  },
+  {
+    "segment_id": "s0084",
+    "start_seconds": 515.18,
+    "end_seconds": 520.46,
+    "text": "for their education. I think that's starting to change a little bit at least in some places,"
+  },
+  {
+    "segment_id": "s0085",
+    "start_seconds": 520.46,
+    "end_seconds": 526.3,
+    "text": "because at this point, you know, it's very clear this is not going away, so I think some"
+  },
+  {
+    "segment_id": "s0086",
+    "start_seconds": 526.3,
+    "end_seconds": 532.94,
+    "text": "four leaning people are starting to try to identify, how do we integrate, you know, for the rest"
+  },
+  {
+    "segment_id": "s0087",
+    "start_seconds": 532.94,
+    "end_seconds": 537.74,
+    "text": "of these kids lives, as they grow up, and they're in the workplace, all the way, they're going"
+  },
+  {
+    "segment_id": "s0088",
+    "start_seconds": 537.74,
+    "end_seconds": 541.98,
+    "text": "to have these tools, and the tools are going to progress and get better and better. And so I think"
+  },
+  {
+    "segment_id": "s0089",
+    "start_seconds": 541.98,
+    "end_seconds": 548.86,
+    "text": "that's a big part of it is how do we, you have that happening with individuals, but how do we"
+  },
+  {
+    "segment_id": "s0090",
+    "start_seconds": 548.86,
+    "end_seconds": 555.82,
+    "text": "start getting that institutionalized so that school districts approve curriculums and states"
+  },
+  {
+    "segment_id": "s0091",
+    "start_seconds": 555.82,
+    "end_seconds": 560.22,
+    "text": "that have requirements that all schools have to meet, you know, get them, get on board with"
+  },
+  {
+    "segment_id": "s0092",
+    "start_seconds": 560.22,
+    "end_seconds": 567.58,
+    "text": "that, and that way the teachers have the flexibility moving forward to actually kind of move the"
+  },
+  {
+    "segment_id": "s0093",
+    "start_seconds": 567.58,
+    "end_seconds": 574.62,
+    "text": "ball to where the reality is, because right now it's like, yeah, maybe I'm curious if you see"
+  },
+  {
+    "segment_id": "s0094",
+    "start_seconds": 574.62,
+    "end_seconds": 581.26,
+    "text": "this distinction, or if it's a distinction that even matters, but there's, in my mind, there's"
+  },
+  {
+    "segment_id": "s0095",
+    "start_seconds": 581.26,
+    "end_seconds": 588.46,
+    "text": "one piece of it, which is AI is going to be a part of the way we all do our work. We need to educate"
+  },
+  {
+    "segment_id": "s0096",
+    "start_seconds": 588.46,
+    "end_seconds": 594.86,
+    "text": "people on how to use AI at how AI is integrated into our work, so that's one side of things,"
+  },
+  {
+    "segment_id": "s0097",
+    "start_seconds": 594.94,
+    "end_seconds": 599.66,
+    "text": "the other side of things is potentially, and I think different people have different opinions about"
+  },
+  {
+    "segment_id": "s0098",
+    "start_seconds": 599.66,
+    "end_seconds": 607.66,
+    "text": "this, right? There are certain things that we need to ideally learn as humans to function while in"
+  },
+  {
+    "segment_id": "s0099",
+    "start_seconds": 607.66,
+    "end_seconds": 616.62,
+    "text": "the world, like as part of our educational system, and if, in if AI is interfering with the way"
+  },
+  {
+    "segment_id": "s0100",
+    "start_seconds": 616.62,
+    "end_seconds": 624.3,
+    "text": "that we learn those topics, then that could be problematic, or there's also a need to maybe adjust"
+  },
+  {
+    "segment_id": "s0101",
+    "start_seconds": 624.38,
+    "end_seconds": 630.46,
+    "text": "our educational system, so we ensure the learning of those topics. So I'm thinking of, you know,"
+  },
+  {
+    "segment_id": "s0102",
+    "start_seconds": 630.46,
+    "end_seconds": 639.58,
+    "text": "whatever it is, let's say basic math skills, right? I think it's reasonable that a younger person,"
+  },
+  {
+    "segment_id": "s0103",
+    "start_seconds": 639.58,
+    "end_seconds": 646.78,
+    "text": "I don't know that this shows how ignorant I am, and how I don't know. I don't know anything about"
+  },
+  {
+    "segment_id": "s0104",
+    "start_seconds": 647.98,
+    "end_seconds": 653.98,
+    "text": "anything about a lot of what I'll be experiencing over the coming years, but I don't know"
+  },
+  {
+    "segment_id": "s0105",
+    "start_seconds": 654.38,
+    "end_seconds": 660.62,
+    "text": "typically at what level, you know, certain levels of math are introduced currently in curriculum,"
+  },
+  {
+    "segment_id": "s0106",
+    "start_seconds": 660.62,
+    "end_seconds": 669.58,
+    "text": "but I imagine that a child could interact with an AI chat interface and get math answers"
+  },
+  {
+    "segment_id": "s0107",
+    "start_seconds": 670.78,
+    "end_seconds": 677.26,
+    "text": "way before they're even introduced to the subjects where they're expected to know and learn that"
+  },
+  {
+    "segment_id": "s0108",
+    "start_seconds": 677.26,
+    "end_seconds": 683.42,
+    "text": "intuition, and so if I'm only getting those answers from the chat engine and not, you know,"
+  },
+  {
+    "segment_id": "s0109",
+    "start_seconds": 683.42,
+    "end_seconds": 690.7,
+    "text": "learning actually how to do at least a basic level of math, many would see that as problematic."
+  },
+  {
+    "segment_id": "s0110",
+    "start_seconds": 690.7,
+    "end_seconds": 697.26,
+    "text": "I could also see just for a hot take on the other side, right? If you take the example of like"
+  },
+  {
+    "segment_id": "s0111",
+    "start_seconds": 697.26,
+    "end_seconds": 702.7,
+    "text": "spelling or, you know, cursive or, you know, there's probably a lot of examples where you could say,"
+  },
+  {
+    "segment_id": "s0112",
+    "start_seconds": 702.78,
+    "end_seconds": 708.94,
+    "text": "well, spelling now, if all I'm doing is putting text into word documents and spell check is"
+  },
+  {
+    "segment_id": "s0113",
+    "start_seconds": 708.94,
+    "end_seconds": 713.9,
+    "text": "integrated, or maybe even AI is just generating those four me while spelling is no longer a"
+  },
+  {
+    "segment_id": "s0114",
+    "start_seconds": 713.9,
+    "end_seconds": 720.46,
+    "text": "relevant skill for anyone to learn. So I think there's, but I guess what I'm saying is there's one"
+  },
+  {
+    "segment_id": "s0115",
+    "start_seconds": 720.46,
+    "end_seconds": 725.58,
+    "text": "side of this, which is we need to educate on how to use AI. There's another side of this,"
+  },
+  {
+    "segment_id": "s0116",
+    "start_seconds": 725.58,
+    "end_seconds": 731.58,
+    "text": "which is, what are those fundamental things that we need to learn as humans outside of AI that are"
+  },
+  {
+    "segment_id": "s0117",
+    "start_seconds": 731.58,
+    "end_seconds": 739.26,
+    "text": "fundamentally, or could be interfered with if we don't apply AI correctly in the educational system."
+  },
+  {
+    "segment_id": "s0118",
+    "start_seconds": 739.26,
+    "end_seconds": 745.02,
+    "text": "Does that distinction make sense to you, Chris? I think it does. I think if you, to draw out,"
+  },
+  {
+    "segment_id": "s0119",
+    "start_seconds": 745.02,
+    "end_seconds": 750.46,
+    "text": "I agree with everything you said, I think to draw that out a little bit more, there are,"
+  },
+  {
+    "segment_id": "s0120",
+    "start_seconds": 750.46,
+    "end_seconds": 756.86,
+    "text": "there are some skills that, such as the ability to do critical thinking across a number of"
+  },
+  {
+    "segment_id": "s0121",
+    "start_seconds": 756.86,
+    "end_seconds": 763.74,
+    "text": "domains, the ability to be creative across a number of domains, and then to have the content,"
+  },
+  {
+    "segment_id": "s0122",
+    "start_seconds": 763.74,
+    "end_seconds": 769.66,
+    "text": "like whatever, whatever discrete skills that you might be taught in school, as you pointed out,"
+  },
+  {
+    "segment_id": "s0123",
+    "start_seconds": 769.66,
+    "end_seconds": 774.78,
+    "text": "and those may change in some things that we think of as foundational, foundational, may be changing."
+  },
+  {
+    "segment_id": "s0124",
+    "start_seconds": 775.98,
+    "end_seconds": 782.46,
+    "text": "But having enough context in your learning around your ability to do critical thinking and to be"
+  },
+  {
+    "segment_id": "s0125",
+    "start_seconds": 782.54,
+    "end_seconds": 789.74,
+    "text": "creative together, so that you can collaborate with the technologies going forward and arrive. So without"
+  },
+  {
+    "segment_id": "s0126",
+    "start_seconds": 789.74,
+    "end_seconds": 794.78,
+    "text": "the context, and that's kind of what you're getting at there, having the the math skills that you"
+  },
+  {
+    "segment_id": "s0127",
+    "start_seconds": 794.78,
+    "end_seconds": 798.94,
+    "text": "need to be able to follow along, maybe with harder math that you might be working with an AI,"
+  },
+  {
+    "segment_id": "s0128",
+    "start_seconds": 798.94,
+    "end_seconds": 807.02,
+    "text": "but there's a certain level you gotta get to, and so I think being able to find that mix of"
+  },
+  {
+    "segment_id": "s0129",
+    "start_seconds": 807.02,
+    "end_seconds": 814.62,
+    "text": "educational context mixed with those creative and critical thinking abilities to solve problems,"
+  },
+  {
+    "segment_id": "s0130",
+    "start_seconds": 814.62,
+    "end_seconds": 818.86,
+    "text": "collaboratively going forward with AI because that's going to be the reality we're all facing."
+  },
+  {
+    "segment_id": "s0131",
+    "start_seconds": 818.86,
+    "end_seconds": 826.3,
+    "text": "Yeah, maybe another way to put it is, I, I, well, again, people have different opinions,"
+  },
+  {
+    "segment_id": "s0132",
+    "start_seconds": 826.3,
+    "end_seconds": 831.5,
+    "text": "probably, but at least from my point of view or world view or however you would frame it,"
+  },
+  {
+    "segment_id": "s0133",
+    "start_seconds": 831.5,
+    "end_seconds": 841.26,
+    "text": "I don't think you really advance in your character and development as a human without discomfort"
+  },
+  {
+    "segment_id": "s0134",
+    "start_seconds": 841.26,
+    "end_seconds": 847.34,
+    "text": "and struggle, right? And so, and so a part of whether that's advancing in your marriage,"
+  },
+  {
+    "segment_id": "s0135",
+    "start_seconds": 847.34,
+    "end_seconds": 856.54,
+    "text": "advancing in your ability as a worker, advancing in your, you know, character as a human being"
+  },
+  {
+    "segment_id": "s0136",
+    "start_seconds": 856.62,
+    "end_seconds": 868.14,
+    "text": "and the values that that you want to hold to, the struggle of life is actually how, how that is"
+  },
+  {
+    "segment_id": "s0137",
+    "start_seconds": 868.14,
+    "end_seconds": 874.94,
+    "text": "stressed and how those things are built up, right? And so I would view a part of the educational"
+  },
+  {
+    "segment_id": "s0138",
+    "start_seconds": 874.94,
+    "end_seconds": 881.02,
+    "text": "system as, or maybe the counter example I'm trying to draw out is, well, maybe it doesn't really"
+  },
+  {
+    "segment_id": "s0139",
+    "start_seconds": 881.1,
+    "end_seconds": 889.42,
+    "text": "matter if basic math or spelling is a part is like a fundamental skill. Now, if it's stressing"
+  },
+  {
+    "segment_id": "s0140",
+    "start_seconds": 889.42,
+    "end_seconds": 896.22,
+    "text": "the right sort of thinking and allowing you to experience discomfort that advances your mindset,"
+  },
+  {
+    "segment_id": "s0141",
+    "start_seconds": 896.22,
+    "end_seconds": 901.02,
+    "text": "advances your problem solving, advances your decision making, advances your resilience,"
+  },
+  {
+    "segment_id": "s0142",
+    "start_seconds": 901.02,
+    "end_seconds": 908.38,
+    "text": "et cetera, et cetera, et cetera, like you were saying, Chris. Yeah. We've talked a lot on the show"
+  },
+  {
+    "segment_id": "s0143",
+    "start_seconds": 908.38,
+    "end_seconds": 915.18,
+    "text": "about how an AI agent needs an underlying harness that has connections into the real world into"
+  },
+  {
+    "segment_id": "s0144",
+    "start_seconds": 915.18,
+    "end_seconds": 921.42,
+    "text": "MCP servers and real systems and data sources. That's the only way that it can work towards a"
+  },
+  {
+    "segment_id": "s0145",
+    "start_seconds": 921.42,
+    "end_seconds": 927.5,
+    "text": "a useful goal. And that's why I'm so happy that we're partnering with SERP API, which is a"
+  },
+  {
+    "segment_id": "s0146",
+    "start_seconds": 927.5,
+    "end_seconds": 934.06,
+    "text": "web search API that gives developers real-time structured access to search engine results. This is an"
+  },
+  {
+    "segment_id": "s0147",
+    "start_seconds": 934.14,
+    "end_seconds": 941.66,
+    "text": "amazing tool that you can plug directly into AI agents to power their actions and get them to the"
+  },
+  {
+    "segment_id": "s0148",
+    "start_seconds": 941.66,
+    "end_seconds": 950.38,
+    "text": "proper outcomes. This very simple integration and this includes access to over 100 APIs within SERP"
+  },
+  {
+    "segment_id": "s0149",
+    "start_seconds": 950.38,
+    "end_seconds": 957.5,
+    "text": "API to access things like Google, being Amazon, YouTube, and many other sources. So I would really"
+  },
+  {
+    "segment_id": "s0150",
+    "start_seconds": 957.5,
+    "end_seconds": 964.62,
+    "text": "encourage you to check out SERP API integrated into your AI agents, visit SERPAPI.com slash"
+  },
+  {
+    "segment_id": "s0151",
+    "start_seconds": 964.62,
+    "end_seconds": 971.82,
+    "text": "practical AI to get started with SERPAPI for free and get 250 searches every month."
+  },
+  {
+    "segment_id": "s0152",
+    "start_seconds": 971.82,
+    "end_seconds": 981.02,
+    "text": "Visit SERPAPI.com slash practical AI to get started with SERPAPI for free and get 250 searches every"
+  },
+  {
+    "segment_id": "s0153",
+    "start_seconds": 981.82,
+    "end_seconds": 987.66,
+    "text": "month. The points you were making there in that last segment I think were Spitalin. I think"
+  },
+  {
+    "segment_id": "s0154",
+    "start_seconds": 989.26,
+    "end_seconds": 996.14,
+    "text": "I think right now we're at a moment where we need to start looking at things that"
+  },
+  {
+    "segment_id": "s0155",
+    "start_seconds": 996.14,
+    "end_seconds": 1003.66,
+    "text": "have been foundational for generations in terms of what you need and figure out how does this"
+  },
+  {
+    "segment_id": "s0156",
+    "start_seconds": 1003.66,
+    "end_seconds": 1009.9,
+    "text": "apply. You mentioned spell checking and how that does. And spelling is still important at some level"
+  },
+  {
+    "segment_id": "s0157",
+    "start_seconds": 1009.98,
+    "end_seconds": 1016.22,
+    "text": "even though we have spell check because it contributes to accurate communication that we have."
+  },
+  {
+    "segment_id": "s0158",
+    "start_seconds": 1016.22,
+    "end_seconds": 1026.22,
+    "text": "And so but the question of whether or not there's a certain amount of I think analysis"
+  },
+  {
+    "segment_id": "s0159",
+    "start_seconds": 1026.22,
+    "end_seconds": 1033.26,
+    "text": "that needs to occur on if we take our foundational skills and look at what the world's going"
+  },
+  {
+    "segment_id": "s0160",
+    "start_seconds": 1033.26,
+    "end_seconds": 1037.9,
+    "text": "to be like a few years down the road. Is that something that we're already"
+  },
+  {
+    "segment_id": "s0161",
+    "start_seconds": 1037.98,
+    "end_seconds": 1043.18,
+    "text": "already offloading? Some of those skills to AI and how are we collaborating to solve really"
+  },
+  {
+    "segment_id": "s0162",
+    "start_seconds": 1043.18,
+    "end_seconds": 1050.22,
+    "text": "tough problems? To your point about the struggle, I know that in my own life as I'm working"
+  },
+  {
+    "segment_id": "s0163",
+    "start_seconds": 1050.22,
+    "end_seconds": 1055.82,
+    "text": "with AI every day, I know both you and I are collaborating with AI models all the time."
+  },
+  {
+    "segment_id": "s0164",
+    "start_seconds": 1057.66,
+    "end_seconds": 1062.62,
+    "text": "And that has changed the workflows on how I engage a lot of problems. And in a lot of ways it's"
+  },
+  {
+    "segment_id": "s0165",
+    "start_seconds": 1062.62,
+    "end_seconds": 1068.06,
+    "text": "supercharged what I can do, the productivity I've mentioned that before, in terms of what I can"
+  },
+  {
+    "segment_id": "s0166",
+    "start_seconds": 1068.06,
+    "end_seconds": 1075.66,
+    "text": "generate. So my output is way above what it was possible a year ago. And so I'm starting to really"
+  },
+  {
+    "segment_id": "s0167",
+    "start_seconds": 1075.66,
+    "end_seconds": 1082.46,
+    "text": "look at how am I doing that, but I am noticing that that struggle still exists. It's just being"
+  },
+  {
+    "segment_id": "s0168",
+    "start_seconds": 1082.46,
+    "end_seconds": 1090.54,
+    "text": "placed in different places. You know I can I can turn out for instance. If I'm working"
+  },
+  {
+    "segment_id": "s0169",
+    "start_seconds": 1090.54,
+    "end_seconds": 1095.42,
+    "text": "on just making up an example, if I'm working on a website that I need for some function,"
+  },
+  {
+    "segment_id": "s0170",
+    "start_seconds": 1096.06,
+    "end_seconds": 1101.5,
+    "text": "I can turn out a bunch of code pretty quickly and depending on what it's, you know,"
+  },
+  {
+    "segment_id": "s0171",
+    "start_seconds": 1101.5,
+    "end_seconds": 1106.7,
+    "text": "what it's necessary for. There's a certain amount of rigor that goes around that. But in a"
+  },
+  {
+    "segment_id": "s0172",
+    "start_seconds": 1106.7,
+    "end_seconds": 1111.9,
+    "text": "lot of cases, I'm able to offload a certain amount of that and focus on the creative process that's"
+  },
+  {
+    "segment_id": "s0173",
+    "start_seconds": 1111.9,
+    "end_seconds": 1120.22,
+    "text": "driving it. And I think that's one example of how good I am at Rust, which is what I usually use"
+  },
+  {
+    "segment_id": "s0174",
+    "start_seconds": 1120.22,
+    "end_seconds": 1128.54,
+    "text": "these days, is mattering less now than it was a year ago right now. And so, you know, that's just"
+  },
+  {
+    "segment_id": "s0175",
+    "start_seconds": 1128.54,
+    "end_seconds": 1133.98,
+    "text": "one of many, many examples. I'm doing a lot of authoring, like I said, and then that authoring"
+  },
+  {
+    "segment_id": "s0176",
+    "start_seconds": 1133.98,
+    "end_seconds": 1141.58,
+    "text": "a lot of the research uses tools to go out and qualify things that I'm about to suggest or"
+  },
+  {
+    "segment_id": "s0177",
+    "start_seconds": 1141.58,
+    "end_seconds": 1148.62,
+    "text": "put forward and stuff. And so, I think the thing that we need to do is to establish kind of"
+  },
+  {
+    "segment_id": "s0178",
+    "start_seconds": 1148.62,
+    "end_seconds": 1153.18,
+    "text": "what does this look like now? What does this look like over the next few years? And how do we"
+  },
+  {
+    "segment_id": "s0179",
+    "start_seconds": 1153.18,
+    "end_seconds": 1157.42,
+    "text": "want to start making adjustments? Because if we lag too far in education, the kids of today"
+  },
+  {
+    "segment_id": "s0180",
+    "start_seconds": 1157.42,
+    "end_seconds": 1162.06,
+    "text": "are going to have a really hard time. And, you know, I'll finish by saying in the workplace,"
+  },
+  {
+    "segment_id": "s0181",
+    "start_seconds": 1162.06,
+    "end_seconds": 1168.06,
+    "text": "I end up mentoring quite a few younger people that come in out out of university, and they'll be"
+  },
+  {
+    "segment_id": "s0182",
+    "start_seconds": 1168.06,
+    "end_seconds": 1175.34,
+    "text": "in their early or mid 20s or even late 20s. And the one straight at university are struggling a"
+  },
+  {
+    "segment_id": "s0183",
+    "start_seconds": 1175.34,
+    "end_seconds": 1183.26,
+    "text": "little bit to adjust to the new realities of workforce to some degree. And so, I think we need"
+  },
+  {
+    "segment_id": "s0184",
+    "start_seconds": 1183.26,
+    "end_seconds": 1189.02,
+    "text": "to speed up the self-reflection process, is what I'm getting at. So, I think that that, so I"
+  },
+  {
+    "segment_id": "s0185",
+    "start_seconds": 1189.02,
+    "end_seconds": 1195.82,
+    "text": "agree with everything you're saying, maybe I'll be a little bit divisive here or something like that,"
+  },
+  {
+    "segment_id": "s0186",
+    "start_seconds": 1195.82,
+    "end_seconds": 1202.14,
+    "text": "and with basically say, okay, well, in light of all of that, if I'm a high school teacher,"
+  },
+  {
+    "segment_id": "s0187",
+    "start_seconds": 1202.14,
+    "end_seconds": 1209.42,
+    "text": "should I let students use AI on their assignments? In what ways is that question, I guess,"
+  },
+  {
+    "segment_id": "s0188",
+    "start_seconds": 1209.42,
+    "end_seconds": 1215.74,
+    "text": "useful or maybe not useful? Maybe that's a good way to frame it. I think I'm going to pivot"
+  },
+  {
+    "segment_id": "s0189",
+    "start_seconds": 1215.74,
+    "end_seconds": 1221.9,
+    "text": "you a little bit, because I got, I got smacked down a while back. About, I don't know, you're"
+  },
+  {
+    "segment_id": "s0190",
+    "start_seconds": 1221.9,
+    "end_seconds": 1225.9,
+    "text": "too ago, we were actually having an episode, and I was talking about teaching and stuff like that,"
+  },
+  {
+    "segment_id": "s0191",
+    "start_seconds": 1225.9,
+    "end_seconds": 1231.18,
+    "text": "and I had multiple teachers reach out to me after that episode and say, we don't have, like,"
+  },
+  {
+    "segment_id": "s0192",
+    "start_seconds": 1231.18,
+    "end_seconds": 1236.54,
+    "text": "you just put something in our lap that we don't have the authority to do. Control of, we don't have"
+  },
+  {
+    "segment_id": "s0193",
+    "start_seconds": 1236.54,
+    "end_seconds": 1242.62,
+    "text": "control of. You know, that comes down from, from on high, and we're within this bound, and they implement."
+  },
+  {
+    "segment_id": "s0194",
+    "start_seconds": 1242.62,
+    "end_seconds": 1247.02,
+    "text": "Yeah. That's correct. So, for all of you teachers under understood, yeah."
+  },
+  {
+    "segment_id": "s0195",
+    "start_seconds": 1247.98,
+    "end_seconds": 1253.82,
+    "text": "Good recommendation for when I go into parent teacher conferences. Yeah. I might be"
+  },
+  {
+    "segment_id": "s0196",
+    "start_seconds": 1253.82,
+    "end_seconds": 1259.42,
+    "text": "going to be about other things, but I shouldn't keep that in mind. You probably will at times"
+  },
+  {
+    "segment_id": "s0197",
+    "start_seconds": 1259.42,
+    "end_seconds": 1265.18,
+    "text": "have, you'll be frustrated, because you'll walk from your world, which is very modern into,"
+  },
+  {
+    "segment_id": "s0198",
+    "start_seconds": 1265.18,
+    "end_seconds": 1269.66,
+    "text": "it'll feel like you're going into your child's world, which is a little bit archaic, and that's"
+  },
+  {
+    "segment_id": "s0199",
+    "start_seconds": 1269.74,
+    "end_seconds": 1277.82,
+    "text": "frustrating as a parent to say, why is it still this way? And yes, the academic handcuffs are"
+  },
+  {
+    "segment_id": "s0200",
+    "start_seconds": 1277.82,
+    "end_seconds": 1283.66,
+    "text": "on to some degree. So, I try to keep that in mind as I'm having parent teacher discussions."
+  },
+  {
+    "segment_id": "s0201",
+    "start_seconds": 1284.46,
+    "end_seconds": 1291.5,
+    "text": "But I do think that school systems, I would say, the one that I'm in, you folks know who you are."
+  },
+  {
+    "segment_id": "s0202",
+    "start_seconds": 1292.46,
+    "end_seconds": 1298.14,
+    "text": "If you listen to the show, you might be thinking about that. It might be, if you are finding"
+  },
+  {
+    "segment_id": "s0203",
+    "start_seconds": 1298.14,
+    "end_seconds": 1303.9,
+    "text": "that you're using tools to learn yourself in life, bring that down for the kids, you know,"
+  },
+  {
+    "segment_id": "s0204",
+    "start_seconds": 1303.9,
+    "end_seconds": 1309.1,
+    "text": "figure out how can I do that? I know for me using these tools, and I suspect that's the same"
+  },
+  {
+    "segment_id": "s0205",
+    "start_seconds": 1309.1,
+    "end_seconds": 1313.9,
+    "text": "for you, I rarely go and just get an answer unless it's a trivial thing. Unless it's a completely"
+  },
+  {
+    "segment_id": "s0206",
+    "start_seconds": 1313.9,
+    "end_seconds": 1321.1,
+    "text": "trivial thing, I usually go and explore the nature of a problem so that by the time I get to an answer,"
+  },
+  {
+    "segment_id": "s0207",
+    "start_seconds": 1321.1,
+    "end_seconds": 1325.74,
+    "text": "I've used these tools to ensure that I've done a certain amount of that struggle myself."
+  },
+  {
+    "segment_id": "s0208",
+    "start_seconds": 1326.7,
+    "end_seconds": 1332.3,
+    "text": "And it's a self-imposed struggle so that I've learned. And I've found that by doing that,"
+  },
+  {
+    "segment_id": "s0209",
+    "start_seconds": 1333.58,
+    "end_seconds": 1338.06,
+    "text": "these tools are catering to me. I've helped them. I've kind of given the profiles about me,"
+  },
+  {
+    "segment_id": "s0210",
+    "start_seconds": 1338.06,
+    "end_seconds": 1344.3,
+    "text": "and they're able to present information that's really optimal for me. And so, even at 56"
+  },
+  {
+    "segment_id": "s0211",
+    "start_seconds": 1344.3,
+    "end_seconds": 1351.5,
+    "text": "my current age, I am learning rapidly. Certainly as fast as I have done over the last few decades"
+  },
+  {
+    "segment_id": "s0212",
+    "start_seconds": 1351.5,
+    "end_seconds": 1356.38,
+    "text": "or faster, because I have these tools to do that. What I'm suggesting is we need to push that down"
+  },
+  {
+    "segment_id": "s0213",
+    "start_seconds": 1356.38,
+    "end_seconds": 1363.26,
+    "text": "into more of a systematic approach in the school system and let these tools help kids at an individual"
+  },
+  {
+    "segment_id": "s0214",
+    "start_seconds": 1363.26,
+    "end_seconds": 1369.98,
+    "text": "level learn. I'll give you one example before I shut up. I'm going to be radical here. But I did"
+  },
+  {
+    "segment_id": "s0215",
+    "start_seconds": 1369.98,
+    "end_seconds": 1376.46,
+    "text": "suggest this to a set of teachers recently, and they, I think their face just dropped. And that is,"
+  },
+  {
+    "segment_id": "s0216",
+    "start_seconds": 1376.46,
+    "end_seconds": 1380.86,
+    "text": "I think school systems, most of the curriculum, as well, set long before, and the teachers know"
+  },
+  {
+    "segment_id": "s0217",
+    "start_seconds": 1380.86,
+    "end_seconds": 1386.22,
+    "text": "what they're teaching far before they actually get to a given day when they're teaching it. Put"
+  },
+  {
+    "segment_id": "s0218",
+    "start_seconds": 1386.22,
+    "end_seconds": 1391.74,
+    "text": "that curriculum out there so that, so I'm not talking about the tests. I'm not talking about quizzes."
+  },
+  {
+    "segment_id": "s0219",
+    "start_seconds": 1391.74,
+    "end_seconds": 1396.94,
+    "text": "But on the first day of school, have the whole year of curriculum out there. So that, you have the"
+  },
+  {
+    "segment_id": "s0220",
+    "start_seconds": 1396.94,
+    "end_seconds": 1402.94,
+    "text": "ability, the kids are going to use these tools anyway to some degree. And rather than call that"
+  },
+  {
+    "segment_id": "s0221",
+    "start_seconds": 1403.02,
+    "end_seconds": 1411.5,
+    "text": "cheating, let them learn the material and find ways of determining how deep they're getting. Are they just"
+  },
+  {
+    "segment_id": "s0222",
+    "start_seconds": 1411.5,
+    "end_seconds": 1417.02,
+    "text": "getting, you know, shallow answers? Are they diving into it? But you can actually, as a parent,"
+  },
+  {
+    "segment_id": "s0223",
+    "start_seconds": 1417.02,
+    "end_seconds": 1422.14,
+    "text": "I can smooth out in certain areas where I know my daughter might struggle in certain areas. And I can"
+  },
+  {
+    "segment_id": "s0224",
+    "start_seconds": 1422.14,
+    "end_seconds": 1427.34,
+    "text": "smooth that out and introduce things earlier, expand the period of time. She's exposed to it,"
+  },
+  {
+    "segment_id": "s0225",
+    "start_seconds": 1427.34,
+    "end_seconds": 1434.38,
+    "text": "and get her learning because I already do that as a parent. And so when I suggested, let everybody,"
+  },
+  {
+    "segment_id": "s0226",
+    "start_seconds": 1434.38,
+    "end_seconds": 1439.9,
+    "text": "let everybody do that. They just, their face is kind of fell. But I think that you could be"
+  },
+  {
+    "segment_id": "s0227",
+    "start_seconds": 1439.9,
+    "end_seconds": 1446.22,
+    "text": "a lot more efficient about getting individual students, learning in specific ways that are specific"
+  },
+  {
+    "segment_id": "s0228",
+    "start_seconds": 1446.22,
+    "end_seconds": 1453.42,
+    "text": "to their learning styles, and let the teachers become through school policy, through district policy,"
+  },
+  {
+    "segment_id": "s0229",
+    "start_seconds": 1453.42,
+    "end_seconds": 1459.98,
+    "text": "become kind of facilitators of that customization process. And I think teachers, as humans,"
+  },
+  {
+    "segment_id": "s0230",
+    "start_seconds": 1459.98,
+    "end_seconds": 1466.38,
+    "text": "would become much more useful in years ahead if they adjust their role to do that. I think we'll find"
+  },
+  {
+    "segment_id": "s0231",
+    "start_seconds": 1466.38,
+    "end_seconds": 1471.26,
+    "text": "that the, that the need for human teachers stays very high rather than just saying, well,"
+  },
+  {
+    "segment_id": "s0232",
+    "start_seconds": 1471.26,
+    "end_seconds": 1478.06,
+    "text": "they're going to get replaced by AI. So there's my radical suggestion. Yeah. Coming soon to a"
+  },
+  {
+    "segment_id": "s0233",
+    "start_seconds": 1478.06,
+    "end_seconds": 1486.14,
+    "text": "newly established Benson Academy. There we go. For youth. Yeah. Um, see if you get funding for that one."
+  },
+  {
+    "segment_id": "s0234",
+    "start_seconds": 1486.94,
+    "end_seconds": 1493.26,
+    "text": "I think I have my election front of me there. There's a stable there. I like maybe a way to"
+  },
+  {
+    "segment_id": "s0235",
+    "start_seconds": 1493.98,
+    "end_seconds": 1500.78,
+    "text": "extrapolate a principle out of what you're saying there Chris is, I do think that for a piece of this"
+  },
+  {
+    "segment_id": "s0236",
+    "start_seconds": 1500.78,
+    "end_seconds": 1511.02,
+    "text": "is some sort of way in which both the elementary high school and universities systems can"
+  },
+  {
+    "segment_id": "s0237",
+    "start_seconds": 1511.02,
+    "end_seconds": 1519.58,
+    "text": "allow for experimentation with this technology in ways that they aren't now because to your point"
+  },
+  {
+    "segment_id": "s0238",
+    "start_seconds": 1519.58,
+    "end_seconds": 1526.54,
+    "text": "teachers are very much their their hands are tied in a lot of cases in terms of what they can or"
+  },
+  {
+    "segment_id": "s0239",
+    "start_seconds": 1526.54,
+    "end_seconds": 1532.54,
+    "text": "can allow or even in some cases like, hey, you are going to use this tool to determine if this essay"
+  },
+  {
+    "segment_id": "s0240",
+    "start_seconds": 1532.54,
+    "end_seconds": 1540.22,
+    "text": "is written by AI or something like that or it's integrated into those those things. Um, and so they"
+  },
+  {
+    "segment_id": "s0241",
+    "start_seconds": 1540.22,
+    "end_seconds": 1546.78,
+    "text": "they may or may not have a choice to do that. But somehow there needs to be the chance for experimentation."
+  },
+  {
+    "segment_id": "s0242",
+    "start_seconds": 1546.78,
+    "end_seconds": 1553.82,
+    "text": "I know some of the things that I've heard is a bit of reprioritization and tie-in of AI. So"
+  },
+  {
+    "segment_id": "s0243",
+    "start_seconds": 1553.82,
+    "end_seconds": 1562.62,
+    "text": "less of focus on memorization and repeating facts, right? And maybe a way for you to look at the"
+  },
+  {
+    "segment_id": "s0244",
+    "start_seconds": 1562.62,
+    "end_seconds": 1572.78,
+    "text": "output of AI and find what is maybe not not accurate, right? So one one thing that I've heard certain"
+  },
+  {
+    "segment_id": "s0245",
+    "start_seconds": 1572.78,
+    "end_seconds": 1579.34,
+    "text": "teachers doing is saying, all right, here's here's our topic that we're all going to write an essay"
+  },
+  {
+    "segment_id": "s0246",
+    "start_seconds": 1579.42,
+    "end_seconds": 1586.94,
+    "text": "around. You are going to put this and ask for this essay into AI. And then what I want is your"
+  },
+  {
+    "segment_id": "s0247",
+    "start_seconds": 1586.94,
+    "end_seconds": 1595.98,
+    "text": "critical analysis of how that essay could be improved in the output or maybe where what is"
+  },
+  {
+    "segment_id": "s0248",
+    "start_seconds": 1595.98,
+    "end_seconds": 1601.82,
+    "text": "not accurate in that essay or what is framed incorrectly. And just assume that there are things"
+  },
+  {
+    "segment_id": "s0249",
+    "start_seconds": 1601.82,
+    "end_seconds": 1607.34,
+    "text": "framed incorrectly or there there is something to be improved, right? And I guess you could argue"
+  },
+  {
+    "segment_id": "s0250",
+    "start_seconds": 1607.34,
+    "end_seconds": 1612.46,
+    "text": "well, that could be done with AI too. But it is teaching a different sort of mechanism with"
+  },
+  {
+    "segment_id": "s0251",
+    "start_seconds": 1612.46,
+    "end_seconds": 1618.3,
+    "text": "with AI, right? Which is this, well, it is really a, you're looking at the output of this and not"
+  },
+  {
+    "segment_id": "s0252",
+    "start_seconds": 1618.3,
+    "end_seconds": 1623.82,
+    "text": "treating it as a gold standard, right? But you're building intuition that this needs to be checked"
+  },
+  {
+    "segment_id": "s0253",
+    "start_seconds": 1623.82,
+    "end_seconds": 1628.7,
+    "text": "and you're working back and forth on improving and there's still critical thinking where you"
+  },
+  {
+    "segment_id": "s0254",
+    "start_seconds": 1628.7,
+    "end_seconds": 1635.42,
+    "text": "have to determine what what is best, what is not, what is better, what is worse, et cetera. So"
+  },
+  {
+    "segment_id": "s0255",
+    "start_seconds": 1636.22,
+    "end_seconds": 1642.86,
+    "text": "I'm not saying that's the perfect way to do it. I think I more mean teachers and professors"
+  },
+  {
+    "segment_id": "s0256",
+    "start_seconds": 1642.86,
+    "end_seconds": 1650.62,
+    "text": "likely need the freedom to be able to try some of these things. And I don't know, I'm not familiar"
+  },
+  {
+    "segment_id": "s0257",
+    "start_seconds": 1650.62,
+    "end_seconds": 1656.14,
+    "text": "enough, obviously familiar enough with the educational system to know the mechanisms through which"
+  },
+  {
+    "segment_id": "s0258",
+    "start_seconds": 1656.14,
+    "end_seconds": 1661.5,
+    "text": "that could happen. And you know, maybe our listeners, if they're aware of some of, I'm sure that"
+  },
+  {
+    "segment_id": "s0259",
+    "start_seconds": 1661.5,
+    "end_seconds": 1667.58,
+    "text": "there's innovative programs going on in our country and other countries, if our listeners are"
+  },
+  {
+    "segment_id": "s0260",
+    "start_seconds": 1667.58,
+    "end_seconds": 1673.18,
+    "text": "aware of some of those things and maybe want to point us to some of those things, we would love"
+  },
+  {
+    "segment_id": "s0261",
+    "start_seconds": 1673.18,
+    "end_seconds": 1679.26,
+    "text": "maybe to have, have some of those experts on the show to highlight some of the more positive"
+  },
+  {
+    "segment_id": "s0262",
+    "start_seconds": 1679.26,
+    "end_seconds": 1684.46,
+    "text": "side of what's going on there, which I'm sure there are people experimenting. I'm sure I would"
+  },
+  {
+    "segment_id": "s0263",
+    "start_seconds": 1684.46,
+    "end_seconds": 1691.1,
+    "text": "actually like to follow up and kind of put a challenge out there to viewers and listeners on this"
+  },
+  {
+    "segment_id": "s0264",
+    "start_seconds": 1691.1,
+    "end_seconds": 1696.78,
+    "text": "and, you know, if we're looking at a future going into the classroom a few years down the road"
+  },
+  {
+    "segment_id": "s0265",
+    "start_seconds": 1696.78,
+    "end_seconds": 1702.62,
+    "text": "and we have, we still have our human teacher facilitating this process and, you know, not a new"
+  },
+  {
+    "segment_id": "s0266",
+    "start_seconds": 1702.62,
+    "end_seconds": 1708.38,
+    "text": "idea right here, I'm sure everyone's heard of it but the notion of every student has a personally"
+  },
+  {
+    "segment_id": "s0267",
+    "start_seconds": 1708.38,
+    "end_seconds": 1714.86,
+    "text": "I in the classroom with them that's designed to help educate them along these things that we're talking"
+  },
+  {
+    "segment_id": "s0268",
+    "start_seconds": 1714.94,
+    "end_seconds": 1721.1,
+    "text": "about and maybe the AI, you know, I'm just going to throw maybe there's an earpiece in that"
+  },
+  {
+    "segment_id": "s0269",
+    "start_seconds": 1721.1,
+    "end_seconds": 1726.94,
+    "text": "the kid has, he can hear or she can hear the teacher clearly but there's also an AI talking and"
+  },
+  {
+    "segment_id": "s0270",
+    "start_seconds": 1726.94,
+    "end_seconds": 1731.18,
+    "text": "saying, well, you know, how would you think about this and as the teacher is working on that and the"
+  },
+  {
+    "segment_id": "s0271",
+    "start_seconds": 1731.18,
+    "end_seconds": 1738.06,
+    "text": "AI is observing the kids struggle through the process and they can cue them in ways that are"
+  },
+  {
+    "segment_id": "s0272",
+    "start_seconds": 1738.06,
+    "end_seconds": 1744.3,
+    "text": "customized for that particular student so the AI that the next unit over may be cueing them a"
+  },
+  {
+    "segment_id": "s0273",
+    "start_seconds": 1744.3,
+    "end_seconds": 1749.1,
+    "text": "little bit differently but it keeps them on track, keeps them focused on the work and keeps them"
+  },
+  {
+    "segment_id": "s0274",
+    "start_seconds": 1749.1,
+    "end_seconds": 1754.22,
+    "text": "on a learning curve. I'd love to hear, that's not a new idea, you know, we've heard about those"
+  },
+  {
+    "segment_id": "s0275",
+    "start_seconds": 1754.22,
+    "end_seconds": 1759.5,
+    "text": "things in the past, I'd love to hear how people are thinking about that, whether that's on track,"
+  },
+  {
+    "segment_id": "s0276",
+    "start_seconds": 1759.5,
+    "end_seconds": 1764.14,
+    "text": "whether there needs to be something different and how you would use that kind of capability."
+  },
+  {
+    "segment_id": "s0277",
+    "start_seconds": 1764.14,
+    "end_seconds": 1770.22,
+    "text": "So Chris, just to highlight a couple of things which you would sent me prior to this conversation"
+  },
+  {
+    "segment_id": "s0278",
+    "start_seconds": 1770.22,
+    "end_seconds": 1777.98,
+    "text": "which I think are interesting just a couple of data points here. There was a 2025 study field"
+  },
+  {
+    "segment_id": "s0279",
+    "start_seconds": 1777.98,
+    "end_seconds": 1784.78,
+    "text": "experiment with nearly a thousand high school mathematics students in Turkey. That found that a"
+  },
+  {
+    "segment_id": "s0280",
+    "start_seconds": 1784.78,
+    "end_seconds": 1793.34,
+    "text": "general chatbot improved assisted practice but reduced subsequent unassisted exam performance by"
+  },
+  {
+    "segment_id": "s0281",
+    "start_seconds": 1793.34,
+    "end_seconds": 1803.5,
+    "text": "17% relative to a control. Another study that was from Harvard undergraduate physics program,"
+  },
+  {
+    "segment_id": "s0282",
+    "start_seconds": 1803.5,
+    "end_seconds": 1810.46,
+    "text": "this was with around 200 students found stronger immediate learning gains with a carefully structured"
+  },
+  {
+    "segment_id": "s0283",
+    "start_seconds": 1810.46,
+    "end_seconds": 1817.42,
+    "text": "AI tutor across two lessons than with its active learning classroom comparison. I know actually even"
+  },
+  {
+    "segment_id": "s0284",
+    "start_seconds": 1817.5,
+    "end_seconds": 1825.74,
+    "text": "when I was teaching a system at Purdue, this sort of active learning stuff was very much the"
+  },
+  {
+    "segment_id": "s0285",
+    "start_seconds": 1825.74,
+    "end_seconds": 1832.14,
+    "text": "thing that everyone was experimenting with. I don't know that that's field in its entirety but"
+  },
+  {
+    "segment_id": "s0286",
+    "start_seconds": 1832.14,
+    "end_seconds": 1837.42,
+    "text": "I know that was a big thing back then. So it is encouraging that people are doing some of these"
+  },
+  {
+    "segment_id": "s0287",
+    "start_seconds": 1837.42,
+    "end_seconds": 1844.86,
+    "text": "experiments. I know that Purdue, which is in the town where I live for those that don't know,"
+  },
+  {
+    "segment_id": "s0288",
+    "start_seconds": 1845.74,
+    "end_seconds": 1853.58,
+    "text": "local here to me. There's all sorts of mixed things, different departments are handling things"
+  },
+  {
+    "segment_id": "s0289",
+    "start_seconds": 1853.58,
+    "end_seconds": 1860.86,
+    "text": "differently but I know to your point Chris the system is doing certain things so Purdue and I know"
+  },
+  {
+    "segment_id": "s0290",
+    "start_seconds": 1860.86,
+    "end_seconds": 1867.5,
+    "text": "they're not the only ones doing this but they have now an actual requirement in the undergraduate"
+  },
+  {
+    "segment_id": "s0291",
+    "start_seconds": 1867.5,
+    "end_seconds": 1874.54,
+    "text": "like across all undergraduate degrees that there's an AI competency requirement and they say"
+  },
+  {
+    "segment_id": "s0292",
+    "start_seconds": 1875.34,
+    "end_seconds": 1880.62,
+    "text": "it's AI focused coursework designed to build critical thinking responsible AI use and workforce"
+  },
+  {
+    "segment_id": "s0293",
+    "start_seconds": 1880.62,
+    "end_seconds": 1887.5,
+    "text": "ready skills. So yeah I think to your point Chris you were mentioning mentoring people coming"
+  },
+  {
+    "segment_id": "s0294",
+    "start_seconds": 1887.5,
+    "end_seconds": 1896.94,
+    "text": "in out of university. I struggle to believe that well or maybe the way to put it is a lot of"
+  },
+  {
+    "segment_id": "s0295",
+    "start_seconds": 1896.94,
+    "end_seconds": 1901.1,
+    "text": "those students coming out of university, at least if they're working in my company so may I just"
+  },
+  {
+    "segment_id": "s0296",
+    "start_seconds": 1901.1,
+    "end_seconds": 1908.86,
+    "text": "speak to my own experience. If they're not comfortable with wanting and digging into AI assistance"
+  },
+  {
+    "segment_id": "s0297",
+    "start_seconds": 1908.86,
+    "end_seconds": 1916.38,
+    "text": "in their day-to-day work then that's going to be a problem for them at our company that is an"
+  },
+  {
+    "segment_id": "s0298",
+    "start_seconds": 1916.38,
+    "end_seconds": 1924.46,
+    "text": "expectation. However that's not necessarily what they're learning in their university program where"
+  },
+  {
+    "segment_id": "s0299",
+    "start_seconds": 1924.46,
+    "end_seconds": 1930.62,
+    "text": "maybe they have very much this even if they like using it personally they might have a"
+  },
+  {
+    "segment_id": "s0300",
+    "start_seconds": 1930.62,
+    "end_seconds": 1936.54,
+    "text": "negative association with AI in their day-to-day work because their day-to-day work has been"
+  },
+  {
+    "segment_id": "s0301",
+    "start_seconds": 1936.54,
+    "end_seconds": 1942.7,
+    "text": "university work and their university professors are up in arms about oh I'm guessing that you're"
+  },
+  {
+    "segment_id": "s0302",
+    "start_seconds": 1942.7,
+    "end_seconds": 1947.82,
+    "text": "using AI on this or I'm trying to prevent you from using AI on this or I'm using AI detection"
+  },
+  {
+    "segment_id": "s0303",
+    "start_seconds": 1947.82,
+    "end_seconds": 1955.34,
+    "text": "to prevent you from gaming this thing right which again I feel for the professors because a lot"
+  },
+  {
+    "segment_id": "s0304",
+    "start_seconds": 1955.34,
+    "end_seconds": 1959.9,
+    "text": "of times their hands are tied there maybe they don't know what to do so I definitely see that"
+  },
+  {
+    "segment_id": "s0305",
+    "start_seconds": 1959.9,
+    "end_seconds": 1965.58,
+    "text": "side of things but certainly those students if they form that association that's not what is present"
+  },
+  {
+    "segment_id": "s0306",
+    "start_seconds": 1965.58,
+    "end_seconds": 1973.18,
+    "text": "a lot of at least and I know certain companies are not as far along in their AI adoption right"
+  },
+  {
+    "segment_id": "s0307",
+    "start_seconds": 1973.18,
+    "end_seconds": 1978.06,
+    "text": "but the reality is we're going that direction whether anyone likes it or not and for you to"
+  },
+  {
+    "segment_id": "s0308",
+    "start_seconds": 1978.06,
+    "end_seconds": 1985.74,
+    "text": "have a job and a role you're going to use AI in that role so that is going to be an expectation."
+  },
+  {
+    "segment_id": "s0309",
+    "start_seconds": 1985.82,
+    "end_seconds": 1990.14,
+    "text": "Yeah I think you know when you tell me this you know when you talk about the professor you know"
+  },
+  {
+    "segment_id": "s0310",
+    "start_seconds": 1990.14,
+    "end_seconds": 1995.9,
+    "text": "trying to say don't do this and trying to detect it I don't have the answer to that but what I"
+  },
+  {
+    "segment_id": "s0311",
+    "start_seconds": 1995.9,
+    "end_seconds": 2003.02,
+    "text": "do have is my reaction to that is maybe maybe we're measuring the wrong thing"
+  },
+  {
+    "segment_id": "s0312",
+    "start_seconds": 2004.22,
+    "end_seconds": 2012.22,
+    "text": "maybe we need to find how do we get the student where the student needs to go without telling"
+  },
+  {
+    "segment_id": "s0313",
+    "start_seconds": 2012.22,
+    "end_seconds": 2016.22,
+    "text": "them that the tools that are going to be embedded in their lives for the rest of their lives"
+  },
+  {
+    "segment_id": "s0314",
+    "start_seconds": 2017.02,
+    "end_seconds": 2022.14,
+    "text": "are not fair you know that that is cheating that kind of perspective I think that needs to change"
+  },
+  {
+    "segment_id": "s0315",
+    "start_seconds": 2023.26,
+    "end_seconds": 2030.3,
+    "text": "we need to find a way of getting those critical skills to those students acknowledging that this"
+  },
+  {
+    "segment_id": "s0316",
+    "start_seconds": 2030.3,
+    "end_seconds": 2036.38,
+    "text": "you know we all go and drive cars and do things that are just completely part of our life"
+  },
+  {
+    "segment_id": "s0317",
+    "start_seconds": 2036.38,
+    "end_seconds": 2042.22,
+    "text": "this is also now part of that life and so we need to acknowledge that education is never going"
+  },
+  {
+    "segment_id": "s0318",
+    "start_seconds": 2042.22,
+    "end_seconds": 2048.78,
+    "text": "to be without this again and so that's kind of what that's kind of the the little parental"
+  },
+  {
+    "segment_id": "s0319",
+    "start_seconds": 2048.78,
+    "end_seconds": 2054.3,
+    "text": "mission that I'm on right here is trying to do don't claim to have all the answers but it's"
+  },
+  {
+    "segment_id": "s0320",
+    "start_seconds": 2054.3,
+    "end_seconds": 2059.58,
+    "text": "it's a process I think that we need to engage in in the large it's a societal problem that's only"
+  },
+  {
+    "segment_id": "s0321",
+    "start_seconds": 2059.58,
+    "end_seconds": 2065.02,
+    "text": "going to get worse as we go forward unless we we actually do that love hearing about"
+  },
+  {
+    "segment_id": "s0322",
+    "start_seconds": 2065.02,
+    "end_seconds": 2071.18,
+    "text": "produce efforts in and trying to just start moving things incrementally forward on that um I'd"
+  },
+  {
+    "segment_id": "s0323",
+    "start_seconds": 2071.18,
+    "end_seconds": 2075.9,
+    "text": "like to ask you a question what are your thoughts you know I'm talking to my daughter a lot about"
+  },
+  {
+    "segment_id": "s0324",
+    "start_seconds": 2075.9,
+    "end_seconds": 2080.86,
+    "text": "college I'm talking to about higher education you know what does it look like to go through graduate"
+  },
+  {
+    "segment_id": "s0325",
+    "start_seconds": 2080.86,
+    "end_seconds": 2089.74,
+    "text": "school what is a PhD in you know what kinds of passions that she has given the fact that the world is"
+  },
+  {
+    "segment_id": "s0326",
+    "start_seconds": 2089.74,
+    "end_seconds": 2096.38,
+    "text": "changing rapidly and none of us really know you know what kinds of changes in our career will be"
+  },
+  {
+    "segment_id": "s0327",
+    "start_seconds": 2096.38,
+    "end_seconds": 2102.22,
+    "text": "required because the world is changing what are your thoughts on higher education and um the utility"
+  },
+  {
+    "segment_id": "s0328",
+    "start_seconds": 2102.22,
+    "end_seconds": 2108.78,
+    "text": "of the PhD or how that utility may need to evolve to keep it to keep it relevant what are your thoughts"
+  },
+  {
+    "segment_id": "s0329",
+    "start_seconds": 2108.78,
+    "end_seconds": 2117.26,
+    "text": "there yeah I would say maybe just in reflecting on my own journey which is is mostly what I can"
+  },
+  {
+    "segment_id": "s0330",
+    "start_seconds": 2117.26,
+    "end_seconds": 2127.58,
+    "text": "do I guess sure what's interesting is I would say that in I grew more as an individual and"
+  },
+  {
+    "segment_id": "s0331",
+    "start_seconds": 2128.86,
+    "end_seconds": 2136.94,
+    "text": "my abilities as an individual in terms of uh confidence critical thinking problem solving creativity"
+  },
+  {
+    "segment_id": "s0332",
+    "start_seconds": 2136.94,
+    "end_seconds": 2144.38,
+    "text": "in my PhD program like by many many orders of magnitude then undergraduate or or high school sort of"
+  },
+  {
+    "segment_id": "s0333",
+    "start_seconds": 2144.46,
+    "end_seconds": 2151.74,
+    "text": "environment and I think that one that's because obviously it was a lot harder and so again that fits"
+  },
+  {
+    "segment_id": "s0334",
+    "start_seconds": 2151.74,
+    "end_seconds": 2161.98,
+    "text": "maybe my my leaning towards uh that side of the the utility of of struggle um in terms of your"
+  },
+  {
+    "segment_id": "s0335",
+    "start_seconds": 2161.98,
+    "end_seconds": 2168.54,
+    "text": "your growth but I think also the PhD if you're thinking about PhD specifically it is different from"
+  },
+  {
+    "segment_id": "s0336",
+    "start_seconds": 2169.42,
+    "end_seconds": 2178.62,
+    "text": "other educational endeavors in that it is necessarily like you can't get a PhD without publishing"
+  },
+  {
+    "segment_id": "s0337",
+    "start_seconds": 2178.62,
+    "end_seconds": 2186.78,
+    "text": "novel research right and so regardless of how well AI systems can help you parse through the"
+  },
+  {
+    "segment_id": "s0338",
+    "start_seconds": 2186.78,
+    "end_seconds": 2191.66,
+    "text": "state of the art they at the end of the day know the state of the art and I know that people are"
+  },
+  {
+    "segment_id": "s0339",
+    "start_seconds": 2191.66,
+    "end_seconds": 2198.06,
+    "text": "working on AI systems that can kind of autonomously make maybe discoveries of their own right"
+  },
+  {
+    "segment_id": "s0340",
+    "start_seconds": 2198.78,
+    "end_seconds": 2206.46,
+    "text": "and so I do think that AI systems could assist in that exploration of what is novel but to some"
+  },
+  {
+    "segment_id": "s0341",
+    "start_seconds": 2206.46,
+    "end_seconds": 2213.02,
+    "text": "degree the PhD does force you to say well here are the fundamentals I have a mental model of the"
+  },
+  {
+    "segment_id": "s0342",
+    "start_seconds": 2213.02,
+    "end_seconds": 2219.58,
+    "text": "fundamentals now where can I draw outside of the lines knowing also that others who deeply know"
+  },
+  {
+    "segment_id": "s0343",
+    "start_seconds": 2219.58,
+    "end_seconds": 2225.66,
+    "text": "the fundamentals are going to be skeptical of me and question me around this where I'm drawing"
+  },
+  {
+    "segment_id": "s0344",
+    "start_seconds": 2225.66,
+    "end_seconds": 2232.78,
+    "text": "outside of the lines right so I I very much appreciate and love you know looking back and I"
+  },
+  {
+    "segment_id": "s0345",
+    "start_seconds": 2232.78,
+    "end_seconds": 2238.46,
+    "text": "still love this to this day the idea of the poster session right I I drew outside of the lines"
+  },
+  {
+    "segment_id": "s0346",
+    "start_seconds": 2238.46,
+    "end_seconds": 2245.74,
+    "text": "I was creative and I'm saying that this is new territory and I think I'm making this progress in this"
+  },
+  {
+    "segment_id": "s0347",
+    "start_seconds": 2245.74,
+    "end_seconds": 2254.62,
+    "text": "area and I'm putting it on a poster in a room with 50 you know very experienced experts and physicists"
+  },
+  {
+    "segment_id": "s0348",
+    "start_seconds": 2254.7,
+    "end_seconds": 2260.06,
+    "text": "and professors and researchers in this room and they're all going to come up and ask me on the"
+  },
+  {
+    "segment_id": "s0349",
+    "start_seconds": 2260.06,
+    "end_seconds": 2268.22,
+    "text": "fly you know to they're all skeptical about you know my my work right and and I love that and"
+  },
+  {
+    "segment_id": "s0350",
+    "start_seconds": 2268.22,
+    "end_seconds": 2275.42,
+    "text": "I think that that it's not for everybody I and I'm not saying that everyone should do a PhD"
+  },
+  {
+    "segment_id": "s0351",
+    "start_seconds": 2275.42,
+    "end_seconds": 2282.06,
+    "text": "but I think it is unique within that you know educational paradigm and it produces some of that unique"
+  },
+  {
+    "segment_id": "s0352",
+    "start_seconds": 2282.06,
+    "end_seconds": 2291.42,
+    "text": "outcome where I think a lot of a lot of my confidence in operating and ambiguity came out of that"
+  },
+  {
+    "segment_id": "s0353",
+    "start_seconds": 2291.42,
+    "end_seconds": 2298.94,
+    "text": "process so it maybe it's less so the individual discoveries that I think are still valuable in that"
+  },
+  {
+    "segment_id": "s0354",
+    "start_seconds": 2298.94,
+    "end_seconds": 2304.7,
+    "text": "graduate school PhD program because I think you could argue well AI systems if they're good enough they"
+  },
+  {
+    "segment_id": "s0355",
+    "start_seconds": 2304.7,
+    "end_seconds": 2310.14,
+    "text": "could help us explore these topics and make new discoveries and it's more more that comfort level"
+  },
+  {
+    "segment_id": "s0356",
+    "start_seconds": 2310.14,
+    "end_seconds": 2317.02,
+    "text": "and working with ambiguity through the struggle towards a defensible position that you're confident"
+  },
+  {
+    "segment_id": "s0357",
+    "start_seconds": 2317.02,
+    "end_seconds": 2323.58,
+    "text": "in that that's actually a very creative process and I think that that's a value I think it's not"
+  },
+  {
+    "segment_id": "s0358",
+    "start_seconds": 2323.58,
+    "end_seconds": 2329.5,
+    "text": "the only way you can do that right entrepreneurs that create ventures right have a very similar"
+  },
+  {
+    "segment_id": "s0359",
+    "start_seconds": 2329.5,
+    "end_seconds": 2335.9,
+    "text": "type of process right and you could have an AI generate your business idea but at the end of the day"
+  },
+  {
+    "segment_id": "s0360",
+    "start_seconds": 2335.9,
+    "end_seconds": 2340.94,
+    "text": "that doesn't mean it has product market fit and even if it does have product market fit you can"
+  },
+  {
+    "segment_id": "s0361",
+    "start_seconds": 2340.94,
+    "end_seconds": 2347.18,
+    "text": "still sabotage your own business to make it not succeed it it's a very creative and difficult"
+  },
+  {
+    "segment_id": "s0362",
+    "start_seconds": 2347.18,
+    "end_seconds": 2353.18,
+    "text": "and you know struggle filled endeavor and so that produces that level of working in ambiguity,"
+  },
+  {
+    "segment_id": "s0363",
+    "start_seconds": 2353.18,
+    "end_seconds": 2359.02,
+    "text": "creativity etc and you know you could probably come up with other examples so there's the PhD"
+  },
+  {
+    "segment_id": "s0364",
+    "start_seconds": 2359.02,
+    "end_seconds": 2364.22,
+    "text": "there's entrepreneurship and venture building there's creative pursuits right whether it's you"
+  },
+  {
+    "segment_id": "s0365",
+    "start_seconds": 2364.3,
+    "end_seconds": 2373.18,
+    "text": "mentioned writing writing a new piece you know writing a book or art or whatever those things are"
+  },
+  {
+    "segment_id": "s0366",
+    "start_seconds": 2373.18,
+    "end_seconds": 2380.86,
+    "text": "that are pushing those boundaries where human creativity is still it is still what's needed"
+  },
+  {
+    "segment_id": "s0367",
+    "start_seconds": 2381.74,
+    "end_seconds": 2387.1,
+    "text": "I I think I strayed quite a bit from your initial question but those are some of what what it"
+  },
+  {
+    "segment_id": "s0368",
+    "start_seconds": 2387.1,
+    "end_seconds": 2393.5,
+    "text": "makes me think of those are maybe it's a definition of where is where we finding value"
+  },
+  {
+    "segment_id": "s0369",
+    "start_seconds": 2394.06,
+    "end_seconds": 2399.26,
+    "text": "in our creative endeavors as humans and how do we promote more of that which could be through a"
+  },
+  {
+    "segment_id": "s0370",
+    "start_seconds": 2399.26,
+    "end_seconds": 2405.5,
+    "text": "PhD program I think there's still relevant it could be through these other pursuits"
+  },
+  {
+    "segment_id": "s0371",
+    "start_seconds": 2406.7,
+    "end_seconds": 2412.14,
+    "text": "but yeah there's a real creative element at its core you know I know that you were saying that you"
+  },
+  {
+    "segment_id": "s0372",
+    "start_seconds": 2412.22,
+    "end_seconds": 2417.74,
+    "text": "had deviated a bit from the question but you you definitely inspired some thinking as we're"
+  },
+  {
+    "segment_id": "s0373",
+    "start_seconds": 2417.74,
+    "end_seconds": 2424.3,
+    "text": "winding up here on our on our discussion one of the things I think I'll take away and that"
+  },
+  {
+    "segment_id": "s0374",
+    "start_seconds": 2424.3,
+    "end_seconds": 2430.22,
+    "text": "maybe others might want to consider as well is with you talking about the value of ambiguity,"
+  },
+  {
+    "segment_id": "s0375",
+    "start_seconds": 2430.22,
+    "end_seconds": 2437.1,
+    "text": "creativity and the struggle itself and how that really you know enabled you to grow as a person"
+  },
+  {
+    "segment_id": "s0376",
+    "start_seconds": 2437.34,
+    "end_seconds": 2443.42,
+    "text": "you know you said orders of magnitude and as I'm looking at what if you were to take that process"
+  },
+  {
+    "segment_id": "s0377",
+    "start_seconds": 2444.54,
+    "end_seconds": 2449.58,
+    "text": "a little bit earlier in the educational process down to where you are addressing fundamentals"
+  },
+  {
+    "segment_id": "s0378",
+    "start_seconds": 2449.58,
+    "end_seconds": 2457.82,
+    "text": "how might introducing ambiguity, creativity and struggle you know and then allowing for some"
+  },
+  {
+    "segment_id": "s0379",
+    "start_seconds": 2457.82,
+    "end_seconds": 2464.62,
+    "text": "tooling to be part of that process introduce fundamentals in a way that creates that critical thinking"
+  },
+  {
+    "segment_id": "s0380",
+    "start_seconds": 2465.58,
+    "end_seconds": 2470.86,
+    "text": "enhances that creativity allows kids to do it though it may be a different path on how they're"
+  },
+  {
+    "segment_id": "s0381",
+    "start_seconds": 2470.86,
+    "end_seconds": 2475.98,
+    "text": "achieving that from what we're doing today you know a little bit less memorization and and that kind of"
+  },
+  {
+    "segment_id": "s0382",
+    "start_seconds": 2475.98,
+    "end_seconds": 2482.22,
+    "text": "stuff and a little bit more driving them forward and relying on the road stuff to the tool"
+  },
+  {
+    "segment_id": "s0383",
+    "start_seconds": 2483.02,
+    "end_seconds": 2488.38,
+    "text": "so that's that's where you've taken me Daniel and I appreciate that so it's given me something to think"
+  },
+  {
+    "segment_id": "s0384",
+    "start_seconds": 2488.46,
+    "end_seconds": 2495.5,
+    "text": "about any any final thoughts from you in terms of new Danny about to hit the world of this"
+  },
+  {
+    "segment_id": "s0385",
+    "start_seconds": 2495.5,
+    "end_seconds": 2502.06,
+    "text": "all all is with the caveat of I have no idea what I'm talking about but I think that's like"
+  },
+  {
+    "segment_id": "s0386",
+    "start_seconds": 2502.06,
+    "end_seconds": 2510.14,
+    "text": "maybe it ties back to the maybe it ties back to the PhD thing it's like I'm perfectly fine operating"
+  },
+  {
+    "segment_id": "s0387",
+    "start_seconds": 2510.14,
+    "end_seconds": 2517.66,
+    "text": "in this space where I don't I don't know everything and still having opinions and creativity"
+  },
+  {
+    "segment_id": "s0388",
+    "start_seconds": 2518.54,
+    "end_seconds": 2526.3,
+    "text": "and I think you know I recognize that caveat that I am no educational expert but I think it is"
+  },
+  {
+    "segment_id": "s0389",
+    "start_seconds": 2526.3,
+    "end_seconds": 2535.74,
+    "text": "an evidence of the fact that you can we can I hope into this future still develop people that have"
+  },
+  {
+    "segment_id": "s0390",
+    "start_seconds": 2535.74,
+    "end_seconds": 2541.02,
+    "text": "confidence and problem solving skills and creativity but I definitely think it's going to be"
+  },
+  {
+    "segment_id": "s0391",
+    "start_seconds": 2541.74,
+    "end_seconds": 2546.78,
+    "text": "going to be different moving forward and I guess maybe there's a follow-up show here in the future"
+  },
+  {
+    "segment_id": "s0392",
+    "start_seconds": 2546.78,
+    "end_seconds": 2553.1,
+    "text": "to maybe dive in with some educators specifically around how that's developing I certainly know"
+  },
+  {
+    "segment_id": "s0393",
+    "start_seconds": 2553.1,
+    "end_seconds": 2558.94,
+    "text": "from even my experience with other technologies that the educational systems are often behind"
+  },
+  {
+    "segment_id": "s0394",
+    "start_seconds": 2558.94,
+    "end_seconds": 2567.18,
+    "text": "you know even before AI that was true and that's problematic right the same with legislation"
+  },
+  {
+    "segment_id": "s0395",
+    "start_seconds": 2567.18,
+    "end_seconds": 2572.3,
+    "text": "right legislation is always behind what we're doing with technology and that creates its own"
+  },
+  {
+    "segment_id": "s0396",
+    "start_seconds": 2572.38,
+    "end_seconds": 2578.78,
+    "text": "problems as well but it doesn't mean that we can't catch up and make changes and so we'd love"
+  },
+  {
+    "segment_id": "s0397",
+    "start_seconds": 2578.78,
+    "end_seconds": 2583.82,
+    "text": "to get any connections to educational experts out there from our audience if you have them please send"
+  },
+  {
+    "segment_id": "s0398",
+    "start_seconds": 2583.82,
+    "end_seconds": 2589.42,
+    "text": "them our way good way to wind up thanks for the conversation today yeah same here talk to you"
+  },
+  {
+    "segment_id": "s0399",
+    "start_seconds": 2589.42,
+    "end_seconds": 2599.43,
+    "text": "soon Chris all right that's our show for this week if you haven't checked out our website"
+  },
+  {
+    "segment_id": "s0400",
+    "start_seconds": 2599.51,
+    "end_seconds": 2605.51,
+    "text": "head to practical a.fm and be sure to connect with us on linkedin ex or blue sky you'll see"
+  },
+  {
+    "segment_id": "s0401",
+    "start_seconds": 2605.51,
+    "end_seconds": 2610.07,
+    "text": "us posting insights related to the latest a.i. developments and we would love for you to join the"
+  },
+  {
+    "segment_id": "s0402",
+    "start_seconds": 2610.07,
+    "end_seconds": 2615.27,
+    "text": "conversation thanks to our partner prediction guard for providing operational support for the show"
+  },
+  {
+    "segment_id": "s0403",
+    "start_seconds": 2615.67,
+    "end_seconds": 2621.19,
+    "text": "check them out at predictionguard.com also thanks to breakmaster cylinder for the beats and to you"
+  },
+  {
+    "segment_id": "s0404",
+    "start_seconds": 2621.19,
+    "end_seconds": 2625.03,
+    "text": "for listening that's all for now but you'll hear from us again next week"
+  }
+]

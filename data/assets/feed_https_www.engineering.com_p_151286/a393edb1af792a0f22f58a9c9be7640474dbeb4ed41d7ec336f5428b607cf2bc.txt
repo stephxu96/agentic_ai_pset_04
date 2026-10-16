@@ -1,0 +1,74 @@
+Autodesk D&M execs Jeff Kinder and Sanjay Aggarwal opened up about Fusion’s upcoming AI features, a new agentic PLM experience, and their vision for Autodesk Assistant.
+Autodesk hosted AU 2026 in Las Vegas last week, and at the annual user conference the company announced
+plenty of product updates
+across its three industry clouds: Fusion for design and manufacturing; Forma for architecture, engineering, and construction; and Flow for media and entertainment.
+Surprising no one, many of those updates involved AI. And several, including a
+next generation Autodesk Assistant
+, hint at intriguing possibilities in the years to come.
+To learn more about those possibilities for design and manufacturing, Engineering.com spoke with Jeff Kinder, Autodesk’s executive vice president of D&M, and Sanjay Aggarwal, vice president of industry strategy for D&M.
+The following transcript has been edited for clarity and brevity.
+Engineering.com: Of all the announcements from AU, what do you consider the most impactful for engineers?
+Jeff Kinder: It’s hard to nail any one specific one. Hopefully you got a sense of an abundance of new AI powered capabilities. We’ve been doing a lot of work on this front. We wanted to show the volume of things that are coming out.
+This is a theme we introduced last year: task automation, workflow automation, systems automation. You saw a lot of task automation in AI in design and manufacturing today. AutoAssemble, AutoTimeline, System Modeler, Find Similar. It’s a laundry list of things. We are confident that, in Fusion, we are in the lead in the industry in terms of putting time-saving task automation features out in the market. The ones we’ve released before are getting great adoption, and we think these are going to be even more.
+Jeff Kinder, executive vice president of D&M, Autodesk. (Image: Autodesk.)
+I don’t want to undersell the agentic PLM, which I also think is a powerful launch. We’ve done a bunch of work and research. We pulled in some external consulting firms that talked to 200 different PLM customers of all sizes, and it was pretty remarkable how dissatisfied engineers are with their PLM system. The worst part of their day is when they wake up and have to go into the PLM system. And so thinking about that and what we’re capable of doing now with agentic technologies led us just to fundamentally rethink PLM. So we are incredibly excited about that. It’s going to launch in the next couple of quarters, and we’re excited to take that to market. This is not slapping AI on top of legacy PLM, big on-premise PLM solutions. This is a rethink of how PLM should work. So I’m incredibly excited about that, and I just love how the whole set of capabilities are coming together.
+Engineering.com: You say you’re not slapping AI on top of legacy PLM. Autodesk has one of those legacy PLM systems, Vault. Is this agentic PLM an entirely new application that you’re going to sell to users?
+Jeff Kinder: No. What we’re trying to do is maintain the power of a PLM system without the pain of the interaction. So it will use all the Fusion Manage capabilities, and think of it as a new experience that even goes above and beyond and extends into third-party systems. So whether it’s Slack or Microsoft Teams or Outlook, it can start to take those unstructured conversations and see there’s PLM information being described, and start to discern that and put it into your PLM system.
+Engineering.com: So you’re not looking to replace Vault?
+Jeff Kinder: Not at all. Vault and Inventor go hand-in-hand. So those are going nowhere. In fact we’ll keep adding agentic capabilities and AI into both of those products as well. They’re going to remain.
+Fusion Manage is really the PLM play. What we want to do is put an agentic experience on top of Fusion Manage. A lot of new customers will jump right into the full agentic experience. Customers that have been using Fusion Manage for a long time will probably start to experiment with it and slowly integrate the new agentic experience at whatever their pace they want.
+We believe the future is an industry cloud where design, make, now operate are all connected. Our industry grew up and has been well served for decades by point solutions, and those point solutions get better every year. We would argue, and this is the vision behind our industry clouds, the only way you’re going to get breakthrough productivity gains is when everything comes together. So when it’s all built in one cloud and the data flows along. That’s when you start to get huge productivity gains, and that’s really when you unlock automation and AI capabilities.
+For the record, we continue to invest in Vault and Inventor. Fusion is going to get better and better as an end-to-end industry cloud. Customers will decide when they’re ready to move. We’re going to support Inventor customers for as long as they want. Eventually, we believe they’ll want to start testing Fusion. There’s no set timeline for this. Fusion is a pull mechanism. It’s going to pull people in to experiment and start adopting. So we foresee well into the future maintaining both and supporting both customers.
+Engineering.com: Sanjay, what are you hearing from customers about AI and their expectations for it?
+Sanjay Aggarwal: As we talk to customers, we hear a lot about how do we really help in terms like productivity, agility, and resiliency? How does what we release solve one of those three business outcomes? What’s really cool about saving time and reducing repetitive tasks is not necessarily that now you need fewer people to do the same tasks. Now we can have the same people do more, do better, and innovate in different ways.
+Sanjay Aggarwal, vice president of industry strategy for D&M, Autodesk. (Image: Sanjay Aggarwal via LinkedIn.)
+A lot of what we hear from customers is, how can we do things that we couldn’t do before? That’s how we view AI. That’s how we’re putting all the work in context and how we’re trying to solve actual problems that we’re hearing on a daily basis. Deadlines are getting tighter and tighter. The supply chains around us are getting a lot more dynamic and tough to be around. How do we still produce better things in a world that’s a lot different, changing, and very dynamic? A lot of what we’re trying to do is really solve those core questions.
+Engineering.com: Jeff, when you were on stage discussing the new AI features for Fusion, there was some text on screen behind you that said AutoPart. We didn’t see that mentioned in
+your blog post about AI for D&M
+. What is AutoPart?
+Jeff Kinder: It’s going to be essentially prompt to BREP, such as mesh to BREP. We’re much more able now with our own trained models to create detailed, precise geometry in Fusion and be wide open as to what you might ask to be created. I couldn’t go through all of this on stage, but you’d then be using AutoAssemble and AutoTimeline to fit that AutoPart, that AI generated part, into an existing design.
+Engineering.com: When will these new AI features be available?
+Jeff Kinder: They’ll all be coming in the next quarter or two, and some of them, like AutoAssemble, are in our insider builds right now.
+Engineering.com: We’ve seen other AI tools that, like AutoTimeline, turn
+meshes to parametric CAD
+. But they’re not perfect—maybe they’ll get 80% of the way there, for example. How good is AutoTimeline?
+Jeff Kinder: It’s good that you’re using percentages because we’ve looked at this and tested it. We think it’s 90% plus.
+Translators have been around for a long time, but they’re kind of cumbersome to use. The beauty here is with AI, it’s easier to bring in a model and to use AutoTimeline to reconstruct those parametric features.
+Engineering.com:
+AutoConstrain and Automated Drawings
+are built right into Fusion. They don’t require any cloud credits or additional payment. Is that still going to be true of the new AI features?
+Jeff Kinder: We’re going to look at all the capabilities and figure out the value for customers, and the extent they drive compute costs, and try to strike the right balance.
+We’re going to be pretty generous in terms of granting AI capacity, so to speak, in the form of tokens. It’s a very low percentage of users that would ever hit the capacity, but at some point, some customers are going to use it so much that it’ll create a material cost for us. The idea is they have access then to buy excess capacity or buy excess tokens that can be used. We’ll go feature by feature and look through that, and we might have a way of thinking about each feature depending on the compute.
+I’ll throw a really simple AEC example. Designing a single-family home is very different than a 40-story skyscraper. So the level of complexity may drive more compute costs. So that’ll all go into an underlying equation. The AI orchestrator is going to help. Depending on what the question is, or the app, or the request, we can direct it to one of our models that we’ve already built, or go to a third party, or potentially go to an open source model.
+So we can direct it, which does something that we think is incredibly important. It is going to be less expensive for customers to use AI in Autodesk products than it would be to go to third parties, to go to a frontier model directly, because we’re not going to be charging on everything because some of the stuff we’ve already built in house. Some of the stuff we’ve trained models on. Some of the stuff an open source model will answer. If I’m OpenAI or Anthropic, that’s less interesting.
+Engineering.com: So there will be some sort of AI token system at some point?
+Jeff Kinder: Yeah. We’ll be granting tokens to every subscriber. We don’t have the exact number. We’ll probably start to test this in Fusion like we do many things. Every subscriber, including the free subscribers, will be granted a generous amount of tokens, and they’ll draw down those tokens. I think they will draw down much more slowly than they would in a third-party frontier model. And the way we’ve looked at what the usage is, very few of our customers are actually going to hit that hit that limit. But if there are some power users testing the limit, we’ll allow them to purchase more tokens to complete that task or build up their balance.
+Engineering.com: Could you tell us more about your vision for the next-generation Autodesk Assistant?
+Jeff Kinder: I’ve been doing software for a long time, and I grew up with drop-down menus and pull-down functions. My kids don’t think that way. And so we added the assistant to be much more of an interactive kind of natural language interaction. You saw some examples of voice yesterday. We’re going to add more and more capabilities to our assistant. It knows you now. It has your memory of what you know, what other interaction history that you have. So it’s got all of that. That’s in the assistant. That’s going to remain in all of our products.
+But we see a world where the assistant becomes a much bigger canvas that is truly agentic, and where you can start pulling in different pieces and different projects. Although you could do something in manufacturing where you’ve got Inventor and Fusion, you could pull both of those up into an into an assistant experience. So the assistant becomes a much more open front door to pull in multiple projects and products.
+Engineering.com: You described Fusion as a pull for Inventor users. Are you thinking of this new assistant interface as a pull as well, as a place where you want your users to eventually end up?
+Jeff Kinder: It could be. I always get a little hesitant to say, you know, this is where the world is going. We think that our users are getting very comfortable with having more agentic interfaces that you can almost dynamically compose. In our industry, we have a lot of legacy interfaces that have a lot in those drop-down menus and things to fill the page. How can you use an agentic interface to simplify that? To still have all the power there, but a much easier way to interact. We think the future will start to evolve that direction. How exactly will it evolve? How will it land? Unclear.
+You might also like
+Written by
+Michael Alba
+Michael is a senior editor at engineering.com. He covers computer hardware, design software, electronics, and more. Michael holds a degree in Engineering Physics from the University of Alberta.
+Artificial Intelligence
+AI in PLM: near-term expectations and challenges
+October 8, 2026
+Read
+AI in PLM: near-term expectations and challenges
+Artificial Intelligence
+When AI recommendations become engineering decisions
+October 1, 2026
+Read
+When AI recommendations become engineering decisions
+Artificial Intelligence
+Engineering.com parent company Arrowfly launches AI for Engineers
+October 1, 2026
+Read
+Engineering.com parent company Arrowfly launches AI for Engineers
+Design
+Welcome to the vibe-CAD era
+September 30, 2026
+Read
+Welcome to the vibe-CAD era

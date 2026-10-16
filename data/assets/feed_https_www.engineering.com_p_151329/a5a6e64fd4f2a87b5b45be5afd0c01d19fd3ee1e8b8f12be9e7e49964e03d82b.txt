@@ -1,0 +1,99 @@
+Comsol revealed what’s coming to Multiphysics 2027, Onshape users can now use AI to run simulations, and more news from AU 2026.
+You’re reading Engineering Paper, and here’s the latest design and simulation software news.
+First, some follow up from last week’s AU 2026, the Autodesk user conference that took place in Las Vegas, Nevada. In my
+coverage last week
+, I made two errors regarding neural CAD that Autodesk reached out to correct.
+I originally wrote:
+“In 2025, neural CAD was more promise than product. In 2026, that’s still true. Haley [Mike Haley, leader of the machine intelligence group at Autodesk Research] said in a media briefing last week that neural CAD has “significantly evolved,” yet, as with last year, it’s “still an exploration. This is not in the product yet.”
+There are, however, more things to explore. Haley spoke of three neural CAD features for Fusion, AutoTimeline, AutoAssemble, and Project Quill, that represent its evolution.”
+Haley’s quote “still an exploration. This is not in the product yet,” referred specifically to Project Quill, not neural CAD as a whole. As Autodesk pointed out to me, several features that it considers part of the neural CAD umbrella are live in Autodesk products, including AutoConstrain and Building Layout Explorer.
+The second correction also relates to Project Quill. It is not, as I stated, a feature for Fusion, but a separate Autodesk research exploration.
+For more from Autodesk on its AU announcements, check out
+Autodesk’s AI push is actually a pull
+, a Q&A with Jeff Kinder, Autodesk’s executive vice president of D&M, and Sanjay Aggarwal, vice president of industry strategy for D&M. They provide several new details about the AI features announced last week.
+One more announcement from AU 2026: Backflip AI has expanded its
+mesh-to-CAD platform
+to include
+two new modalities
+: 2D drawings and photos. Drawing-to-CAD and photo-to-CAD are live on
+Backflip’s site
+and integrated with Autodesk Fusion through the existing plugin. I’ll report more details next week.
+Comsol announces Multiphysics 2027
+Comsol has revealed the details of its
+upcoming Multiphysics 2027 release
+, which it says will be available later this fall.
+Like
+many other
+engineering software platforms lately, Multiphysics 2027 will introduce a model context protocol (MCP) server to allow external AI systems to interact directly with the simulation software. Comsol’s approach to AI has consistently been to outsource it to third parties—the AI chatbot
+introduced last year
+was merely an interface for users to connect their preferred external chatbot, such as ChatGPT or Claude. (In an arena where everyone seems to be recreating the same AI features again and again, this may be the sanest approach.)
+Another big update is the new Comsol Systems add-on, a block-based interface for systems-level modeling that couples with multiphysics models. Comsol says it will include a library of nearly 5000 ready-to-use components for electrical circuit diagrams, process flowsheets, and more.
+The new Comsol Systems add-on connects the flowsheet with the 3D multiphysics model of a continuous mixer. (Image: Comsol.)
+“Comsol Multiphysics version 2027 will enable users to connect detailed multiphysics models with system-level simulation in one integrated environment, providing deeper insight into the interactions that shape product and process performance,” Svante Littmarck, CEO of Comsol, said in the company’s announcement.
+Other additions to Multiphysics 2027 include a new Electric Motor Module; macOS and Linux support for the Application Builder; a new time-periodic solver for faster simulations in plasma, electromagnetics, and MEMS applications; and other general enhancements. I’ll report more when the new version is released later this year.
+SimScale on Onshape
+SimScale has a new integration for Onshape, PTC’s cloud CAD platform. The
+SimScale Engineering AI Agent
+, available through
+Onshape’s app store
+, can set up and run SimScale simulations directly from Onshape.
+“From one prompt, the agent can take a CAD model, including geometry that isn’t yet simulation-ready, propose an appropriate setup, mesh and run the physics, and report the results back in the same Onshape environment where the model lives,” reads SimScale’s press release.
+Screenshot of SimScale’s Engineering AI Agent for Onshape. (Image: SimScale.)
+The Engineering AI Agent can run CFD, FEA, thermal, and electromagnetics simulations. Users can access all agent-run simulations within SimScale for post-processing or refinement.
+Letter to the editor
+In reply to
+Solidworks users spend “blue tokens” on AI drawings, insights and more
+, John Schindler wrote:
+“One word sums it up: Enshittification.
+I don’t know who started it but it’s about to drive me to FreeCad. I am an early adopter of Fusion (360), with a paid subscription grandfathered in at a slightly lower price. When I started with it, there were several FEA simulations that would run locally. Then they became cloud-hosted and ran more slowly, for a fee, and the tokens expired at the end of the year. That is especially insidious for a small-time user, who might need to answer an occasional problem like “if I apply 25 W on a 1 cm circle on a sheet of stainless steel, how hot will it get?”
+There’s no way to avoid the added cost. Vendors may argue that it is cheaper to buy the tokens than to hire a consultant to do the calculations, but the cost still goes up, and it’s basically a zero-sum game with most people losing.
+I note that one example you give is asking “What is the surface area of this component?” For Fusion (360), at the moment, this is still free, and not much harder than right-clicking a line in the tree. I’ll be watching for this to disappear behind a paywall.”
+If you too would like to share your thoughts, you can reach me at
+[email protected]
+.
+Quick hits
+BIM developer Vectorworks, owned by the Nemetschek Group, has released
+Vectorworks 2027
+. Updates included better textures, improved GPU acceleration, and integrated AI visualization with Nano Banana, among others.
+IMSI Design has release the latest version of its CAD software,
+TurboCAD 2026.1
+, which includes “approximately 200 improvements, updates, and fixes.”
+SPEC has released
+SPECviewperf 15.0.1 Linux Edition
+, the latest version of its benchmark software for graphics performance in professional applications. It includes a new workload for Blender and updated workloads for Catia, Creo, Maya, Solidworks, and NX. (Back when I was
+reviewing hardware
+for Engineering.com, I ran SPECviewperf all the time, albeit on Windows. These workloads are burned into my brain.)
+HBK and subsidiary VI-grade have
+partnered with Movedot
+to bring AI agents to automotive testing, simulation, and validation. HBK and VI-grade will offer Movedot’s AI technology alongside their automotive simulators and test solutions.
+One last link
+If you read only one article today, well, presumably you’ve just finished it. But if you have time for one more, I strongly recommend Kenneth Wong’s
+How real engineers are using AI surrogate models for simulation
+.
+Got news, tips, comments, or complaints? Reach me at
+[email protected]
+.
+You might also like
+Written by
+Michael Alba
+Michael is a senior editor at engineering.com. He covers computer hardware, design software, electronics, and more. Michael holds a degree in Engineering Physics from the University of Alberta.
+Artificial Intelligence
+AI in PLM: near-term expectations and challenges
+October 8, 2026
+Read
+AI in PLM: near-term expectations and challenges
+Industry News
+Graphisoft updates Archicad portfolio with AI capabilities
+October 8, 2026
+Read
+Graphisoft updates Archicad portfolio with AI capabilities
+Artificial Intelligence
+When AI recommendations become engineering decisions
+October 1, 2026
+Read
+When AI recommendations become engineering decisions
+Simulation
+Breaking the bottleneck: How Siemens moves simulation upfront
+October 1, 2026
+Read
+Breaking the bottleneck: How Siemens moves simulation upfront

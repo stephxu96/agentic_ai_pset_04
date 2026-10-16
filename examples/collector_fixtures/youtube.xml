@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:yt="http://www.youtube.com/xml/schemas/2015">
+<title>Fictional CAD channel</title>
+<entry><yt:videoId>abcdefghijk</yt:videoId><title>Fixture video newest</title><published>2026-10-14T12:00:00+00:00</published><link rel="alternate" href="https://www.youtube.com/watch?v=abcdefghijk"/></entry>
+<entry><yt:videoId>bcdefghijkl</yt:videoId><title>Fixture video older</title><published>2026-10-13T12:00:00+00:00</published><link rel="alternate" href="https://www.youtube.com/watch?v=bcdefghijkl"/></entry>
+</feed>

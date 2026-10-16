@@ -1,0 +1,186 @@
+July 28, 2026
+Real-to-sim-to-real (R2S2R) as a scalable engine for training and evaluating robot policies
+Building Worlds That Train Robots
+Fei-Fei Li and Yunzhu Li join Martin Casado (a16z) to discuss the SceniX acquisition and how simulation is transforming robotics. Watch the full conversation
+here
+When
+spatial intelligence
+becomes physical, the north star goal is to advance the field of robotics. Many laboratory demonstrations of robots today show promising progress, but the real challenge is making them work reliably in the real world, where objects shift, clutter accumulates, lighting changes, and physical interactions vary from one trial to the next. This gap between a compelling demo and reliable operation is a major barrier to putting robotic systems to work at scale.
+Preparing robots for the real world requires extensive data collection and repeated testing on physical hardware. Each new task or environment can demand substantial manual effort, while failures are slow to identify and costly to recover from. Closing this gap requires more than better policy learning algorithms. We must develop a scalable, data-driven way to create the experience robots need for training and evaluation before and after they enter the field.
+On
+July 21
+, SceniX, a robotics and simulation company, joined World Labs. SceniX has been building systems that turn real robots, environments, and interactions into simulations for policy training and evaluation, developing a real-to-sim-to-real (R2S2R) engine that turns one physical task into many controllable, reusable worlds, helping robotics teams train policy models and test changes faster, uncover failures earlier, and reduce costly experimentation on hardware.
+The work by the SceniX team deepens World Labs’ technology development in spatial intelligence, and broadens our use cases from virtual to physical environments. As we continue to make progress, our generative world models will not only create realistic 3D scenes but also become increasingly aligned with the reality and variation that robots must interact with, learn from, and be evaluated in. And this is just the beginning.
+Today, we share some early results from the R2S2R engine. Using our proprietary technology, our model generates simulations aligned with reality that allow robots to do what has long been considered out of reach: learn complex manipulation tasks with zero real-world training data; predict and evaluate through simulation which robotic policies will succeed or fail in the real world, without extensive and expensive physical trial and error; and then operate reliably for hours on physical robots in real-world settings.
+One real task, thousands of variations:
+We reconstruct a real task as an interactive simulation that preserves task-relevant observations and dynamics, then systematically vary appearance, object configuration, clutter, physics, robot state, and camera viewpoint to create the breadth of experience a robot needs to generalize.
+Scaling robotic intelligence by scaling the worlds in which robots learn
+Scaling robot learning is the most critical bottleneck for robots. While we have seen rapid advances in robot learning methods such as vision-language-action models (VLAs) and world-action models (WAMs), the key bottleneck is not architecture alone, but experience and evaluation at scale.
+Unlike internet data used to train language models, robot experience is expensive to collect and difficult to control. Every iteration consumes hardware time: objects must be reset, failures recovered from, and systems maintained. Even internet-scale video data falls short of systematically covering the environments, objects, appearances, physical properties, robot states, robot embodiments, and failure conditions that are required for training reliable and deployable robots in the real world. The same lesson was learned in the development of autonomous driving, which has a much simpler physical embodiment and a less complex task environment compared to general robotics.
+In our
+functional taxonomy of world models
+, spanning renderers, simulators, and planners, we argued that the simulator is the linchpin because it turns a world into a place where agents can act, learn, and be evaluated. The work we share here puts that argument to the test. Indeed, some of the most successful L3 or L4-level self-driving cars running on the road today are powered by models trained using both real-world driving and simulation data. Furthermore, many aircraft, rockets, drones, or quadruped locomotion systems have been developed and tested using simulation systems that respond under different conditions and actions. We believe the same is true for training robots of various embodiments that can perform a much wider range of complex tasks.
+Building a simulation for each real-world task has traditionally been costly, difficult to scale, and prone to visual, geometric, and dynamic gaps with reality. Our R2S2R engine takes a different approach. Combining spatially coherent environments generated by world models with task-aligned robotic simulation, R2S2R achieves high-fidelity sim-real alignment at scale by preserving not only how the world looks, but how it acts when the robot interacts with it.
+We share our results through two parts of the R2S2R engine:
+Real-to-Sim:
+Transform physical robots, sensors, environments, objects, and interactions into simulations that preserve task-relevant observations and dynamics
+Sim-to-Real:
+Train and test robotic policies in simulated worlds and determine whether their performance in simulation predicts their performance in reality
+The key result here is the closing of the loop between real-to-sim (R2S) and sim-to-real (S2R). For the first time, robot learning policies trained entirely in simulation transfer directly across diverse robots and tasks, while simulated evaluation predicts relative policy performance and failure regions on hardware. Together, these capabilities make R2S2R a repeatable engine for training and evaluation, with faster and cheaper iteration.
+Real-to-Sim: Reconstructing real robotic tasks as aligned simulations
+0:00
+/
+0:00
+Bimanual box packing:
+In this bimanual box-packing task, simulation and reality execute the same action sequence in open loop, producing closely matched observations, object motion, and outcomes.
+Achieving this alignment consistently across different environments and tasks requires more than a traditional simulator can do.
+We have developed a novel, generative world modeling system that can output high-fidelity visual appearance, accurate geometry, and realistic physics and dynamics to achieve the desired real-to-sim alignment.
+Starting from a physical task, we capture the robot, sensors, surroundings, objects, and task demonstrations, then reconstruct them as an interactive world that preserves both what the robot perceives and the physical interactions that determine success or failure.
+Real environments do not come with clean measurements. Object shape, weight, and friction may be uncertain; cameras and robots can differ from their specifications; and cables, packaging, and tools deform in ways that simple models cannot fully capture. Our system therefore combines different representations and modeling techniques according to what matters for each task.
+We validate each reconstructed world through matched open-loop interactions in simulation and reality, directly comparing observations, object responses, and outcomes.
+The examples below span rigid, articulated, and deformable objects for different robots, sensors, environments, and contact-rich interactions.
+These results set a new bar for sim-real alignment in robot manipulation, matching both appearance and dynamics across a breadth of challenging objects and tasks.
+The significance is not any one paired video, but a repeatable system that produces aligned worlds across interactions that have traditionally been difficult to simulate.
+0:00
+/
+0:00
+Cable manipulation with YAM:
+Sliding, routing, and plugging cables through sustained contact.
+0:00
+/
+0:00
+Elastic cable insertion with ALOHA:
+Picking up and inserting an elastic cable end into a hole under deformation and sustained contact.
+0:00
+/
+0:00
+Power-cord manipulation with RB-Y1:
+Bimanual manipulation and routing of a deformable cable around a refrigerator.
+0:00
+/
+0:00
+Cube handover with ALOHA:
+Precise picking, handover, and placement across two robot arms.
+Sim-to-Real: Training and evaluating policies for real-world deployment
+Once a real-world task is reconstructed, its aligned simulation becomes a scalable engine for training and evaluation. Training produces new policies; evaluation actively searches for where they fail; and those failures guide what experience to generate next. Without a reliable simulation environment, doing these in the real, physical world often becomes prohibitively expensive and time-consuming.
+Our R2S2R engine allows for a closed-loop learning process: find the weakness, generate the right interactive experience, and improve the policy all in simulation, before returning to hardware.
+Training
+REAL
+0:00
+/
+0:00
+REAL
+0:00
+/
+0:00
+Bimanual box packing with ALOHA:
+Trained with zero real-world data, the policy transfers directly from an aligned simulation to an ALOHA robot performing bimanual box packing.
+REAL
+0:00
+/
+0:00
+REAL
+0:00
+/
+0:00
+Robustness to lighting perturbation:
+The same policy under lighting perturbation.
+Physical data collection is constrained by what can be staged, repeated, and safely executed on hardware. In simulation, we can systematically vary object configurations, robot states, viewpoints, appearance, physical properties, speed, and difficulty, exposing policies to conditions that would be costly or impractical to reproduce in reality.
+This enables policy learning algorithms to repeatedly and intentionally encounter difficult states and learn from both successes and failures without resetting a physical environment after every trial. Simulation also provides supervision that is difficult to obtain on hardware, including precise object states, contacts, visibility, forces, and outcomes under alternative actions.
+One sim-to-real aligned world can serve many policies and many robots.
+Because R2S2R is both policy- and embodiment-agnostic, the same system can serve customers with different robots, sensors, policy stacks, and deployment needs. A task reconstructed once can support new models and hardware over time, turning each world into reusable infrastructure rather than a one-off simulation.
+The policies shown here were trained entirely in simulation, with zero real-world training data, and transferred directly to diverse real robot platforms. The tasks span deformable cables, articulated boxes, rigid objects, and cluttered pick-and-place.
+The significance is not a single successful sim-to-real demonstration, but the generalization capability across diverse, customer-inspired tasks and challenging physical interactions. These learned policies operated autonomously for extended periods without failure or human intervention. This provides evidence that aligned simulation can be a primary source of training experience for real-world robot deployment, not merely a supplement to hardware data. The economic implication of this technology is enormous.
+REAL
+0:00
+/
+0:00
+REAL
+0:00
+/
+0:00
+Power-cord manipulation with RB-Y1:
+Bimanual manipulation and routing of a deformable cable around a refrigerator. Operated autonomously for one hour without intervention.
+REAL
+0:00
+/
+0:00
+REAL
+0:00
+/
+0:00
+Cable manipulation with YAM:
+Sliding, routing, plugging, and unplugging cables through sustained contact. Operated autonomously for one hour without intervention.
+REAL
+0:00
+/
+0:00
+REAL
+0:00
+/
+0:00
+Test-tube transfer with Flexiv:
+Precise grasping and placement under tight geometric tolerances. Operated autonomously for one hour without intervention.
+REAL
+0:00
+/
+0:00
+REAL
+0:00
+/
+0:00
+Marker singulation with xArm:
+Grasping thin, similarly shaped objects from clutter one at a time. Operated autonomously for one hour without intervention.
+REAL
+0:00
+/
+0:00
+REAL
+0:00
+/
+0:00
+Pencil singulation with xArm:
+Reliably extracting thin objects from dense clutter one at a time. Operated autonomously for one hour without intervention.
+Evaluation
+Robot development iterates orders of magnitude more slowly than language-model development because policy evaluation remains heavily tied to physical hardware. For teams building robotic systems and robot foundation models, this is a fundamental bottleneck.
+Sim-to-real aligned simulation makes evaluation scalable.
+Instead of passively waiting for failures to appear on hardware, teams can actively search for them across thousands of controlled conditions, screen out a significant portion of checkpoints before real-world testing, and reserve costly hardware evaluation for the most promising policies. The result is faster iteration, broader coverage, and substantially lower cost.
+A useful simulation need not match real-world success rates exactly. It must support the same decisions as reality: identify where policies succeed and fail, rank which policies are better, and predict whether improvements during training will carry over to hardware.
+Below, we use an ALOHA bimanual cube-handover task to demonstrate this scalable evaluation capability. All results in this section are obtained from closed-loop policy rollouts in both simulation and reality.
+Simulation reproduces real-world behavior
+A key success measure of the R2S2R engine is whether the simulation can reproduce how a policy behaves near the boundary between success and failure, which is a necessary condition to optimize the ensuing policy learning algorithm.
+0:00
+/
+0:00
+Matched near-boundary success in simulation and reality:
+The policy normally grasps near the center of the cube. Near its generalization boundary, it grasps close to the edge and nearly fails, yet completes the task in both simulation and reality. Most importantly, the same near-failure behavior and outcome appear in both worlds.
+0:00
+/
+0:00
+Matched failure in simulation and reality:
+The corresponding failure behavior and outcome appear in both worlds.
+Together, these examples show that the simulation captures more than the task setup or final success label. It reproduces the conditions that push a policy toward success or failure.
+Simulation predicts real-world performance
+For teams developing robotic systems and foundation models, aligned simulation provides a systematic evaluation profile across policy and data iterations. It reveals which checkpoints perform best, where they succeed or fail, and what training data to generate next.
+Here, ID refers to cube positions within the distribution used to post-train the policy, while OOD refers to held-out positions outside that region.
+Across policy architectures, training configurations, and both ID and OOD settings, policies that perform better in simulation also perform better on hardware. Simulation preserves their relative ranking, tracks improvements and plateaus across checkpoints, and reveals similar spatial regions of success and failure.
+This is the key result: any robotics team can now use the R2S2R engine to screen checkpoints, catch regressions, guide policy and data iteration, and decide which models warrant costly hardware evaluation.
+Aligned simulation becomes a high-throughput evaluation layer for robot development.
+Simulation predicts real-world policy performance:
+Across policy architectures, training configurations, and checkpoints, simulated evaluation preserves policy rankings, tracks progress during training, and reveals similar spatial patterns of success and failure. Each checkpoint is evaluated on 2,000 simulated trials (1,000 ID and 1,000 OOD) and 100 real-world trials (50 ID and 50 OOD).
+Closing the loop
+The gap between a compelling demo and a deployable robot will not be closed by better policies or more real-world data alone. It requires far more diverse, controllable, scalable, and physically grounded experience than can realistically be collected on hardware. R2S2R is how we create it at scale.
+Real-to-Sim turns physical tasks into aligned, controllable worlds. Sim-to-Real uses those worlds to train policies with minimal real-world training data, uncover failures, and predict performance on hardware. Together, they form a closed learning loop in which real-world outcomes improve the world model, the data, and the policy.
+In our taxonomy of world models, we called the simulator the linchpin: the place where agents can act, learn, and be evaluated. These results begin to show why. Trusted simulation can move robot development beyond slow, expensive, hardware-bound iteration toward more scalable and cheaper training and evaluation.
+Reliable robots in warehouses, laboratories, and homes will emerge when scalable world models meet real robotic systems. That is the work ahead for World Labs.
+To scale robot intelligence, we must scale the worlds in which robots learn.
+Excited about our vision? Come
+join us
+.
+Read More
+September 28, 2026
+World Labs is Joining AMD
+Accelerating the future of AI research and compute
+September 28, 2026
+To Seek a Newer World
+Our journey from World Labs to AMD

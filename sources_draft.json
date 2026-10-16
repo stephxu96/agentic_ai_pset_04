@@ -1,0 +1,86 @@
+[
+  {
+    "source_id": "cadalyst",
+    "publisher_id": "cadalyst",
+    "kind": "feed",
+    "url": "https://blog.cadalyst.com/cadmanagement/rss.xml",
+    "note": "Verified 2026-10-15: 1 item(s) in the 45-day window; latest 2026-09-25."
+  },
+  {
+    "source_id": "mit-cdfg-survey",
+    "publisher_id": "mit-cdfg",
+    "kind": "feed",
+    "url": "https://github.com/mit-cdfg/Survey-AI-for-3D-modeling-Robotics/commits/main.atom",
+    "note": "Verified 2026-10-15: 20 item(s) in the 45-day window; latest 2026-10-15."
+  },
+  {
+    "source_id": "mit-tech-review",
+    "publisher_id": "mit-technology-review",
+    "kind": "feed",
+    "url": "https://www.technologyreview.com/feed/",
+    "note": "Verified 2026-10-15: 10 item(s) in the 45-day window; latest 2026-10-15."
+  },
+  {
+    "source_id": "xometry-blog",
+    "publisher_id": "xometry",
+    "kind": "feed",
+    "url": "https://www.xometry.com/rss.xml",
+    "note": "Verified 2026-10-15: 30 item(s) in the 45-day window; latest 2026-10-12."
+  },
+  {
+    "source_id": "practical-ai",
+    "publisher_id": "changelog-media",
+    "kind": "podcast",
+    "url": "https://feeds.transistor.fm/practical-ai-machine-learning-data-science-llm",
+    "note": "Verified 2026-10-15: 7 item(s) in the 45-day window; latest 2026-10-15."
+  },
+  {
+    "source_id": "researchers-guide",
+    "publisher_id": "physical-ai-podcast",
+    "kind": "podcast",
+    "url": "https://physicalaipodcast.co/feed.xml",
+    "note": "Verified 2026-10-15: 6 item(s) in the 45-day window; latest 2026-10-10."
+  },
+  {
+    "source_id": "lex-fridman",
+    "publisher_id": "lex-fridman",
+    "kind": "podcast",
+    "url": "https://lexfridman.com/feed/podcast/",
+    "note": "Verified 2026-10-15: 1 item(s) in the 45-day window; latest 2026-09-17."
+  },
+  {
+    "source_id": "latent-space",
+    "publisher_id": "latent-space",
+    "kind": "podcast",
+    "url": "https://www.latent.space/feed",
+    "note": "Verified 2026-10-15: 20 item(s) in the 45-day window; latest 2026-10-15."
+  },
+  {
+    "source_id": "yt-autodesk",
+    "publisher_id": "autodesk",
+    "kind": "youtube",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCD98uquOUa1kKSdcHgCKEXA",
+    "note": "Verified 2026-10-15: 5 item(s) in the 45-day window; latest 2026-10-08."
+  },
+  {
+    "source_id": "yt-pi",
+    "publisher_id": "physical-intelligence",
+    "kind": "youtube",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCCVlN4Yra0QOz71FeVHbXhA",
+    "note": "Verified 2026-10-15: 0 item(s) in the 45-day window; latest 2025-11-18."
+  },
+  {
+    "source_id": "yt-a16z",
+    "publisher_id": "a16z",
+    "kind": "youtube",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCQ1VQj-37kl2yS_VUhfQHsw",
+    "note": "Verified 2026-10-15: 2 item(s) in the 45-day window; latest 2026-10-08."
+  },
+  {
+    "source_id": "yt-nvidia",
+    "publisher_id": "nvidia",
+    "kind": "youtube",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCL-g3eGJi1omSDSz48AML-g",
+    "note": "Verified 2026-10-15: 15 item(s) in the 45-day window; latest 2026-10-13."
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "piece_id": "03",
+  "ready": false,
+  "issues": [
+    "Startup-watch requirement unmet: no AI-native startup is featured with a build, buy, or wait implication.",
+    "Series podcast-evidence requirement remains unmet; limitations flags the gap but the brief cannot satisfy the required cross-format coverage.",
+    "Claim 03-c4 is labeled reported_fact although it relies on a PTC-authored demonstration; classify the claimed robustness outcome as source_claim or limit it to what the video visibly demonstrates.",
+    "Synthesis overstates the PTC example by saying robustness can be deliberately encoded; one vendor tutorial demonstrates one workflow and provides no comparative robustness evidence.",
+    "The argument’s broad recommendation to treat agentic features as assistive systems is reasonable inference, but it lacks a claim-level evidence reference tying that recommendation to the cited checks."
+  ]
+}

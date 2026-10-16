@@ -1,0 +1,200 @@
+[
+  {
+    "segment_id": "s0001",
+    "start_seconds": 0.0,
+    "end_seconds": 7.0,
+    "text": "Changing a dimension in a sketch can feel like playing mind sweeper, one click and errors go off all over the screen."
+  },
+  {
+    "segment_id": "s0002",
+    "start_seconds": 7.0,
+    "end_seconds": 12.0,
+    "text": "The complex sketches and project geometry are usually the culprits."
+  },
+  {
+    "segment_id": "s0003",
+    "start_seconds": 12.0,
+    "end_seconds": 16.0,
+    "text": "Today I'll show you five techniques that make your designs more robust."
+  },
+  {
+    "segment_id": "s0004",
+    "start_seconds": 16.0,
+    "end_seconds": 21.0,
+    "text": "Technique one, use sketch or imprinting with simple sketches."
+  },
+  {
+    "segment_id": "s0005",
+    "start_seconds": 21.0,
+    "end_seconds": 27.0,
+    "text": "Start with a square block, add fields, then add a sketch on the top face, and it imprints the final shape."
+  },
+  {
+    "segment_id": "s0006",
+    "start_seconds": 27.0,
+    "end_seconds": 34.0,
+    "text": "Instead of one, then sketch, you get several simple ones that are easy to read and change later."
+  },
+  {
+    "segment_id": "s0007",
+    "start_seconds": 34.0,
+    "end_seconds": 40.0,
+    "text": "Technique two, use square variables to turn edge selections into face elections."
+  },
+  {
+    "segment_id": "s0008",
+    "start_seconds": 40.0,
+    "end_seconds": 43.0,
+    "text": "This casting needs softer side faces."
+  },
+  {
+    "segment_id": "s0009",
+    "start_seconds": 43.0,
+    "end_seconds": 51.0,
+    "text": "A rules of face creates them from edges, but if you pick those edges one by one, adding a removing and edge breaks the feature."
+  },
+  {
+    "segment_id": "s0010",
+    "start_seconds": 51.0,
+    "end_seconds": 58.0,
+    "text": "Instead create a query variable that collects all the bounding edges of the face and select it in the rules of face dialogue."
+  },
+  {
+    "segment_id": "s0011",
+    "start_seconds": 58.0,
+    "end_seconds": 62.0,
+    "text": "Next, use thicken to create a shell and merge it with the frame."
+  },
+  {
+    "segment_id": "s0012",
+    "start_seconds": 62.0,
+    "end_seconds": 69.0,
+    "text": "Now, if you add a slot upstream, the rules of face updates with drafted faces and no errors."
+  },
+  {
+    "segment_id": "s0013",
+    "start_seconds": 69.0,
+    "end_seconds": 73.0,
+    "text": "Because the query follows the face, not individual edges."
+  },
+  {
+    "segment_id": "s0014",
+    "start_seconds": 73.0,
+    "end_seconds": 78.0,
+    "text": "Technique three, define removal regions with surfaces, not sketches."
+  },
+  {
+    "segment_id": "s0015",
+    "start_seconds": 79.0,
+    "end_seconds": 89.0,
+    "text": "To create a pocket, duplicate a face with offset surface, resize it with move boundary, then use thicken to remove the material."
+  },
+  {
+    "segment_id": "s0016",
+    "start_seconds": 89.0,
+    "end_seconds": 93.0,
+    "text": "You won't need to fix sketch constraints when the model changes."
+  },
+  {
+    "segment_id": "s0017",
+    "start_seconds": 93.0,
+    "end_seconds": 98.0,
+    "text": "Technique four, use query variables for more complex elections."
+  },
+  {
+    "segment_id": "s0018",
+    "start_seconds": 98.0,
+    "end_seconds": 101.0,
+    "text": "Now, let's fill out the corners of the pocket."
+  },
+  {
+    "segment_id": "s0019",
+    "start_seconds": 101.0,
+    "end_seconds": 104.0,
+    "text": "Slating every edge by hand is tedious."
+  },
+  {
+    "segment_id": "s0020",
+    "start_seconds": 104.0,
+    "end_seconds": 109.0,
+    "text": "Instead, build a query variables that collects the corner edges."
+  },
+  {
+    "segment_id": "s0021",
+    "start_seconds": 109.0,
+    "end_seconds": 116.0,
+    "text": "First, query the edges created by the thickened feature, and narrowed them down to concave edges."
+  },
+  {
+    "segment_id": "s0022",
+    "start_seconds": 116.0,
+    "end_seconds": 123.0,
+    "text": "Then, add an adjacency filter to keep only edges that share vertices with the top face."
+  },
+  {
+    "segment_id": "s0023",
+    "start_seconds": 123.0,
+    "end_seconds": 125.0,
+    "text": "And put this variable in the field."
+  },
+  {
+    "segment_id": "s0024",
+    "start_seconds": 125.0,
+    "end_seconds": 133.0,
+    "text": "If you add reports later, just include the root feature in the query, and the new edges are picked up automatically."
+  },
+  {
+    "segment_id": "s0025",
+    "start_seconds": 133.0,
+    "end_seconds": 138.0,
+    "text": "One more tip, mirroring faces performs better than mirroring features."
+  },
+  {
+    "segment_id": "s0026",
+    "start_seconds": 138.0,
+    "end_seconds": 142.0,
+    "text": "Create another query variable for the pocket faces and mirroring."
+  },
+  {
+    "segment_id": "s0027",
+    "start_seconds": 142.0,
+    "end_seconds": 146.0,
+    "text": "When you update the pockets, the mirror follows."
+  },
+  {
+    "segment_id": "s0028",
+    "start_seconds": 146.0,
+    "end_seconds": 150.0,
+    "text": "Technique five, use their editing to create new part."
+  },
+  {
+    "segment_id": "s0029",
+    "start_seconds": 150.0,
+    "end_seconds": 158.0,
+    "text": "To make a cover plate that shares the same interface as to straight from the face instead of sketching project edges."
+  },
+  {
+    "segment_id": "s0030",
+    "start_seconds": 158.0,
+    "end_seconds": 162.0,
+    "text": "Set a Boolean option to new to create a separate part."
+  },
+  {
+    "segment_id": "s0031",
+    "start_seconds": 162.0,
+    "end_seconds": 167.0,
+    "text": "Referencing the face directly is of a more robust than managing a sketch."
+  },
+  {
+    "segment_id": "s0032",
+    "start_seconds": 167.0,
+    "end_seconds": 171.0,
+    "text": "Try these on your next model, and you'll spend a lot less time repairing errors."
+  },
+  {
+    "segment_id": "s0033",
+    "start_seconds": 171.0,
+    "end_seconds": 175.0,
+    "text": "Thanks for watching and stay tuned for next week's active."
+  }
+]

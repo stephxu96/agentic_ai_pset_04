@@ -1,0 +1,22 @@
+Beyond features such as extrude,
+revolve, sweep, and loft, Onshape allows
+users to extend its native capabilities
+with custom [music] features.
+These are first-class citizens written
+in the same language as standard
+features and added directly to a part
+studio's feature list. [music]
+Adding a custom feature to your features
+toolbar is easy.
+One option is to select the add custom
+features button from within a part
+[music] studio and search for the
+desired custom feature, being sure to
+use the published feature studio filter.
+Another option is to select the add
+custom features button from the features
+source Onshape [music] document.
+Adding custom features can speed up
+almost any workflow from [music]
+lightening parts, creating threads, or
+preparing sheets for laser cutting.

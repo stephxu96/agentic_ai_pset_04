@@ -1,0 +1,56 @@
+[
+  {
+    "segment_id": "s0001",
+    "start_seconds": 0.0,
+    "end_seconds": 8.0,
+    "text": "Here's how to turn robot CAD files and dissimulation ready assets and five steps using front here AI models and in video omniverse libraries."
+  },
+  {
+    "segment_id": "s0002",
+    "start_seconds": 8.0,
+    "end_seconds": 15.0,
+    "text": "Start by giving us the step files and video image references, specification manuals, and CAD to sim ready skill."
+  },
+  {
+    "segment_id": "s0003",
+    "start_seconds": 15.0,
+    "end_seconds": 20.0,
+    "text": "Ask it to convert the robot to OpenUSD and import it into Isaac Sim."
+  },
+  {
+    "segment_id": "s0004",
+    "start_seconds": 20.0,
+    "end_seconds": 28.0,
+    "text": "Next, we validate the visual properties and check the imported robot scale, parts, and appearance against the references."
+  },
+  {
+    "segment_id": "s0005",
+    "start_seconds": 28.0,
+    "end_seconds": 37.0,
+    "text": "Then, we validate the physics properties and have Astra configured the joints, collision geometry, and physical properties, and the arms, and grippers."
+  },
+  {
+    "segment_id": "s0006",
+    "start_seconds": 37.0,
+    "end_seconds": 47.0,
+    "text": "Then, we validate the sim ready properties and run the selected sim ready foundation checks, test the grasp, fix issues, and rerun the checks and grasp test."
+  },
+  {
+    "segment_id": "s0007",
+    "start_seconds": 47.0,
+    "end_seconds": 50.0,
+    "text": "Finally, test the full sequence and Isaac Sim."
+  },
+  {
+    "segment_id": "s0008",
+    "start_seconds": 50.0,
+    "end_seconds": 54.0,
+    "text": "Grasp, lift, old, move, and release."
+  },
+  {
+    "segment_id": "s0009",
+    "start_seconds": 54.0,
+    "end_seconds": 57.0,
+    "text": "Find the steps and prompts in the technical blog."
+  }
+]

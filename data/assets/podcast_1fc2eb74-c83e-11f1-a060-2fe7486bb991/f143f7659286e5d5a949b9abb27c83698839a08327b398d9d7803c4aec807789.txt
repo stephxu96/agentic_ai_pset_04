@@ -1,0 +1,393 @@
+Security teams don't need another list of alerts.
+They need to know which vulnerabilities are actually reachable, exposed, and safe to fix.
+That's what HyperScale remediation from Blitzie does.
+Blitzie understands your entire software estate.
+Then finds known and previously undiscovered vulnerabilities in your codebase.
+It traces each one through the execution paths,
+checks the dependencies, and validates the fix.
+Your engineers approve the plan, and Blitzie delivers batches of tested pull requests, ready to review.
+Less alert noise, faster remediation, and confidence that fixes are validated as safe before you review them.
+Visit Blitzie.com to see it in action that's B-O-I-T-Z-Y.com.
+TikTok is known for getting you to buy things you never knew you wanted.
+Online retailers would love that kind of impact, but they don't have TikToks data.
+So they try to show the shopper what they're looking for and hope that sales will follow.
+Optimizing for what you can measure is not unique to e-commerce.
+AI teams often settle twice.
+They lean on signals that are easy to collect, like a click or a thumbs up,
+and they optimize for metrics that are easiest to evaluate, like relevance or benchmark accuracy.
+Then they hope it all adds up to what they actually care about.
+If you're building a RAG system, a copilot, or an agent, you may be making the same bet.
+So we while's answer, at least in retail, is to look between the clicks.
+The company she co-founded in leads,
+sequence is built on signals' most systems ignore, how long a shopper hesitates,
+how fast they scroll, and how many times they go back and forth between two products before adding one to the card.
+And it judges the results not by what people click, but by what they buy.
+I push back on two things, whether this is just age-old upsell and cross-sell with better data
+and where it starts to look like surveillance.
+But she made a point about the playbook, most teams follow, that I hadn't heard put this bluntly.
+The biggest innovators in the space are social media companies, and they publish a lot in this, right?
+But they have a wealth of data that none of our customers have.
+So if you're assigned to a step-way fair or a price line, you're going to read these papers and you're going to try to implement it.
+And you know what oftentimes you're successful implementing it, except guess what?
+It doesn't drive the same outcomes for you as it does for them because you don't have the data that they have.
+And sequence big unlock is that we're finally able to get you that unlock without you having that data.
+I'm Sam Charrington, and this is the Twimmel AI podcast.
+Over a decade, I've been exploring the ideas and innovations shaping the future of AI through conversations like this one that help you understand what's real, what's next and what matters.
+Let's jump in.
+So anything that you see on the Internet is ranked, right?
+Whether it's a pair of pants that you're looking for at a retailer, hotels that you're looking for for your extraval contents, media,
+but given the ads you see online, are powered by an auction, and these seem maybe to most people to be unrelated,
+but are we dollar a online spending consumption goes through a ranking model somewhere?
+And we power those ranking models for the world's largest consumer companies.
+Walk me through kind of the highlights of what you all are doing, what make your approach unique, and you know, with an eye towards or ear towards the kind of technical innovations.
+Unsurprisingly, when people think about ranking, they think about information retrieval.
+In fact, I want to graduate school for information retrieval, which is literally the study of search systems, right?
+How do I retrieve the most relevant items or documents for a given query?
+Whether that's in a search bar or some kind of relevance module somewhere out there.
+And historically, and again, quite I would say intuitively, the wisdom here has been that utility should be measured by whether or not I'm able to retrieve documents that are most
+semantically relevant to a user's query, right?
+That's a very technical side of it.
+And that works incredibly well, and I would say, by and large, maybe it's not a solved area of research, but there have been so many advances on it.
+It's been pretty remarkable.
+I mean, the frontier labs have it, you know, pat down or down pat, I forget what the idiom is, but they're pretty good at it.
+It's not really on its own and interesting, I would say, area of research.
+However, in a commercial context, you know, modern recommended systems, if you think about TikTok, Instagram and the like, they're not really recommending content anymore,
+and they're definitely not trying to help people find things.
+Instead, they're bending the end users will, in subtle ways, over time, to make them want to think that the otherwise wouldn't want, right?
+So that destination vacation, you know, the latest fashion that you might not need, you know, whatever it is that you can think of that people end up just, you know, buying on Instagram or TikTok.
+They do that, not because Instagram and TikTok are, you know, really good at helping you find what you're looking for, no.
+They're very, very good at influencing your behavior.
+And the reason that they're able to do that is that billions of people use your apps and are frankly addicted to those apps.
+They open their apps, you know, 10 to 21 times a day.
+And when billions of people do that, you have an insane amount of data on them.
+And so you're able to create these incredibly immersive, I would even say addictive experiences that are hyper personalized and dynamic.
+And in fact, the apps we act in real time to the user's feedback, right?
+So even, you know, use them if you, what you see on the site or the app in the day, throughout the day will vary based on your interactions with the app.
+But the truth is that consumer companies, regardless of how large they are, you know, regardless of how many customers they have.
+Wayfarer as a good example, price sign as another really good example.
+These are very large companies that have incredibly large user bases to tens of billions of dollars of online transactions.
+But again, people don't use wayfarer, the same way that they use Instagram or TikTok.
+And so regardless of how big you are as a consumer business, you know, you are going to be data start.
+And so in an environment where you don't have as much data on the user, where people are not addicted to your app.
+How do you influence their behavior in a moment of high intent to increase their back basket size, increase their average reward you,
+to increase their engagement on your site?
+Again, these aren't like big changes, so on Wayfarer, for example, if you're going to buy a hundred dollar count,
+it's not like sequin can come in and get you to buy a five hundred dollar count and also a thousand dollar coffee table.
+The point is, I can get people to buy a hundred two dollars, but I can do it consistently in at scale.
+And when you do that, that translates to forexing their target profit for the year in less than a month.
+So across all, like we've been, you know, doing this from a data science perspective, pre-data science.
+You know, we've been doing this for a long, long time trying to get people to buy more what's different about the approach.
+That tells you are as I was saying earlier, and in fact, with an entire history of this field of research, people have been trying that the wisdom has been, if I can make it easier for people to help to find things.
+Then by extension, I can get them to convert better.
+That has been the prevailing wisdom forever, every company that's ever resistant to this domain has been trying to solve search and relevance from the perspective of search and relevance.
+Make it easier for people to find things faster.
+That is not what sequin does at all.
+We are not at all trying to help people find things.
+We're trying to influence their behavior in a moment of time when they have high intent.
+How do we do that? How do we go about doing that? Which is I think the meat of the matter.
+So we started the company with a black box solution that was powered by what we call large event models.
+So as you can think of it as first of all, it's not a large language model.
+We actually don't use large language models anywhere.
+That's not our business whatsoever.
+We don't use generative AI either.
+In any case, we serve with large event models.
+The idea behind event models is that the same way that large language models are able to generalize.
+To text, including text that they haven't seen before, ever.
+Large event models are able to generalize to human behavior and streams of events all in real time.
+And creating something like that is incredibly difficult to do for a number of reasons.
+One, you need to be able to create extremely ultra low latency systems that are able to keep track of data at a very, very fine, great level.
+So I'm not only talking about clicks and conversions and the traditional good stuff, although we use that as well.
+But I'm talking about hardware's schools. I'm actually talking even deeper than that.
+The speed of a school, right? The dual time on a hover.
+How many times a user goes back and forth?
+Creating systems that are able to digest data in, frankly, nanoseconds, transform the data also in nanoseconds, put it through a model, several layers of ranking models in milliseconds.
+And serve dynamic, rebanked items to a user as they're browsing aside all in under 50 milliseconds, or thousands of requests per second, is incredibly difficult to do.
+In fact, we created what we referred to internally as sequin ranking clusters to be able to even make this feasible at all.
+And so there was a lot of work done there, not only from an algorithm perspective, but also from a data engineering perspective, the journey engineering perspective specifically for ranking, and a ton of analytics work, and infrastructure work that was done.
+It's hard because you need to do three things that are very, very difficult to do on or on.
+You need to have high fidelity leakage free data pipelines, which is a really difficult problem on its own.
+You need to have obviously models that are personalized to our user and continue to improve in those models, and then you need to be able to serve them fast enough such that rankings are able to react to live user feedback and signals.
+So building this system at all requires you to do these three things really, really, really, really well.
+And there are very few people on the planet that can do this for the explicit objective of generating outcomes for businesses, right?
+And then so that's one part of the problem that sequence alls.
+Two, even if you manage to build that system at all, improving anything within that system is really, really difficult because it's gated not only by how fast your scientists can do experiments and do research.
+But the analytics component, right? The business component of it, right? Like how much am I trading off diversity or freshness of products or, you know, bookings or media content for direct impact to my bottom line, right?
+And so the ability to have this unified ranking interface that is focused and brings all these disparate parts of the organization together is incredibly helpful on its own, but the real secret sauce and where we started the business was with a collection of proprietary ranking algorithms and harnesses that are
+designed specifically, again, not to help people find things. And I know I keep repeating this, like, I'm aware that I keep repeating this, but that is really the golden thread, because once you realize it and you see, hey, even though you're operating in the search space, you're not trying to help people find things, you can't unsee it.
+You said that earlier, and I think I had this like, and I maybe expressed it a little bit a degree of dissonance and that like that doesn't sound new to me and certainly you've lived this space more than I have, but, you know, we've been talking about kind of next best offer and propensity to buy and like basket size optimization and all these things have been around forever.
+And so is it like, is it like old habits die hard and like, you know, they approach that folks approaching this in a traditional way, approach it like a search problem and really the the key is to, you know, be like, maniacally focused on business metrics, which are kind of harder to do than, you know, focus on like traditional search metrics or
+what, yeah, yeah, so actually the first part of it is is true that, you know, there are really old habits that are hard and they continue to see it as a search problem and try to solve it from a search perspective, let me help people find things more easily.
+That is definitely a part of the other part of it is that like the biggest innovators in the space are social media and they publish a lot in this right.
+Amazon used to publish quite a bit about this too, but they have a wealth of data that none of our customers have.
+So if you're assigned to a step-way fair or a price line or any other companies that we work with.
+You're going to read these papers and you're going to try to implement it and you know what oftentimes you're successful implementing it except guess what it doesn't drive the same outcomes for you as it does for them because you don't have the data.
+And sequence big unlock is that we're finally able to get you that unlock without you having that data and is that kind of aggregating customers across we don't we don't we don't we don't we do not share any customer data between our customers and that is what makes us truly, truly innovative is that by relying so much.
+on true in session live signaling.
+Oh, get it. So within the same customer interaction you're extracting.
+So hundreds of more data than the typical.
+And so we've made ourselves very, very independent of that.
+How do you respond the folks who kind of see that as like, you know, going deeper into this like surveillance capitalism kind of.
+rabbit hole and like extracting more data about folks, you know, as they're trying to do pretty pedestrian things like, you know, that whole I'm sure you've encountered that.
+Oh, yeah, I hate it. I hate it. I'm very I'm one of the people that's the most vocal opponent of that kind of I love what you call that surveillance capitalism.
+No, I absolutely hate it and we don't do that.
+And for several reasons, one, and this is what distinguishes us from social media companies. We're not trying to create addictive experiences whatsoever.
+We're not trying to get people addicted to anything.
+We don't store people's information is all in a live transaction.
+And I cannot tell you the number of times even I've been online.
+And I'm just trying to find, well, now I have a kid and I'm trying to find toys for my kid, but before I try to find toys for my kid, my, my friends kids.
+And it's insanely difficult to do that, right?
+And I can actually, I'm good at verbalizing what I'm looking for and it's still difficult to find that that thing that inspires you.
+And so what makes us different is that, you know, we're not surveilling people. We're not like chasing them from sight to sight to sight.
+They're not doing any of that. You are already having tents, which is why you're on my fair dot com. You're on it already because you want to do something.
+We'll just make it easier for you to actually get to the thing that maybe you can't even verbalize to create moments of inspiration for you.
+And so it does, yes, you know, price line ends up hanging a lot of money. We've friends up hanging a lot of money, but the customers end up walking away happy.
+We're not doing anything like price gouging or like weird stuff. If anything, the difference is like, maybe sense on the dollar.
+We're able to increase the sense of like you're using the data that's available through that interaction like a sales person might in a store.
+I mean, you were looking at that sofa over the longer I'm going to kind of steer the things related to that.
+And maybe, maybe you actually, you know, you're looking at the cell phone. What about this case also, you know, and but we actually don't care about the identity of the user.
+We don't care about your name. We don't care about your last name. We don't care about your location. We don't really care about like, you know, we really care about that interaction that live interactive component.
+You mentioned ML ops several times when you think about the kind of evolution of ML there and ML ops. Like, what are some of the big things that you and your team have learned in trying to put this this, you know, platform or environment in place.
+I think we got lucky in a sense because maybe like, six, seven years ago.
+Rust didn't have a ton of support in like open source.
+I like our berries like hugging face that began to change rapidly in the past. I would say three to four years.
+And, you know, this is why I always say whenever you make a successful start up like there's quite a bit of luck there as well.
+We got, but yeah, timing is everything. We got very, very lucky because we started building this company at a time when support for Rust and many, many open source.
+I have frameworks and I am offering.
+I mean, we thank you, and I'm not have done it in Python.
+No, I don't. I genuinely don't. I don't think that we could have because we, you know, ultra ultra low latency, future transformations serving are so core to what we do.
+I do not think we could have done it in Python.
+But certainly we do a lot of R&D and Python, but the core of our backend is all in Rust. So no, I can definitively say we could not have done it in Python at all.
+And we are very, very lucky to benefit from a lot of the open source contributors that have, you know, for free devoted their time and efforts to to bringing support for languages like Rust.
+I'm imagining that another, you know, timing till and is the availability of coding agents now, you know, you may have needed to build my guide.
+You know, supporting infrastructure before because it was just wasn't available for what you're trying to do, but now you can just ask an agent to build that for you.
+For sure. I mean, a thousand percent.
+You mentioned that way fair was an early adopter of transformers, are your models transformer based.
+We have some that are transformer based. We have, we have, I would say, all of our models certainly use self attention, self attention mechanism. I can say that without a doubt.
+All of them do. We have many make sure of experts models now.
+But they all rely on self attention. I couldn't say that they used the transformer architecture across the board because I mean now we have so many proprietary models that we have built.
+That kind of, it's kind of like an orchestra of many, many, many, many models.
+It's like mixture of experts but for ranking.
+Is the idea at a system level that you've got all this data coming in and you are applying a bunch of different models. Is it routing or it's like your simultaneously passing the same data through the bunch of different models to kind of come up with new features.
+So there is definitely a routing component to it.
+Because if you're like in the advertising space, things are going to be different for you than, you know, if you're just like in traditional commerce.
+But if you're, if we're operating within an as module, let's just say a way fair.
+There are things that the more specialized advertising models that we would use to power are.
+The bidding platforms, you know, might be helpful there. So.
+In that case, there's some that are routing involved.
+But also, there's a simultaneous kind of a relationship and multitasking that we also do.
+The thing that I was trying to get at is a theme that comes up on the podcast quite a bit.
+This tension between like we're going to take a bunch of data and train some big Mongo model and to end and then it's going to like take in everything and spit out the one answer versus we've got a bunch of data.
+We're going to apply a bunch of models to it that, you know, in some ways are, you know, creating features and then those features are going to be used by some other model, you know, to or or in, you know,
+or some set of models or independently, it's like this kind of, you know, one big end to end thing versus, you know, we kind of know a lot about this problem.
+Like we're going to model, you know, individual aspects of the problem the way we might think about it as data scientists and.
+You know, that has, you know, some advantages around explainability model size, et cetera, et cetera, like.
+Closer to the second because we do have these mega models for like advertising domain for, you know, different domains.
+You know, but they tend to be on on the whole much smaller than, you know, what you would see as large China models in the industry because the, the mammoth models nowadays are so, so big are largest models are tiny, tiny, tiny fraction of that.
+What are some examples of like, you know, a model and put output transformation, like, or I'm trying to get a sense for the granularity.
+I'll, I can give you a couple of examples here, so, you know, creating even if you look at like creating embeddings, right, for queries, right, very, very simple text.
+I, of course, tend to be smaller size queries in different contexts and travel and travel hospitality and media and in retail.
+I mean completely different things. And so using kind of generalized language, these giant giant language models to be able to create these holistic representations are not as useful to us in our context, because again, keep in mind, we're a ranking business.
+We do one thing and we do it incredibly well and that's be ranking. So that's an example of where a lot of people will just use, you know, one kind of embedding model really, really great embedding model for text that is able to contain the most amount of.
+Lating knowledge about intent, et cetera, et cetera, but like queries are like, what, one, two words.
+There is, like, there is a lot, it's very information start. So, so, ability to narrow that to specific contexts and see just like two or three token queries in a very specific dimension.
+Within the user is overall journey because the user is the first class that isn't it's equal, it's not, and by the way, when I say user, I don't mean the user identity, I mean the user is a collection of events in a session, right, when I think about a user think about it as a collection of events in a session, I don't care if your don't Smith or Adam, whatever.
+To, to seek when you're just a collection of events in a live session, and how I'm able to best represent you in, in, in that context is what sets me aside from every other provider out there, and so we take these very, very raw streams of events.
+But where that gets routed to, in other words, how I end up representing that information to what then goes on to the final rewanker is a big part of our secret sauce on what makes us really, really special.
+Is there a rewanker or are there rewankers for, I mean, I'm envisioning like, you know, we've talked about way fair, you go to way fair, you start for a blue sofa.
+You've got your primary list and that needs to be rewanking rewank, but then there's like you may also be interested in this, there's like a bunch of other stuff on the page that we power out.
+Okay.
+And there are different, they're, they're very different, so I'll give you an example, even a very tangible example that I think you'll be able to, that any listener technical or less technical will be able to follow.
+Think about like complementary products, right, so let's say you bought a tennis racket.
+And I'm not going to show you other tennis rackets, you just added it to your cart, right.
+In fact, that will most likely drive down compared to what you think.
+But then we also have the classic, I just bought a refrigerator on Amazon and showing me refrigerators like, why is that?
+And that's why you would use sequin because we would never do that.
+But that's exactly, no, I'm serious.
+But anyway, you go on the as a cart page and we show you complementary items, so we don't show you other tennis rackets, we show you, hey, what about this like sweat band or this tennis ball, but which tennis band, which, sorry, which sweat band or ball, we show you is going to vary for music to use it, but the plan I'm trying to get at is that that complementary module.
+exists throughout many of these sites, so it'll exist under product display page, but it'll also exist under that cart page.
+And how you rank items under product display page, even though it's still a complementary module will vary greatly from how you rank items on a complementary module on an active cart page.
+And that's because by the time the user gets to the at a cart page, they were already committed to the tennis racket, right, whereas I need to be able to show greater diversity on the part display page, because they haven't necessarily committed to that tennis racket.
+Does that make sense?
+Yes, and so all right, you create a diversity.
+That's just one example, but the point is that they're both, I'm saying, if I start for tennis racket, I mostly want to see tennis racket, I don't want diversity in that list.
+You don't, once you click on it, you click on a specific tennis racket.
+But then you don't know what will happen.
+Exactly.
+Well, we're betting that we have an idea before you do, or we can get you to click and purchase.
+Well, so this is an interesting thread, like how, so I'm, you know, I'm in this journey, I search for tennis racket, bunch of tennis rackets have come up.
+I choose the tennis racket.
+I add it to my cart and then you show me a bunch of other stuff.
+How does any of the information you've collected about in 12 times and all these other things, while I'm looking for tennis racket supply to, you know, which headman, which set of balls, which, you know, anything else, like.
+Kind of things, oh my god, you give, you give the site so much information, you might not even realize, so like how, how did you end up deciding between the blue tennis racket, let's say, and the pink tennis racket, how long does it take you to decide that and how does that compare to every other sequence of events that every other user has ever had.
+Like is it classic like collaborative filtering, you know, folks who.
+Because in this case, keep in mind, the identity of the user actually doesn't matter, right, and it's all in real time, right, so I look at the sequence of events that I collected in real time when people usually, let's just say.
+However, for x and out of time, go back and forth, x, x number of times before settling on this tenet times and in a live session and implicit personality modeling like this is a.
+Overly analytical, analy, retentive person he keeps flipping back and forth between these two things he's rolling over these lists.
+Kind of, you know, he's scrolling over the specs or something like that, so that he probably wants, you know, something different from the person who like is flipping through all the pictures.
+No, it's it's the difficult thing to do again more than anything else is like keep in mind the data, the environments we operate in are incredibly data star right, so with as little information as possible, what can I do.
+And most of the reliance comes from streaming in session events and getting all of that to a model clean it, first of all, the data comes raw in a live session, so you have to clean up all that data and a lot in like literally nanoseconds and it has to go into a model, which has to then spit it out in those seconds.
+So it's a lot when you think about the entire journey that the raw data has to go through, but yeah, the idea is based on how you got to finally adding that pink or blue or whatever color tennis racket to your cart.
+I'll show you the just the tennis ball or a sweat band or bag that you're going to you're going to buy and in fact, one of the one of the things that we are very very very good at is increasing basket size like regularly.
+The other thing that we're really really good at is typically historically.
+You know, as revenue and organic revenue, I consider competing metrics, which makes sense typically usually when the revenue goes up, it goes at the expense of organic because you at the end of the day have a list of items and either organic goes to the top rods or whatever.
+And what we've been able to consistently show is that we're actually able to drive both up together.
+So that one doesn't cannibalize the other, which allows us to compound these massive massive gains on incredibly mature relevant stacks.
+A elaborate on that for me, when you talk about ad revenue, are you talking about ads been that's getting to use or to the site, are you talking about like an Amazon where there's promoted, promoted items for a second.
+So I guess I think about that from an Amazon perspective, because it's, you know, very, you know, it's surface is, you know, more or less transparent.
+You know, a little bit more than less, you know, whereas I don't know that when I think about way fair, I think about sponsored items versus non spider sponsored items, but, you know, a side of that scale is probably doing that.
+Whether or not I know about it is kind of the.
+I think they're for fairly transparent about it. I just think that you see it more on Amazon because Amazon has a much much larger ads business.
+And they're a huge company.
+And so you're saying that, you know, typically when when an organization is kind of.
+They optimize ad revenue as a.
+As the primary objective conversion tends to go down. Yeah.
+Okay.
+Because people will, because they're optimizing for people clicking on stuff as opposed to buying things as opposed to buying things.
+I would see going has proven that we can do time and time again.
+Is we can get people to click significantly more and get them to also buy after the facts.
+Why is that is the same thing we're talking about just more data.
+Like is it that you're individually optimizing these things.
+And so they both go up or is it some cross.
+Well, they both go up.
+We're just creating like much more.
+We're showing people things that they actually want to see.
+Based on what we call micro feedback that we get.
+Things like scroll speed and stuff.
+Yeah, as funny.
+You say that because I was thinking just a bit ago about how.
+You know, typically the big kind of aha moment for relevance is if you can find, you know, some feedback like any feedback and usually it's like.
+Or, you know, historically it's been and I'm thinking about like rag systems for example like, you know, did the user click like, you know, that's a the user click on the thing that we showed them.
+Or it's a user thumb up or a thumb down like, you know, there's.
+I would say it seems to have kind of been starred for like, you know, any kind of feedback and like they, you know, have very few lever or this explicit feedback.
+And now like you're just creating way more.
+And plus it.
+Way more feedback and plus it feedback.
+Yeah.
+Yeah, no.
+You rely I would say overwhelmingly on implicit feedback data overwhelmingly it's crazy. I would say I was talking to.
+I was talking to and I'm not going to name because you know, I don't want to embarrass them, but I was talking to see level executives from like a very very major back.
+So they're like, you know, you'd be like, you know, work with us with this giant bank and we have all this transaction data and blah blah blah.
+Actually, there's like, that's the least interesting data if you give me because you're only showing me a sliver of human behavior that transaction data is useless because 99% of people don't actually convert.
+I'm interested in the 99% of data you actually don't have.
+And that's what I have and you don't have that.
+We didn't get very far in stack like we mentioned rust like I'm the things that come to mind as you describe the system or questions are like analytical databases, no sequel.
+You know, cues, compliments kind of thing like what are some of the infrastructure role, the data infrastructure elements that allow you to do this.
+Yeah, so we definitely use a lot of no sequel for sure.
+Distributed databases, we definitely use rust.
+We rely heavily on.
+We rely very, very heavily on open source technology.
+We use a lot of high in case huge fans of high in base here.
+I can tell you also what we don't use much of.
+We almost do not use a lot at all.
+It's just not relevant to our business.
+We're not trying to do gender of anything.
+We're not allowed.
+We're not trying to reinvent the wheel and there.
+So yeah, honestly, it's just a, it's a lot of ranking models.
+It's actually like the thing is that getting these models to work requires you to have an innate understanding of what features drive value.
+And that is not written in any research paper.
+And so what we have done is we've created a harness library with proprietary institutional knowledge that we've codified what we call residual knowledge.
+That matter has never published about the Google has never published about that Pinterest has never published about their biggest money makers.
+Even the papers you see them publish like they're not.
+The scientists that work on them have to wait for months to get legal approval and the version of those papers that actually ends up getting published is a very, very water down.
+Version of those of that line of work.
+And so what we've done is that we have created a harness library in a knowledge base of some of the most effective proprietary.
+Methodologies to drive outcomes in ranking.
+And some of it has come from hiring folks from these institutions and you know gathering residual knowledge that's not published everywhere.
+And then second of all, we have forward deployed engineers embedded in all the customers we work with so we actually don't need feedback data from the customers.
+But residual information that we gather about what works but doesn't work is all codified.
+You mentioned or you referred to is the harness and recursive like the same concept or is the harness is sub concept or.
+The harness is one component of our the entirety of a recursive stack.
+So you can think of the recursive stack as like being this engine with many many different components.
+We have a dietary knowledge drawer.
+We have a harness library.
+We have what we call frontier ranking models all of which work together.
+To power the recursive stack.
+And so our core IP is the recursive stack itself that produces these insane making models that are able to.
+You know, four or five 10x of fortune 500 companies revenue in just a matter of weeks.
+And that's why we're able to allow them to then own the ranking models right because the real meat of the matter is the ability to continuously build.
+I came models better and better and better and better ranking models that continue to drive revenue.
+And so when you talk about this harness what.
+Makes it harness is just a library and like harness is the cool word or is there something.
+Harnessy about it in the same way that you know codex or check you know codex or claw code is a harness.
+Yeah, so it's actually a collection of harnesses that we have.
+Definitely not certainly not a core word at the time.
+That we started building it in and we just needed a way to specifically have what we call eval harnesses.
+To find what we call the commercial ground truth of interactions.
+And so that's why we started to build these harnesses and we quickly realized in short order that even you know in the in the in the space of evaluating these ranking models.
+How we're able to do so offline in let's say the travel space, which is you know considered.
+Obviously higher ticket items has a ton of overlap with the furniture space for example, which also has higher ticket items.
+But guess what it doesn't have a lot of overlap with with the ad space because the user is just clicking on things and that translates directly to revenue, but it's not coming at a cost to be easier.
+So how you evaluate these different kinds of ranking models.
+But you know requires to have a very, very rigorous approach and so we came up with a collection of.
+These evaluation harnesses and that's that was the start of our our harness that very.
+You call the the tool or the platform recursive like.
+What's recursive about it recursive ranking intelligence is kind of the first first name is that is recursive just a name or is recursion.
+Part of what you're doing actually if I were to be very, very specific about it, it's most learned like tail recursion.
+Meaning that you're able to instead of having to rebuild the entire ranking iterate on the entire ranking algorithm and rebuild it from scratch, which I would consider iterative and not recursive.
+You don't have to rebuild the entire ranking stack every time.
+You're learning so you're able to learn continuously and make minor modifications here and there and in doing so you're able to compound.
+Gains that a much faster rate at a significantly less out of fraction of the compute so.
+That is if I were to get very technical that is why we call it version is that we don't have to rebuild.
+We don't have to be models. Previously when we started the business.
+We actually did, so we were training the ranking models a daily sometimes hourly, but it would be like from scratch.
+And it took us quite a bit of time actually to figure out a way how can I have how can I.
+What I'll quote iterate on this without having to rebuild it from scratch every single either day or hour or whatever cadence.
+And and insert that recursive element in there.
+We talked about this a little bit earlier, but kind of with the context of the full conversation thus far.
+What is large event models is that just an instance of one of your ranking models or is that a particular architecture or.
+It's one kind it started as the thing that we did let me be very clear.
+That in itself was insanely difficult for us to do to create these models that were able to generalize to stream of events.
+It sounds extremely intuitive and it is.
+But getting it to generalize across customers and domains is insanely difficult like intuitively it makes a lot of sense.
+But to get it to work in travel and media and retail at a different cross points different geographies without relying on any.
+And user identity is really, really, really difficult to do so that was the the heart one of the hardest things that we get we began to work on.
+What's the input is a stream of events.
+It's a stream of events and each event is kind of has a label and a value for example.
+Like, however, combinations right so it would be the query the embedding for the query.
+And that query could either be literally the the source item or could be an actual query of words that users search for whatever that was the first very very first thing that we worked on and it was the black box model and top of which we built rankers.
+And we built what we what we called large mesh models which were like large event models but there are much more relationally focused.
+So now I'm looking not only at streams, but I'm looking at mace stream simultaneously.
+I'm looking at the relationship between those streams together and trying to create generalized representations out of that right.
+And then we started creating different classes of what we called frontier ranking models which were independent of large event models.
+And large, large, large, large models but which large, large, large models and large event models contributed to right.
+And so we built these collection of many, many, many now in the hundreds of thousands of frontier ranking models that we have.
+That are proprietary that are not published anywhere.
+A lot of them with very novel architectures.
+And that then became the first building block of the recursive staff.
+Over time we started to develop harnesses and knowledge store, et cetera, et cetera.
+To what degree does the idea of time series models or time series modeling plan to what you're doing?
+Think of these events as time series or do you just kind of capture a frame of events and kind of process it.
+Independent of, you know, longer time sequences earlier.
+I will tell you that earlier it played a much much bigger role earlier in our journey.
+Now I would say it's a small part of a growing stock.
+And I'll tell you why. I think I can give an example that is perhaps intuitive for people to catch on to.
+You know, time series and sequence-based modeling works really, really well for languages and generalized reasoning because you can show a follows.
+You know, sort of b follows from a and there is a general order to things and even though we're in the ordering business and all our whole business is ranking.
+I'll take you back to the fundamental concept that the first class citizen at sequen is the user.
+And the user does not behave as cleanly or logically as as you would expect.
+There's a lot of madness and in people's behavior.
+People aren't like languages, language, despite how or created that you can get has a certain repetition to it that human beings simply do not have.
+Right, you could be in the middle of buying a couch, right, and your dog just comes barking in and completely was your train.
+I thought, and then you suddenly realize, oh, I'm going to buy a dog back to, you know.
+There is something inherently unpredictable about human behavior.
+To the degree that we've talked about like a big unlock being like capturing more information from the user, capturing me the events at the browser is certainly complex but doable.
+But then you talked about like the infrastructure to manage those events at scale is a lot of it's a lot.
+And then transform all of those in real time.
+And then know what to transform in it.
+Yes, which by the way, we have dedicated models to do that. So you'll literally have streaming data that's going in not to one model, but it's going into like hundreds of models.
+What all have to then output that data, reconstruct it, put it into the final riker and have it all research to the user in sub 20 sub 50 sub 100 milliseconds.
+It's an enormous infrastructure and modeling undertaking with that in mind when you think about kind of the technical horizon or innovation opportunities like what are the big opportunities to go after that will help you kind of push your system and approach further.
+There are several routes that we're looking at right now without revealing too much I think.
+You know, one of the one of the biggest debates we've had internally is how much do we invest in what well represent traditional representation learning of like images or texts and the like versus actually continuing to innovate the ranking models themselves and the nuances there.
+And I was talking about how our evil harnesses and the library there is actually critical to our success and so I would say right now at this point in time anyway, we're very, very focused.
+I would say on the latter rather than focusing on things like that we think are going to be very commoditized if not already.
+You know, in terms of having a multimodal representations of like hero images on a company websites or whatnot.
+So I would say that is probably what we're most focused on are on things that actually make the ranking the core ranking model itself better rather than the auxiliary components that are then involved more traditional representation learning.
+I believe that to the big image or video or other frontier labs to do.
+And open source projects and will continue to benefit from that research as it comes out.
+Well, it's always been great chatting with you and learning a bit about, you know, what you're up to and how you're approaching ranking.
+It's been super interesting.
+Thank you so much for having me.
+It's been a huge pleasure and a huge kind of your podcast, so.
+It's an honor to be here.

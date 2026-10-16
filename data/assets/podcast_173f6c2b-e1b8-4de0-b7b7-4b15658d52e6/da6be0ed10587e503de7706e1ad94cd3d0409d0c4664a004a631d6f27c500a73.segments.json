@@ -1,0 +1,2804 @@
+[
+  {
+    "segment_id": "s0001",
+    "start_seconds": 1.87,
+    "end_seconds": 6.47,
+    "text": "Welcome to the Practical AI Podcast, where we break down the real world"
+  },
+  {
+    "segment_id": "s0002",
+    "start_seconds": 6.47,
+    "end_seconds": 10.83,
+    "text": "applications of artificial intelligence, and how it's shaping the way we live,"
+  },
+  {
+    "segment_id": "s0003",
+    "start_seconds": 10.83,
+    "end_seconds": 15.91,
+    "text": "work, and create. Our goal is to help make AI technology practical,"
+  },
+  {
+    "segment_id": "s0004",
+    "start_seconds": 15.91,
+    "end_seconds": 20.31,
+    "text": "productive, and accessible to everyone. Whether you're a developer, business"
+  },
+  {
+    "segment_id": "s0005",
+    "start_seconds": 20.31,
+    "end_seconds": 23.87,
+    "text": "leader, or just curious about the tech behind the buzz, you're in the right"
+  },
+  {
+    "segment_id": "s0006",
+    "start_seconds": 23.87,
+    "end_seconds": 28.75,
+    "text": "place. Be sure to connect with us on LinkedIn, X or Blue Sky, to stay up to date"
+  },
+  {
+    "segment_id": "s0007",
+    "start_seconds": 28.75,
+    "end_seconds": 33.31,
+    "text": "with episode drops, behind the scenes content, and AI insights. You can learn"
+  },
+  {
+    "segment_id": "s0008",
+    "start_seconds": 33.31,
+    "end_seconds": 37.55,
+    "text": "more at PracticalAI.fm. Now, on to the show."
+  },
+  {
+    "segment_id": "s0009",
+    "start_seconds": 41.33,
+    "end_seconds": 46.09,
+    "text": "Welcome to another episode of the Practical AI Podcast. This is Daniel"
+  },
+  {
+    "segment_id": "s0010",
+    "start_seconds": 46.09,
+    "end_seconds": 51.09,
+    "text": "Whiteknack, I am CEO at Prediction Guard, and I'm joined as always by my co-host"
+  },
+  {
+    "segment_id": "s0011",
+    "start_seconds": 51.09,
+    "end_seconds": 55.85,
+    "text": "Chris Benson, who is a principal AI and autonomy research engineer. Are you doing"
+  },
+  {
+    "segment_id": "s0012",
+    "start_seconds": 55.85,
+    "end_seconds": 60.01,
+    "text": "Chris? Hey, doing good today, Daniel, how's it going? It's going great, you know,"
+  },
+  {
+    "segment_id": "s0013",
+    "start_seconds": 60.09,
+    "end_seconds": 66.89,
+    "text": "the story continues. There's ups and downs along the way, and, you know, very, very"
+  },
+  {
+    "segment_id": "s0014",
+    "start_seconds": 66.89,
+    "end_seconds": 71.89,
+    "text": "blessed overall, and really blessed today, to have an episode that I've been"
+  },
+  {
+    "segment_id": "s0015",
+    "start_seconds": 71.89,
+    "end_seconds": 77.69,
+    "text": "looking forward to recording for some time, back in, in part of our journey, as a"
+  },
+  {
+    "segment_id": "s0016",
+    "start_seconds": 77.69,
+    "end_seconds": 83.05,
+    "text": "company, we were going through an accelerator program with Intel, called Intel"
+  },
+  {
+    "segment_id": "s0017",
+    "start_seconds": 83.05,
+    "end_seconds": 86.29,
+    "text": "Ignite, and through that program, met our guest today,"
+  },
+  {
+    "segment_id": "s0018",
+    "start_seconds": 86.29,
+    "end_seconds": 93.41,
+    "text": "Reed Ferrex, who is a lot of things. He's doing so much amazing, amazing stuff in his"
+  },
+  {
+    "segment_id": "s0019",
+    "start_seconds": 93.41,
+    "end_seconds": 99.29,
+    "text": "journey from a new podcast that he has our inner story. He does leadership coaching,"
+  },
+  {
+    "segment_id": "s0020",
+    "start_seconds": 99.29,
+    "end_seconds": 105.49,
+    "text": "involved with MIT, and startups, and all sorts of things, and has kind of a background"
+  },
+  {
+    "segment_id": "s0021",
+    "start_seconds": 105.49,
+    "end_seconds": 110.21,
+    "text": "in in acting and in media. So welcome to the show, Reed, it's great to have you here."
+  },
+  {
+    "segment_id": "s0022",
+    "start_seconds": 110.21,
+    "end_seconds": 114.85,
+    "text": "Thank you so much, Daniel, and Chris, appreciate it. Yeah. Yeah, and, and obviously, that's,"
+  },
+  {
+    "segment_id": "s0023",
+    "start_seconds": 114.85,
+    "end_seconds": 121.25,
+    "text": "you know, I love your story, because you've flexed into all of these things,"
+  },
+  {
+    "segment_id": "s0024",
+    "start_seconds": 121.25,
+    "end_seconds": 127.33,
+    "text": "you're always being creative here. I think in our experience together, I've appreciated"
+  },
+  {
+    "segment_id": "s0025",
+    "start_seconds": 127.33,
+    "end_seconds": 133.09,
+    "text": "so much how you've helped me think about, you know, my own journey as an entrepreneur,"
+  },
+  {
+    "segment_id": "s0026",
+    "start_seconds": 133.09,
+    "end_seconds": 137.89,
+    "text": "the story of our company. Now I know, you know, you're thinking about topics."
+  },
+  {
+    "segment_id": "s0027",
+    "start_seconds": 137.89,
+    "end_seconds": 143.73,
+    "text": "Of course, related to AI, like everyone is, and what our unique role is, you know,"
+  },
+  {
+    "segment_id": "s0028",
+    "start_seconds": 143.89,
+    "end_seconds": 148.53,
+    "text": "humans and that, but we'll get into all of that. But I'm wondering if you could just share a little"
+  },
+  {
+    "segment_id": "s0029",
+    "start_seconds": 148.53,
+    "end_seconds": 154.77,
+    "text": "bit of your your story with us and kind of at a high level, how you ended up where you're at."
+  },
+  {
+    "segment_id": "s0030",
+    "start_seconds": 154.77,
+    "end_seconds": 161.81,
+    "text": "Well, thank you. I find myself sharing the story much more, and the best way to frame it"
+  },
+  {
+    "segment_id": "s0031",
+    "start_seconds": 161.81,
+    "end_seconds": 167.81,
+    "text": "is it is a windy path, because you know, I look back and you think, like, you're always like"
+  },
+  {
+    "segment_id": "s0032",
+    "start_seconds": 167.89,
+    "end_seconds": 172.93,
+    "text": "taking like inventory, like, is this all working? Like, is this my story really making sense? Like,"
+  },
+  {
+    "segment_id": "s0033",
+    "start_seconds": 172.93,
+    "end_seconds": 177.57,
+    "text": "who am I? Like, you have me telling you ask these questions to yourself over time. But actually,"
+  },
+  {
+    "segment_id": "s0034",
+    "start_seconds": 177.57,
+    "end_seconds": 182.53,
+    "text": "it wasn't until that Intel program. I was so, I shared this last month at a Harvard classroom"
+  },
+  {
+    "segment_id": "s0035",
+    "start_seconds": 182.53,
+    "end_seconds": 187.65,
+    "text": "you were teaching. Basically, I was so nervous in that program when I first started because"
+  },
+  {
+    "segment_id": "s0036",
+    "start_seconds": 187.65,
+    "end_seconds": 192.85,
+    "text": "it was so much about deep tech and engineers and AI was starting to really come up and I was going,"
+  },
+  {
+    "segment_id": "s0037",
+    "start_seconds": 192.85,
+    "end_seconds": 199.01,
+    "text": "oh my god, like, what am I doing here? You know, I graduated at UT in business and I went off"
+  },
+  {
+    "segment_id": "s0038",
+    "start_seconds": 199.01,
+    "end_seconds": 203.73,
+    "text": "and had an acting career for a little while and then got into producing and media and startups."
+  },
+  {
+    "segment_id": "s0039",
+    "start_seconds": 203.73,
+    "end_seconds": 207.41,
+    "text": "And I was kind of just trying to figure out, like, you know, what am I doing around these really"
+  },
+  {
+    "segment_id": "s0040",
+    "start_seconds": 207.41,
+    "end_seconds": 211.89,
+    "text": "smart people? Like, like yourself, Daniel. I mean, it's like, you know, a lot of half the room"
+  },
+  {
+    "segment_id": "s0041",
+    "start_seconds": 211.89,
+    "end_seconds": 218.13,
+    "text": "was PhDs. And then we started talking and introducing ourselves and I started seeing pitches. I was"
+  },
+  {
+    "segment_id": "s0042",
+    "start_seconds": 218.13,
+    "end_seconds": 223.41,
+    "text": "running deal flow when I first started it Intel. And so I got to see a ton of pitches. I mean,"
+  },
+  {
+    "segment_id": "s0043",
+    "start_seconds": 223.41,
+    "end_seconds": 228.37,
+    "text": "we saw, you know, pretty much most of the top companies going in the US would come through at some"
+  },
+  {
+    "segment_id": "s0044",
+    "start_seconds": 228.37,
+    "end_seconds": 232.53,
+    "text": "point and we'd meet them. And the one thing I kind of came away with going, I think I can help with"
+  },
+  {
+    "segment_id": "s0045",
+    "start_seconds": 232.53,
+    "end_seconds": 237.17,
+    "text": "story. Maybe I can help out a little here, starting thinking of their pitch a little bit like"
+  },
+  {
+    "segment_id": "s0046",
+    "start_seconds": 237.17,
+    "end_seconds": 241.49,
+    "text": "almost like a movie and I thought, gosh, you know, maybe I can contribute here. So that kind of"
+  },
+  {
+    "segment_id": "s0047",
+    "start_seconds": 241.49,
+    "end_seconds": 247.09,
+    "text": "at least allowed me sort of the lane into this world. And then once you get into it, you start"
+  },
+  {
+    "segment_id": "s0048",
+    "start_seconds": 247.17,
+    "end_seconds": 253.17,
+    "text": "to realize like, there's just so much to it because founders are just becoming leaders and they're"
+  },
+  {
+    "segment_id": "s0049",
+    "start_seconds": 253.17,
+    "end_seconds": 258.69,
+    "text": "always becoming. You're constantly learning and adapting, especially now. So that really, you know,"
+  },
+  {
+    "segment_id": "s0050",
+    "start_seconds": 258.69,
+    "end_seconds": 264.29,
+    "text": "was sort of the ignition for me to really learn more about leadership coaching by own journeys of"
+  },
+  {
+    "segment_id": "s0051",
+    "start_seconds": 264.29,
+    "end_seconds": 268.37,
+    "text": "founder, which I was sitting there going, why is this happening to me? You know, all the things that you"
+  },
+  {
+    "segment_id": "s0052",
+    "start_seconds": 268.37,
+    "end_seconds": 273.81,
+    "text": "go through is a founder, but it's just evolves, right? It's always evolving. Yeah, I love that"
+  },
+  {
+    "segment_id": "s0053",
+    "start_seconds": 273.89,
+    "end_seconds": 281.33,
+    "text": "perspective. I think I resonate so much with it because, you know, I don't think it's talked about"
+  },
+  {
+    "segment_id": "s0054",
+    "start_seconds": 281.33,
+    "end_seconds": 287.89,
+    "text": "a lot in terms of how startups and entrepreneurship and those that are building tech companies,"
+  },
+  {
+    "segment_id": "s0055",
+    "start_seconds": 287.89,
+    "end_seconds": 296.85,
+    "text": "that, you know, ventures are in a big way how culture is shaped, right? And how people are shaped."
+  },
+  {
+    "segment_id": "s0056",
+    "start_seconds": 296.85,
+    "end_seconds": 302.53,
+    "text": "And I think that's overlooked often in terms of, you know, obviously people are, you know, it's,"
+  },
+  {
+    "segment_id": "s0057",
+    "start_seconds": 302.69,
+    "end_seconds": 308.93,
+    "text": "I hope for a good financial outcome for myself and in what I'm doing. I think that's a reasonable"
+  },
+  {
+    "segment_id": "s0058",
+    "start_seconds": 308.93,
+    "end_seconds": 316.53,
+    "text": "part of it. But also, there's a much broader story of of why we're doing, what we're doing."
+  },
+  {
+    "segment_id": "s0059",
+    "start_seconds": 317.57,
+    "end_seconds": 325.97,
+    "text": "Maybe that brings us a little bit to some of our topic about, especially how that culture is"
+  },
+  {
+    "segment_id": "s0060",
+    "start_seconds": 325.97,
+    "end_seconds": 331.09,
+    "text": "shifting around AI specifically. But again, before we get into that, maybe you could just share a"
+  },
+  {
+    "segment_id": "s0061",
+    "start_seconds": 331.17,
+    "end_seconds": 337.01,
+    "text": "little bit about a couple of the things that you're involved with now. And like that story telling"
+  },
+  {
+    "segment_id": "s0062",
+    "start_seconds": 337.01,
+    "end_seconds": 343.33,
+    "text": "piece, how has that evolved to connect with the, with the tech world with, you know, some of"
+  },
+  {
+    "segment_id": "s0063",
+    "start_seconds": 343.33,
+    "end_seconds": 349.49,
+    "text": "your current ventures. Great question. So where I am right now is I'm primarily executive coaching"
+  },
+  {
+    "segment_id": "s0064",
+    "start_seconds": 349.49,
+    "end_seconds": 355.49,
+    "text": "or leadership coaching at MIT's Business School, the Sloan Fellows Programme Primarily. And then also"
+  },
+  {
+    "segment_id": "s0065",
+    "start_seconds": 355.49,
+    "end_seconds": 360.69,
+    "text": "with some startups, usually, right around the series A series B level, primarily, and now coaching"
+  },
+  {
+    "segment_id": "s0066",
+    "start_seconds": 360.69,
+    "end_seconds": 365.41,
+    "text": "their teams. And it's been fascinating getting into coaching teams because you learn a lot more"
+  },
+  {
+    "segment_id": "s0067",
+    "start_seconds": 365.41,
+    "end_seconds": 369.41,
+    "text": "of the different perspective going on within the startup and kind of how people are feeling,"
+  },
+  {
+    "segment_id": "s0068",
+    "start_seconds": 369.41,
+    "end_seconds": 375.09,
+    "text": "how they're trying to evolve as leaders. With MIT, what's been interesting is, there's a lot"
+  },
+  {
+    "segment_id": "s0069",
+    "start_seconds": 375.09,
+    "end_seconds": 379.65,
+    "text": "of international students. And specifically, a lot of the ones I get, they all come here kind of wanting"
+  },
+  {
+    "segment_id": "s0070",
+    "start_seconds": 379.65,
+    "end_seconds": 385.33,
+    "text": "to be an American entrepreneur. So they're always like, can you, can you help me tell my story"
+  },
+  {
+    "segment_id": "s0071",
+    "start_seconds": 385.33,
+    "end_seconds": 389.57,
+    "text": "like this? I'll give me a video or an example. And it'll be somebody, you know, probably"
+  },
+  {
+    "segment_id": "s0072",
+    "start_seconds": 389.57,
+    "end_seconds": 396.05,
+    "text": "really famous in the tech world. But, but I always find like, that's such like, they have fear"
+  },
+  {
+    "segment_id": "s0073",
+    "start_seconds": 396.05,
+    "end_seconds": 400.93,
+    "text": "coming here. They're trying to stand out. They're trying to find their unique positioning. But"
+  },
+  {
+    "segment_id": "s0074",
+    "start_seconds": 400.93,
+    "end_seconds": 405.73,
+    "text": "oftentimes, when we get into their story, their story is so fascinating. It's usually,"
+  },
+  {
+    "segment_id": "s0075",
+    "start_seconds": 406.77,
+    "end_seconds": 411.81,
+    "text": "there's usually a ton of like obstacles for them to even get to, you know, MIT, obviously,"
+  },
+  {
+    "segment_id": "s0076",
+    "start_seconds": 411.81,
+    "end_seconds": 416.29,
+    "text": "they come from, you know, a lot of backgrounds that, you know, took a lot of resilience, a lot"
+  },
+  {
+    "segment_id": "s0077",
+    "start_seconds": 416.29,
+    "end_seconds": 421.17,
+    "text": "of overcoming. And there's this, all this gold in their story that they're basically trying to"
+  },
+  {
+    "segment_id": "s0078",
+    "start_seconds": 421.17,
+    "end_seconds": 426.69,
+    "text": "hide. And it's so, a lot of the process is trying to extract out that unique positioning. And"
+  },
+  {
+    "segment_id": "s0079",
+    "start_seconds": 426.69,
+    "end_seconds": 430.37,
+    "text": "that really is what has sort of informed, you know, what I'm calling right now a little bit"
+  },
+  {
+    "segment_id": "s0080",
+    "start_seconds": 430.37,
+    "end_seconds": 435.01,
+    "text": "around narrow to the intelligence. But it's really about how to like extract your unique self"
+  },
+  {
+    "segment_id": "s0081",
+    "start_seconds": 435.89,
+    "end_seconds": 440.53,
+    "text": "into your story and evolve it in real time. Because with AI, everybody's, you know,"
+  },
+  {
+    "segment_id": "s0082",
+    "start_seconds": 441.65,
+    "end_seconds": 446.85,
+    "text": "excited about AI, but also fearful of AI. And so there's this constant back and forth. And so"
+  },
+  {
+    "segment_id": "s0083",
+    "start_seconds": 446.85,
+    "end_seconds": 454.29,
+    "text": "how do you continuously adapt is sort of what happens throughout all the coaching and work I'm doing"
+  },
+  {
+    "segment_id": "s0084",
+    "start_seconds": 454.29,
+    "end_seconds": 459.33,
+    "text": "right now? You mentioned, so I'm kind of coming in cold with you and Daniel had been through"
+  },
+  {
+    "segment_id": "s0085",
+    "start_seconds": 459.41,
+    "end_seconds": 465.17,
+    "text": "this experience together and stuff. You mentioned narrative intelligence. And could you,"
+  },
+  {
+    "segment_id": "s0086",
+    "start_seconds": 465.17,
+    "end_seconds": 469.17,
+    "text": "could you kind of take me through what that means a little bit? You've referenced it,"
+  },
+  {
+    "segment_id": "s0087",
+    "start_seconds": 469.17,
+    "end_seconds": 474.13,
+    "text": "but I'm not sure I'm there yet. And then maybe, kind of, and you also mentioned kind of"
+  },
+  {
+    "segment_id": "s0088",
+    "start_seconds": 474.13,
+    "end_seconds": 478.93,
+    "text": "the same breath AI. And so, could you kind of like, what's the relationship or, you know,"
+  },
+  {
+    "segment_id": "s0089",
+    "start_seconds": 478.93,
+    "end_seconds": 484.85,
+    "text": "I don't understand, yes, at this point? So I'll leave that to you. So it's obviously"
+  },
+  {
+    "segment_id": "s0090",
+    "start_seconds": 484.85,
+    "end_seconds": 489.33,
+    "text": "artificial intelligence, you know, was sort of, you know, started thinking about it. And, you know,"
+  },
+  {
+    "segment_id": "s0091",
+    "start_seconds": 489.33,
+    "end_seconds": 493.25,
+    "text": "the more we were diving into some of the research and work, we started realizing like we live"
+  },
+  {
+    "segment_id": "s0092",
+    "start_seconds": 493.25,
+    "end_seconds": 498.13,
+    "text": "inside stories, so much of our decision-making, our choices, everything's from the moment we wake up,"
+  },
+  {
+    "segment_id": "s0093",
+    "start_seconds": 498.13,
+    "end_seconds": 503.25,
+    "text": "we're inside of a story, right? And so I started looking at, you know, narrative intelligence,"
+  },
+  {
+    "segment_id": "s0094",
+    "start_seconds": 503.25,
+    "end_seconds": 507.33,
+    "text": "there's been different people that have looked at it. Really, I think the one I saw, I saw was back"
+  },
+  {
+    "segment_id": "s0095",
+    "start_seconds": 507.33,
+    "end_seconds": 512.45,
+    "text": "around MIT and Harvard, some different engineers trying to learn how to talk to each other."
+  },
+  {
+    "segment_id": "s0096",
+    "start_seconds": 513.41,
+    "end_seconds": 517.97,
+    "text": "And so they formed a group around it. So that led me to think, okay, what else is here given"
+  },
+  {
+    "segment_id": "s0097",
+    "start_seconds": 517.97,
+    "end_seconds": 523.49,
+    "text": "the current times with AI? And so, as I started, you know, interviewing people and working with"
+  },
+  {
+    "segment_id": "s0098",
+    "start_seconds": 523.49,
+    "end_seconds": 528.93,
+    "text": "people, I started thinking, what could become more real time around, like, what could become"
+  },
+  {
+    "segment_id": "s0099",
+    "start_seconds": 528.93,
+    "end_seconds": 533.97,
+    "text": "narrative intelligence? Storytelling has its place, obviously, and for a leader or founder,"
+  },
+  {
+    "segment_id": "s0100",
+    "start_seconds": 533.97,
+    "end_seconds": 538.69,
+    "text": "raising money, talking, pitching a customer. But a lot of times storytelling, people get stuck in"
+  },
+  {
+    "segment_id": "s0101",
+    "start_seconds": 538.69,
+    "end_seconds": 542.29,
+    "text": "the stories and they don't evolve them. And so that's when I started thinking, like,"
+  },
+  {
+    "segment_id": "s0102",
+    "start_seconds": 542.37,
+    "end_seconds": 548.13,
+    "text": "things are changing for a start-up founder every day. And there's new information and there's new,"
+  },
+  {
+    "segment_id": "s0103",
+    "start_seconds": 548.13,
+    "end_seconds": 552.37,
+    "text": "there's new audiences, and how do you just continuously evolve it? So that's sort of where I"
+  },
+  {
+    "segment_id": "s0104",
+    "start_seconds": 552.37,
+    "end_seconds": 558.69,
+    "text": "I started. So I pitched it. I did my first talk. It itself, myself, was last year. And I was so nervous,"
+  },
+  {
+    "segment_id": "s0105",
+    "start_seconds": 558.69,
+    "end_seconds": 563.57,
+    "text": "I was going in there. I was in the green room. And I remember the guy from late Ted Lazo,"
+  },
+  {
+    "segment_id": "s0106",
+    "start_seconds": 563.57,
+    "end_seconds": 567.01,
+    "text": "if you've seen that show is in there. And he's sitting there and I'm like, so nervous, I'm like,"
+  },
+  {
+    "segment_id": "s0107",
+    "start_seconds": 567.01,
+    "end_seconds": 571.49,
+    "text": "oh my god, there's like people around here, is anybody going to show up in my room, you know?"
+  },
+  {
+    "segment_id": "s0108",
+    "start_seconds": 571.49,
+    "end_seconds": 576.37,
+    "text": "So I had like, this was a new format they started this past year called Core Conversation."
+  },
+  {
+    "segment_id": "s0109",
+    "start_seconds": 576.37,
+    "end_seconds": 580.13,
+    "text": "So I was really excited, but I really didn't know if anybody was going to show up. So I started"
+  },
+  {
+    "segment_id": "s0110",
+    "start_seconds": 580.13,
+    "end_seconds": 584.13,
+    "text": "peaking outside the door going, gosh, I wonder if anybody's going to show up in this room. And"
+  },
+  {
+    "segment_id": "s0111",
+    "start_seconds": 584.13,
+    "end_seconds": 590.13,
+    "text": "luckily it was sold out. It was like 50 people. So I'm not talking like a 400 person theater,"
+  },
+  {
+    "segment_id": "s0112",
+    "start_seconds": 590.13,
+    "end_seconds": 596.05,
+    "text": "but it was a really good conversation. A lot of interesting perspectives, questions,"
+  },
+  {
+    "segment_id": "s0113",
+    "start_seconds": 596.05,
+    "end_seconds": 600.29,
+    "text": "curious about what you are just asking. What is this narrative intelligence and how you"
+  },
+  {
+    "segment_id": "s0114",
+    "start_seconds": 600.37,
+    "end_seconds": 605.25,
+    "text": "you know, coaching it? And so what it really came out of all of that is people are afraid"
+  },
+  {
+    "segment_id": "s0115",
+    "start_seconds": 605.25,
+    "end_seconds": 610.21,
+    "text": "about the future. They're trying to a lot of them are in transitions from one career. We had"
+  },
+  {
+    "segment_id": "s0116",
+    "start_seconds": 610.21,
+    "end_seconds": 615.65,
+    "text": "one guy there. It was a one the top guys at NASA. And he was like, I'm trying to change my career now."
+  },
+  {
+    "segment_id": "s0117",
+    "start_seconds": 615.65,
+    "end_seconds": 620.13,
+    "text": "And I'm trying to transition in this next stage of life. And so what it really told me was"
+  },
+  {
+    "segment_id": "s0118",
+    "start_seconds": 620.13,
+    "end_seconds": 624.13,
+    "text": "it's kind of like the classics heroes journey. You're from the Joseph Campbell, or what's"
+  },
+  {
+    "segment_id": "s0119",
+    "start_seconds": 624.21,
+    "end_seconds": 630.05,
+    "text": "pretty much in every movie is it's kind of like we're all living that heroes journey. You know,"
+  },
+  {
+    "segment_id": "s0120",
+    "start_seconds": 630.05,
+    "end_seconds": 633.49,
+    "text": "we're in the, you know, whether it's the call, we're being called into some adventure action,"
+  },
+  {
+    "segment_id": "s0121",
+    "start_seconds": 633.49,
+    "end_seconds": 637.49,
+    "text": "or we're going through the threshold, or whether we're turning back home or trying to get back"
+  },
+  {
+    "segment_id": "s0122",
+    "start_seconds": 637.49,
+    "end_seconds": 642.85,
+    "text": "to our true self. There's all these kind of periods we go through. So as I do deeper into it,"
+  },
+  {
+    "segment_id": "s0123",
+    "start_seconds": 642.85,
+    "end_seconds": 648.69,
+    "text": "I pulled a lot of my acting that I coaching I received. I was fortunate to train with some"
+  },
+  {
+    "segment_id": "s0124",
+    "start_seconds": 648.69,
+    "end_seconds": 654.21,
+    "text": "of the top acting coaches in LA and then coaching psychology, neuroscience. I started trying to"
+  },
+  {
+    "segment_id": "s0125",
+    "start_seconds": 654.21,
+    "end_seconds": 658.53,
+    "text": "pull extract different things from it. And what I really came up with is a three-step process,"
+  },
+  {
+    "segment_id": "s0126",
+    "start_seconds": 658.53,
+    "end_seconds": 664.53,
+    "text": "which is own author and act. You know, show up each day and own where you're at, whether you like"
+  },
+  {
+    "segment_id": "s0127",
+    "start_seconds": 664.53,
+    "end_seconds": 669.09,
+    "text": "it or not, or whether you're neutral on it, but own where you are in your journey. You know,"
+  },
+  {
+    "segment_id": "s0128",
+    "start_seconds": 669.09,
+    "end_seconds": 673.65,
+    "text": "look at ways that you can extract your learnings forward and then author this next chapter,"
+  },
+  {
+    "segment_id": "s0129",
+    "start_seconds": 673.65,
+    "end_seconds": 678.53,
+    "text": "this next phase for you. It could be that week, that quarter, that next milestone. But"
+  },
+  {
+    "segment_id": "s0130",
+    "start_seconds": 678.77,
+    "end_seconds": 683.25,
+    "text": "learned to author it. And what I found in the coaching was a lot of times it required a little"
+  },
+  {
+    "segment_id": "s0131",
+    "start_seconds": 683.25,
+    "end_seconds": 688.85,
+    "text": "reframing of your story. We had a founder. I think was in Daniel's cohort. I remember working with"
+  },
+  {
+    "segment_id": "s0132",
+    "start_seconds": 688.85,
+    "end_seconds": 694.21,
+    "text": "and she didn't think she could be the CEO. She was really nervous. She kept telling me every"
+  },
+  {
+    "segment_id": "s0133",
+    "start_seconds": 694.21,
+    "end_seconds": 698.05,
+    "text": "day in the first couple of weeks of the program. I really shouldn't be CEO. I don't think I can do this."
+  },
+  {
+    "segment_id": "s0134",
+    "start_seconds": 698.05,
+    "end_seconds": 703.33,
+    "text": "And she was from another country and she just had a lot of fear around it. And again,"
+  },
+  {
+    "segment_id": "s0135",
+    "start_seconds": 703.33,
+    "end_seconds": 708.45,
+    "text": "as we dove deeper into the work, she just really needed to kind of reframe her story."
+  },
+  {
+    "segment_id": "s0136",
+    "start_seconds": 708.69,
+    "end_seconds": 713.73,
+    "text": "And where she was to that point. And what she started to realize is she gained a lot of confidence"
+  },
+  {
+    "segment_id": "s0137",
+    "start_seconds": 713.73,
+    "end_seconds": 718.69,
+    "text": "and saw that she could become CEO. And so, own author and act and act as the hardest thing,"
+  },
+  {
+    "segment_id": "s0138",
+    "start_seconds": 718.69,
+    "end_seconds": 723.33,
+    "text": "because oftentimes we don't step into that first action step as small as it may be."
+  },
+  {
+    "segment_id": "s0139",
+    "start_seconds": 723.33,
+    "end_seconds": 728.61,
+    "text": "We often let, you know, uncertainty get in the way. One quick follow-up on that. I'm curious,"
+  },
+  {
+    "segment_id": "s0140",
+    "start_seconds": 730.61,
+    "end_seconds": 736.45,
+    "text": "when you're saying that, the notion of imposter syndrome came to mind. And is that, does that"
+  },
+  {
+    "segment_id": "s0141",
+    "start_seconds": 736.45,
+    "end_seconds": 744.29,
+    "text": "play into this processor? 100%. And I think I'm poster syndrome. I don't know one founder or"
+  },
+  {
+    "segment_id": "s0142",
+    "start_seconds": 744.29,
+    "end_seconds": 747.97,
+    "text": "pretty much anybody who hasn't had gone through a poster syndrome. If you don't have a poster syndrome,"
+  },
+  {
+    "segment_id": "s0143",
+    "start_seconds": 747.97,
+    "end_seconds": 752.77,
+    "text": "there might be something wrong with you as my feeling. But I think the more you can embrace"
+  },
+  {
+    "segment_id": "s0144",
+    "start_seconds": 752.77,
+    "end_seconds": 757.41,
+    "text": "in poster syndrome and normalize it, that this is going to happen. I mean, if you're"
+  },
+  {
+    "segment_id": "s0145",
+    "start_seconds": 757.41,
+    "end_seconds": 761.89,
+    "text": "starting, if you're taking the risk to start a company and going through the hell that it takes"
+  },
+  {
+    "segment_id": "s0146",
+    "start_seconds": 761.89,
+    "end_seconds": 768.29,
+    "text": "to become, to be an entrepreneur, to be a founder, because it is. It's always like 10 times harder,"
+  },
+  {
+    "segment_id": "s0147",
+    "start_seconds": 768.29,
+    "end_seconds": 774.05,
+    "text": "longer, everything. I'm sure Daniel's nodding over there, because it's never easy. If it is easy,"
+  },
+  {
+    "segment_id": "s0148",
+    "start_seconds": 774.05,
+    "end_seconds": 778.05,
+    "text": "you're probably just got lucky. You got a lot of reticulars. You got a lot of reticulars up there."
+  },
+  {
+    "segment_id": "s0149",
+    "start_seconds": 778.05,
+    "end_seconds": 783.49,
+    "text": "But so embracing imposter syndrome and immediately recognizing that that's going to be part of the"
+  },
+  {
+    "segment_id": "s0150",
+    "start_seconds": 783.49,
+    "end_seconds": 790.29,
+    "text": "journey is probably the best way to approach it. Yeah, I definitely resonate with that a ton."
+  },
+  {
+    "segment_id": "s0151",
+    "start_seconds": 790.29,
+    "end_seconds": 797.65,
+    "text": "And I want to get, I want to get to each of these phases that you talked about and kind of tie it"
+  },
+  {
+    "segment_id": "s0152",
+    "start_seconds": 797.65,
+    "end_seconds": 804.77,
+    "text": "in also to our journey with AI. Yeah. More generally, I think that would be really interesting."
+  },
+  {
+    "segment_id": "s0153",
+    "start_seconds": 804.77,
+    "end_seconds": 813.25,
+    "text": "However, before we do that, maybe just like a, maybe as like framed as a simple question,"
+  },
+  {
+    "segment_id": "s0154",
+    "start_seconds": 813.25,
+    "end_seconds": 819.73,
+    "text": "but I think there's a lot behind it. I guess my question is, why should people care about their"
+  },
+  {
+    "segment_id": "s0155",
+    "start_seconds": 819.73,
+    "end_seconds": 826.85,
+    "text": "own journey or expressing their own story? Like at a high level, like what? Sure."
+  },
+  {
+    "segment_id": "s0156",
+    "start_seconds": 827.97,
+    "end_seconds": 834.05,
+    "text": "What is that? Do you maybe for the person and those in their environment? Well, I would just say"
+  },
+  {
+    "segment_id": "s0157",
+    "start_seconds": 834.05,
+    "end_seconds": 840.45,
+    "text": "it simply is the one unique thing you know you have is your story in your journey. And we often,"
+  },
+  {
+    "segment_id": "s0158",
+    "start_seconds": 840.45,
+    "end_seconds": 845.09,
+    "text": "you know, I saw the statistic the other day that we have 60,000 thoughts a day and I think 80"
+  },
+  {
+    "segment_id": "s0159",
+    "start_seconds": 845.17,
+    "end_seconds": 851.81,
+    "text": "percent of them are negative. But learning to start shifting the mindset and realizing like with AI."
+  },
+  {
+    "segment_id": "s0160",
+    "start_seconds": 851.81,
+    "end_seconds": 857.33,
+    "text": "I mean, everybody has their different perspectives on AI and where it's going and how fast and"
+  },
+  {
+    "segment_id": "s0161",
+    "start_seconds": 857.33,
+    "end_seconds": 861.41,
+    "text": "and what it's going to do. But if the very least, we can all probably much recognize it's very"
+  },
+  {
+    "segment_id": "s0162",
+    "start_seconds": 861.41,
+    "end_seconds": 866.69,
+    "text": "powerful. It's game-changing. We're at a pivotal moment in our in history. And so all the more reason for"
+  },
+  {
+    "segment_id": "s0163",
+    "start_seconds": 866.69,
+    "end_seconds": 873.25,
+    "text": "you to, you know, double down on yourself and figure out ways to evolve. You're so mean to adapt to"
+  },
+  {
+    "segment_id": "s0164",
+    "start_seconds": 873.25,
+    "end_seconds": 880.05,
+    "text": "personally grow. To become the leader you want to become to, you know, embrace AI and use AI"
+  },
+  {
+    "segment_id": "s0165",
+    "start_seconds": 880.05,
+    "end_seconds": 885.81,
+    "text": "that's practical for you. And no pun intended. But basically use AI in a way that can help"
+  },
+  {
+    "segment_id": "s0166",
+    "start_seconds": 885.81,
+    "end_seconds": 891.09,
+    "text": "help accelerate your personal growth, you know, as leaders, as people, as family members, as"
+  },
+  {
+    "segment_id": "s0167",
+    "start_seconds": 891.09,
+    "end_seconds": 896.61,
+    "text": "dad, or wife, or brother, sister, or whoever. I mean, it's, in that's the other big thing is once"
+  },
+  {
+    "segment_id": "s0168",
+    "start_seconds": 896.61,
+    "end_seconds": 901.81,
+    "text": "I've found quickly with founders, Daniel, I'm sure you can attest to this, is it quickly"
+  },
+  {
+    "segment_id": "s0169",
+    "start_seconds": 901.89,
+    "end_seconds": 905.81,
+    "text": "becomes, it's hard to turn off like you're a founder and then you kind of come home and it's"
+  },
+  {
+    "segment_id": "s0170",
+    "start_seconds": 905.81,
+    "end_seconds": 910.37,
+    "text": "taught you how to kind of turn it off. But eventually it all kind of becomes one in the same."
+  },
+  {
+    "segment_id": "s0171",
+    "start_seconds": 910.37,
+    "end_seconds": 915.97,
+    "text": "The leader you are, the leader you are at work, quickly evolves to the leader you are at home"
+  },
+  {
+    "segment_id": "s0172",
+    "start_seconds": 915.97,
+    "end_seconds": 922.77,
+    "text": "and in your personal life. And so the more you can quickly align those two and learn to just"
+  },
+  {
+    "segment_id": "s0173",
+    "start_seconds": 922.77,
+    "end_seconds": 927.33,
+    "text": "become a leader. As a part is, except the fact that this is an identity I want to become in all"
+  },
+  {
+    "segment_id": "s0174",
+    "start_seconds": 927.41,
+    "end_seconds": 936.21,
+    "text": "aspects of my life, I think is important. In this world where content is being produced so quickly"
+  },
+  {
+    "segment_id": "s0175",
+    "start_seconds": 936.21,
+    "end_seconds": 942.45,
+    "text": "and people are being bombarded by so much it's critical that for your website, for your brand,"
+  },
+  {
+    "segment_id": "s0176",
+    "start_seconds": 942.45,
+    "end_seconds": 950.45,
+    "text": "for your landing pages, you produce something that looks hand-crafted, but is still extremely fast"
+  },
+  {
+    "segment_id": "s0177",
+    "start_seconds": 951.25,
+    "end_seconds": 958.05,
+    "text": "and our partner, Framer, is enabling just this. Framer is the AI website builder that helps"
+  },
+  {
+    "segment_id": "s0178",
+    "start_seconds": 958.05,
+    "end_seconds": 964.53,
+    "text": "creators, teams and businesses ship production ready sites faster than ever while getting"
+  },
+  {
+    "segment_id": "s0179",
+    "start_seconds": 964.53,
+    "end_seconds": 971.97,
+    "text": "every detail right, prompt, inspect, edit and publish in one place at a whole new pace."
+  },
+  {
+    "segment_id": "s0180",
+    "start_seconds": 971.97,
+    "end_seconds": 977.09,
+    "text": "Learn how you can get more out of your site from a Framer specialist or get started building for"
+  },
+  {
+    "segment_id": "s0181",
+    "start_seconds": 977.09,
+    "end_seconds": 987.25,
+    "text": "free today at Framer.com slash practical AI for 30% off a Framer Pro annual plan. That's Framer.com slash"
+  },
+  {
+    "segment_id": "s0182",
+    "start_seconds": 987.25,
+    "end_seconds": 996.06,
+    "text": "practical AI rules and restrictions may apply. To read you definitely have, you got me hooked on this,"
+  },
+  {
+    "segment_id": "s0183",
+    "start_seconds": 996.06,
+    "end_seconds": 1004.3,
+    "text": "I'm curious and I think both Daniel and myself and others listening or watching the show"
+  },
+  {
+    "segment_id": "s0184",
+    "start_seconds": 1005.02,
+    "end_seconds": 1011.66,
+    "text": "were probably using a set of tools and to some degree were probably doing some of that,"
+  },
+  {
+    "segment_id": "s0185",
+    "start_seconds": 1011.66,
+    "end_seconds": 1019.26,
+    "text": "I'm guessing there were ideas as you were talking that were resonating like I was going"
+  },
+  {
+    "segment_id": "s0186",
+    "start_seconds": 1019.26,
+    "end_seconds": 1025.02,
+    "text": "well I do this and I do that and I think that's helped this obviously helps it work, this thing"
+  },
+  {
+    "segment_id": "s0187",
+    "start_seconds": 1025.02,
+    "end_seconds": 1034.22,
+    "text": "is helped at home as we're using different models and chats all the things and so agents"
+  },
+  {
+    "segment_id": "s0188",
+    "start_seconds": 1034.22,
+    "end_seconds": 1041.18,
+    "text": "these days what are some of the things like if you're trying to get focus now on developing"
+  },
+  {
+    "segment_id": "s0189",
+    "start_seconds": 1041.18,
+    "end_seconds": 1046.86,
+    "text": "narrative intelligence and you want to use tools in a more focused way to help yourself"
+  },
+  {
+    "segment_id": "s0190",
+    "start_seconds": 1047.5,
+    "end_seconds": 1053.5,
+    "text": "develop your story as you've discussed. Can you kind of focus me? Can you kind of take me down"
+  },
+  {
+    "segment_id": "s0191",
+    "start_seconds": 1053.5,
+    "end_seconds": 1058.38,
+    "text": "a path on what that means and instead of me just kind of doing whatever I'm doing it,"
+  },
+  {
+    "segment_id": "s0192",
+    "start_seconds": 1058.38,
+    "end_seconds": 1064.06,
+    "text": "electrically kind of give me a strategy. Okay yes I think and that's one of the hardest things"
+  },
+  {
+    "segment_id": "s0193",
+    "start_seconds": 1064.06,
+    "end_seconds": 1068.62,
+    "text": "Chris I think for all of us and one thing's I think I gravitated in the coaching because I needed it"
+  },
+  {
+    "segment_id": "s0194",
+    "start_seconds": 1068.62,
+    "end_seconds": 1074.54,
+    "text": "for myself I mean you know we get distracted and we were maybe excited about some personal development"
+  },
+  {
+    "segment_id": "s0195",
+    "start_seconds": 1074.54,
+    "end_seconds": 1079.82,
+    "text": "or some book or some growth at one point and then we're quickly back off of that so I you know what"
+  },
+  {
+    "segment_id": "s0196",
+    "start_seconds": 1079.82,
+    "end_seconds": 1085.34,
+    "text": "I found to be very helpful with with coaching founders and even for myself is really getting"
+  },
+  {
+    "segment_id": "s0197",
+    "start_seconds": 1085.34,
+    "end_seconds": 1091.66,
+    "text": "focused on your values like really defining like what do you value and if you're working at a company"
+  },
+  {
+    "segment_id": "s0198",
+    "start_seconds": 1091.66,
+    "end_seconds": 1096.78,
+    "text": "like you know technology company or wherever or you're a founder really establishing where can I"
+  },
+  {
+    "segment_id": "s0199",
+    "start_seconds": 1096.78,
+    "end_seconds": 1102.06,
+    "text": "align my personal values with the company values you know where because that alignment is everything"
+  },
+  {
+    "segment_id": "s0200",
+    "start_seconds": 1102.06,
+    "end_seconds": 1106.7,
+    "text": "and it goes deeper into the why you know we've all heard about the talks about the why but"
+  },
+  {
+    "segment_id": "s0201",
+    "start_seconds": 1106.7,
+    "end_seconds": 1111.26,
+    "text": "it's really is true I mean yeah you'd have to get to the what and how but really with the why"
+  },
+  {
+    "segment_id": "s0202",
+    "start_seconds": 1111.42,
+    "end_seconds": 1115.98,
+    "text": "for your own personal why where you see yourself going understand in the company why"
+  },
+  {
+    "segment_id": "s0203",
+    "start_seconds": 1116.94,
+    "end_seconds": 1121.58,
+    "text": "wherever you're working is is usually valuable because I think what that does is keep you"
+  },
+  {
+    "segment_id": "s0204",
+    "start_seconds": 1121.58,
+    "end_seconds": 1127.1,
+    "text": "focused back to your question about focus to keep you focused on how you're going to stay motivated"
+  },
+  {
+    "segment_id": "s0205",
+    "start_seconds": 1127.1,
+    "end_seconds": 1131.82,
+    "text": "how you're going to stay passionate you know what is the purpose here what is the goal so it's kind"
+  },
+  {
+    "segment_id": "s0206",
+    "start_seconds": 1131.82,
+    "end_seconds": 1137.98,
+    "text": "of like values is sort of the core foundation and then looking at the track to the outcome like"
+  },
+  {
+    "segment_id": "s0207",
+    "start_seconds": 1138.06,
+    "end_seconds": 1142.46,
+    "text": "and then work back from that look what outcome do does the company foresee or what outcome do I"
+  },
+  {
+    "segment_id": "s0208",
+    "start_seconds": 1142.46,
+    "end_seconds": 1147.58,
+    "text": "want in my personal life and then working back to what are those steps I can step into so that's"
+  },
+  {
+    "segment_id": "s0209",
+    "start_seconds": 1147.58,
+    "end_seconds": 1152.14,
+    "text": "that's that's really been I think the best and the biggest thing I found is just keeping it super"
+  },
+  {
+    "segment_id": "s0210",
+    "start_seconds": 1152.14,
+    "end_seconds": 1157.82,
+    "text": "simple and realistic because I can't tell you times I've done this personally and and just"
+  },
+  {
+    "segment_id": "s0211",
+    "start_seconds": 1157.82,
+    "end_seconds": 1163.58,
+    "text": "fallen off and gone oh gosh you know I set these goals and you know it sounded great a January one"
+  },
+  {
+    "segment_id": "s0212",
+    "start_seconds": 1163.58,
+    "end_seconds": 1167.82,
+    "text": "but you know my February one I'm already like what's going on here I'm not doing hardly any"
+  },
+  {
+    "segment_id": "s0213",
+    "start_seconds": 1167.82,
+    "end_seconds": 1172.62,
+    "text": "of this stuff so just making a realistic that book atomic habits is one of my favorite books"
+  },
+  {
+    "segment_id": "s0214",
+    "start_seconds": 1173.34,
+    "end_seconds": 1179.58,
+    "text": "a lot of people have read that but that's a really great way to look at how you can be you compound"
+  },
+  {
+    "segment_id": "s0215",
+    "start_seconds": 1179.58,
+    "end_seconds": 1184.54,
+    "text": "yourself over the course of your with really small habits you know I've read the books so"
+  },
+  {
+    "segment_id": "s0216",
+    "start_seconds": 1185.18,
+    "end_seconds": 1193.1,
+    "text": "good definitely good one Danny we're about to say yeah read I think you kind of started out the"
+  },
+  {
+    "segment_id": "s0217",
+    "start_seconds": 1193.26,
+    "end_seconds": 1198.14,
+    "text": "you mentioned those three steps the first one was own I've been thinking about that as you"
+  },
+  {
+    "segment_id": "s0218",
+    "start_seconds": 1198.14,
+    "end_seconds": 1206.06,
+    "text": "and Chris have been talking and it it really resonated with me in relation to how myself and our"
+  },
+  {
+    "segment_id": "s0219",
+    "start_seconds": 1206.06,
+    "end_seconds": 1212.38,
+    "text": "team and maybe how I've led in the adoption of AI on our team and I think where we have been"
+  },
+  {
+    "segment_id": "s0220",
+    "start_seconds": 1212.38,
+    "end_seconds": 1218.3,
+    "text": "blocked and maybe not not aligned like you're talking about to where we need to go with AI how we"
+  },
+  {
+    "segment_id": "s0221",
+    "start_seconds": 1218.3,
+    "end_seconds": 1224.14,
+    "text": "need to adopt those tools which tools we adopt et cetera has been maybe when I've kind of led more"
+  },
+  {
+    "segment_id": "s0222",
+    "start_seconds": 1225.66,
+    "end_seconds": 1233.02,
+    "text": "I've not owned where where I am with the technology and what I don't know and what I'm you know"
+  },
+  {
+    "segment_id": "s0223",
+    "start_seconds": 1233.02,
+    "end_seconds": 1239.34,
+    "text": "comfortable with or not comfortable with I've thought a lot over the past year about my own humility"
+  },
+  {
+    "segment_id": "s0224",
+    "start_seconds": 1239.34,
+    "end_seconds": 1246.3,
+    "text": "right around like oh I have these certain code standards right yeah and our team and I have these"
+  },
+  {
+    "segment_id": "s0225",
+    "start_seconds": 1246.38,
+    "end_seconds": 1253.58,
+    "text": "standards around how a software development life cycle should happen right and I and I know in my"
+  },
+  {
+    "segment_id": "s0226",
+    "start_seconds": 1253.58,
+    "end_seconds": 1261.26,
+    "text": "pride or you know whatever that that is that this is the way it should go and I'm not really owning"
+  },
+  {
+    "segment_id": "s0227",
+    "start_seconds": 1261.26,
+    "end_seconds": 1267.58,
+    "text": "the reality of where the technology is and what's possible with it so I'm actually so let's say"
+  },
+  {
+    "segment_id": "s0228",
+    "start_seconds": 1267.58,
+    "end_seconds": 1272.78,
+    "text": "our company wants to get to this place like you're talking about we have values that are important"
+  },
+  {
+    "segment_id": "s0229",
+    "start_seconds": 1272.78,
+    "end_seconds": 1278.62,
+    "text": "to us and we have a mission of what we're trying to achieve I'm actually a liability then"
+  },
+  {
+    "segment_id": "s0230",
+    "start_seconds": 1279.42,
+    "end_seconds": 1286.06,
+    "text": "towards that mission because I'm not I'm not acting out of humility or a real ownership of what"
+  },
+  {
+    "segment_id": "s0231",
+    "start_seconds": 1286.06,
+    "end_seconds": 1292.14,
+    "text": "the reality is that partially what you mean by that it is curious your reflection on on that"
+  },
+  {
+    "segment_id": "s0232",
+    "start_seconds": 1292.14,
+    "end_seconds": 1297.26,
+    "text": "experience I guess yes well first of all don't beat yourself up Daniel yes it's very common"
+  },
+  {
+    "segment_id": "s0233",
+    "start_seconds": 1297.26,
+    "end_seconds": 1301.34,
+    "text": "and I think part of it is is because you're the leader you're the CEO so you're trying to show"
+  },
+  {
+    "segment_id": "s0234",
+    "start_seconds": 1301.42,
+    "end_seconds": 1306.78,
+    "text": "certainty you're sure you have a tremendous background and and you're super smart but like"
+  },
+  {
+    "segment_id": "s0235",
+    "start_seconds": 1306.78,
+    "end_seconds": 1311.02,
+    "text": "I think that really is it because what I'm finding with teams right now we actually with one team I'm"
+  },
+  {
+    "segment_id": "s0236",
+    "start_seconds": 1311.02,
+    "end_seconds": 1316.3,
+    "text": "coaching it's an AI company but we're calling it now the ownership project because so much of"
+  },
+  {
+    "segment_id": "s0237",
+    "start_seconds": 1316.3,
+    "end_seconds": 1321.02,
+    "text": "these leaders I mean you know it is when you're going from these early stages you're in survival mode"
+  },
+  {
+    "segment_id": "s0238",
+    "start_seconds": 1321.02,
+    "end_seconds": 1326.54,
+    "text": "for so much of it right you're just trying to survive and then all the sudden you you know you either"
+  },
+  {
+    "segment_id": "s0239",
+    "start_seconds": 1326.54,
+    "end_seconds": 1331.74,
+    "text": "hit that point where you're starting to grow revenue and you get some investment and now you're"
+  },
+  {
+    "segment_id": "s0240",
+    "start_seconds": 1331.74,
+    "end_seconds": 1336.38,
+    "text": "expected to really grow and everybody's got to grow a lot of these leaders some of them haven't"
+  },
+  {
+    "segment_id": "s0241",
+    "start_seconds": 1336.38,
+    "end_seconds": 1341.66,
+    "text": "been in leadership positions so everybody's now learning together and I think what you pointed out"
+  },
+  {
+    "segment_id": "s0242",
+    "start_seconds": 1341.66,
+    "end_seconds": 1348.3,
+    "text": "is really key for the CEO founder especially is to to be more open when they can about like what they"
+  },
+  {
+    "segment_id": "s0243",
+    "start_seconds": 1348.3,
+    "end_seconds": 1353.34,
+    "text": "don't know um I can't tell me times I think founders just naturally want to say hey I've got"
+  },
+  {
+    "segment_id": "s0244",
+    "start_seconds": 1353.34,
+    "end_seconds": 1358.94,
+    "text": "to pretend like I know it all you know because they they think that's the norm but really when they"
+  },
+  {
+    "segment_id": "s0245",
+    "start_seconds": 1358.94,
+    "end_seconds": 1362.94,
+    "text": "can open up and say hey you know this this scenario I'm learning too you know so we can learn"
+  },
+  {
+    "segment_id": "s0246",
+    "start_seconds": 1362.94,
+    "end_seconds": 1368.94,
+    "text": "together I think can be can be very valuable as well so yeah ownership is such a big topic right"
+  },
+  {
+    "segment_id": "s0247",
+    "start_seconds": 1368.94,
+    "end_seconds": 1374.14,
+    "text": "now I'm finding it coming up in almost every team and group I'm coaching with because also they need"
+  },
+  {
+    "segment_id": "s0248",
+    "start_seconds": 1374.14,
+    "end_seconds": 1379.1,
+    "text": "they need the rest of the team to take initiative and you know whether it's AI tools they're"
+  },
+  {
+    "segment_id": "s0249",
+    "start_seconds": 1379.18,
+    "end_seconds": 1383.42,
+    "text": "learning or anything that's happening I'm just happening so fast that whatever anybody can"
+  },
+  {
+    "segment_id": "s0250",
+    "start_seconds": 1383.42,
+    "end_seconds": 1389.18,
+    "text": "bring to the table and share and move forward they'll all the better right so longer helpful to be"
+  },
+  {
+    "segment_id": "s0251",
+    "start_seconds": 1389.18,
+    "end_seconds": 1396.54,
+    "text": "siloed yeah yeah and do you think that that connects with then let's say a person in like you"
+  },
+  {
+    "segment_id": "s0252",
+    "start_seconds": 1396.54,
+    "end_seconds": 1402.06,
+    "text": "were talking about people considering their roles even if they're not let's say the CEO or in that"
+  },
+  {
+    "segment_id": "s0253",
+    "start_seconds": 1402.06,
+    "end_seconds": 1409.42,
+    "text": "position people are constantly being fed like your your role might not be here you you know you"
+  },
+  {
+    "segment_id": "s0254",
+    "start_seconds": 1409.42,
+    "end_seconds": 1417.42,
+    "text": "need to adapt you like all of these things um and it's really hard to embrace that that's sort of"
+  },
+  {
+    "segment_id": "s0255",
+    "start_seconds": 1417.42,
+    "end_seconds": 1422.46,
+    "text": "reality I'm not saying it is the reality for everyone right yes I don't know that brings up"
+  },
+  {
+    "segment_id": "s0256",
+    "start_seconds": 1422.46,
+    "end_seconds": 1428.7,
+    "text": "emotions for sure in terms of all of that relationship to AI and what it could mean that's a big"
+  },
+  {
+    "segment_id": "s0257",
+    "start_seconds": 1428.7,
+    "end_seconds": 1433.02,
+    "text": "part of it and I think especially as you would know I think a lot of engineers especially like you know"
+  },
+  {
+    "segment_id": "s0258",
+    "start_seconds": 1433.02,
+    "end_seconds": 1438.46,
+    "text": "and the day when everybody was told yeah go become learn how to code you know and this is the path"
+  },
+  {
+    "segment_id": "s0259",
+    "start_seconds": 1438.46,
+    "end_seconds": 1443.9,
+    "text": "this is like in for a lot of reasons it is it's such a great path but now every there's a lot of"
+  },
+  {
+    "segment_id": "s0260",
+    "start_seconds": 1443.9,
+    "end_seconds": 1448.62,
+    "text": "people now looking like am I gonna get replaced and I think that's happening across most industries"
+  },
+  {
+    "segment_id": "s0261",
+    "start_seconds": 1448.62,
+    "end_seconds": 1452.94,
+    "text": "I know with some of the people I'm talking to like in Hollywood there's a guest I just had on"
+  },
+  {
+    "segment_id": "s0262",
+    "start_seconds": 1452.94,
+    "end_seconds": 1458.54,
+    "text": "Eric Shemlin and he's kind of an expert around technology and AI and Hollywood all the studios"
+  },
+  {
+    "segment_id": "s0263",
+    "start_seconds": 1458.54,
+    "end_seconds": 1463.18,
+    "text": "and stuff and oh my god like yeah it's it's it's amazing you know everybody thinks they're"
+  },
+  {
+    "segment_id": "s0264",
+    "start_seconds": 1463.18,
+    "end_seconds": 1467.5,
+    "text": "getting replaced and so yeah I think there's I think for your role it's gonna be a lot of like"
+  },
+  {
+    "segment_id": "s0265",
+    "start_seconds": 1467.5,
+    "end_seconds": 1473.74,
+    "text": "your coaching uh having the coach and manage and and listen to people and really just kind of"
+  },
+  {
+    "segment_id": "s0266",
+    "start_seconds": 1473.74,
+    "end_seconds": 1478.94,
+    "text": "bring it back to what's practical right now in today's current time knowing that there's a lot"
+  },
+  {
+    "segment_id": "s0267",
+    "start_seconds": 1479.02,
+    "end_seconds": 1485.26,
+    "text": "to change um but what can you control right now it's sort of the old like military what can I control"
+  },
+  {
+    "segment_id": "s0268",
+    "start_seconds": 1485.26,
+    "end_seconds": 1490.46,
+    "text": "in this moment you know uh so I think that's that's really helpful but yeah and it really it's also"
+  },
+  {
+    "segment_id": "s0269",
+    "start_seconds": 1490.46,
+    "end_seconds": 1496.3,
+    "text": "requiring a lot of your your teammates to start learning it looking at ways it maybe they can wear"
+  },
+  {
+    "segment_id": "s0270",
+    "start_seconds": 1496.3,
+    "end_seconds": 1500.54,
+    "text": "another hat and I know they're probably going gosh you know I signed up for the start up and I thought"
+  },
+  {
+    "segment_id": "s0271",
+    "start_seconds": 1500.54,
+    "end_seconds": 1506.14,
+    "text": "the role was this when I signed up and it's changed and I'm taking on all these roles but that's also"
+  },
+  {
+    "segment_id": "s0272",
+    "start_seconds": 1506.22,
+    "end_seconds": 1511.34,
+    "text": "part of how you learn I mean one of the things I I coach with with some of the people at MIT"
+  },
+  {
+    "segment_id": "s0273",
+    "start_seconds": 1511.34,
+    "end_seconds": 1516.3,
+    "text": "or considering two tracks am I gonna go try to interview and get a job with Google hopefully"
+  },
+  {
+    "segment_id": "s0274",
+    "start_seconds": 1516.3,
+    "end_seconds": 1521.74,
+    "text": "or Facebook or Meta or whoever or you know do I want to start my own business or Google work"
+  },
+  {
+    "segment_id": "s0275",
+    "start_seconds": 1521.74,
+    "end_seconds": 1527.1,
+    "text": "for a startup for a while and and that's one of the pros you try to get across is like you may not"
+  },
+  {
+    "segment_id": "s0276",
+    "start_seconds": 1527.1,
+    "end_seconds": 1531.74,
+    "text": "make as much money there might not be as much certainty but guess what you can learn a lot quickly"
+  },
+  {
+    "segment_id": "s0277",
+    "start_seconds": 1531.82,
+    "end_seconds": 1537.34,
+    "text": "you can take on a lot of different roles quickly so it's a great it's a great thing to to"
+  },
+  {
+    "segment_id": "s0278",
+    "start_seconds": 1537.34,
+    "end_seconds": 1542.3,
+    "text": "understand as as you're approaching that and I'd like to I'd like to actually extend this because"
+  },
+  {
+    "segment_id": "s0279",
+    "start_seconds": 1542.3,
+    "end_seconds": 1548.38,
+    "text": "you're you're actually going where I was gonna ask you anyway and it's like we are in"
+  },
+  {
+    "segment_id": "s0280",
+    "start_seconds": 1549.82,
+    "end_seconds": 1555.74,
+    "text": "for better or for worse kind of the most fantastic moment in history when you know where things"
+  },
+  {
+    "segment_id": "s0281",
+    "start_seconds": 1555.74,
+    "end_seconds": 1562.46,
+    "text": "have changed and you know the notion of who we are and our identities are changing the work"
+  },
+  {
+    "segment_id": "s0282",
+    "start_seconds": 1562.46,
+    "end_seconds": 1569.34,
+    "text": "we're doing on a day to day basis how we get it done I know speaking for myself I am with with the"
+  },
+  {
+    "segment_id": "s0283",
+    "start_seconds": 1569.34,
+    "end_seconds": 1574.78,
+    "text": "new possibilities you know the tooling creates I'm more productive right now than I've ever been"
+  },
+  {
+    "segment_id": "s0284",
+    "start_seconds": 1574.78,
+    "end_seconds": 1581.42,
+    "text": "in my entire life yeah and and so and I'm learning I'm like I'm learning what to do with that"
+  },
+  {
+    "segment_id": "s0285",
+    "start_seconds": 1581.42,
+    "end_seconds": 1588.54,
+    "text": "like there's an adjustment of extra capacity and so you know you mentioned about in startups people"
+  },
+  {
+    "segment_id": "s0286",
+    "start_seconds": 1588.54,
+    "end_seconds": 1594.22,
+    "text": "come in and say well I came in on this role but you know maybe maybe it's time to pivot my role"
+  },
+  {
+    "segment_id": "s0287",
+    "start_seconds": 1594.22,
+    "end_seconds": 1600.7,
+    "text": "within the startup but I think that's happening in all organizations right now that's you're you can"
+  },
+  {
+    "segment_id": "s0288",
+    "start_seconds": 1600.7,
+    "end_seconds": 1605.74,
+    "text": "have very large well-established organizations that are having the same situation with the new"
+  },
+  {
+    "segment_id": "s0289",
+    "start_seconds": 1605.82,
+    "end_seconds": 1615.1,
+    "text": "capabilities coming in and so that is continuing to accelerate yeah so given the fact that the like"
+  },
+  {
+    "segment_id": "s0290",
+    "start_seconds": 1615.1,
+    "end_seconds": 1622.78,
+    "text": "our day-to-day reality is accelerating along this trend and and therefore it's not even"
+  },
+  {
+    "segment_id": "s0291",
+    "start_seconds": 1622.78,
+    "end_seconds": 1627.82,
+    "text": "the rate of learning being the same you know you don't have to learn the same tomorrow you have to"
+  },
+  {
+    "segment_id": "s0292",
+    "start_seconds": 1627.82,
+    "end_seconds": 1632.62,
+    "text": "learn more than you've learned today and the next day you're gonna have to learn more and be more"
+  },
+  {
+    "segment_id": "s0293",
+    "start_seconds": 1633.18,
+    "end_seconds": 1640.22,
+    "text": "have a greater ability to pivot in your own world yes yeah how so like I love the framework that"
+  },
+  {
+    "segment_id": "s0294",
+    "start_seconds": 1640.22,
+    "end_seconds": 1645.34,
+    "text": "you've taken but I'm throwing this challenge at you for the folks that are out there as we're all"
+  },
+  {
+    "segment_id": "s0295",
+    "start_seconds": 1645.34,
+    "end_seconds": 1649.34,
+    "text": "living that which obviously generates some of the fear that you've been talking about how do you"
+  },
+  {
+    "segment_id": "s0296",
+    "start_seconds": 1649.34,
+    "end_seconds": 1656.3,
+    "text": "manage that in the process as the acceleration continues um yeah because I that's I'm certainly struggling"
+  },
+  {
+    "segment_id": "s0297",
+    "start_seconds": 1656.3,
+    "end_seconds": 1662.86,
+    "text": "with that in my own life um well I think it's right I understand Chris I I feel like we're all"
+  },
+  {
+    "segment_id": "s0298",
+    "start_seconds": 1662.86,
+    "end_seconds": 1666.62,
+    "text": "we all can relate to that and that's where again coming back to being human and trying to understand"
+  },
+  {
+    "segment_id": "s0299",
+    "start_seconds": 1666.62,
+    "end_seconds": 1672.14,
+    "text": "the meaning all this all the meaning underneath all of this is is is key so that's where I think"
+  },
+  {
+    "segment_id": "s0300",
+    "start_seconds": 1672.14,
+    "end_seconds": 1677.26,
+    "text": "like those emotional intelligence skills are so critical now now more than ever right how do I"
+  },
+  {
+    "segment_id": "s0301",
+    "start_seconds": 1677.26,
+    "end_seconds": 1682.46,
+    "text": "become more self-aware how do I stay more present you know how do I learn to self-regulate in situations"
+  },
+  {
+    "segment_id": "s0302",
+    "start_seconds": 1682.46,
+    "end_seconds": 1687.34,
+    "text": "when there's fear everywhere there's distraction there's feels like the world's overwhelming one"
+  },
+  {
+    "segment_id": "s0303",
+    "start_seconds": 1687.34,
+    "end_seconds": 1692.3,
+    "text": "day you're up and excited because you're you're you're working on with collateral chat chat GPT and"
+  },
+  {
+    "segment_id": "s0304",
+    "start_seconds": 1692.3,
+    "end_seconds": 1696.22,
+    "text": "everything's like oh you're feeling great about yourself and then the next minute you feel like oh gosh"
+  },
+  {
+    "segment_id": "s0305",
+    "start_seconds": 1696.22,
+    "end_seconds": 1701.58,
+    "text": "like I feel like I'm this small and I have no place here so it's I think a lot of those skills are"
+  },
+  {
+    "segment_id": "s0306",
+    "start_seconds": 1701.58,
+    "end_seconds": 1707.5,
+    "text": "really important to develop and I also think you mentioned identity I think it's important to look at"
+  },
+  {
+    "segment_id": "s0307",
+    "start_seconds": 1707.5,
+    "end_seconds": 1713.34,
+    "text": "identity different I mean there's essence right who I am really am who you really are deep down like"
+  },
+  {
+    "segment_id": "s0308",
+    "start_seconds": 1713.34,
+    "end_seconds": 1719.1,
+    "text": "what makes you you but then there's identity and identity can can involve and I think a lot of people"
+  },
+  {
+    "segment_id": "s0309",
+    "start_seconds": 1719.1,
+    "end_seconds": 1724.06,
+    "text": "don't try on enough identities at times so for example I saw this quote the other day where"
+  },
+  {
+    "segment_id": "s0310",
+    "start_seconds": 1724.06,
+    "end_seconds": 1728.3,
+    "text": "somebody said you know I never thought of myself as an athlete but I am starting to go the gym three"
+  },
+  {
+    "segment_id": "s0311",
+    "start_seconds": 1728.3,
+    "end_seconds": 1732.94,
+    "text": "days a week and I'm starting to do things and it's like I think I'm an athlete and I'm like yeah"
+  },
+  {
+    "segment_id": "s0312",
+    "start_seconds": 1733.5,
+    "end_seconds": 1739.1,
+    "text": "call yourself that and that's where I go back to like if you can make leadership your identity"
+  },
+  {
+    "segment_id": "s0313",
+    "start_seconds": 1739.1,
+    "end_seconds": 1744.62,
+    "text": "even if you're not the CEO at a company that's fine make yourself a leader and figure out like"
+  },
+  {
+    "segment_id": "s0314",
+    "start_seconds": 1744.62,
+    "end_seconds": 1749.74,
+    "text": "what steps I want to take to continuously evolve but I guess to answer your question I really"
+  },
+  {
+    "segment_id": "s0315",
+    "start_seconds": 1749.74,
+    "end_seconds": 1756.86,
+    "text": "rely a lot on those emotional intelligence skills how do I how do I show more empathy ask more"
+  },
+  {
+    "segment_id": "s0316",
+    "start_seconds": 1756.86,
+    "end_seconds": 1762.06,
+    "text": "questions listen maybe if I'm really frustrated or I don't agree with the person I'm working with"
+  },
+  {
+    "segment_id": "s0317",
+    "start_seconds": 1762.14,
+    "end_seconds": 1767.1,
+    "text": "how can I respond rather than react you know sometimes you do have to react right you're just"
+  },
+  {
+    "segment_id": "s0318",
+    "start_seconds": 1767.1,
+    "end_seconds": 1771.1,
+    "text": "you're gonna step out in front on the street and you don't want to get hit my butt you're gonna react"
+  },
+  {
+    "segment_id": "s0319",
+    "start_seconds": 1771.1,
+    "end_seconds": 1776.22,
+    "text": "but sometimes you can respond right you're maybe getting you're not getting the answer you"
+  },
+  {
+    "segment_id": "s0320",
+    "start_seconds": 1776.22,
+    "end_seconds": 1781.5,
+    "text": "want or you're not reaching the objective you want in the conversation but you can maybe take a step"
+  },
+  {
+    "segment_id": "s0321",
+    "start_seconds": 1781.5,
+    "end_seconds": 1786.3,
+    "text": "back and learn to respond differently those are some of the things that I think will be very"
+  },
+  {
+    "segment_id": "s0322",
+    "start_seconds": 1786.54,
+    "end_seconds": 1791.9,
+    "text": "valuable right now in work but it's but it's scary I'm not gonna I'm not gonna say like"
+  },
+  {
+    "segment_id": "s0323",
+    "start_seconds": 1791.9,
+    "end_seconds": 1795.58,
+    "text": "everybody I'm coaching right now is pretty much in the same boat where all everybody's kind of trying"
+  },
+  {
+    "segment_id": "s0324",
+    "start_seconds": 1795.58,
+    "end_seconds": 1803.1,
+    "text": "to figure it out I love how read in this episode is helping us understand narrative intelligence how"
+  },
+  {
+    "segment_id": "s0325",
+    "start_seconds": 1803.1,
+    "end_seconds": 1810.78,
+    "text": "we can keep up in this rapidly changing world of AI and part of that is us as individuals as"
+  },
+  {
+    "segment_id": "s0326",
+    "start_seconds": 1810.78,
+    "end_seconds": 1817.82,
+    "text": "leaders as organizations taking ownership of where we are in our AI adoption and AI journey and I"
+  },
+  {
+    "segment_id": "s0327",
+    "start_seconds": 1817.82,
+    "end_seconds": 1824.94,
+    "text": "see so frequently that organizations are not prepared for this next phase of autonomous agents where"
+  },
+  {
+    "segment_id": "s0328",
+    "start_seconds": 1824.94,
+    "end_seconds": 1832.3,
+    "text": "organizations will have a fleet of agents operating with agency in company infrastructure with"
+  },
+  {
+    "segment_id": "s0329",
+    "start_seconds": 1832.3,
+    "end_seconds": 1839.58,
+    "text": "access to critical systems that's why I so privileged to be leading an amazing team of folks"
+  },
+  {
+    "segment_id": "s0330",
+    "start_seconds": 1839.58,
+    "end_seconds": 1844.94,
+    "text": "over a prediction guard I founded the company three and a half years ago and we provide an AI"
+  },
+  {
+    "segment_id": "s0331",
+    "start_seconds": 1844.94,
+    "end_seconds": 1850.94,
+    "text": "control plane that you run in your infrastructure to keep sovereign control over the agents"
+  },
+  {
+    "segment_id": "s0332",
+    "start_seconds": 1850.94,
+    "end_seconds": 1856.7,
+    "text": "operating in your infrastructure you can manage the supply chain on which those agents operate the"
+  },
+  {
+    "segment_id": "s0333",
+    "start_seconds": 1856.7,
+    "end_seconds": 1863.1,
+    "text": "scoping of what they can access you can institute runtime controls over the agent behavior and you"
+  },
+  {
+    "segment_id": "s0334",
+    "start_seconds": 1863.1,
+    "end_seconds": 1869.42,
+    "text": "have a full set of operational components that help you keep track of agents that have been quarantined"
+  },
+  {
+    "segment_id": "s0335",
+    "start_seconds": 1869.42,
+    "end_seconds": 1874.78,
+    "text": "agents that have gone off script investigations into agent behavior I would encourage you to"
+  },
+  {
+    "segment_id": "s0336",
+    "start_seconds": 1874.78,
+    "end_seconds": 1882.46,
+    "text": "check out what we're doing at predictionguard.com slash practical AI book a time with myself and the"
+  },
+  {
+    "segment_id": "s0337",
+    "start_seconds": 1882.46,
+    "end_seconds": 1889.5,
+    "text": "team to help help you understand what we're doing and really explore how you can adopt agents"
+  },
+  {
+    "segment_id": "s0338",
+    "start_seconds": 1889.5,
+    "end_seconds": 1898.14,
+    "text": "without losing control that's predictionguard.com slash practical AI again predictionguard.com slash"
+  },
+  {
+    "segment_id": "s0339",
+    "start_seconds": 1898.14,
+    "end_seconds": 1905.98,
+    "text": "practical AI. Well read you you started to go this direction which I'm really curious about this"
+  },
+  {
+    "segment_id": "s0340",
+    "start_seconds": 1905.98,
+    "end_seconds": 1912.78,
+    "text": "this idea of identity and the identities that we take on and the roles that that were you know"
+  },
+  {
+    "segment_id": "s0341",
+    "start_seconds": 1912.78,
+    "end_seconds": 1921.74,
+    "text": "what we're trying to achieve in terms of of outcome and I think this brings up this tension where"
+  },
+  {
+    "segment_id": "s0342",
+    "start_seconds": 1921.82,
+    "end_seconds": 1930.22,
+    "text": "people are trying to figure out what is my uniquely human role within the world of AI what is"
+  },
+  {
+    "segment_id": "s0343",
+    "start_seconds": 1930.22,
+    "end_seconds": 1935.98,
+    "text": "kind of preserved that artificial intelligence doesn't do and maybe narrative intelligence and"
+  },
+  {
+    "segment_id": "s0344",
+    "start_seconds": 1935.98,
+    "end_seconds": 1944.22,
+    "text": "other forms of my own you know identity and role does you know does stay there and I love you know"
+  },
+  {
+    "segment_id": "s0345",
+    "start_seconds": 1944.22,
+    "end_seconds": 1951.18,
+    "text": "I love that you're on coming from your background kind of through storytelling, through acting"
+  },
+  {
+    "segment_id": "s0346",
+    "start_seconds": 1951.18,
+    "end_seconds": 1957.42,
+    "text": "all of these things I love the Tolkien letter where he is talking about this idea of like as"
+  },
+  {
+    "segment_id": "s0347",
+    "start_seconds": 1957.42,
+    "end_seconds": 1964.94,
+    "text": "humans we're sub creators and we you know we look around us and the this kind of ultimate beauty"
+  },
+  {
+    "segment_id": "s0348",
+    "start_seconds": 1964.94,
+    "end_seconds": 1972.3,
+    "text": "is the sub creation that we each are able to do. I'm wondering in your mind what does that that"
+  },
+  {
+    "segment_id": "s0349",
+    "start_seconds": 1972.3,
+    "end_seconds": 1978.38,
+    "text": "look like maybe even for yourself as you're as you're thinking about like you're obviously"
+  },
+  {
+    "segment_id": "s0350",
+    "start_seconds": 1978.38,
+    "end_seconds": 1983.34,
+    "text": "entering into new ventures you're doing new things with the podcast and and other things that"
+  },
+  {
+    "segment_id": "s0351",
+    "start_seconds": 1983.34,
+    "end_seconds": 1990.46,
+    "text": "that you're working on right now what is this what is this idea of creation and creativity"
+  },
+  {
+    "segment_id": "s0352",
+    "start_seconds": 1990.46,
+    "end_seconds": 1996.14,
+    "text": "and like the uniquely human element of that what does that mean to you now given everything that's"
+  },
+  {
+    "segment_id": "s0353",
+    "start_seconds": 1996.14,
+    "end_seconds": 2002.14,
+    "text": "happening with AI great question Daniel I would say right now at first it was I was probably like most"
+  },
+  {
+    "segment_id": "s0354",
+    "start_seconds": 2002.14,
+    "end_seconds": 2006.46,
+    "text": "people a little bit worried about like what what's this what does this mean for me and my"
+  },
+  {
+    "segment_id": "s0355",
+    "start_seconds": 2006.46,
+    "end_seconds": 2012.62,
+    "text": "identities I I currently have now I look at it from a completely different lens I love that book"
+  },
+  {
+    "segment_id": "s0356",
+    "start_seconds": 2012.62,
+    "end_seconds": 2017.66,
+    "text": "I don't know if you've read it by Rick Ruben the creative act but like if you really start to think"
+  },
+  {
+    "segment_id": "s0357",
+    "start_seconds": 2017.66,
+    "end_seconds": 2023.26,
+    "text": "I step back from it it's never been better to be a creator and innovator a human right"
+  },
+  {
+    "segment_id": "s0358",
+    "start_seconds": 2023.26,
+    "end_seconds": 2028.14,
+    "text": "when you really think of the tools and they're out there we don't you know before there's so many"
+  },
+  {
+    "segment_id": "s0359",
+    "start_seconds": 2028.14,
+    "end_seconds": 2033.02,
+    "text": "different you know barriers to get there you know whether you had to get certain job go"
+  },
+  {
+    "segment_id": "s0360",
+    "start_seconds": 2033.02,
+    "end_seconds": 2038.86,
+    "text": "maybe a certain school had to have the certain skills but now there's it's never been better to"
+  },
+  {
+    "segment_id": "s0361",
+    "start_seconds": 2038.86,
+    "end_seconds": 2044.46,
+    "text": "learn these things and so when I and that's a great quote or that you mentioned but I think of it"
+  },
+  {
+    "segment_id": "s0362",
+    "start_seconds": 2044.46,
+    "end_seconds": 2048.94,
+    "text": "right now is like almost anything's possible and that's a great feeling but we have to be"
+  },
+  {
+    "segment_id": "s0363",
+    "start_seconds": 2048.94,
+    "end_seconds": 2054.14,
+    "text": "real back in at times but it's a great place to allow you to allow yourself to go creatively and think like"
+  },
+  {
+    "segment_id": "s0364",
+    "start_seconds": 2054.14,
+    "end_seconds": 2058.7,
+    "text": "who do I want to become what do I want to do you know what stories do I want to tell what things"
+  },
+  {
+    "segment_id": "s0365",
+    "start_seconds": 2058.78,
+    "end_seconds": 2063.58,
+    "text": "do I want to build what people do I want to work with I think it's now it's just a really"
+  },
+  {
+    "segment_id": "s0366",
+    "start_seconds": 2063.58,
+    "end_seconds": 2071.74,
+    "text": "awkward awesome time to be from in that go back it's just a really great time to be a creator"
+  },
+  {
+    "segment_id": "s0367",
+    "start_seconds": 2071.74,
+    "end_seconds": 2077.1,
+    "text": "and innovator and so yeah so I right now like when I think of like the work I'm doing it's just I"
+  },
+  {
+    "segment_id": "s0368",
+    "start_seconds": 2077.1,
+    "end_seconds": 2082.38,
+    "text": "look at it just every day is like I'm learning and the more you can step into just the growth mindset"
+  },
+  {
+    "segment_id": "s0369",
+    "start_seconds": 2082.38,
+    "end_seconds": 2088.3,
+    "text": "of just I want to be curious I want to ask questions I want to be present and I just want to learn"
+  },
+  {
+    "segment_id": "s0370",
+    "start_seconds": 2088.7,
+    "end_seconds": 2093.26,
+    "text": "and you step into that every day is a learner it's it's a great place to be because every"
+  },
+  {
+    "segment_id": "s0371",
+    "start_seconds": 2093.26,
+    "end_seconds": 2098.94,
+    "text": "everything's changing in a way that you know we've never imagined before so yeah yeah just anecdotally"
+  },
+  {
+    "segment_id": "s0372",
+    "start_seconds": 2098.94,
+    "end_seconds": 2105.5,
+    "text": "this I don't know if this is really revealing too much to our audience but I'm okay with being"
+  },
+  {
+    "segment_id": "s0373",
+    "start_seconds": 2105.5,
+    "end_seconds": 2111.9,
+    "text": "being a little vulnerable so this last weekend I was at the Indiana Bigfoot conference which was just amazing"
+  },
+  {
+    "segment_id": "s0374",
+    "start_seconds": 2112.86,
+    "end_seconds": 2118.54,
+    "text": "in every way I would highly recommend attending if if you're in the area this is from for"
+  },
+  {
+    "segment_id": "s0375",
+    "start_seconds": 2118.54,
+    "end_seconds": 2125.1,
+    "text": "people with shoe size is greater than 13 right right exactly yeah so so I mean just anecdotally"
+  },
+  {
+    "segment_id": "s0376",
+    "start_seconds": 2125.1,
+    "end_seconds": 2132.7,
+    "text": "though I was there like so I went last year and I was there this year and to hear the people there"
+  },
+  {
+    "segment_id": "s0377",
+    "start_seconds": 2132.78,
+    "end_seconds": 2141.9,
+    "text": "that were you know whatever random subculture topic that that is and they're into the ways that"
+  },
+  {
+    "segment_id": "s0378",
+    "start_seconds": 2141.9,
+    "end_seconds": 2149.66,
+    "text": "they're thinking about applying AI to be creative to do their research and explore this material"
+  },
+  {
+    "segment_id": "s0379",
+    "start_seconds": 2149.66,
+    "end_seconds": 2156.14,
+    "text": "and like do this searching and like accumulate this and create maps and like do all these things"
+  },
+  {
+    "segment_id": "s0380",
+    "start_seconds": 2156.22,
+    "end_seconds": 2163.1,
+    "text": "like that all even a year ago like there was you know there there was it was obviously fun and"
+  },
+  {
+    "segment_id": "s0381",
+    "start_seconds": 2163.1,
+    "end_seconds": 2167.74,
+    "text": "and cool but they weren't talking in that way about maybe some of the same possibilities with"
+  },
+  {
+    "segment_id": "s0382",
+    "start_seconds": 2167.74,
+    "end_seconds": 2173.1,
+    "text": "technology and I know that's a very random thing but I think it connects with what you are saying"
+  },
+  {
+    "segment_id": "s0383",
+    "start_seconds": 2173.1,
+    "end_seconds": 2178.14,
+    "text": "that it's never it's never better whether you're you know a software engineer or your"
+  },
+  {
+    "segment_id": "s0384",
+    "start_seconds": 2178.94,
+    "end_seconds": 2184.86,
+    "text": "member of the Indiana Bigfoot research organization to be able to like think creatively"
+  },
+  {
+    "segment_id": "s0385",
+    "start_seconds": 2184.86,
+    "end_seconds": 2192.22,
+    "text": "and apply you know what what you're what I knew you man yeah yeah I thought I knew you"
+  },
+  {
+    "segment_id": "s0386",
+    "start_seconds": 2192.22,
+    "end_seconds": 2198.06,
+    "text": "said hey hey and and Daniel you knew I produced a Bigfoot film that you oh that's amazing I didn't"
+  },
+  {
+    "segment_id": "s0387",
+    "start_seconds": 2198.06,
+    "end_seconds": 2203.5,
+    "text": "I didn't know yeah I have to look at the credits about one yeah so that was it's I was"
+  },
+  {
+    "segment_id": "s0388",
+    "start_seconds": 2203.5,
+    "end_seconds": 2207.9,
+    "text": "spent a lot of time around Bigfoot research I wish we had the tools we have today exactly"
+  },
+  {
+    "segment_id": "s0389",
+    "start_seconds": 2207.9,
+    "end_seconds": 2213.26,
+    "text": "I partnered with a a guy named Eduardo Sanchez he was he's a director creator of the Blair"
+  },
+  {
+    "segment_id": "s0390",
+    "start_seconds": 2213.34,
+    "end_seconds": 2219.02,
+    "text": "Witch Project and he had this great really great script for years it was a big budget script"
+  },
+  {
+    "segment_id": "s0391",
+    "start_seconds": 2219.02,
+    "end_seconds": 2222.86,
+    "text": "that he's trying to get made had different attachments anyways we decided at some point just to"
+  },
+  {
+    "segment_id": "s0392",
+    "start_seconds": 2222.86,
+    "end_seconds": 2227.66,
+    "text": "like go do this the low budget version of it to get it out there because he was so passionate about"
+  },
+  {
+    "segment_id": "s0393",
+    "start_seconds": 2227.66,
+    "end_seconds": 2232.14,
+    "text": "Bigfoot so yeah I fell into that world for a while but to your point all the more reason yeah you"
+  },
+  {
+    "segment_id": "s0394",
+    "start_seconds": 2232.14,
+    "end_seconds": 2237.98,
+    "text": "can be a software engineer and on the side you can be a musician you can be a storyteller you can"
+  },
+  {
+    "segment_id": "s0395",
+    "start_seconds": 2237.98,
+    "end_seconds": 2242.14,
+    "text": "create story worlds you can be an author you can do whatever you want nowadays and I think that's"
+  },
+  {
+    "segment_id": "s0396",
+    "start_seconds": 2242.22,
+    "end_seconds": 2247.9,
+    "text": "important to realize with these tools that are out there I'm curious is I is a circle around"
+  },
+  {
+    "segment_id": "s0397",
+    "start_seconds": 2247.9,
+    "end_seconds": 2254.78,
+    "text": "kind of on the conversation and I wanted to ask there are a lot of people I I think like"
+  },
+  {
+    "segment_id": "s0398",
+    "start_seconds": 2254.78,
+    "end_seconds": 2261.74,
+    "text": "certainly on when you talk to the three of us it's I think it's easy to get us onto this path"
+  },
+  {
+    "segment_id": "s0399",
+    "start_seconds": 2261.74,
+    "end_seconds": 2266.7,
+    "text": "to do this you know I was kind of like hey I'm kind of doing some things but I need you to focus"
+  },
+  {
+    "segment_id": "s0400",
+    "start_seconds": 2266.7,
+    "end_seconds": 2272.94,
+    "text": "me and stuff how how do you get people in a harder sense there's there's a whole world of"
+  },
+  {
+    "segment_id": "s0401",
+    "start_seconds": 2272.94,
+    "end_seconds": 2278.54,
+    "text": "people out there who are feeling left behind and and they're not they're not doing AI podcast"
+  },
+  {
+    "segment_id": "s0402",
+    "start_seconds": 2278.54,
+    "end_seconds": 2284.78,
+    "text": "or not listening to AI podcast or watching AI podcast they're they and they are kind of"
+  },
+  {
+    "segment_id": "s0403",
+    "start_seconds": 2284.78,
+    "end_seconds": 2290.22,
+    "text": "grinding through the world as they have been doing their whole lives and that you know"
+  },
+  {
+    "segment_id": "s0404",
+    "start_seconds": 2290.22,
+    "end_seconds": 2294.38,
+    "text": "speculate I don't have data on this but that's probably the majority of people out there yeah"
+  },
+  {
+    "segment_id": "s0405",
+    "start_seconds": 2294.54,
+    "end_seconds": 2300.7,
+    "text": "and and how do you how do you get them I I don't imagine it's a it's a quick and super easy thing"
+  },
+  {
+    "segment_id": "s0406",
+    "start_seconds": 2300.7,
+    "end_seconds": 2306.7,
+    "text": "but like how do you get them to take the first step or two it's a weird question where you're like"
+  },
+  {
+    "segment_id": "s0407",
+    "start_seconds": 2306.7,
+    "end_seconds": 2312.46,
+    "text": "well you know because we have a future going forward here and it's not just us it is a whole lot of"
+  },
+  {
+    "segment_id": "s0408",
+    "start_seconds": 2312.46,
+    "end_seconds": 2319.18,
+    "text": "people in the masses how do you how would you recognizing it's I'm asking a really hard challenge I know"
+  },
+  {
+    "segment_id": "s0409",
+    "start_seconds": 2319.18,
+    "end_seconds": 2324.38,
+    "text": "yeah yeah how do you get that first how do you get people to say I'll take a first step into"
+  },
+  {
+    "segment_id": "s0410",
+    "start_seconds": 2324.38,
+    "end_seconds": 2329.1,
+    "text": "into into a larger different world that's a great question thanks for asking that Chris and I"
+  },
+  {
+    "segment_id": "s0411",
+    "start_seconds": 2329.1,
+    "end_seconds": 2334.46,
+    "text": "I say that because I feel like I'm living it with not only family members you know my parents"
+  },
+  {
+    "segment_id": "s0412",
+    "start_seconds": 2334.46,
+    "end_seconds": 2339.1,
+    "text": "or people that are even my age that maybe are in you know like a group in Texas and but even like"
+  },
+  {
+    "segment_id": "s0413",
+    "start_seconds": 2339.1,
+    "end_seconds": 2344.06,
+    "text": "talking to different companies I'm coaching like their their customers are in manufacturing or they're"
+  },
+  {
+    "segment_id": "s0414",
+    "start_seconds": 2344.06,
+    "end_seconds": 2348.38,
+    "text": "in you know rural cities and they're like and he said there's a lot of fear around like they don't"
+  },
+  {
+    "segment_id": "s0415",
+    "start_seconds": 2348.46,
+    "end_seconds": 2352.86,
+    "text": "like a I or they're they're a little bit they're so worried about it maybe they're reading the news and"
+  },
+  {
+    "segment_id": "s0416",
+    "start_seconds": 2352.86,
+    "end_seconds": 2359.74,
+    "text": "so I think one thing I found to work just recently is make it super simple and practical"
+  },
+  {
+    "segment_id": "s0417",
+    "start_seconds": 2359.74,
+    "end_seconds": 2365.26,
+    "text": "that fits integrates into their life as it is so for example um you like to cook is there a"
+  },
+  {
+    "segment_id": "s0418",
+    "start_seconds": 2365.26,
+    "end_seconds": 2369.82,
+    "text": "recipe you can come up with there's is there a restaurant you want to discover you know that you can"
+  },
+  {
+    "segment_id": "s0419",
+    "start_seconds": 2369.82,
+    "end_seconds": 2375.82,
+    "text": "kind of easily get them into you know asking questions prompting and then they start to get it's just"
+  },
+  {
+    "segment_id": "s0420",
+    "start_seconds": 2375.82,
+    "end_seconds": 2380.62,
+    "text": "like you know it's much better version of the internet from old but the point being is I think once"
+  },
+  {
+    "segment_id": "s0421",
+    "start_seconds": 2380.62,
+    "end_seconds": 2384.94,
+    "text": "they start to see it work for them like the other day or over the summer we were planning a trip"
+  },
+  {
+    "segment_id": "s0422",
+    "start_seconds": 2385.82,
+    "end_seconds": 2392.22,
+    "text": "like a reunion trip and and anyways my my parents are so we're so afraid of AI and they"
+  },
+  {
+    "segment_id": "s0423",
+    "start_seconds": 2392.22,
+    "end_seconds": 2397.02,
+    "text": "are like oh I don't like what's going on in the world and then we started doing this we started"
+  },
+  {
+    "segment_id": "s0424",
+    "start_seconds": 2397.02,
+    "end_seconds": 2402.14,
+    "text": "planning out this trip and within a matter of minutes we had like an itinerary of all the really"
+  },
+  {
+    "segment_id": "s0425",
+    "start_seconds": 2402.3,
+    "end_seconds": 2407.18,
+    "text": "cool places we wanted to do and it just all this into spark their curiosity they got creative well"
+  },
+  {
+    "segment_id": "s0426",
+    "start_seconds": 2407.18,
+    "end_seconds": 2413.26,
+    "text": "what if we asked this can you ask it this question and before you know it you start to realize like hey"
+  },
+  {
+    "segment_id": "s0427",
+    "start_seconds": 2413.26,
+    "end_seconds": 2418.54,
+    "text": "it's it's pretty simple at the end of the day if you just want to start and so I think I think"
+  },
+  {
+    "segment_id": "s0428",
+    "start_seconds": 2418.54,
+    "end_seconds": 2424.06,
+    "text": "to answer your question the more you can ask questions to them that kind of ties it back to what"
+  },
+  {
+    "segment_id": "s0429",
+    "start_seconds": 2424.06,
+    "end_seconds": 2429.58,
+    "text": "they're interested or motivated to do the bet that's what I found to be better good advice yeah I love"
+  },
+  {
+    "segment_id": "s0430",
+    "start_seconds": 2429.58,
+    "end_seconds": 2435.42,
+    "text": "that I always recommend the same for like technical people trying to get into it maybe they're building"
+  },
+  {
+    "segment_id": "s0431",
+    "start_seconds": 2435.42,
+    "end_seconds": 2440.78,
+    "text": "their first agent they're like well what do I do um I have my question is often well what are you"
+  },
+  {
+    "segment_id": "s0432",
+    "start_seconds": 2440.78,
+    "end_seconds": 2449.74,
+    "text": "interested in like it's it yeah you know whatever trading crypto or like collecting you know"
+  },
+  {
+    "segment_id": "s0433",
+    "start_seconds": 2449.74,
+    "end_seconds": 2454.78,
+    "text": "pokemon car like create something that's related to the thing that you're passionate about great"
+  },
+  {
+    "segment_id": "s0434",
+    "start_seconds": 2454.78,
+    "end_seconds": 2461.18,
+    "text": "and yeah more useful big foot for this episode it exactly yeah my research needed"
+  },
+  {
+    "segment_id": "s0435",
+    "start_seconds": 2461.82,
+    "end_seconds": 2468.46,
+    "text": "are we gonna find big foot by the end of the week I hope so you know unless unless it's an"
+  },
+  {
+    "segment_id": "s0436",
+    "start_seconds": 2468.46,
+    "end_seconds": 2476.86,
+    "text": "interdimensional being yeah and then then probably not but yeah this this has been great read"
+  },
+  {
+    "segment_id": "s0437",
+    "start_seconds": 2476.86,
+    "end_seconds": 2483.98,
+    "text": "I I want to maybe like as we get closer to to an end here we often ask our our guests kind of"
+  },
+  {
+    "segment_id": "s0438",
+    "start_seconds": 2484.06,
+    "end_seconds": 2490.22,
+    "text": "as you look to the future you know that whatever time period that makes sense in your mind you know"
+  },
+  {
+    "segment_id": "s0439",
+    "start_seconds": 2490.22,
+    "end_seconds": 2495.82,
+    "text": "the next few months the next year whatever that is what what's kind of at the top of your mind"
+  },
+  {
+    "segment_id": "s0440",
+    "start_seconds": 2495.82,
+    "end_seconds": 2503.02,
+    "text": "around it could be a set of challenges that you're thinking about in this area it could be like"
+  },
+  {
+    "segment_id": "s0441",
+    "start_seconds": 2503.02,
+    "end_seconds": 2509.58,
+    "text": "something you're excited to dig into and explore more where where you see some of these things going"
+  },
+  {
+    "segment_id": "s0442",
+    "start_seconds": 2510.14,
+    "end_seconds": 2514.86,
+    "text": "does anything come to mind in terms of yeah when you end the day and you're you're thinking about"
+  },
+  {
+    "segment_id": "s0443",
+    "start_seconds": 2514.86,
+    "end_seconds": 2519.18,
+    "text": "those things moving forward what what comes to mind great question I you know I think"
+  },
+  {
+    "segment_id": "s0444",
+    "start_seconds": 2519.82,
+    "end_seconds": 2523.9,
+    "text": "I'm a little bit of a dreamer day and you've always been you know I think it's one of the reasons"
+  },
+  {
+    "segment_id": "s0445",
+    "start_seconds": 2523.9,
+    "end_seconds": 2530.62,
+    "text": "I got into film was I was sort of an introvert and I was really into sports but I really wanted to"
+  },
+  {
+    "segment_id": "s0446",
+    "start_seconds": 2530.62,
+    "end_seconds": 2536.3,
+    "text": "like learn and express myself so I always come back to ways that people can tell their story"
+  },
+  {
+    "segment_id": "s0447",
+    "start_seconds": 2536.94,
+    "end_seconds": 2543.1,
+    "text": "I I envision a world and I've I've started to re-imagine the brand I started called the lesson"
+  },
+  {
+    "segment_id": "s0448",
+    "start_seconds": 2543.1,
+    "end_seconds": 2547.82,
+    "text": "which is really like imagine like a world that almost felt like you know you could tap into"
+  },
+  {
+    "segment_id": "s0449",
+    "start_seconds": 2547.82,
+    "end_seconds": 2552.22,
+    "text": "people's stories and lives almost like you do a Netflix show or whatever it doesn't have to be"
+  },
+  {
+    "segment_id": "s0450",
+    "start_seconds": 2552.22,
+    "end_seconds": 2557.9,
+    "text": "necessary a long form but imagine ways that we can connect we can tell stories we can we can"
+  },
+  {
+    "segment_id": "s0451",
+    "start_seconds": 2557.9,
+    "end_seconds": 2563.98,
+    "text": "become you know again these different identities in a way that becomes just really beautiful and rich"
+  },
+  {
+    "segment_id": "s0452",
+    "start_seconds": 2564.06,
+    "end_seconds": 2569.82,
+    "text": "to see and to refail kind of part of something bigger and and as a whole and I and I say that"
+  },
+  {
+    "segment_id": "s0453",
+    "start_seconds": 2569.82,
+    "end_seconds": 2574.46,
+    "text": "only I hope that's a world that we can get to but it's certainly with the tools that are out there"
+  },
+  {
+    "segment_id": "s0454",
+    "start_seconds": 2574.46,
+    "end_seconds": 2581.34,
+    "text": "right now it certainly seems like there will be some extraordinary ways to you know lift humanity"
+  },
+  {
+    "segment_id": "s0455",
+    "start_seconds": 2582.62,
+    "end_seconds": 2586.86,
+    "text": "in the future and it might be a lot here a lot sooner than we think so I go back to your"
+  },
+  {
+    "segment_id": "s0456",
+    "start_seconds": 2587.02,
+    "end_seconds": 2593.66,
+    "text": "answer question I go back to a lot of the dreams and sort of vision I had around storytelling"
+  },
+  {
+    "segment_id": "s0457",
+    "start_seconds": 2593.66,
+    "end_seconds": 2599.66,
+    "text": "and how to how to move people that's great well I I hope to have you back on the back on the show"
+  },
+  {
+    "segment_id": "s0458",
+    "start_seconds": 2599.66,
+    "end_seconds": 2604.54,
+    "text": "and the future to to talk through all of those things and as you've highlighted things will"
+  },
+  {
+    "segment_id": "s0459",
+    "start_seconds": 2604.54,
+    "end_seconds": 2609.82,
+    "text": "look different in the future then we can even predict and not something to be afraid of but"
+  },
+  {
+    "segment_id": "s0460",
+    "start_seconds": 2609.82,
+    "end_seconds": 2615.9,
+    "text": "something to lean into and you know make make part of your story so so happy that you could join us"
+  },
+  {
+    "segment_id": "s0461",
+    "start_seconds": 2615.9,
+    "end_seconds": 2621.18,
+    "text": "and share that with us thanks for joining Reed thank you so much Daniel thank you Chris I really appreciate"
+  },
+  {
+    "segment_id": "s0462",
+    "start_seconds": 2621.18,
+    "end_seconds": 2632.67,
+    "text": "thank you all right that's our show for this week if you haven't checked out our website"
+  },
+  {
+    "segment_id": "s0463",
+    "start_seconds": 2632.67,
+    "end_seconds": 2638.91,
+    "text": "head to practical a.fm and be sure to connect with us on LinkedIn x or blue sky you'll see us"
+  },
+  {
+    "segment_id": "s0464",
+    "start_seconds": 2638.91,
+    "end_seconds": 2644.43,
+    "text": "posting insights related to the latest a.i. developments and we would love for you to join the conversation"
+  },
+  {
+    "segment_id": "s0465",
+    "start_seconds": 2644.43,
+    "end_seconds": 2648.83,
+    "text": "thanks to our partner prediction guard for providing operational support for the show"
+  },
+  {
+    "segment_id": "s0466",
+    "start_seconds": 2648.91,
+    "end_seconds": 2654.03,
+    "text": "check them out at prediction guard dot com also thanks to breakmaster cylinder for the beats"
+  },
+  {
+    "segment_id": "s0467",
+    "start_seconds": 2654.03,
+    "end_seconds": 2658.19,
+    "text": "and to you for listening that's all for now but you'll hear from us again next week"
+  }
+]

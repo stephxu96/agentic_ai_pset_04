@@ -1,0 +1,339 @@
+Security teams don't need another list of alerts.
+They need to know which vulnerabilities are actually reachable, exposed, and safe to fix.
+That's what HyperScale remediation from Blitzie does.
+Blitzie understands your entire software estate.
+Then finds known and previously undiscovered vulnerabilities in your codebase.
+It traces each one through the execution paths,
+checks the dependencies, and validates the fix.
+Your engineers approve the plan, and Blitzie delivers batches of tested pull requests, ready to review.
+Less alert noise, faster remediation, and confidence that fixes are validated as safe before you review them.
+Visit Blitzie.com to see it in action that's B-O-I-T-Z-Y.com.
+Airs progress and mathematics has been remarkably fast.
+Not too long ago, frontier model struggled with grade school math.
+Now, they're contributing solutions to problems that have resisted mathematicians for decades,
+including most recently the Navier Stokes equations.
+But as AI moves from tests we already know the answers to, to more open-ended research challenges,
+it gets harder to understand what these systems are truly capable of,
+and what their progress tells us about where AI is headed.
+My guest Greg Burnham leads capabilities research at EPOC AI,
+where he and his team are developing new ways to track AI's rapidly evolving strengths and limitations.
+Here's Greg on why measuring and understanding AI's capabilities matters so much right now.
+AI capabilities writ large have gotten to such a point where what they're good at and bad at is starting to have real impact on the world,
+like on things we care about for other reasons.
+We're past the academic exam phase of understanding AI capabilities,
+and for that we need high quality benchmarking high quality evaluations.
+And one of my big questions is,
+just can AI come up with new ideas.
+If AI systems get sort of superhuman at this,
+that's a big deal for the world, both in terms of economic and scientific progress,
+but also in terms of becomes harder to predict what AI systems are capable of.
+We use math as a test bed for this.
+I'm Sam Charington, and this is the Twummel AI podcast.
+For over a decade, I've been exploring the ideas and innovations shaping the future of AI,
+through conversations like this one that help you understand what's real, what's next, and what matters.
+Let's jump in.
+Sock a little bit about AI capabilities research broadly,
+how you pursue that research, and why you think it's important.
+We're getting to a point in the trajectory of AI overall, where AI capabilities can have a real impact on the world.
+So maybe the transition could be characterized as school to work in maybe even up through,
+through 2025, most ways that we tested what AI could do looked more like human exams,
+like that you might give to kids, or maybe advanced graduate students.
+And that's nice.
+Right, right. The kid exams.
+It is for our exams, the medical exams.
+And these pat, like I was perfectly good at these already, end of 2024, beginning at 2025.
+So we really saw this transition happening over time to be clear.
+But this is certainly the year where AI capabilities are impacting work activities
+that humans were engaged in anyway for their own purposes.
+And so as these capabilities grow, it's just important for us to keep tabs on them.
+They grow very rapidly in some qualitative sense.
+We see no measurement we have shows any slow down in what in how AI is getting better and better at any tasks that we're able to measure.
+And so we think that just understanding the impact AI will have on the world.
+It's important to know what it can do, what it can't do and keep tabs on, how that trajectory is going.
+I want to push back on one thing you said, in terms of we're not seeing any slowdowns,
+that can be looked at broadly, like in terms of maybe the number of benchmark data points that we're looking at,
+you know, certainly we're shooting this broad performance.
+But is it also true that like on a particular, I feel like on a particular benchmark,
+we're getting it like the, you know, for expected reasons when we went from, you know,
+GPG2 to GPG3, like we're taking these huge steps up these benchmarks and now like there's just a lot less room left
+and we're making more incremental progress.
+Do you see that as a slowdown in AI performance or is, would you characterize it differently?
+I would say, well, I'd say there's two issues here.
+One is on the benchmarks we have what does performance look like.
+Two is, are there things our benchmarks don't measure that maybe there has been less, or could even be negative,
+improvement on, and is there some reason why it's the things that are hard to measure where there's been the least progress?
+But on the first point, because this is a very, this is a much more cut and dried statistical point,
+absolutely see continued progress on benchmarks, like a benchmark that was challenging for GPT3,
+you know, many years, whatever, six years ago, is now completely, you know,
+solved, ached by GPT4, benchmark challenging for GPT4, same for GPT4, now we've got GPT6, like,
+so we do some statistical work to try to aggregate benchmarks over time because the benchmarks that people used to track progress years ago,
+now every AI model off the shelf that you've heard of that you might use is to good it them.
+So people make new benchmarks and then you have to sort of do this like stitching of like, okay, well, a model that was pretty darn good at this benchmark was not so good at this next one
+and you can use like that, you can stitch those together and get the sort of composite score.
+We call that we have a methodology for doing this, we call that E-POC capabilities index and that's a unified way of tracking benchmarks over time
+and we really do see this thing continuing to go up, you know, pretty smoothly, linearly, and that Marcher progress is steady.
+That's an important point that that's truly if we have we've made more benchmarks and AI systems that are harder that model start off at zero
+and then within a year or two years there are at a hundred percent and we have to make a new benchmark to keep up and that's that's really been the story of the last certainly the last three years all I'll say with confidence there.
+It seems like that like normalizing across different benchmarks to produce a result that is coherent that sounds like a very challenging problem like it.
+You describe the result as like, you know, kind of continued linear improvement and I imagine if that's like a constraint you can kind of map backwards to, you know,
+to factors that will show you that continuous linear improvement, but, you know, starting from, you know, set of disparate benchmarks that have their own kind of, you know, ranges and challenges and, you know, where AI and where AI sits in them and kind of mapping this across different generations of AI and coming up with a, you know, something that makes sense, you know,
+effectively at the end and then having that thing show continued linear progress that sounds like, you know, but I'll almost like to get to be true and like suspicious that it is true.
+I, yeah, I agree. So let me go into that a little because I think it's a, it's a killer point to understand and it is surprising. So I think you're very right to be surprised.
+In fact, if you look at AI benchmarks, they are all correlated with each other, even if the benchmark the scores across models are correlated with each other, even if the benchmarks are in nominally different domains.
+So maybe you don't expect, you don't find it so surprising if it's like I've got one benchmark that's, you know, graduate chemistry questions and I've got another one that is coding puzzles and the models that are good on chemistry are also good on software engineering.
+Maybe I should be correlated largely by the models themselves, like as the models get better, they're going to get better across these, you know, just for benchmarks.
+But this, it's actually, but that's that's the surprising point. So all that you need to be true to see this linear trend over time is basically every time, you know,
+you're going to see this linear trend, this, this big over time linear trend, like that's, it's two sides of the same coin statistically. Why does this happen? Like this is a huge question, like you're, you're right to find that suspicious and I would say there are two explanations that that we see.
+And it's an important question, which of these explanations is more true. And of course, the truth is some mix, but let me, let me give that the two explanations.
+One is the AI companies are making darn sure that their model gets better at all of these benchmarks with each new generation of model.
+And the main mechanism you might imagine them doing that if they're like looking around, okay, people care about chemistry, people care about software, people care about operating, but you know, answering my email.
+Like they, they would collect training data, one form or another, that would help the model learn how to do these, how to do these tasks.
+And that's something of, that's something of, you know, very manual, human in the loop process of just saying hey, we're doing product development, like they want this feature, they want that feature, our users want all these features.
+And the way you do that in machine learning is you collect training data and throw it in, I'm over simplifying, but that's that.
+Sort of like a shallow way to make it happen, then it's all called that shallow, the other one is deep, the deep way to make it happen is if the model general is if the AI system can generalize very, very well.
+So yeah, you never trained it on chemistry, but you trained it a lot on math and software engineering and it just got super smart and with a modicum of chemistry basics, it was able to drive the rest from first principles sort of thing.
+This is like a deep form of generalization, both of these happen to some extent, like kind of the revolution with GPT even GPT three around that era, this is like quite a while ago was, oh, if you train it to like predict the next word, then it actually gets better at a wide wide range of language oriented tasks that people had been trying to handle individually suddenly it just got got good at everything.
+And that wasn't because anyone was like, oh, let's have data specifically around sentiment analysis or syntactic structural analysis, it wasn't anything like that, it was just give it give it this right general thing.
+But now we're on to this world where you have to like train it specific right now, there's a huge industry of collecting all this rich training data and it's really unclear how much generalization you're getting from you know in this deep way.
+And and if in any way, that's that's sort of a big question because that deep generalization means you could really see if that happened in a rich way where you just didn't have to even be trained on something at all to gain capability in that area.
+Then you might have a or like radically superhuman AI that would be pretty hard to understand like to bound its capabilities.
+It's still a little counter intuitive that this would be that this would be linear and maybe, you know, maybe part of the question is like are we talking about, you know, linear across generations of.
+A group of model releases or linear within some regime like segment, you know segmentally linear or the thing I can say is.
+We have like a statistical methodology so we're a benchmark score like what are we talking about here are unit here is a score from zero to a hundred percent and typically the way these scores go just historically empirically is like they follow like an S curve like like they start out sort of bad.
+Then they get better they get better pretty rapidly and then you can only get up to a hundred percent so then they sort of level off takes them a while to get that last you know little chunk and then they're at a hundred percent.
+So you've got these like sigmoids is what that S curve is called we just got a statistical methodology for stitching sigmoids together.
+And what comes out is a linear function and this looks like this is an artifact of the statistics to be clear.
+But this sure enough looks very regular in its own statistical analysis terms over across generations of models like absolutely like it's been a if anything it accelerated a little with the development of so called.
+Reasoning models around late 2024 where the model started to get good at math and software engineering and things that require lots of logical reasoning maybe like it's a higher linear slope but.
+But this is just like that's a statistical artifact you know if that's okay well if your score is like one model the score is a hundred fifty and the next model score is a hundred fifty two like what are those two points mean on your benchmark aggregate index.
+Now I think part of part of what I'm what I'm asking myself as I hear this described as linear is does it say that.
+In spite of the model the frontier lab vendor claims that you know fable is like dramatically better than open so are that GPT six is like the step function.
+Improvement over GPT five dot six you know linear implies to me that it that it's kind of incremental and there's really been no step functions.
+This is this is a really great question and yeah we believe this is one of the big uses of this statsy tool we've got is you can try to find.
+You know trend breaks and you can try to find accelerations and we mostly don't see that yeah we're like one way to put it that is everything just about is on trend fable.
+Astra whatever is on trend but the trend is crazy like you gotta hold both of these together.
+Right right right right right right this is like this is sort of the zoomed out view epoch takes with with everything is a lot of this we think the engine of AI progress is heavily mediated by raw inputs like GPUs the training compute like training data.
+Maybe those are the big ones and then there's this like factor of the labs come up with algorithm it like innovations like research breakthroughs but we really think like a lot of it is coming from the scale up in the compute and the scale up in the training data.
+So until you see the data and the GP the data and compute supply chain like ramp.
+Significantly or discontinuously it'd be more precise you're not going to see you're not likely to see discontinuities on the model side I think that's I think that's right a big thing we're keeping our eye on to be clear is.
+Are there the AI abilities emerging that could cause a discontinuity on the model side so this is why people talk about recursive self improvement or sometimes they call this a software only intelligence explosion.
+And the point of these concepts is well sure right now there's a slow it comparatively slow process for building more micro building more GPUs and collecting more human training data and what that.
+If an AI system got really good on the algorithmic innovation side could it do more with less or do more with with a fixed compute budget and that could change the dynamics here so the feedback loop would might no longer run through the physical world we don't really it's not clear we see evidence of this yet I'd say on balance we don't really see evidence of this yet.
+But it's the sort of thing that has spooked the people inside the labs that the AI companies I mean saying like gosh this could be right around the corner that's like a bit of the fear and if that happens then the pace we're used to we might get that discontinuity.
+Have you developed a particular benchmark to identify and track this or is it more.
+The way you look at the benchmarks that we've been talking about this statistical model that we've been talking about for an indication that you know there's some kind of you know exponential and the curve and and that's you know probably one of the likely causes you know for that kind of exponential just continuity.
+All of the above we we want as many as many tools in our arsenal as as we can for this so that to this statsy like acceleration detector is definitely a good is definitely a good tool but we also sort of get you know down in the weeds with some of our specific evaluations in benchmark saying I'll give you an example here this is some forthcoming work we have that I'm happy to preview.
+We take a recent AI research breakthrough or innovation from humans and we take AI systems we don't connect them to the internet and we choose AI systems that were developed and release just before this recent you whatever the recent human innovation is and we basically say.
+Look here's the metric that that innovation the number that it makes go up and improve this sort of efficiency whatever some metric and we say AI system your goal is to improve this metric as much as you can.
+But we don't tell it the innovation and so we see is a capable of replicating that human innovation that was highly relevant for AI you know research and development.
+And so far we don't see them able to do this this is nebulous idea called research taste which is like where's the good idea like what what experiment should I do next where should I go hunting for.
+big improvements more than the mundane improvements of just more compute more data like where should I look for for a breakthrough and AI systems don't seem great at doing this.
+In at least in an AI R&D context but but they're like getting a lot better a lot of things that are adjacent to this to this area so we really do think this is an important sometimes almost call it a trip wire that we're you know the the future is foggy some foggy landscape we want to put a trip wire out there so that if AI ever does cross some threshold where it's able to do rapid improvements in AI algorithms themselves.
+Then we we want that trip wire to sounds we go okay gosh watch out like maybe maybe something maybe we're about to see a big improvement a big big um you know uptick in AI capabilities and how does this relate to.
+AI's performance on some of the math challenges you know certainly Navier Stokes has been in the news quite a bit recently prior to that there are some early results and others like.
+How do you think about the role that those math challenges play in this broader view of trying to understand AI's trajectory.
+Yeah, the very good question if I may I would.
+We rewind history just a just a bit here to say some of the say the trajectory we've been on because once you step back at some it's it's why old.
+Uh, so up until yeah up until fall of 2024 so we're talking two years ago a grade school math was still a challenge for these LLM based AI systems the kind of AI we're talking about here and all and the benchmark there was literally a benchmark of 8000 you know word problems.
+So and so you know, so has so many apples that sell for this.
+Yes, I make a GSM 8k that's the one and GPT 4 which is 2023 had like done pretty well on this so people started looking at so like adding into the mix a benchmark just called math like four capital letters that started pulling from some high school math competitions.
+And there was like slow progress on this but but not a lot and then at the end of fall of 2024 open AI comes out with the 01 preview model full 01 by the end of 2024 and this showed a huge spike in a in math competition capabilities but we're still just talking like medium hard high school math competitions like something you know thousands of math nerd nerdy math 16 year olds were we're into across the cross the US and.
+And this became you know the new the new territory my company epoch around that time released a benchmark called frontier math at the time that's all we call that we now call it tears one through four to distinguish from.
+Later versions I'll get to it a bit but the original frontier math consisted of problems that I would say go from advanced undergraduate to advanced grad student.
+So sort of early career research warmups almost these are problems that are no longer thousands of thousands of high schoolers would tackle them these required deep background knowledge in in various areas that that you know niche areas like we're talking a problem from you know elliptic curves that you'd give to.
+A grad student like shortly before they're going to embark on their novel thesis research just to get them familiar with the details of the of the niche that they're going to be trying to work in and make an original contribution to.
+Over the same period we also saw high like so over 20 25 we also saw high school math contests get completely ace we got the gold medal on the international math Olympiad by the even by the beginning of 2026 we saw most of these frontier math problems.
+We saw not all of them had had in fact been solved by an AI system at that point and so just like even just here this is a very rapid trajectory from over the course of just a little over a year going from you know like.
+hobbyist high schooler to graduate student like very competent kind of you know up there graduate student in terms of the problems that could solve really rapid AI progress.
+At the same time we started to see people test AI systems on unsolved math problems probably like the the frontier was no longer something this is what I mean we we gone from exam to on the job where it wasn't like here's your qualifying exam as a grad student anymore became more interesting to say well.
+Here's a small problem that may be a mathematician a professional thought about for an hour didn't solve AI systems can you do it and at that level we started this was all just this year like 2026 at the beginning of the year there were like starting to be claims of oh maybe here's a problem that was posed by a famous mathematician.
+This is maybe the airdosh problems. There's this just for background. This is very prolific mathematician Paul airdosh who proposed over the course of his life maybe or like well over a thousand maybe a couple thousand problems the people still like haven't fully cataloged all the questions.
+Yes, some of those became central to to whole fields of math some of them were you know no one really paid much attention to including airdosh himself and AI started to notch a few solutions to some of the easier ones of those.
+Fast forward to May of this year and and an internal model probably something like the Astra model that we now have publicly available was able to solve a big one of those this was sort of a historic moment made the so called unit distance problem from which was a problem about how many points you can fit in the plane that are just one distance of one apart from each other like very cool that you could frame it.
+It's such a simple problem, but there hadn't been progress much progress on this problem despite a lot of attempts since errdosh had had posed it you know decades and decades before and it was a serious problem.
+It wasn't one of these no one had thought about it. It was definitely have received a lot of attention and an AI system solved it and it was really this this was like a aha moment of oh my goodness, like AI can solve problems that humans have cared about just independent.
+And we've seen a lot more of that since and the you know with a sort of the recent wow moment being the solution of the millennium prize problem this was you know that the name of your stokes problem this was a collection of this is millennium prize problems a collection of seven problems that math the magicians sort of.
+Or at least one math institutes set as like good goals for the new century like they were for they were they're much older than the year 2000 but but they were sort of canonized in the year 2000 as hey like these are worthy targets of entire some fields of mathematics and it would be a big deal and so one of them what was so.
+So it's been a hell of a hell of a ride the historical context is is super interesting and you know we're all living through this trajectory but to step back and see.
+You know how much has happened in the past couple of years is pretty pretty nuts.
+Yeah, you have to as one of my colleagues you have to like not get frog boiled by it like the the temperatures rising and it's easy to.
+I don't know anyway.
+So so there is this interesting gap so far like you might hear the phrase jagged frontier where the AI capabilities are jagged in the sense that they'll be.
+superhuman in some on some access and some you know not super humans still inferior in capability to human in in other acts on some other access and.
+That remains the case so far in math in particular is a couple things in hindsight the analysis by mathematicians of the solutions AI has found to these like big important previously unsolved math problems.
+Has it's always in first place it's been nothing to super duper surprising maybe there was like a direction that humans had overlooked or could have invested more in and the AI sort of had the persistence maybe this is a good a good word or or the bravery or the.
+The opportunity to like wait into these very in depth intricate computations and calculations and sure enough came out the other side with with the solution and humans look back and are like that.
+That's not a crazy direction to try at all and maybe if we'd like gone in that direction we we we would come up with this this isn't something that like would be surprising what I'm curious about is.
+Are we seeing the AI systems come up with a solution to the problem or an algorithm to create the solution to the problem and and I think I'm trying to like ask a lot of different things here you know one is like creative creativity one is maybe.
+Levels of abstraction or the way it's like you know thinking abstracting that you know around these problems.
+Yeah, I'll kind of pause and let you react to that.
+Yeah, let me let me throw out a couple things there let me know if you want me to expand on any of them.
+When humans solve these math problems they they write up the solutions and pay in like papers proofs that you know this is true or this is not true.
+And those proofs are are not usually like not exactly algorithms they're written in natural language they have sort of.
+They leave the reader to fill in some of the gaps and AI systems are coming up with just the same kind of thing.
+Like like it's it's the same products and there's a lot of complaints about their writing style but like the arguments the substance of the arguments really are the thing we expect to see from humans such that if a human came up with this and yeah, maybe cleaned it up a lot of them.
+Like would be lauded for having like made a very insightful connection between two different areas or having gotten a an intricate argument just right and balanced different considerations to make everything come together to land the proof.
+Like this is not a this is something where we're past the point where we can say well AI systems are sort of like not really doing something that humans would you know be impressed by on human terms now here as systems are doing doing things and is there a way to categorize or.
+Qualitatively are we finding that and I think you spoke to this a little bit like our you know is there a qualitative difference between you know the best human approach and the AI approach and a sense of like.
+You know the AI brute forced it you kind of spoke to this versus like pulled in things from some other domain and like created some elegant solution or we pass that point as well here I'd give more nuance we we.
+There's an emerging sense of at least for the moment what an AI shaped problem looks like maybe I could say AI has two big advantages right now one is it knows everything like you know is all the prior work it's got the literature memorized I'm speaking loosely but that this is basically.
+Valid the other is it's extremely patient and persistent so if there is some intricate.
+You know calculation you have to do I don't mean like numerically or algorithmically when I say calculation I just mean lots of equations and you have to.
+To make all the pieces work out just as very high level conceptual logical kind of computation but still something very intricate.
+They just have the patience to go for that and if you take that Navier Stokes example I think it's not a coincidence that.
+Open AI's reported a system that that solved it included a swarm of thousands of different instances of AI systems trying lots of different things and sharing ideas where where clearly it was able to like there's an element of brute force there so there's degrees of brute force this is where the nuances it wasn't like somehow.
+You know you asked it like it wasn't solving this in by any means in the dumbest most low level way like where we're past that point as well they used to solve some problems in like kind of surprisingly low level like grind it out kind of ways like that's not really what these look like any more but like the.
+The high level, a higher level version of that still is maybe what what you might what you might say here so and I like the frame of precise and intricate computations here it's important I'll say one more thing about the Navier Stokes solution.
+It's important to recognize that human sort of put in place a lot of the structure through previous work that AI then went and as far as we can tell I make humans are still figuring out exactly what goes into the AI solution.
+But as far as we can tell it builds on a lot of prior human works AI didn't like build it up from the ground that kind of theory building as mathematicians call we still don't see that very much from AI systems last point I'll make before pausing on this is just.
+Remember it's point in time like remember that trajectory we've seen very rapid so so mathematicians were saying we have to adapt our profession to the fact that now you can push a button and get what used to have been.
+A career making result like you know are also I think cautioning and we can expect the capabilities will freeze right now we we see you know that that linear whether it's linear exponential is a matter of perspective but it's going up.
+And it's like we see no reason to expect it to stop there so this is a big thing you talk is looking for can AI move from intricate computations plus lots of background knowledge to more of a.
+Developing new ideas more from whole cloth and and if so and that's a big thing we're watching for in our in our own math benchmarking activities it's interesting to think that.
+At least the way I characterize this as brute force versus pulling in things from other domains.
+Those are.
+You know there's a not mutually exclusive like for an AI that has access to you know all the research from every domain you know and approach that could be very fruitful is to brute force the exploration of adjacent domains and pull that into the solution to a given problem.
+That's it I think a lot of what we see and maybe just to say the the other thing that would really super charge them and bring them closer to full human parity or even human you know dominating human capabilities will be something like coming up with a new idea.
+And maybe like in calculus the idea of the derivative or the integral of a function like that was something that was you know maybe mathematicians in the 1500s and like grasping for this idea.
+And then Newton or Leapnets or whoever comes up with like hey here's like I can I can describe a new thing a new mathematical concept and that unlocks a lot for us that lets us solve problems we previously couldn't solve.
+And so that's the sort of thing we don't yet see AI doing it's also the sort of thing that's rare for humans to do like a lot of human math progress has been.
+Well I sat down and I put him the work and I did the computation and I worked out which was the dead end in which was the good path and here's the answer now XYZ is true I proven it or.
+I studied one area and I noticed something and I thought it might be applicable to this nominal super officially different area like humans do that sort of stuff all the time it has 90%.
+Bigly speaking of human mathematical work from what I hear from mathematicians the new idea stuff is rare or so maybe we should expect it to be not the first thing AI gets good at but so far we don't see AI really you know AI really doing that yet.
+How easy or difficult is it to define a new idea in such a way that you know we can easily distinguish them like it you know if we think about kind of the evolution of this discourse around like is it AI creative.
+You know initially was like yes very creative it created this like poem and you know and pirate like that's creativity that's you know that was a new idea.
+But that's certainly not what we're talking about when we're talking about like advancing science and advancing mathematics et cetera.
+So hey how do we like how do we define that but also you know from your perspective as someone who's studying this is it like you know we've got this long line of folks that are coming that says here's this AI with a new idea and you're like yeah well let me evaluate it against my new idea criteria notes not really that or.
+Are we actually like is it pretty clear to everyone that the AI is not having new ideas and like we're waiting for the first person to come and say that AI has the new idea like how do you think about that whole space very very challenging not to crack as so we you know try to approach it from different angles.
+One thing you can try to say is.
+I've got a problem I don't know if a new idea will be required to crack it and this could be problem in math or in science or any quantitative area but humans have tried to crack it humans have tried to make you know this number go up whether that number is the efficacy of some.
+You know drug get fighting some disease or something like that or some you know or some math results of some you conjecture the math that have stumped mathematicians for a long time.
+And you can say okay well I don't know if I'm not sure I'm going to measure a new idea but I can at least tell if this problem has been solved or this number has been made to go up or whatever the concrete metric is.
+And you can then then you're you can at least check if that has happened now.
+I was probably a year ago more optimistic that there would be a tighter relationship between math problem that humans have failed to solve and post hoc qualitative assessment of creativity.
+But but you know that this is so this is sort of the combination that like you know double punch where we're trying here first you said a target that's hard on human terms the humans care about humans have tried to be creative to solve.
+And then you do post hoc review with experts and say what do you make of the solution why hadn't you found it no offense.
+You know what what is in the AI solution that humans had missed and so on and this is risky like risky in terms of humans being honest about it because you know you go might be wrapped up in it or you might once you see the solution it feels more obvious at hindsight so would you have described it like very risky but but you still you try your best and you know you might say things like well.
+How like here's an interesting approach that that we have an operationalized in like detail but it's it's a nice heristic I think.
+How big a hint would a human have needed to solve this in in hindsight.
+So for example that unit distance a very prominent mathematician field's motherless Timothy Gowers did this sort of exercise on this unit distance problem once AI had solved it saying how big a hint.
+How like specific of a hint would I do I think a mathematician would have needed now in hindsight like to solve this problem one one yeah and he came away with like an interesting exploration of well actually AI sort of disprove this conjecture as opposed to proving it through it's actually it's false even that is a huge hint humans and mostly thought it was true they were wrong but they'd been trying to prove there was true instead of looking for.
+For a counter example so even just the hint of try to find a counter example is pretty big and then there's like one more piece and it's like I think though very hard to say we can't really do the counter factual experiment I think with just that.
+With like the sort of two part hint in would have been possible for like a human would have been like oh okay I know what to do now blah blah blah and like probably what at least hastened a human solution.
+So you can do things like that maybe it's still very qualitative but you try to be honest with yourself and be rigorous and you could imagine doing a more rigorous version of this experiment and anyway things like that but then the the fact is math is still for the most part a.
+Sort of discipline removed from physical real world impact not always but in surprise it's impact is often hard to predict there are domains where impact is not at all hard to put like I'm in the chemistry lab and I'm trying to improve the yield of my synthesis process and if.
+And you know makes incremental improvements I expect incremental yield and if I suddenly comes and says no no no you're doing it all wrong let me like redesign your whole thing from scratch I've got like a you know maybe creative idea well at some point you don't care if it's creative or not in the qualitative sense you just care.
+That you have saw discontinuity in the yield of your chemical substance or whatever and that's you know that's that's a bigger and bigger impact for the world anyway.
+What I took from that is that we filter on the problem and how hard humans have kind of bang their head heads against the problem.
+Then we look at the results that AI has come up with and try to kind of subjectively say you know is this based on a new idea or is it you know more brute force or something else like.
+But it's kind of imperfect and messy and like we're not really sure but we're we don't think that we've come up with you know great examples of AI's coming up with.
+You know quote unquote new ideas what one that's exactly right what one reference point I'd give is way back in gosh well the teams I forget which year the famous I go playing system the game of go.
+Alpha go I had that thought earlier as we were discussing this like if I remember correctly the the.
+You know part of the solution was like oh that was an innovative move that no human ever would have done.
+There was a specific one yeah it was a very specific move in there yeah yeah they call it move 37 because it was 37th move in this game where.
+Yeah, apparently this was a very surprising move like you said no human would have done it in this particular position in this in this game of go and.
+I think it's like encouraging for our admittedly quite subjective program here that go experts look down and we're like oh my goodness like that's not you know that's that's new and then.
+It also became clear that that was pivotal that that move gave the AI system playing go a decisive advantage and so that's sort of what we're looking for in in math and at least you know maybe we have some hope that humans will.
+be able to spot it when it happens but but yeah that's that's what we haven't seen quite yet and again.
+The trajectories fast the things are always a little more qualitative than you know that you know then they are or continuous than discrete.
+But you know so anyway this is this is where we are now which is kind of wild it's on right earlier when we were talking about frontier math you kind of characterize it as you know one to four I think and then advanced and we never circle back to.
+Yeah we've got a couple we've got a couple new two new sets of frontier math problems we ditched the tier system.
+Okay so so now these are I'll lump them together because it really is that this is our main tool so we have.
+You know our latest iteration on frontier math consists of a bunch of problems that humans have tried and failed to solve they're curated to be of a special interest to mathematicians where.
+And some of them we've characterized even on a bit of a scale from like this would be moderately interesting or this would be like maybe what that means is.
+Two teams of mathematicians have tried this problem it's at least ten years old but it's not central to any research program it's just something that people would be happy to get an answer to all the way up to like a major breakthrough.
+Four tiers here breakthroughs the highest none of the breakthroughs have been solved yet, but don't get me wrong if Navier Stokes had been in this problem set it would surely be a breakthrough there.
+Regardless of the fact that humans had like done a lot of work and gotten maybe within spitting distance of the of the solution before AI finished it off but yeah we really view this is just a way of finding AI.
+Cases where AI might have had a creative idea because we can tell easily whether it solve these problems this is maybe the big piece of work on our side was to make it easy to verify automatically whether an AI system itself this problem is not obvious when you think about it that.
+No human knows the answers how do you tell without a human looking if AI has has found the answer but there's a couple techniques you can use for this and we employ different techniques for this.
+It can go into that but it's something of a technical detail and so when we when a new model comes out.
+We hit go and it's like oh it's all three new three new problems from our list okay let's go look at the solutions let's share them with mathematicians let's see what's going on here and then we we analyze that we with the help of mathematicians analyze that for like what kind of qualitatively what kind of solution was this.
+What does it mean when the models are so good that we have to shift from you know these benchmarks that we understand to like this collects these collections of problems that we just don't have the answers to.
+It's definitely a phase transition in the the science of AI capabilities measurement which is yeah what what I work on but but it doesn't change the it doesn't change the game all that much it just means we have to look for harder problems.
+I think I joke sometimes it even certain forms of optimization problems like allocating scarce resources efficiently that's a benchmark of sorts that will survive the singularity like even if AI is.
+Like off going crazy running rampant in the galaxy it'll still have to you know it'll still have to decide how to you know optimize so optimization is is always going to be a benchmark even if we're super human basically used to just be we knew the answers ahead of time now we don't.
+So it takes this extra trick of okay how do we tell when AI has gotten something right but this isn't this isn't insurmountable especially like I was saying with.
+You know numbers in a scientific context it's intuitive that okay the best humans were able to do was you know.
+But we just say to AI hey try to do why greater than x and you know if it does that's you know those numbers go on and on so it's it's no problem but yeah you're right to sort of note the the phase shift and to be surprised by it.
+And is there a methodology concrete methodology for assessing an awarding partial credit is that part of the way you think about benchmarks in this you know post phase shift.
+Yeah it's a good question it depends on the benchmark so sometimes it's something like well you just want to make this number go up and the higher the better so partial credit is very.
+Continuous and very very natural in those cases for math problem sometimes it's just like well what we care about is is you know if x does why always hold like is this is this always true and then it's kind of.
+Sometimes humans will find and publish partial results for the AI systems we usually just say you know all or nothing but we have a large enough collection of such conjectures that you know we hope to have some you know smooth gradient of well okay.
+So I'm got two more out of a hundred or something and so so it looks like a pretty smooth signal and that that's typically how we how we approach these things.
+Yeah across benchmarks.
+Yeah maybe what I was thinking was you know once you're in the regime of very challenging unsolved problems is it possible that AI.
+Systems are doing you know surprising or novel or creative things but still not quite getting them to the full.
+You know the full solution and do we care about that we want to to track that and is that part of the wave constructed the benchmark.
+It's a great question it's not central to how we construct a benchmark it's probably like it's certainly worth tracking the problem is it's just a labor intensive like you can have AI review the AI we do this occasionally say like.
+Which problems didn't make partial progress on what if we let it think for longer on those problems and nothing yet like it doesn't seem good at understanding how close it is to a solution humans are necessarily very good at this either.
+I didn't want to mention that while we've focused on maybe the area where AI is the very best like has come the farthest the fastest math we do see lots of areas where we also think it's important to measure AI capabilities where it's.
+Where the progress is somewhat fuzzier less clear and certainly less superhuman or even even in some well maybe still superhuman in some ways but the ways in which it's not yet are maybe more obvious and feel less verified.
+What are some examples couple couple examples.
+One area that forthcoming work we're excited about is just.
+It's a question everyone must be wondering can AI take my job so our our job at epoch often involves many things and all sorts of research not just AI benchmarking but other topics about trends in AI and.
+Writing research reports and doing data analysis making infographics that are you know make a point and an easy to digest way we've been collecting examples of these from within epoch where.
+Judgment at the end of did the AI system manage to do this you know epoch task is too messy for traditional benchmark.
+So it wouldn't be obvious like how to say did it get the right answer or not it's not about making a number go up it's not about satisfying some logical chain of deductions it's like.
+Here's the infographic to go along with this report like does a meet our style guide and does it look good and does it you know is a better or worse than the the the human reference that we you know one of my colleagues did.
+And here we see like an interesting mix of some things I think we we sort of all our experiences like yeah if you ask it for a summary of the literature it's going to do a pretty good job it's like very good but but there's other tasks where it's.
+You know part like creating compelling visuals that follow our style guide or this is a good one coming up with a new like.
+Short form data driven insight we call these data insights you can find them on our website and these like often we try to boil down a single like important observation into a single chart and a single sentence.
+And this is like this is hard but we don't see them doing a great job at this come up with a new project for epoch to undertake and do a prototype very open ended not so good at this like these more open ended tasks we we do see.
+Again my guess is if we we'll do this go back in time some and see have models gotten better at this my guess is we'll see progress but the level compared to like humans is still a little still a little.
+And that I want to give one other example which is learning on the fly this is a case where is another case relevant for can I take my job because you didn't start you're great at your job on day one but as you practice you know you got better in humans you know have this sort of you know they learn on the fly.
+We take a we like to measure this for AI we have a benchmark that's taking a complicated board game we did a human study for saying how many times do humans have to play this board game in a row before they sort of figure out how it works and can get a very high score on it we do the same with AI we said play it once take notes same AI instance like play it again take notes play it again take notes and see how you can do.
+AI systems have gotten good at this board game but not by playing it repeatedly it's more of a core intergenerational thing like gp t 5.6 scores x out of the box and then stays flat on its playthroughs gp t 6 scores much higher it's like much better at it but it's still out of the box and then it stays flat in its playthroughs it is still less than the top human so that this kind of on the fly learning is something we also don't see AI systems as being good enough at even to just pick up a board game let alone a messy.
+I think it's a real world job like that so these are sorts of things where we don't see these capabilities and we think it's important to try to catch when they emerge my gut on the ladder the AI learning on the fly is that it's maybe a harness solvable challenge versus a model solvable challenge and maybe you know no one's focused on that.
+With the right set of memory structures and like some kind of side car heuristic thing like you know we can probably make a big step improvement and.
+And AI's ability to like you know improve game to game but it's not.
+They might not require dramatic model changes do you think about that and is do you have you know in this domain or in other domains like.
+Formal or structured ways of thinking about you know what you know model versus harness you know granted this whole model versus harness thing in and of itself is you know practically brand new.
+But it's proving to be important and you know distinguishing you know where are the these improvements come from.
+Yeah definitely we've done some experiments on this for the board game case in particular where we've tried.
+Very simple harness first the first party harnesses like cloud code or codex we've tried multi agent setups we've tried like we we give them and you know note taking tools and say you know make it clear like okay.
+You you your your goal is to learn the game so you can do really well like in your final plays of the game so explore take notes figure like we try to prompt them well.
+I mean we want to find good results if we can because it's like that's a big deal for the world.
+The game is a test bed but real jobs would also you know benefit significantly risks would also go up if this capability you know you test in the lab is at a great hacker you find maybe it is maybe it isn't but you find that it isn't and yet it can learn on the fly then okay once you deploy it like look out.
+So anyway we we we've tried pretty hard and have mostly not found anything that cracks this that cracks this on the fly learning there's been some general research about this as well not just us about you know people taught like there was a people still use these so called skills.
+Where you like just write some notes to an AI system of look when you do work I ask you to do you're going to need to use this tool or produce this kind of output and like here's my notes on how you could do that well so you don't have to like.
+Learn it on the like pick it up fresh every time so use these skills and these show some improvement but then there's like a plateau like pretty quickly at least in the research I'm familiar with like you can get some improvements my senses that this is very loosely speaking it's like low hanging fruit like if you're telling it or you're going to have to navigate this like finicky website that my company makes me use and like just you're going to get stuck and like you have to look in this menu and that's where the button you're looking for like.
+Straight forward advice that's like obviously useful but when it comes to higher levels strategic thinking kind of hard to bake that into the harness where or like where where the the board game plays like has this.
+You know sort of brings this out where it's like there's not any perfect advice that like you have to find the advice for yourself in a sense like you have to learn the game like so I will say if we give it extremely detailed strategy guides for.
+How you beat this game like here is everything you could possibly like it's a cheat by humans that like no one would play the game that way they do very they do very well they do much better than if they basically have to find a question for them right creating the strategy got they can't create the strategy guide for themselves which is like pretty interesting.
+So so like we do expect eventually they'll get better at this but it's again it's a big deal if that if that happens because now it means okay.
+Go back to that first benchmark suite okay they're not great at making charts for us or coming up with data insights for us you know without guidance.
+But now put them in on the team for a little while and let them learn on the fly and maybe they do become good so you sort of see these as a combination like.
+If on our board game where it's easy to measure they're not getting better over time then it's okay for us over in the real world like human in the loop evaluation studies for us to just do one try and say okay they weren't great and we don't think they learn on the so that you know but but really you know those go together.
+And as the board game a synthetic one that you created for this challenge or is it a real board game that that people play.
+The real board game it's called the first one we did this what's we'll do this with more is called earthborn Rangers is fairly obscure if you go to like board game geek.com it's like 500th most popular or something so it's not like up there is a small devoted community to it.
+And AI systems don't seem to know that much about it like they've heard of it they can give you some facts about it but it doesn't seem like something they've been trained on specifically it's impossible for us to tell this with with high certain with high confidence but but that's sort of why we chose it.
+It's just hard to make these things from scratch and know whether they're hard or whether they're broken you know so that's why we but the risk which you might have in mind is what if AI systems like you know just know about it from there training data it's a risk on our mind it's just a risk one thing we will do in the future is.
+Moving on to video games incidentally it's another area where AI is like very much not like human reaction time and visual and spatial reasoning again coming along fast but not really there yet.
+That is a video games you can always test on a new game like a game that just came out not in the training data probably or at least you know not as robustly in the training data and so we'll be testing can AI systems do well on those do they do better on like you know.
+The older version of a video game then like you know grandfather for verse five or whatever like when GTA six whatever it comes out like I don't think we'll be doing this one but but you know are they worse at that.
+It's interesting when you when you bring up video games it immediately calls to mind kind of the classical reinforcement learning approaches which is kind of learning on the fly but kind of different.
+All the second sometimes in context learning where the only like lever the AI system really has is managing its context and like look when we give it the strategy guides and they do much better clearly this is a powerful lever but it's not as powerful as updating the weights and like so yeah I mean like what's the big picture here it's it's if you have this fast loop of in context on the fly learning.
+Then AI capabilities might sort of improve much more rapidly than the slower loop of collecting more training data doing more reinforcement learning which which is done on language models as well these days.
+And then deploying a new model the AI might automate that whole loop but it'll still be slower than if it can just you know workout itself it's on context on the fly yeah.
+It's interesting when you zoom out on some of the questions that you focus on and we haven't talked explicitly about it but you have a blog post where you kind of.
+Right out these nine big hairy questions that you're tracking they kind of group into like how do I assess where AI is now that's like kind of do my job like how is it you know competitively.
+And you know where's the puck going like kind of learn on the fly you know kind of do research kind of come up with new ideas these are all it is kind of where it is now but also like what what you know is it position to like dramatically.
+Like you know what's the trajectory that's exactly right the I mean I think for for people thinking more broadly about what they need to know about AI that this is the second topic is you know just as important as the first but it's really.
+You know even if you take some of that recent incidents like the hugging face incident like there's sort of think of two axes.
+Alignment of is the AI doing what I want it to do holistically obviously hacking into some other companies computers is not well aligned and then capabilities just like what can it get done can it hack into you know reasonably well secured other companies computers.
+What that incident was was like an early example very like pretty robust example of what we don't have the alignment things solved and capabilities are getting so big so strong that this is becoming a problem.
+And so paying attention to capabilities like what we should expect is becoming more important sort of day to day and we're just trying to produce benchmarks that both say where are we now exactly like you said like what can it do now.
+This is maybe relevant for more you know mundane economic utility or whatever as well as you know do we see the dynamics of the system changing in a way that might be alarming basically.
+Kind of also thinking about it is like first and second derivative of capabilities yeah I think that's right some of these things make it the slope goes you know much faster hyperbolic growth or whatever and some of these cases versus merely just like yep it's it's growing and it continues to grow both are important I mean I think we've seen.
+The disruption we've seen to date has come from these kind of unpredictable thresholds like when you know GPT 2 GPT 3 suddenly you had the chat GPT moment and you like oh this thing I want to talk to this thing I might use this thing instead of a search engine this thing is useful to me for finding information and then set it and then like a you know a little while years later.
+Two years later you had the it's getting better slowly and steadily at helping me with coding or with using my computer but suddenly models.
+With the thinking models and you had the clawed code moment where it was like oh suddenly this thing can actually do software projects for me even if I'm not a very not an engineer myself.
+And it's like hard to predict when these thresholds will be crossed so it's useful to still track but like the it's useful to track the mundane capabilities today and say look.
+You know cyber is maybe the latest example where it's like look we see their ability in controlled settings to do hacking going up.
+Smoothly and at some point it's going to cross some threshold where oh shoot it can hack hugging face or whatever hard to predict where those thresholds are but still very useful to to track those capabilities so even the first derivative as you said version of this we find very useful we've got.
+It's a fun benchmark we hope to release maybe by the time this is published what we'll have it out on our furniture assembly where we build some IKEA furniture make some mistakes and see if the AI system can like just given photos like say oh like wait you made a mistake and step back and step for like stop go back.
+And they've you know we see the same smooth capabilities like astra GP26 astra pretty good at this actually and you know but it wasn't out of nowhere it was like from a smooth and this is you know important because we haven't seen AI have much of an impact in physical industry yet like it's been mostly digital.
+And even before robotics hit the scene hits the scene we might expect that you know clawed in your glasses or something is saying like hey you know I'm going to guide you through repairing your car or whatever I'm going to help you fix this machine and the factory that broke so so you know we want to track those capabilities to just for the mundane impact anyway impact all over the place coming benchmarks help us help us say so.
+Awesome well Greg thanks so much for jumping on and sharing a bit about what you're working on it's super interesting stuff and very thought-provoking way of thinking about you know AI where it is where it's going.
+Thanks, I'm really appreciate it.
+Awesome, thank you.

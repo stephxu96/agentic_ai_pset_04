@@ -1,0 +1,12 @@
+{
+  "piece_id": "01",
+  "ready": false,
+  "issues": [
+    "01-c1 locator quotes do not support the stated Fusion import, material-assignment, target-mass, or two-drawing details.",
+    "01-c3 locator quotes omit the stated 100-task benchmark context and therefore do not fully support the claim.",
+    "01-c5 calls the RobotWorld result simulated and executable-checked without locator support for either condition.",
+    "01-c5 relies on an unverified automatic-transcript numerical claim; the supplied evidence does not independently verify the 63-of-84 figure.",
+    "The argument claims progress in finding CAD artifacts, but no Onshape search evidence or claim supports that development.",
+    "The limitation says the robotics evidence is simulated, but the cited podcast locator does not establish simulation."
+  ]
+}

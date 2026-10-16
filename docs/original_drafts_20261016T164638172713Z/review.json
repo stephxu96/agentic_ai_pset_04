@@ -1,0 +1,36 @@
+{
+  "review_id": "05df3bb9feb433a703a3ff6c54014d4c54ea0b229f0de29f701f0790bb7d5d55",
+  "passed": true,
+  "issues": [
+    {
+      "severity": "warning",
+      "artifact": "video_scripts/01.md",
+      "explanation": "Draft has 1117 words; the approximate target is 450-750 words.",
+      "piece_id": "01"
+    },
+    {
+      "severity": "warning",
+      "artifact": "articles/02.md",
+      "explanation": "Draft has 905 words; the approximate target is 600-900 words.",
+      "piece_id": "02"
+    },
+    {
+      "severity": "warning",
+      "artifact": "video_scripts/02.md",
+      "explanation": "Draft has 1006 words; the approximate target is 450-750 words.",
+      "piece_id": "02"
+    },
+    {
+      "severity": "warning",
+      "artifact": "articles/03.md",
+      "explanation": "Draft has 923 words; the approximate target is 600-900 words.",
+      "piece_id": "03"
+    },
+    {
+      "severity": "warning",
+      "artifact": "video_scripts/03.md",
+      "explanation": "Draft has 1049 words; the approximate target is 450-750 words.",
+      "piece_id": "03"
+    }
+  ]
+}

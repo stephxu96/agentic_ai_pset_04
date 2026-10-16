@@ -1,0 +1,446 @@
+[
+  {
+    "segment_id": "s0001",
+    "start_seconds": 0.14,
+    "end_seconds": 5.82,
+    "text": "This release introduces smarter configuration tools, improved design analysis, and new mobile"
+  },
+  {
+    "segment_id": "s0002",
+    "start_seconds": 5.82,
+    "end_seconds": 10.36,
+    "text": "capabilities to streamline your on-shape workflows."
+  },
+  {
+    "segment_id": "s0003",
+    "start_seconds": 10.36,
+    "end_seconds": 15.82,
+    "text": "Configuring complex designs just got faster, you can now automatically propagate configuration"
+  },
+  {
+    "segment_id": "s0004",
+    "start_seconds": 15.82,
+    "end_seconds": 20.66,
+    "text": "inputs to reference part studios, assemblies, and variable studios."
+  },
+  {
+    "segment_id": "s0005",
+    "start_seconds": 20.66,
+    "end_seconds": 26.06,
+    "text": "On-shape matches, compatible inputs, and values eliminating repetitive configuration setup"
+  },
+  {
+    "segment_id": "s0006",
+    "start_seconds": 26.06,
+    "end_seconds": 31.66,
+    "text": "and making it much easier to manage complex parametrically-driven designs."
+  },
+  {
+    "segment_id": "s0007",
+    "start_seconds": 31.66,
+    "end_seconds": 37.46,
+    "text": "Persistent center of mass is now available in assemblies, display it for individual components,"
+  },
+  {
+    "segment_id": "s0008",
+    "start_seconds": 37.46,
+    "end_seconds": 39.38,
+    "text": "or the entire assembly."
+  },
+  {
+    "segment_id": "s0009",
+    "start_seconds": 39.38,
+    "end_seconds": 43.62,
+    "text": "We locations updating automatically as components move."
+  },
+  {
+    "segment_id": "s0010",
+    "start_seconds": 43.62,
+    "end_seconds": 48.06,
+    "text": "You can even display the dimension to the center of mass and drawings, helping you accurately"
+  },
+  {
+    "segment_id": "s0011",
+    "start_seconds": 48.06,
+    "end_seconds": 51.82,
+    "text": "evaluate and document weight distribution."
+  },
+  {
+    "segment_id": "s0012",
+    "start_seconds": 51.82,
+    "end_seconds": 56.7,
+    "text": "Our studios can now display important properties directly in the parts list, including"
+  },
+  {
+    "segment_id": "s0013",
+    "start_seconds": 56.7,
+    "end_seconds": 59.22,
+    "text": "part numbers, revisions, and states."
+  },
+  {
+    "segment_id": "s0014",
+    "start_seconds": 59.22,
+    "end_seconds": 64.3,
+    "text": "This provides an immediate overview of your components without opening individual properties,"
+  },
+  {
+    "segment_id": "s0015",
+    "start_seconds": 64.3,
+    "end_seconds": 68.86,
+    "text": "making it easier to manage and verify design information."
+  },
+  {
+    "segment_id": "s0016",
+    "start_seconds": 68.86,
+    "end_seconds": 73.7,
+    "text": "Comments can now be attached directly to drawing views and annotations, selecting"
+  },
+  {
+    "segment_id": "s0017",
+    "start_seconds": 73.7,
+    "end_seconds": 79.14,
+    "text": "a tagging comment takes you straight to the reference location, making design feedback"
+  },
+  {
+    "segment_id": "s0018",
+    "start_seconds": 79.18,
+    "end_seconds": 84.14,
+    "text": "easier to understand and reducing confusion during drawing reviews."
+  },
+  {
+    "segment_id": "s0019",
+    "start_seconds": 84.14,
+    "end_seconds": 89.62,
+    "text": "A new dedicated four-short and dimension command makes diameter-dimensioning easier, quickly"
+  },
+  {
+    "segment_id": "s0020",
+    "start_seconds": 89.62,
+    "end_seconds": 95.14,
+    "text": "create four-short and diameter dimensions using a centerline and selected geometry, or switch"
+  },
+  {
+    "segment_id": "s0021",
+    "start_seconds": 95.14,
+    "end_seconds": 98.9,
+    "text": "between four-short and standard dimensions as needed."
+  },
+  {
+    "segment_id": "s0022",
+    "start_seconds": 98.9,
+    "end_seconds": 103.78,
+    "text": "This provides greater flexibility for clearly documenting your designs."
+  },
+  {
+    "segment_id": "s0023",
+    "start_seconds": 103.78,
+    "end_seconds": 109.5,
+    "text": "A synchronous simulation now provides more control over your analysis, run simulations"
+  },
+  {
+    "segment_id": "s0024",
+    "start_seconds": 109.5,
+    "end_seconds": 116.3,
+    "text": "from a version's default position, cancel unnecessary jobs, and delete completed results."
+  },
+  {
+    "segment_id": "s0025",
+    "start_seconds": 116.3,
+    "end_seconds": 121.18,
+    "text": "Unnotifications also keep you informed as simulations progress, allowing you to focus"
+  },
+  {
+    "segment_id": "s0026",
+    "start_seconds": 121.18,
+    "end_seconds": 126.5,
+    "text": "on design work instead of constantly checking simulation statuses."
+  },
+  {
+    "segment_id": "s0027",
+    "start_seconds": 126.5,
+    "end_seconds": 131.94,
+    "text": "Reflection analysis now integrates with unshaped shared image library, choose from standard"
+  },
+  {
+    "segment_id": "s0028",
+    "start_seconds": 131.94,
+    "end_seconds": 137.42,
+    "text": "custom reflection images, and instantly preview how they interact with your surfaces."
+  },
+  {
+    "segment_id": "s0029",
+    "start_seconds": 137.42,
+    "end_seconds": 142.34,
+    "text": "This makes evaluating surface smoothness and continuity easier while keeping all of your"
+  },
+  {
+    "segment_id": "s0030",
+    "start_seconds": 142.34,
+    "end_seconds": 146.06,
+    "text": "visual reference assets in one place."
+  },
+  {
+    "segment_id": "s0031",
+    "start_seconds": 146.06,
+    "end_seconds": 149.38,
+    "text": "Maintaining feature script dependencies just got easier."
+  },
+  {
+    "segment_id": "s0032",
+    "start_seconds": 149.38,
+    "end_seconds": 155.34,
+    "text": "A new search option helps you find standard library imports by version or version range across"
+  },
+  {
+    "segment_id": "s0033",
+    "start_seconds": 155.34,
+    "end_seconds": 156.82,
+    "text": "your workspace."
+  },
+  {
+    "segment_id": "s0034",
+    "start_seconds": 156.82,
+    "end_seconds": 161.62,
+    "text": "You can even update matching imports simultaneously, dramatically reducing the upper"
+  },
+  {
+    "segment_id": "s0035",
+    "start_seconds": 161.62,
+    "end_seconds": 165.86,
+    "text": "required to maintain and modernize custom features."
+  },
+  {
+    "segment_id": "s0036",
+    "start_seconds": 165.86,
+    "end_seconds": 172.5,
+    "text": "API keys now support configurable expiration dates, set a time to live when creating a key"
+  },
+  {
+    "segment_id": "s0037",
+    "start_seconds": 172.5,
+    "end_seconds": 176.5,
+    "text": "and receive email confirmation of its expiration settings."
+  },
+  {
+    "segment_id": "s0038",
+    "start_seconds": 176.5,
+    "end_seconds": 181.7,
+    "text": "This provides better visibility and control over API credentials, helping organizations"
+  },
+  {
+    "segment_id": "s0039",
+    "start_seconds": 181.7,
+    "end_seconds": 184.98,
+    "text": "manage access more effectively."
+  },
+  {
+    "segment_id": "s0040",
+    "start_seconds": 184.98,
+    "end_seconds": 191.54,
+    "text": "Managing cam jobs is now simpler, select any job element and press delete to remove it, eliminating"
+  },
+  {
+    "segment_id": "s0041",
+    "start_seconds": 191.54,
+    "end_seconds": 197.62,
+    "text": "unnecessary context menu interactions and making every day job cleanup faster."
+  },
+  {
+    "segment_id": "s0042",
+    "start_seconds": 197.62,
+    "end_seconds": 203.5,
+    "text": "Cam Studio now lets you override machine retract settings for individual operations."
+  },
+  {
+    "segment_id": "s0043",
+    "start_seconds": 203.5,
+    "end_seconds": 209.66,
+    "text": "Keep your global defaults while customizing or disabling retract behavior wherever necessary."
+  },
+  {
+    "segment_id": "s0044",
+    "start_seconds": 209.66,
+    "end_seconds": 213.98,
+    "text": "Providing greater control over toolpath behavior without affecting the rest of your"
+  },
+  {
+    "segment_id": "s0045",
+    "start_seconds": 213.98,
+    "end_seconds": 216.18,
+    "text": "machining job."
+  },
+  {
+    "segment_id": "s0046",
+    "start_seconds": 216.18,
+    "end_seconds": 221.1,
+    "text": "Moment and reality viewing is now available on supported Android devices, place your"
+  },
+  {
+    "segment_id": "s0047",
+    "start_seconds": 221.1,
+    "end_seconds": 227.18,
+    "text": "on-shaped design into real-world environments, adjust their scale and orientation, and explore"
+  },
+  {
+    "segment_id": "s0048",
+    "start_seconds": 227.18,
+    "end_seconds": 231.02,
+    "text": "the latest model geometry directly on your device."
+  },
+  {
+    "segment_id": "s0049",
+    "start_seconds": 231.02,
+    "end_seconds": 237.3,
+    "text": "This makes it easier to visualize and communicate designs outside the CAD workspace."
+  },
+  {
+    "segment_id": "s0050",
+    "start_seconds": 237.3,
+    "end_seconds": 243.18,
+    "text": "Editing in context on Android now provides clearer labels and improved visual feedback, making"
+  },
+  {
+    "segment_id": "s0051",
+    "start_seconds": 243.18,
+    "end_seconds": 248.42,
+    "text": "it easier to identify assembly references and understand how parts relate to surrounding"
+  },
+  {
+    "segment_id": "s0052",
+    "start_seconds": 248.42,
+    "end_seconds": 250.26,
+    "text": "geometry."
+  },
+  {
+    "segment_id": "s0053",
+    "start_seconds": 250.26,
+    "end_seconds": 254.82,
+    "text": "The Android comments panel has moved to the left side of the screen, matching the familiar"
+  },
+  {
+    "segment_id": "s0054",
+    "start_seconds": 254.82,
+    "end_seconds": 256.18,
+    "text": "on-shaped interface."
+  },
+  {
+    "segment_id": "s0055",
+    "start_seconds": 256.18,
+    "end_seconds": 261.54,
+    "text": "You can now create, resolve, and filter comments from one consistent location, making"
+  },
+  {
+    "segment_id": "s0056",
+    "start_seconds": 261.54,
+    "end_seconds": 264.54,
+    "text": "collaboration more intuitive."
+  },
+  {
+    "segment_id": "s0057",
+    "start_seconds": 264.54,
+    "end_seconds": 269.62,
+    "text": "Android users can now attach comments directly to sketch dimensions, take a dimension to"
+  },
+  {
+    "segment_id": "s0058",
+    "start_seconds": 269.62,
+    "end_seconds": 275.7,
+    "text": "provide specific feedback, then return directly to the reference geometry from the comet,"
+  },
+  {
+    "segment_id": "s0059",
+    "start_seconds": 275.7,
+    "end_seconds": 279.94,
+    "text": "making design discussions more precise and actionable."
+  },
+  {
+    "segment_id": "s0060",
+    "start_seconds": 279.94,
+    "end_seconds": 285.78,
+    "text": "The customizable S-key toolbar is now accessible using a long press with the Apple Pencil"
+  },
+  {
+    "segment_id": "s0061",
+    "start_seconds": 285.78,
+    "end_seconds": 290.86,
+    "text": "or your finger on iPad, quickly access your favorite modeling tools without interrupting"
+  },
+  {
+    "segment_id": "s0062",
+    "start_seconds": 290.86,
+    "end_seconds": 292.66,
+    "text": "your workflow."
+  },
+  {
+    "segment_id": "s0063",
+    "start_seconds": 292.66,
+    "end_seconds": 298.26,
+    "text": "Apple Pencil Double Tap also provides convenient access to context menus, making touch-space"
+  },
+  {
+    "segment_id": "s0064",
+    "start_seconds": 298.26,
+    "end_seconds": 300.58,
+    "text": "CAD more efficient."
+  },
+  {
+    "segment_id": "s0065",
+    "start_seconds": 300.58,
+    "end_seconds": 307.02,
+    "text": "AI Advisor is now available in on-shaped for iOS, get answers to on-shaped questions directly"
+  },
+  {
+    "segment_id": "s0066",
+    "start_seconds": 307.02,
+    "end_seconds": 312.02,
+    "text": "from your mobile device, helping you discover workflows and solve problems without leaving"
+  },
+  {
+    "segment_id": "s0067",
+    "start_seconds": 312.02,
+    "end_seconds": 314.42,
+    "text": "your design environment."
+  },
+  {
+    "segment_id": "s0068",
+    "start_seconds": 314.42,
+    "end_seconds": 319.3,
+    "text": "Education enterprise users can now make personal copies of their documents when permitted"
+  },
+  {
+    "segment_id": "s0069",
+    "start_seconds": 319.3,
+    "end_seconds": 321.46,
+    "text": "by administrators."
+  },
+  {
+    "segment_id": "s0070",
+    "start_seconds": 321.46,
+    "end_seconds": 325.9,
+    "text": "Students can preserve their assignments and projects in their personal on-shaped accounts,"
+  },
+  {
+    "segment_id": "s0071",
+    "start_seconds": 325.94,
+    "end_seconds": 330.02,
+    "text": "allowing them to retain access to their work even after leaving their educational"
+  },
+  {
+    "segment_id": "s0072",
+    "start_seconds": 330.02,
+    "end_seconds": 332.02,
+    "text": "organization."
+  },
+  {
+    "segment_id": "s0073",
+    "start_seconds": 332.02,
+    "end_seconds": 336.82,
+    "text": "To learn more about these updates, visit on-shaped and see more in-depth videos for each"
+  },
+  {
+    "segment_id": "s0074",
+    "start_seconds": 336.82,
+    "end_seconds": 337.66,
+    "text": "new feature."
+  }
+]

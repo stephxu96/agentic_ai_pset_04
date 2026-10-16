@@ -1,0 +1,1 @@
+{"cost_usd": null, "finished_at": "2026-10-16T16:46:47Z", "input_count": 16, "output_count": 16, "stage": "data/store.sh upsert", "started_at": "2026-10-16T16:46:47Z", "status": "completed", "tools": ["Python standard library", "SQLite"]}

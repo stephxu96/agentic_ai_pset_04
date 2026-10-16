@@ -1,0 +1,28 @@
+# Python and Node environments
+.venv/
+**/.venv/
+**/.cb/
+**/node_modules/
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
+
+# Folder marked for deletion
+_to_delete/
+
+# Downloaded source media (copyrighted). Each item's url and media_url are in runs/RUN_ID/items.jsonl
+data/media/
+
+# Rendered video and voiceover (published on YouTube; voice is an AI clone of the author)
+runs/*/presentations/video/
+runs/*/presentations/audio/
+
+# Presentation build scratch: keep only the scripts and scene data needed to rebuild
+runs/*/presentations/build/*
+!runs/*/presentations/build/*.py
+!runs/*/presentations/build/*.js
+!runs/*/presentations/build/package.json
+!runs/*/presentations/build/scenes*.json
+!runs/*/presentations/build/script_backups/

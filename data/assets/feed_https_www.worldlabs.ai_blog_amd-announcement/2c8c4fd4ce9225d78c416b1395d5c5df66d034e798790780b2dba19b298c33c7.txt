@@ -1,0 +1,18 @@
+September 28, 2026
+Accelerating the future of AI research and compute
+World Labs is Joining AMD
+World Labs has signed a definitive agreement to join AMD.
+The research and technical breakthroughs we have achieved since our founding in 2024 have given us a clear vision for AI’s potential to solve problems in the spatial and physical world. To accelerate into this future requires scaling our efforts, scaling our reach, and getting closer to the hardware.
+We began a deep technical partnership with AMD last year, starting with model training and inference optimization on AMD GPUs. As our teams worked together, we realized it would be a natural fit to bring together our AI ecosystem of software and hardware, foundation models, and applications.
+Dr. Fei-Fei Li will join AMD as an Executive Vice President and Chief Scientist, working directly with CEO Dr. Lisa Su. Justin Johnson and Ben Mildenhall will work with Fei-Fei to continue leading the World Labs team as it joins AMD to form a world leading frontier research organization. Together, we are committed to building out an end-to-end open AI ecosystem spanning hardware, software, platforms, and widely accessible open models.
+Fei-Fei shares more details of our journey thus far and our shared vision for the future
+here
+.
+The transaction is expected to close by the end of 2026 subject to regulatory approvals and other customary closing conditions.
+Read More
+September 28, 2026
+To Seek a Newer World
+Our journey from World Labs to AMD
+July 28, 2026
+The Next Frontier of AI Is Spatial Intelligence
+Martin Casado (a16z) sits down with Fei-Fei Li and Yunzhu Li to discuss the SceniX acquisition, how simulation unlocks the next generation of robotics, and why training robots isn't like training LLMs

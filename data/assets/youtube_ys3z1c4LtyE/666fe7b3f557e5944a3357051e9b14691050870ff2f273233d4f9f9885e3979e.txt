@@ -1,0 +1,1675 @@
+So it's 6 to 7,000 pounds lighter than our competition,
+which makes it a joy to drive way more off-road capable.
+Hey everybody, welcome to ShopTalk.
+The podcast series where we talk to makers, inventors, designers, and engineers from ShopTalk.
+Today we're on the road in Reno, Nevada, and we're going to go to Truckhouse.
+I reached out to Truckhouse a while back when I found out there were fusion users.
+This is a company that makes the most excellent truck campers I've ever seen,
+and I can't wait to see how they make these things.
+All right, we're here.
+I am meeting with Matt Linder, CEO of Truckhouse.
+Thanks for having us, man.
+Of course, man.
+I'm so stoked.
+I am the worst personal point of view.
+This is one of my favorite products that exists.
+I am already blown away by this thing.
+Yeah, well we're stuck to have you and stuck to show you about what we built.
+But yeah, here's a Truckhouse BCR in the flesh.
+It's a fully carbon fiber camper.
+Built on a ram, 3,500 chassis.
+So it's fully integrated, has passed through access,
+and we built all of this in-house and the shop right behind us.
+Wow, man.
+Every little detail is custom, I can tell.
+Oh, yeah.
+It's like there's nothing.
+I'm not seeing anything here that looks like it's off the shelf.
+I mean, this.
+Yep.
+Right.
+That's all you.
+Yep.
+We've all the swing outs.
+We do all the design, the torsion free system,
+which will dive into a little deeper.
+Really what's unique is how lightweight, how strong,
+and how well-insulated it is.
+That's what carbon fiber is.
+That's why you're using that.
+Yeah, yeah.
+So it's, you know, we're sick to that 7,000 pounds lighter than our competition.
+Wow.
+Which makes it a joy to drive way more off-road capable.
+And then it's fully automatically surface.
+So there's not a flat surface on this camera.
+There's not.
+There's what we call tumble home up this whole sweet,
+radius.
+You've got your cab over, pinches in,
+and then we even have a pattern on an airfoil in the front.
+So that's what we call the hyperfoil.
+Which stands for my pressure reduction.
+So he takes all the high pressure air hitting the leading edge of this thing.
+Pulls it through that foil,
+and then controls the drag and dues for to seize that go down the camper.
+Wow.
+So yeah, very, very unique in our space.
+And we're super proud that we build everything right here in Reno,
+and then everything matches.
+So your body lines.
+Yeah.
+Your geometry.
+Look at that.
+Your vendor flares.
+Yeah.
+You name how.
+And matches all your cab curvature.
+So like this wall doesn't flow.
+It's all curved to match.
+Which will show you bear shells in the shop,
+where you can really see that geometry.
+Yeah.
+It makes it incredibly hard to manufacture.
+Yeah.
+In a way easier to build a big ugly square box dude.
+Which will dive into inside about all the machining we do,
+and mold making we do to be able to make something.
+So unique.
+Yeah.
+Real man.
+Yeah.
+So why did you do this?
+How did you get started?
+Yeah.
+It's a great question.
+I'm a big skier.
+After I graduated from college,
+I skied and competed around the country.
+Big mountain and park events.
+Okay.
+I was living in Tahoe.
+It's multiple drought years in a row.
+Yeah.
+Called my dad.
+He was a big skier and said,
+Where should I live next winter?
+He goes, you have to live where it's snowing.
+Yeah.
+This was before the vanlife movement.
+I was 22 years old.
+That's the time.
+I was like, what do you mean at the live where it's snowing?
+Where is that going to be?
+It could be a drought anywhere.
+Yeah.
+You have to be mobile.
+So I started doing some research.
+I found a 1987 Toyota Sun Raider.
+With factory four-wheel drive,
+one of 16.
+Yeah.
+My dad owned the small boat yard in Saoslita.
+So I bought this super rare fiberglass camper.
+Took it back to the boat yard.
+And took it apart.
+My dad said, don't take it apart.
+Go camping.
+Turned into a 2,000-hour three-year project.
+Rebuilt this old 87, 4 by 4 camper.
+And it was basically a version of this.
+Okay.
+I'm familiar with that with this really that's iconic.
+Yeah.
+And it got so popular.
+You know, on the internet, and people coming up to me,
+that was like, I need to build new versions of this.
+Yeah.
+So that's kind of how this all started.
+Because I ended up winning a business plan contest through UNR.
+I'm one of Grant from the University.
+And we built our first product was based on its credit to Columbus.
+So it was really a modern son Raider.
+And this is our second product based on the ramp.
+So nice.
+Yeah.
+So can you show us around the outside?
+We got a ramp 3,500.
+Yeah.
+A ramp 3,500 up by AEV.
+AEV is American Expedition Vehicles.
+So these are all their components and 40 inch tires.
+Called their Prospector XL Package.
+Okay.
+Actually, do all of their surfacing for all of their components.
+An alias as well.
+Okay.
+Not just pretty sweet.
+So the whole, the truck, the suspension, the wheels,
+all this comes from AEV.
+Correct.
+Yeah.
+We work with them directly.
+And it's really cool because all of this truck is sitting on a 40 inch tire.
+Still retains full factory warranty.
+Okay.
+So you can drive this thing straight into the dealership.
+They don't look at your cross-eyed remains with a lot of the same factory suspension.
+Components of the warranty is still valid.
+Yeah.
+So it's really, really a joy to drive.
+Drives better than a stock vehicle.
+So it's really, really, you know, a slippery design with a lot of intention put into aerodynamics.
+Yeah.
+And then, you know, we match AEV's fender flares with our fender flares.
+All of our hatch doors, you know, have all of the body lines in them.
+The hatch handles actually lock with your ram keyfob.
+So that's all that you might not even.
+And then it's fully skidplated.
+So like, yeah, look at that.
+That's all steel in the departure and the belly.
+And we've actually had our single cab demo, which is behind us here.
+We've had that in Moab on Hell's Revenge, Poison Spider.
+And we've drugged this thing.
+Designed to actually be off off road capable and drag all these skidplates.
+Yeah.
+Unreal, man.
+You know, with that goal of trying to get further than everyone else.
+Yeah.
+When you get to that obstacle in the trail, that a springer van is knocking the pass.
+You could basically drive through and this truck into real drive.
+And then you end up out further than everyone else all by yourself.
+It's just, there's no, it's as capable and off road vehicles you can get for the most part.
+100%.
+Yeah.
+Yeah.
+Are we going to look inside yet?
+Let's look inside after you're reading the shop tour.
+Okay.
+Let's do it.
+Cool.
+Let's go check it out.
+Okay.
+And you've got a new building, right?
+Yeah.
+We've been in here just over about six months.
+So yeah, an office is a little sparse.
+But this is our shop dog, low love.
+Hey, low love.
+What are you doing?
+She just had her ninth birthday yesterday.
+So she's been here.
+Pretty much every day at truckhouse from the beginning.
+I like to cut her gym.
+Yeah.
+Cool.
+Yeah.
+Welcome to our office.
+Hey, you go lay down.
+Nope.
+Go lay down.
+Good dog.
+Yeah.
+Welcome to our office.
+Like I said, been here about six months.
+So, we're not fully decorated.
+But we are fully up and running.
+Okay.
+Obviously, a lot of the focus has been on manufacturing.
+Well, I would hope that's, that's where you put your, your time effort right now.
+Yeah.
+And so we've got engineering offices behind you as sales and marketing.
+Yeah.
+And then our VP of manufacturing.
+And then our little 3D printer room.
+Nice.
+So we 3D print tons of parts.
+We 3D print a bunch of.
+Yep.
+A bunch of them.
+3D print a bunch of end news parts using PTG carbon fiber stuff.
+Because at our volumes, we can't necessarily injection mold.
+Yeah.
+And machining doesn't make sense for some of these components.
+That's great for small volumes.
+Yep.
+And then we even like develop and print.
+These are consumable items for the vacuum and fusion process.
+That's so kind of ours.
+Some of our components suppliers actually buy them from us.
+But it's just through bag port.
+So I'll show you that out of the shop floor.
+But that's why these two are printing right now are consumable parts.
+A big thing we're seeing customers use 3D printing for a lot is manufacturing aids.
+Yeah.
+This kind of stuff, just like, yeah.
+Yeah.
+Consumable parts you need for yet some specific process and use crank stuff out on these things.
+Yep.
+And jigs with drill guides and machines.
+Yep.
+Yeah.
+Absolutely.
+These are great machines too.
+The Prussian makes really good.
+Yeah.
+We had a started with a Mark III.
+Six years ago.
+And that was my first dive in diffusion was actually to develop this before we started the company.
+I knew I wanted to vacuum and fuse these shells.
+And I knew I could develop a better through bag fitting.
+Yeah.
+And so my first dive into CAD was fusion.
+Oh.
+What's to design these?
+And was on a Prussian Mark III.
+Yeah.
+That printer printed over 60 miles of filament.
+Yeah.
+I'm not surprised.
+They just go.
+Yeah.
+We've got in the shop.
+You guys get exclusive.
+Usually we say no photos.
+So you guys will be kind of the first people into our new shop.
+Yeah.
+Excellent.
+Stoke to have.
+Yeah.
+And then yeah.
+We'll kind of dive into the whole manufacturing process and go kind of soup to nuts.
+And then we'll go check out a truck.
+What we're walking by here is this is our subassembly area.
+So behind there is inventory.
+This is where we're pulling parts to create sub assemblies that then go into production cells
+to feed the campers.
+Yeah.
+Things like plumbing fittings.
+Wiring.
+A assembly of those stairs.
+So that stairs that you saw outside.
+This is the actual production version.
+Oh.
+How did you go to it?
+Yeah.
+A powder coat.
+It's different design.
+A little bit different machine parts.
+That's the idea.
+Yeah.
+With the rubber inside in it to catch a stop.
+And then they get like a EVA boat flooring on the snaps.
+You mill these in house.
+We do not.
+Okay.
+Yeah.
+And the sheet metal is outsourced too.
+I guess.
+We do not laser, but we do.
+We do the aluminum tick.
+Okay.
+So we weld them all up in house.
+And all the design.
+They do the cutting and breaking elsewhere.
+Correct.
+Correct.
+Yeah.
+Yeah.
+There are certain things where that just doesn't make sense to do in house.
+Not a kiddo.
+Not for arm.
+Do you work with send cuts in at all?
+We do.
+Yeah.
+They're local too, aren't they?
+They are.
+They are.
+They're amazing.
+That's a really good company.
+Yeah.
+We look up to them a lot.
+Their whole infrastructure on their website is.
+Yeah.
+Mind blow.
+Yeah.
+It's incredible.
+We'll see this inside the truck.
+But this is cool.
+It's as packed as ready to get installed.
+But this is a carbon fiber bed ladder.
+Wow.
+Oh no.
+Sorry.
+Production team.
+Um.
+Yeah.
+All good.
+It was stuck.
+Oh.
+There's a magnet.
+It's a magnet.
+Yeah.
+Anyway.
+Yeah.
+Are these 3D printed too?
+Yeah.
+Yeah.
+3D printed and carbon fiber.
+And you did the carbon fiber molding here too.
+Um.
+These are actually, um.
+Oh, that's cool.
+Yeah.
+There's 2D too.
+Yeah.
+Yeah.
+Yeah.
+Yeah.
+I've been to the bed.
+Okay.
+Yeah.
+Wow.
+And then this is kind of where our whole manufacturing starts.
+Uh.
+So this is foam land.
+Yeah.
+And so this is all aerospace grade.
+Um, structural foam core.
+Um, varying densities and thicknesses.
+Okay.
+Um.
+Our shell is carbon fiber foam core.
+More carbon fiber.
+Oh.
+Okay.
+So this is your insulation.
+It's insulation.
+But it's also strength.
+Yeah.
+So this is not like insulation foam.
+This is really for the aerospace industry to create a cord composite.
+Okay.
+And so what's unique about a cord composite is that foam core.
+Our shell is nominally two inches thick.
+I don't know.
+Like I said.
+It's better inside than a yeti cooler.
+But we're good for noise as well.
+But when you have a carbon fiber laminate layer, structural foam and more carbon fiber
+that foam acts as web thickness.
+Yeah.
+So like an eye beam.
+It's your web.
+Yep.
+So we have web thickness throughout our entire shell.
+Wow.
+So it makes it incredibly light and incredibly strong.
+Well, it also gives you.
+That's also your form for the molding or part of the form, right?
+Um, yeah.
+Well, we have molds.
+Actually that caps that shape.
+We need to make machine our foam into a shape that fits our pieces.
+Yeah.
+Yeah.
+Okay.
+And so there's all sorts of machining going on.
+Um, top saber.
+Top saber.
+Yeah.
+We machine.
+It's over, um, 200 hours per core kit for a shell.
+Okay.
+Wow.
+So we run that machine about 80 hours a week.
+We've got another one on orders.
+So that'll be us.
+So you need another one, man.
+Sister machine right next to it.
+Maybe two more.
+But you can see just how complex all the surface is.
+Yep.
+We've got a lot of foam on this foam for a part.
+And you may not be able to see this on camera so much,
+but this also has curvature curve everywhere.
+So everything is curved basically.
+Yeah.
+So there's no flat surfaces anywhere.
+Just the bottom of the floor.
+That only flat surface.
+Yeah.
+And that, you know, all sorts of surfacing.
+Um, which takes a long time on the machine.
+It's a long time.
+Yeah.
+We surface everything.
+Yeah.
+On both sides.
+And that's a really fine finish, too, because you don't want to see
+the actual marks coming up through the carbon fiber.
+Correct.
+So you really have to keep your exact place.
+I call that printer.
+Yep.
+Yeah.
+So tons of pieces.
+Lots of machining.
+And yeah.
+It's a pretty wild process.
+That's a lot of work, man.
+Oh my gosh.
+This is like we kind of joke that we're, you know,
+seven or eight companies and one building.
+Yeah.
+Because like this are core kidding department.
+I think we're one of the best core characters on the planet.
+Yeah.
+We could be a core kidding company.
+Right.
+We used this to also machine plugs for making molds.
+And other small components as well.
+But primarily it's cutting a lot of the structural foam core.
+Is this 12 pound foam?
+Um, it's very densities based on the shape.
+So that's lighter than 12 pound.
+Okay.
+But we do have different densities depending on where the loads are.
+Okay.
+So what's really cool about us with building everything in house is we're in control of what
+we call the laminated schedule, which is how much and what type of carbon fiber goes where.
+Yeah.
+What's the density of the foam?
+Because that's not, that's not going to be uniform with things everywhere.
+Because if it was, you'd be wasting money and also wasting weight to weight.
+Right.
+100%.
+Yeah.
+Okay.
+Or making something not strong enough.
+Right.
+So it's always that fine balance of how can we make it strong enough light enough.
+Well, until I did enough.
+Man, this isn't intense engineering problem.
+Just modeling.
+Just the fusion machine or cam work we do.
+Yeah.
+It's hundreds and hundreds of parts.
+Yeah.
+Multi-operation.
+All surfaces.
+Yeah.
+Like, you know, some of my buddies who do a lot of machining on metal.
+They kind of joke, like, oh, it's just foam.
+I'm like, you should come run some of these cam tool paths.
+Yeah, dude.
+It's a huge surface in problem.
+Yeah.
+You know, some of our pieces of that foam started out as eight inches thick.
+Yeah.
+And gets fully machined into net shape.
+Your tools might last longer than they would if you were using metal.
+Yeah.
+Yeah.
+And then your vacuum fixtures are here.
+Yeah.
+This looks like pink foam insulation.
+Yeah.
+This is the same more or less.
+Yeah.
+These are just, these were actually designed as a temporary vacuum fixture.
+Uh-huh.
+And we're in the process of redesigning for tool import.
+Yeah.
+But we've run gosh, dozens of parts of these things and they're still working great.
+Yeah.
+It's amazing if we keep the, um, you know, that you could, you could reuse them so much.
+And it's just foam.
+Yeah.
+You got to be careful with them.
+Yeah.
+You got to be careful.
+Right.
+You don't want to damage them when you're taking things on or off.
+Yeah.
+And if, um, you get a look here.
+There's, uh, the, the surface has, Chris, if you want to come see.
+Um.
+There are holes going all the way through this because what you're doing is sucking air through
+to get these shapes with your, uh, your bags or is this going directly to the carbon fiber?
+This is, this is holding the foam.
+Okay.
+So like, I can show you over here.
+Basically, you know, here's another complex.
+Complex piece of that's part of the airfoil.
+Yeah.
+It's part of the airfoil.
+Exactly.
+So that's where your foil is.
+That's your window.
+Yeah.
+Machine on both sides.
+Wow.
+Um, and then we pocket a bunch of pockets out because we put hard points into the,
+into the, into the foam, right, and fusion because we don't through both anything on the shell.
+Everything has a hard point is drilled and tapped with the stainless steel insert.
+Oh.
+So there's 288 fasteners on the exterior of the shell.
+And none of it goes through the foam.
+So it's the thermal bridging at all.
+Hell cold bridge.
+Yeah.
+Zero cold.
+Wow.
+Yeah.
+So it's a ton, a ton of hard points.
+Can you hold it?
+Yeah.
+So you're going to have threaded inserts here, um,
+that are, do they have like a flange that attaches to the, to the carbon fiber?
+It all gets, it's all infused in the taste.
+Wow.
+Wow.
+Yeah.
+That's crazy, man.
+Yeah.
+But to think about a thermal bridge on a, on a, on a camper.
+That's just not stewed.
+No, no thermal bridging.
+Um, and then it's not only the thermal bridging that's the fact that we're using,
+stainless steel fasteners and stainless steel inserts.
+So that means you're going to get a, got that a reaction.
+And we can also remove them and reinstall forever.
+Yeah.
+Yeah.
+Like a traditional RV when you use a sheet metal screw and glue.
+Yeah.
+You can only throw that in and out so many times before that hose watered out.
+Yeah.
+So we have endless service ability.
+Wow.
+Yeah.
+Pretty neat.
+Amazing.
+This is our composite department.
+So you're looking at a bunch of vacuum infused parts that are curing and getting ready to be popped
+out of the mold.
+Wow.
+All of these green parts are actually interior.
+So actually, we vacuum and fuse all our cabinetry as well.
+Wow.
+Um.
+Yeah.
+Really.
+Yeah.
+This is an upper cabinet.
+Yeah.
+This is an upper cabinet.
+That's the weight thing again, right?
+Yeah.
+You start putting particle board in there and before you know it, you've got, you know,
+another couple hundred pounds.
+Yeah.
+You know, wood, panel where we shut these vehicles and we ship on the Florida.
+What is going to move as well and it's just doesn't fasten well.
+So these all get bonded into the shell.
+They act as structural rubbing or bulkheads.
+And then we turned all of our composite techs that we've taught all this process to
+into world-class cabinet builder.
+These are cabinets that you would see in like, in like a lear jet or private jet.
+Yeah.
+Yeah.
+Just taking it to another level.
+And then we're able to reproduce the same cabinets over and over again.
+Yeah.
+So these are all our molds, which are like essentially the muffin pan.
+Right.
+Not build these pieces.
+You can see those are our throughbag ports that we print.
+Yeah.
+Oh, I see.
+Okay.
+Yep.
+And then that little clip thing is going on to this.
+And this makes it gaped.
+Yeah.
+It goes through the flow channel for a channel.
+Okay.
+Yeah.
+For residents.
+Yeah.
+Vacuums on the outside and resin flows in the middle of the part.
+Got it.
+Okay.
+Yeah.
+That's a lot of stuff completely dry.
+So we don't, you know, if you notice, this isn't a smelly composite.
+No, no, no smell at all.
+No.
+Which is incredible.
+No.
+So we don't hand lay anything.
+So right now, like this is Hunter Hunter's laying up carbon fiber on this part.
+This is some of the foam you actually saw earlier.
+So it gets the mold gets released.
+We spray an end mold coating.
+Then we lay dry carbon fiber.
+Then we lay all our dry foam.
+Then we lay more dry carbon fiber.
+Then we put our consumable stack, which is all this flow stuff in this bag.
+And then we suck all the atmosphere out of the part.
+And then we turn all these valves with our through bag courts and the resin.
+And the resin never hits the air.
+No.
+Yeah.
+We get us all the resin as well.
+So we're closer as in epoxy resin as mixed.
+We dig acid all.
+We use, you know, a lot of our competition uses lesser quality resin systems.
+Like a polyester or vinyl ester.
+Sure.
+But you don't really, you're not going to get the strength from the carbon fiber using a lesser
+resin system.
+Yeah.
+Yeah.
+So we use top tier epoxy, which is another reason why this shop doesn't smell.
+Yeah.
+And then we're able to flip the resin to fiber ratio.
+Basically on its head if we were, if we were to hand lay these parts.
+Yeah.
+So if you hand lay these parts, you're looking at about 65 to 70% resin to 30 to 35% carbon
+fiber.
+We're flipping that ratio completely.
+Oh, wow.
+And still getting a fully wet out part.
+So we get in.
+Wow.
+And then heavy by itself.
+So you want the minimal amount of resin, but to fully impregnate the fibers.
+Yeah.
+So by putting, you know, 14 psi, which is a lot over that much surface area, that's, you
+know, probably 30 to 40,000 pounds of pressure before this thing sees any resin.
+Yeah.
+And then we don't have to get covered in it.
+Well, we've always spread it.
+We just turned the valves in and flows through.
+If you've ever been in a shop that uses resin fiberglass, carbon fiber or anything like that,
+you really appreciate how clean this is.
+I mean, it's incredible.
+Thank you.
+Guys, come out of those shops with, you know.
+I mean, I've gone, you've done it yourself, probably, right?
+You're all covered in little fibers and it gets in your skin.
+And like, man, this is just pristine.
+Yeah.
+Yeah.
+We really take pride in keeping the shop clean and having a nice, nice environment.
+What a great place to work.
+Not bad.
+Not bad.
+And we do other cool things.
+Like, this is our, this is our pass through.
+And we remove the rear window of the truck.
+This is not trim.
+So this is straight out of mold.
+Okay.
+Wow.
+That's how we create access from the truck to the camper.
+This is straight off the mold.
+Is this straight off the mold?
+Close.
+That is to just ready to go.
+Yeah.
+Yeah.
+We don't do a ton of raw carbon parts because we post paint to match the truck.
+But this is one we do.
+Yeah.
+And you just have an important hole that kind of clamps and hides that.
+We just have to get trimmed.
+Yeah.
+This all gets trimmed.
+We're trimmed line on the outside.
+It gets trimmed on here on the inside.
+Got it.
+Wow.
+And then we match all the stampings on the back of the cab.
+So we design and built this tool.
+And then, yes, infused the parts as well.
+You know, this is that, this is that tool.
+So this is in process that part in process of being laid up as we speak.
+So we design the, we design the surface.
+We built the plug.
+We built the mold.
+Built the mold.
+Fringing.
+And now we build the parts.
+And that's, like, we haven't even, you know, got to the rest of it.
+Yeah.
+And this is just two departments.
+His foam and compiles it.
+It's a pretty big undertaking.
+He says wild man.
+I love that it's all, like I've never, I've never seen it done like this.
+I've never seen people take the time to do it by hand.
+Dry.
+Yep.
+And just, you know, get it there.
+Get as close as you can.
+And then, yeah, you're just good to go at the end.
+And, you know, behind us is our, this is our cut table.
+So we use different types of carbon fiber depending on the loads, right?
+So this is Matthew.
+He's pulling out a bag.
+So we have giant vacuum bags because our hearts are so large.
+But depending on where we were saying, like, the loads are, we use different thicknesses and different weaves.
+Yeah.
+So if you look here, this is, um, this is called a, uh, 45, 45 or a buy axe.
+So these fibers are running this way at a 45 on the other side.
+And they're sewn sewn together, right?
+Wow.
+Okay.
+And then, if you've only seen the, the woven.
+Yep.
+And so that's called a two by two twill.
+So that's two under two over.
+Okay.
+And so that's going zero, 90.
+Yeah.
+This is going in 45, 45.
+Okay.
+You stack these two laminates together.
+You create a quad stack.
+Yeah.
+So, um, which is really good for, you know, loads and various places.
+You take a load anywhere.
+Yeah.
+If you've got that, right?
+Yeah.
+It's basically just like, yeah.
+And then we do depending on, like, you know, different loads.
+We add more reinforcement.
+The floor sees a lot of torsional force.
+Yeah.
+Can't leave her cap over.
+She sees a lot of force.
+Yeah.
+So yeah.
+And we can control of all that.
+We've done a ton of testing.
+Um, and yeah.
+That's, that's kind of composite in a nutshell.
+I'm just starting to like realize that the, the, the attic is kind of levered.
+Yeah.
+And it's no, and it's just one piece.
+There's just like one monocoke thing that you stick on.
+Yep.
+Yeah.
+That is wild.
+Yeah.
+And so we'll head this way.
+Um.
+Whoa.
+Look at that spray booth.
+Yeah.
+Just getting serious.
+Just getting wrapped up.
+This is our new spray booth.
+Um, especially designed so that we can post cure our carbon fiber parts.
+So this will actually bake these parts prior to body work.
+Okay.
+And 180 degrees for 24 hours.
+Nice.
+Um, so that will help with surface finish.
+Yeah.
+Um, and strength.
+So very special.
+He spray booth that we spray.
+And then also post care.
+Yeah.
+A lot of our composition is not going to take the time to post cure.
+They're not going to see the benefits of the actual residence system.
+They're going to end up with more print through, which is shows the weeds and seams and stuff over time.
+Yeah.
+So we really, really want to be as OE or, you know, OEM manufacturers.
+Yes.
+Yeah.
+Yeah.
+Wow.
+Yeah.
+And we'll come back to this section.
+But this is our prep deck.
+So this has two dust benches on the wall keeping the air down.
+We're more than welcome to pop in here.
+These are all cabinets getting ready to get glued into a shell.
+Okay.
+Um, here we go.
+You mind if I pick this one up really quick?
+Oh.
+Thanks, dude.
+Grab that.
+Oh, my God.
+Two.
+What is this way?
+Like 15 pounds?
+We'll probably last 10.
+Yeah.
+And then time in, like, grab it and twist that top rail.
+No.
+It's so strong.
+It's not going anywhere.
+Yeah.
+So strong.
+Like God, dude.
+This is crazy.
+Pretty nuts.
+And so he's, he's, he's, he's, he's, he's, he's, he's, he's, he's coming out.
+This is a problem.
+This is a problem.
+And prime.
+Yeah.
+He's ready to go.
+Yeah.
+It's prime.
+He's standing right now.
+So we can get ready to get him, get him, bond it into the shell.
+And then they'll be painted in place.
+Man, look at that surface finish.
+Yeah.
+What do you go?
+And so now, this part being rougher.
+I'm guessing it's just not visible, right?
+Um, they don't get it.
+It'll get like an EVA foam flooring covered on it.
+Okay.
+Yeah.
+Yeah.
+So you're not going to put the effort in.
+Yeah.
+Yeah.
+Yep.
+Which I'll show you in the finish shell.
+Um.
+Yeah.
+And so this is all a little bit more familiar for, like, auto body work.
+Yeah.
+This is, yeah.
+We're doing primer.
+We're basically, we're basically an auto body shop, which is on the stand.
+Yeah.
+We're going.
+Once the shells, once the pieces are infused, we come over here to assemble it.
+And then we go basically sand into booth for primer, out of booth for sanding.
+Yeah.
+In your booth for paint, out of booth for interior sanding.
+A lot of sanding and paint.
+Yeah.
+And that's how you get the nice service finish.
+Yeah.
+And we really, you know, a lot of our competition is going to spray a bed liner on the
+shell.
+Yeah.
+It's like kind of correlate that to the nicer the house, the smoother the drywall.
+Uh-huh.
+Yes.
+If you spray bed liner on everything and hides all the sand.
+Yeah.
+It's probably because they're not building a quality enough part.
+Yeah.
+To actually paint.
+Yeah.
+You don't know what's being hidden under there.
+Yeah.
+And my theory on that is if as soon as Ram Ford or Chevy start bedlining the trucks from the
+factory, we'd then all believe it because if they would save a bunch of money by having
+lesser quality stampings, less service prep if they just textured the whole truck.
+They do it.
+Yeah.
+But they paint them for a reason.
+Yeah.
+You know, OEMs, paint them for a reason.
+Yeah.
+So we're trying to follow suit with the big, you know, the big three.
+Yeah.
+And do our best to match that.
+Oh man.
+Yeah.
+This is intense too.
+Yep.
+Yeah.
+So that was our two areas that that cabinet stone cover.
+Yeah.
+Yeah.
+Okay.
+So these will just get painted to match the cabinet.
+Yep.
+And they actually have blinds that cover.
+And you don't see a ton of it.
+So.
+And these are just on.
+Dollies.
+Yep.
+It's just a big dolly.
+Yep.
+Okay.
+Custom dolly though.
+Yeah.
+Custom dolly.
+Yeah.
+Custom dolly.
+Yeah.
+Yeah.
+And look at that.
+Okay.
+So I see the lighting chases up there.
+And then that's that.
+That's the part we were looking at over there on the CNC.
+Yep.
+Get the pass through.
+Yep.
+Wow.
+And yeah.
+It's a raw carbon part.
+I mean.
+And they know kind of blue stuff.
+And no wasted space.
+Yep.
+This is what's going on under here.
+Batteries.
+Yep.
+Yeah.
+Exactly.
+And then you can lift the floor up to access them.
+Yep.
+Nice.
+Yeah.
+Look at the batteries you use.
+We use all the big trunks.
+Yeah.
+Yeah.
+Yeah.
+Six or eight volt.
+Wow.
+48 volt.
+Nice.
+Yeah.
+Yeah.
+Usually 24 volt for a camper.
+Right.
+Yeah.
+We're kind of on the, I don't know.
+Next.
+Next wave here with 48 volt.
+Okay.
+By doing 48 volt.
+We can charge significantly fast.
+Yeah.
+So we have 48 volt.
+Well, it's kind of under the hood.
+Okay.
+Okay.
+When the trucks idling.
+We can get about 8,000 watts of charge.
+Okay.
+We can charge the battery from 0 to 100 and an hour and 29.
+It's 10.2 kilowatt hours of juice.
+Yeah.
+Yeah.
+So it take about eight hours of hour.
+12 volt.
+Yeah.
+And you can charge more hours of hour 24 volt.
+You have 800 kilowatt hours with the engine dead.
+We have 10.2 kilowatt hours of battery.
+Okay.
+And we charge at 8,000 watts.
+Okay.
+With the engine running.
+Right.
+Okay.
+Which is insane.
+So it's also 600 watts of solar.
+Wow.
+Yeah.
+Yeah.
+Yeah.
+That's amazing.
+So 10 kilowatt hours.
+How long is that?
+Like you're just, you're camping in here.
+Using the fridge, using the lights.
+Yeah.
+How long can you comfortably stay without turning the engine on?
+I mean, it'll actually auto start the engine and high idle and turn the engine off.
+Okay.
+You need to.
+But see you never have to worry about it.
+Depends on climate.
+Yeah.
+Obviously.
+But I would say.
+Three days to a week and a half depending on why you're using it.
+If you're cooking a turkey in the wash oven, which you'll see.
+Oh, five.
+Sevens.
+Right.
+If you're cooking a turkey, it's crazy.
+Maybe you'll get three days if you're not.
+You get longer.
+If you're running there, if you're running there, four day air commissioner, all night long,
+it's going to drain battery more.
+Sure.
+Running all night, no generator, no propane.
+Wow.
+Yeah.
+Fully self-sufficient.
+So much of this stuff is just, you know, it's one of the reasons why my wife isn't really interested
+in doing it is.
+There's all these little systems you have to take care of.
+And there's so many, like, uh, we charge the batteries.
+We do this thing.
+Like, there's all these, all, then most campers.
+There's all these little details you have to pay attention to.
+Yeah.
+It just sounds like, no.
+We just have an auto idle, you know, turn on the engine.
+It's charged the batteries when they get out.
+Yeah.
+We develop.
+We have a full Garmin touch screen.
+That controls all camper.
+And the whole backhand interfaces is truckhouse of house.
+Yeah.
+One screen that controls everything.
+So.
+And you can do it on your phone.
+Yeah.
+Yeah.
+We'll keep motor.
+We'll keep motor.
+Right.
+Over your podcast time.
+Yeah.
+Yeah.
+This is also cool.
+These are, we built all of our exterior hatches.
+Okay.
+Yep.
+So.
+These are all carbon fiber hatches.
+These are all painted finished.
+Wow.
+We even designed a 3D print.
+Well, holds them on.
+So that, that is how we.
+Malton for painting.
+No, no, no, no, no, no, no.
+Yeah.
+That.
+Yeah.
+And you just paint over it.
+Yeah.
+It does.
+Yeah.
+Wow.
+And that is hard points for your fasteners.
+Uh-huh.
+Um.
+Okay.
+And then these things are the book.
+It does, man.
+Just a well-willed machine.
+That's, that's amazing.
+Yeah.
+Yeah.
+Yeah.
+I just, I just want to see this little mechanism here if you don't mind.
+So you've got.
+This is all.
+Yeah.
+Custom.
+And it's.
+It's just 3D.
+Yeah.
+So we don't have to use any.
+Yeah.
+Any fasteners.
+The whole thing's in place.
+We're obviously build a sealer axe as well.
+You know, this is all designed and printed.
+Uh-huh.
+And then, tool us.
+So it's like.
+Yeah.
+And then it's printed threads.
+You just.
+And it's designed to be exactly the right.
+Yeah.
+For a lot.
+Yeah.
+Exactly.
+Exactly.
+It's great.
+Yeah.
+So the insert.
+Where do the inserts go in?
+Like, what, what does that happen?
+I mean, that was going on generally in the property.
+Yeah.
+Yeah.
+Exactly.
+When they're all getting assembled.
+Um.
+We'll keep pushing this direction.
+Yeah.
+This room here.
+We use this trim.
+Like, trim room as we're getting, you know, you set up.
+So it keeps all the carbon dust down.
+Yep.
+Um.
+This is actually, you'll be the first people to see this.
+This is a prototype.
+Truck bed trailer.
+We're calling it.
+So we designed and built this frame.
+It's going to be on 40s, matching vendors.
+And so you could do dirt bikes, snowmobiles, rooftop tents for your kids.
+Dude.
+Um.
+So this will match that white truck.
+You saw it side.
+Yeah.
+Um.
+With independent suspension.
+Yeah.
+We designed and fabricated this whole trailer frame.
+Yeah.
+So we'll unveil this in a couple of weeks.
+I don't want to experiment.
+So you're just using a ram truck bed.
+Correct.
+Because then it'll match color.
+Yeah.
+Centerflowers, A-E-V-R bumpers, A-E-V wheels.
+I mean, it'll be.
+So then you can do a sled deck with snowmobiles.
+Yeah.
+There are two dirt bikes.
+Yeah.
+Any type of gear.
+Yeah.
+And then if you don't want to take it with you, you don't take it with you.
+Yeah.
+Full articulating hitch.
+You know, suspensions got chalked with reservoirs and coils.
+And it's all independence.
+So your ground clearance in the middle is crazy.
+Yeah.
+Yeah.
+Factory ram hitch.
+A-E-V-R bumper.
+And you get one of those trailer in the end.
+Yeah.
+Our bike truck or whatever.
+And so this is our metal fabric area.
+Where we build all sorts of components.
+Everything from aluminum, stainless, mild steel.
+So we've got full fixture table.
+These are subframe rails.
+Sort of our torsion free system.
+The torsion free system is really cool.
+I can show you on the white truck.
+But it's carbon fiber integrated.
+So we use a minimal amount of steel to hold basically the components we need.
+But we actually reinforce the floor.
+About 200 pounds of dry carbon fiber.
+Okay.
+We don't have to build this big steel substructure.
+Okay.
+So we're able to save about 800 pounds.
+And then keep our center of gravity about six inches lower.
+Wow.
+Yeah.
+Because you have more, there's more space in the floor.
+Yeah.
+And then we're able to put our, like, you saw our battery subfloor.
+You all of our weight down.
+So the whole thing is center, you know, center of gravity conscious in the side.
+That's the best place for the batteries, right?
+Turns up components we build in the house here.
+We'll make a tag, um, you name it.
+These are for the floor.
+That's for the subframe.
+Okay.
+It's our carbon integrated subframe.
+Um, and then, yeah.
+This area is,
+We've got a couple shells that, you know,
+with the new booth going on,
+these shells are going to end up back in bodywork land.
+These guys are both finished painted,
+landing for interiors to be sprayed.
+But these all match.
+Color match, the trunk.
+We do custom colors of the whole made to order.
+Yeah.
+Um, you can see everywhere that there is a set screw.
+We put set screws in all of the hard points.
+So that when we paint,
+we don't get anything in the threads.
+Mm-hmm.
+Yep.
+And then you've got this, this is for a, like, a gear rack.
+Yep.
+And then you've got rails on the top.
+Yeah.
+Those are rub rails, because, you know,
+really, you know, the cool thing is looking at this thing by itself.
+You look at how much shape it has.
+If you stand right where I am right here.
+And then draw this line from here up this shell.
+You see how much it, it's curved.
+Yeah.
+That's all tumble home.
+Uh-huh.
+Same with the truck, right?
+If you stand here and look at the back of that truck.
+Uh-huh.
+Same tumble home shape.
+Uh-huh.
+And even, like, all of these, these aren't chamfers.
+These are actual organic blends from aliasingly.
+It's not just a chamfered off corner.
+Right.
+And even this rear wall is shaking this way.
+And this way.
+Yeah.
+And then those lines.
+Um, right there that go up from the rear window.
+That's actually what we call a rain gutter.
+Okay.
+So that line goes all the way forward.
+It's not just a rain back or forward.
+It's just not running down the side.
+Um, these are all your hard points for your swing outs.
+Yeah.
+In sets for your hinges.
+Wow.
+Yeah.
+Built-in, so like, when this thing comes out of the mold,
+we're not trimming window openings.
+We don't bond in frames for the glass.
+Yeah.
+Everything is incorporated.
+Into the into the mold.
+Um.
+Yeah.
+Yeah.
+It's pretty wild.
+And then, you know, looking at this shape, you know,
+you've got what we call light reflects.
+Defender flares are all molded in.
+But then we cap them in a thermal form part so that we can match the plastic.
+Right.
+Um.
+And then, you know, from here, this is actually that piece of foam you saw earlier.
+Right.
+Yep.
+From here to here, this is sweeping inward about three inches.
+Getting narrower.
+Yeah.
+Yeah.
+Yes.
+It's aerodynamic.
+And then, if you look at this shape, I mean,
+Yeah.
+Large dramatic curve matches about it.
+But it also, it's a compound curve, right?
+Yeah.
+This way as well.
+And so think about the machining that you need.
+It takes place to make this normally two inches thick.
+Wow.
+Pretty wild.
+Yeah.
+And then even your cab over surface.
+So above your head is, that's curved too.
+And both ways.
+Yep.
+Both ways.
+And then we call these our power beams.
+This right here.
+This little strip.
+It's thicker core.
+Okay.
+Stronger.
+So that's how you can't believe it.
+Yeah.
+We can't believe it.
+And then it also helps with the look.
+Yeah.
+Because we build these on two door and four door.
+Uh-huh.
+So on a four door, like this truck right here.
+This is going to be deeper.
+Yep.
+Yeah.
+So this is your carbon pastor as well.
+I saw over there.
+And then you make these gaskets as well.
+That's a custom extruded gasket.
+We don't build them in house, but we had them extruded.
+Yes.
+And this is an aerogasket.
+It's a cool water seal seals in here.
+But this creates good aerodynamics.
+So the shell doesn't create a bunch of boards.
+It's a very nice area.
+Yep.
+Back you basically.
+And then that's a.
+That's factory.
+Um, breathe there.
+So when you shut the door.
+It doesn't pressurize the cabinet.
+Yeah.
+I never do that.
+All vehicles have them.
+Yeah.
+Interesting.
+Yes.
+You see these are usually in the recorders.
+Uh-huh.
+trucks are always on the back cab.
+If you didn't, they seal saw all amount days when you shut the door.
+There'd be no for that area.
+Yeah.
+Yeah.
+Interesting.
+Yeah.
+Uh-huh.
+But on a fort or like this truck, the cab over basically comes and lands about here.
+Yeah.
+And that whole big sweeping front end matches that window line.
+Uh-huh.
+That beautiful kind of chamfer blend is the same as this.
+So when you're inside, you're not seeing it overhead.
+Even in a two door, you don't see it.
+Yeah.
+But then on a two door, it does extend out further.
+The camper comes in about here.
+But we really wanted to make sure it didn't look like a, like a baby wearing a baseball hat.
+Yeah.
+It could be a front-braham, you know.
+So I'm adding that contour in those power beams.
+It looks intentional even in two more trucks.
+This is wild stuff, man.
+Yeah.
+But I figured we'll go pop back outside and check out man's time of that truck.
+Yeah.
+Let's do it.
+This is a clean shop, man.
+Thank you.
+I love a clean shop.
+Yeah.
+And it's funny because it's like not even clean enough.
+Yeah.
+We're striving to become more organized every day.
+We've got this to got construction going on.
+Yeah.
+But that's the ultimate goal is I want this place.
+I spent so much time here.
+You're right.
+I want it to be clean.
+If you want to be.
+I want it want to be.
+Exactly.
+And so you can see we've got more chassis out here in the distance.
+Those are all for trucks inside.
+Yep.
+Everything's made to order.
+So customers get their choice of colors and trim levels.
+And then you can see that's our demo two door.
+So that you can see with the cab over six out of further.
+That wheelbase on that two door is only six inches longer than a Jeep gladiator.
+Oh, wow.
+So really, really capable of road and same camper, same camper.
+Wow.
+And then yeah, you can kind of see once one of these things all put together.
+We're all those hard points are where all those fasteners are.
+All that foam core you saw is integrated into that shape.
+And like I said, this is our, this is one of our prototypes.
+So this was the first one of the first finished vehicles.
+I mean, I just keep you here all day,
+nerding out of every little detail, but like I mean,
+the door will believe it or not.
+Yeah.
+Like this is just isn't abbreviated to our dude.
+We could have been nerdin' out for a long time.
+Yeah.
+Yeah.
+Welcome in.
+All of our the fiberglass cabinets that you saw we build.
+Yeah.
+We do beautiful hands on wood veneer work.
+This is actually called this is thermally modified ash.
+And what's cool about this thermally modified ash is it's thermally modified
+specific for a very famous guitar builder.
+Okay.
+All right.
+Okay.
+We hit these logs out of their kelm and then hands all the veneer work.
+This door has actually has some secret sauce in it.
+So it's mainly fiberglass.
+But what you're feeling is real wood.
+I mean, if you were to tell me this is real wood,
+I would believe this is real wood.
+I mean, you're touching real wood.
+Yeah.
+The crossmanship to make it look like a one solid piece.
+Yeah, like a solid piece.
+And you know, even that's from door.
+That should be if this were solid wood,
+there would be a 120 pound door.
+It's about a 20 pound door.
+That's crazy.
+So that's that's probably a big part of how you get the weight down in this.
+100%.
+Yeah.
+We don't want to build a full fiberglass in chair.
+That's all shiny.
+It feels like a dead surface.
+Yeah.
+We want the wood to touch point.
+Right.
+Yeah.
+They're the convection.
+I'm going to sail door doors.
+Everything soft clothes.
+Everything's nice and latching.
+Doxing cooktop.
+Yeah.
+Your fridge comes from Italy.
+It's two drawers.
+It can be fridge, fridge, fridge, freezer.
+Or freezer, freezer all in the sky.
+Behind the buy fold, we did it.
+Basically right here is modular stainless shelves.
+You can move.
+They can go up down.
+You can pull them out.
+Do a espresso bar.
+You can go a monitor for a standing desk.
+Yeah.
+Wow.
+Now, put up the cab as a king bed.
+It's got full TV.
+Starlink sound system.
+The TV actually pulls out and spins 180 sec.
+You can watch it from the rear.
+Yeah.
+You go like this.
+Hold this guy out.
+Spin it around.
+And then you can sit back at that net.
+The rear-dyed net drops down into another bed.
+Wow.
+Man, this is cool.
+So you've got controls over here.
+Yep.
+Your whole garment set up is here.
+Controls everything.
+State of charge.
+Your lights.
+Everything's dimming.
+You've got under cabinet lights.
+Upper cabinet lights.
+He did floors.
+Yeah.
+Controls everything right here.
+You can control this from your iPhone.
+Like going down the road or whatever you need to do.
+Wow.
+This is amazing, man.
+Yeah.
+Thank you.
+I can't believe all the luxury crammed into this.
+Yeah.
+It's amazing.
+It's amazing.
+Yeah.
+So it's easier to get into that.
+Yeah.
+The table slides.
+We even design.
+You'll notice a lot of campers.
+The bench back and bench bottoms are flat and flat.
+Yeah.
+We're 90 degrees too.
+This has a nice thing.
+Yeah.
+Seven degrees on the back.
+Three degrees on the butt.
+And then that actually took some figuring out to be able to flip these cushions over and make this flat.
+Right.
+Took a lot of modeling and thinking about it.
+So that one needs to drop this table and it actually creates a flat.
+So the cushions have to be custom too.
+Yeah.
+Because they're not square.
+Everything in here is custom.
+And then like you notice, you know, all the blinds have built in screens, built in black
+shades, all the windows open, all in style.
+The ones behind you.
+It's just, it's like a panoramic view back here.
+That is such an unusual thing for a camper.
+Yeah.
+You're always stuck with a little port holer, so that this is like, you can just, you know,
+look out at the scene where you came out for to begin with.
+Yeah.
+I mean, that's kind of the goal, right?
+Yeah.
+It's a God and go camping.
+Yeah.
+And be outside and we want to utilize outdoor spaces as much as possible.
+But as soon as it gets dark or you're an inkling of weather, having somewhere beautiful
+to come inside, be comfortable with TV, cook, you know, cook dinner and just hang out
+read a book.
+You know, I always like, you know, people forget that even if you're in the most beautiful
+scenic overlook in Big Sur.
+So once it's dark, it's dark.
+Yeah.
+You're beautiful.
+Exactly.
+So you might as well be able to sit inside somewhere that's also beautiful.
+Yeah.
+To get a good night rest and comfortable.
+Wake up in the next morning for another adventure.
+The lighting is such a clever touch here that tiny little cove all the way around the top
+and around the floor.
+Yep.
+It's a really good trick to make a small space look bigger.
+Absolutely.
+And you did a really good job with that.
+Thank you.
+And then the down lighting too.
+I mean, it's that's practical and you can see what you're doing in here.
+In production, there's a French to light under the cabinet as well.
+So even more lighting.
+Yeah.
+He did floor and then four stairs come in through.
+We've got, um, that's a 48 volt AC coming through right there.
+The black thing.
+Yep.
+Okay.
+We're on that thing all the night long.
+Yeah.
+Like I said, no generator, no propane.
+And that's a full hydronic heating system.
+So it's a German diesel burner that heats coolant.
+Yeah.
+Helms coolant inside the vehicle and the super efficient.
+Heat exchangers for hot air and hot water.
+Yeah.
+And I've personally camped in this truck at 10 below in Stanley.
+I don't have 75 degrees inside.
+With full water, right?
+Yeah.
+Yeah.
+So all our tanks are internal.
+Yeah.
+No, no.
+So the 10 below full water, taking hot showers.
+Right.
+So that's what we got.
+Using the pipes, breaking or anything.
+Everything is inside.
+Yeah.
+Yeah.
+From CAD to truck roll it off the lot.
+How long does that take?
+Yeah.
+Well, CAD.
+You know, we do a lot of development before production.
+So you're talking thousands and thousands of hours before even build molds.
+But, you know, in that production work flow, we can turn a camper in about five
+months.
+But the shop you just walked into has a nine to ten in process right now, if you're
+including foam machine.
+Okay.
+So it's a staggered production stack.
+Yeah.
+But yeah.
+It's a lot of labor hours and a lot of love.
+And as you walk through all those departments with me, it's a pretty step-wise process
+from the idea to foam the composites to paint and body to self-assembly the weldments
+to you name it.
+But yeah, we can do it about five to six months.
+Okay.
+Yeah.
+The work you're doing is incredible.
+There's so many creative solutions to problems I didn't even know existed before.
+And you probably didn't need it before you got into it.
+But thank you so much, man.
+This is a fascinating subject.
+That's a huge honor.
+I'm a big fan of yours.
+I'm a big fan of some of the shops you've already toured.
+You know, the PXCNC's and the Saunders.
+So it's a huge father in our cap.
+And yeah, really appreciate you guys coming here.
+And the software and you guys support that helps us build what we build.
+Yeah.
+Thanks, man.
+Yeah.
+Can I borrow this one?
+It's yours.
+Okay.
+It's free.
+If you're a designer, builder, or maker, and you want to be part of this podcast, we'd
+love to hear from you.
+The email is in the video description below.
+So please introduce yourself and let's connect.
+Don't forget to like, comment, and subscribe to our YouTube channel to stay up to date with all
+things shop talk.
+If you're ready to try Fusion through yourself, find the link in our description.

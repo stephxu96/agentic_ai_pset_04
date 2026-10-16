@@ -1,0 +1,206 @@
+{
+ "01": [
+  {
+   "title": "The answer",
+   "narration": "What changed in AI for engineering? AI is moving into the handoffs inside the workflow: reusable CAD-feature creation and simulation setup. The answer is not that CAD has gained a better chat window. Onshape and SimScale describe systems that act at distinct engineering stages. These are meaningful workflow announcements for teams that can constrain inputs and retain engineering review. They do not establish dependable production geometry or correct simulation decisions. This video uses AI-generated presentation. As of October 16, 2026.",
+   "source": "01-c1, 01-c4 — Onshape, “5 Ways Teams Can Leverage the Onshape FeatureScript MCP Server,” September 30, 2026; Engineering.com, “Multiphysics gets MCP server and Onshape gets SimScale agent,” September 23, 2026.",
+   "words": 80,
+   "dur": 37.036236,
+   "start": 0,
+   "slide_dur": 37.736236000000005
+  },
+  {
+   "title": "Onshape’s claim",
+   "narration": "First, upstream in CAD. Onshape says its FeatureScript MCP Server connects large language models to Onshape and enables teams to generate custom features from natural-language requests. Onshape also says the workflow can carry requirements from an LLM request into Onshape.\n\nThis is text-to-code-to-CAD. FeatureScript is code for reusable parametric CAD functionality, not just a one-off geometry prompt. My interpretation is that this makes the workflow easier to inspect. A team can review the generated script, exercise its parameters, inspect the geometry, and check whether it implements intended design rules.",
+   "source": "01-c1, 01-c2 — Onshape, “5 Ways Teams Can Leverage the Onshape FeatureScript MCP Server,” September 30, 2026.",
+   "words": 89,
+   "dur": 42.375374,
+   "start": 37.736236000000005,
+   "slide_dur": 43.075374000000004
+  },
+  {
+   "title": "What that check does not establish",
+   "narration": "Apply the core test: what was actually checked? Here, the evidence is Onshape’s product description. It supports what Onshape says the server enables.\n\nIt is not a disclosed test of generated FeatureScripts across requirements, edge cases, revisions, or manufacturing outcomes. So this source claim does not show that a generated feature preserves design intent in a production model. A valid-looking feature is not, by itself, proof that the design rules are right.",
+   "source": "01-c1, 01-c2 — Onshape, “5 Ways Teams Can Leverage the Onshape FeatureScript MCP Server,” September 30, 2026.",
+   "words": 72,
+   "dur": 31.028209,
+   "start": 80.81161,
+   "slide_dur": 31.728209
+  },
+  {
+   "title": "SimScale moves downstream",
+   "narration": "Downstream, Engineering.com reports that SimScale’s Engineering AI Agent is available through Onshape’s app store. SimScale says that, from one prompt, its agent can take a CAD model, propose a setup, mesh it, run physics, and report results in Onshape.\n\nThat is a broader handoff. It places an agent at simulation setup and execution. But a completed run is not evidence of a valid analysis.",
+   "source": "01-c3, 01-c4 — Engineering.com, “Multiphysics gets MCP server and Onshape gets SimScale agent,” September 23, 2026.",
+   "words": 64,
+   "dur": 27.438005,
+   "start": 112.539819,
+   "slide_dur": 28.138005
+  },
+  {
+   "title": "The verification burden changes",
+   "narration": "The difference matters. For a generated CAD feature, review can center on code, parameter behavior, geometry, and encoded rules.\n\nFor simulation, reviewers must also ask whether the abstraction answers the engineering question. Loads, boundary conditions, material assumptions, contact definitions, mesh choices, solver settings, and result interpretation all matter.\n\nThe observed checks here are narrow. Engineering.com supports the reported availability of the integration. The quoted release supports what SimScale says its agent can do in its described workflow. Neither presents a public comparison with engineer-reviewed ground truth, or a validation study showing results match the relevant physical system.",
+   "source": "01-c3, 01-c4 — Engineering.com, “Multiphysics gets MCP server and Onshape gets SimScale agent,” September 23, 2026.",
+   "words": 97,
+   "dur": 48.758912,
+   "start": 140.677824,
+   "slide_dur": 49.458912000000005
+  },
+  {
+   "title": "Supporting robotics context",
+   "narration": "Robotics provides supporting context, not proof for either CAD workflow. In an NVIDIA Robotics Office Hour, a presenter states that Newton physics for robot simulation is completely open source. The check is the presenter’s statement. It supports only NVIDIA’s claim about Newton’s availability and contribution model. It does not demonstrate simulator accuracy, transfer to hardware, or usefulness for a specific CAD-to-simulation workflow.\n\nA Physical AI Podcast episode reports a blind evaluation with 10 manipulation tasks, three attempts per task, a shared time window, and a shared scoring sheet. If verified, that is closer to useful evaluation discipline: common tasks, bounded attempts, and a shared scoring procedure. But this is an automatic transcript, not underlying evaluation materials or a public grader. The figures and protocol details remain uncertain.",
+   "source": "01-c5 — NVIDIA, “What’s New in Newton Physics for Robot Simulation | Robotics Office Hour,” October 15, 2026, 18:10–18:13.  \n01-c6 — Physical AI Podcast, “Black Forest Labs Beat NVIDIA, Figure's Rival Did the Maths,” September 26, 2026, 3:36–3:45.",
+   "words": 127,
+   "dur": 59.947392,
+   "start": 190.13673599999998,
+   "slide_dur": 60.647392
+  },
+  {
+   "title": "What to do next",
+   "narration": "My interpretation is that AI is being attached to engineering interfaces, not merely offered as an assistant that drafts text. Teams should pilot these tools where inputs are constrained and engineering review remains explicit.\n\nFor CAD, require tests tied to intended rules and reusable parameters. For simulation, require reviewers to approve setup assumptions before treating outputs as decisions. Watch next for public task suites, disclosed graders, repeatable comparisons with engineer-authored setups, and evidence that connects a completed simulation to physical validation.",
+   "source": "01-c1–01-c7 — Source claims and reported fact cited throughout; see video description for full references.",
+   "words": 81,
+   "dur": 37.908571,
+   "start": 250.78412799999998,
+   "slide_dur": 38.608571000000005
+  }
+ ],
+ "02": [
+  {
+   "title": "The answer first",
+   "narration": "Which CAD-agent claims withstand scrutiny? A Backflip STEP export passed two mass checks after import into Fusion. But native-feature transfer was partial, and a multibody test failed. That is evidence for a narrow neutral-file outcome, not a dependable autonomous engineering workflow. This video uses AI-generated presentation. As of October 16, 2026.",
+   "source": "`02-c1–02-c4, 02-c11` Engineering.com, “Welcome to the vibe-CAD era,” September 30, 2026.",
+   "words": 51,
+   "dur": 26.145669,
+   "start": 0,
+   "slide_dur": 26.845669
+  },
+  {
+   "title": "What the mass checks actually checked",
+   "narration": "Engineering.com reported two tests using simplified TooTallToby drawing exercises. In the first, it imported a Backflip STEP file into Fusion, applied material, checked mass, and found the result exactly correct. In the second, the downloaded STEP file also passed its mass check. These are reported facts. The check observed imported neutral geometry producing the expected mass under the selected material in Fusion.",
+   "source": "`02-c1, 02-c2` Engineering.com, “Welcome to the vibe-CAD era,” September 30, 2026.",
+   "words": 62,
+   "dur": 28.148844,
+   "start": 26.845669,
+   "slide_dur": 28.848844
+  },
+  {
+   "title": "What those checks did not establish",
+   "narration": "A mass check is not a check of editable design intent. It does not by itself check dimensional tolerances, assembly relationships, fabrication feasibility, or inspection results. That is not a criticism of the test. It is its scope. My interpretation is simple: passing mass after STEP import is artifact evidence. It does not establish native editability, tolerance conformance, or manufacturability.",
+   "source": "`02-c11` Engineering.com, “Welcome to the vibe-CAD era,” September 30, 2026; MIT-CDFG, “On the Opportunities and Risks of Frontier Models for 3D Modeling, Computational Design and Robotics,” September 22, 2026.",
+   "words": 60,
+   "dur": 27.638776,
+   "start": 55.694513,
+   "slide_dur": 28.338776
+  },
+  {
+   "title": "The counterchecks",
+   "narration": "Engineering.com also reported tests that checked different capabilities. In its first drawing-to-CAD trial, Backflip’s Fusion add-in only partially recreated geometry. In a multibody wire-shelf test, it created one of seven bodies. These are reported facts. Their checks concern native import behavior and multibody handling. They show why a successful STEP export and a successful editable reconstruction are separate claims.",
+   "source": "`02-c3, 02-c4` Engineering.com, “Welcome to the vibe-CAD era,” September 30, 2026.",
+   "words": 59,
+   "dur": 27.870204,
+   "start": 84.033289,
+   "slide_dur": 28.570204
+  },
+  {
+   "title": "The wider evidence record",
+   "narration": "MIT-CDFG says it reviewed 1,646 public posts across 707 cases. It also says only 132 cases include runnable code, and that most listed capabilities are demonstrations rather than independent reproductions. Those are the survey’s claims about its record, not independent validation of every listed result. More importantly, MIT-CDFG says tolerance specifications and manufacturability have not been tested on physical parts in the CAD evidence it summarizes.",
+   "source": "`02-c5, 02-c6, 02-c7` MIT-CDFG, “On the Opportunities and Risks of Frontier Models for 3D Modeling, Computational Design and Robotics,” September 22, 2026.",
+   "words": 66,
+   "dur": 34.778141,
+   "start": 112.603493,
+   "slide_dur": 35.478141
+  },
+  {
+   "title": "A supporting robotics warning",
+   "narration": "Robotics offers a supporting warning about aggregate scores. The Physical AI Podcast reports that five frontier models were put in charge of robots across 84 Robot World tasks, and that 63 of those tasks went unsolved by any of them. It also reports that its two leading models shared only eight successes. These are podcast source claims from automatic transcripts, so the numbers require checking against the underlying study and audio before publication. The narrower interpretation still matters: one aggregate score can hide distinct failure profiles.",
+   "source": "`02-c8, 02-c9` Physical AI Podcast, “AI Models Fail 63 of 84 Robot Tasks, Waymo Borrows $5B,” October 10, 2026, 00:02:47–00:02:51 and 00:03:48–00:03:55.",
+   "words": 86,
+   "dur": 36.239909,
+   "start": 148.081634,
+   "slide_dur": 36.939909
+  },
+  {
+   "title": "Define the output being tested",
+   "narration": "A second podcast makes the same point in another domain. NVIDIA’s Cosmos Lab vice president describes world simulation as taking a current observation and an action input, then predicting what happens in the future. That is a source description of a capability. It is not evidence that the prediction is physically correct, or that it transfers to a real robot.",
+   "source": "`02-c10` Changelog Media, “Open models and the future of Physical AI with NVIDIA,” October 1, 2026, 00:23:59–00:24:19.",
+   "words": 60,
+   "dur": 21.914467,
+   "start": 185.021543,
+   "slide_dur": 22.614466999999998
+  },
+  {
+   "title": "What to do next",
+   "narration": "For buyers and builders, use separate acceptance gates: STEP validation, native editability, multibody behavior, tolerances, and manufacturability. For each gate, record the artifact, toolchain, material assumptions, grader, and failure cases. Watch for evaluations that test physical parts and disclose runnable methods. Until then, a passed CAD export is a useful drafting result, not a completed engineering workflow.",
+   "source": "`02-c11` Engineering.com, September 30, 2026; MIT-CDFG, September 22, 2026.",
+   "words": 57,
+   "dur": 30.463537,
+   "start": 207.63601,
+   "slide_dur": 31.163536999999998
+  }
+ ],
+ "03": [
+  {
+   "title": "Answer first",
+   "narration": "What should engineering leaders do with the latest AI-assisted CAD, simulation, and PLM workflows? Pilot them first where they help people find, prepare, or review artifacts. Do not give them unchecked authority over an engineering system of record. As of October 16, 2026, that is the practical sequence supported by these sources. This video uses AI-generated presentation.",
+   "source": "Editorial interpretation based on Onshape, NVIDIA, and Autodesk sources. As of October 16, 2026.",
+   "words": 57,
+   "dur": 27.875918,
+   "start": 0,
+   "slide_dur": 28.575917999999998
+  },
+  {
+   "title": "Start with discovery",
+   "narration": "Onshape says its AI-Generated Thumbnail Description Search is an opt-in Onshape Labs feature. It says the released feature applies to public documents only. The stated check is narrow: retrieval from model thumbnails. A user can search visible characteristics, then inspect a candidate artifact.\n\nThat check supports a discovery claim. It does not establish geometric correctness, part equivalence, manufacturability, or suitability for reuse. A retrieved bracket may look right without having the right dimensions, material, tolerances, or revision state.",
+   "source": "03-c1, 03-c2 — Onshape, “Introducing AI Descriptive Image Search from Onshape Labs,” October 5, 2026. https://www.onshape.com/en/blog/ai-generated-thumbnail-description-search",
+   "words": 78,
+   "dur": 38.166213,
+   "start": 28.575917999999998,
+   "slide_dur": 38.866213
+  },
+  {
+   "title": "Simulation preparation has stronger checks",
+   "narration": "NVIDIA describes a more involved boundary: preparing a robot asset for simulation. Its walkthrough says the workflow checks imported robot scale, parts, and appearance against references. It says the workflow configures joints, collision geometry, and physical properties. Then it reruns simulation-ready checks and a grasp test after fixing issues.\n\nThose are source claims, and the final sequence is tested in Isaac Sim. The observed checks match readiness for the demonstrated simulated workflow. They do not, by themselves, show that a real robot will perform reliably in a physical environment.",
+   "source": "03-c3, 03-c4, 03-c5, 03-c6 — NVIDIA, “5 Steps to Create SimReady Assets for Robotics with Frontier AI Models,” October 8, 2026, 00:20–00:50. https://www.youtube.com/shorts/H5UaOdIZERw",
+   "words": 89,
+   "dur": 39.538231,
+   "start": 67.442131,
+   "slide_dur": 40.238231000000006
+  },
+  {
+   "title": "PLM is the higher-stakes boundary",
+   "narration": "Autodesk executive Jeff Kinder says an agentic PLM experience is expected to launch in the next couple of quarters. He says the proposed experience would draw information from Slack, Microsoft Teams, and Outlook conversations. And it could discern PLM information in those unstructured conversations and place it into the PLM system.\n\nThis is a source claim about a planned capability, not deployed behavior. The consequential check is not just whether extraction sounds plausible. It is whether extraction, attribution, revision context, approval context, and entry into PLM are correct and auditable.",
+   "source": "03-c7, 03-c8, 03-c9 — Engineering.com, “Autodesk’s AI push is actually a pull,” September 22, 2026. https://www.engineering.com/autodesks-ai-push-is-actually-a-pull/",
+   "words": 90,
+   "dur": 40.844762,
+   "start": 107.680362,
+   "slide_dur": 41.544762000000006
+  },
+  {
+   "title": "The adoption rule",
+   "narration": "My interpretation is to sequence adoption by reversibility and consequence. Start with discovery, where a person can inspect the result before acting. Move to simulation preparation when the team can retain the input references, asset changes, check results, and simulation conditions. Before an agent writes inferred information into PLM, require an auditable approval boundary.\n\nThis is not a claim that one system is inherently more accurate. It follows from what each workflow says it does: Onshape limits this released feature to public-document retrieval, while Autodesk describes a future workflow that would place inferred information into PLM.",
+   "source": "03-c13 — Inference from Onshape, October 5, 2026, and Engineering.com, September 22, 2026.",
+   "words": 96,
+   "dur": 42.471338,
+   "start": 149.225124,
+   "slide_dur": 43.171338000000006
+  },
+  {
+   "title": "Watch physical-task evidence",
+   "narration": "Robotics adds a related caution. NVIDIA’s workflow includes a simulated grasp test. The Physical AI Podcast reports that most cited world-action-model results came from simulation benchmarks and that its real-robot result covered one task.\n\nThat podcast account is secondary reporting from an automatic transcript. Its figures should be checked against the audio and underlying paper before operational use. Still, my interpretation is clear: physical-task replication is a more consequential watch item than another simulation-only demonstration.",
+   "source": "03-c12, 03-c14 — Physical AI Podcast, “Atlas Loses Its Pinky, Only One Humanoid in Eight Walks,” October 3, 2026, 07:28–07:35. https://physicalaipodcast.co/episodes/009",
+   "words": 75,
+   "dur": 35.496871,
+   "start": 192.39646199999999,
+   "slide_dur": 36.196871
+  },
+  {
+   "title": "What to do next",
+   "narration": "Run a narrow retrieval pilot with human inspection. For simulation workflows, keep the references, asset changes, check results, and simulation conditions. For any proposed PLM automation, require approval before inferred content becomes a record.\n\nWatch next for published deployment evidence, explicit review controls, and physical-task results that extend beyond simulation. World Labs says it has signed a definitive agreement to join AMD, subject to regulatory approvals and customary closing conditions. That is a corporate-development claim, not evidence of a capability outcome.",
+   "source": "03-c10, 03-c11 — World Labs, “World Labs is Joining AMD,” September 28, 2026. https://www.worldlabs.ai/blog/amd-announcement",
+   "words": 81,
+   "dur": 40.593651,
+   "start": 228.59333299999997,
+   "slide_dur": 41.293651000000004
+  }
+ ]
+}

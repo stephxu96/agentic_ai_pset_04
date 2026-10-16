@@ -1,0 +1,66 @@
+Unifab is a custom manufacturer.
+We're a family business, started by a fair.
+My dad 35 years ago, we've grown quite a bit over the years
+to about a 230,000 square feet plan.
+Right now, as we're continuing to grow,
+it's all about efficiencies and how to make that process smoother.
+We have more machines coming in the door here.
+How do we get them all communicating in the same way?
+And get the machine us communicating to each other more efficiently too?
+When we're choosing tools or machine or software any piece of that,
+we really rely on our managers.
+They're the ones that know what's going on day to day.
+They know what struggles they're in place have.
+When I first came in, we were using a mix of Bobcat and Mastercam.
+And my main goal was to transition our department to be on one software
+with the added benefit of having connectivity through the cloud.
+So that parts tooling and machines could be accessed by the whole team.
+So there's multiple stages within Unifab where we use Fusion
+starting from the front end of the company all the way to where products come off in
+machining.
+Part of that process is opening larger assemblies,
+assessing files at the job entry state.
+And our next stage is where files are actually processed, prepared,
+colored and verified prior to machining.
+And from there, products move into machining.
+One big advance we made early on was a part that was traditionally done on a custom
+fixture.
+Instead, we were able to transition to cutting the entire part just using 3D toolpaths
+and two setups, which reduce our overall runtime from three and a half hours to 45 minutes.
+Over the last few years, we've had a number of machine acquisitions.
+Throughout those acquisitions, we've been utilizing Fusion on all of our new equipment.
+We've grown from having just six machines to now having nine machines.
+And we have full machine simulation through Fusion on all of those.
+It's really helped us ensure we're running things safely and effectively.
+One of the things I love the most about Fusion is just that I'm able to jump on the cloud.
+And I can program multiple machines, multiple tool libraries right from one workstation,
+which is pretty sweet.
+Fusion really helps with efficiency because of standardization across the board.
+If we hand a job off maybe from day shift to night shift,
+we can just walk in and jump right in there.
+Everybody's on the same standardized tool libraries, speed speeds.
+Since standardizing with Autodesk Fusion, we've almost doubled the size of our machina's team
+and been able to grow our machines as well.
+Being able to upper time on the machine allows us to get more projects through quicker.
+For our customers, this means that we can optimize some of the tooling that we're using across the board
+as well as be able to process some more complex parts.
+We use the adaptive tool path quite frequently, some more effective strategy,
+than traditional face milling as we encounter large variations in differences of material.
+So we may have three mill of material on one side, six on the other.
+The adaptive tool path doesn't care.
+We have our tooling set up to effectively handle that.
+My favorite aspect of Fusion is just how intuitive the software feels.
+Over the years I've used a number of CAD cam software,
+but none of them have given me the feeling that they understand what I'm truly
+trying to do the way the Fusion does.
+It's very simple to get started.
+The training tools are great.
+It explains a very detailed detail.
+Our mission here at Unifab is to bring ideas to life.
+The way Unifab gets business is through relationships with our customer.
+They trust us to have good quality and be on time.
+Every minute counts.
+So the better quality we can offer, the more jobs and the bigger jobs we get as well.
+And so when we're looking at these big complex parts,
+and how we're going to be able to attack them,
+Autodesk Fusion has really allowed us to produce amazing product and continue to grow.

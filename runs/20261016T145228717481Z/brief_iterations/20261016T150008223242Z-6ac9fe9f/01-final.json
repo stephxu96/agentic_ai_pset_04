@@ -1,0 +1,176 @@
+{
+  "piece_id": "01",
+  "title": "From CAD Drafts to Reviewable Workflows",
+  "question": "What changed, and which developments matter most to this audience?",
+  "argument": "This month’s change is not autonomous engineering; it is a wider set of AI-assisted entry points into CAD, manufacturing preparation, and simulation workflows. The most consequential developments produce intermediate artifacts that can enter an existing review process: Backflip generated STEP geometry that passed bounded mass checks, while Cableteque and NVIDIA describe exception and validation stages around generated or converted engineering data. Engineering leaders should evaluate these tools as draft-and-check systems, keeping native artifacts, explicit acceptance tests, and human release authority.",
+  "synthesis": "The developments align around a practical workflow pattern: generate or extract an engineering artifact, then test the property relevant to the next decision. Engineering.com’s Backflip test checked mass on reference exercises after STEP import; Cableteque says it routes likely omissions to an estimator; NVIDIA describes visual, physics, and simulation-readiness checks for CAD-derived robot assets. The analysis adds a purchasing criterion beyond capability demos: require each tool to identify its reviewable artifact, its acceptance check, and the decision that remains with an engineer.",
+  "limitations": "The evidence does not establish reliable tolerance conformance, manufacturability, or physical-world transfer. Backflip’s checks concern two reference exercises and mass after STEP import; Cableteque’s extraction and exception-handling claims are company claims without disclosed error rates; NVIDIA’s described checks end in simulation. Teams should test representative production drawings, revisions, false-positive and false-negative rates, and downstream manufacturing outcomes before changing release authority.",
+  "claims": [
+    {
+      "claim_id": "01-c1",
+      "statement": "An Engineering.com reporter wrote that Backflip’s first drawing-to-CAD output matched the reference mass after the reporter imported its STEP file into Fusion and applied 1060 aluminum.",
+      "type": "reported_fact",
+      "evidence": [
+        {
+          "item_id": "feed:https://www.engineering.com/?p=151563",
+          "version_id": "90e3adc0a87a45dc20689ae62db7125fe378f8191522f5954fae4ace5e96c803",
+          "locator": {
+            "type": "text",
+            "quote": "Backflip got it exactly correct."
+          }
+        }
+      ]
+    },
+    {
+      "claim_id": "01-c2",
+      "statement": "The same reporter wrote that Backflip’s second drawing-to-CAD output also passed the mass check after STEP import into Fusion.",
+      "type": "reported_fact",
+      "evidence": [
+        {
+          "item_id": "feed:https://www.engineering.com/?p=151563",
+          "version_id": "90e3adc0a87a45dc20689ae62db7125fe378f8191522f5954fae4ace5e96c803",
+          "locator": {
+            "type": "text",
+            "quote": "Backflip aced the test."
+          }
+        }
+      ]
+    },
+    {
+      "claim_id": "01-c3",
+      "statement": "The reporter found that Backflip created only one body for a seven-body wire-shelf drawing.",
+      "type": "reported_fact",
+      "evidence": [
+        {
+          "item_id": "feed:https://www.engineering.com/?p=151563",
+          "version_id": "90e3adc0a87a45dc20689ae62db7125fe378f8191522f5954fae4ace5e96c803",
+          "locator": {
+            "type": "text",
+            "quote": "it only created one of the seven bodies"
+          }
+        }
+      ]
+    },
+    {
+      "claim_id": "01-c4",
+      "statement": "Cableteque says its software produces a structured, priceable BOM from an incoming drawing package.",
+      "type": "source_claim",
+      "evidence": [
+        {
+          "item_id": "feed:https://cableteque.com/blog/build-bom-from-wire-harness-drawing",
+          "version_id": "1eafb0dcff5f6f5b8c341b6abe613a9a77ce26e7c0fc4eef73af6790f2ae7fe5",
+          "locator": {
+            "type": "text",
+            "quote": "produces a structured, priceable BOM in minutes"
+          }
+        }
+      ]
+    },
+    {
+      "claim_id": "01-c5",
+      "statement": "Cableteque says its software flags likely-missing terminals, seals, and cavity plugs using connector-and-wire compatibility.",
+      "type": "source_claim",
+      "evidence": [
+        {
+          "item_id": "feed:https://cableteque.com/blog/build-bom-from-wire-harness-drawing",
+          "version_id": "1eafb0dcff5f6f5b8c341b6abe613a9a77ce26e7c0fc4eef73af6790f2ae7fe5",
+          "locator": {
+            "type": "text",
+            "quote": "flags likely-missing terminals, seals and cavity plugs"
+          }
+        }
+      ]
+    },
+    {
+      "claim_id": "01-c6",
+      "statement": "NVIDIA describes checking an imported robot’s scale, parts, and appearance against references during CAD-to-simulation asset preparation.",
+      "type": "source_claim",
+      "evidence": [
+        {
+          "item_id": "youtube:H5UaOdIZERw",
+          "version_id": "c86fae4c3874c6aa997843fe5a3365bf0a32d21acb0927fbcea32b10e0709a06",
+          "locator": {
+            "type": "segment",
+            "segment_id": "s0004"
+          }
+        }
+      ]
+    },
+    {
+      "claim_id": "01-c7",
+      "statement": "NVIDIA describes validating joints, collision geometry, and physical properties before running simulation-readiness checks and a grasp test.",
+      "type": "source_claim",
+      "evidence": [
+        {
+          "item_id": "youtube:H5UaOdIZERw",
+          "version_id": "c86fae4c3874c6aa997843fe5a3365bf0a32d21acb0927fbcea32b10e0709a06",
+          "locator": {
+            "type": "segment",
+            "segment_id": "s0005"
+          }
+        },
+        {
+          "item_id": "youtube:H5UaOdIZERw",
+          "version_id": "c86fae4c3874c6aa997843fe5a3365bf0a32d21acb0927fbcea32b10e0709a06",
+          "locator": {
+            "type": "segment",
+            "segment_id": "s0006"
+          }
+        }
+      ]
+    },
+    {
+      "claim_id": "01-c8",
+      "statement": "The MIT CDFG survey says frontier models are effective drafting tools for 3D and CAD work.",
+      "type": "source_claim",
+      "evidence": [
+        {
+          "item_id": "feed:https://mit-cdfg.github.io/Survey-AI-for-3D-modeling-Robotics/#view-stats",
+          "version_id": "08b1c2cdebb5796d7332d57e8928784a621aec9f82db91448016eaa53ea51fe5",
+          "locator": {
+            "type": "text",
+            "quote": "frontier models are now effective drafting tools"
+          }
+        }
+      ]
+    },
+    {
+      "claim_id": "01-c9",
+      "statement": "The MIT CDFG survey says tolerance specifications and manufacturability have not been tested on physical parts.",
+      "type": "source_claim",
+      "evidence": [
+        {
+          "item_id": "feed:https://mit-cdfg.github.io/Survey-AI-for-3D-modeling-Robotics/#view-stats",
+          "version_id": "08b1c2cdebb5796d7332d57e8928784a621aec9f82db91448016eaa53ea51fe5",
+          "locator": {
+            "type": "text",
+            "quote": "Tolerance specifications and manufacturability have not been tested on physical parts."
+          }
+        }
+      ]
+    },
+    {
+      "claim_id": "01-c10",
+      "statement": "Backflip’s bounded geometry check and Cableteque’s claimed exception-review workflow indicate that generated or extracted design data can be introduced into reviewable downstream processes without proving autonomous engineering correctness.",
+      "type": "inference",
+      "evidence": [
+        {
+          "item_id": "feed:https://www.engineering.com/?p=151563",
+          "version_id": "90e3adc0a87a45dc20689ae62db7125fe378f8191522f5954fae4ace5e96c803",
+          "locator": {
+            "type": "text",
+            "quote": "apply the material and check the mass"
+          }
+        },
+        {
+          "item_id": "feed:https://cableteque.com/blog/build-bom-from-wire-harness-drawing",
+          "version_id": "1eafb0dcff5f6f5b8c341b6abe613a9a77ce26e7c0fc4eef73af6790f2ae7fe5",
+          "locator": {
+            "type": "text",
+            "quote": "Your estimator reviews exceptions"
+          }
+        }
+      ]
+    }
+  ]
+}

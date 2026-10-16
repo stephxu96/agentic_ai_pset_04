@@ -1,0 +1,28 @@
+# source_id | publisher_id | kind | url
+cableteque-blog | cableteque | feed | https://cableteque.com/blog/rss.xml
+engineering-com-ai | engineering-com | feed | https://www.engineering.com/category/technology/artificial-intelligence/feed/
+# Sources with the same publisher_id are NOT independent (the independence count depends on this column).
+# Lines marked "guess" are URLs I could not confirm; correct them if the tool reports a miss.
+
+# --- written (kind: feed) ---
+pi-blog            | physical-intelligence   | feed    | https://www.pi.website/                      # no RSS link found Oct 14; likely a miss
+cadalyst           | cadalyst                | feed    | https://blog.cadalyst.com/cadmanagement
+autodesk-newsroom  | autodesk                | feed    | https://adsknews.autodesk.com/
+mit-cdfg-survey    | mit-cdfg                | feed    | https://mit-cdfg.github.io/Survey-AI-for-3D-modeling-Robotics/   # living page; may only yield a GitHub Atom feed
+onshape-blog       | onshape                 | feed    | https://www.onshape.com/en/blog/    # page verified; no RSS/Atom feed found
+mit-tech-review    | mit-technology-review   | feed    | https://www.technologyreview.com/
+xometry-blog       | xometry                 | feed    | https://www.xometry.com/resources/blog/      # guess
+
+# --- podcasts (kind: podcast) ---
+practical-ai       | changelog-media         | podcast | https://changelog.com/practicalai
+researchers-guide  | physical-ai-podcast     | podcast | https://physicalaipodcast.co/feed.xml        # confirmed Oct 14
+a16z-show          | a16z                    | podcast | https://a16z.com/podcasts/                   # guess
+lex-fridman        | lex-fridman             | podcast | https://lexfridman.com/feed/podcast/         # confirmed Oct 14
+latent-space       | latent-space            | podcast | https://www.latent.space/
+automated-a3       | association-for-advancing-automation | podcast | https://www.automate.org/automated-podcast   # guess
+
+# --- YouTube (kind: youtube) ---
+yt-autodesk        | autodesk                | youtube | https://www.youtube.com/@autodesk            # guess; AU sessions may be on another channel
+yt-pi              | physical-intelligence   | youtube | https://www.youtube.com/@physicalintelligence   # guess
+yt-a16z            | a16z                    | youtube | https://www.youtube.com/@a16z                # guess
+yt-nvidia          | nvidia                  | youtube | https://www.youtube.com/@nvidia

@@ -1,0 +1,103 @@
+{
+  "piece_id": "01",
+  "title": "CAD’s Shift Is From Isolated Authoring Toward Connected, Checkable Workflows",
+  "question": "What changed, and which developments matter most to this audience?",
+  "argument": "The most consequential change is not a single autonomous CAD capability but a widening set of connected workflow features: configuration propagation and assembly mass display in Onshape, plus Autodesk’s emerging cross-application assistant and connected-client direction. Frontier models are increasingly useful for editable CAD first drafts, but the available evidence still supports editability and benchmark task completion more clearly than tolerance conformance or manufacturability. Engineering leaders should therefore treat these developments as opportunities to improve drafting, context flow, and review—not evidence that downstream validation can be removed.",
+  "synthesis": "PTC’s release record shows concrete CAD workflow features available in a native parametric environment, while Cadalyst documents Autodesk positioning AI and shared cloud context across the lifecycle, with important distinctions between available, beta, preview, and planned functions. The MIT-CDFG survey supplies the broader capability boundary: editable native CAD artifacts and benchmark gains are real advances, yet physical tolerance and manufacturability checks remain absent. Together, the sources indicate that the near-term change is a more connected and automatable design workflow around CAD artifacts, while engineering acceptance remains a separate verification stage.",
+  "limitations": "None of the three sources provides an independent working-engineer study measuring productivity, mass-property accuracy, tolerance conformance, manufacturability, or the reliability of autonomous cross-system changes. Autodesk’s agentic PLM and connected-client demonstrations also include capabilities that remain in beta, Tech Preview, development, or planned status.",
+  "claims": [
+    {
+      "claim_id": "01-c1",
+      "statement": "Onshape’s October release says configuration inputs can be automatically propagated to reference Part Studios, assemblies, and Variable Studios, and that persistent center-of-mass display is available in assemblies.",
+      "type": "source_claim",
+      "evidence": [
+        {
+          "item_id": "youtube:7i5XHQozfQI",
+          "version_id": "582b91bc01228116ecd2d1c461bae76ac4715fc7ed39fa319cf08c96874fdc2e",
+          "locator": {
+            "type": "segment",
+            "segment_id": "s0003"
+          }
+        },
+        {
+          "item_id": "youtube:7i5XHQozfQI",
+          "version_id": "582b91bc01228116ecd2d1c461bae76ac4715fc7ed39fa319cf08c96874fdc2e",
+          "locator": {
+            "type": "segment",
+            "segment_id": "s0004"
+          }
+        },
+        {
+          "item_id": "youtube:7i5XHQozfQI",
+          "version_id": "582b91bc01228116ecd2d1c461bae76ac4715fc7ed39fa319cf08c96874fdc2e",
+          "locator": {
+            "type": "segment",
+            "segment_id": "s0007"
+          }
+        },
+        {
+          "item_id": "youtube:7i5XHQozfQI",
+          "version_id": "582b91bc01228116ecd2d1c461bae76ac4715fc7ed39fa319cf08c96874fdc2e",
+          "locator": {
+            "type": "segment",
+            "segment_id": "s0008"
+          }
+        }
+      ]
+    },
+    {
+      "claim_id": "01-c2",
+      "statement": "Cadalyst reports that Autodesk demonstrated a Fusion agentic-PLM workflow that identified a motor-shortage impact, found an approved substitute part, and prepared a change order, while describing several larger Fusion automation and connected-client capabilities as announced or in development.",
+      "type": "reported_fact",
+      "evidence": [
+        {
+          "item_id": "feed:https://blog.cadalyst.com/cadmanagement/autodesk-university-2026-what-the-announcements-mean-for-cad-teams",
+          "version_id": "e991bf7bc957baf20c6e947cff7b9a0d159ef7a1b8b9d5f500f7e1c95d47573b",
+          "locator": {
+            "type": "text",
+            "quote": "In a demonstration of Fusion’s developing agentic PLM capabilities, for example, a motor shortage threatening production became a problem the system could work through inside an Assistant conversation. It identified the potential impact, found an approved substitute part, and prepared a change order."
+          }
+        },
+        {
+          "item_id": "feed:https://blog.cadalyst.com/cadmanagement/autodesk-university-2026-what-the-announcements-mean-for-cad-teams",
+          "version_id": "e991bf7bc957baf20c6e947cff7b9a0d159ef7a1b8b9d5f500f7e1c95d47573b",
+          "locator": {
+            "type": "text",
+            "quote": "Mixed. Autodesk Assistant capabilities are already appearing in manufacturing products, while several of the larger automation and connected-client capabilities remain announced or in development."
+          }
+        }
+      ]
+    },
+    {
+      "claim_id": "01-c3",
+      "statement": "The MIT-CDFG survey reports that models can produce editable parametric CAD parts and assemblies and improve on standardized CAD benchmarks, but that physical-part tolerance specifications and manufacturability have not been tested.",
+      "type": "source_claim",
+      "evidence": [
+        {
+          "item_id": "feed:https://mit-cdfg.github.io/Survey-AI-for-3D-modeling-Robotics/#view-stats",
+          "version_id": "08b1c2cdebb5796d7332d57e8928784a621aec9f82db91448016eaa53ea51fe5",
+          "locator": {
+            "type": "text",
+            "quote": "Models build parametric parts and assemblies, and solid models of up to 511 bodies, that remain editable in native CAD tools"
+          }
+        },
+        {
+          "item_id": "feed:https://mit-cdfg.github.io/Survey-AI-for-3D-modeling-Robotics/#view-stats",
+          "version_id": "08b1c2cdebb5796d7332d57e8928784a621aec9f82db91448016eaa53ea51fe5",
+          "locator": {
+            "type": "text",
+            "quote": "On 100 FreeCAD benchmark tasks, the leading models average 85%, up from 70% for GPT-5.6 Sol, and fully solve about 45"
+          }
+        },
+        {
+          "item_id": "feed:https://mit-cdfg.github.io/Survey-AI-for-3D-modeling-Robotics/#view-stats",
+          "version_id": "08b1c2cdebb5796d7332d57e8928784a621aec9f82db91448016eaa53ea51fe5",
+          "locator": {
+            "type": "text",
+            "quote": "Tolerance specifications and manufacturability have not been tested on physical parts."
+          }
+        }
+      ]
+    }
+  ]
+}

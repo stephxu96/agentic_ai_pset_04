@@ -1,0 +1,1 @@
+{"attempts": [{"attempt": 1, "exit_code": 0}], "cost_usd": null, "finished_at": "2026-10-16T17:08:15Z", "input_count": 5, "model": "default, name not reported", "output_count": 1, "stage": "content/write_video_scripts.sh", "started_at": "2026-10-16T17:07:32Z", "status": "completed", "tools": ["Codex CLI"]}

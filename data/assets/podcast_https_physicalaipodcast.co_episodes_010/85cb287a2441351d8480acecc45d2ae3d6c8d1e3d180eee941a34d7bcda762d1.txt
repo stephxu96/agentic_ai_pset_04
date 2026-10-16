@@ -1,0 +1,240 @@
+Hey everyone, welcome back to the researchers guide to physical AI podcast.
+My name is Shubham, and this is your weekly look at robots, embodied intelligence,
+and the research behind machines that work in the physical world.
+This week, five of the strongest general purpose AI models were put in charge of robots
+across 84 tasks and 63 of those tasks weren't solved by any of them.
+One model announced it had finished sweeping some blocks,
+then spent the rest of its time lifting and lowering an empty arm.
+Meta's research lab published the biggest Japanese world model yet for robots.
+A team led by Zawksyang,
+Zhang Tata World Model, what failure looks like by inventing the failure's nobody recorded.
+Wemo borrowed $5 billion to chase a million paid rides a week
+and Boston Dynamics hired the man who ran Amazon's Alexa.
+Robot world is the paper I dread first this week,
+and it needs one piece of September news to make sense.
+Most of the robot policies on this show are trained for the job.
+A VLA, a vision language action model takes a camera image and an instruction
+and puts out the next movement of the arm,
+and it learns that from thousands of hours of robots doing tasks,
+a general model like the ones behind a chatbot has never seen any of that.
+Then in September, an outside group ran OpenAI's GPT6 Astra as a robot policy
+with no robot training at all,
+and it came out above every public robot policy on a simulated two arm benchmark called Robo Dojo,
+including pi0.5,
+the policy from physical intelligence that everyone compares against.
+Real world testing was stopped after Astra damaged the hardware,
+which tells you something too.
+Robot world published on Wednesday by an independent group of researchers,
+asks the broader question.
+Think about computer use,
+where a model clicks around a browser for you.
+This is robot use.
+The model gets an instruction,
+and whatever the robot senses,
+it writes commands,
+the robot moves,
+and a program checks whether the job got done.
+The tasks cover arms,
+arms on wheeled bases,
+legs, robots, cars, and drones,
+and they ran Astra.
+Anthropics Claude Opus 5.5,
+Kimi K3, Deep Seek,
+and Gemini once on each.
+Astra came top with 16 tasks.
+Opus 5.5 got 13,
+and the other three barely registered,
+63 tasks went unsolved by everyone.
+How they failed is the best part of the paper.
+Take Kimi K3, for example,
+which was asked to sweep some blocks with an arm.
+Partway through it announced the job was done.
+Then it spent its remaining budget,
+raising and lowering the empty arm,
+command after command,
+and when time ran out,
+the blocks were still where they started.
+Deep Seek on a task that meant driving a robot over to a stove.
+Decided early that no more motion was needed,
+and then sat there sending a speed of zero for over 100 steps.
+The authors, summary is one line.
+Motion is not task progress.
+These models are confidently reporting work they haven't done,
+which is a strange thing to watch a machine do with its own body.
+The two leaders aren't good at the same things either.
+Astra solved none of the leg robot tasks.
+Opus 5.5 solved none of the mobile manipulation tasks,
+and three of the four drone tasks.
+They share only eight successes,
+so ranking one above the other with a single score,
+hides more than it shows.
+There are two cautions here.
+Each model ran once per task,
+so luck moves the scores a lot,
+and there's no human baseline.
+But no lab commissioned this,
+and I think it's the clearest picture I've seen
+of where general models really stand on robots.
+The people who built the fields best known robots
+said much the same thing in public this week.
+Mark Raybert, who founded Boston Dynamics,
+told MIT Technology Review that people get very excited
+when a result goes from 50% success to 70,
+but 70% success is like it doesn't work.
+Jonathan Hurst, who co-founded Agility Robotics,
+the company behind the digit humanoid went further.
+He called the idea that more data will make robots
+general fundamentally flawed premise,
+and he thinks useful work in the home is about 10 years out.
+That's the co-founder of a company that filed last month
+to go public on the promise of humanoids at work,
+and I think you have to take him seriously,
+because he knows exactly what his robots can and can do yet.
+Jan Lekund's answer to that kind of doubt
+has long been a different sort of world model,
+and on the same day as robot world,
+met as research lab, fair, working with Stanford and Mela,
+published the biggest one yet.
+It's called Robojapa,
+and it's the most interesting world model paper I've read in a while.
+Jepa is short for joint embedding predictive architecture.
+If you've seen a world model demo,
+it probably drew the future frame by frame,
+like a video generator.
+Jepa never draws anything.
+A frozen image encoder turns each camera frame
+into a compact summary of what's in the scene,
+and a second network learns to predict
+how that summary changes when the robot takes an action.
+To act, the robot imagines lots of candidate actions,
+predicts where each one leads,
+and picks the one that ends up closest to a photo of the goal.
+The model has 8 billion parameters
+and was trained on video from 12 kinds of robot,
+and they've released the weights and the code.
+The part I'd point at is the scaling law.
+They fitted a curve on the smaller models,
+and it predicted how the 4 and 8 billion versions would do,
+which makes it a claim anyone can check.
+On a real franca arm,
+it grasped objects far more often than pi0.5,
+though it did worse at full pick and place,
+and the authors say plainly those comparisons aren't like for like.
+Last week, I said a comparison from LeapLab at Singhua
+had settled the argument against this kind of latent world model,
+and that was too strong.
+LeapLab tested policies,
+learning a new task from video with no actions attached.
+RoboJepa plans toward a goal image
+and never claims that ability.
+Both results stand and the argument is open again.
+The author's own limitation is the line I'd underline.
+Their curve says they're already close to the floor
+on all the public robot data that exists,
+so they expect more variety in what robots do
+to matter more than more parameters.
+Robot data sets have a quieter problem,
+which is that almost nobody records failures.
+Labs keep the runs where the robot succeeded,
+and if you train a world model on those,
+it learns that things usually go right.
+A group led by Zawaxiang Zhang published
+Dream True this week, a world model built to fix that.
+Their method is called counterfactual post training.
+They take recorded robot runs and edit the actions,
+so the model has to predict what would have happened
+if the arm had moved differently,
+including the grasps that slip and the objects that get knocked over.
+Then people went through generated videos and marked
+what was physically wrong in them,
+and that trained a second model that scores
+how believable a prediction is.
+The world model gets trained against that score.
+The number that stuck with me is the starting point.
+Before this work,
+people judged that close to half of the predicted interactions
+had something physically wrong in them.
+Afterwards, it was about 1 in 16,
+and it took first place in the world model track
+of this year's Agabot World Challenge.
+If you want a robot to learn from imagined practice,
+the imagination has to include dropping things.
+Weemo doesn't have to imagine its practice,
+because it has a fleet on real roads,
+and this week it raised $5 billion for it
+as a loan from Blackstone, Pimco and sixth street
+to expand into new American cities and into Europe and Japan.
+I mean, alphabet it's parent could have paid for that itself.
+So borrowing tells you weemo is being financed
+as a business in its own right now.
+What I find more useful is a date.
+Reporting on the loan sites,
+a Weemo target of a million paid rides a week
+by the end of this year, which is under 12 weeks away.
+That's the number we can check in January.
+What Weemo still hasn't published is what
+a ride cost it to run per mile,
+and until it does,
+nobody outside can say whether a million rides a week makes money.
+Boston Dynamics is a long way from that kind of scale,
+and on Tuesday it named a new chief executive.
+Rohit Prasad, who spent 12 years at Amazon
+and most recently ran Alexa and its artificial general intelligence group,
+where he led the Nova family of models.
+The seat had been empty since February.
+Nobody has reported why the previous chief executive
+Robert Plater left,
+or why the search took nine months.
+I think what the higher tells you is
+where Hyundai, which owns the company,
+thinks the hard part is now,
+it picked a model person,
+not a robot person.
+That's the opposite bet to the one its own founder was making
+in MIT technology review the same week,
+and at least the company's humanoid
+is where we'll find out which of them is right.
+Some smaller things happen this week as well,
+firmus and Nvidia backed Australian data center company,
+pulled its stock market listing,
+because investors wouldn't pay its price.
+AWS released an open source tool chain for robot developers,
+and the simulator and the robot policy
+inside it are both in videos.
+Mecha AI raised around led by Sequoia
+to pay people to record everyday chores
+while wearing body sensors,
+which is data for training robots.
+And for the humanoid count I quoted last week,
+IDC's figure for the first half of the year
+about 25,000 is the one to use.
+That's a lot of robots failing for one week.
+So here it is again in short.
+The robot world put five frontier models in charge of robots,
+and they left 63 of 84 tasks unsolved.
+Sometimes announcing a job was done when it wasn't.
+Mark Raybert and Jonathan Hurst,
+who built Boston Dynamics and agility,
+both said in public that today's success rates
+aren't close to good enough.
+Robo Jeppa scaled a world model
+that never draws a picture to 8 billion parameters
+with a scaling law anyone can check
+and re-opened an argument I'd called closed.
+Dream true trained a world model on failures it invented
+and cut its physically impossible predictions
+from about half to about one in 16.
+Wemo borrowed five billion dollars
+and gave itself until the end of the year
+to reach a million paid rides a week.
+And Boston Dynamics handed the company
+to a foundation model executive from Amazon.
+Nobody has yet put Astra and Opus
+5.5 on the same robot.
+One covering for the other to see whether
+two models that fail at different things fail less together.
+That's an experiment I'd love somebody to run.
+Thanks for listening, the papers, the numbers
+and the links are all in the written deep dive
+and you'll find it at physicalaiportcast.co.
+See you next week.

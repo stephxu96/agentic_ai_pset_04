@@ -1,0 +1,16 @@
+{
+  "piece_id": "01",
+  "ready": false,
+  "issues": [
+    "c1 unsupported details",
+    "c4 bundled source facts",
+    "c5 missing result-return locator",
+    "c7 missing physics-property locator",
+    "c7 missing full-sequence locator",
+    "c8 misclassified podcast report",
+    "c8 unsupported cross-source inference",
+    "argument overstates workflow benefits",
+    "synthesis bundles multiple producer observations",
+    "synthesis lacks separately typed inference claims"
+  ]
+}

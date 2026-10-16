@@ -1,0 +1,1 @@
+{"stage": "editorial/create_briefs.sh", "status": "failed", "input_count": null, "output_count": 0, "started_at": "2026-10-15T20:21:16Z", "finished_at": "2026-10-15T20:21:16Z", "tools": ["Codex CLI"], "model": "default, name not reported", "cost_usd": null, "errors": ["piece 01 has fewer than three accepted independent publishers; cannot create a supported brief"]}

@@ -1,0 +1,44 @@
+[
+  {
+    "source_id": "pi-blog",
+    "publisher_id": "physical-intelligence",
+    "kind": "feed",
+    "input_url": "https://www.pi.website/",
+    "reason": "Finder fetched the page but found no working feed."
+  },
+  {
+    "source_id": "autodesk-newsroom",
+    "publisher_id": "autodesk",
+    "kind": "feed",
+    "input_url": "https://adsknews.autodesk.com/",
+    "reason": "Finder found no working feed."
+  },
+  {
+    "source_id": "onshape-blog",
+    "publisher_id": "onshape",
+    "kind": "feed",
+    "input_url": "https://www.onshape.com/en/resources/blog",
+    "reason": "The original /en/resources/blog URL returned HTTP 404. The correct /en/blog/ page and /en/blog/rss.xml did not yield a parseable RSS/Atom feed. Two dated articles are now included separately in a clearly labeled manual feed; this original URL remains unverified."
+  },
+  {
+    "source_id": "a16z-show",
+    "publisher_id": "a16z",
+    "kind": "podcast",
+    "input_url": "https://a16z.com/podcasts/",
+    "reason": "Finder fetched the page but found no working podcast feed. The former Podchaser URL was a directory page, not RSS."
+  },
+  {
+    "source_id": "automated-a3",
+    "publisher_id": "association-for-advancing-automation",
+    "kind": "podcast",
+    "input_url": "https://www.automate.org/automated-podcast",
+    "reason": "Finder fetched the page but found no working feed."
+  },
+  {
+    "source_id": "autodesk-fusion-blog",
+    "publisher_id": "autodesk",
+    "kind": "feed",
+    "input_url": "https://www.autodesk.com/products/fusion-360/blog",
+    "reason": "Finder received HTTP 403, so its RSS URL could not be verified by this tool."
+  }
+]

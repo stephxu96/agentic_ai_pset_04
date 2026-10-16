@@ -1,0 +1,168 @@
+{
+ "run_sh": "#!/usr/bin/env bash\n# Top-level run entry point. Orchestration details live in workflows/run_pipeline.py.\nset -u\n\nROOT_DIR=\"$(cd \"$(dirname \"$0\")\" && pwd)\" || exit 2\nPYTHON=\"$ROOT_DIR/.venv/bin/python\"\nif [ ! -x \"$PYTHON\" ]; then\n  PYTHON=\"$(command -v python3 2>/dev/null || true)\"\nfi\nif [ -z \"$PYTHON\" ]; then\n  echo \"run.sh: Python 3 is required (activate .venv or install system python3)\" >&2\n  exit 2\nfi\nexec \"$PYTHON\" \"$ROOT_DIR/workflows/run_pipeline.py\" \"$@\"\n",
+ "run_json": "{\n  \"run_id\": \"20261016T164638172713Z\",\n  \"started_at\": \"2026-10-16T16:46:38Z\",\n  \"as_of_date\": \"2026-10-16\",\n  \"mode\": \"live\",\n  \"previous_run_id\": \"20261016T153413218193Z\",\n  \"include_backup\": false\n}\n",
+ "counts2": {
+  "discovered": 17,
+  "extracted": 16,
+  "new": 0,
+  "changed": 0,
+  "unchanged": 16,
+  "eligible": 20,
+  "excluded": 16,
+  "accepted": 13,
+  "rejected": 7,
+  "deferred": 0,
+  "articles": 3,
+  "video_scripts": 3
+ },
+ "counts1": {
+  "discovered": 22,
+  "extracted": 21,
+  "new": 11,
+  "changed": 0,
+  "unchanged": 10,
+  "eligible": 19,
+  "excluded": 2,
+  "accepted": 6,
+  "rejected": 9,
+  "deferred": 4,
+  "articles": null,
+  "video_scripts": null
+ },
+ "status1": "failed",
+ "excl": {
+  "inactive_source": 14,
+  "outside_window": 2
+ },
+ "ytlog": "{\"cap_truncations\": [{\"items_omitted\": 12, \"source_id\": \"yt-autodesk-fusion\"}, {\"items_omitted\": 12, \"source_id\": \"yt-nvidia-omniverse\"}], \"cost_usd\": null, \"errors\": [{\"error\": \"could not fetch https://www.youtube.com/feeds/videos.xml?channel_id=UCTvd5lUSLtTH8Qcd7Pl1nQg: HTTP Error 404: Not Found\", \"source_id\": \"yt-onshape\"}], \"finished_at\": \"2026-10-16T02:55:41Z\", \"input_count\": 3, \"output_count\": 6, \"stage\": \"collectors/fetch_youtube.sh\", \"started_at\": \"2026-10-16T02:55:38Z\", \"status\": \"failed\", \"tools\": [\"Python standard library\", \"YouTube Atom feed\"]}\n",
+ "src_lines": [
+  [
+   68,
+   "    \"kind\": \"youtube\","
+  ],
+  [
+   69,
+   "    \"url\": \"https://www.youtube.com/feeds/videos.xml?channel_id=UCiMwMz3RMbW5mbx0iDcRQ2g\","
+  ],
+  [
+   70,
+   "    \"fallback_channel_listing\": true"
+  ],
+  [
+   71,
+   "  },"
+  ],
+  [
+   72,
+   "  {"
+  ],
+  [
+   73,
+   "    \"source_id\": \"yt-onshape\","
+  ],
+  [
+   74,
+   "    \"publisher_id\": \"onshape\","
+  ],
+  [
+   75,
+   "    \"kind\": \"youtube\","
+  ],
+  [
+   76,
+   "    \"url\": \"https://www.youtube.com/feeds/videos.xml?channel_id=UCTvd5lUSLtTH8Qcd7Pl1nQg\","
+  ],
+  [
+   77,
+   "    \"warn_on_404\": true,"
+  ],
+  [
+   78,
+   "    \"note\": \"Known channel Atom endpoint currently returns HTTP 404. This optional source is logged as a warning, not counted as collected evidence; other failures remain blocking.\","
+  ],
+  [
+   79,
+   "    \"tier\": \"backup\""
+  ],
+  [
+   80,
+   "  },"
+  ]
+ ],
+ "art9": "Engineering.com reported its tests of Backflip against three simplified TooTallToby drawing exercises. In the first, the publication imported a downloaded STEP file into Fusion, applied material, and found the resulting mass exactly correct. [[1]](https://www.engineering.com/welcome-to-the-vibe-cad-era/) In the second, it again reported that the downloaded STEP file passed its mass check. [[1]](https://www.engineering.com/welcome-to-the-vibe-cad-era/) Those are reported observations, and the check matches the narrow claim: the imported neutral geometry produced the expected mass under the selected material in Fusion.",
+ "art33": "- [1] “Welcome to the vibe-CAD era,” Engineering.com, September 30, 2026. https://www.engineering.com/welcome-to-the-vibe-cad-era/",
+ "art_title": "# A CAD File Is Not Yet an Engineering Workflow",
+ "claim": {
+  "claim_id": "02-c1",
+  "statement": "Engineering.com reported that, in its first TooTallToby drawing test, it imported a Backflip STEP file into Fusion, applied material, checked mass, and found the result exactly correct.",
+  "type": "reported_fact",
+  "evidence": [
+   {
+    "item_id": "feed:https://www.engineering.com/?p=151563",
+    "version_id": "90e3adc0a87a45dc20689ae62db7125fe378f8191522f5954fae4ace5e96c803",
+    "locator": {
+     "type": "text",
+     "quote": "import it into Fusion, apply the material, and check the mass."
+    }
+   },
+   {
+    "item_id": "feed:https://www.engineering.com/?p=151563",
+    "version_id": "90e3adc0a87a45dc20689ae62db7125fe378f8191522f5954fae4ace5e96c803",
+    "locator": {
+     "type": "text",
+     "quote": "Backflip got it exactly correct."
+    }
+   }
+  ]
+ },
+ "decision": {
+  "item_id": "feed:https://www.engineering.com/?p=151563",
+  "version_id": "90e3adc0a87a45dc20689ae62db7125fe378f8191522f5954fae4ace5e96c803",
+  "decision": "accept",
+  "reason": "This is a fresh, highly relevant CAD item: an independent engineering publication tested Backflip’s new drawing-, photo-, and video-to-CAD modalities on September 30. The strongest claims were checked rather than merely viewed: the reviewer imported downloaded STEP files into Fusion, applied 1060 aluminum, and found two TooTallToby drawing conversions exactly matched the target mass; it also documents a multibody failure and incomplete feature-tree imports. The photo and video results support only visual and limited dimensional observations, while Backflip CEO claims about inferred dimensions and expanding CAD access remain attributed commercial claims requiring broader, disclosed testing.",
+  "piece_ids": [
+   "01",
+   "02",
+   "03"
+  ]
+ },
+ "asset": "ropriate terms including dovetail and mounting slot).\nSince the add-in failed, I downloaded a STEP file of the part instead. STEP files don’t have feature trees, but for this test that didn’t matter. I was able to import it into Fusion, apply the material, and check the mass. I won’t give away the answer (\nyou can check it yourself on TooTallToby.com\n) but I can verify that Backflip got it exactly correct.\nAs of this writing, 3,133 TooTallToby users have s",
+ "asset_path": "data/assets/feed_https_www.engineering.com_p_151563/90e3adc0a87a45dc20689ae62db7125fe378f8191522f5954fae4ace5e96c803.txt",
+ "changes": [
+  [
+   "20261016T025435190699Z",
+   "new"
+  ],
+  [
+   "20261016T042241540057Z",
+   "unchanged"
+  ],
+  [
+   "20261016T142617879648Z",
+   "unchanged"
+  ],
+  [
+   "20261016T145228717481Z",
+   "unchanged"
+  ],
+  [
+   "20261016T150728841018Z",
+   "unchanged"
+  ],
+  [
+   "20261016T151820442758Z",
+   "unchanged"
+  ],
+  [
+   "20261016T153413218193Z",
+   "unchanged"
+  ],
+  [
+   "20261016T164638172713Z",
+   "unchanged"
+  ]
+ ],
+ "corrections": "# Human corrections to run 20261016T164638172713Z\n\nApplied 2026-10-16 at Steph Xu's instruction, after reading the drafts against the stored transcripts. Originals are in `docs/original_drafts_20261016T164638172713Z/`.\n\n| Piece | Change | Why |\n| --- | --- | --- |\n| 02 (article, script, brief claim 02-c8) | \"63 RoboDojo tasks went unsolved by all evaluated models\" became \"five frontier models ... 84 Robot World tasks ... 63 of those tasks went unsolved by any of them\" | Factual error. In the episode 010 transcript (segments s0004-s0005), the 63 of 84 result belongs to the Robot World paper. RoboDojo is a different benchmark mentioned elsewhere in the episode. |\n| 02 (article) | Removed \"No accepted YouTube evidence is supplied here.\" | Pipeline-internal wording, not a reader-facing limitation. |\n| 03 (article, script) | Title \"Pilot the Periphery Before Trusting the Record\" became \"Pilot Where Mistakes Are Easy to Undo\" | Vague title. |\n| 01 (brief, article, script) | Added inference claim 01-c7 (Onshape and SimScale place AI at different engineering handoffs) and its marker | The piece's main insight connects two publishers and had no explicit inference claim. Evidence reuses the quotes already verified for 01-c1 and 01-c4. |\n| All | `review/check_content.py` and `tests/validate_run.py` now count article body (no references or claim markers) and video narration only | The old counts included references, markers and the Visual and Source-on-screen lines, producing false length warnings. Original narration was 610, 484 and 566 words (about 4.1, 3.2 and 3.8 minutes), inside the 3-5 minute target. |\n| All | `tools/make_publish_copies.py` writes `publish/articles/NN.md` with claim markers turned into numbered inline source links | Substack readers need links, not claim IDs. Reviewed drafts are unchanged. |\n\nStill to verify by ear before publishing: every cited audio or video timestamp (transcripts are automatic and can be wrong).\n",
+ "receipt": "{\"attempts\": [{\"attempt\": 1, \"exit_code\": 0}, {\"attempt\": 2, \"exit_code\": 0}], \"cost_usd\": null, \"errors\": [\"quoted evidence is not verbatim in the selected source version\"], \"finished_at\": \"2026-10-16T03:06:18Z\", \"input_count\": 8, \"model\": \"default, name not reported\", \"output_count\": 0, \"stage\": \"editorial/create_briefs.sh/draft-01\", \"started_at\": \"2026-10-16T03:05:11Z\", \"status\": \"failed\", \"tools\": [\"Codex CLI\"]}\n",
+ "review": "{\n  \"review_id\": \"94d52ff5228c5d43ba2dcf1996b82a2bc407aa8fc52f5942ee2c8f2dc8494fa7\",\n  \"passed\": true,\n  \"issues\": []\n}\n"
+}

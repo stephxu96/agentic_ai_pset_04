@@ -1,0 +1,76 @@
+Changing a dimension in a sketch can
+feel like playing mine sweeper. One
+click and errors go off all over the
+screen.
+Big complex sketches and project
+geometry are usually the culprits.
+Today I'll show you five techniques that
+make your designs more robust.
+Technique one, use sketch imprinting
+with simple sketches. Start with a
+square block, add fillets, then add a
+sketch on the top face, and it imprints
+the final shape. Instead of one dense
+sketch, you get several simple ones that
+are easy to read and change later.
+Technique two, use query variables to
+turn edge selections into face
+selections.
+This casting needs drafted side faces. A
+ruled surface creates them from edges,
+but if you pick those edges one by one,
+adding or removing an edge breaks the
+feature. Instead, create a query
+variable that collects all the bounding
+edges of the face, and select it in the
+ruled surface dialog. Next, use thicken
+to create a shell and merge it with the
+frame.
+Now, if you add a slot upstream, the
+ruled surface updates with drafted faces
+and no errors
+because the query follows the face, not
+individual edges. Technique three,
+define removal regions with surfaces,
+not sketches.
+To create a pocket, duplicate a face
+with offset surface, resize it with move
+boundary, then use thicken to remove the
+material. You won't need to fix sketch
+constraints when the model changes.
+Technique four, use query variables for
+more complex selections.
+Now, let's fillet the corners of the
+pocket.
+Selecting every edge by hand is tedious.
+Instead, build a query variables that
+collects the corner edges. First, query
+the edges created by the thicken
+feature,
+and narrow them down to concave edges,
+then add an adjacency filter to keep
+only edges that share vertices with the
+top face. Input this variable in the
+fillet. If you add ribs later, just
+include the rib feature in the query,
+and the [clears throat] new edges are
+picked up automatically. One more tip.
+Mirroring faces performs better than
+mirroring features. Create another query
+variable for the pocket faces and mirror
+it.
+When you update the pockets, the mirror
+follows. Technique five, use direct
+editing to create new part.
+To make a cover plate that shares the
+same interface as to extrude from the
+face instead of sketching projected
+edges.
+Set the Boolean option to new to create
+a separate part.
+Referencing the face directly is often
+more robust than managing a sketch.
+Try these on your next model and you'll
+spend a lot less time repairing errors.
+Thanks for watching and stay tuned for
+next week's tech tip.

@@ -1,0 +1,22 @@
+NEWS
+Cableteque Brings AI-Powered Wire Harness Quoting Platform to Europe
+Company brings AI-powered quoting and engineering intelligence to European wire harness manufacturers ahead of electronica, Munich
+HUNTINGTON BEACH, Calif. — September 29 —
+Cableteque, the AI-powered Wire Harness Operating System that connects the wire harness ecosystem, today announced its expansion into the European market, bringing its established quoting and engineering platform to European wire harness manufacturers. The move brings Cableteque's quoting, engineering, and supply chain platform to wire harness manufacturers and OEMs across Europe, ahead of the company's presence at electronica, Munich, 10-13th November.
+Cableteque unites engineering and supply chain on one platform, automating information flow and giving manufacturers a competitive edge through faster quotes, informed decisions, and streamlined procurement and inventory management. The company already serves customers across North America in aerospace, defense, medical, and industrial markets, and has invested in the infrastructure and partnerships needed to support European manufacturers with the same platform.
+"I've spent 35 years in this industry, and the problems don't stop at a border. European manufacturers face the same challenges we have seen for years: slow quotes, incomplete BOMs, too much guesswork. We built Cableteque to fix that everywhere it happens, not just at home," said Arik Vrobel, CEO and founder of Cableteque.
+Built for European Requirements
+EU data residency. As of September 30, 2026, European customer data can be hosted in AWS Europe Central, helping customers meet their data governance and data protection requirements.
+ISO 27001. Certification is targeted for December 2026. Cableteque is on track to meet the security standard European manufacturers and their OEM customers expect from a supply chain partner.
+European distributor and supplier relationships. Cableteque recently added distributors with established European operations, including Avnet Europe, Abacus Europe, TTI Europe, IEWC Europe, and Wiremaster Europe, for direct, negotiated pricing rather than aggregated or discounted list pricing.
+Localization. Cableteque supports AI-driven translation across all major European languages for quoting and engineering workflows, with built-in currency conversion.
+A Platform Built for Wire Harness Manufacturers
+Unlike marketplace or broker-based quoting tools, Cableteque is software that wire harness manufacturers own and control end-to-end, from BOM extraction through quoting, sourcing, and procurement. Manufacturers set their own pricing relationships directly with suppliers rather than relying on aggregated or brokered pricing set by a third party. For a practical checklist, see
+what to look for in a wire harness quoting solution for European manufacturers
+.
+"We didn't build a marketplace that sits between manufacturers and their customers. We built a platform for manufacturers to run themselves. That distinction matters more in Europe than anywhere, because the manufacturers we talk to don't want another broker in the middle of their business," Vrobel added.
+Cableteque already supports customers across the UK and Europe, evidence the platform works for European manufacturers today rather than as a future promise.
+Meet Cableteque at Electronica
+Cableteque will be present at Electronica Munich, joining CalcuQuote at Hall C5, Stand 430, where the team will be available for live product demonstrations and conversations with European wire harness manufacturers and OEMs.
+Meetings at electronica can be booked
+here.

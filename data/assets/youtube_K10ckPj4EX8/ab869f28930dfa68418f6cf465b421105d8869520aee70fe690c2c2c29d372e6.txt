@@ -1,0 +1,267 @@
+Congratulations. I'm making it to the final part of this series. Let's be honest even though I said in the part one video that Dirty Modeling is super easy
+And then you can learn it. I was obviously lying a little bit because even though everyone can learn it
+It still takes a certain level of motivation and commitment, right?
+Learning any new software workflow. It's still hard. So huge congratulations on making it this far
+I'm genuinely so proud of you. I also want to thank the surprisingly large number of you
+Who I'm pretty sure are 3D modeling experts who have just been following along watching and sharing amazing tips in the comments
+I honestly did not expect to learn so much while making this tutorial series
+It's so bizarre, but I love it. Maybe the real 3D modeling tutorial with the friends who made along the way
+I make sense, right? I got so many more cool tips from the comments on the last episode
+I can't wait to share them later on, but before I get into it as a huge thank you
+I want to do a giveaway. So stick around to the end of this video for detail
+So how to enter and you could win a gift card or one of these hats that I've been rocking throughout the series
+Anyway, everything we've done so far has been really just sketches rolls and actions like I promised and the only actions
+We've really only used is pulling actions pushing and pulling like extrudes and cuts, right?
+But now even though we are doing very similar things just adding another charger to the duck
+We will be using some of those complex features that we haven't used before, so brace yourselves
+Okay, let's do this one last time
+So we're gonna add the Apple Watch charger to the top of this duck now
+I just need to start drawing a circle up here just like we did last time with the back
+But one thing to note really quick. Let's say I rotate the view and I hit the top plane
+I'm not actually looking at this top plane straight on because this top plane is obviously tilted
+So what you have to do is actually use this button down here
+That says look at
+And with that plane selected or you tap that plane, it will tilt the camera to be facing that plane straight on
+So now I'm looking at it head on all right, so we're gonna draw a circle and we're just gonna use the same rules and dimensions
+We used the last part so this is 27.9
+I'm gonna draw a line from up here switch it to construction
+I'll draw that to the center of this circle
+Perfect
+Of course, this is a sensor. Yeah, so let's take that line and
+That's used the vertical constraint. There we go. Now dimension this from the top like 18.5
+I know it's not in the dead center, but you don't actually want it in the dead center of the duck
+The charging area on the air pods cases are actually lower and like kind of down here
+So if I wanted to charge like this then it needs to be a lot closer to the front of the duck
+Okay, I think everything is defined. Let's hit finish sketch and we're just gonna hit e for extrude and push this down
+Exactly as the depth we used in the last video, which is negative 6.3
+Now we need to draw that arc so we can make that secondary hole for us to be able to pop out the charger when it's done right so let's go to arc
+The point arc same as last time draw an arc from the two sides of the circle's edges
+Then L for line switch it to construction line type and just draw a line from both edges of the arc and then we're gonna give this a horizontal constraint
+And for the arches radius let's give that 14 millimeters. I think is what we use last time
+And let's dimension this line away from the sensor by like three millimeters
+Everything looks defined. That's finished sketch and
+Cut this whole downwards
+Yeah, if I just drag this all the way down and cut all the way down
+If I hide the dog you see that I just cut into my one two three blocks
+So what I want to do is let's bring it back
+Command Z let's hide the blocks first
+And now when I hit e and cut all the way down
+It should just cut through that top doc
+Another option for this is that you can expand this little many here that says objects to cut
+So instead of needing to hide the blocks you can also just uncheck the objects to cut in this little menu here
+But anyway, I need to hide those blocks anyway so we can check out how it looks from the bottom looks good
+Okay, and yep, there's no cuts on the blocks now, which is great
+Okay, now something to note is that this little tab on the bottom
+This tab is actually very important right now the only things that's holding this top dog on the one two three blocks
+Is the friction that's caused by these walls surrounding the blocks and these plastic walls in between the one two three blocks
+Right now if I need to cable to run down a channel that's going down back here
+It's gonna drastically reduce the size of this little plastic tab between the one two three blocks right now
+So that's gonna be really bad that's gonna make this doc a lot docer and it's gonna be able to slip off the one two three
+Doc much easier
+So I actually want this channel to go down kind of at an angle, but we've never done that before
+Let's draw the profile for this channel first and then you'll see kind of what I mean
+So yeah, so the channel is just gonna be a rectangle just like we had in last part
+I need this rectangle to be centered though, so I'm gonna use the construction line
+And then just tap anywhere that's also the midpoint and then give this line of vertical constraint
+There we go now the rectangle is perfectly centered
+I'm gonna dimension this channel just to a random line and just give it a
+I don't know let's say
+36 millimeters not super important right now as long as it stays within the size of the doc that should be plenty there
+Oh, yeah, it looks good
+And of course the width of the channel will be just 3.5 just like all the other channels
+I don't really need to damage the length of this channel because you know, it's just cutting into the circle
+Okay, so you'll see what I mean right now if I cut this channel down
+It's taking away that tab completely
+You see so I can't do that what I need to do is cut this channel on a tilt
+So I can preserve as much of that plastic tab and this whole thing as possible
+So remember in part one when I said 30 modeling the only things you really need to know is is your sketch being pulled
+Is it being revolved is it being swept around with already done pull in fact
+We've only done push and pull throughout this whole tutorial series so far, right?
+We've done revolve once when I was answering y'all that through these question last time
+We need to make a round cut out and so now we're gonna finally do sweep
+So the way a sweep works is that you need to drawing for the initial profile and then you need to draw
+For the path that sweep needs to run along so in this case, I need a diagonal line drawing for this rectangular profile to sweep down
+But the problem is one thing that's very important about a sweep is that the path and the profile drawing needs to be touching
+So then that way the profile knows how to follow the sweep, right?
+Right now there's no way for me to draw a diagonal line anywhere that's touching this rectangular profile
+If we look at it if I pan this around there is nowhere I can draw a diagonal line, right?
+So what do we do when we need to draw somewhere that there just isn't any planes and faces for us to draw?
+Well, we need to create our own plane when you create a new plane what you need is a reference point for where that plane needs to sit
+So a good reference point for us right now is gonna be one of these lines on the rectangle
+I'm gonna pick this edge right here and then what I'm gonna go to construct
+And then plane at angle and
+And now we've created a plane on that edge and obviously this can just be straight that zero degrees
+And now I can draw on this plane
+So I'm gonna draw a line from the corner of that profile diagonally down
+It's a little hard to see here so I'm just gonna hide the duck and yeah, I'm just gonna lock the edge of this path line
+With the corner of that rectangle profile
+Use the quesadent constraints and now they are locked and we're gonna bring back the duck and now you can see is running diagonally
+I'm gonna view it from the side let's dimension this angle. Let's just say 68 degrees
+And of course, I want this to cut all the way down through the bottom everything looks good
+That's round session now. This is double check. Yep, still looks good. Okay, so now we can use the sweeping action
+So I'm gonna go create sweep
+Select for profile. I'm gonna select that rectangle
+For the path. I'm gonna select that line. We just drew them. I don't think you need to change anything else
+But yeah, now you can see that this channel is slanted
+Preserving a lot of that wall between the two one two three blocks
+Just make sure when you do this, you're not cutting into that front part of the iPhone doc too
+And just like earlier, we also need to cut this upwards
+So there's actually room for the cable to run down so that's cut this up
+Let's do it to object and then do an offset of 1.45 millimeters. There you go
+And now we have a good full channel for the Apple Watch Chargers cable to run down
+This wall is getting uncomfortably close to the back of the duck, which can kind of mess with the structural integrity there
+So I'm gonna go edit sketch and just bring this back a little bit. I don't think I needed to go for that far back
+Yeah, 34 millimeters. Let's just do 34 millimeters. Okay finish sketch and just to avoid this front part
+From cutting into the front of the doc with this sweep. Let's pull this back and
+Let's take a look. Yep. That looks much better the front's not being cut and the wall's much thicker now in the back side
+Perfect this tab right here looks a little bit thin. I don't like that this channel on the back side
+Really doesn't need to be this deep. I mean needs to be deep
+But I don't think it needs to be a rectangle here it can potentially be a slant as well
+So let's go back and fix that and this time we're gonna make a slanted cut differently
+There's actually a way to do it just with extrude
+So I'm gonna go back and edit the sketch. Let's make this way shallower. Let's just say
+Five millimeters. All right. I'm gonna hit finish sketch and the way we do this is I'm gonna start a new
+Extrusion on that face and I'm gonna cut it backwards. But instead of cutting it straight
+Here's what I'm gonna do. I'm gonna hit
+Two objects
+Which would've done before but when I select a slanted wall for that two object it actually will cut at a parallel slant so
+It's a straight cut but it ends at that slanted wall so now when I give it an offset boom
+Now this cut has a slant. I think I can give it a way bigger offset. Let's say nine millimeters. Yeah, there we go
+Now we have a tilted slant on the back wall as well. Now we have much more plastic here to reinforce this wall between the one two three blocks
+And now let's start adding in some fillet fillets
+So if I add in some fillets here, it would actually make this back wall a lot thicker so let's do that
+Oh, it's too much five. Yeah, five millimeters five minutes should be good. Yeah, there we go
+So now we got plenty of room for the cable. It can just run along this curve
+Let's round over this whole channel as well
+It's like those
+Let's do
+1.7
+All right, let's turn on such an analysis and take a look perfect. Let's add a fillet to the back as well
+1.5
+Perfect. That looks good
+Now if you're new to 3D modeling at this point you've probably already noticed that there's many different ways to 3D model the exact same thing, right?
+What I just did earlier to create that diagonal channel and cavity for the cable to feed through
+I created the via a sweep right which will profile and which will pathline for the sweep to follow
+And I picked that approach because I also wanted to teach you how to create planes from sketches so you can draw on these
+Self-created planes when there's no convenient faces for you to draw on but there's actually another tool that could have accomplished the same thing and then
+It might actually be a lot easier and I think it's a good one to have in your arsenal
+So I'm gonna go back here to after we drew that initial profile and to the everything afterwards and the approaches instead of drawing a path for that profile
+We actually draw where the end of that path should be so instead of creating a plan and needing to do any of that
+I'm just gonna go to the bottom face here
+Create sketch and just draw at the end result. I'll draw a rectangle. I'm gonna align these two edges with collinear constraints
+And I want this distance away from the this edge like let's just say
+8 centimeters this edge doesn't really matter
+Okay, I'm gonna hit finish sketch
+And the other sketch is hidden right now so let's bring it back
+So there we go. So I want the channel cut to go from this top profile to this bottom profile
+Right, so I'm gonna go to create and I'm gonna use the tool boss. This is the key for this approach
+So for profiles. I'm gonna select the bottom profile first
+And I'm gonna go plus and select the top profile
+Oh, it's like the most different profile. So that's actually X the selections there
+We got profile one for profile two. I'm gonna make sure I hold command-wise select the top profile
+There we go and you can see that now it's a slanted cut exactly like what we achieved earlier with the sweep
+But now it's using a completely different tool and it's actually kind of easier. So I'm gonna hit okay
+Let's turn on section analysis and yeah, it looks almost exactly the same as earlier. I can come in here add it round over to this thing
+And now we have something that's very similar to what we had earlier. Of course, I need to cut this upwards
+It's not perfect yet. There's still more worth and needs to be done to match exactly what I had earlier
+But my point here is that there's many different ways to accomplish the same thing. So a big part of learning how to 3D model and practicing more and more and getting more
+Experience is knowing more methods and knowing when to use the right methods for specific applications
+I'm sure someone in the comments is gonna tell me a whole other way of doing this that I'd even think about that's even more efficient and even better
+And that's kind of what's so fun about this. There's just so many ways to accomplish the exact same thing
+But anyway, I don't want to go through the work of finishing all that again
+So let's command Z and go way back command Z command Z command Z. Yep, this is the version that was ready to be 2D printed
+But before I print it, why still a fusion open? Let's do my favorite thing and go over some of the amazing tips
+You guys left in the comments of the last episode, okay?
+So our first comment comes from A's badge who said that when you import a canvas, you can use the calibrate to in order to
+Auto resize the image
+What? So let's just go do insert canvas
+Pick the same picture or use last time pick a face
+So you're telling them that don't have to do any scaling here. See a calibrate option here, but I'm guessing if I'd right click this no
+Right click that oh
+Calibrates, okay, and then I picked two points. So let's make sure I do the stress so if I picked point here
+I say that's one centimeter
+Oh, but though it can actually just type units in here. You don't always have to do millimeters
+So yes, do one centimeter hit enter
+And did it do a thing? Let's find out let's draw on this face here that by draw a box that's exactly
+Define it as oh, yeah, 50 millimeters
+Boom, there you go. You have no idea the amount of hours
+I feel like I've spent just scaling and moving these pictures around that's crazy
+Game changer. Thank you so much, A's badge. Okay next tip from Fuchsie Neo if you draw a sketch the non-constrained line
+We'll be blue and the constrained lines are white these serious
+We don't even need to look at the icon here. Let's say I'm drawing this face. I'm gonna draw a bunch of random squares
+Yep, there are blue, but let's say I select all three of these faces
+Let me make them equal and make all the top faces equal as well
+Okay, let's say define this one to 20
+Okay, so everything's still blue by define this to be 20 everything is still blue
+Let's lock oh, I'm guessing their positions need to be defined as well. Let's lock this. Let's also like
+This distance
+Let's lock this distance. Okay a bunch of the lines are starting to turn white. I see what's going on
+So this is the only one that's not defined right now. It's not okay. So it's to find this
+Now these are all white. This is the only one that's not defined. That is so cool. I can't believe I didn't just like notice that
+Okay, so yeah, as you define things they turn from blue to white. Oh, that's awesome. Thank you so much
+That's a great tip. So yeah, if you still see blue lines in your drawing it means the drawing isn't fully defined
+Thank you so much to Fuchsie Neo. Okay next tip this one comes from Kalo music if you want to select a face or part
+That is hidden behind another object. You can long press the left mouse button and select the hidden face from a list called depth
+Oh, that's cool. I've never seen that before. Let's say I want to do something with that rectangle
+Let's say I'm trying to extrude it. I can just left click it. Oh, that's cool
+Oh, dang. Okay, so I can just like this profile all the way from the front
+That's awesome. I'm gonna use that a lot. Thank you so much to Kalo music
+Oh, yeah, those are all the tips. Thank you all so much. I'm both embarrassed and impressed and
+Excited to use those in my future workflows. Okay. Now. I'm ready to do the prints out are new updated
+One two three doc although what we added to the doc is exactly what we added in last part
+What changed this time is now the three different actually requires support material
+So let me show you in the slicer with last week's design. Every part of this design is either touching the bed or can be easily
+30 prints it through bridging. So if you're familiar with 30 prints and you're gonna know all this already
+So if we go to the very bottom here all the features of design is starts touching the print bed, right?
+It's certain parts expand but the only part that's really not touching the print bed is this phase right here
+But this isn't hard to 30 prints because it's actually doing what's called bridging so you can see that
+It's drawing just lines that bridge from one section to the other, right? So it's not that hard to 30 prints
+But if we look at our new design here
+It's not just bridging from one wall to the other now now the bridging actually needs to happen to an
+Opening circle that's in the middle of the design which means this circle is basically floating him midair
+So this design now actually requires support material use the paint bucket tool and just paint these two faces
+And now you go to global you turn on enable supports. I would use normal manual for this slice the plate
+And you can see that that circle is now fully supported before any bridging is attempted and this should print very cleanly
+So the one to three doc is at a place. I'm pretty happy with I've been using it on my desk for a while now
+But with any project there's always room for improvements which brings me to the homework as
+Thank you for taking this course of giving away prizes to winners I pick for each assignment
+Let's start with the beginner friendly one
+Simon one is to design feet for the one two three doc so early on I couldn't help but notice that the one two three doc
+vaguely looks like a person big front face pants like shape and these giant blocks for legs with this cable
+dangling down here
+Runs it of a similar wrestler
+Anyway, right now that he's a foam tape sitting under the blocks adds friction and protects my desk from scratches
+But what if there were a 3D printed footer piece of some kind here?
+Basically some sort of shoes for a guy here
+It'll protect the desk from sharp corners of the metal block, but it could also give me a way to pick up the whole dog
+Because right now that's actually kind of awkward if I lift the blocks. I leave fingerprints on them if I lift from the top
+It kind of works, but it risks the blocks slipping out which
+So show me how you would design feet for the one two three doc at Druzea make world actually took a crack at this already
+But I want to see more variety explored different shapes different profiles and extra bonus points
+If your feet designs add more functionality to the doc maybe it can help organize these cables on the back
+Maybe they can do even more I don't know surprise me a Simon number two is to add or change the
+Functionality of the one two three doc right now the doc charges your iPhone Apple watch and AirPods
+But show me how you would tweak it to do more or something completely different
+Maybe the side can hold pencils maybe you don't have AirPods, so you ditch the top charger for SD card slots
+Maybe you add a headphone holder on the back. I don't know, but think about what you need on your desk and make this thing
+Uniquely yours bonus points for being niche and weird because I'd love to see some crazy ideas for this assignment
+Every Simon gets judged on four things how it looks how well works and how complete it is
+So please don't summon anything too unfinished and of course lastly originality how unique and creative your ideas
+I'll pick four winners two from a Simon one and two from assignment two first place gets a $200
+Bumbleab gift card and you're very own I'll do it myself hat second place gets a $40 Bumbleath gift card and
+The hat and no, this is not sponsored by Bumbleab
+It's all coming out of my own pocket because I just thought this would be fun and it's my way of saying thank you for following along
+To enter just find my one two three dot com maker world go to the three dot menu on the top right and hit remix and upload your work
+You have until November 12 to submit winners will be announced on swjmembers.com and I can't wait to see what you all
+Designed this next part is an ad for me. I'm sponsoring myself here's the thing
+It's one thing to know how to through the model, but it's another to know how to approach problem solving and redesign
+Functional everyday objects in your life. It's also a whole the world of challenges to make videos
+Write scripts and tell stories around the objects you create. So if you want to see how I approach all of that
+Lessons I learned from doing it for so long the behind the scenes for all my projects and videos on my YouTube channel
+Consider joining swjmembers.com as a paid member for all that exclusive content and thank you for supporting my work
+Anyway, making this tutorial series has been so much fun. I want to give a huge thank you to fusion for being supportive of this
+For the people who follow my YouTube channel
+You know, I don't post that often so it's been so awesome to see you guys here on a weekly basis
+I mean you guys see me. I don't see you guys, but you know what I mean? It's been nice to interact with you guys in the comments every week and learn from you all
+It's just been a blast. So thank you again for being here and I'll hopefully see you on swjmembers.com for when I announce the winners
+Thanks for watching

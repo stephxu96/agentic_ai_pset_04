@@ -1,0 +1,25 @@
+What should engineering leaders do with the latest AI-assisted CAD, simulation, and PLM workflows? Pilot them first where they help people find, prepare, or review artifacts. Do not give them unchecked authority over an engineering system of record. As of October 16, 2026, that is the practical sequence supported by these sources. This video uses AI-generated presentation.
+
+Onshape says its AI-Generated Thumbnail Description Search is an opt-in Onshape Labs feature. It says the released feature applies to public documents only. The stated check is narrow: retrieval from model thumbnails. A user can search visible characteristics, then inspect a candidate artifact.
+
+That check supports a discovery claim. It does not establish geometric correctness, part equivalence, manufacturability, or suitability for reuse. A retrieved bracket may look right without having the right dimensions, material, tolerances, or revision state.
+
+NVIDIA describes a more involved boundary: preparing a robot asset for simulation. Its walkthrough says the workflow checks imported robot scale, parts, and appearance against references. It says the workflow configures joints, collision geometry, and physical properties. Then it reruns simulation-ready checks and a grasp test after fixing issues.
+
+Those are source claims, and the final sequence is tested in Isaac Sim. The observed checks match readiness for the demonstrated simulated workflow. They do not, by themselves, show that a real robot will perform reliably in a physical environment.
+
+Autodesk executive Jeff Kinder says an agentic PLM experience is expected to launch in the next couple of quarters. He says the proposed experience would draw information from Slack, Microsoft Teams, and Outlook conversations. And it could discern PLM information in those unstructured conversations and place it into the PLM system.
+
+This is a source claim about a planned capability, not deployed behavior. The consequential check is not just whether extraction sounds plausible. It is whether extraction, attribution, revision context, approval context, and entry into PLM are correct and auditable.
+
+My interpretation is to sequence adoption by reversibility and consequence. Start with discovery, where a person can inspect the result before acting. Move to simulation preparation when the team can retain the input references, asset changes, check results, and simulation conditions. Before an agent writes inferred information into PLM, require an auditable approval boundary.
+
+This is not a claim that one system is inherently more accurate. It follows from what each workflow says it does: Onshape limits this released feature to public-document retrieval, while Autodesk describes a future workflow that would place inferred information into PLM.
+
+Robotics adds a related caution. NVIDIA’s workflow includes a simulated grasp test. The Physical AI Podcast reports that most cited world-action-model results came from simulation benchmarks and that its real-robot result covered one task.
+
+That podcast account is secondary reporting from an automatic transcript. Its figures should be checked against the audio and underlying paper before operational use. Still, my interpretation is clear: physical-task replication is a more consequential watch item than another simulation-only demonstration.
+
+Run a narrow retrieval pilot with human inspection. For simulation workflows, keep the references, asset changes, check results, and simulation conditions. For any proposed PLM automation, require approval before inferred content becomes a record.
+
+Watch next for published deployment evidence, explicit review controls, and physical-task results that extend beyond simulation. World Labs says it has signed a definitive agreement to join AMD, subject to regulatory approvals and customary closing conditions. That is a corporate-development claim, not evidence of a capability outcome.

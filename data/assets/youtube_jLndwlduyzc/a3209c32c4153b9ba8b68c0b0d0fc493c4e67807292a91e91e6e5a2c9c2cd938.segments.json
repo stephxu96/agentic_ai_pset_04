@@ -1,0 +1,458 @@
+[
+  {
+    "segment_id": "s0001",
+    "start_seconds": 2.19,
+    "end_seconds": 2.2,
+    "text": "Changing a dimension in a sketch can"
+  },
+  {
+    "segment_id": "s0002",
+    "start_seconds": 2.2,
+    "end_seconds": 4.39,
+    "text": "feel like playing mine sweeper. One"
+  },
+  {
+    "segment_id": "s0003",
+    "start_seconds": 4.4,
+    "end_seconds": 6.51,
+    "text": "click and errors go off all over the"
+  },
+  {
+    "segment_id": "s0004",
+    "start_seconds": 6.52,
+    "end_seconds": 7.75,
+    "text": "screen."
+  },
+  {
+    "segment_id": "s0005",
+    "start_seconds": 7.76,
+    "end_seconds": 9.67,
+    "text": "Big complex sketches and project"
+  },
+  {
+    "segment_id": "s0006",
+    "start_seconds": 9.68,
+    "end_seconds": 12.47,
+    "text": "geometry are usually the culprits."
+  },
+  {
+    "segment_id": "s0007",
+    "start_seconds": 12.48,
+    "end_seconds": 14.23,
+    "text": "Today I'll show you five techniques that"
+  },
+  {
+    "segment_id": "s0008",
+    "start_seconds": 14.24,
+    "end_seconds": 16.79,
+    "text": "make your designs more robust."
+  },
+  {
+    "segment_id": "s0009",
+    "start_seconds": 16.8,
+    "end_seconds": 19.43,
+    "text": "Technique one, use sketch imprinting"
+  },
+  {
+    "segment_id": "s0010",
+    "start_seconds": 19.44,
+    "end_seconds": 21.55,
+    "text": "with simple sketches. Start with a"
+  },
+  {
+    "segment_id": "s0011",
+    "start_seconds": 21.56,
+    "end_seconds": 24.31,
+    "text": "square block, add fillets, then add a"
+  },
+  {
+    "segment_id": "s0012",
+    "start_seconds": 24.32,
+    "end_seconds": 26.59,
+    "text": "sketch on the top face, and it imprints"
+  },
+  {
+    "segment_id": "s0013",
+    "start_seconds": 26.6,
+    "end_seconds": 28.83,
+    "text": "the final shape. Instead of one dense"
+  },
+  {
+    "segment_id": "s0014",
+    "start_seconds": 28.84,
+    "end_seconds": 31.47,
+    "text": "sketch, you get several simple ones that"
+  },
+  {
+    "segment_id": "s0015",
+    "start_seconds": 31.48,
+    "end_seconds": 33.83,
+    "text": "are easy to read and change later."
+  },
+  {
+    "segment_id": "s0016",
+    "start_seconds": 33.84,
+    "end_seconds": 36.71,
+    "text": "Technique two, use query variables to"
+  },
+  {
+    "segment_id": "s0017",
+    "start_seconds": 36.72,
+    "end_seconds": 38.79,
+    "text": "turn edge selections into face"
+  },
+  {
+    "segment_id": "s0018",
+    "start_seconds": 38.8,
+    "end_seconds": 40.11,
+    "text": "selections."
+  },
+  {
+    "segment_id": "s0019",
+    "start_seconds": 40.12,
+    "end_seconds": 43.35,
+    "text": "This casting needs drafted side faces. A"
+  },
+  {
+    "segment_id": "s0020",
+    "start_seconds": 43.36,
+    "end_seconds": 45.83,
+    "text": "ruled surface creates them from edges,"
+  },
+  {
+    "segment_id": "s0021",
+    "start_seconds": 45.84,
+    "end_seconds": 48.15,
+    "text": "but if you pick those edges one by one,"
+  },
+  {
+    "segment_id": "s0022",
+    "start_seconds": 48.16,
+    "end_seconds": 50.19,
+    "text": "adding or removing an edge breaks the"
+  },
+  {
+    "segment_id": "s0023",
+    "start_seconds": 50.2,
+    "end_seconds": 52.47,
+    "text": "feature. Instead, create a query"
+  },
+  {
+    "segment_id": "s0024",
+    "start_seconds": 52.48,
+    "end_seconds": 54.43,
+    "text": "variable that collects all the bounding"
+  },
+  {
+    "segment_id": "s0025",
+    "start_seconds": 54.44,
+    "end_seconds": 57.27,
+    "text": "edges of the face, and select it in the"
+  },
+  {
+    "segment_id": "s0026",
+    "start_seconds": 57.28,
+    "end_seconds": 59.87,
+    "text": "ruled surface dialog. Next, use thicken"
+  },
+  {
+    "segment_id": "s0027",
+    "start_seconds": 59.88,
+    "end_seconds": 61.59,
+    "text": "to create a shell and merge it with the"
+  },
+  {
+    "segment_id": "s0028",
+    "start_seconds": 61.6,
+    "end_seconds": 62.91,
+    "text": "frame."
+  },
+  {
+    "segment_id": "s0029",
+    "start_seconds": 62.92,
+    "end_seconds": 65.509,
+    "text": "Now, if you add a slot upstream, the"
+  },
+  {
+    "segment_id": "s0030",
+    "start_seconds": 65.519,
+    "end_seconds": 68.03,
+    "text": "ruled surface updates with drafted faces"
+  },
+  {
+    "segment_id": "s0031",
+    "start_seconds": 68.03999999999999,
+    "end_seconds": 69.67,
+    "text": "and no errors"
+  },
+  {
+    "segment_id": "s0032",
+    "start_seconds": 69.68,
+    "end_seconds": 71.95,
+    "text": "because the query follows the face, not"
+  },
+  {
+    "segment_id": "s0033",
+    "start_seconds": 71.96000000000001,
+    "end_seconds": 75.03,
+    "text": "individual edges. Technique three,"
+  },
+  {
+    "segment_id": "s0034",
+    "start_seconds": 75.03999999999999,
+    "end_seconds": 77.47,
+    "text": "define removal regions with surfaces,"
+  },
+  {
+    "segment_id": "s0035",
+    "start_seconds": 77.48,
+    "end_seconds": 79.07,
+    "text": "not sketches."
+  },
+  {
+    "segment_id": "s0036",
+    "start_seconds": 79.08,
+    "end_seconds": 81.35,
+    "text": "To create a pocket, duplicate a face"
+  },
+  {
+    "segment_id": "s0037",
+    "start_seconds": 81.36,
+    "end_seconds": 84.87,
+    "text": "with offset surface, resize it with move"
+  },
+  {
+    "segment_id": "s0038",
+    "start_seconds": 84.88,
+    "end_seconds": 87.95,
+    "text": "boundary, then use thicken to remove the"
+  },
+  {
+    "segment_id": "s0039",
+    "start_seconds": 87.96000000000001,
+    "end_seconds": 90.27,
+    "text": "material. You won't need to fix sketch"
+  },
+  {
+    "segment_id": "s0040",
+    "start_seconds": 90.28,
+    "end_seconds": 92.71000000000001,
+    "text": "constraints when the model changes."
+  },
+  {
+    "segment_id": "s0041",
+    "start_seconds": 92.72,
+    "end_seconds": 95.71000000000001,
+    "text": "Technique four, use query variables for"
+  },
+  {
+    "segment_id": "s0042",
+    "start_seconds": 95.72,
+    "end_seconds": 97.95,
+    "text": "more complex selections."
+  },
+  {
+    "segment_id": "s0043",
+    "start_seconds": 97.96000000000001,
+    "end_seconds": 100.03,
+    "text": "Now, let's fillet the corners of the"
+  },
+  {
+    "segment_id": "s0044",
+    "start_seconds": 100.03999999999999,
+    "end_seconds": 101.15,
+    "text": "pocket."
+  },
+  {
+    "segment_id": "s0045",
+    "start_seconds": 101.16,
+    "end_seconds": 104.63,
+    "text": "Selecting every edge by hand is tedious."
+  },
+  {
+    "segment_id": "s0046",
+    "start_seconds": 104.64,
+    "end_seconds": 107.15,
+    "text": "Instead, build a query variables that"
+  },
+  {
+    "segment_id": "s0047",
+    "start_seconds": 107.16,
+    "end_seconds": 110.07,
+    "text": "collects the corner edges. First, query"
+  },
+  {
+    "segment_id": "s0048",
+    "start_seconds": 110.08,
+    "end_seconds": 111.75,
+    "text": "the edges created by the thicken"
+  },
+  {
+    "segment_id": "s0049",
+    "start_seconds": 111.75999999999999,
+    "end_seconds": 112.95,
+    "text": "feature,"
+  },
+  {
+    "segment_id": "s0050",
+    "start_seconds": 112.96000000000001,
+    "end_seconds": 116.31,
+    "text": "and narrow them down to concave edges,"
+  },
+  {
+    "segment_id": "s0051",
+    "start_seconds": 116.32,
+    "end_seconds": 118.87,
+    "text": "then add an adjacency filter to keep"
+  },
+  {
+    "segment_id": "s0052",
+    "start_seconds": 118.88,
+    "end_seconds": 121.75,
+    "text": "only edges that share vertices with the"
+  },
+  {
+    "segment_id": "s0053",
+    "start_seconds": 121.76,
+    "end_seconds": 124.39,
+    "text": "top face. Input this variable in the"
+  },
+  {
+    "segment_id": "s0054",
+    "start_seconds": 124.4,
+    "end_seconds": 127.15,
+    "text": "fillet. If you add ribs later, just"
+  },
+  {
+    "segment_id": "s0055",
+    "start_seconds": 127.16,
+    "end_seconds": 129.469,
+    "text": "include the rib feature in the query,"
+  },
+  {
+    "segment_id": "s0056",
+    "start_seconds": 129.47899999999998,
+    "end_seconds": 130.79,
+    "text": "and the [clears throat] new edges are"
+  },
+  {
+    "segment_id": "s0057",
+    "start_seconds": 130.8,
+    "end_seconds": 134.11,
+    "text": "picked up automatically. One more tip."
+  },
+  {
+    "segment_id": "s0058",
+    "start_seconds": 134.12,
+    "end_seconds": 136.43,
+    "text": "Mirroring faces performs better than"
+  },
+  {
+    "segment_id": "s0059",
+    "start_seconds": 136.44,
+    "end_seconds": 139.19,
+    "text": "mirroring features. Create another query"
+  },
+  {
+    "segment_id": "s0060",
+    "start_seconds": 139.2,
+    "end_seconds": 141.67000000000002,
+    "text": "variable for the pocket faces and mirror"
+  },
+  {
+    "segment_id": "s0061",
+    "start_seconds": 141.68,
+    "end_seconds": 142.55,
+    "text": "it."
+  },
+  {
+    "segment_id": "s0062",
+    "start_seconds": 142.56,
+    "end_seconds": 144.949,
+    "text": "When you update the pockets, the mirror"
+  },
+  {
+    "segment_id": "s0063",
+    "start_seconds": 144.959,
+    "end_seconds": 147.949,
+    "text": "follows. Technique five, use direct"
+  },
+  {
+    "segment_id": "s0064",
+    "start_seconds": 147.959,
+    "end_seconds": 150.47,
+    "text": "editing to create new part."
+  },
+  {
+    "segment_id": "s0065",
+    "start_seconds": 150.48,
+    "end_seconds": 152.39,
+    "text": "To make a cover plate that shares the"
+  },
+  {
+    "segment_id": "s0066",
+    "start_seconds": 152.4,
+    "end_seconds": 154.75,
+    "text": "same interface as to extrude from the"
+  },
+  {
+    "segment_id": "s0067",
+    "start_seconds": 154.76,
+    "end_seconds": 157.03,
+    "text": "face instead of sketching projected"
+  },
+  {
+    "segment_id": "s0068",
+    "start_seconds": 157.04,
+    "end_seconds": 158.43,
+    "text": "edges."
+  },
+  {
+    "segment_id": "s0069",
+    "start_seconds": 158.44,
+    "end_seconds": 160.39,
+    "text": "Set the Boolean option to new to create"
+  },
+  {
+    "segment_id": "s0070",
+    "start_seconds": 160.4,
+    "end_seconds": 162.15,
+    "text": "a separate part."
+  },
+  {
+    "segment_id": "s0071",
+    "start_seconds": 162.16,
+    "end_seconds": 164.27,
+    "text": "Referencing the face directly is often"
+  },
+  {
+    "segment_id": "s0072",
+    "start_seconds": 164.28,
+    "end_seconds": 166.91,
+    "text": "more robust than managing a sketch."
+  },
+  {
+    "segment_id": "s0073",
+    "start_seconds": 166.92000000000002,
+    "end_seconds": 168.91,
+    "text": "Try these on your next model and you'll"
+  },
+  {
+    "segment_id": "s0074",
+    "start_seconds": 168.92000000000002,
+    "end_seconds": 171.55,
+    "text": "spend a lot less time repairing errors."
+  },
+  {
+    "segment_id": "s0075",
+    "start_seconds": 171.56,
+    "end_seconds": 173.51,
+    "text": "Thanks for watching and stay tuned for"
+  },
+  {
+    "segment_id": "s0076",
+    "start_seconds": 173.52,
+    "end_seconds": 176.88,
+    "text": "next week's tech tip."
+  }
+]

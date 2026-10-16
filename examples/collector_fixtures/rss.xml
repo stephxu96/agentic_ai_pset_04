@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel><title>Fictional manufacturing feed</title>
+<item><title>Fixture article 3</title><link>https://fixture.example/a3</link><guid>article-3</guid><pubDate>Wed, 14 Oct 2026 12:00:00 GMT</pubDate></item>
+<item><title>Fixture article 2</title><link>https://fixture.example/a2</link><guid>article-2</guid><pubDate>Tue, 13 Oct 2026 12:00:00 GMT</pubDate></item>
+<item><title>Fixture article 1</title><link>https://fixture.example/a1</link><guid>article-1</guid><pubDate>Mon, 12 Oct 2026 12:00:00 GMT</pubDate></item>
+<item><title>Fixture article older</title><link>https://fixture.example/a0</link><guid>article-0</guid><pubDate>Sun, 11 Oct 2026 12:00:00 GMT</pubDate></item>
+</channel></rss>

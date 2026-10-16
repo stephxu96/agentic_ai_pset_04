@@ -1,0 +1,74 @@
+This release introduces smarter configuration tools, improved design analysis, and new mobile
+capabilities to streamline your on-shape workflows.
+Configuring complex designs just got faster, you can now automatically propagate configuration
+inputs to reference part studios, assemblies, and variable studios.
+On-shape matches, compatible inputs, and values eliminating repetitive configuration setup
+and making it much easier to manage complex parametrically-driven designs.
+Persistent center of mass is now available in assemblies, display it for individual components,
+or the entire assembly.
+We locations updating automatically as components move.
+You can even display the dimension to the center of mass and drawings, helping you accurately
+evaluate and document weight distribution.
+Our studios can now display important properties directly in the parts list, including
+part numbers, revisions, and states.
+This provides an immediate overview of your components without opening individual properties,
+making it easier to manage and verify design information.
+Comments can now be attached directly to drawing views and annotations, selecting
+a tagging comment takes you straight to the reference location, making design feedback
+easier to understand and reducing confusion during drawing reviews.
+A new dedicated four-short and dimension command makes diameter-dimensioning easier, quickly
+create four-short and diameter dimensions using a centerline and selected geometry, or switch
+between four-short and standard dimensions as needed.
+This provides greater flexibility for clearly documenting your designs.
+A synchronous simulation now provides more control over your analysis, run simulations
+from a version's default position, cancel unnecessary jobs, and delete completed results.
+Unnotifications also keep you informed as simulations progress, allowing you to focus
+on design work instead of constantly checking simulation statuses.
+Reflection analysis now integrates with unshaped shared image library, choose from standard
+custom reflection images, and instantly preview how they interact with your surfaces.
+This makes evaluating surface smoothness and continuity easier while keeping all of your
+visual reference assets in one place.
+Maintaining feature script dependencies just got easier.
+A new search option helps you find standard library imports by version or version range across
+your workspace.
+You can even update matching imports simultaneously, dramatically reducing the upper
+required to maintain and modernize custom features.
+API keys now support configurable expiration dates, set a time to live when creating a key
+and receive email confirmation of its expiration settings.
+This provides better visibility and control over API credentials, helping organizations
+manage access more effectively.
+Managing cam jobs is now simpler, select any job element and press delete to remove it, eliminating
+unnecessary context menu interactions and making every day job cleanup faster.
+Cam Studio now lets you override machine retract settings for individual operations.
+Keep your global defaults while customizing or disabling retract behavior wherever necessary.
+Providing greater control over toolpath behavior without affecting the rest of your
+machining job.
+Moment and reality viewing is now available on supported Android devices, place your
+on-shaped design into real-world environments, adjust their scale and orientation, and explore
+the latest model geometry directly on your device.
+This makes it easier to visualize and communicate designs outside the CAD workspace.
+Editing in context on Android now provides clearer labels and improved visual feedback, making
+it easier to identify assembly references and understand how parts relate to surrounding
+geometry.
+The Android comments panel has moved to the left side of the screen, matching the familiar
+on-shaped interface.
+You can now create, resolve, and filter comments from one consistent location, making
+collaboration more intuitive.
+Android users can now attach comments directly to sketch dimensions, take a dimension to
+provide specific feedback, then return directly to the reference geometry from the comet,
+making design discussions more precise and actionable.
+The customizable S-key toolbar is now accessible using a long press with the Apple Pencil
+or your finger on iPad, quickly access your favorite modeling tools without interrupting
+your workflow.
+Apple Pencil Double Tap also provides convenient access to context menus, making touch-space
+CAD more efficient.
+AI Advisor is now available in on-shaped for iOS, get answers to on-shaped questions directly
+from your mobile device, helping you discover workflows and solve problems without leaving
+your design environment.
+Education enterprise users can now make personal copies of their documents when permitted
+by administrators.
+Students can preserve their assignments and projects in their personal on-shaped accounts,
+allowing them to retain access to their work even after leaving their educational
+organization.
+To learn more about these updates, visit on-shaped and see more in-depth videos for each
+new feature.

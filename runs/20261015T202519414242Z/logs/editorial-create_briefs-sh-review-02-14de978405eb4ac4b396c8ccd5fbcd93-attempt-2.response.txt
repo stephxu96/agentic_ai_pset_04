@@ -1,0 +1,1 @@
+{"piece_id":"02","ready":false,"issues":["Startup-watch requirement unmet: the brief includes no AI-native startup; noting the gap in limitations does not satisfy it.","The limitation calls NVIDIA’s evidence an “automatic transcript,” but the supplied evidence does not establish that provenance."]}

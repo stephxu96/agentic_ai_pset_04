@@ -1,0 +1,15 @@
+{
+  "piece_id": "02",
+  "ready": false,
+  "issues": [
+    "Bundled Backflip mass checks: 02-c1 combines two exercises under one claim; split them into separate claims.",
+    "Unsupported Backflip method detail: 02-c1’s locators do not support the stated STEP import, 1060-aluminum assignment, or two-exercise scope.",
+    "Bundled Backflip failures: 02-c2 combines partial add-in reconstruction and the seven-body shelf result; split them.",
+    "Overstated add-in reliability: the reported tests show specific discrepancies, not general unreliability.",
+    "Bundled Cableteque workflow: 02-c3 combines BOM extraction, compatibility flags, and estimator review; separate the reported product claims.",
+    "Missing locator support: 02-c3 does not cite the stated estimator-exception review.",
+    "Irrelevant inference evidence: 02-c4 uses the MIT survey’s runnable-code count to support a claim about Cableteque error rates; it does not establish that relationship.",
+    "Unsupported absence claim: 02-c4 says Cableteque supplies no accuracy rate without evidence that directly documents the omitted evaluation; state this as a limitation or cite a disclosed evaluation scope.",
+    "Mismatched inference evidence: 02-c6 attaches an unrelated podcast result to NVIDIA’s simulation workflow without a precise cross-source relationship."
+  ]
+}

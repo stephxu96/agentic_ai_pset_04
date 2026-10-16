@@ -1,0 +1,164 @@
+{
+  "piece_id": "03",
+  "title": "Build the verification layer; wait on autonomous CAD decisions",
+  "question": "What do these developments imply for the audience, and what should they watch next?",
+  "argument": "Engineering leaders should build durable CAD data, review, and verification workflows now, while treating agentic design and simulation features as systems that prepare work for domain-specific checks rather than as engineering authorities. The near-term opportunity is making parametric models, configuration logic, approvals, and simulation-ready asset checks inspectable enough that emerging agents can participate without silently becoming the authority. This recommendation follows from evidence that current model outputs can serve as first drafts, while tolerance, manufacturability, and safe unsupervised operation remain unestablished.",
+  "synthesis": "The evidence supports a common operating model across CAD and robotics: automation can carry work across connected tools, but the confidence warranted by an output is limited by the check performed at each handoff. Autodesk’s report makes permissions, initiation authority, review, and approval explicit governance questions; PTC’s tutorial shows one face-based query workflow surviving one upstream edit; NVIDIA specifies visual, scale, physics, and grasp checks for a converted robot asset. The MIT survey supplies the boundary condition: editable CAD drafts and validated solids do not establish tolerance conformance, manufacturability, or safe unsupervised operation. Together, these sources support building native-data and verification infrastructure, selectively buying workflow features whose outputs and checks can be inspected, and waiting to delegate engineering approval or physical-transfer claims to agents.",
+  "limitations": "The accepted evidence is dominated by vendor, platform, and survey sources rather than independent customer deployments or reproducible comparative trials. NVIDIA’s workflow establishes the checks its process prescribes, not reliable hardware transfer; Autodesk’s announced and previewed capabilities are not evidence of production performance; and the PTC tutorial demonstrates one edit path rather than comparative robustness. No accepted evidence identifies an AI-native startup suitable for the required startup-watch build, buy, or wait role. The accepted set also contains no podcast evidence, so this provisional brief cannot satisfy the series’ cross-format requirement.",
+  "claims": [
+    {
+      "claim_id": "03-c1",
+      "statement": "The Cadalyst report says that some Autodesk University capabilities are available today, while others are in beta, Tech Preview, or a longer-term direction not ready for immediate production use.",
+      "type": "reported_fact",
+      "evidence": [
+        {
+          "item_id": "feed:https://blog.cadalyst.com/cadmanagement/autodesk-university-2026-what-the-announcements-mean-for-cad-teams",
+          "version_id": "e991bf7bc957baf20c6e947cff7b9a0d159ef7a1b8b9d5f500f7e1c95d47573b",
+          "locator": {
+            "type": "text",
+            "quote": "Some of the capabilities Autodesk discussed at AU are available today. Some are in beta or Tech Preview. Still others represent a longer-term direction rather than something companies should expect to put into production immediately."
+          }
+        }
+      ]
+    },
+    {
+      "claim_id": "03-c2",
+      "statement": "Teams should establish reviewable CAD governance before allowing agents to prepare or initiate consequential changes, because the cited evidence identifies data access, action authority, review, approval, and unmet engineering requirements as remaining control points.",
+      "type": "inference",
+      "evidence": [
+        {
+          "item_id": "feed:https://blog.cadalyst.com/cadmanagement/autodesk-university-2026-what-the-announcements-mean-for-cad-teams",
+          "version_id": "e991bf7bc957baf20c6e947cff7b9a0d159ef7a1b8b9d5f500f7e1c95d47573b",
+          "locator": {
+            "type": "text",
+            "quote": "Organizations still need to determine which project information an AI tool can access, who can initiate changes, how generated results are reviewed, and what constitutes an approved deliverable."
+          }
+        },
+        {
+          "item_id": "feed:https://mit-cdfg.github.io/Survey-AI-for-3D-modeling-Robotics/#view-stats",
+          "version_id": "08b1c2cdebb5796d7332d57e8928784a621aec9f82db91448016eaa53ea51fe5",
+          "locator": {
+            "type": "text",
+            "quote": "These outputs are now reliable enough to serve as first drafts, but the record does not yet show that they meet engineering requirements such as tolerances, manufacturability or safe unsupervised operation."
+          }
+        }
+      ]
+    },
+    {
+      "claim_id": "03-c3",
+      "statement": "PTC’s Onshape release says compatible configuration inputs can automatically propagate to reference Part Studios, assemblies, and Variable Studios.",
+      "type": "source_claim",
+      "evidence": [
+        {
+          "item_id": "youtube:7i5XHQozfQI",
+          "version_id": "582b91bc01228116ecd2d1c461bae76ac4715fc7ed39fa319cf08c96874fdc2e",
+          "locator": {
+            "type": "segment",
+            "segment_id": "s0003"
+          }
+        },
+        {
+          "item_id": "youtube:7i5XHQozfQI",
+          "version_id": "582b91bc01228116ecd2d1c461bae76ac4715fc7ed39fa319cf08c96874fdc2e",
+          "locator": {
+            "type": "segment",
+            "segment_id": "s0004"
+          }
+        },
+        {
+          "item_id": "youtube:7i5XHQozfQI",
+          "version_id": "582b91bc01228116ecd2d1c461bae76ac4715fc7ed39fa319cf08c96874fdc2e",
+          "locator": {
+            "type": "segment",
+            "segment_id": "s0005"
+          }
+        }
+      ]
+    },
+    {
+      "claim_id": "03-c4",
+      "statement": "In PTC’s demonstrated example, adding an upstream slot leaves the ruled surface updated with drafted faces and no errors because the query follows the face rather than individually selected edges.",
+      "type": "source_claim",
+      "evidence": [
+        {
+          "item_id": "youtube:jLndwlduyzc",
+          "version_id": "a3209c32c4153b9ba8b68c0b0d0fc493c4e67807292a91e91e6e5a2c9c2cd938",
+          "locator": {
+            "type": "segment",
+            "segment_id": "s0029"
+          }
+        },
+        {
+          "item_id": "youtube:jLndwlduyzc",
+          "version_id": "a3209c32c4153b9ba8b68c0b0d0fc493c4e67807292a91e91e6e5a2c9c2cd938",
+          "locator": {
+            "type": "segment",
+            "segment_id": "s0030"
+          }
+        },
+        {
+          "item_id": "youtube:jLndwlduyzc",
+          "version_id": "a3209c32c4153b9ba8b68c0b0d0fc493c4e67807292a91e91e6e5a2c9c2cd938",
+          "locator": {
+            "type": "segment",
+            "segment_id": "s0032"
+          }
+        }
+      ]
+    },
+    {
+      "claim_id": "03-c5",
+      "statement": "NVIDIA’s CAD-to-simulation workflow calls for checking visual properties, imported scale and parts, joint and collision configuration, selected foundation checks, and a grasp test before a full Isaac Sim sequence.",
+      "type": "source_claim",
+      "evidence": [
+        {
+          "item_id": "youtube:H5UaOdIZERw",
+          "version_id": "c86fae4c3874c6aa997843fe5a3365bf0a32d21acb0927fbcea32b10e0709a06",
+          "locator": {
+            "type": "segment",
+            "segment_id": "s0004"
+          }
+        },
+        {
+          "item_id": "youtube:H5UaOdIZERw",
+          "version_id": "c86fae4c3874c6aa997843fe5a3365bf0a32d21acb0927fbcea32b10e0709a06",
+          "locator": {
+            "type": "segment",
+            "segment_id": "s0005"
+          }
+        },
+        {
+          "item_id": "youtube:H5UaOdIZERw",
+          "version_id": "c86fae4c3874c6aa997843fe5a3365bf0a32d21acb0927fbcea32b10e0709a06",
+          "locator": {
+            "type": "segment",
+            "segment_id": "s0006"
+          }
+        },
+        {
+          "item_id": "youtube:H5UaOdIZERw",
+          "version_id": "c86fae4c3874c6aa997843fe5a3365bf0a32d21acb0927fbcea32b10e0709a06",
+          "locator": {
+            "type": "segment",
+            "segment_id": "s0007"
+          }
+        }
+      ]
+    },
+    {
+      "claim_id": "03-c6",
+      "statement": "The MIT survey states that no benchmark yet tests CAD tolerance specifications or manufacturability on physical parts.",
+      "type": "reported_fact",
+      "evidence": [
+        {
+          "item_id": "feed:https://mit-cdfg.github.io/Survey-AI-for-3D-modeling-Robotics/#view-stats",
+          "version_id": "08b1c2cdebb5796d7332d57e8928784a621aec9f82db91448016eaa53ea51fe5",
+          "locator": {
+            "type": "text",
+            "quote": "Tolerance specifications and manufacturability have not been tested on physical parts."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,427 @@
+Welcome to the Practical AI Podcast, where we break down the real world
+applications of artificial intelligence, and how it's shaping the way we live,
+work, and create. Our goal is to help make AI technology practical,
+productive, and accessible to everyone. Whether you're a developer, business
+leader, or just curious about the tech behind the buzz, you're in the right
+place. Be sure to connect with us on LinkedIn, X or Blue Sky, to stay up to date
+with episode drops, behind the scenes content, and AI insights. You can learn
+more at PracticalAI.fm. Now, on to the show.
+Welcome to another episode of the Practical AI Podcast. This is Daniel Weitnak,
+I am CEO at Prediction Guard, and I'm joined as always by my co-host Chris Benson,
+who is a principal AI and autonomy research engineer. How you doing Chris? Hey, I'm
+doing great today Daniel. Really excited about today's conversation. Yeah, well,
+I think in in the world that both of us inhabit, we are open to
+interesting discussions, and I think we'll talk about things open and things
+related to the world in today's episode, because we have with us,
+Mingyu Leo, who is Vice President of Cosmos Lab at Nvidia. Welcome to the show,
+Mingyu. Hello, sent to have me here. Oh, great to be here at Daniel.
+Yeah, yeah, great to have you. And one of the things I kind of alluded to
+is maybe something open, which I know is dear to Nvidia's heart, which is open models. And
+I've seen in the news recently in what Nvidia has posted. Obviously, they are promoting
+open models as a key piece of what is important in the AI ecosystem. I'm wondering, Mingyu,
+if you could help us understand maybe from your perspective, from Nvidia's perspective,
+why in today's world is open, is the idea of having open models and promoting open models?
+Why is that such a critical thing in the ecosystem? Yes, okay. So when I was just
+students, I learned a lot about computer vision and machine learning. And at that time,
+there are great researchers, students, open source, on their code and model. And do get a
+little code and model actually help me understand the concept and help me to innovate. Right? And
+this, the academy always worked like that and had been years, you know, even before
+GBT, and GBT also had open source model in the past. And that had been, you know, push the
+feel forward around innovation. And it's just until recently, the model is getting bigger.
+The model resources require to build a model is tremendous amount and hence, you know, the
+amount of open model reduce. Right? But open model generally is there for the field. And it's
+been very useful to push the feel forward. And so, Nvidia won this continued to happen. I think
+the world will be in a better place, if we have open model to enable innovation. So people,
+you know, API are great. They're so problems. But they don't give you the insights, you know,
+it doesn't tell you, it doesn't allow you to tear apart. And the miss your idea, insight, you know,
+and also the kind of seeing you want to do, maybe suitable, you know, you want to have a local
+computer and you don't have an internet connection. So, API may not always be the solution.
+And that's why, you know, I think your open model is important to enable people.
+And Nvidia is a serrated computing company. So, we build this computer,
+great computer, GPU, networking devices, and now we also build CPU SOC. Right? We build this computer
+and we want to enable the whole ecosystem. Right? And we generally believe that, you know,
+to better build these computers, we need to know more about the applications. Right? And in the
+in the old day, you have these computer and you have library and you have software applications. Right?
+And in the modern world, you have computer and you have libraries still, but you now have models.
+Model is a new kind of libraries, people can use, and to build way of making applications.
+You know, maybe all kinds of agents have to help you buy stuff, or help you to code all
+on top of models. And we, Nvidia, like to build models, like to build open models,
+on top of Nvidia's computer, there are a couple reasons why we do that.
+First, we should build in the model, we better understand what kind of computer we should build.
+What kind of GPU architecture we should have, so that Nvidia can always be there to help the whole
+ecosystem. And second, we also want to measure people unable to do a meeting applications. Right?
+So, when we have open model there, and people can test this out first, you know, and combine
+in to do application, go for their target of business. And again, sounds for minerality and maybe
+data they can build their own model. Yeah, so it's a lot of reason why you know, open model is critical,
+both for academy and also for their whole industry. Yeah, you're kind of getting to follow up
+that I wanted to have, which is it's important to have open models to your point to promote innovation,
+but I'm wondering, in what you're seeing at Nvidia, is it increasingly important also
+on the commercial side? So, like for Nvidia's customers, right? What is the implication of having
+access to open models, maybe on the commercial side? Do you have any thoughts on that? So, it's great
+if like I'm in a lab, and you know, I have, you know, five years to work towards, you know, the
+next innovation, the next types of models. But if I'm in a commercial company, maybe I'm a customer
+of Nvidia, I run Nvidia hardware. How does the existence of open models help me as, you know,
+in the commercial world, maybe? Innovation, freedom. Innovation, freedom. I think that this
+and maybe the two worlds to summarize, right? So, you know, you can leverage API to solve the problem,
+and but with the open model, you can do more than what's available in API. Yeah, so,
+and seeing it, the field is fighting more and more important applications of AI, right? You know,
+from earlier day of trip, but, and now the coding agent, and we also see more and more
+agent that can do things that we didn't think it's possible. People are working very hard to try to
+figure out how AI can make it out like a relatively better, right? And there will be an application
+that was not focusing by the foundation model of the frontier companies who are building AI, right?
+And then the quietest on customization, open model, allow them, give them options, give them
+choice to do the innovation they need for their target business. And this way, I think it's good,
+you know, for the whole society. I think, I know, I was, you know, kind of following up in your
+point there, I was very happy recently to see Nvidia kind of, you know, there was a moment,
+some months back, where, you know, open models in the West were starting to struggle a bit, you know,
+at some certain, a named organizations were closing and that had been leading the way. And so,
+it was a delight to see Nvidia step in and take the leadership there and, and follow through with
+some other, you know, things that hugging face acquisitions coming in, the work that you're doing.
+So there's kind of, you know, going through this turning point of, you know, toward the next
+generation of open models and what that looks like, especially with regard to the landscape of
+physical AI out there, which is, which is my personal passion as most of our viewers know. And so,
+with love, if you could kind of, as we, as we are pivoting into this new generation of open
+models, you know, in a physical AI context, it's not all API based, it's not all frontier
+models at big services and stuff like that. And we're, we're all getting excited about drones in
+everyday life, robots in everyday life, and in all the different capacities that that can
+bring benefits, could you kind of lay out the landscape? What is this, as you mesh these things
+together? What does that look like to you now? And, you know, what are you seeing is the opportunities
+in the near term, and, and kind of, how are our organizations that work with Nvidia starting
+to position to take on this next generation of physical AI that's, that's upon us. Yeah,
+since for the good question. So, uh, so I think that physical AI is a turn cover several
+important verticals, uh, like an automotive is one, uh, factory automation is another, uh, and robotics
+is, you know, a third pillar. There could be more, uh, agriculture, construction, many of them.
+And physical AI are AI deployed in physical device. And physical device, uh,
+perturbed the state of the world and completes a certain task. And the result is shown,
+as material as the final, uh, something you can touch, right? That is how I would like to, uh,
+you know, define physical AI. So, uh, nowadays, uh, you know, we have sung, uh, AI in physical device,
+right, but they are preliminary, right? And, and that, as you know, most, uh,
+exciting phone of the physical AI, you know, one of the most exciting forms of physical AI,
+so humanoid robots, uh, and me, envision a humanoid robot will be able to help people
+accomplish a large task. Uh, and now we don't have a humanoid robot surrounding us, but one day,
+we have humanoid robots surrounding us, they will require a computer, they will require a powerful
+computer to help us process a visual input, understand people's instruction, and then sell
+correction, uh, in company to task. And, and this is our web business opportunity for a media, right?
+So, that's why a media care about physical AI, you can make physical AI, uh, come, you know,
+the, the dream of physical AI come to, there will be allow opportunity for a media. So,
+we are very divine. And so, we want to help the field moving forward. Yeah, and, yeah,
+yeah, and I was wondering, just tying that back to where we started the conversation with open
+models, to open models have certain implications specifically in the physical AI world, because of the
+constraints or requirements of the physical AI world? Yes, it's a good question. So,
+I think, uh, for example, one scene, uh, you a physical AI model, you know, one popular physical
+model is a policy model. A policy model is the model based on the visual observation and the
+instruction given by the, uh, user or sound machine, uh, and, you know, the, you know, it generates
+an action to complete the task, right? So, observation and instruction in and action out. And,
+every robot have a different, uh, kind of sensor setup, right? So, robot have two AI,
+sound robot have cameras mounted on the greeter, and sales are being called, sound car has
+a element camera, sound have seven, you know, sound have light sensor. So, every physical
+device, every physical, every robot see the world differently, right? And, and the sound
+then are unique, right? So, it difficult to have one AI model that can cover all these, right?
+When you have open model, uh, the model count with viewing capability like what understanding
+or simulation, and found that's prior, people can leverage the data that clarity to found their
+device and find you, you know, maybe it is, uh, in the initial model, only handle one camera.
+Now, you have multi-view, you know, enable the tool post training and open model. And it's
+easier, it's more achievable with open model, right? So, I think open model gives you
+the, the cuff innovation power. Uh, so you can customize, uh, open model and do better tailored
+for your, uh, physical use case, and this isn't important, right? It means, uh, better leverage the
+observation, right? And, and also, give you opportunity to make it more efficient. Uh, yeah. So,
+in the end, uh, uh, the primary, uh, evolution will be, uh, intelligence to, to what, right? And,
+and so, with this, uh, open architecture, you will be able to do more.
+It's amazing to consider this topic of physical AI, how AI agents are being embedded in the physical
+world around us, but it just emphasizes this point that we need to have operational control
+of the agents that we're deploying, whether that be in the case of physical AI or in your
+digital infrastructure within your company, where you're deploying agents as a part of your digital
+workforce. Operational control is critical, so you can ensure that those agents are operating
+based on the policies that you set, and you can alert when those agents go off script and actually
+quarantine agents that are behaving in some destructive manner. That's exactly what we're
+offering with prediction garden, the self-hosted AI control plane. This is a company that I'm
+leading personally, and I'm just so thrilled to see that this operational control of AI agents is
+at the core of what we're offering. We're seeing companies build and deploy fleets of AI agents
+without losing control of those agents, and we'd love to show you how we do that.
+Check us out at predictionguard.com slash practical AI to book a time with myself and the team to
+talk more about how we're enabling this operational control of agents. Again, that's predictionguard.com
+slash practical AI. So I'd like to, uh, I'd like to take you, uh, kind of expand on what you were
+talking about going into the break in terms of, you know, you talked about, you know, a couple of
+things like fine tuning models and stuff like that, which I, which I think, uh, maybe to some people
+maybe a little bit of a lost art, because people have become so API dependent on a lot of the
+close models, because they're used to cloud environments, and as we move into, uh, you know, into
+physical AI, and you're taking these open models that give so much potential on what's what you can
+do with your own creativity and innovation, uh, in, uh, in these physical devices, and you have to add in,
+you know, the sensors, as you talked about light R and other things, and, and whatever the robots
+effectors are, how it's manipulating the real world, uh, or, or perturbing the real world, I believe
+this is how you put it earlier. Um, could you talk, you know, there's inference involved, which
+now is in a device versus out in the cloud, um, and there's power, you know, you have to have power to
+drive these things. So there's all of these considerations that a lot of folks in the AI space
+haven't had to deal with in the past, um, and the, the, the, the, get something out there that you can
+touch, uh, working toward your, whatever end you're trying to achieve. Could you talk a bit about
+how you see that? And like, how, how, how you put that together for it. So maybe kind of give a
+quick primer, uh, to folks that are doing AI that are, they're, they're watching or listening,
+but may not have done physical AI with open models and just kind of lay out all the concerns
+that they have to start thinking about there. I think that would be really useful, um, but, you know,
+just as a, is a, is a lay out there. Okay. So basically, it's been, um, the difference in physical
+AI is come here to the, uh, the digital AI that people are very familiar with. Okay. Yeah. Okay.
+So, uh, let's say you have a robot, uh, and trying to complete certain tasks, right? And robot
+need to react very fast, right? So the, the processing had to be done real time, uh, unsports, right?
+And also, uh, a lot of tasks is a batch size one, infants problem. So API, you can,
+aggregate users, uh, API co-fun, you know, fun, different users, and then process, then you know,
+whole, right? So when you do that, um, you know, maybe I can go back a little bit, uh, uh, a bit,
+right? So, uh, LM is a very popular architecture, uh, you know, for coding for chat, right? And
+LM is, uh, based on the auto-regressive transformer. So it's a memory bound. And, uh, to more, uh,
+efficient, uh, to use the GPU power more efficiently, you can aggregate the API co-fun, different
+user to, to feel in the computers, right? But the same architecture you view put, uh, in this, uh,
+embedded device, right? And you don't have API co-to aggregate, right? So you're not fully
+utilized the computer power in, in that machine. So for some other architecture,
+it might be more efficient, right? So, uh, and talking about, because the application is different,
+right? Uh, so it, it requires different architecture, uh, and different syncing, uh, so that you can
+use your, uh, power your watt more efficiently. And also there's a real high-conference, and
+safety comes to it. So, uh, so because of the setup difference, uh, the, uh, you can have
+promote, uh, different architectures. And maybe that leads naturally into talking about some of
+the architecture. Well, there's all sorts of architectures that Nvidia has been working on for,
+for quite a while. Obviously, you're in the Cosmos lab. I, I know one of the things that you're
+working on is, quote unquote, world models, um, you know, Cosmos, uh, meaning, uh, uh, world as
+people might, uh, might infer. But, uh, help, help those who maybe, maybe, imagine someone who's just
+used LM's, or maybe that's their only perception of, of models help connect what a world model is,
+and why it might be necessary in this world of physical AI. Okay. So, uh, language model, um,
+is a model, uh, that's, uh, great internal representation, uh, through processing human knowledge,
+written in the form of language, right? And there's optimized, uh, for this, uh, language representation,
+to general languages, for chat, for code, you know, code is written as a language as well.
+And one model is found, a different perspective. It's found the perspective of, uh, you know,
+you have a sensory observation of the world. And you know, those sensors are capturing, uh, different,
+angles of the world, right? And, and those sensors, those cameras also, uh,
+capture the dynamics, how this is evolved. And people believe that, uh, uh, fun, uh, modeling these
+signals, you can, you know, implicitly encode the fittest, uh, of the world. And with the
+fittest, kind of something you model, then you can start to do simulation. And if you, uh,
+connect this world representation, language representation, then you can generate explanation
+that's helped you understand why this isn't happened. So it's more like a one is coming
+from language perspective, the other is more like a, uh, found the observation of the world of
+this is, and try to learn the representation. So different way of learning the representations,
+and of course they have different use cases. Yeah. And, and I guess language is a
+represent, or it represents part of the knowledge or how people experience the world, but it's only
+a small piece of how people experience the world, right? Like I'm, I'm looking at you with my eyes,
+I'm, I'm hearing things. I, as you mentioned, I see things from different perspective. I see how
+physics is evolving. Is, is, is it true? So, so in, in an example, world model to just make it
+tangible for people in an LM, you would basically put in text and get out text, or,
+next, at least the next predicted token, right? Or in a image generation model, you'd put in text,
+and then get out, get out an image. In the world model case, what, what is an example,
+sort of input and output? One of those might be, as you mentioned, maybe it's just a representation
+of the world and then you build additional things on top of that, but maybe help people get some
+intuition about what do you put into a world model and what do you get out when you're actually
+operating the world model or performing inference or performing prediction with the world model?
+Yes. So, I want to touch a point of people interviewing these questions. So, people view a
+model for purpose, right? And we do in the world, so we are instituting some model of the world,
+so we can do a lot of different tasks, right? When to predict how it can happen and some is to
+explain what happened, right? Or sometimes you need to do navigation, so you have a strategic
+representation of the world, so some people call it a world model. To me, a world model is a way to
+solve some tasks, right? And so it's difficult to, to me, difficult to use, like the input,
+output to kind of define what is the world model. So, I would like to say,
+it's down sort of modeling of the world, it's a world model, okay? And found my perspective,
+because our mission is to build, basically, the mission of cosmos is to build a, you know, physical
+confrontation model to help the whole ecosystem. So, we realize that, you know, in the early
+day that you need to have more simulation capability, given a current observation, and that, you
+know, the action input, what gonna happen in the future? For this world simulation capability,
+the input is the current observation and the action sequence. Sometimes, the action can be described
+in text, right? And the output is the future, the what gonna happen? Maybe in video, you know, maybe in
+audio and in the future, when you have the other modality, you know, other modality. So, world simulation.
+And the other thing is, we understand it, right? So, you want to understand, you know, why,
+this, you know, you as a robot to complete a task, and it didn't complete, right? You want to
+understand what happened, right? So, there's an obstacle, a blast, a blast, a blast way of the
+robot, so it couldn't, right? So, the, the, when the situation like this happen, you, you found the
+sensory inputs, right? You kind of have a model in what happened, right? But in order to, for people,
+you know, the receiver, and the question asks the human, right? So, you need to connect those
+world representation to language, so it can generally sound discussion that people understand.
+Yeah, so, and, and, so that, there's this, another side of, one model understanding. So, it's
+more similar to multi-modal oil, and so you have the video, and you have the description, and
+you have the test of output. And in customer, we believe that, you know, one is for world understanding,
+the other is for world simulation, right? Although they, for different purposes, but they
+model the same world. So, so, in customer suite, our latest customer model, we actually
+feel that together. We believe that the representation is shared, because, you know, we
+deep in the same world, right? It doesn't stop. Yeah. So, yeah, and, and, for the world understanding,
+the input is, video tests, outputs, tests, and, for worst simulation, the inputs, you know,
+observation, action, outputs, tests, outputs, videos. So, we, and for me, put together, it began
+only model, right? You have different inputs, you know, in customer suite, the actually supports
+test, action, audio, video, as the input, and also supports test, audio, video,
+action, as output. So, you can find all combination, and I think a developer can choose the best way
+they want up to feel on top of it. That was really good. I'd like to ask a clarifying question
+because there's a couple of terms out there that I'd like to, I'd like to get your kind of your
+definitions and how they relate a little bit. One is obviously, this notion of world model,
+which you've been diving into, but a number of times, obviously, you've mentioned simulation,
+and for, for those who may not be familiar with this, like, how, how do you define or relate
+the notion of simulation, you know, where you could either have a, more of a simulator,
+like what people may be already familiar with, which also is obviously in gaming and things like that,
+with the notion of the world model, as you've just explained it, how do those two terms
+relate to each other? Okay, good question. So, so, and we have, you know, people are spending,
+you know, centuries of years starting how the world works, and sometimes put them in equations,
+right, and we have, you know, simulated environment governed by program, due on top of those
+equations, you know, how, you know, when two things, you know, each other, how things are going to
+happen. Also, we consider classical simulators, right. So, they are based on, this is the dual,
+you know, people's interpretation, you know, equations, and then to government housing,
+the scene I described earlier, people generally call it a neuro simulation. So, it's a data-driven
+way of doing simulation. Instead of the density put the physics in, you saw a tons of observation,
+you know, showing different, you know, you know, how two scenes hit together, they kind of separated
+or, you know, when you pull water or two to the ground, how the spread out, you show a lot of
+different scenes, you know, visual observation to a model, and the model, then they can
+approximate, you know, predict what can happen when they see similar patterns. So, it's more like
+a pattern recognition based way of doing the simulation, right. So, one is dual-based,
+the other is more like a data-driven, the past imagination.
+In, I'm coming from a perspective that I'm not an expert like you or Chris in this area of
+a physical AI and world models, and I'm wondering in my mind, maybe as a non-expert,
+you're talking about world models, you're talking about simulation, et cetera.
+If we go all the way back to kind of one of those concrete examples, like the robot or the
+manufacturing case or the automotive case, where does the world model come into play
+as you're creating the models that are actually, you know, driving decision-making or movement
+or actions in the robot in the physical world? Where does that fit in versus some other things,
+like you mentioned, policy, you know, models, et cetera? Okay, it's a good question. So,
+in Cosmo, we build this foundation model and try to learn a good world representation, right.
+And this model can be used in many different ways. Found a simulation perspective, okay.
+Let's say I'm building a sales-driving car policy that can never get to drive the car
+from the definition A to D, right. So, as developing the model, I might have many different
+chip points, right. And how do I know that chip point A is better than chip point D?
+In the old day, what people do is that they have the lead of cars and driver. Whenever I have
+a new policy and we deploy the policy to the car and the driver kind of, you know, take the car
+to the field and see, you know, record, how good is the policy model? You can clearly see this,
+you know, not scalable, right. And it's naming how many iteration you can do, right. But with a
+warm model, right. Instead of having your policy, you know, deployed the real car, you know, driving the
+real world, you can have your policy, interact with a warm model, right. When you still have
+what you're going to see, still have what you're going to see. And from this simulation, you can
+verify the accuracy of the chip points. It can help you quickly narrow down a couple of hypotheses
+you have. And then use, then you have few ones that you've seen truly valuable and you do the
+real tests. It helps you to get this iteration faster and now we know interconnecting the most
+important things, how far you can do iterations, right. Then you can better develop better policy
+for your sales driving car. It cannot be the same for robots, right. And this is what simulation,
+the representation allows you to do similar and what you can do for physical AI. The other thing
+is that, you know, these can be also a great backbone for a policy model, right. In a warm
+model, you have a role representation. It's, you understand, you know, it's able to, you understand
+the instruction given by human, right. And it's, when you model the world, right, the, it generates
+the p-source-based evolution, right. And the p-source-based evolution has a strong correlation to the,
+to the control signal you might need to use to complete certain manipulation paths. And that's
+correlation, a great regularization to help you be a better policy model when the data is more limited.
+So I think what representation is the key. And, and the sense physical AI can operate in the real
+world. And this world representation encapsulates in these foundation models are going to be useful
+in a different way. And it's also kind of important we need to make it open. So that's, you know,
+people can can can test out and share feedback with us, and then we can then double down
+on the capability that's more important to help the physical AI ecosystem.
+Wow, it's just amazing to hear the news talk about Nvidia's efforts to make sure that there
+is a community of open source enthusiasts, those that are working on open models to foster
+a real unity of innovation around AI and agents. That is so practical. That's what we're about here,
+practical AI is that sort of practical value. And we share that with an amazing event that's
+happening October 15, just here in a couple weeks October 15, 2026 called the Midwest AI Summit.
+We want to meet our media sponsors of this event, and I'm personally going to be an MC at the event,
+and it's just filled with amazing practical value. There's an AI engineering lounge where you can
+sit one-on-one with AI experts that actually can practically provide an amazing feedback on your
+roadmap. People said, architecture, et cetera, is going to be amazing talks from here in the field,
+from all over, talking about why they've made certain decisions in their AI roadmap.
+How you can deploy agents off of your laptop and cloud environments so much more, so much practicality,
+plus there's free food and other amazing things. This isn't one to miss. So check it out
+Midwest AI Summit.com, and you can use the Code Practical AI 20-20% off registration. Do not miss
+this registered today, use the Code Practical AI 20-20% off registration for the Midwest AI Summit.
+I'd like to kind of maybe expand, might be the right word, the conversation, into another
+dimension, and that's the fact that, by contrast, in kind of the cloud digital world, people are often
+used to dealing with an LOM, either by itself, or it's managing a collection of agents that are
+doing tasks and stuff, but that interface is very much. There's a human, and there's that LOM,
+and they are agreeing on what's going to happen with the AI agents going and doing things.
+When you move things into the physical realm, you may have all of those things happening, but you
+also have many physical devices that are beginning to interact together, and they're interacting
+with humans in different ways, and so that the notion of what interactions are gets quite complex.
+And I was wondering if you could kind of walk us through that a bit, and maybe kind of take us into
+that new dimension of, we're not talking about one robot now, but now, or one self-driving car,
+or whatever you want to address, but maybe a whole bunch of them, and maybe you have a city full of them,
+and that's what is mostly there, and they're in all the domains, everything from the ground,
+all the way up, and all the way down, maybe under sea, and stuff like that, we may have robots
+eventually in our bodies, you know, nanobots that are there, so like, could you kind of lay out
+what this implies, and what some of the extra considerations are that you have to start thinking
+about to set this new reality up. Good question, so I've been asking myself, what the physical
+can I look like, right? So I believe, let me take wine sample, right? So I say I am a manufacturer,
+I build some very cool toy called robot arc, okay, and I got an order of, you know,
+people want a minion robot arc, right? And I might have digital agent powered by LN,
+help me understand, look at my inventory, help me understand what the materials I have in different
+places, right? So there's an agent, LN agent, to kind of do some high-devil painting, right?
+And now I know that I need to ship certain materials from factory D to factory A, so that I
+can manufacture the robot arc in factory A, and then that's agent send, you know, demand to the
+maybe the factory floor agent in factory B, and very well, agent B do a handy hand shake, right?
+And that factory floor can help some robots, some mobile platform, right? And the robot might carry
+the good to put the mobile platform and mobile platform, put, you know, building a truck,
+and a truck, go from sales I've been truck, go from factory D to factory A, right? And then we start
+to do the manufacturing, and every station, you know, in a simple to stop, they're going to have
+visual inspection, they're going to have a robot arc, right? There'll be some type of course
+to do, and those are going to be operated by another agent, right? So I've seen the wall
+going to be multi-agent, right? And then also go back to my previous deployments, right? So
+in the end, the intelligence per dollar, you know, mentors, right? And the different tasks, you know,
+you probably don't need a robot arm to solve the cable, solving, solve, or limpia,
+mass problem. You probably want it to be more sensitive in some kind of manipulation tasks.
+So I think we are looking at wall with the multi-driven specialization, and they're going to
+work together and to complete the task. And John, you know, can be one of Ben, right? So
+I might be only a farm, let's say, produce tea, right? And I can have John to collect the
+tea leaf, and then put it in the package, you know? So all of Ben, so I think we like
+the agent because, you know, agent is somebody has certain autonomy to behave to complete tasks
+on behalf of you, right? You require that agent has some cell correction capability, right?
+That's probably like. And also, you kind of put all the problems to agent and figure out how you
+want to solve that stuff. And so we're going to have specialization, and it's not agent,
+good at distributing tasks, and sometimes you couldn't complete tasks, and they're going to
+talk together, work together, to complete stuff. And that's how I think, that's what I think
+and I happen. Yeah, this is my view by the way. Yeah, I love that perspective. It really helps
+bring a concrete visualization to my mind of what this may look like. And it, but it does,
+maybe to some people out there, it also triggers some, well, there's obviously challenges,
+right, to get there. I almost, I think about about AI agents every day in my
+day-to-day work, not physical AI, but there's this idea of cascading failure of AI agents, right?
+Which is a sort of idea. Oh, like something small happens over here, but all the agents are
+interacting, and there's this sort of system-wide failure. Maybe, you know, obviously if things are
+interconnected, things can happen, but from your perspective, maybe it's that, maybe it's something
+else. What do you see as the challenges that, you know, you mentioned, we're working towards
+these innovations, right? You, you are working towards these, in video, the industry,
+what are some of the main challenges in your mind from getting kind of from where we're at now
+to something that looks more like that? What are some of the categories of those challenges in your
+in your mind? Yeah, so I see in there a ton. And the, the picture I just gave, you know,
+multiple agent working together completely, like production tasks might be decades away, right? So we
+are not here there. And verify the correctness is super important, right? So like what you said,
+so I envision it gonna be also supervisor agents working the factory floor and trying to capture
+scenes that NIA had been identified, right? And also, you know, building a list of particular
+also requires strong, you know, robots, right? And I know that human-known robots, you know,
+they evolve very fast, but I think they are not yet kind of ready for major commercial use, right? And
+also, you know, to achieve for automation, we need our robot, the smarter, even the robots,
+smarter and more, I would say, more configurable, so that you can have a new task and maybe just read
+the user manual, and the robot, I'm figure out how to assemble these things, right? Those are not yet there.
+So as you know, allow a problem need to figure out, and I think it's difficult for one company to
+do it alone, I think we need a whole ecosystem. And that's why, you know, I think building this
+open model is super important, right? Because you enable more people, the tool to do the
+inspiration, to do innovation, and I think, you know, to achieve that beautiful future,
+the model going to play a critical role. In on that front, I guess, you know, drawing
+somewhat closer to an end here, Nvidia is pushing forward this narrative about open models,
+right? And I'm very personally thankful for that, and you've emphasized that here. How can
+maybe there's software engineers, developers, AI practitioners listening to this podcast,
+how might they even get started in this, in this area, find some of the resources, the open
+resources that Nvidia is putting out there. Any suggestions or tips for people that may want to
+try to start getting into this, this innovation, you know, in terms of a starting point. And of
+course, I'll tell our listeners who will include a bunch of show notes as well in, in our episode
+where you can click and find some of these things, but any thoughts there, Mingyu? Yes. So,
+in the episode, use this opportunity to define, you know, you know, what, what Nvidia, you know,
+what open model mean for media. So, open model is not just have the model, open weight,
+allow you to use. We also provide the training framework so that you can take this open model
+and your own data and put trend to something more tailored for your use case.
+The even open source data that's be created, you know, to help you to use those data in
+you if you want to build your own open model. And we also have examples right, Nvidia is a
+company that work with all the AI companies, and we also work with all the physical AI companies.
+And people are very willing to share some of their, you know, experience or, you know,
+some success use case, you know, and we open put them in the form of the developer,
+broke our own, you know, sample recipe and different places so that people can look at those
+useful examples. And then, and to to start. And now, they are seeing most of people doing research
+using LN. Maybe you can use your favorite agents, allow me to use a Gemini, GPT, or cow.
+As then, to look around and find useful materials and I think in the new world,
+everybody want to measure the materials is easily accessible to those patients, so they can
+better come learn to certain form to educate the human developer. Yeah, so, you know, pretty much,
+we put, you know, open models in hard in phase and all the core resources in GitHub,
+and we have the developer books to talk about how we use this, and in the GitHub, we also have
+a recipe, a coupon to help the developer to learn from how other use, you know, open models.
+And what I say is true for customer, it's also true for Nemo Chuan, for good, and other
+open models, and after that in the media. That's great. And, yeah, from the, you know, just a
+member of the community, the community, thank you, and then, video for the effort that you're
+putting into, it's, it's no small effort to maintain all of those things and all of those places.
+So, it's much appreciated, and this has been a great conversation.
+Mingyu, really appreciate you taking time to walk us through all of these topics, and of course,
+the work that you're doing, and hope to have you back on the show. Thank you so much for your time.
+Thank you. Thank you. Thank you for having me here, and it was a lot of fun.
+All right, that's our show for this week. If you haven't checked out our website,
+head to PracticalAI.fm, and be sure to connect with us on LinkedIn, X, or Blue Sky.
+You'll see us posting insights related to the latest AI developments, and we would love for you to join
+the conversation. Thanks to our partner, prediction guard, for providing operational support for the show.
+Check them out at predictionguard.com. Also, thanks to Breakmaster's cylinder for the beats,
+and to you for listening. That's all for now. But you'll hear from us again next week.

@@ -1,0 +1,1442 @@
+[
+  {
+    "segment_id": "s0001",
+    "start_seconds": 8.66,
+    "end_seconds": 13.66,
+    "text": "Hey everyone, welcome back to the researchers guide to physical AI podcast."
+  },
+  {
+    "segment_id": "s0002",
+    "start_seconds": 13.66,
+    "end_seconds": 19.66,
+    "text": "My name is Shubham, and this is your weekly look at robots, embodied intelligence,"
+  },
+  {
+    "segment_id": "s0003",
+    "start_seconds": 19.66,
+    "end_seconds": 22.66,
+    "text": "and the research behind machines that work in the physical world."
+  },
+  {
+    "segment_id": "s0004",
+    "start_seconds": 22.66,
+    "end_seconds": 28.66,
+    "text": "This week, five of the strongest general purpose AI models were put in charge of robots"
+  },
+  {
+    "segment_id": "s0005",
+    "start_seconds": 28.66,
+    "end_seconds": 33.66,
+    "text": "across 84 tasks and 63 of those tasks weren't solved by any of them."
+  },
+  {
+    "segment_id": "s0006",
+    "start_seconds": 33.66,
+    "end_seconds": 37.66,
+    "text": "One model announced it had finished sweeping some blocks,"
+  },
+  {
+    "segment_id": "s0007",
+    "start_seconds": 37.66,
+    "end_seconds": 41.66,
+    "text": "then spent the rest of its time lifting and lowering an empty arm."
+  },
+  {
+    "segment_id": "s0008",
+    "start_seconds": 41.66,
+    "end_seconds": 46.66,
+    "text": "Meta's research lab published the biggest Japanese world model yet for robots."
+  },
+  {
+    "segment_id": "s0009",
+    "start_seconds": 46.66,
+    "end_seconds": 48.66,
+    "text": "A team led by Zawksyang,"
+  },
+  {
+    "segment_id": "s0010",
+    "start_seconds": 48.66,
+    "end_seconds": 53.66,
+    "text": "Zhang Tata World Model, what failure looks like by inventing the failure's nobody recorded."
+  },
+  {
+    "segment_id": "s0011",
+    "start_seconds": 53.66,
+    "end_seconds": 58.66,
+    "text": "Wemo borrowed $5 billion to chase a million paid rides a week"
+  },
+  {
+    "segment_id": "s0012",
+    "start_seconds": 58.66,
+    "end_seconds": 62.66,
+    "text": "and Boston Dynamics hired the man who ran Amazon's Alexa."
+  },
+  {
+    "segment_id": "s0013",
+    "start_seconds": 62.66,
+    "end_seconds": 71.74,
+    "text": "Robot world is the paper I dread first this week,"
+  },
+  {
+    "segment_id": "s0014",
+    "start_seconds": 71.74,
+    "end_seconds": 74.74,
+    "text": "and it needs one piece of September news to make sense."
+  },
+  {
+    "segment_id": "s0015",
+    "start_seconds": 74.74,
+    "end_seconds": 78.74,
+    "text": "Most of the robot policies on this show are trained for the job."
+  },
+  {
+    "segment_id": "s0016",
+    "start_seconds": 78.74,
+    "end_seconds": 84.74,
+    "text": "A VLA, a vision language action model takes a camera image and an instruction"
+  },
+  {
+    "segment_id": "s0017",
+    "start_seconds": 84.74,
+    "end_seconds": 86.74,
+    "text": "and puts out the next movement of the arm,"
+  },
+  {
+    "segment_id": "s0018",
+    "start_seconds": 86.74,
+    "end_seconds": 90.74,
+    "text": "and it learns that from thousands of hours of robots doing tasks,"
+  },
+  {
+    "segment_id": "s0019",
+    "start_seconds": 90.74,
+    "end_seconds": 95.74,
+    "text": "a general model like the ones behind a chatbot has never seen any of that."
+  },
+  {
+    "segment_id": "s0020",
+    "start_seconds": 95.74,
+    "end_seconds": 102.74,
+    "text": "Then in September, an outside group ran OpenAI's GPT6 Astra as a robot policy"
+  },
+  {
+    "segment_id": "s0021",
+    "start_seconds": 102.74,
+    "end_seconds": 104.74,
+    "text": "with no robot training at all,"
+  },
+  {
+    "segment_id": "s0022",
+    "start_seconds": 104.74,
+    "end_seconds": 110.74,
+    "text": "and it came out above every public robot policy on a simulated two arm benchmark called Robo Dojo,"
+  },
+  {
+    "segment_id": "s0023",
+    "start_seconds": 110.74,
+    "end_seconds": 113.74,
+    "text": "including pi0.5,"
+  },
+  {
+    "segment_id": "s0024",
+    "start_seconds": 113.74,
+    "end_seconds": 117.74,
+    "text": "the policy from physical intelligence that everyone compares against."
+  },
+  {
+    "segment_id": "s0025",
+    "start_seconds": 117.74,
+    "end_seconds": 121.74,
+    "text": "Real world testing was stopped after Astra damaged the hardware,"
+  },
+  {
+    "segment_id": "s0026",
+    "start_seconds": 121.74,
+    "end_seconds": 123.74,
+    "text": "which tells you something too."
+  },
+  {
+    "segment_id": "s0027",
+    "start_seconds": 123.74,
+    "end_seconds": 128.74,
+    "text": "Robot world published on Wednesday by an independent group of researchers,"
+  },
+  {
+    "segment_id": "s0028",
+    "start_seconds": 128.74,
+    "end_seconds": 130.74,
+    "text": "asks the broader question."
+  },
+  {
+    "segment_id": "s0029",
+    "start_seconds": 130.74,
+    "end_seconds": 132.74,
+    "text": "Think about computer use,"
+  },
+  {
+    "segment_id": "s0030",
+    "start_seconds": 132.74,
+    "end_seconds": 135.74,
+    "text": "where a model clicks around a browser for you."
+  },
+  {
+    "segment_id": "s0031",
+    "start_seconds": 135.74,
+    "end_seconds": 136.74,
+    "text": "This is robot use."
+  },
+  {
+    "segment_id": "s0032",
+    "start_seconds": 136.74,
+    "end_seconds": 138.74,
+    "text": "The model gets an instruction,"
+  },
+  {
+    "segment_id": "s0033",
+    "start_seconds": 138.74,
+    "end_seconds": 140.74,
+    "text": "and whatever the robot senses,"
+  },
+  {
+    "segment_id": "s0034",
+    "start_seconds": 140.74,
+    "end_seconds": 142.74,
+    "text": "it writes commands,"
+  },
+  {
+    "segment_id": "s0035",
+    "start_seconds": 142.74,
+    "end_seconds": 143.74,
+    "text": "the robot moves,"
+  },
+  {
+    "segment_id": "s0036",
+    "start_seconds": 143.74,
+    "end_seconds": 146.74,
+    "text": "and a program checks whether the job got done."
+  },
+  {
+    "segment_id": "s0037",
+    "start_seconds": 146.74,
+    "end_seconds": 148.74,
+    "text": "The tasks cover arms,"
+  },
+  {
+    "segment_id": "s0038",
+    "start_seconds": 148.74,
+    "end_seconds": 150.74,
+    "text": "arms on wheeled bases,"
+  },
+  {
+    "segment_id": "s0039",
+    "start_seconds": 150.74,
+    "end_seconds": 152.74,
+    "text": "legs, robots, cars, and drones,"
+  },
+  {
+    "segment_id": "s0040",
+    "start_seconds": 152.74,
+    "end_seconds": 154.74,
+    "text": "and they ran Astra."
+  },
+  {
+    "segment_id": "s0041",
+    "start_seconds": 154.74,
+    "end_seconds": 157.74,
+    "text": "Anthropics Claude Opus 5.5,"
+  },
+  {
+    "segment_id": "s0042",
+    "start_seconds": 157.74,
+    "end_seconds": 159.74,
+    "text": "Kimi K3, Deep Seek,"
+  },
+  {
+    "segment_id": "s0043",
+    "start_seconds": 159.74,
+    "end_seconds": 161.74,
+    "text": "and Gemini once on each."
+  },
+  {
+    "segment_id": "s0044",
+    "start_seconds": 161.74,
+    "end_seconds": 163.74,
+    "text": "Astra came top with 16 tasks."
+  },
+  {
+    "segment_id": "s0045",
+    "start_seconds": 163.74,
+    "end_seconds": 165.74,
+    "text": "Opus 5.5 got 13,"
+  },
+  {
+    "segment_id": "s0046",
+    "start_seconds": 165.74,
+    "end_seconds": 167.74,
+    "text": "and the other three barely registered,"
+  },
+  {
+    "segment_id": "s0047",
+    "start_seconds": 167.74,
+    "end_seconds": 170.74,
+    "text": "63 tasks went unsolved by everyone."
+  },
+  {
+    "segment_id": "s0048",
+    "start_seconds": 170.74,
+    "end_seconds": 173.74,
+    "text": "How they failed is the best part of the paper."
+  },
+  {
+    "segment_id": "s0049",
+    "start_seconds": 173.74,
+    "end_seconds": 175.74,
+    "text": "Take Kimi K3, for example,"
+  },
+  {
+    "segment_id": "s0050",
+    "start_seconds": 175.74,
+    "end_seconds": 178.74,
+    "text": "which was asked to sweep some blocks with an arm."
+  },
+  {
+    "segment_id": "s0051",
+    "start_seconds": 178.74,
+    "end_seconds": 181.74,
+    "text": "Partway through it announced the job was done."
+  },
+  {
+    "segment_id": "s0052",
+    "start_seconds": 181.74,
+    "end_seconds": 183.74,
+    "text": "Then it spent its remaining budget,"
+  },
+  {
+    "segment_id": "s0053",
+    "start_seconds": 183.74,
+    "end_seconds": 185.74,
+    "text": "raising and lowering the empty arm,"
+  },
+  {
+    "segment_id": "s0054",
+    "start_seconds": 185.74,
+    "end_seconds": 186.74,
+    "text": "command after command,"
+  },
+  {
+    "segment_id": "s0055",
+    "start_seconds": 186.74,
+    "end_seconds": 188.74,
+    "text": "and when time ran out,"
+  },
+  {
+    "segment_id": "s0056",
+    "start_seconds": 188.74,
+    "end_seconds": 190.74,
+    "text": "the blocks were still where they started."
+  },
+  {
+    "segment_id": "s0057",
+    "start_seconds": 190.74,
+    "end_seconds": 193.74,
+    "text": "Deep Seek on a task that meant driving a robot over to a stove."
+  },
+  {
+    "segment_id": "s0058",
+    "start_seconds": 193.74,
+    "end_seconds": 196.74,
+    "text": "Decided early that no more motion was needed,"
+  },
+  {
+    "segment_id": "s0059",
+    "start_seconds": 196.74,
+    "end_seconds": 200.74,
+    "text": "and then sat there sending a speed of zero for over 100 steps."
+  },
+  {
+    "segment_id": "s0060",
+    "start_seconds": 200.74,
+    "end_seconds": 203.74,
+    "text": "The authors, summary is one line."
+  },
+  {
+    "segment_id": "s0061",
+    "start_seconds": 203.74,
+    "end_seconds": 205.74,
+    "text": "Motion is not task progress."
+  },
+  {
+    "segment_id": "s0062",
+    "start_seconds": 206.74,
+    "end_seconds": 210.74,
+    "text": "These models are confidently reporting work they haven't done,"
+  },
+  {
+    "segment_id": "s0063",
+    "start_seconds": 210.74,
+    "end_seconds": 214.74,
+    "text": "which is a strange thing to watch a machine do with its own body."
+  },
+  {
+    "segment_id": "s0064",
+    "start_seconds": 214.74,
+    "end_seconds": 218.74,
+    "text": "The two leaders aren't good at the same things either."
+  },
+  {
+    "segment_id": "s0065",
+    "start_seconds": 218.74,
+    "end_seconds": 221.74,
+    "text": "Astra solved none of the leg robot tasks."
+  },
+  {
+    "segment_id": "s0066",
+    "start_seconds": 221.74,
+    "end_seconds": 225.74,
+    "text": "Opus 5.5 solved none of the mobile manipulation tasks,"
+  },
+  {
+    "segment_id": "s0067",
+    "start_seconds": 225.74,
+    "end_seconds": 227.74,
+    "text": "and three of the four drone tasks."
+  },
+  {
+    "segment_id": "s0068",
+    "start_seconds": 227.74,
+    "end_seconds": 230.74,
+    "text": "They share only eight successes,"
+  },
+  {
+    "segment_id": "s0069",
+    "start_seconds": 230.74,
+    "end_seconds": 233.74,
+    "text": "so ranking one above the other with a single score,"
+  },
+  {
+    "segment_id": "s0070",
+    "start_seconds": 233.74,
+    "end_seconds": 234.74,
+    "text": "hides more than it shows."
+  },
+  {
+    "segment_id": "s0071",
+    "start_seconds": 234.74,
+    "end_seconds": 236.74,
+    "text": "There are two cautions here."
+  },
+  {
+    "segment_id": "s0072",
+    "start_seconds": 236.74,
+    "end_seconds": 238.74,
+    "text": "Each model ran once per task,"
+  },
+  {
+    "segment_id": "s0073",
+    "start_seconds": 238.74,
+    "end_seconds": 240.74,
+    "text": "so luck moves the scores a lot,"
+  },
+  {
+    "segment_id": "s0074",
+    "start_seconds": 240.74,
+    "end_seconds": 242.74,
+    "text": "and there's no human baseline."
+  },
+  {
+    "segment_id": "s0075",
+    "start_seconds": 242.74,
+    "end_seconds": 243.74,
+    "text": "But no lab commissioned this,"
+  },
+  {
+    "segment_id": "s0076",
+    "start_seconds": 243.74,
+    "end_seconds": 246.74,
+    "text": "and I think it's the clearest picture I've seen"
+  },
+  {
+    "segment_id": "s0077",
+    "start_seconds": 246.74,
+    "end_seconds": 249.74,
+    "text": "of where general models really stand on robots."
+  },
+  {
+    "segment_id": "s0078",
+    "start_seconds": 249.74,
+    "end_seconds": 251.74,
+    "text": "The people who built the fields best known robots"
+  },
+  {
+    "segment_id": "s0079",
+    "start_seconds": 251.74,
+    "end_seconds": 254.74,
+    "text": "said much the same thing in public this week."
+  },
+  {
+    "segment_id": "s0080",
+    "start_seconds": 254.74,
+    "end_seconds": 257.74,
+    "text": "Mark Raybert, who founded Boston Dynamics,"
+  },
+  {
+    "segment_id": "s0081",
+    "start_seconds": 257.74,
+    "end_seconds": 261.74,
+    "text": "told MIT Technology Review that people get very excited"
+  },
+  {
+    "segment_id": "s0082",
+    "start_seconds": 261.74,
+    "end_seconds": 264.74,
+    "text": "when a result goes from 50% success to 70,"
+  },
+  {
+    "segment_id": "s0083",
+    "start_seconds": 264.74,
+    "end_seconds": 268.74,
+    "text": "but 70% success is like it doesn't work."
+  },
+  {
+    "segment_id": "s0084",
+    "start_seconds": 268.74,
+    "end_seconds": 271.74,
+    "text": "Jonathan Hurst, who co-founded Agility Robotics,"
+  },
+  {
+    "segment_id": "s0085",
+    "start_seconds": 271.74,
+    "end_seconds": 275.74,
+    "text": "the company behind the digit humanoid went further."
+  },
+  {
+    "segment_id": "s0086",
+    "start_seconds": 275.74,
+    "end_seconds": 278.74,
+    "text": "He called the idea that more data will make robots"
+  },
+  {
+    "segment_id": "s0087",
+    "start_seconds": 278.74,
+    "end_seconds": 281.74,
+    "text": "general fundamentally flawed premise,"
+  },
+  {
+    "segment_id": "s0088",
+    "start_seconds": 281.74,
+    "end_seconds": 285.74,
+    "text": "and he thinks useful work in the home is about 10 years out."
+  },
+  {
+    "segment_id": "s0089",
+    "start_seconds": 285.74,
+    "end_seconds": 289.74,
+    "text": "That's the co-founder of a company that filed last month"
+  },
+  {
+    "segment_id": "s0090",
+    "start_seconds": 289.74,
+    "end_seconds": 293.74,
+    "text": "to go public on the promise of humanoids at work,"
+  },
+  {
+    "segment_id": "s0091",
+    "start_seconds": 293.74,
+    "end_seconds": 295.74,
+    "text": "and I think you have to take him seriously,"
+  },
+  {
+    "segment_id": "s0092",
+    "start_seconds": 295.74,
+    "end_seconds": 299.74,
+    "text": "because he knows exactly what his robots can and can do yet."
+  },
+  {
+    "segment_id": "s0093",
+    "start_seconds": 299.74,
+    "end_seconds": 302.74,
+    "text": "Jan Lekund's answer to that kind of doubt"
+  },
+  {
+    "segment_id": "s0094",
+    "start_seconds": 302.74,
+    "end_seconds": 304.74,
+    "text": "has long been a different sort of world model,"
+  },
+  {
+    "segment_id": "s0095",
+    "start_seconds": 304.74,
+    "end_seconds": 307.74,
+    "text": "and on the same day as robot world,"
+  },
+  {
+    "segment_id": "s0096",
+    "start_seconds": 307.74,
+    "end_seconds": 311.74,
+    "text": "met as research lab, fair, working with Stanford and Mela,"
+  },
+  {
+    "segment_id": "s0097",
+    "start_seconds": 311.74,
+    "end_seconds": 313.74,
+    "text": "published the biggest one yet."
+  },
+  {
+    "segment_id": "s0098",
+    "start_seconds": 313.74,
+    "end_seconds": 315.74,
+    "text": "It's called Robojapa,"
+  },
+  {
+    "segment_id": "s0099",
+    "start_seconds": 315.74,
+    "end_seconds": 318.74,
+    "text": "and it's the most interesting world model paper I've read in a while."
+  },
+  {
+    "segment_id": "s0100",
+    "start_seconds": 318.74,
+    "end_seconds": 322.74,
+    "text": "Jepa is short for joint embedding predictive architecture."
+  },
+  {
+    "segment_id": "s0101",
+    "start_seconds": 322.74,
+    "end_seconds": 325.74,
+    "text": "If you've seen a world model demo,"
+  },
+  {
+    "segment_id": "s0102",
+    "start_seconds": 325.74,
+    "end_seconds": 328.74,
+    "text": "it probably drew the future frame by frame,"
+  },
+  {
+    "segment_id": "s0103",
+    "start_seconds": 328.74,
+    "end_seconds": 329.74,
+    "text": "like a video generator."
+  },
+  {
+    "segment_id": "s0104",
+    "start_seconds": 329.74,
+    "end_seconds": 331.74,
+    "text": "Jepa never draws anything."
+  },
+  {
+    "segment_id": "s0105",
+    "start_seconds": 331.74,
+    "end_seconds": 334.74,
+    "text": "A frozen image encoder turns each camera frame"
+  },
+  {
+    "segment_id": "s0106",
+    "start_seconds": 334.74,
+    "end_seconds": 337.74,
+    "text": "into a compact summary of what's in the scene,"
+  },
+  {
+    "segment_id": "s0107",
+    "start_seconds": 337.74,
+    "end_seconds": 339.74,
+    "text": "and a second network learns to predict"
+  },
+  {
+    "segment_id": "s0108",
+    "start_seconds": 339.74,
+    "end_seconds": 343.74,
+    "text": "how that summary changes when the robot takes an action."
+  },
+  {
+    "segment_id": "s0109",
+    "start_seconds": 343.74,
+    "end_seconds": 346.74,
+    "text": "To act, the robot imagines lots of candidate actions,"
+  },
+  {
+    "segment_id": "s0110",
+    "start_seconds": 346.74,
+    "end_seconds": 348.74,
+    "text": "predicts where each one leads,"
+  },
+  {
+    "segment_id": "s0111",
+    "start_seconds": 348.74,
+    "end_seconds": 352.74,
+    "text": "and picks the one that ends up closest to a photo of the goal."
+  },
+  {
+    "segment_id": "s0112",
+    "start_seconds": 352.74,
+    "end_seconds": 354.74,
+    "text": "The model has 8 billion parameters"
+  },
+  {
+    "segment_id": "s0113",
+    "start_seconds": 354.74,
+    "end_seconds": 357.74,
+    "text": "and was trained on video from 12 kinds of robot,"
+  },
+  {
+    "segment_id": "s0114",
+    "start_seconds": 357.74,
+    "end_seconds": 359.74,
+    "text": "and they've released the weights and the code."
+  },
+  {
+    "segment_id": "s0115",
+    "start_seconds": 359.74,
+    "end_seconds": 362.74,
+    "text": "The part I'd point at is the scaling law."
+  },
+  {
+    "segment_id": "s0116",
+    "start_seconds": 362.74,
+    "end_seconds": 365.74,
+    "text": "They fitted a curve on the smaller models,"
+  },
+  {
+    "segment_id": "s0117",
+    "start_seconds": 365.74,
+    "end_seconds": 369.74,
+    "text": "and it predicted how the 4 and 8 billion versions would do,"
+  },
+  {
+    "segment_id": "s0118",
+    "start_seconds": 369.74,
+    "end_seconds": 371.74,
+    "text": "which makes it a claim anyone can check."
+  },
+  {
+    "segment_id": "s0119",
+    "start_seconds": 371.74,
+    "end_seconds": 372.74,
+    "text": "On a real franca arm,"
+  },
+  {
+    "segment_id": "s0120",
+    "start_seconds": 372.74,
+    "end_seconds": 376.74,
+    "text": "it grasped objects far more often than pi0.5,"
+  },
+  {
+    "segment_id": "s0121",
+    "start_seconds": 376.74,
+    "end_seconds": 379.74,
+    "text": "though it did worse at full pick and place,"
+  },
+  {
+    "segment_id": "s0122",
+    "start_seconds": 379.74,
+    "end_seconds": 383.74,
+    "text": "and the authors say plainly those comparisons aren't like for like."
+  },
+  {
+    "segment_id": "s0123",
+    "start_seconds": 383.74,
+    "end_seconds": 386.74,
+    "text": "Last week, I said a comparison from LeapLab at Singhua"
+  },
+  {
+    "segment_id": "s0124",
+    "start_seconds": 386.74,
+    "end_seconds": 390.74,
+    "text": "had settled the argument against this kind of latent world model,"
+  },
+  {
+    "segment_id": "s0125",
+    "start_seconds": 390.74,
+    "end_seconds": 392.74,
+    "text": "and that was too strong."
+  },
+  {
+    "segment_id": "s0126",
+    "start_seconds": 392.74,
+    "end_seconds": 394.74,
+    "text": "LeapLab tested policies,"
+  },
+  {
+    "segment_id": "s0127",
+    "start_seconds": 394.74,
+    "end_seconds": 397.74,
+    "text": "learning a new task from video with no actions attached."
+  },
+  {
+    "segment_id": "s0128",
+    "start_seconds": 397.74,
+    "end_seconds": 400.74,
+    "text": "RoboJepa plans toward a goal image"
+  },
+  {
+    "segment_id": "s0129",
+    "start_seconds": 400.74,
+    "end_seconds": 402.74,
+    "text": "and never claims that ability."
+  },
+  {
+    "segment_id": "s0130",
+    "start_seconds": 402.74,
+    "end_seconds": 406.74,
+    "text": "Both results stand and the argument is open again."
+  },
+  {
+    "segment_id": "s0131",
+    "start_seconds": 406.74,
+    "end_seconds": 410.74,
+    "text": "The author's own limitation is the line I'd underline."
+  },
+  {
+    "segment_id": "s0132",
+    "start_seconds": 410.74,
+    "end_seconds": 412.74,
+    "text": "Their curve says they're already close to the floor"
+  },
+  {
+    "segment_id": "s0133",
+    "start_seconds": 412.74,
+    "end_seconds": 415.74,
+    "text": "on all the public robot data that exists,"
+  },
+  {
+    "segment_id": "s0134",
+    "start_seconds": 415.74,
+    "end_seconds": 418.74,
+    "text": "so they expect more variety in what robots do"
+  },
+  {
+    "segment_id": "s0135",
+    "start_seconds": 418.74,
+    "end_seconds": 420.74,
+    "text": "to matter more than more parameters."
+  },
+  {
+    "segment_id": "s0136",
+    "start_seconds": 420.74,
+    "end_seconds": 423.74,
+    "text": "Robot data sets have a quieter problem,"
+  },
+  {
+    "segment_id": "s0137",
+    "start_seconds": 423.74,
+    "end_seconds": 426.74,
+    "text": "which is that almost nobody records failures."
+  },
+  {
+    "segment_id": "s0138",
+    "start_seconds": 426.74,
+    "end_seconds": 429.74,
+    "text": "Labs keep the runs where the robot succeeded,"
+  },
+  {
+    "segment_id": "s0139",
+    "start_seconds": 429.74,
+    "end_seconds": 431.74,
+    "text": "and if you train a world model on those,"
+  },
+  {
+    "segment_id": "s0140",
+    "start_seconds": 431.74,
+    "end_seconds": 433.74,
+    "text": "it learns that things usually go right."
+  },
+  {
+    "segment_id": "s0141",
+    "start_seconds": 433.74,
+    "end_seconds": 437.74,
+    "text": "A group led by Zawaxiang Zhang published"
+  },
+  {
+    "segment_id": "s0142",
+    "start_seconds": 437.74,
+    "end_seconds": 440.74,
+    "text": "Dream True this week, a world model built to fix that."
+  },
+  {
+    "segment_id": "s0143",
+    "start_seconds": 440.74,
+    "end_seconds": 443.74,
+    "text": "Their method is called counterfactual post training."
+  },
+  {
+    "segment_id": "s0144",
+    "start_seconds": 443.74,
+    "end_seconds": 447.74,
+    "text": "They take recorded robot runs and edit the actions,"
+  },
+  {
+    "segment_id": "s0145",
+    "start_seconds": 447.74,
+    "end_seconds": 449.74,
+    "text": "so the model has to predict what would have happened"
+  },
+  {
+    "segment_id": "s0146",
+    "start_seconds": 449.74,
+    "end_seconds": 451.74,
+    "text": "if the arm had moved differently,"
+  },
+  {
+    "segment_id": "s0147",
+    "start_seconds": 451.74,
+    "end_seconds": 456.74,
+    "text": "including the grasps that slip and the objects that get knocked over."
+  },
+  {
+    "segment_id": "s0148",
+    "start_seconds": 456.74,
+    "end_seconds": 459.74,
+    "text": "Then people went through generated videos and marked"
+  },
+  {
+    "segment_id": "s0149",
+    "start_seconds": 459.74,
+    "end_seconds": 461.74,
+    "text": "what was physically wrong in them,"
+  },
+  {
+    "segment_id": "s0150",
+    "start_seconds": 461.74,
+    "end_seconds": 463.74,
+    "text": "and that trained a second model that scores"
+  },
+  {
+    "segment_id": "s0151",
+    "start_seconds": 463.74,
+    "end_seconds": 465.74,
+    "text": "how believable a prediction is."
+  },
+  {
+    "segment_id": "s0152",
+    "start_seconds": 465.74,
+    "end_seconds": 468.74,
+    "text": "The world model gets trained against that score."
+  },
+  {
+    "segment_id": "s0153",
+    "start_seconds": 468.74,
+    "end_seconds": 471.74,
+    "text": "The number that stuck with me is the starting point."
+  },
+  {
+    "segment_id": "s0154",
+    "start_seconds": 471.74,
+    "end_seconds": 473.74,
+    "text": "Before this work,"
+  },
+  {
+    "segment_id": "s0155",
+    "start_seconds": 473.74,
+    "end_seconds": 476.74,
+    "text": "people judged that close to half of the predicted interactions"
+  },
+  {
+    "segment_id": "s0156",
+    "start_seconds": 476.74,
+    "end_seconds": 479.74,
+    "text": "had something physically wrong in them."
+  },
+  {
+    "segment_id": "s0157",
+    "start_seconds": 479.74,
+    "end_seconds": 482.74,
+    "text": "Afterwards, it was about 1 in 16,"
+  },
+  {
+    "segment_id": "s0158",
+    "start_seconds": 482.74,
+    "end_seconds": 485.74,
+    "text": "and it took first place in the world model track"
+  },
+  {
+    "segment_id": "s0159",
+    "start_seconds": 485.74,
+    "end_seconds": 488.74,
+    "text": "of this year's Agabot World Challenge."
+  },
+  {
+    "segment_id": "s0160",
+    "start_seconds": 488.74,
+    "end_seconds": 491.74,
+    "text": "If you want a robot to learn from imagined practice,"
+  },
+  {
+    "segment_id": "s0161",
+    "start_seconds": 491.74,
+    "end_seconds": 494.74,
+    "text": "the imagination has to include dropping things."
+  },
+  {
+    "segment_id": "s0162",
+    "start_seconds": 494.74,
+    "end_seconds": 496.74,
+    "text": "Weemo doesn't have to imagine its practice,"
+  },
+  {
+    "segment_id": "s0163",
+    "start_seconds": 496.74,
+    "end_seconds": 498.74,
+    "text": "because it has a fleet on real roads,"
+  },
+  {
+    "segment_id": "s0164",
+    "start_seconds": 498.74,
+    "end_seconds": 501.74,
+    "text": "and this week it raised $5 billion for it"
+  },
+  {
+    "segment_id": "s0165",
+    "start_seconds": 501.74,
+    "end_seconds": 504.74,
+    "text": "as a loan from Blackstone, Pimco and sixth street"
+  },
+  {
+    "segment_id": "s0166",
+    "start_seconds": 504.74,
+    "end_seconds": 507.74,
+    "text": "to expand into new American cities and into Europe and Japan."
+  },
+  {
+    "segment_id": "s0167",
+    "start_seconds": 507.74,
+    "end_seconds": 511.74,
+    "text": "I mean, alphabet it's parent could have paid for that itself."
+  },
+  {
+    "segment_id": "s0168",
+    "start_seconds": 511.74,
+    "end_seconds": 513.74,
+    "text": "So borrowing tells you weemo is being financed"
+  },
+  {
+    "segment_id": "s0169",
+    "start_seconds": 514.74,
+    "end_seconds": 516.74,
+    "text": "as a business in its own right now."
+  },
+  {
+    "segment_id": "s0170",
+    "start_seconds": 516.74,
+    "end_seconds": 518.74,
+    "text": "What I find more useful is a date."
+  },
+  {
+    "segment_id": "s0171",
+    "start_seconds": 518.74,
+    "end_seconds": 520.74,
+    "text": "Reporting on the loan sites,"
+  },
+  {
+    "segment_id": "s0172",
+    "start_seconds": 520.74,
+    "end_seconds": 522.74,
+    "text": "a Weemo target of a million paid rides a week"
+  },
+  {
+    "segment_id": "s0173",
+    "start_seconds": 522.74,
+    "end_seconds": 525.74,
+    "text": "by the end of this year, which is under 12 weeks away."
+  },
+  {
+    "segment_id": "s0174",
+    "start_seconds": 525.74,
+    "end_seconds": 527.74,
+    "text": "That's the number we can check in January."
+  },
+  {
+    "segment_id": "s0175",
+    "start_seconds": 527.74,
+    "end_seconds": 529.74,
+    "text": "What Weemo still hasn't published is what"
+  },
+  {
+    "segment_id": "s0176",
+    "start_seconds": 529.74,
+    "end_seconds": 531.74,
+    "text": "a ride cost it to run per mile,"
+  },
+  {
+    "segment_id": "s0177",
+    "start_seconds": 531.74,
+    "end_seconds": 532.74,
+    "text": "and until it does,"
+  },
+  {
+    "segment_id": "s0178",
+    "start_seconds": 532.74,
+    "end_seconds": 536.74,
+    "text": "nobody outside can say whether a million rides a week makes money."
+  },
+  {
+    "segment_id": "s0179",
+    "start_seconds": 536.74,
+    "end_seconds": 540.74,
+    "text": "Boston Dynamics is a long way from that kind of scale,"
+  },
+  {
+    "segment_id": "s0180",
+    "start_seconds": 540.74,
+    "end_seconds": 542.74,
+    "text": "and on Tuesday it named a new chief executive."
+  },
+  {
+    "segment_id": "s0181",
+    "start_seconds": 542.74,
+    "end_seconds": 545.74,
+    "text": "Rohit Prasad, who spent 12 years at Amazon"
+  },
+  {
+    "segment_id": "s0182",
+    "start_seconds": 545.74,
+    "end_seconds": 550.74,
+    "text": "and most recently ran Alexa and its artificial general intelligence group,"
+  },
+  {
+    "segment_id": "s0183",
+    "start_seconds": 550.74,
+    "end_seconds": 552.74,
+    "text": "where he led the Nova family of models."
+  },
+  {
+    "segment_id": "s0184",
+    "start_seconds": 552.74,
+    "end_seconds": 555.74,
+    "text": "The seat had been empty since February."
+  },
+  {
+    "segment_id": "s0185",
+    "start_seconds": 555.74,
+    "end_seconds": 558.74,
+    "text": "Nobody has reported why the previous chief executive"
+  },
+  {
+    "segment_id": "s0186",
+    "start_seconds": 558.74,
+    "end_seconds": 560.74,
+    "text": "Robert Plater left,"
+  },
+  {
+    "segment_id": "s0187",
+    "start_seconds": 560.74,
+    "end_seconds": 562.74,
+    "text": "or why the search took nine months."
+  },
+  {
+    "segment_id": "s0188",
+    "start_seconds": 562.74,
+    "end_seconds": 564.74,
+    "text": "I think what the higher tells you is"
+  },
+  {
+    "segment_id": "s0189",
+    "start_seconds": 564.74,
+    "end_seconds": 567.74,
+    "text": "where Hyundai, which owns the company,"
+  },
+  {
+    "segment_id": "s0190",
+    "start_seconds": 567.74,
+    "end_seconds": 569.74,
+    "text": "thinks the hard part is now,"
+  },
+  {
+    "segment_id": "s0191",
+    "start_seconds": 569.74,
+    "end_seconds": 571.74,
+    "text": "it picked a model person,"
+  },
+  {
+    "segment_id": "s0192",
+    "start_seconds": 571.74,
+    "end_seconds": 573.74,
+    "text": "not a robot person."
+  },
+  {
+    "segment_id": "s0193",
+    "start_seconds": 573.74,
+    "end_seconds": 576.74,
+    "text": "That's the opposite bet to the one its own founder was making"
+  },
+  {
+    "segment_id": "s0194",
+    "start_seconds": 576.74,
+    "end_seconds": 579.74,
+    "text": "in MIT technology review the same week,"
+  },
+  {
+    "segment_id": "s0195",
+    "start_seconds": 579.74,
+    "end_seconds": 581.74,
+    "text": "and at least the company's humanoid"
+  },
+  {
+    "segment_id": "s0196",
+    "start_seconds": 581.74,
+    "end_seconds": 584.74,
+    "text": "is where we'll find out which of them is right."
+  },
+  {
+    "segment_id": "s0197",
+    "start_seconds": 584.74,
+    "end_seconds": 587.74,
+    "text": "Some smaller things happen this week as well,"
+  },
+  {
+    "segment_id": "s0198",
+    "start_seconds": 587.74,
+    "end_seconds": 592.74,
+    "text": "firmus and Nvidia backed Australian data center company,"
+  },
+  {
+    "segment_id": "s0199",
+    "start_seconds": 592.74,
+    "end_seconds": 594.74,
+    "text": "pulled its stock market listing,"
+  },
+  {
+    "segment_id": "s0200",
+    "start_seconds": 594.74,
+    "end_seconds": 596.74,
+    "text": "because investors wouldn't pay its price."
+  },
+  {
+    "segment_id": "s0201",
+    "start_seconds": 596.74,
+    "end_seconds": 600.74,
+    "text": "AWS released an open source tool chain for robot developers,"
+  },
+  {
+    "segment_id": "s0202",
+    "start_seconds": 600.74,
+    "end_seconds": 603.74,
+    "text": "and the simulator and the robot policy"
+  },
+  {
+    "segment_id": "s0203",
+    "start_seconds": 603.74,
+    "end_seconds": 605.74,
+    "text": "inside it are both in videos."
+  },
+  {
+    "segment_id": "s0204",
+    "start_seconds": 605.74,
+    "end_seconds": 608.74,
+    "text": "Mecha AI raised around led by Sequoia"
+  },
+  {
+    "segment_id": "s0205",
+    "start_seconds": 608.74,
+    "end_seconds": 611.74,
+    "text": "to pay people to record everyday chores"
+  },
+  {
+    "segment_id": "s0206",
+    "start_seconds": 611.74,
+    "end_seconds": 613.74,
+    "text": "while wearing body sensors,"
+  },
+  {
+    "segment_id": "s0207",
+    "start_seconds": 613.74,
+    "end_seconds": 615.74,
+    "text": "which is data for training robots."
+  },
+  {
+    "segment_id": "s0208",
+    "start_seconds": 615.74,
+    "end_seconds": 618.74,
+    "text": "And for the humanoid count I quoted last week,"
+  },
+  {
+    "segment_id": "s0209",
+    "start_seconds": 618.74,
+    "end_seconds": 621.74,
+    "text": "IDC's figure for the first half of the year"
+  },
+  {
+    "segment_id": "s0210",
+    "start_seconds": 621.74,
+    "end_seconds": 624.74,
+    "text": "about 25,000 is the one to use."
+  },
+  {
+    "segment_id": "s0211",
+    "start_seconds": 624.74,
+    "end_seconds": 627.74,
+    "text": "That's a lot of robots failing for one week."
+  },
+  {
+    "segment_id": "s0212",
+    "start_seconds": 627.74,
+    "end_seconds": 629.74,
+    "text": "So here it is again in short."
+  },
+  {
+    "segment_id": "s0213",
+    "start_seconds": 629.74,
+    "end_seconds": 633.74,
+    "text": "The robot world put five frontier models in charge of robots,"
+  },
+  {
+    "segment_id": "s0214",
+    "start_seconds": 633.74,
+    "end_seconds": 637.74,
+    "text": "and they left 63 of 84 tasks unsolved."
+  },
+  {
+    "segment_id": "s0215",
+    "start_seconds": 637.74,
+    "end_seconds": 640.74,
+    "text": "Sometimes announcing a job was done when it wasn't."
+  },
+  {
+    "segment_id": "s0216",
+    "start_seconds": 640.74,
+    "end_seconds": 642.74,
+    "text": "Mark Raybert and Jonathan Hurst,"
+  },
+  {
+    "segment_id": "s0217",
+    "start_seconds": 642.74,
+    "end_seconds": 645.74,
+    "text": "who built Boston Dynamics and agility,"
+  },
+  {
+    "segment_id": "s0218",
+    "start_seconds": 645.74,
+    "end_seconds": 648.74,
+    "text": "both said in public that today's success rates"
+  },
+  {
+    "segment_id": "s0219",
+    "start_seconds": 648.74,
+    "end_seconds": 650.74,
+    "text": "aren't close to good enough."
+  },
+  {
+    "segment_id": "s0220",
+    "start_seconds": 650.74,
+    "end_seconds": 652.74,
+    "text": "Robo Jeppa scaled a world model"
+  },
+  {
+    "segment_id": "s0221",
+    "start_seconds": 652.74,
+    "end_seconds": 655.74,
+    "text": "that never draws a picture to 8 billion parameters"
+  },
+  {
+    "segment_id": "s0222",
+    "start_seconds": 655.74,
+    "end_seconds": 658.74,
+    "text": "with a scaling law anyone can check"
+  },
+  {
+    "segment_id": "s0223",
+    "start_seconds": 658.74,
+    "end_seconds": 661.74,
+    "text": "and re-opened an argument I'd called closed."
+  },
+  {
+    "segment_id": "s0224",
+    "start_seconds": 661.74,
+    "end_seconds": 664.74,
+    "text": "Dream true trained a world model on failures it invented"
+  },
+  {
+    "segment_id": "s0225",
+    "start_seconds": 664.74,
+    "end_seconds": 667.74,
+    "text": "and cut its physically impossible predictions"
+  },
+  {
+    "segment_id": "s0226",
+    "start_seconds": 667.74,
+    "end_seconds": 670.74,
+    "text": "from about half to about one in 16."
+  },
+  {
+    "segment_id": "s0227",
+    "start_seconds": 670.74,
+    "end_seconds": 672.74,
+    "text": "Wemo borrowed five billion dollars"
+  },
+  {
+    "segment_id": "s0228",
+    "start_seconds": 672.74,
+    "end_seconds": 674.74,
+    "text": "and gave itself until the end of the year"
+  },
+  {
+    "segment_id": "s0229",
+    "start_seconds": 674.74,
+    "end_seconds": 676.74,
+    "text": "to reach a million paid rides a week."
+  },
+  {
+    "segment_id": "s0230",
+    "start_seconds": 676.74,
+    "end_seconds": 678.74,
+    "text": "And Boston Dynamics handed the company"
+  },
+  {
+    "segment_id": "s0231",
+    "start_seconds": 678.74,
+    "end_seconds": 681.74,
+    "text": "to a foundation model executive from Amazon."
+  },
+  {
+    "segment_id": "s0232",
+    "start_seconds": 681.74,
+    "end_seconds": 684.74,
+    "text": "Nobody has yet put Astra and Opus"
+  },
+  {
+    "segment_id": "s0233",
+    "start_seconds": 684.74,
+    "end_seconds": 686.74,
+    "text": "5.5 on the same robot."
+  },
+  {
+    "segment_id": "s0234",
+    "start_seconds": 686.74,
+    "end_seconds": 689.74,
+    "text": "One covering for the other to see whether"
+  },
+  {
+    "segment_id": "s0235",
+    "start_seconds": 689.74,
+    "end_seconds": 692.74,
+    "text": "two models that fail at different things fail less together."
+  },
+  {
+    "segment_id": "s0236",
+    "start_seconds": 692.74,
+    "end_seconds": 695.74,
+    "text": "That's an experiment I'd love somebody to run."
+  },
+  {
+    "segment_id": "s0237",
+    "start_seconds": 695.74,
+    "end_seconds": 698.74,
+    "text": "Thanks for listening, the papers, the numbers"
+  },
+  {
+    "segment_id": "s0238",
+    "start_seconds": 698.74,
+    "end_seconds": 700.74,
+    "text": "and the links are all in the written deep dive"
+  },
+  {
+    "segment_id": "s0239",
+    "start_seconds": 700.74,
+    "end_seconds": 703.74,
+    "text": "and you'll find it at physicalaiportcast.co."
+  },
+  {
+    "segment_id": "s0240",
+    "start_seconds": 703.74,
+    "end_seconds": 705.74,
+    "text": "See you next week."
+  }
+]

@@ -1,0 +1,151 @@
+09/30/2026
+Blog
+,
+Evaluating Onshape
+,
+Artificial Intelligence
+,
+Custom Features
+5 Ways Teams Can Leverage the Onshape FeatureScript MCP Server
+The Onshape Team
+READ TIME:
+11:44
+Summary
+Onshape Labs’ FeatureScript MCP Server connects LLMs to Onshape, enabling teams to generate custom features from natural language requests.
+Consolidate complex existing models into reusable, shareable components while preserving parametric design intent and manufacturing accuracy.
+AI in CAD
+won’t remove engineering decisions, the creativity, nor the expertise required to build great products.
+What it is doing is removing some of the most frustrating and tedious parts of product development, while creating CAD workflows tailor-made to teams, feature customizations that speed up iteration, and uncovering optimizations quicker than ever before.
+Enabling this breakthrough is the
+FeatureScript MCP Server
+by
+Onshape Labs
+. The server connects
+Onshape
+, PTC’s cloud-native CAD and PDM platform, to large language models (LLMs) such as Claude, Microsoft Copilot, Gemini, and Perplexity, enabling engineers and designers to describe what they want in plain language and have AI help create, test, debug, and refine custom CAD functionality.
+The FeatureScript MCP Server enables engineers who aren’t as familiar with coding
+custom features
+to create the tools they need. It also speeds up tool development for coding experts.
+Connect to FeatureScript MCP Server
+Already being put into practice, take a look at five ways the FeatureScript MCP Server can enable better product development through a text-to-code-to-CAD workflow.
+Use Cases: FeatureScript MCP Server
+The scope is vast and the possibilities numerous. To start, here are five use cases:
+Build Geometry With Standards Encoded
+Engineering teams can spend hours recreating the same specialized component over and over again, be it a standards-based thread, catalog-driven part, or company-specific design features.
+With the FeatureScript MCP Server, teams can describe the intent and associated requirements in natural language to generate a fully parametric custom feature that becomes part of a team’s Onshape toolset.
+Take, for instance, an engineer describes a garden hose thread that’s built to ASME V1.20.7 standards. The LLM will build out the FeatureScript code for an Onshape custom feature. Or perhaps the engineer wants a roller chain sprocket generator pulling from online catalogs with configurable strand counts and automatic manufacturing annotations.
+These are real features – not macros or one-off scripts – that can be configured, edited, patterned, and shared. They’re able to carry requirements from an LLM request into Onshape to show
+model-based definition (MBD)
+annotations.
+The tedium of rebuilding component specifications vanishes, and iteration happens through simple parameter adjustments rather than feature recreation.
+Create Reusable Feature Components
+Those familiar with using FeatureScript know that custom feature development reveals recurring patterns. Color maps, material lookups, geometric calculations, and utility functions often get rebuilt from scratch, creating extra work and inconsistencies between projects.
+So, instead of rebuilding these utilities each time, ask the LLM to generate reusable function libraries that solve these cross-cutting concerns. The MCP server intelligently inserts these libraries into the Feature Studio so subsequent features reference them by name.
+For example, a color spectrum library with switchable gradients, utilities for material property retrieval and dimensional lookups, or spatial query functions can all accumulate into a personal toolkit that grows more valuable with each project.
+Develop Sophisticated Features for Specialized Workflows
+Bridge the gap between what’s needed in an engineering workflow and what a CAD system offers out-of-the box.
+For instance, building a blend corner feature that takes intersecting fillets and creates smooth transitions between them, rather than sharp corners. Or developing a niche feature specific to the company standards and designs. These capabilities encode domain expertise directly into the CAD system rather than living as workarounds or external processes.
+LLMs excel at algorithm development, so they can optimize for performance, quality, robustness, or readability based on requirements, so specialized workflows stop being painful and become embedded in the design process.
+Wrangle Code through Featurization
+Complex geometry and custom feature code accumulate over the years. Simplifying and refactoring into one custom feature is now possible through LLM-driven FeatureScripting.
+In this case, a piston model refined through meticulous reverse-engineering contains 60 features, parametric expressions, and decades of engineering intent encoded across thousands of lines of code.
+That existing work doesn’t need to be abandoned but can be compressed and optimized. Just feed the LLM the code and ask it to consolidate those 60 features into a single parametric feature.
+Then it can be used and shared with all native feature operations working seamlessly. Or extract just the useful pieces by grabbing a few features from a larger model, then ask the LLM to turn them into a standalone reusable feature. Now, monolithic models can become modular and shareable.
+Advanced Features with Integrated Analysis
+Some design decisions require analysis, simulation, standards checks, and calculations before you can move forward. Think thermal analysis, structural simulation, standards compliance checking, system-level optimization.
+Instead of jumping between CAD, spreadsheets, reference materials, and specialized analysis tools, teams can build custom applications that bring those workflows directly into Onshape.
+A custom application, such as an FEA beam analysis tool, can let users select curve geometry, set material properties and load cases, then converge on deformed shapes and frequency response all within a Part Studio.
+Or, create a heat exchanger design system that generates complete assemblies based on ASME standards, configures shell-and-tube layouts, and automatically calculates thermal performance with detailed output tables.
+These applications represent a new category of CAD capability: Geometry creation that’s intelligent, purposeful, and outcome-driven.
+Once built, they’re deterministic and efficient because the LLM did the heavy lifting during development and subsequent runs consume no AI tokens.
+Engineering analysis that would normally demand switching between specialized software and manual data transfer now exists directly in the CAD workflow, surfacing optimization opportunities faster than ever before.
+More FeatureScript MCP Server Examples
+Engineers are already creating custom features that solve highly specific design challenges, such as:
+Advanced shelling tools with variable wall thicknesses
+Weld bead generators that capture manufacturing details
+Configurable cabinet design systems that automate complex workflows
+Standards-driven component generators built from supplier documentation
+Manufacturing automation tools for wire forms, racks, baskets, and shelving
+Industry-specific design systems that combine geometry, calculations, and engineering logic
+If you’d like to see how some of these features were created, refined, and deployed in practice,
+check out this article from an Onshape community expert
+that takes a deeper dive into FeatureScript MCP Server projects and the prompts, iterations, and engineering decisions behind them.
+For now, take a look at some examples from Onshape team members.
+Build Configurable Design Tools from Reference Material
+Many engineering teams rely on PDFs, catalogs, and supplier documentation to define standard components. Instead of manually recreating those parts, engineers can use the FeatureScript MCP Server to turn reference material into reusable design tools.
+In this workflow example below, a PDF of a flanged bushing is analyzed and transformed into a configurable custom feature that captures dimensions, available size ranges, and design intent directly in Onshape.
+The generated feature includes a complete user interface, parameter controls, and options pulled from the source document, enabling engineers to create approved variations without rebuilding geometry. Because the result is a native custom feature, it can be shared across an organization to standardize how common components are created and maintained.
+Create Specialized Components
+Power transmission components often require unique geometry, industry-specific thread forms, and extensive configuration options. Rather than building each variation manually, engineers can create custom generators tailored to their products and manufacturing processes.
+In the case below, a lead screw generator evolved into a tool capable of producing ACME, buttress, and knuckle threads with configurable dimensions, lead counts, and thread characteristics. The workflow highlights how LLMs can assist in researching standards and technical references while FeatureScript MCP converts those requirements into a reusable CAD capability.
+Once created, the feature becomes part of the engineering toolkit, enabling rapid generation of specialized components that would otherwise require significant modeling effort.
+Automate Repetitive Manufacturing Geometry
+Products built from bent wire, welded assemblies, and fabricated stock often involve simple geometry that becomes time-consuming to model repeatedly. FeatureScript MCP can transform these repetitive tasks into purpose-built automation tools that generate both geometry and manufacturing outputs.
+For wire shelves, racks, baskets, and similar products, engineers can drive designs from a small set of inputs while the feature handles spacing, component placement, and production details automatically.
+Beyond geometry creation, the generated tools can produce cut lists, bend information, and other fabrication data needed downstream. Instead of managing dozens of individual modeling operations, teams can work at the product level and let custom features handle the implementation.
+Turn Visual Design Concepts into Reusable Features
+Consumer products often rely on decorative patterns, perforations, and surface treatments that are difficult to create and modify manually. FeatureScript MCP enables engineers to convert visual inspiration into configurable design tools that can be reused across projects.
+Pattern types, symmetry rules, spacing logic, density controls, and keep-out regions can all be encapsulated within a custom feature rather than rebuilt from scratch each time.
+Designers can explore and refine complex aesthetic treatments while maintaining parametric control over the underlying geometry. What begins as a single design concept can quickly become a repeatable capability that supports future products and iterations.
+Build Design Systems Instead of Individual Features
+Some engineering challenges benefit from more than a single custom feature. By combining calculations, standards, geometry creation, manufacturing requirements, and documentation into connected workflows, engineers can create complete design systems inside Onshape.
+Imported geometry, engineering specifications, and product requirements can be converted into configurable frameworks that guide development from concept through production. Data generated in one feature can drive subsequent features, creating a chain of design intent that remains traceable and configurable throughout the process.
+This approach shifts custom development from geometry automation alone to capturing engineering knowledge in a reusable, refined, and shareable form across future projects.
+Create Industry-Specific Design Applications
+Domain-specific products often require design rules, operational constraints, and analysis workflows that extend well beyond geometry creation. FeatureScript MCP enables the creation of custom applications that capture those requirements directly within the CAD environment.
+In this water park example below, site planning, ride specifications, structural systems, rider behavior, and performance calculations are brought together through a connected set of custom features. Engineers can move from conceptual layout to detailed design using workflows tailored to the problem they are solving rather than adapting generic CAD tools.
+The result is a design process that embeds engineering logic directly into the model while surfacing analysis and validation data throughout development.
+Extend Existing Features Instead of Starting Over
+Many useful workflows already exist inside Onshape, but often need small modifications to better fit a team’s needs. FeatureScript MCP enables engineers to build on existing code rather than creating entirely new features from scratch.
+Standard library features can be enhanced with additional calculations, data sources, reporting capabilities, or workflow-specific functionality while preserving their original strengths. This approach lowers the barrier to customization and encourages experimentation, allowing teams to adapt proven tools to their own processes.
+Small improvements can compound over time, turning standard features into highly specialized capabilities tailored to a company's products and manufacturing requirements.
+Develop Engineering Analysis Tools Alongside CAD Models
+Engineering workflows frequently require analysis, simulation, and decision-making in addition to geometry creation. FeatureScript MCP can enable teams to create specialized tools that combine calculations, visualization, and design automation within a single workflow.
+Acoustic reflection analysis, room treatment planning, and diffuser generation can all be handled through interconnected custom features that share data and design intent. Similar approaches can be applied to countless engineering disciplines where calculations and geometry are tightly linked.
+Rather than switching between separate applications, engineers can build tools that bring domain-specific analysis directly into the modeling process, making it easier to evaluate decisions and iterate on designs.
+What Will You Build?
+These are just a few examples to get the idea juices flowing.
+The FeatureScript MCP Server closes the loop between AI-generated code and working CAD functionality. It allows engineers to focus on defining requirements and engineering intent while AI helps with the implementation.
+That means fewer barriers between an idea and a working solution, which just might be one of the most exciting applications of
+AI in CAD
+yet.
+Stay in the Loop with Onshape Labs
+Fill out the form so you’re first to know, first to try, and first to weigh in on everything Onshape Labs releases next.
+Get Notified
+Latest Content
+Case Study
+Education & Universities
+Prompt to Prototype: How Tufts Engineering Capstone Students Collaborate Using Onshape
+09.10.2026
+Learn how Tufts University Mechanical Engineering seniors use Onshape as part of their capstone design workflow to support collaboration, rapid iteration, and real‑world engineering practice.
+learn more
+Blog
+Customers & Case Studies
+Aviation, Aerospace & Defense
+Robotics
+Startup
+How Marble Uses Onshape to Double Engineering Productivity and Accelerate Autonomous Aircraft Development
+10.13.2026
+Marble Aero uses Onshape to double engineering productivity and rapidly develop autonomous UAVs for environmental data collection in remote regions.
+learn more
+Katherine Brown-Seibenaler
+Blog
+Evaluating Onshape
+Data Management
+Release Management
+Enterprise
+Commercial (Pro/Standard)
+Engineers Asked, We Answered: Onshape Workflows, Revisions, and Release Management
+10.08.2026
+From revisions and releases to custom workflows and product data organization, here are the answers to common questions engineering teams have about managing design data in Onshape.
+learn more
+The Onshape Team
+Blog
+Evaluating Onshape
+Artificial Intelligence
+Documents
+Introducing AI Descriptive Image Search from Onshape Labs
+10.05.2026
+What if CAD search worked the way engineers think? Learn how Onshape Labs AI-Generated Thumbnail Description Search finds parts by appearance, not just names and metadata.
+learn more
+Roy Mutalik

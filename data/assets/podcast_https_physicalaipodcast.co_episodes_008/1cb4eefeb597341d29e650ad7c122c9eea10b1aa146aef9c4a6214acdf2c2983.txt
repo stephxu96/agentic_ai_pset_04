@@ -1,0 +1,137 @@
+They everyone welcome back to the researchers guide to physical AI podcast. My name is Shubham
+And this is your weekly briefing on robots embodied intelligence and the research that gets machines working in the real world
+The model that topped Nvidia's robot leaderboard this week came out of a company that makes pictures and the part
+I keep coming back to is what they did after they won it. They sent it to an outside firm to be tested blind on an arm
+They don't own and published whatever came back
+Then figures trial count for its home robot result came out and the chief executive of a rival company quoted it back at them and
+Anthropic named the first outside evaluator
+It will let inside its own lab and it turned out to be a consulting firm
+This was the week company started showing how many attempts sat behind their numbers and the numbers look for it
+Okay, so the biggest thing in physical AI this week landed on Wednesday
+Out of black forest labs if the name doesn't ring a bell
+That's the company behind flux the image generation models
+What they released is flux reaction and it's a world action model with open weights
+Let me briefly talk about what a world action model is because it's the shape a lot of this field is conferreding on a
+Robot policy takes a camera frame the robots own joint positions and a sentence telling it what to do and it puts out the next few movements a
+World action model does that and it also predicts what the camera will see next and the reason people want that is video
+Think about how much video of the physical world is sitting around already and how little robot data there is
+If most of your understanding of how objects behave comes out of video
+You need far fewer hours on a real arm
+flux three action leans on that hard
+Nearly all of its pre-training tokens were video and only then does it learn to act across a range of robot bodies
+It came first on Nvidia's leaderboard of 120 simulated tasks ahead of Nvidia's own Cosmos 3 nano policy at less than half the size
+I mean a leaderboard in simulation ranks models against each other and it tells you little about a real arm
+What struck me was where the method came from the training framework underneath it is called
+Self-flow and it's a march paper about generating images
+Here's what it changes these models are normally trained by flow matching, which teaches the model to carry noise to a finished frame
+Self-flow gives it a second job at the same time
+Reconstructing its own internal features of what it's looking at
+So one model learns to represent a scene and to generate one in the same past and that representation is what the robot side turns out to need
+berid in the paper is one robotics experiment where
+manipulation success goes from 42% to 71
+It's sad their half a year before robotics came looking, but the leaderboard is the least interesting thing in the announcement
+There's a question this field has been avoiding which is who reproduces a robotics claim on hardware the claimant doesn't own
+If you've ever tried to line robot papers up against each other, you know why that matters
+This week somebody did it black forest labs had a firm called positronic robotics run a blind evaluation on a franca arm
+They ran 10 manipulation tasks three attempts each with the same time window and the same scoring sheet for every model and the operator was
+entold which model was driving flux three action finished 28 of 30 and videos cause most three nano
+The same family as the leaderboard entry came in one behind at
+27 so I think you have to call those two tied and
+pi 0.5 a policy from physical intelligence that people compare against finished 13
+Now that's a small sample and I wouldn't build a ranking on it the license is non-commercial too
+So open weights is the honest word and open source is the wrong one and it's still a vendor paying for the
+Evaluation it then one, but the point is the protocol is what I want other people to copy the arm was in somebody else's hands
+The operator was blind every model got the same tasks and the same clock and the whole thing is on video
+Black forest labs volunteered its numbers figures trial count came out to and that went differently
+Figure builds humanoid robots and last week
+I covered the result where those humanoids walked into 30 houses nobody had collected data in
+I said the trial count behind it hadn't been published and I was wrong Forbes reported the counts and Tony Zhao
+quoted them straight from figures page there were four hundred and twenty trials and
+237 of them worked that
+420 is the denominator which just means how many tries a success rate came out of
+Tiding toys off a floor was the worst of the three chores and came in under half Tony Zhao runs
+Sunday robotics and what he said about those numbers in public was that failing half the time is not useful work
+His own company's figure from July is roughly 99% on folding laundry across a pile of garments in home
+It had never seen and here's the thing worth sitting with because that comparison doesn't hold up
+Sunday scores one garment per attempt figure scores a whole chore so if the robot folds every towel
+But one the entire trial is a failure and a person stepping in for safety is a failure to
+Those two percentages are counting different things. I think the honest reading is that neither headline means
+What it looks like it means and notice what that does to the incentive the more honest your denominator the worse your number looks
+There's a second problem with success rates a group released a benchmark called
+Robo follow and their claim is that success rates barely measure whether the robot understood the instruction
+Let me give you an example say you put a robot in front of a table
+There's a single object on it and a single sensible thing to do with that object. You say pick up the cup
+It picks up the cup and you score that as instruction following
+But a policy that ignored your sentence and just did the only available thing scores the same
+So Robo follow bill scenes where several different tasks are possible then escalates through four levels
+Changing what the scene looks like and what the words mean nine policies went in and strong performance on the
+Plainest level didn't carry to the harder ones. They also tried four fixes all of them ways of making the robot
+Pay more attention to the words for instance a bigger language model not one of them close the gap
+That's a hidden problem in how the field measures
+There's another one and it sits inside the video models themselves
+They've been getting physics wrong for as long as anyone has been scoring them and a group in Beijing thinks it has found the cause
+The failure is easy to picture imagine you ask one of these models for a mug rolling off the edge of a table
+The mug looks like a mug the table looks like a table and the mug moves in a way no mug has ever moved
+The assumed fix was always more data or a physics prior bolted on the side a group at Beijing University of posts and telecommunications
+Looked inside the generation process instead and I'll say this. It's the first paper. I've seen that
+Explains the failure rather than scoring it. Let me walk you through how these models make a video because
+The causes in there they start from pure noise and clean it up over a sequence of steps
+Which is called denoising at each step the model works out how much every part of the picture should influence every other part
+To know where anything sits in the frame and in time
+It uses a position encoding borrowed from language models
+What this group found is that the encoding lets distant parts of the picture influence each other far too little
+So in the earliest steps parts of the scene lock into positions that are already wrong and
+Everything afterwards gets built on top of them. The fix is
+Re-scaling a single frequency in that encoding as denoising goes along
+It needs no new data set and no physics module and it works without retraining and the more I look at that paper
+The more I think the physics gap was never about physics
+It may be a design choice inherited from text
+Sitting in a part of the model nobody was looking at I might be wrong about how far that goes and I want
+Somebody to rerun those physics tests with this turned on before I get excited
+But if it holds up, it's the cheapest result of the year a fix that cheap only helps if it reaches the shared code every
+Robotics team builds on and more of that code is ending up inside chip companies
+This week Qualcomm agreed to buy picnic the company that maintains move it the default motion planner in Ross
+The robot operating system if you've ever told a robot arm to put its gripper over there
+Move it is most likely what found a path the joints could follow without the elbow going through a shelf
+Qualcomm says move it stays open source and that the company will wire it tightly to its own robot chips
+And this is the second time lately flux three action downloads through hugging faces open robot learning library
+And in video agreed to buy hugging face a few weeks ago
+So the model hub is going to one chip company and the default motion planner is going to another
+Look, I don't think anybody here is breaking a promise the thing is nobody is measuring whether support for outside hardware keeps pace with support for the owner's own
+Not everything went the other way
+Alphabet's intrinsic put the core of its industrial robotics platform out under Apache 2.0 which means
+You can build a business on it. That is the thing flux three actions license won't let you do. Nobody is measuring at the frontier labs either
+Anthropic had promised to put outsiders inside its own lab with employee level access
+Red teaming the models and testing the safeguards that arrangement has a name now the embedded evaluator
+It's Accenture the consulting firm
+Each side is putting in at least a billion dollars and I think most people writing about this
+Assumed the answer would be one of the AI safety nonprofits
+The part that matters is still missing
+Nobody has written down what access and evaluator gets or what they may publish
+So it stays a private contract between two companies
+On the day Anthropic named Accenture
+California's governor Gavin Newsom
+Signed an executive order it asks a working group whether frontier models should have to carry an emergency stop and
+Whether frontier AI companies should be required to have independent outsiders inside and what I find odd is that
+Neither the order nor the expert panel the state named says a word about robots or anything else that moves
+A few other things move this week Boston Dynamics opened a training center inside Hyundai motor group
+Metaplante America in Georgia and Atlas's job there is putting parts in order
+The international Federation of robotics counted five million industrial robots at work worldwide and still lists no separate
+Category for humanoids and Bobby says it's truck drove Dallas to San Antonio with no new data
+No simulation and no fine tuning for that route and nobody took over the wheel
+Bobby hasn't said how many runs that covers
+Okay, so let me pull the week together
+Black forest labs put an open weights model on top of Nvidia's simulated leaderboard
+Then had a stranger run it blind on somebody else's arm
+Figures trial counts were in its post all along a competitor quoted them back and the two companies numbers were never comparable anyway
+Robo follows has a good chunk of what we call instruction following is the robot doing the only thing the scene allows
+A group in Beijing traced the physics failures in video models to a position encoding borrowed from language and that still needs checking
+Another piece of the open robotic stack is on its way inside a chip company and Anthropics first embedded
+Evaluator turned out to be Accenture with still no standards for what an evaluator may see or say the thread
+I'll be following is that blind evaluation black forest labs commissioned it and won it
+The question is whether anyone whose model might lose does the same thing if
+Figure or skilled or physical intelligence hands a checkpoint to an outside lab and publishes whatever comes back
+The evidence in this field changes overnight
+If nobody does then what we saw this week was marketing with a good protocol attached
+Thanks for listening every episode ships with a written deep dive carrying the tables the benchmarks and the links
+And you'll find it at physicalaipardcast.co. I'll see you next week

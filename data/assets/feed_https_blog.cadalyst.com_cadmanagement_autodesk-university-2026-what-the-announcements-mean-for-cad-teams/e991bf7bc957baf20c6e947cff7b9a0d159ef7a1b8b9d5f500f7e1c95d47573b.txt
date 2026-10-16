@@ -1,0 +1,159 @@
+Autodesk University 2026: What the Announcements Mean for CAD Teams
+14
+:
+39
+Autodesk University 2026: What the Announcements Mean for CAD Teams
+By
+Cadalyst Staff
+Autodesk
+AutoCAD
+Mechanical
+Cloud
+Building design
+Infrastructure
+AEC
+AI
+Autodesk University
+September 25, 2026
+SHOW REPORT: Autodesk puts AI, connected data, and automation at the center of AU 2026.
+Autodesk
+held its annual Autodesk University conference in Las Vegas September 15–17, and if there was one word tying the keynotes and product announcements together, it was “capacity.”
+Across architecture, engineering, construction, manufacturing, and operations, Autodesk’s message was that AI can help already-stretched teams accomplish more with the people and resources they have. Autodesk President and CEO Andrew Anagnost summed up the argument during the conference: “The constraint in our industries has never been about ideas. It’s capacity.”
+President and CEO of Autodesk, Andrew Anagnost. Image source: Autodesk, AU Keynote 1.
+That framing ran through many of Autodesk’s announcements, including a next-generation Autodesk Assistant, deeper AI capabilities in Forma and Fusion, and an expanding operations story involving Autodesk Tandem and the recently acquired MaintainX.
+There is an important distinction for CAD and BIM professionals. Some of the capabilities Autodesk discussed at AU are available today. Some are in beta or Tech Preview. Still others represent a longer-term direction rather than something companies should expect to put into production immediately.
+Live Demos
+Autodesk made a point of demonstrating many of its new capabilities live rather than relying solely on polished, prerecorded presentations. That was particularly useful given how much of the AU story depended on software and data moving across traditional application boundaries.
+In a demonstration of Fusion’s developing agentic PLM capabilities, for example, a motor shortage threatening production became a problem the system could work through inside an Assistant conversation. It identified the potential impact, found an approved substitute part, and prepared a change order.
+On the AEC side, Autodesk demonstrated a civil engineer redesigning a detention pond in Civil 3D and sharing the change into a Forma-based project environment, where other project participants could see the updated context. The demonstration offered an early view of what Autodesk means when it describes Civil 3D as a future Forma Connected Client.
+Then there was the more tangible proof point at the end of the second-day keynote: a robotic lawn mower designed and manufactured using Fusion during the conference rolled onto the stage — working blades and all.
+Live Fusion demo developing a lawn mower. Image source: Autodesk, AU Keynote 2.
+The demonstrations made Autodesk’s direction considerably easier to understand: applications, cloud data, and AI services are increasingly being designed to work as parts of a connected system rather than as isolated tools.
+Anagnost described the underlying problem this way: the digital world is accelerating rapidly, while the ability to deliver in the physical world has not kept pace. The answer Autodesk presented throughout AU was to make information and automation available across more of the design-to-operate lifecycle.
+In his closing remarks, Autodesk Senior Vice President Stephen Hooper described the broader direction as “convergence”: reducing boundaries among design, manufacturing, construction, and operations so data generated in one phase can inform the next — and increasingly flow back again.
+For users accustomed to thinking in terms of individual CAD applications, that shift may prove more consequential than any single AI feature announced at AU.
+Where Autodesk AI Stands Today
+With so much information about AI arriving at once, it is useful to separate what users can work with now from what Autodesk showed as a preview of what is coming.
+Area
+What’s New
+Status
+Autodesk Assistant
+Next-generation Assistant concepts include Personal Pulse for prioritizing project issues, Assistant Spaces, and Assistant Builder for connecting additional agents and tools.
+Autodesk is previewing the next-generation experience. Expanded capabilities planned for 2027; Autodesk Assistant already exists in several Autodesk products today.
+Forma / AEC
+Civil 3D becoming a Forma Connected Client; Forma Street Design; new AI-assisted design and documentation capabilities across Forma and Revit; Drawing Compliance Review.
+Mixed. Civil 3D Connected Client capabilities begin as a Tech Preview. Forma Street Design is in development with a closed-beta waitlist. Other AI and workflow capabilities range from available features to previews and planned releases.
+Fusion / Manufacturing
+AutoTimeline (Beta), AutoAssemble, System Modeler, agentic PLM capabilities, and plans for Inventor to become a Fusion Connected Client.
+Mixed. Autodesk Assistant capabilities are already appearing in manufacturing products, while several of the larger automation and connected-client capabilities remain announced or in development.
+Operations
+Tighter connections among Tandem, simulation, and maintenance workflows, including Autodesk’s newly acquired MaintainX.
+Autodesk completed its acquisition of MaintainX in August 2026. AU demonstrations showed how operational data and maintenance workflows could become part of the broader Autodesk lifecycle.
+Trust and Governance
+AI Transparency Cards and additional ways to expose information about how Autodesk AI capabilities work.
+Expanded AI Transparency Cards are available now, and Autodesk has integrated access to their information into Autodesk Assistant
+.
+What Changes for CAD Managers and Users?
+Keep track of Forma and Revit.
+One of Autodesk’s clearest AEC messages is that Forma is expanding beyond its early role in conceptual and site design.
+Amy Bunszel, Autodesk executive vice president of AEC Design Solutions, told the AU audience that “more and more of your work can happen directly in Forma.”
+Autodesk is steadily moving more project work — early design, cross-team coordination, and construction activity — into that cloud environment, while pulling its established desktop products more tightly into the same system
+.
+That does not mean Revit or Civil 3D will suddenly disappear.
+Autodesk Forma is the company’s AEC industry cloud, which Autodesk is expanding across design, engineering, construction, and project workflows
+.
+Image source: Autodesk.
+Instead, Autodesk is describing products such as Revit and Civil 3D as Forma Connected Clients — detailed authoring environments that can participate in a broader cloud-based project context. Civil 3D remains Autodesk’s detailed civil engineering application, for example, while its planned Forma integration is intended to make it easier to carry project context between early planning, architectural design, and detailed infrastructure engineering.
+For CAD and BIM managers, the practical message is not “prepare to replace Revit.”
+It is to watch where Autodesk begins extending project context, collaboration, analysis, and AI-assisted workflows beyond the desktop application itself
+.
+That architectural change could eventually affect standards, deployment, training, licensing decisions, and the way project teams decide which application owns which part of a workflow.
+CAD management is becoming AI governance.
+Another important AU message received less stage drama than the AI-generated design demonstrations: Autodesk is building more controls around the data and decisions those systems use.
+Features such as access controls, drawing-change analysis, compliance checking, and AI Transparency Cards sit squarely in CAD- and BIM-management territory.
+That is significant because deploying AI in a design environment is not simply a matter of turning on an assistant.
+Organizations still need to determine which project information an AI tool can access, who can initiate changes, how generated results are reviewed, and what constitutes an approved deliverable. As AI agents gain the ability to act rather than merely answer questions, those responsibilities become more important.
+Drawing Compliance Review illustrates the potential.
+Autodesk describes Drawing Compliance Review as a coming capability that will compare drawings against customizable rules for areas such as "building codes, design standards, and owner requirements," flagging issues before a drawing moves to its next review stage.
+The appeal is obvious: repetitive checking is exactly the kind of task AI may be able to accelerate.
+But a faster review system does not eliminate the need for standards or human accountability. In many organizations, it will make well-structured standards and clearly defined approval processes even more valuable.
+Manufacturing teams should distinguish automation from autonomy.
+Manufacturing received some of AU’s most ambitious AI demonstrations.
+Autodesk Assistant spans a growing range of Autodesk products; in manufacturing, its capabilities are expanding across Fusion, Inventor, and Vault. Elsewhere in the Fusion roadmap, Autodesk showed capabilities including AutoTimeline, which rebuilds an imported part's history so it behaves like a native parametric model; AutoAssemble, which tackles assembly creation; and System Modeler, which automates the CNC setup and production-planning work that is done before a part goes into machining
+.
+The broader direction is clear: Autodesk is moving its AI strategy beyond answering questions and toward completing sequences of engineering and manufacturing work.
+That does not mean users disappear from the process. A production change triggered by a component shortage, for example, still carries engineering, procurement, cost, compliance, and manufacturing consequences. Automating the mechanics of finding a possible replacement may increase capacity, but organizations will still need to decide who can approve the result and under what circumstances.
+The more useful question for manufacturing managers may therefore be not simply, “What can AI do?” but “Which decisions are we prepared to let it make, prepare, or recommend?”
+Desktop applications are becoming clients of larger environments.
+There is another pattern worth watching across both Autodesk’s AEC and manufacturing businesses.
+Civil 3D is becoming a Forma Connected Client. Autodesk has also discussed Inventor becoming a Fusion Connected Client.
+Those pairings suggest a future in which familiar desktop applications remain important for detailed authoring, while Autodesk’s industry clouds provide more of the shared data, project context, collaboration, and automation that connect those applications across the project lifecycle.
+This is closer to changing the role of the desktop application inside a larger system.
+For CAD managers, that raises practical questions: Where does the authoritative data reside? What happens when cloud services are unavailable? Which information is exchanged and which remains native to the authoring application? How are permissions inherited? And what new administration responsibilities come with those connections?
+Those questions will matter more as Connected Client workflows mature.
+MCP keeps another door open.
+Autodesk’s work with the Model Context Protocol (MCP) is also worth watching because it points in a somewhat different direction from the all-in-one industry-cloud story.
+MCP provides a standardized way for AI systems to connect with external software and data. Autodesk has been developing MCP capabilities across both AEC and manufacturing applications, including Revit and Fusion. You can also read
+Cadalyst
+’s recent article
+on the
+Model Context Protocol standard across AEC software
+.
+On the manufacturing side, Autodesk’s Fusion MCP work allows external AI systems such as Claude to interact with Fusion through defined connections rather than requiring every AI workflow to originate inside Autodesk Assistant.
+By supporting MCP alongside its own assistants and agents, Autodesk gives customers the potential for more flexibility in choosing which AI systems interact with Autodesk data and applications
+. The details of permissions, security, supported actions, and administration will be critical, but an open connection model gives CAD managers another reason to understand MCP rather than treating it as an experiment for software developers.
+For organizations already investigating enterprise AI platforms, the question may become “Which applications can safely participate in the AI environment we already use?”
+What to Watch Next
+Autodesk University 2026 offered no shortage of AI demonstrations, but the more consequential story may be the architecture Autodesk is building underneath them.
+Forma, Fusion, and Autodesk’s operations tools are increasingly intended to carry data across disciplines and across the life of a project or product. Autodesk Assistant and other AI agents can then work with that context instead of operating inside a single isolated application.
+For CAD and BIM teams, however, the distinction between direction and availability matters. Some of what Autodesk demonstrated is ready to use today. Other capabilities remain in Tech Preview, beta, or the “coming soon” category.
+AU offers a reason to start evaluating where these technologies could fit — and what data, standards, permissions, and review processes need to be in place before they do.
+CAD managers in particular will need to look beyond whether these tools can perform a task and ask how that task fits into the larger workflow. AI can remove one bottleneck, only to move the constraint somewhere else. Generating or modifying a design faster does little good if review, approval, data quality, or downstream production becomes the new constraint.
+Autodesk showed a future in which design, engineering, manufacturing, construction, and operations become increasingly connected, with AI working across the resulting data rather than inside isolated applications. AU 2026 made that direction considerably clearer.
+The next question — and the one
+Cadalyst
+will continue watching — is how quickly those demos become dependable, governable tools that working teams can put into production.
+Editor’s note: Mark your calendars for
+next year’s AU 2027
+in Las Vegas September 14–16, 2027.
+FAQ for Autodesk University 2026
+What were the biggest Autodesk University 2026 announcements for CAD and BIM teams?
+Autodesk focused heavily on AI, connected data, and automation across its AEC, manufacturing, and operations products. Key announcements included a next-generation Autodesk Assistant, expanded AI capabilities in Forma and Fusion, Connected Client plans for Civil 3D and Inventor, and tighter links between design, construction, manufacturing, and operations workflows.
+Is Autodesk replacing Revit or Civil 3D with Forma?
+No. Autodesk is positioning products such as Revit and Civil 3D as detailed authoring environments that increasingly connect to the broader Forma cloud environment. Civil 3D, for example, is planned to become a Forma Connected Client, allowing project context and data to move more easily between planning, design, and engineering workflows.
+Which Autodesk AI capabilities announced at AU 2026 are available now?
+Availability varies. Autodesk Assistant already exists in several products, and expanded AI Transparency Cards are available now. Other capabilities, including Civil 3D Connected Client functionality, Forma Street Design, and several Fusion automation features, are in Tech Preview, beta, development, or planned for future releases.
+How will AI change the role of CAD and BIM managers?
+AI adds new governance responsibilities alongside traditional CAD management. Organizations will need to decide what project data AI systems can access, which actions agents can perform, who approves AI-generated changes, and how results are reviewed. Standards, permissions, data quality, and approval workflows may become even more important as AI moves from answering questions to performing tasks.
+What does Autodesk mean by a Connected Client?
+A Connected Client is a familiar desktop application that participates in a larger cloud-based environment. Autodesk is developing Civil 3D as a Forma Connected Client and has discussed Inventor becoming a Fusion Connected Client. The desktop software would remain important for detailed authoring while sharing more data, context, collaboration, and automation through Autodesk’s industry clouds.
+Why is the Model Context Protocol important for Autodesk users?
+The Model Context Protocol, or MCP, provides a standardized way for external AI systems to connect with software and data. Autodesk is developing MCP capabilities for applications including Revit and Fusion. That could give organizations more flexibility to use enterprise AI platforms or third-party assistants alongside Autodesk’s own AI tools, subject to permissions, security, and administration requirements.
+***
+Read more about CAD Management on our
+CAD Management Resource Page
+.
+Share This Post
+Cadalyst Staff
+View All Articles
+MORE ON THIS TOPIC
+Autodesk
+AutoCAD
+Mechanical
+Cloud
+Building design
+Infrastructure
+AEC
+AI
+Design Elevated: What’s New in AutoCAD 2026
+Each release of AutoCAD brings refinements, including Autodesk’s latest release of AutoCAD 2026. Rather than sweeping UI (user interface) overhauls...
+Autodesk
+AutoCAD
+Mechanical
+Cloud
+Building design
+Infrastructure
+AEC
+AI
+AutoCAD 2026 Focuses on Productivity with Speed, AI, and Collaboration
+AutoCAD has long stood at the core of digital design across industries, serving as a foundational tool for architects, engineers, and designers...

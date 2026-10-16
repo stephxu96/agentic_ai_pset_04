@@ -1,0 +1,467 @@
+Welcome to the Practical AI Podcast, where we break down the real world
+applications of artificial intelligence, and how it's shaping the way we live,
+work, and create. Our goal is to help make AI technology practical,
+productive, and accessible to everyone. Whether you're a developer, business
+leader, or just curious about the tech behind the buzz, you're in the right
+place. Be sure to connect with us on LinkedIn, X or Blue Sky, to stay up to date
+with episode drops, behind the scenes content, and AI insights. You can learn
+more at PracticalAI.fm. Now, on to the show.
+Welcome to another episode of the Practical AI Podcast. This is Daniel
+Whiteknack, I am CEO at Prediction Guard, and I'm joined as always by my co-host
+Chris Benson, who is a principal AI and autonomy research engineer. Are you doing
+Chris? Hey, doing good today, Daniel, how's it going? It's going great, you know,
+the story continues. There's ups and downs along the way, and, you know, very, very
+blessed overall, and really blessed today, to have an episode that I've been
+looking forward to recording for some time, back in, in part of our journey, as a
+company, we were going through an accelerator program with Intel, called Intel
+Ignite, and through that program, met our guest today,
+Reed Ferrex, who is a lot of things. He's doing so much amazing, amazing stuff in his
+journey from a new podcast that he has our inner story. He does leadership coaching,
+involved with MIT, and startups, and all sorts of things, and has kind of a background
+in in acting and in media. So welcome to the show, Reed, it's great to have you here.
+Thank you so much, Daniel, and Chris, appreciate it. Yeah. Yeah, and, and obviously, that's,
+you know, I love your story, because you've flexed into all of these things,
+you're always being creative here. I think in our experience together, I've appreciated
+so much how you've helped me think about, you know, my own journey as an entrepreneur,
+the story of our company. Now I know, you know, you're thinking about topics.
+Of course, related to AI, like everyone is, and what our unique role is, you know,
+humans and that, but we'll get into all of that. But I'm wondering if you could just share a little
+bit of your your story with us and kind of at a high level, how you ended up where you're at.
+Well, thank you. I find myself sharing the story much more, and the best way to frame it
+is it is a windy path, because you know, I look back and you think, like, you're always like
+taking like inventory, like, is this all working? Like, is this my story really making sense? Like,
+who am I? Like, you have me telling you ask these questions to yourself over time. But actually,
+it wasn't until that Intel program. I was so, I shared this last month at a Harvard classroom
+you were teaching. Basically, I was so nervous in that program when I first started because
+it was so much about deep tech and engineers and AI was starting to really come up and I was going,
+oh my god, like, what am I doing here? You know, I graduated at UT in business and I went off
+and had an acting career for a little while and then got into producing and media and startups.
+And I was kind of just trying to figure out, like, you know, what am I doing around these really
+smart people? Like, like yourself, Daniel. I mean, it's like, you know, a lot of half the room
+was PhDs. And then we started talking and introducing ourselves and I started seeing pitches. I was
+running deal flow when I first started it Intel. And so I got to see a ton of pitches. I mean,
+we saw, you know, pretty much most of the top companies going in the US would come through at some
+point and we'd meet them. And the one thing I kind of came away with going, I think I can help with
+story. Maybe I can help out a little here, starting thinking of their pitch a little bit like
+almost like a movie and I thought, gosh, you know, maybe I can contribute here. So that kind of
+at least allowed me sort of the lane into this world. And then once you get into it, you start
+to realize like, there's just so much to it because founders are just becoming leaders and they're
+always becoming. You're constantly learning and adapting, especially now. So that really, you know,
+was sort of the ignition for me to really learn more about leadership coaching by own journeys of
+founder, which I was sitting there going, why is this happening to me? You know, all the things that you
+go through is a founder, but it's just evolves, right? It's always evolving. Yeah, I love that
+perspective. I think I resonate so much with it because, you know, I don't think it's talked about
+a lot in terms of how startups and entrepreneurship and those that are building tech companies,
+that, you know, ventures are in a big way how culture is shaped, right? And how people are shaped.
+And I think that's overlooked often in terms of, you know, obviously people are, you know, it's,
+I hope for a good financial outcome for myself and in what I'm doing. I think that's a reasonable
+part of it. But also, there's a much broader story of of why we're doing, what we're doing.
+Maybe that brings us a little bit to some of our topic about, especially how that culture is
+shifting around AI specifically. But again, before we get into that, maybe you could just share a
+little bit about a couple of the things that you're involved with now. And like that story telling
+piece, how has that evolved to connect with the, with the tech world with, you know, some of
+your current ventures. Great question. So where I am right now is I'm primarily executive coaching
+or leadership coaching at MIT's Business School, the Sloan Fellows Programme Primarily. And then also
+with some startups, usually, right around the series A series B level, primarily, and now coaching
+their teams. And it's been fascinating getting into coaching teams because you learn a lot more
+of the different perspective going on within the startup and kind of how people are feeling,
+how they're trying to evolve as leaders. With MIT, what's been interesting is, there's a lot
+of international students. And specifically, a lot of the ones I get, they all come here kind of wanting
+to be an American entrepreneur. So they're always like, can you, can you help me tell my story
+like this? I'll give me a video or an example. And it'll be somebody, you know, probably
+really famous in the tech world. But, but I always find like, that's such like, they have fear
+coming here. They're trying to stand out. They're trying to find their unique positioning. But
+oftentimes, when we get into their story, their story is so fascinating. It's usually,
+there's usually a ton of like obstacles for them to even get to, you know, MIT, obviously,
+they come from, you know, a lot of backgrounds that, you know, took a lot of resilience, a lot
+of overcoming. And there's this, all this gold in their story that they're basically trying to
+hide. And it's so, a lot of the process is trying to extract out that unique positioning. And
+that really is what has sort of informed, you know, what I'm calling right now a little bit
+around narrow to the intelligence. But it's really about how to like extract your unique self
+into your story and evolve it in real time. Because with AI, everybody's, you know,
+excited about AI, but also fearful of AI. And so there's this constant back and forth. And so
+how do you continuously adapt is sort of what happens throughout all the coaching and work I'm doing
+right now? You mentioned, so I'm kind of coming in cold with you and Daniel had been through
+this experience together and stuff. You mentioned narrative intelligence. And could you,
+could you kind of take me through what that means a little bit? You've referenced it,
+but I'm not sure I'm there yet. And then maybe, kind of, and you also mentioned kind of
+the same breath AI. And so, could you kind of like, what's the relationship or, you know,
+I don't understand, yes, at this point? So I'll leave that to you. So it's obviously
+artificial intelligence, you know, was sort of, you know, started thinking about it. And, you know,
+the more we were diving into some of the research and work, we started realizing like we live
+inside stories, so much of our decision-making, our choices, everything's from the moment we wake up,
+we're inside of a story, right? And so I started looking at, you know, narrative intelligence,
+there's been different people that have looked at it. Really, I think the one I saw, I saw was back
+around MIT and Harvard, some different engineers trying to learn how to talk to each other.
+And so they formed a group around it. So that led me to think, okay, what else is here given
+the current times with AI? And so, as I started, you know, interviewing people and working with
+people, I started thinking, what could become more real time around, like, what could become
+narrative intelligence? Storytelling has its place, obviously, and for a leader or founder,
+raising money, talking, pitching a customer. But a lot of times storytelling, people get stuck in
+the stories and they don't evolve them. And so that's when I started thinking, like,
+things are changing for a start-up founder every day. And there's new information and there's new,
+there's new audiences, and how do you just continuously evolve it? So that's sort of where I
+I started. So I pitched it. I did my first talk. It itself, myself, was last year. And I was so nervous,
+I was going in there. I was in the green room. And I remember the guy from late Ted Lazo,
+if you've seen that show is in there. And he's sitting there and I'm like, so nervous, I'm like,
+oh my god, there's like people around here, is anybody going to show up in my room, you know?
+So I had like, this was a new format they started this past year called Core Conversation.
+So I was really excited, but I really didn't know if anybody was going to show up. So I started
+peaking outside the door going, gosh, I wonder if anybody's going to show up in this room. And
+luckily it was sold out. It was like 50 people. So I'm not talking like a 400 person theater,
+but it was a really good conversation. A lot of interesting perspectives, questions,
+curious about what you are just asking. What is this narrative intelligence and how you
+you know, coaching it? And so what it really came out of all of that is people are afraid
+about the future. They're trying to a lot of them are in transitions from one career. We had
+one guy there. It was a one the top guys at NASA. And he was like, I'm trying to change my career now.
+And I'm trying to transition in this next stage of life. And so what it really told me was
+it's kind of like the classics heroes journey. You're from the Joseph Campbell, or what's
+pretty much in every movie is it's kind of like we're all living that heroes journey. You know,
+we're in the, you know, whether it's the call, we're being called into some adventure action,
+or we're going through the threshold, or whether we're turning back home or trying to get back
+to our true self. There's all these kind of periods we go through. So as I do deeper into it,
+I pulled a lot of my acting that I coaching I received. I was fortunate to train with some
+of the top acting coaches in LA and then coaching psychology, neuroscience. I started trying to
+pull extract different things from it. And what I really came up with is a three-step process,
+which is own author and act. You know, show up each day and own where you're at, whether you like
+it or not, or whether you're neutral on it, but own where you are in your journey. You know,
+look at ways that you can extract your learnings forward and then author this next chapter,
+this next phase for you. It could be that week, that quarter, that next milestone. But
+learned to author it. And what I found in the coaching was a lot of times it required a little
+reframing of your story. We had a founder. I think was in Daniel's cohort. I remember working with
+and she didn't think she could be the CEO. She was really nervous. She kept telling me every
+day in the first couple of weeks of the program. I really shouldn't be CEO. I don't think I can do this.
+And she was from another country and she just had a lot of fear around it. And again,
+as we dove deeper into the work, she just really needed to kind of reframe her story.
+And where she was to that point. And what she started to realize is she gained a lot of confidence
+and saw that she could become CEO. And so, own author and act and act as the hardest thing,
+because oftentimes we don't step into that first action step as small as it may be.
+We often let, you know, uncertainty get in the way. One quick follow-up on that. I'm curious,
+when you're saying that, the notion of imposter syndrome came to mind. And is that, does that
+play into this processor? 100%. And I think I'm poster syndrome. I don't know one founder or
+pretty much anybody who hasn't had gone through a poster syndrome. If you don't have a poster syndrome,
+there might be something wrong with you as my feeling. But I think the more you can embrace
+in poster syndrome and normalize it, that this is going to happen. I mean, if you're
+starting, if you're taking the risk to start a company and going through the hell that it takes
+to become, to be an entrepreneur, to be a founder, because it is. It's always like 10 times harder,
+longer, everything. I'm sure Daniel's nodding over there, because it's never easy. If it is easy,
+you're probably just got lucky. You got a lot of reticulars. You got a lot of reticulars up there.
+But so embracing imposter syndrome and immediately recognizing that that's going to be part of the
+journey is probably the best way to approach it. Yeah, I definitely resonate with that a ton.
+And I want to get, I want to get to each of these phases that you talked about and kind of tie it
+in also to our journey with AI. Yeah. More generally, I think that would be really interesting.
+However, before we do that, maybe just like a, maybe as like framed as a simple question,
+but I think there's a lot behind it. I guess my question is, why should people care about their
+own journey or expressing their own story? Like at a high level, like what? Sure.
+What is that? Do you maybe for the person and those in their environment? Well, I would just say
+it simply is the one unique thing you know you have is your story in your journey. And we often,
+you know, I saw the statistic the other day that we have 60,000 thoughts a day and I think 80
+percent of them are negative. But learning to start shifting the mindset and realizing like with AI.
+I mean, everybody has their different perspectives on AI and where it's going and how fast and
+and what it's going to do. But if the very least, we can all probably much recognize it's very
+powerful. It's game-changing. We're at a pivotal moment in our in history. And so all the more reason for
+you to, you know, double down on yourself and figure out ways to evolve. You're so mean to adapt to
+personally grow. To become the leader you want to become to, you know, embrace AI and use AI
+that's practical for you. And no pun intended. But basically use AI in a way that can help
+help accelerate your personal growth, you know, as leaders, as people, as family members, as
+dad, or wife, or brother, sister, or whoever. I mean, it's, in that's the other big thing is once
+I've found quickly with founders, Daniel, I'm sure you can attest to this, is it quickly
+becomes, it's hard to turn off like you're a founder and then you kind of come home and it's
+taught you how to kind of turn it off. But eventually it all kind of becomes one in the same.
+The leader you are, the leader you are at work, quickly evolves to the leader you are at home
+and in your personal life. And so the more you can quickly align those two and learn to just
+become a leader. As a part is, except the fact that this is an identity I want to become in all
+aspects of my life, I think is important. In this world where content is being produced so quickly
+and people are being bombarded by so much it's critical that for your website, for your brand,
+for your landing pages, you produce something that looks hand-crafted, but is still extremely fast
+and our partner, Framer, is enabling just this. Framer is the AI website builder that helps
+creators, teams and businesses ship production ready sites faster than ever while getting
+every detail right, prompt, inspect, edit and publish in one place at a whole new pace.
+Learn how you can get more out of your site from a Framer specialist or get started building for
+free today at Framer.com slash practical AI for 30% off a Framer Pro annual plan. That's Framer.com slash
+practical AI rules and restrictions may apply. To read you definitely have, you got me hooked on this,
+I'm curious and I think both Daniel and myself and others listening or watching the show
+were probably using a set of tools and to some degree were probably doing some of that,
+I'm guessing there were ideas as you were talking that were resonating like I was going
+well I do this and I do that and I think that's helped this obviously helps it work, this thing
+is helped at home as we're using different models and chats all the things and so agents
+these days what are some of the things like if you're trying to get focus now on developing
+narrative intelligence and you want to use tools in a more focused way to help yourself
+develop your story as you've discussed. Can you kind of focus me? Can you kind of take me down
+a path on what that means and instead of me just kind of doing whatever I'm doing it,
+electrically kind of give me a strategy. Okay yes I think and that's one of the hardest things
+Chris I think for all of us and one thing's I think I gravitated in the coaching because I needed it
+for myself I mean you know we get distracted and we were maybe excited about some personal development
+or some book or some growth at one point and then we're quickly back off of that so I you know what
+I found to be very helpful with with coaching founders and even for myself is really getting
+focused on your values like really defining like what do you value and if you're working at a company
+like you know technology company or wherever or you're a founder really establishing where can I
+align my personal values with the company values you know where because that alignment is everything
+and it goes deeper into the why you know we've all heard about the talks about the why but
+it's really is true I mean yeah you'd have to get to the what and how but really with the why
+for your own personal why where you see yourself going understand in the company why
+wherever you're working is is usually valuable because I think what that does is keep you
+focused back to your question about focus to keep you focused on how you're going to stay motivated
+how you're going to stay passionate you know what is the purpose here what is the goal so it's kind
+of like values is sort of the core foundation and then looking at the track to the outcome like
+and then work back from that look what outcome do does the company foresee or what outcome do I
+want in my personal life and then working back to what are those steps I can step into so that's
+that's that's really been I think the best and the biggest thing I found is just keeping it super
+simple and realistic because I can't tell you times I've done this personally and and just
+fallen off and gone oh gosh you know I set these goals and you know it sounded great a January one
+but you know my February one I'm already like what's going on here I'm not doing hardly any
+of this stuff so just making a realistic that book atomic habits is one of my favorite books
+a lot of people have read that but that's a really great way to look at how you can be you compound
+yourself over the course of your with really small habits you know I've read the books so
+good definitely good one Danny we're about to say yeah read I think you kind of started out the
+you mentioned those three steps the first one was own I've been thinking about that as you
+and Chris have been talking and it it really resonated with me in relation to how myself and our
+team and maybe how I've led in the adoption of AI on our team and I think where we have been
+blocked and maybe not not aligned like you're talking about to where we need to go with AI how we
+need to adopt those tools which tools we adopt et cetera has been maybe when I've kind of led more
+I've not owned where where I am with the technology and what I don't know and what I'm you know
+comfortable with or not comfortable with I've thought a lot over the past year about my own humility
+right around like oh I have these certain code standards right yeah and our team and I have these
+standards around how a software development life cycle should happen right and I and I know in my
+pride or you know whatever that that is that this is the way it should go and I'm not really owning
+the reality of where the technology is and what's possible with it so I'm actually so let's say
+our company wants to get to this place like you're talking about we have values that are important
+to us and we have a mission of what we're trying to achieve I'm actually a liability then
+towards that mission because I'm not I'm not acting out of humility or a real ownership of what
+the reality is that partially what you mean by that it is curious your reflection on on that
+experience I guess yes well first of all don't beat yourself up Daniel yes it's very common
+and I think part of it is is because you're the leader you're the CEO so you're trying to show
+certainty you're sure you have a tremendous background and and you're super smart but like
+I think that really is it because what I'm finding with teams right now we actually with one team I'm
+coaching it's an AI company but we're calling it now the ownership project because so much of
+these leaders I mean you know it is when you're going from these early stages you're in survival mode
+for so much of it right you're just trying to survive and then all the sudden you you know you either
+hit that point where you're starting to grow revenue and you get some investment and now you're
+expected to really grow and everybody's got to grow a lot of these leaders some of them haven't
+been in leadership positions so everybody's now learning together and I think what you pointed out
+is really key for the CEO founder especially is to to be more open when they can about like what they
+don't know um I can't tell me times I think founders just naturally want to say hey I've got
+to pretend like I know it all you know because they they think that's the norm but really when they
+can open up and say hey you know this this scenario I'm learning too you know so we can learn
+together I think can be can be very valuable as well so yeah ownership is such a big topic right
+now I'm finding it coming up in almost every team and group I'm coaching with because also they need
+they need the rest of the team to take initiative and you know whether it's AI tools they're
+learning or anything that's happening I'm just happening so fast that whatever anybody can
+bring to the table and share and move forward they'll all the better right so longer helpful to be
+siloed yeah yeah and do you think that that connects with then let's say a person in like you
+were talking about people considering their roles even if they're not let's say the CEO or in that
+position people are constantly being fed like your your role might not be here you you know you
+need to adapt you like all of these things um and it's really hard to embrace that that's sort of
+reality I'm not saying it is the reality for everyone right yes I don't know that brings up
+emotions for sure in terms of all of that relationship to AI and what it could mean that's a big
+part of it and I think especially as you would know I think a lot of engineers especially like you know
+and the day when everybody was told yeah go become learn how to code you know and this is the path
+this is like in for a lot of reasons it is it's such a great path but now every there's a lot of
+people now looking like am I gonna get replaced and I think that's happening across most industries
+I know with some of the people I'm talking to like in Hollywood there's a guest I just had on
+Eric Shemlin and he's kind of an expert around technology and AI and Hollywood all the studios
+and stuff and oh my god like yeah it's it's it's amazing you know everybody thinks they're
+getting replaced and so yeah I think there's I think for your role it's gonna be a lot of like
+your coaching uh having the coach and manage and and listen to people and really just kind of
+bring it back to what's practical right now in today's current time knowing that there's a lot
+to change um but what can you control right now it's sort of the old like military what can I control
+in this moment you know uh so I think that's that's really helpful but yeah and it really it's also
+requiring a lot of your your teammates to start learning it looking at ways it maybe they can wear
+another hat and I know they're probably going gosh you know I signed up for the start up and I thought
+the role was this when I signed up and it's changed and I'm taking on all these roles but that's also
+part of how you learn I mean one of the things I I coach with with some of the people at MIT
+or considering two tracks am I gonna go try to interview and get a job with Google hopefully
+or Facebook or Meta or whoever or you know do I want to start my own business or Google work
+for a startup for a while and and that's one of the pros you try to get across is like you may not
+make as much money there might not be as much certainty but guess what you can learn a lot quickly
+you can take on a lot of different roles quickly so it's a great it's a great thing to to
+understand as as you're approaching that and I'd like to I'd like to actually extend this because
+you're you're actually going where I was gonna ask you anyway and it's like we are in
+for better or for worse kind of the most fantastic moment in history when you know where things
+have changed and you know the notion of who we are and our identities are changing the work
+we're doing on a day to day basis how we get it done I know speaking for myself I am with with the
+new possibilities you know the tooling creates I'm more productive right now than I've ever been
+in my entire life yeah and and so and I'm learning I'm like I'm learning what to do with that
+like there's an adjustment of extra capacity and so you know you mentioned about in startups people
+come in and say well I came in on this role but you know maybe maybe it's time to pivot my role
+within the startup but I think that's happening in all organizations right now that's you're you can
+have very large well-established organizations that are having the same situation with the new
+capabilities coming in and so that is continuing to accelerate yeah so given the fact that the like
+our day-to-day reality is accelerating along this trend and and therefore it's not even
+the rate of learning being the same you know you don't have to learn the same tomorrow you have to
+learn more than you've learned today and the next day you're gonna have to learn more and be more
+have a greater ability to pivot in your own world yes yeah how so like I love the framework that
+you've taken but I'm throwing this challenge at you for the folks that are out there as we're all
+living that which obviously generates some of the fear that you've been talking about how do you
+manage that in the process as the acceleration continues um yeah because I that's I'm certainly struggling
+with that in my own life um well I think it's right I understand Chris I I feel like we're all
+we all can relate to that and that's where again coming back to being human and trying to understand
+the meaning all this all the meaning underneath all of this is is is key so that's where I think
+like those emotional intelligence skills are so critical now now more than ever right how do I
+become more self-aware how do I stay more present you know how do I learn to self-regulate in situations
+when there's fear everywhere there's distraction there's feels like the world's overwhelming one
+day you're up and excited because you're you're you're working on with collateral chat chat GPT and
+everything's like oh you're feeling great about yourself and then the next minute you feel like oh gosh
+like I feel like I'm this small and I have no place here so it's I think a lot of those skills are
+really important to develop and I also think you mentioned identity I think it's important to look at
+identity different I mean there's essence right who I am really am who you really are deep down like
+what makes you you but then there's identity and identity can can involve and I think a lot of people
+don't try on enough identities at times so for example I saw this quote the other day where
+somebody said you know I never thought of myself as an athlete but I am starting to go the gym three
+days a week and I'm starting to do things and it's like I think I'm an athlete and I'm like yeah
+call yourself that and that's where I go back to like if you can make leadership your identity
+even if you're not the CEO at a company that's fine make yourself a leader and figure out like
+what steps I want to take to continuously evolve but I guess to answer your question I really
+rely a lot on those emotional intelligence skills how do I how do I show more empathy ask more
+questions listen maybe if I'm really frustrated or I don't agree with the person I'm working with
+how can I respond rather than react you know sometimes you do have to react right you're just
+you're gonna step out in front on the street and you don't want to get hit my butt you're gonna react
+but sometimes you can respond right you're maybe getting you're not getting the answer you
+want or you're not reaching the objective you want in the conversation but you can maybe take a step
+back and learn to respond differently those are some of the things that I think will be very
+valuable right now in work but it's but it's scary I'm not gonna I'm not gonna say like
+everybody I'm coaching right now is pretty much in the same boat where all everybody's kind of trying
+to figure it out I love how read in this episode is helping us understand narrative intelligence how
+we can keep up in this rapidly changing world of AI and part of that is us as individuals as
+leaders as organizations taking ownership of where we are in our AI adoption and AI journey and I
+see so frequently that organizations are not prepared for this next phase of autonomous agents where
+organizations will have a fleet of agents operating with agency in company infrastructure with
+access to critical systems that's why I so privileged to be leading an amazing team of folks
+over a prediction guard I founded the company three and a half years ago and we provide an AI
+control plane that you run in your infrastructure to keep sovereign control over the agents
+operating in your infrastructure you can manage the supply chain on which those agents operate the
+scoping of what they can access you can institute runtime controls over the agent behavior and you
+have a full set of operational components that help you keep track of agents that have been quarantined
+agents that have gone off script investigations into agent behavior I would encourage you to
+check out what we're doing at predictionguard.com slash practical AI book a time with myself and the
+team to help help you understand what we're doing and really explore how you can adopt agents
+without losing control that's predictionguard.com slash practical AI again predictionguard.com slash
+practical AI. Well read you you started to go this direction which I'm really curious about this
+this idea of identity and the identities that we take on and the roles that that were you know
+what we're trying to achieve in terms of of outcome and I think this brings up this tension where
+people are trying to figure out what is my uniquely human role within the world of AI what is
+kind of preserved that artificial intelligence doesn't do and maybe narrative intelligence and
+other forms of my own you know identity and role does you know does stay there and I love you know
+I love that you're on coming from your background kind of through storytelling, through acting
+all of these things I love the Tolkien letter where he is talking about this idea of like as
+humans we're sub creators and we you know we look around us and the this kind of ultimate beauty
+is the sub creation that we each are able to do. I'm wondering in your mind what does that that
+look like maybe even for yourself as you're as you're thinking about like you're obviously
+entering into new ventures you're doing new things with the podcast and and other things that
+that you're working on right now what is this what is this idea of creation and creativity
+and like the uniquely human element of that what does that mean to you now given everything that's
+happening with AI great question Daniel I would say right now at first it was I was probably like most
+people a little bit worried about like what what's this what does this mean for me and my
+identities I I currently have now I look at it from a completely different lens I love that book
+I don't know if you've read it by Rick Ruben the creative act but like if you really start to think
+I step back from it it's never been better to be a creator and innovator a human right
+when you really think of the tools and they're out there we don't you know before there's so many
+different you know barriers to get there you know whether you had to get certain job go
+maybe a certain school had to have the certain skills but now there's it's never been better to
+learn these things and so when I and that's a great quote or that you mentioned but I think of it
+right now is like almost anything's possible and that's a great feeling but we have to be
+real back in at times but it's a great place to allow you to allow yourself to go creatively and think like
+who do I want to become what do I want to do you know what stories do I want to tell what things
+do I want to build what people do I want to work with I think it's now it's just a really
+awkward awesome time to be from in that go back it's just a really great time to be a creator
+and innovator and so yeah so I right now like when I think of like the work I'm doing it's just I
+look at it just every day is like I'm learning and the more you can step into just the growth mindset
+of just I want to be curious I want to ask questions I want to be present and I just want to learn
+and you step into that every day is a learner it's it's a great place to be because every
+everything's changing in a way that you know we've never imagined before so yeah yeah just anecdotally
+this I don't know if this is really revealing too much to our audience but I'm okay with being
+being a little vulnerable so this last weekend I was at the Indiana Bigfoot conference which was just amazing
+in every way I would highly recommend attending if if you're in the area this is from for
+people with shoe size is greater than 13 right right exactly yeah so so I mean just anecdotally
+though I was there like so I went last year and I was there this year and to hear the people there
+that were you know whatever random subculture topic that that is and they're into the ways that
+they're thinking about applying AI to be creative to do their research and explore this material
+and like do this searching and like accumulate this and create maps and like do all these things
+like that all even a year ago like there was you know there there was it was obviously fun and
+and cool but they weren't talking in that way about maybe some of the same possibilities with
+technology and I know that's a very random thing but I think it connects with what you are saying
+that it's never it's never better whether you're you know a software engineer or your
+member of the Indiana Bigfoot research organization to be able to like think creatively
+and apply you know what what you're what I knew you man yeah yeah I thought I knew you
+said hey hey and and Daniel you knew I produced a Bigfoot film that you oh that's amazing I didn't
+I didn't know yeah I have to look at the credits about one yeah so that was it's I was
+spent a lot of time around Bigfoot research I wish we had the tools we have today exactly
+I partnered with a a guy named Eduardo Sanchez he was he's a director creator of the Blair
+Witch Project and he had this great really great script for years it was a big budget script
+that he's trying to get made had different attachments anyways we decided at some point just to
+like go do this the low budget version of it to get it out there because he was so passionate about
+Bigfoot so yeah I fell into that world for a while but to your point all the more reason yeah you
+can be a software engineer and on the side you can be a musician you can be a storyteller you can
+create story worlds you can be an author you can do whatever you want nowadays and I think that's
+important to realize with these tools that are out there I'm curious is I is a circle around
+kind of on the conversation and I wanted to ask there are a lot of people I I think like
+certainly on when you talk to the three of us it's I think it's easy to get us onto this path
+to do this you know I was kind of like hey I'm kind of doing some things but I need you to focus
+me and stuff how how do you get people in a harder sense there's there's a whole world of
+people out there who are feeling left behind and and they're not they're not doing AI podcast
+or not listening to AI podcast or watching AI podcast they're they and they are kind of
+grinding through the world as they have been doing their whole lives and that you know
+speculate I don't have data on this but that's probably the majority of people out there yeah
+and and how do you how do you get them I I don't imagine it's a it's a quick and super easy thing
+but like how do you get them to take the first step or two it's a weird question where you're like
+well you know because we have a future going forward here and it's not just us it is a whole lot of
+people in the masses how do you how would you recognizing it's I'm asking a really hard challenge I know
+yeah yeah how do you get that first how do you get people to say I'll take a first step into
+into into a larger different world that's a great question thanks for asking that Chris and I
+I say that because I feel like I'm living it with not only family members you know my parents
+or people that are even my age that maybe are in you know like a group in Texas and but even like
+talking to different companies I'm coaching like their their customers are in manufacturing or they're
+in you know rural cities and they're like and he said there's a lot of fear around like they don't
+like a I or they're they're a little bit they're so worried about it maybe they're reading the news and
+so I think one thing I found to work just recently is make it super simple and practical
+that fits integrates into their life as it is so for example um you like to cook is there a
+recipe you can come up with there's is there a restaurant you want to discover you know that you can
+kind of easily get them into you know asking questions prompting and then they start to get it's just
+like you know it's much better version of the internet from old but the point being is I think once
+they start to see it work for them like the other day or over the summer we were planning a trip
+like a reunion trip and and anyways my my parents are so we're so afraid of AI and they
+are like oh I don't like what's going on in the world and then we started doing this we started
+planning out this trip and within a matter of minutes we had like an itinerary of all the really
+cool places we wanted to do and it just all this into spark their curiosity they got creative well
+what if we asked this can you ask it this question and before you know it you start to realize like hey
+it's it's pretty simple at the end of the day if you just want to start and so I think I think
+to answer your question the more you can ask questions to them that kind of ties it back to what
+they're interested or motivated to do the bet that's what I found to be better good advice yeah I love
+that I always recommend the same for like technical people trying to get into it maybe they're building
+their first agent they're like well what do I do um I have my question is often well what are you
+interested in like it's it yeah you know whatever trading crypto or like collecting you know
+pokemon car like create something that's related to the thing that you're passionate about great
+and yeah more useful big foot for this episode it exactly yeah my research needed
+are we gonna find big foot by the end of the week I hope so you know unless unless it's an
+interdimensional being yeah and then then probably not but yeah this this has been great read
+I I want to maybe like as we get closer to to an end here we often ask our our guests kind of
+as you look to the future you know that whatever time period that makes sense in your mind you know
+the next few months the next year whatever that is what what's kind of at the top of your mind
+around it could be a set of challenges that you're thinking about in this area it could be like
+something you're excited to dig into and explore more where where you see some of these things going
+does anything come to mind in terms of yeah when you end the day and you're you're thinking about
+those things moving forward what what comes to mind great question I you know I think
+I'm a little bit of a dreamer day and you've always been you know I think it's one of the reasons
+I got into film was I was sort of an introvert and I was really into sports but I really wanted to
+like learn and express myself so I always come back to ways that people can tell their story
+I I envision a world and I've I've started to re-imagine the brand I started called the lesson
+which is really like imagine like a world that almost felt like you know you could tap into
+people's stories and lives almost like you do a Netflix show or whatever it doesn't have to be
+necessary a long form but imagine ways that we can connect we can tell stories we can we can
+become you know again these different identities in a way that becomes just really beautiful and rich
+to see and to refail kind of part of something bigger and and as a whole and I and I say that
+only I hope that's a world that we can get to but it's certainly with the tools that are out there
+right now it certainly seems like there will be some extraordinary ways to you know lift humanity
+in the future and it might be a lot here a lot sooner than we think so I go back to your
+answer question I go back to a lot of the dreams and sort of vision I had around storytelling
+and how to how to move people that's great well I I hope to have you back on the back on the show
+and the future to to talk through all of those things and as you've highlighted things will
+look different in the future then we can even predict and not something to be afraid of but
+something to lean into and you know make make part of your story so so happy that you could join us
+and share that with us thanks for joining Reed thank you so much Daniel thank you Chris I really appreciate
+thank you all right that's our show for this week if you haven't checked out our website
+head to practical a.fm and be sure to connect with us on LinkedIn x or blue sky you'll see us
+posting insights related to the latest a.i. developments and we would love for you to join the conversation
+thanks to our partner prediction guard for providing operational support for the show
+check them out at prediction guard dot com also thanks to breakmaster cylinder for the beats
+and to you for listening that's all for now but you'll hear from us again next week

@@ -1,0 +1,236 @@
+{
+  "piece_id": "03",
+  "title": "Pilot the Periphery Before Trusting the Record",
+  "question": "What do these developments imply for the audience, and what should they watch next?",
+  "argument": "The near-term decision is to pilot AI first where it helps engineers find, prepare, or review artifacts, rather than granting it unchecked authority over engineering records. Onshape’s released public-document search and NVIDIA’s described simulation-asset workflow offer bounded starting points; Autodesk’s planned PLM workflow raises the higher-stakes question of how extracted information will be reviewed before entry. Watch for published deployment evidence, explicit review controls, and physical-task results that extend beyond simulation.",
+  "synthesis": "The evidence separates three adoption surfaces with different consequences: Onshape describes retrieval from public thumbnails, NVIDIA describes conversion and simulated asset checks, and Autodesk describes a future system that would place inferred information into PLM. The editorial implication is not that one system is inherently more accurate, but that teams can sequence pilots by reversibility: test discovery first, then simulation preparation, and require an auditable approval boundary before an agent affects a system of record. The podcast’s secondary account of mostly simulated world-action-model results adds a related watch item: simulation progress should not be treated as evidence of physical deployment breadth.",
+  "limitations": "None of the sources supplies independent customer results comparing these workflows with existing engineering practice. Onshape limits the released feature to public documents; NVIDIA’s demonstrated checks occur in Isaac Sim; Autodesk describes a planned capability rather than deployed behavior. The podcast’s account of benchmark and real-robot coverage is unverified secondary reporting from an automatic transcript, so its figures should be checked against the audio and underlying paper before operational use. World Labs’ announced AMD transaction remains subject to closing conditions and does not establish a capability outcome.",
+  "claims": [
+    {
+      "claim_id": "03-c1",
+      "statement": "Onshape says AI-Generated Thumbnail Description Search is an opt-in Onshape Labs feature.",
+      "type": "source_claim",
+      "evidence": [
+        {
+          "item_id": "feed:https://www.onshape.com/en/blog/ai-generated-thumbnail-description-search",
+          "version_id": "b2755a997c3cdda71421bbdd40ee9721d353cbc20ed2f1f80e91169757b9bbd2",
+          "locator": {
+            "type": "text",
+            "quote": "an opt-in Onshape Labs feature"
+          }
+        }
+      ]
+    },
+    {
+      "claim_id": "03-c2",
+      "statement": "Onshape says the released Labs feature applies to public documents only.",
+      "type": "source_claim",
+      "evidence": [
+        {
+          "item_id": "feed:https://www.onshape.com/en/blog/ai-generated-thumbnail-description-search",
+          "version_id": "b2755a997c3cdda71421bbdd40ee9721d353cbc20ed2f1f80e91169757b9bbd2",
+          "locator": {
+            "type": "text",
+            "quote": "public documents only"
+          }
+        }
+      ]
+    },
+    {
+      "claim_id": "03-c3",
+      "statement": "NVIDIA’s walkthrough says its workflow checks imported robot scale, parts, and appearance against references.",
+      "type": "source_claim",
+      "evidence": [
+        {
+          "item_id": "youtube:H5UaOdIZERw",
+          "version_id": "c86fae4c3874c6aa997843fe5a3365bf0a32d21acb0927fbcea32b10e0709a06",
+          "locator": {
+            "type": "segment",
+            "segment_id": "s0004"
+          }
+        }
+      ]
+    },
+    {
+      "claim_id": "03-c4",
+      "statement": "NVIDIA’s walkthrough says its workflow configures joints, collision geometry, and physical properties.",
+      "type": "source_claim",
+      "evidence": [
+        {
+          "item_id": "youtube:H5UaOdIZERw",
+          "version_id": "c86fae4c3874c6aa997843fe5a3365bf0a32d21acb0927fbcea32b10e0709a06",
+          "locator": {
+            "type": "segment",
+            "segment_id": "s0005"
+          }
+        }
+      ]
+    },
+    {
+      "claim_id": "03-c5",
+      "statement": "NVIDIA’s walkthrough says its workflow reruns simulation-ready checks and a grasp test after fixing issues.",
+      "type": "source_claim",
+      "evidence": [
+        {
+          "item_id": "youtube:H5UaOdIZERw",
+          "version_id": "c86fae4c3874c6aa997843fe5a3365bf0a32d21acb0927fbcea32b10e0709a06",
+          "locator": {
+            "type": "segment",
+            "segment_id": "s0006"
+          }
+        }
+      ]
+    },
+    {
+      "claim_id": "03-c6",
+      "statement": "NVIDIA’s walkthrough says the final sequence is tested in Isaac Sim.",
+      "type": "source_claim",
+      "evidence": [
+        {
+          "item_id": "youtube:H5UaOdIZERw",
+          "version_id": "c86fae4c3874c6aa997843fe5a3365bf0a32d21acb0927fbcea32b10e0709a06",
+          "locator": {
+            "type": "segment",
+            "segment_id": "s0007"
+          }
+        }
+      ]
+    },
+    {
+      "claim_id": "03-c7",
+      "statement": "Autodesk executive Jeff Kinder says the agentic PLM experience is expected to launch in the next couple of quarters.",
+      "type": "source_claim",
+      "evidence": [
+        {
+          "item_id": "feed:https://www.engineering.com/?p=151286",
+          "version_id": "a393edb1af792a0f22f58a9c9be7640474dbeb4ed41d7ec336f5428b607cf2bc",
+          "locator": {
+            "type": "text",
+            "quote": "launch in the next couple of quarters"
+          }
+        }
+      ]
+    },
+    {
+      "claim_id": "03-c8",
+      "statement": "Kinder says the proposed agentic PLM experience would draw information from Slack, Microsoft Teams, and Outlook conversations.",
+      "type": "source_claim",
+      "evidence": [
+        {
+          "item_id": "feed:https://www.engineering.com/?p=151286",
+          "version_id": "a393edb1af792a0f22f58a9c9be7640474dbeb4ed41d7ec336f5428b607cf2bc",
+          "locator": {
+            "type": "text",
+            "quote": "whether it’s Slack or Microsoft Teams or Outlook"
+          }
+        }
+      ]
+    },
+    {
+      "claim_id": "03-c9",
+      "statement": "Kinder says the proposed experience could discern PLM information in unstructured conversations and place it in the PLM system.",
+      "type": "source_claim",
+      "evidence": [
+        {
+          "item_id": "feed:https://www.engineering.com/?p=151286",
+          "version_id": "a393edb1af792a0f22f58a9c9be7640474dbeb4ed41d7ec336f5428b607cf2bc",
+          "locator": {
+            "type": "text",
+            "quote": "start to discern that and put it into your PLM system"
+          }
+        }
+      ]
+    },
+    {
+      "claim_id": "03-c10",
+      "statement": "World Labs says it has signed a definitive agreement to join AMD.",
+      "type": "source_claim",
+      "evidence": [
+        {
+          "item_id": "feed:https://www.worldlabs.ai/blog/amd-announcement",
+          "version_id": "2c8c4fd4ce9225d78c416b1395d5c5df66d034e798790780b2dba19b298c33c7",
+          "locator": {
+            "type": "text",
+            "quote": "signed a definitive agreement to join AMD"
+          }
+        }
+      ]
+    },
+    {
+      "claim_id": "03-c11",
+      "statement": "World Labs says the proposed transaction is subject to regulatory approvals and customary closing conditions.",
+      "type": "source_claim",
+      "evidence": [
+        {
+          "item_id": "feed:https://www.worldlabs.ai/blog/amd-announcement",
+          "version_id": "2c8c4fd4ce9225d78c416b1395d5c5df66d034e798790780b2dba19b298c33c7",
+          "locator": {
+            "type": "text",
+            "quote": "subject to regulatory approvals and other customary closing conditions"
+          }
+        }
+      ]
+    },
+    {
+      "claim_id": "03-c12",
+      "statement": "The Physical AI Podcast reports that most of the cited world-action-model results came from simulation benchmarks and that its real-robot result covered one task.",
+      "type": "source_claim",
+      "evidence": [
+        {
+          "item_id": "podcast:https://physicalaipodcast.co/episodes/009",
+          "version_id": "13aaf6bfc525bce0b9a1887162b0c0c3d4dd024b9bafd1c223a5bc48bd063692",
+          "locator": {
+            "type": "segment",
+            "segment_id": "s0081"
+          }
+        }
+      ]
+    },
+    {
+      "claim_id": "03-c13",
+      "statement": "Because Onshape’s released retrieval feature is restricted to public documents while Autodesk describes a future workflow that would place inferred information into PLM, a lower-risk adoption sequence is to pilot discovery before PLM-writing automation.",
+      "type": "inference",
+      "evidence": [
+        {
+          "item_id": "feed:https://www.onshape.com/en/blog/ai-generated-thumbnail-description-search",
+          "version_id": "b2755a997c3cdda71421bbdd40ee9721d353cbc20ed2f1f80e91169757b9bbd2",
+          "locator": {
+            "type": "text",
+            "quote": "public documents only"
+          }
+        },
+        {
+          "item_id": "feed:https://www.engineering.com/?p=151286",
+          "version_id": "a393edb1af792a0f22f58a9c9be7640474dbeb4ed41d7ec336f5428b607cf2bc",
+          "locator": {
+            "type": "text",
+            "quote": "put it into your PLM system"
+          }
+        }
+      ]
+    },
+    {
+      "claim_id": "03-c14",
+      "statement": "NVIDIA’s simulated grasp workflow and the podcast’s reported one-task real-robot result make physical-task replication a more consequential watch item than another simulation-only demonstration.",
+      "type": "inference",
+      "evidence": [
+        {
+          "item_id": "youtube:H5UaOdIZERw",
+          "version_id": "c86fae4c3874c6aa997843fe5a3365bf0a32d21acb0927fbcea32b10e0709a06",
+          "locator": {
+            "type": "segment",
+            "segment_id": "s0006"
+          }
+        },
+        {
+          "item_id": "podcast:https://physicalaipodcast.co/episodes/009",
+          "version_id": "13aaf6bfc525bce0b9a1887162b0c0c3d4dd024b9bafd1c223a5bc48bd063692",
+          "locator": {
+            "type": "segment",
+            "segment_id": "s0081"
+          }
+        }
+      ]
+    }
+  ]
+}

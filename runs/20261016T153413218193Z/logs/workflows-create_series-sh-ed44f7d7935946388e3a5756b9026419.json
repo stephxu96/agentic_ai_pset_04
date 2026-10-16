@@ -1,0 +1,1 @@
+{"cost_usd": null, "finished_at": "2026-10-16T15:48:37Z", "input_count": null, "output_count": null, "stage": "workflows/create_series.sh", "started_at": "2026-10-16T15:48:37Z", "status": "completed", "tools": ["bash workflows"]}

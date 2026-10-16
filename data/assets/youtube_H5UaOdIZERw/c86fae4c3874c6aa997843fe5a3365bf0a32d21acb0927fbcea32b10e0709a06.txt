@@ -1,0 +1,9 @@
+Here's how to turn robot CAD files and dissimulation ready assets and five steps using front here AI models and in video omniverse libraries.
+Start by giving us the step files and video image references, specification manuals, and CAD to sim ready skill.
+Ask it to convert the robot to OpenUSD and import it into Isaac Sim.
+Next, we validate the visual properties and check the imported robot scale, parts, and appearance against the references.
+Then, we validate the physics properties and have Astra configured the joints, collision geometry, and physical properties, and the arms, and grippers.
+Then, we validate the sim ready properties and run the selected sim ready foundation checks, test the grasp, fix issues, and rerun the checks and grasp test.
+Finally, test the full sequence and Isaac Sim.
+Grasp, lift, old, move, and release.
+Find the steps and prompts in the technical blog.

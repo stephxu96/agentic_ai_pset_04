@@ -1,0 +1,84 @@
+How do we keep a retiring estimator's quoting knowledge?
+by Aidan Vrobel
+Oct 15, 2026
+Short answer:
+Your senior estimator's knowledge isn't written down anywhere. It's judgment: he's the only one who can run your quoting process, he knows what every customer's drawings leave out, he knows which parts are good and which work together, he knows which vendor to use for every part, and he can look at a drawing and know the labor. To keep it, move that judgment into one system the whole team uses, and have newer estimators quote alongside him before he leaves. In a WHMA survey of 42 wire harness manufacturers, more than half said they still rely on tribal knowledge to quote.
+Key facts
+In many wire harness shops, one senior estimator is the only person who can run the quoting process, whether it lives in Excel, in the ERP or on paper.
+What leaves with him is judgment, not documents: customers, parts, vendors, internal part names and a feel for labor.
+More than half of 42 wire harness manufacturers surveyed through WHMA said they still rely on tribal knowledge to quote.
+Cableteque puts that judgment into the system: it flags missing and incompatible parts, prices across your own distributors, maps internal part names to manufacturer part numbers, and fills your labor template 60–80% automatically.
+What actually walks out the door
+In a lot of wire harness and cable assembly shops, quoting runs through one person who has done it for 20 or 30 years. When he retires, here's what goes with him:
+The process itself.
+He's the only one who really knows how to run your quoting process, whether that's a spreadsheet he built, your ERP, or a stack of paper. Nobody else can produce a quote the same way.
+The customers.
+He knows every customer and exactly what their drawings don't define: the terminals, seals, cavity plugs and coverings they always leave off, and the mistakes they always make.
+The parts.
+He can look at a part and know whether it's a good part or a bad one, and which parts work together and which don't. That's what keeps the wrong parts from reaching the manufacturing floor.
+The vendors.
+For every part, he knows which vendor to go to.
+Your internal part names.
+He knows what parts are called in your ERP, which often isn't the manufacturer part number. One manufacturer we spoke with had a customer that sent everything in its own internal part numbers. The estimator knew every cross-reference, never put them into a system, and when he left, they left with him.
+A feel for labor.
+Most veterans don't count every operation. They look at a drawing and just know how long it will take. That's the hardest thing to hand over, because it was never written down in the first place.
+How to keep it
+1. Get the process out of one person's head
+If only one person can run the quoting process, that's the first risk to fix. Move quoting into one system the whole team uses, so the process doesn't depend on his spreadsheet or his memory of how the ERP works.
+2. Capture what each customer leaves out
+Sit with him on real RFQs from your top customers and write down what each one's drawings never define. Turn those into checks that run on every quote, not notes in a binder.
+3. Capture his parts and vendor knowledge
+Record which parts work together, which ones he avoids, which vendor he uses for what, and what each part is called in your ERP. That's the knowledge that keeps quotes buildable and correctly priced.
+4. Turn his feel for labor into a standard
+Have him price a set of recent jobs against one standard labor template and compare the template to his gut number. Where they differ, adjust the template. When he leaves, the template carries his judgment instead of his memory.
+5. Overlap before he leaves
+Have newer estimators quote real jobs while he reviews their work. Every correction he makes is knowledge you haven't captured yet.
+How Cableteque keeps the knowledge in the system
+One process anyone can run:
+quoting happens in one system instead of one person's spreadsheet, so a newer estimator follows the same steps as the veteran.
+What the drawing doesn't define:
+Cableteque flags likely-missing terminals, seals and cavity plugs on every drawing, based on connector and wire compatibility.
+Parts knowledge:
+its library holds more than 10 million parts, 2 million of them with full datasheet-level detail, including what each part works with and the accessories and tooling that go with it.
+Vendors:
+it prices every part across your own distributor accounts (20+ distributors), so nobody needs to remember who to call.
+Internal part names:
+it maps customer and internal part numbers to manufacturer part numbers, with approved alternates.
+Labor:
+it loads your existing labor template as-is and fills 60–80% of it automatically, so labor stops depending on one person's gut.
+Cableteque was built for this problem. Founder Arik Vrobel ran El-Com Systems, a wire harness manufacturer, for 35 years before selling it to Aptiv in 2021.
+Proof: Derrick Lang
+Derrick Lang has 30 years in wire harness manufacturing. With Cableteque, he cut quote turnaround by 70%, taking standard packages from 1–1.5 weeks down to 2–3 days. He estimates he could do about five times as many quotes without hiring.
+Read his case study
+.
+Related:
+How do we stop losing money on cable assembly quotes?
+·
+Choosing the right wire harness quoting software
+FAQ
+What quoting knowledge do we lose when a senior estimator retires?
+Mostly judgment: how to run your quoting process, what each customer's drawings leave out, which parts are good and work together, which vendor to use for each part, what parts are called in your ERP, and a feel for how much labor a drawing takes.
+Our estimator prices labor by feel. How do we capture that?
+Have him price recent jobs against one standard labor template and compare the template to his gut number. Adjust the template where they differ, so it carries his judgment after he leaves.
+How long before he retires should we start?
+As early as possible. Capturing his knowledge takes real quotes and real time with him, and every correction he makes during overlap is knowledge you'd otherwise lose.
+Can a newer estimator really quote like a 30-year veteran?
+Not from memory. But if the veteran's customer, parts, vendor and labor knowledge lives in a system that applies it to every quote, a newer estimator starts from the same place and handles the judgment calls.
+Wire Harness Quoting
+Industry Insights & Business Strategy
+Recommended articles
+Case Studies & Customer Stories
+How can I quote wire harnesses faster without hiring more estimators?
+73% of wire harness manufacturers say quoting is still manual. Here is how shops like Resco and KCM Cable cut turnaround by 70% to 96% without adding...
+by Arik Vrobel
+Jun 24, 2026
+Software & Tool Comparisons
+Wire Harness Design Software vs. Quoting Software: Why They Solve Different Problems
+Design tools help engineers build harnesses. Quoting tools help contract manufacturers price them. Here's why they're not interchangeable.
+by Aidan Vrobel
+May 20, 2026
+Wire Harness Quoting
+How do we stop losing money on cable assembly quotes?
+Where cable assembly and wire harness quotes really lose money: what the customer's drawing leaves out, pricing nobody can fully compare, and...
+by Aidan Vrobel
+Oct 15, 2026

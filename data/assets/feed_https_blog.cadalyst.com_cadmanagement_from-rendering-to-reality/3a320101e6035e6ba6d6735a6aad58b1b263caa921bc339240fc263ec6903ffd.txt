@@ -1,0 +1,100 @@
+From Rendering to Reality
+9
+:
+00
+From Rendering to Reality
+By
+Cadalyst Staff
+Communication
+Collaboration
+Productivity
+Virtual Reality
+AEC
+AR/VR/XR
+Digital Transformation
+July 21, 2025
+SPONSORED: How architects use VR to win trust and speed decisions.
+For architects and other design professionals, the ability to walk through a design before it’s built has been an elusive goal. Digital renderings and animations have helped convey design concepts and enable projects to proceed more smoothly, but many design professionals and project stakeholders have hungered for more.
+Image source: Yulio.
+For architects and other design professionals, the ability to walk through a design before it’s built has been an elusive goal. Digital renderings and animations have helped convey design concepts and enable projects to proceed more smoothly, but many design professionals and project stakeholders have hungered for more.
+Recent technological advances in consumer technology, such as smart devices and gaming, have raised the bar of expectations, and design professionals and other project stakeholders now often expect more interactive, immersive experiences, such as virtual reality (VR). For design teams, this means project participants are seeking more clarity and versatility when viewing design concepts — not just static renderings.
+“Five or ten years ago, people were happy with a photorealistic rendering. It was a major advancement when compared with a blueprint or a drawing,” noted Christine Bellefontaine, director of marketing at
+Yulio Technologies Inc
+. “But expectations have really changed from, ‘tell me about this project’ to ‘show me.’”
+Current technology such as that provided by Yulio is greatly expanding the accessibility of VR, along with related technologies such as augmented reality (AR) and mixed reality (MR). The broader accessibility enables firms to use VR as a design tool as well as a presentation tool, making big impacts throughout project lifecycles.
+From Backroom to Boardroom: How Design Teams Use VR Internally
+The growth of VR as a design tool is producing benefits early in project stages, enabling project managers, architects, and interior designers to collaborate and get on the same page faster than with traditional design processes. The immersive environment helps teams better visualize how designs will appear after construction. VR also helps teams spot possible conflicts between various project components, such as architectural, structural, mechanical, electrical, and plumbing systems.
+“VR can help you catch issues during the design process that might occur during construction,” said Regiane Laveli, sales director at Yulio and a civil engineer by training. “You can collaborate and make mockups in real time, which is really powerful for catching issues and including things that you might otherwise forget.”
+Using Yulio CAD plugins, designers can quickly create VR experiences directly from design tools such as
+Revit
+,
+Sketchup
+, and
+CET
+. Experiences can be shared via Yulio Jump, a cloud-based rendering engine that enables remote collaboration among teams regardless of physical location.
+Yulio VR technology enables users to experience designs in an immersive environment. Image source: Yulio.
+Click here to watch video.
+Yulio is also compatible with common rendering tools such as
+Enscape
+,
+V-Ray
+,
+Lumion
+, and,
+3DS Max
+. In this scenario, 360-degree panoramic renderings developed with one of these tools are uploaded to Yulio, providing access to Yulio’s immersive features.
+Fruitful Client Conversations
+The value of smooth VR experiences becomes even more prominent when involving clients and other stakeholders. With clients often unaccustomed to viewing technical drawings, VR can enable clients to experience a design in an immersive environment, where they can more easily understand overall design concepts. This reduces the risk of misunderstanding between client and designer that can sometimes result in disappointment after a project is built.
+“We’ve seen clients gasp when stepping into a virtual gymnasium for the first time — suddenly, they’re not just reviewing a design, they’re experiencing it,” said Bellefontaine.
+For
+HKS
+, a global firm of architects, designers, planners and advisors, VR has greatly aided project development and client communications during various stages of projects. The company has used Yulio on over 100 projects and has integrated it into its regular workflow.
+“VR eliminates back-and-forth and reduces rework,” said Neithra Mohan, director of immersive experiences at HKS. During the design process, “you catch things in VR you’d miss in 2D renderings like signage, sightlines, light quality. Then once clients see a project in VR, they understand it on a completely different level. It eliminates confusion and boosts confidence.”
+Opening the Book North America
+, which provides library furniture and space planning services to schools and libraries, has found VR helpful in both winning work and providing services for clients. Megan Fink, library designer at Opening the Book, said: “VR has helped make what we were trying to do real for clients. Because some of the public libraries we work with are very large and it’s a lot of space to try to just show in static, using Yulio’s hotspots, we found it’s been very helpful in letting our clients explore the different rooms and move around.”
+Opening the Book North America has found VR helpful in both winning work and providing space planning services for clients. Image source: Yulio.
+As clients gain more understanding of project designs, VR provides other benefits, such as more productive meetings, without lengthy orientations on how to view drawings. This, in turn, can lead to more confident, visually oriented conversations, and more emotional buy-in of project concepts.
+VR can also be used to provide virtual project tours in RFPs, presentations, and stakeholder updates. This can shorten decision-making and approval cycles with clients and approving agencies.
+“It can help sell a vision,” said Laveli. “There's no doubt about what you're trying to say and what they are seeing.”
+VR can also be useful in attracting new clients. When a prospective client can experience a conceptual design in an immersive environment, the presenting firm can push ahead of the competition if other firms are relying on static renderings.
+“We use the VR component of Yulio for any project where we feel we need the extra ‘oomph’ to get us the win on the job or to really help them visualize the space,” said Fink.
+“It helps a firm show due diligence — that they're using up-to-date technology and can communicate their intentions and build that trust at every stage,” added Bellefontaine.
+Minimal Effort, Big Impact
+Contrary to common perceptions, VR presentations can be prepared with relative ease, at minimal cost, and on projects of any size. With Yulio’s intuitive interface, users can create presentations while working directly in CAD and BIM design software. Presentations can be sent via URL or shared on a headset.
+With Yulio Jump, rendering is handled on the cloud, avoiding the need to tie up local computing resources. Designers can invite colleagues to participate in a VR experience by simply sending a link or a QR code. Connected colleagues can then walk through design features together, mark-up designs, and capture feedback during presentations.
+Yulio also allows users to augment VR presentations with digital versions of actual objects, such as pieces of furniture, creating an AR experience. Using the Yulio plugin, users can tag an object to create an AR hotspot that is then incorporated into the presentation. For example, a specific chair could be added to an interior design of an office area, enabling someone to see how that item would fit into its surroundings from any angle.
+Presentations can be augmented with real objects, such as specific pieces of furniture. Image source: Yulio. Click image to enlarge.
+An AR object can also be viewed in an actual physical environment using a mobile device or VR headset. Yulio prompts the user to scan the environment and import an AR object to see how it would appear in the real world. The object can be moved, rotated, and viewed from any angle.
+AR objects can be viewed in a user’s physical surroundings using a mobile device or headset. Image source: Yulio.
+The various options in Yulio enable users to incorporate VR in almost any stage of a project, “With furniture, you may be near the end of the design process, viewing how this furniture is going to look in this space,” said Laveli. “But you can use the plugins during any stage of the process. You could be working on a Revit model and need to create something visual for a client. You don’t need a 100% complete design; you can use an 80% rendering, create an experience on the cloud, and send a link to your client.”
+The accessibility of VR using Yulio offers new opportunities to firms that may have viewed VR as limited to large, fully designed projects. Whether working through preliminary design options, finalizing a specific design, or presenting a design to a client, accessible VR can provide a practical way to leverage technology and work smarter.
+***
+ARTICLE SPONSORED BY
+Yulio
+.
+Read more about CAD Management on our
+CAD Management Resource Page
+.
+Share This Post
+Cadalyst Staff
+View All Articles
+MORE ON THIS TOPIC
+CAD Management
+Communication
+Collaboration
+Productivity
+AI
+Automation
+Digital Transformation
+Navigating AI in the Engineering World — Managing Data for AI Applications
+An important, but often overlooked, aspect of artificial intelligence (AI) is the management of data that feeds AI systems. Without proper data...
+CAD Management
+Communication
+Collaboration
+Productivity
+AI
+Automation
+Digital Transformation
+Navigating AI in the Engineering World — Reaping Benefits of AI While Avoiding Pitfalls
+If you’ve dipped your toes into artificial intelligence (AI) and are seeking ways to ap
+ply it in a technical environment such as architecture,...

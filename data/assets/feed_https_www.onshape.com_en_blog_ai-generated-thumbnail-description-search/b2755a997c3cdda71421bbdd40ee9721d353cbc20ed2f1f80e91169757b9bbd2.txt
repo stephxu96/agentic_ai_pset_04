@@ -1,0 +1,105 @@
+10/05/2026
+Blog
+,
+Evaluating Onshape
+,
+Artificial Intelligence
+,
+Documents
+Introducing AI Descriptive Image Search from Onshape Labs
+Roy Mutalik
+READ TIME:
+05:04
+Summary
+AI-Generated Thumbnail Description Search is an opt-in Onshape Labs feature that generates searchable descriptions from model thumbnails.
+Engineers can find parts using visual characteristics and natural-language descriptions instead of relying solely on names, metadata, or company-specific terminology.
+The approach could improve part reuse, reduce duplicate designs, and make engineering data easier to discover across teams and legacy datasets.
+“I can’t find it, I’ll just remake it.”
+Every designer has some version of this story. You need a simple part that you know exists, perhaps you even designed one a year or two ago, such as a basic angle bracket. You pull up your PDM search and type in “bracket” and “mount,” but after 20 minutes of searching and scrolling through thumbnails, you give up. You decide it will be faster to just design a new one.
+The failure here isn’t in the search itself but the search criteria. A search is traditionally limited to the name of the part, and perhaps some of its metadata (description, material, finish, etc.). The geometry – the actual information you need, and the thing that allows you to immediately recognize the part – hasn’t historically been available until you open it from the search results.
+That’s something the newest feature from
+Onshape Labs
+changes.
+Introducing AI-Generated Thumbnail Description Search
+In
+Onshape’s 1.221 release
+, an Onshape Labs capability called AI-Generated Thumbnail Description Search, or AI Descriptive Image Search, became available. Catchy name, right? But what does that mean, and what does it actually do?
+Part thumbnails as viewed from the left-side Tabs panel.
+The mechanics of it are very straightforward. Every model in Onshape already includes a static thumbnail image, visible in places like the documents page, or the tab manager within a document. AI is “shown” this image, and it writes a description of what it sees. This text then becomes searchable, alongside all other metadata, so you can search based on what a part looks like.
+This is an Onshape Labs feature, which means:
+You have to
+opt in and enable it
+– it isn’t on by default.
+It applies to
+public documents only
+, not your private data (yet).
+Lastly, as with all Onshape Labs features, it’s far from finished. But even in its fledgling state, this mechanism is worth sitting with because the potential far outweighs its currently available scope of usability.
+More on Onshape Labs
+AI-Powered Search That’s Natural and Conversational
+AI Descriptive Image Search makes finding a part much more conversational than a strict query. In the opening example of trying to find that angle bracket, the challenge was remembering what it had been called. Traditional search relies on naming conventions, metadata, and accurate terminology. AI Descriptive Image Search allows parts to be found using any details that help identify them.
+Consider a bracket that was colored red. That detail is unlikely to exist in a part name or metadata, but it may be captured in the AI-generated description because it is visible in the thumbnail. Finding a part becomes less about translating an idea into the correct search term and more about describing what the part actually is.
+Using AI Descriptive Image Search for “red bracket” yields many results, even though none of them contain the words “red” or “bracket” anywhere in their part names.
+In the real world, locating a part among a shelf full of similar brackets rarely begins with a part number. The conversation starts with clues such as color, shape, or distinctive features. This is the type of interaction AI Descriptive Image Search enables.
+Let’s build on these concepts a bit.
+Note:
+The capability described, AI-Generated Thumbnail Description Search, is available for testing in Onshape Labs and currently applies to public documents. Everything beyond that is speculative. The internal and supplier-facing scenarios below are offered as a way of thinking about where this class of capability could lead, not as statements about features in development, planned functionality, or any timeline.
+Finding Parts That Already Exist
+Applying this mechanic internally across a company’s engineering data immediately solves the dilemmas described in the above section. The implications, however, extend far beyond a few minutes of remodeling.
+Duplicated parts have real costs. Additional tooling may be required, QA processes expand, inventory grows, and another BOM line item has to be managed. AI Descriptive Image Search can help reduce this risk by making existing designs discoverable, rather than relying on tribal knowledge or luck.
+A few examples:
+Legacy/Migrated Data:
+Metadata is often incomplete, missing, or poorly maintained after imports, migrations, and acquisitions. AI Descriptive Image Search works regardless of where the model originated.
+New Engineers and Cross-Team Discovery:
+Employees unfamiliar with company naming conventions, or teams searching outside their own projects, can find parts based on appearance and function rather than institutional knowledge.
+Language/Typos/Errors:
+Spelling mistakes, abbreviations, alternate terminology, and language differences can make parts difficult to find through traditional search. A part accidentally labeled “braket” instead of “bracket” may never appear in a keyword search, but its geometry remains unchanged.
+Finding Parts That Haven’t Been Modeled In House
+What if suppliers and manufacturers could publish their catalogs not only as PDFs and tables, but also as model libraries discoverable through AI Descriptive Image Search?
+Imagine searching for a “knurled knob with a flange for a ¼-inch shaft.” An internal search comes up empty because no such part exists in-house.
+Now imagine searching supplier catalogs the same way. There is no need to know the manufacturer, their naming conventions, or what they call a particular style of knob. The search begins with a description of the desired component, and matching CAD models are returned.
+Once selected, the component could be inserted directly into an assembly while preserving supplier information such as part numbers and purchasing details.
+This creates value for everyone involved. Designers spend less time modeling purchased components. Suppliers make their products discoverable when engineers need them. Companies can make sourcing decisions earlier, reducing redesign work and improving lead-time planning.
+Closing the Gap Between Engineering Intent and Search
+The Onshape Labs functionality of AI Descriptive Image Search is live in the public space today.
+The most intriguing aspect of this feature is the possibility of searching for CAD data using the characteristics engineers actually remember. For as long as CAD data has existed, finding a part has often required translating a mental image into the specific name, metadata, or terminology someone chose to use.
+This gap has quietly cost countless hours and likely millions of dollars in both its successes and failures. For the first time, there is a realistic possibility of closing that gap by allowing engineers to search using the characteristics they actually remember, rather than the terminology they hope someone used.
+Stay in the Loop with Onshape Labs
+Fill out the form so you’re first to know, first to try, and first to weigh in on everything Onshape Labs releases next.
+Get Notified
+Latest Content
+Case Study
+Education & Universities
+Prompt to Prototype: How Tufts Engineering Capstone Students Collaborate Using Onshape
+09.10.2026
+Learn how Tufts University Mechanical Engineering seniors use Onshape as part of their capstone design workflow to support collaboration, rapid iteration, and real‑world engineering practice.
+learn more
+Blog
+Customers & Case Studies
+Aviation, Aerospace & Defense
+Robotics
+Startup
+How Marble Uses Onshape to Double Engineering Productivity and Accelerate Autonomous Aircraft Development
+10.13.2026
+Marble Aero uses Onshape to double engineering productivity and rapidly develop autonomous UAVs for environmental data collection in remote regions.
+learn more
+Katherine Brown-Seibenaler
+Blog
+Evaluating Onshape
+Data Management
+Release Management
+Enterprise
+Commercial (Pro/Standard)
+Engineers Asked, We Answered: Onshape Workflows, Revisions, and Release Management
+10.08.2026
+From revisions and releases to custom workflows and product data organization, here are the answers to common questions engineering teams have about managing design data in Onshape.
+learn more
+The Onshape Team
+Blog
+Evaluating Onshape
+PCB Studio
+Integrations
+Validate Rigid Flex PCB Designs with Onshape and Altium 365
+10.01.2026
+Import rigid-flex PCBs from Altium 365 or Cadence Allegro into Onshape with bends intact. Check the folded fit in your enclosure before the first prototype.
+learn more
+Michael LaFleche

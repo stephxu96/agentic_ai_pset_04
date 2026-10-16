@@ -1,0 +1,1 @@
+{"attempts": [{"attempt": 1, "exit_code": 0}], "cost_usd": null, "finished_at": "2026-10-16T02:11:43Z", "input_count": 5, "model": "default, name not reported", "output_count": 1, "stage": "editorial/create_briefs.sh/draft-03", "started_at": "2026-10-16T02:10:54Z", "status": "completed", "tools": ["Codex CLI"]}

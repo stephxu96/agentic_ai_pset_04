@@ -1,0 +1,97 @@
+[
+  {
+    "source_id": "cadalyst",
+    "publisher_id": "cadalyst",
+    "kind": "feed",
+    "url": "https://blog.cadalyst.com/cadmanagement/rss.xml"
+  },
+  {
+    "source_id": "cableteque-blog",
+    "publisher_id": "cableteque",
+    "kind": "feed",
+    "url": "https://cableteque.com/blog/rss.xml",
+    "note": "Verified dated RSS feed on 2026-10-15. Company-authored claims about drawing interpretation, BOM creation, and quoting require editorial verification; the three-newest-item cap applies."
+  },
+  {
+    "source_id": "cableteque-startup-news",
+    "publisher_id": "cableteque",
+    "kind": "feed",
+    "url": "file:config/manual_feeds/cableteque_startup_news.xml",
+    "note": "Two manually curated, dated Cableteque pages: a 2026-09-29 Europe announcement and a 2026-09-16 PDF-to-BOM explainer. Not a live publisher RSS feed; update manually. Both share the cableteque publisher_id with the live blog and are company claims, not independent corroboration."
+  },
+  {
+    "source_id": "engineering-com-ai",
+    "publisher_id": "engineering-com",
+    "kind": "feed",
+    "url": "https://www.engineering.com/category/technology/artificial-intelligence/feed/",
+    "note": "Verified dated RSS category feed on 2026-10-15. The newest three entries were 2026-09-30, 2026-09-23, and 2026-09-22; editorial selection still determines whether each is usable."
+  },
+  {
+    "source_id": "mit-cdfg-survey",
+    "publisher_id": "mit-cdfg",
+    "kind": "feed",
+    "url": "file:config/manual_feeds/mit_cdfg_survey.xml",
+    "note": "One-item manual RSS for the survey webpage. Its 2026-09-22 date is the page's citation_publication_date, not a repository commit date."
+  },
+  {
+    "source_id": "onshape-blog",
+    "publisher_id": "onshape",
+    "kind": "feed",
+    "url": "file:config/manual_feeds/onshape_blog.xml",
+    "note": "Two manually curated Onshape blog articles dated 2026-10-05 and 2026-09-30. This is not an Onshape-provided RSS feed and requires manual updates. Onshape and its YouTube channel share this publisher_id; Onshape is part of PTC's portfolio."
+  },
+  {
+    "source_id": "xometry-blog",
+    "publisher_id": "xometry",
+    "kind": "feed",
+    "url": "https://www.xometry.com/rss.xml"
+  },
+  {
+    "source_id": "practical-ai",
+    "publisher_id": "changelog-media",
+    "kind": "podcast",
+    "url": "https://feeds.transistor.fm/practical-ai-machine-learning-data-science-llm"
+  },
+  {
+    "source_id": "researchers-guide-physical-ai",
+    "publisher_id": "physical-ai-podcast",
+    "kind": "podcast",
+    "url": "https://physicalaipodcast.co/feed.xml"
+  },
+  {
+    "source_id": "yt-autodesk-fusion",
+    "publisher_id": "autodesk",
+    "kind": "youtube",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCiMwMz3RMbW5mbx0iDcRQ2g",
+    "fallback_channel_listing": true
+  },
+  {
+    "source_id": "yt-onshape",
+    "publisher_id": "onshape",
+    "kind": "youtube",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCTvd5lUSLtTH8Qcd7Pl1nQg",
+    "warn_on_404": true,
+    "note": "Known channel Atom endpoint currently returns HTTP 404. This optional source is logged as a warning, not counted as collected evidence; other failures remain blocking."
+  },
+  {
+    "source_id": "yt-nvidia-omniverse",
+    "publisher_id": "nvidia",
+    "kind": "youtube",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCSKUoczbGAcMld7HjpCR8OA",
+    "fallback_channel_listing": true
+  },
+  {
+    "source_id": "world-labs",
+    "publisher_id": "world-labs",
+    "kind": "feed",
+    "url": "file:config/manual_feeds/world_labs.xml",
+    "note": "Four World Labs blog posts (2026-06-03 to 2026-09-28), hand-listed because worldlabs.ai has no RSS/Atom feed. Will not discover new posts automatically. Titles and dates read from each post page on 2026-10-16."
+  },
+  {
+    "source_id": "twiml-ai-podcast",
+    "publisher_id": "twiml",
+    "kind": "podcast",
+    "url": "https://feeds.megaphone.fm/MLN2155636147",
+    "note": "The TWIML AI Podcast. Verified RSS 2.0 with dated episodes and audio enclosures on 2026-10-16 (twimlai.com/feed/podcast redirects here). Backup source; topical fit varies by episode."
+  }
+]

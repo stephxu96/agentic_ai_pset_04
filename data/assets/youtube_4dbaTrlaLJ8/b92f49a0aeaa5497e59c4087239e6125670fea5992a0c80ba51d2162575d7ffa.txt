@@ -1,0 +1,2183 @@
+Hey everybody and welcome to the on your
+open USC insiders live stream. This is
+specifically our robotics office hours.
+Very excited. You'll see a very familiar
+face next to me. Uh but today we're
+going to dive into what's new in Newton
+physics for robotics simulation. Uh
+we're going to explore everything about
+what's been happening lately in Newton
+which is an open source physics engine
+for robot simulation built on Nvidia
+warp and open USD. Uh so we're going to
+have a really nice walkthrough. We have
+a very special guest with us in addition
+to Rishab here that's Tony. Let's do a
+quick round of introductions. Uh
+starting with my friend with a great
+sense of humor Rishab next to me. Hey
+Rishab.
+Hey everyone. Uh glad to be back. Thank
+you so much for having me. Uh I've I've
+been doing live stream since some time
+earlier focusing mainly around like
+robotics simulation and now more around
+the Newton side of things as well. So
+super happy to be here. We'll be walking
+through a couple of uh new features and
+functionality which we have around
+Newton which makes things a lot more
+easier to get started as well as do more
+advanced things. And I'm going to pass
+it off to Tony who's who's a new member
+on our team to introduce himself next.
+>> Yeah, thank you.
+>> Hey Tony.
+>> Uh so I'm Tony. I' I've been at NVIDIA
+for a month and a half is all now and
+actually uh Newton is a big part of what
+pulled me here. I uh I've been a in
+academia for the previous 10 years as a
+a researcher and educator in robotics
+and a big part of my work was in robot
+learning and robot simulation. So I
+played with all sorts of different
+simulation engines uh going back to
+player stage. I guess that's 20 years
+ago now.
+>> Uh through I'd first started using
+Newton last fall when it was still in
+like a a beta release
+>> and uh yeah excited to play around with
+Newton today and show you some of the
+learning paths that my team's been
+working on specifically the the one on
+Newton and warp.
+>> Amazing. That learning path is going to
+be super helpful for developers
+watching. Speaking of which, you are
+absolutely encouraged to post your
+questions and your comments throughout
+this live stream if you're watching
+live. we will stop at different points
+and take your questions and obviously
+the more on topic it is to what we're
+talking about the more likely we can
+talk about it on air. Um we also have
+some really great news uh coming up uh
+at the end of the live stream. So stay
+tuned for that. We're going to talk
+about uh some other developments and
+we'll touch on GTC Berlin which kicks
+off in a few days. I'm going to catch a
+flight tomorrow morning actually to get
+things started. Um Jensen's giving a
+nice keynote next week which is
+available for everybody around the
+world. You don't need to be in GTC
+Berlin to be able to experience the
+keynote and the pregame show. Um, we'll
+talk about that all the end, but let's
+kick things off. Um, and let's talk a
+little bit about So, Vishab, I'm going
+to lean on you now for this first
+segment because for people here who may
+not be familiar with what Newton is, and
+you've talked about it a few of these
+live streams, but we might have some
+people watching who haven't haven't seen
+uh, Newton yet. How why would you
+explain to them and what would you like
+to go to uh, provide them to kind of get
+started and get familiar with it?
+>> Sure. Thank you so much, Admir. I think
+like the first thing is like Tony also
+just mentioned is like Newton completely
+open- source physics engine. It's been
+developed in collaboration with Google
+deep mind and Disney research and Nvidia
+has been working uh with them as well.
+So it's publicly available on GitHub
+right now. Let me actually just go ahead
+and share my screen and you can go to
+GitHub right now and just look at like
+uh the Newton repo itself. So the team
+has done a great job in terms of
+understanding what is the important uh
+functionality you need to be focusing on
+in essence. Uh I I'll look through the
+documentation later as well, but we've
+got a bunch of examples specifically
+around like how do you set up basic
+simulation for maybe examples like
+pendulums or how do you bring in your
+own robots uh how do you also understand
+solvers which need to be set up so that
+you can maybe simulate different types
+of bodies and that's something Tony will
+also be covering later when we take a
+deeper dive into the learning path. So
+it's it's a bunch of cool things which
+you can do around inside the physics
+engine itself and the GitHub is a good
+starting point for you to look at the
+source code and maybe understand how the
+examples look like overall. The other
+important link which you should know
+about we can paste these in the chat as
+well is the documentation itself.
+>> [snorts]
+>> So the documentation and the GitHub
+should be like your first starting point
+in terms of like just getting uh started
+with maybe installation stuff and then
+we have like learning path as well which
+we'll be looking at later where you can
+go through an entire series of uh
+important concepts so that you can pick
+up the fundamentals here. So the
+documentation itself is also pretty
+comprehensive in terms of understanding
+what are the installation requirements.
+Uh you can go and install
+[clears throat] Newton through maybe
+pip. Uh I have used UV but you're
+welcome to use pip or UV or your own
+virtual environment uh for that matter.
+Uh just make sure you're doing okay in
+terms of the requirements like a lot of
+Koda stuff installation is bundled
+directly with WS. You don't need to
+install it yourself. Like you can just
+whip install Newton or UV install Newton
+inside your environment and things will
+be good. [snorts]
+So it should be relatively
+straightforward for you to install
+Newton and get started. And we'd covered
+like uh Newton briefly I think a couple
+of months earlier in one of the office
+hours uh where we walked through a basic
+pendulum example in terms of
+understanding what uh is the major
+architecture for Newton looking like. So
+we pull back the documentation and we
+can look at a highle overview of what
+things usually look like. So you can go
+uh go ahead and import your own assets.
+So I think this is a paradigm which is
+common across all simulation platforms
+in general. Even Isakm or Isaac lab for
+example even on the Newton side like
+being able to bring in your assets is
+super critical so that you can now
+simulate uh them inside your choice of
+like uh platform. So [snorts] you are
+supported uh with like bringing in MJCF
+files, URDFs, USDs as well. So you can
+bring in all of these files and
+represent them inside Newton so that you
+can now simulate them. We'll be talking
+about a few of the fundamentals in terms
+of what is a model builder, what is the
+uh model itself, how do you set up
+states, control, collision pipelines,
+and how all of them work together so
+that you can have an end to-end physics
+simulation running. So if this looks if
+this diagram looks a little complicated,
+don't worry about it. We'll be going
+through a simple code example as well to
+understand what the fundamentals look
+like and how they come together so that
+you can have like a brief uh end to- end
+overview of what what is the actual
+design pattern for Newton like
+so [snorts]
+uh another good place for uh reference
+in general with every new release which
+goes out for Newton obviously we have
+[clears throat] on the GitHub itself the
+release change logs being published
+which also talk about what are the new
+functionalities you can expect with each
+release and if there are any
+deprecations for example [clears throat]
+you and you need to be aware of them
+excuse me all of them are also covered
+here so I think on the newer side of
+things with uh 1.61 61 right now. We
+have additional support for replication
+of uh model so that you can set up a lot
+of things inside simulation [snorts] got
+more advanced functionality in terms of
+collision detection which we'll be
+looking at later as well. And you can
+also leverage the RTX renderer. So
+Newton by default uh comes uh bundled
+with OpenGL renderer which allows you to
+like view uh your simulation. There are
+bunch of different types of renders you
+can use as well when you want to
+visualize what's actually happening on
+the simulation side of things. So I
+think we we've talked a bit about like
+the GitHub which is a good source for
+you to just understand how I can get
+started and look at the basic examples
+the documentation itself which should be
+useful for you to uh understand the
+design patterns behind Newton and how
+you can get started and a bit of like
+the release notes themselves which talk
+about what changes from each release to
+the next. [snorts]
+Let's actually go ahead and maybe run a
+simple example and I'll walk through a
+few of the uh functionalities which we
+just saw earlier. So we can look at one
+of the basic examples maybe this uh
+basic URDF example. So I me pull up my
+VS code right here and let me open up
+this basic UDF example as well. So I
+already have Newton cloned on my machine
+right here.
+>> [snorts]
+>> Uh I have opened up the same example
+which we have on the repo right now and
+uh at a very high level you'll be able
+to see what this example is about. It is
+basically bringing in a URDF for a
+quadruped we will be setting up uh the
+entire Newton simulation side of things
+for like model builder replicating
+worlds understanding how solvers are
+configured and then we are going to be
+simulating with uh Newton itself. You
+can switch around with the solver as
+well. Newton does come with a variety of
+solvers uh and you are free to pick and
+choose from the ones you might be
+interested in using.
+We're going to be talking more about the
+solvers as well. I think Tony will be
+covering that later in the learning
+path. The documentation itself also is
+pretty comprehensive about uh what the
+solvers do contain. If people are
+curious and want to go back, we can
+quickly come back here and let me look
+for the overview on solvers. [snorts]
+So we have a great uh representation in
+terms of what are the specific
+functionalities and where do certain
+solvers shine. So for example, if you're
+looking to simulate rigid bodies, which
+type of sol which type of a solver you
+should use? If you're looking to
+simulate cables, clothes or other
+deformables, you might be interested in
+using the VBD solver for example. So,
+[snorts] uh all the types of solvers
+which Newton supports which allows you
+to simulate obviously different types of
+physics interactions inside your scene,
+all of that is provided on the
+documentation as well. So, uh
+[clears throat]
+feel free to take a look at that. We're
+going to jump back into the code and
+just uh basically understand what's
+happening at a high level and just run
+the example once. So uh super
+straightforward initially just setting
+up simulation parameters in terms of
+like our uh configuration settings for
+simulation. We can also select the type
+of solver we are uh interested in using.
+So Camino or the XPBD solver. [snorts]
+After that, what we will be doing is
+depending on the type of solver, there
+are some certain configuration
+parameters you might be wanting to set
+up specifically around uh default values
+the solvers could expect. So that can be
+set up. Next, the important part is
+being able to import the URDF itself. So
+you have a quadruped URDF which already
+exists inside Newton assets. You can
+import that URDF into Newton. There are
+a few parameters which could potentially
+be important like where is the location
+of the asset you bring in. What is the
+nature of the joint with respect to the
+world itself. So it's floating so that
+we can have the asset move around. Don't
+want it to collide with you don't want
+the asset links to collide with
+themselves which is usually the case
+even if you look at manipulators for
+example. You don't want links to collide
+with each other and a few other
+parameters as well.
+So
+going to set up uh after we've imported
+we are going to go ahead use the model
+builder API and set up the model itself
+and we are going to use
+the replicate functionality inside the
+model builder to create a lot of copies
+of the same uh scene which we've just
+set up.
+We these are all again solver
+configurations depending on which type
+of solver you potentially be looking at.
+you'll be able to pick and choose
+between that and at a very high level uh
+in the Newton paradigm itself you this
+is a pattern which we'll be seeing again
+even in the learning path which is going
+to be around like we have states we've
+got controls got a collision pipeline
+and then we've got contacts as well. So
+these few objects do interact with each
+other at each simulation step and they
+keep getting updated as physics keeps
+going through your scene. [snorts] So uh
+this is the same paradigm you'll see
+even in the simple example and even more
+complex examples like we're going to set
+up the state initially. We'll be
+clearing the forces to make sure
+everything is reset. We are going to
+have uh our collision pipeline go
+through the entire scene update uh all
+the forces and all the collisions which
+we got from there and then we are going
+to uh swap the states and keep running
+through the pipeline. So at a very high
+level that's what it looks like and uh
+let's actually go ahead and uh run the
+simple example right here. So uh I have
+installed UV for actually going through
+this particular example. So I'm going to
+do a UV run. Me go back to the docs here
+and I'm going to pull up this right
+here. So UV run.
+So you should be able to see I know
+there are a lot of quadropads out here
+but yeah we just use the uh replicate
+API which we saw earlier. So 100
+instances of the same quadriped which we
+see right here. You'll be able to see
+this is the standard uh viewer which
+comes with Newton which is the default
+one the OpenGL one. Uh you also have
+additional functionality for leveraging
+the RTX viewer for example. So I can I
+can run the same example and just pass
+in a different flag if I want higher
+fidelity in my visualization.
+If you want to you can just right click
+and I can apply of course to move this
+guy around. So it's pretty fun to play
+around with. [laughter]
+I can kill this for now right here. But
+at a very high level, what we've done is
+we bought in the robot from the URDF
+representation, made sure we uh set up
+the model builder inside Newton, set up
+our collision pipeline, our solvers and
+all of that inside our code. And we just
+replicated across 100 instances.
+[snorts] So all of that is running right
+now live in front of you. It's like
+almost 200 plus FPS. So we are doing
+pretty good in terms of performance as
+well. Let me kill this guy. And uh if we
+actually scroll down in the examples
+right here, sorry if I'm scrolling too
+fast, but I just want to show you one
+flag. Don't worry like the stuff which
+I'm skipping is not super important for
+us right now. Uh so there is a argument
+called the viewer itself which allows
+you to select from a bunch of viewers
+which Newton does support. [snorts] So
+uh by default we use the OpenGL viewer.
+Uh I want to use the RTX viewer. There
+are a couple of steps to set up the RTX
+viewer. just need to do a pip install
+for setting up ovrtx. So if people are
+confused about uh you can just search
+for install
+ovrtx. So once you go here you'll come
+on pi itself. If it should just show you
+it's literally just this oneliner of a
+command which is going to install ovrtx
+and ov stage for you and Newton is just
+going to pull those uh inside [snorts]
+straight away so that it can actually uh
+run uh ovrtx inside. So we're just going
+to add another flag as the argument says
+over there and I'm going to say viewer
+rtx.
+So, oops. Let me see what happened.
+Oh, whoops. I
+So, [snorts] this might take a few more
+seconds to compile uh initially. Okay.
+But that was relatively fast. I think I
+may I ran the example earlier, so we had
+it running. So, you'll be able to see
+that with the RTX viewer as well. You
+can obviously visually see the
+difference in the rendering as well. You
+can see shadows and you can see more
+fidelity on the aspects for the bodies
+themselves. This is a very simple
+example because it doesn't have like
+textures, materials and all those uh
+things added onto the robots. So, it's
+just primitives used to compose the
+robot. But as you actually have like
+more uh
+good visual meshes for the robots
+themselves, you'll be able to visually
+see the difference too. So, you [snorts]
+can uh choose your specific renderer as
+well. you can uh run through the same
+example and it's just like a oneliner
+argument to replace the renderer and
+that can be potentially super useful
+when you actually go into like robot
+learning stuff as well in the future
+once you move from Newton. So I think I
+can take pause over here. I know we have
+a lot of content to cover. We have Tony
+who's excited to talk more about the
+learning path and like Edmar mentioned
+earlier as well we are here around to
+answer questions as well. So we'll be
+pausing between uh talking about the
+stuff which we want to go through for
+Newton, but we'll also try our best to
+help answer all the questions we have.
+So Edmar, do we want to do questions
+next or if you want to hand it off to
+Tony? I think he's
+>> No, sure. You can go over a couple great
+great comments too in addition to
+questions. So this one came in from X
+while you're speaking. Thank you for
+doing this live stream guys. Newton is
+really such an amazing leap forward for
+our reinforcement learning robotics
+research. So, uh, thank you and let us
+know if there's a specific topic, uh,
+that you would like to see us cover or
+dive more into on a future office hours.
+That's really, really helpful. Um, Rish,
+you were talking for a minute, you were
+showing the GitHub page and everything.
+Uh, are you recommending for Newton
+people leverage the GitHub issues area
+for support in general?
+>> Yes. So, uh, right here, if you look at,
+uh,
+[snorts] most of the guidance in general
+is provided. So, like we said earlier,
+Newton is completely open source. So you
+can contribute directly into the product
+as well with PRs you can make and GitHub
+issues as well is something which the
+teams actively do look at. So if you've
+got concerns, issues or even like
+feedback about like feature requests,
+maybe GitHub issues is a good place to
+go at for this specific repo.
+>> Okay, great. Well, that's awesome. All
+right, so um we do have a few questions
+that have been marked here. Uh let me
+try to look for one that would be good
+to cover first. Well, this is coming in
+from uh from Joelle actually on
+LinkedIn. Um uh I'm a software student.
+Lovely to meet you all. I have a
+question. Have you tried this on a real
+prototype? If yes, what are the biggest
+challenges when transferring robot
+behaviors learned in sim with Newton to
+real world hardware?
+>> I think this this is the holy grail of
+all questions, right? In general, uh
+like uh thank you so much for the
+question, Joel. I'm not very sure if
+like you meant for a certain robot uh
+for like transferring what we do in
+simulation to real but like sim to real
+as a whole paradigm is pretty big. There
+are a lot of techniques which we've been
+seeing uh which really help in order to
+get better at sim to real. So uh in fact
+even as we see right now there's a lot
+of focus around real to sim which is the
+inverse of the problem. So if I have a
+robot in the real world and I expect the
+robot to go from point A to point B in
+space. So when I uh log all the
+parameters for that robot for example I
+track the joint velocities the joint
+states the motor states and everything
+and I map that back to simulation that's
+like a real to sim pipeline which
+basically enables that my simulation has
+higher fidelity than what I would expect
+when I move to the real world directly.
+So all the things I learn inside that
+simulation environment transfer better
+better to the real world. So I I would
+say like this is uh an open-ended
+research problem. it's being actively
+tackled for things like locomotion and
+simple manipulation. There have been a
+lot of cases where it's like relatively
+few shot or zeros sim to real transfer.
+So for example, we've had like the
+animal policy which you see for a
+quadrup which was trained in Isaac lab
+uh with the Newton back end or even with
+physics like you can transfer that zero
+shot onto the real robot.
+Basically take that same PyTorch policy
+which you trained in simulation connect
+it up to the real robot make sure your
+policy can read all the sensor data and
+actuate the joints and then deploy it
+zeroot. So uh we have zeroot simal uh
+experiments which have been super
+successful for locomotion especially for
+quadripeds and even humanoids for more
+complex long horizon tasks. I think
+that's still an active research area
+which like people are figuring out in
+general. And I know from active
+research, we've got Tony here on the
+team as well. So I'm curious to know if
+he has anything else to add on top of
+this.
+>> Guys, I'll uncover your face there with
+the comment. But yeah, Tony, what do you
+think?
+>> Yeah, I agree with Rashad on his first
+comment, which is this is a difficult
+challenge and it's very problemsp
+specific. you have to figure out the
+techniques that take your very specific
+use case and your very specific problem
+and transfer that very specific gap from
+simulation to reality. Uh that said,
+there are a lot of techniques that are
+pretty general. We're learning a lot in
+the last five years and going forward
+and and this month we're learning more
+all the time about this challenge. uh
+but I will cover one possible uh
+technique for addressing the the cinder
+real gap uh later in my demonstration
+called domain randomization which is
+sort of the the easiest one to implement
+and has sort of like first class status
+inside Newton I would say.
+>> Oh great okay awesome. All right. Well,
+but before we move on, uh let's take one
+more question. Uh this is coming in from
+LinkedIn, uh from our friend Keith. Um
+on pluggable solvers and warp execution
+graphs, given that Newton integrates
+multiple backends, what is the cleanest
+extension path for injecting a custom
+domain specific con constraint solver
+directly into the underlying warp
+execution graph without triggering
+expensive synchronization stalls? That
+is a big sentence. [laughter]
+All right. Um what do you guys think
+about Keith's comment here?
+Uh do you want to take that Tony? I know
+like Newton does have support for
+bringing in your own solvers. I've not
+uh
+personally I've not like done that
+integration myself but I'm wondering if
+you have some experience guidance on
+that.
+>> Yeah. Uh it's it's a newer part of the
+documentation on the the Newton docs. I
+believe there's now a uh custom solver
+guidance if I recall
+or it was in there at one point as is it
+still custom attributes.
+Let's see. I'm not seeing it anymore. Uh
+that's something that we can follow up
+with afterward. But the the best path
+for that is sort of the best path for
+learning any part of Newton, which is
+the source code itself. Uh the
+documentation is great. uh but it lags
+behind uh the code obviously like uh any
+project but if you look at the work
+being done on the different solvers
+being implemented inside Newton uh you
+can use that as the framework so there's
+the Mujoko solver the commamino solver
+the VDB solver if you just look at uh
+the base class for those and then look
+at how they're being implemented in each
+of the uh leaf classes um that's going
+to be your best bet uh and then
+profiling it um and then reaching out
+for support uh Rashad mentioned all the
+support comes through the GitHub
+repository. Uh there's also the
+discussions part of that, too. Not just
+issues, but just discussions as well.
+>> That's great advice. All right. Great
+advice. And speaking of great, uh I got
+a sneak peek at Tony's presentation, and
+you guys are all in for a treat. Um
+Tony, I'm so happy that uh that first of
+all, welcome to Nvidia. It's so great to
+have you here. Um and you also have a
+teaching background, which you mentioned
+earlier, and I think that'll be very
+clear to people watching this in a
+second. Um, uh, so, uh, we're going to,
+uh, I'm gonna share your screen now,
+Tony, if that's all right.
+>> Yes.
+>> Um, okay, Tony. So, and if we didn't get
+to your question in the chat, we're
+going to circle back. We're going to
+spend more time with questions. Um,
+Ameilia is also going to share a thread
+on our Discord server for this live
+stream. So, if you're watching the
+replay or you want to follow up on
+something you asked, we didn't get to
+cover completely, that's where you can
+put it and we'll we'll follow up. Um,
+okay, Tony. Um, I'm excited to hear
+about the learning path. Um, tell me all
+about it.
+>> Yeah. Uh, and I'll also mention, uh,
+questions throughout would be great
+because there's going to be plenty of
+times where I'm running a command that
+takes 10 seconds to run or something
+like that. And 10 seconds can feel like
+a lifetime is I'm staring at the screen
+here waiting for it to end. So, if if
+anybody wants to fill that with a
+question and Enmar, if you want to have
+that pop up,
+>> um, I'm completely happy to interrupt
+that flow.
+>> All right, sounds good.
+>> Uh, and I think this will be very
+complimentary to what uh, Rashad had
+just discussed. So, instead of talking
+about the model builder and the really
+nuts and bolts of Newton, um I'm going
+to try to spend some time here maybe
+inspiring you, showing you what you can
+do with just Newton as the the physics
+engine. Uh and highlight some of its
+like main features. And uh this is not
+something that I came up with on the
+spot or on my own. Uh the learning team
+here at NVIDIA has a great set of
+learning materials, different courses.
+They're all open source and free. Uh and
+this link, I believe, is in the
+description for this video. the
+accelerating robot learning with Isaac
+Lab and Newton has a great intro to
+here's the nuts and bolts of Newton and
+building that up to a much more complex
+uh system uh without any um without
+making it so complex that now you're
+worried about oh is this using a PO
+policy is this using RTX rendering um
+it's it's stripped back from there so
+this is the end result of what I'd like
+to show you um seems pretty simple but
+there's a lot of real richness inside
+Newton going on behind the scenes here
+and things that you couldn't have done
+in physics engines uh a few years ago.
+Um so this little scene that we're
+looking here is uh coupling two
+different solvers uh not just one piece
+of machinery stepping us through time in
+physics uh applying your F= MA physics
+equation. There are two different ones
+with uh two different qualities. So the
+arm is an articulation meaning it's like
+a a bunch of rigid bodies connected by
+joints. Uh, and the Mujoko solver is
+very good at that. Uh, it's not as good
+at deformable bodies like that, uh,
+twine or string or cable, whatever you
+want to call it, laying on the ground.
+There's a different solver that's, uh,
+tweaked and tuned and designed to work
+better with that sort of, um, object.
+And so, we have one solver doing the arm
+mechanics and another solver doing the
+deformable object mechanics. And I'll
+basically show you how that all works.
+Um
+and my workflow will be a little bit
+different than what Rashad showed, which
+I think is another way that this is
+complimentary to his. Uh so before we
+jump into that, I just want to say at a
+high level so everybody's on the same
+page here. What is Newton? It's a
+physics engine uh built on warp and it
+has a bunch of solvers and a bunch of
+ways to import. Uh these are what I
+would call it its main highlights. Uh
+I'm not going to focus too much on
+slides here. Uh these are more just a
+reminder to me to highlight a few
+things.
+uh it's for physics. It's uh it does not
+it's it does not include source code for
+an advanced renderer like RTX. You want
+to rely on an external system for that.
+And it's not something for robot
+learning by itself. It's something that
+a robot learning platform would build on
+top of. So other NVIDIA open source
+libraries like OVRTx can be used with
+new uh with Newton uh but they are
+separate. And something like Isaac Lab
+which has all of your robot learning
+workflows that's built on top of Newton.
+Um, Newton doesn't have to include those
+themselves. Uh,
+other things you may have heard of that
+are related, Mujoko, Isaac Lab, and
+Isaac Sim. Newton sits at like a similar
+uh in a similar space to something like
+Mujoko Warp. Uh, the big difference is
+Newton is sort of first class GPU uh
+design for the GPU and that was what uh
+put it on my radar last fall and why I
+decided to use it. I needed the the the
+benefits of all this parallel
+computation and it didn't feel as
+shoehorned as it was into other older
+physics engines that were CPUbound
+processes.
+All right. Uh and since Rashad mentioned
+it, I won't spend much time on it, but
+the way that I learned Newton was
+looking through the examples. Uh there's
+a bunch of different examples. The
+source code is great for them. And the
+best thing you can do for learning
+Newton is start with the learning path
+that I mentioned before. And then when
+you're like, well, I want to try all
+these different things. Grab these
+examples and just start tweaking these
+examples. They're um uh there's an
+amazing variety of different examples
+you can start from. Okay. Uh well,
+that's enough of me just talking. Let's
+run some code.
+And so I'm here on a a Mac.
+Uh but I like to run anything Newton
+related on my nice video workstation.
+And in specific uh I like to use UV just
+like Rashad was mentioning. But there's
+nothing here that I'm doing that can't
+be done um
+with other types of uh environment
+managers like paperonda um or whatever
+your preferred uh system is.
+Um, so I'm just going to run this
+command
+and a lot of things are going to start
+to pop up here and some of them we can
+suppress and get rid of later but for
+the first time through it's worth just
+showing it. Uh, so I have a script here
+called main.py and essentially what I
+did is I worked myself through the
+Newton learning path
+and once I was done with the learning
+path I just took it a little bit
+further. I dressed up that final script
+that you're you're left with on the
+learning path and I added some extra
+functionality to it. I wanted to be able
+to change the number of worlds that are
+being shown. I wanted to be able to
+render it offline. Uh that's my typical
+workflow. Um I have a education
+background, but I also have a research
+background. And I'm used to simulations
+taking sometimes weeks to run. And so
+that all runs on a server and I I ignore
+it. I don't need anything rendered. I
+don't need to see anything um happening
+live. And so that's the workflow that
+I'm used to. And so that's what I've
+done here. Uh the simulate command will
+run a simulation and it saves the the
+frames in a format uh through a tool
+called visor. And now I can just open
+this uh link and you might notice I
+immediately get a a dead page here. And
+that's not a that's not a technical
+issue. That's uh sort of expected here.
+I'm I'm running remotely on a server and
+this browser is running on my local
+machine. So, uh, Edmar, this is where
+you said, uh, my education background
+might show up. Maybe this is too low
+level for some people, but this is what
+I know my students would have liked to
+have seen, which is I'm just going to,
+uh, forward this port from my local
+machine to the server.
+And my hands are cold, so my typing is
+awful right now.
+>> That's okay. I'd love to You're doing
+this live.
+>> All right. What's the port? So, our port
+here is 42311. That's just a randomly
+generated port. Oh, I've already
+forgotten it. All right. 43 42 311
+>> and I forgot the server. Okay. So that's
+forwarding a port on my local machine
+that my browser is trying to access to
+the server. So if I refresh this, I now
+get this nice uh visualized uh playback.
+>> This is my preferred way to to do this
+because uh this is not just a video
+playing. Uh this is uh a 3D scene that I
+can interact with and orbit around and
+see okay well what do I what do I like
+or not like about uh the physics
+interaction between that gripper and the
+deformable object itself. Uh, and the
+other benefit is when I do couple this
+with like a learning process, um, if I'm
+training a PO policy to do this, which
+I'm not here. This is just pure
+kinematics. Um, I can save dozens or or
+thousands of these playbacks and then
+like cycle through them and look at them
+all offline after the fact. All right,
+so I'll leave that window up in the
+background. And that's what this first
+uh, scene is showing. Uh, the arm picks
+up the cable, moves it to a target. Uh
+this is 420 frames, 60 frames per
+second. And now let's just look in to
+the details a little bit more. Um
+actually my my background being in
+education means that I am very used to
+all of my live demos failing. So you'll
+see in my slides here that uh I've got
+the I've got the same version of these
+just in video form uh for both uh the
+interactions that I'll show in the
+browser and then also for the command
+line interactions. If you see me skip by
+some slides, it's because everything
+went well. Um, skipping past the slides
+is a good thing in this case. So, let me
+get into the the weeds just a little bit
+inside the code. Uh, I want to talk a
+little bit about what happens when uh a
+step happens inside Newton. Uh, because
+that's pretty complicated in this like
+pretty simple little video we've got
+here. Um, there's a lot going on behind
+the scenes. So, at its basis though,
+we've got a state coming in and we write
+to a state that's coming out and that
+update from state in to state out is
+based on a bunch of control. So you can
+uh apply torqus to the different motors
+uh and it depends on a bunch of
+contacts. So we have a contact between
+the gripper on the robot and the
+deformable object. And then how much
+time do you want uh to step forward
+through? So if you're stepping forward a
+small amount of time uh that's usually
+more precise, meaning you get more
+lifelike kind of motion. Uh but it takes
+longer to simulate. If you're stepping
+large chunks of time, uh your precision
+starts to go out the the the window. Um
+and so that's what this looks like in a
+in a diagram form. I I always like to
+show both of them. Uh it it helps my
+mental model if I see the visualization,
+I see the code and then I see a diagram
+of some kind. So we have the state
+coming in along with control inputs, the
+different contacts, how much time do we
+want to step, the models already part of
+this solver.step object. And so with all
+that information, we can just step one
+small bit of time. So we end up at t
+plusd dt. And then we just repeat this
+process over and over again. It's
+actually a lot more complicated than
+that for the example that I just showed
+because of this um extremely nice
+feature built into Newton uh called
+coupled solvers. So we're not just
+stepping uh calling this step on one
+solver. In this demo, we're actually
+having two solvers. One that's using the
+Mojoku solver and one that's using the
+VBD solver. And that's because as I I
+mentioned before and Rashad mentioned uh
+earlier, different solvers have
+different characteristics. They're good
+at different things. And so is great for
+articulations and for rigid body
+dynamics. Uh I won't say it's it fails
+for deformable objects. It just wasn't
+designed for deformable objects. So why
+have it why why try to find a middle
+ground with one solver when you can have
+two solvers side by side and try to get
+the best of both worlds? So that's what
+this demo is doing. If you were to dig
+into the code, if you look through the
+learning path, this is described in a
+lot more detail. There we have a main
+solver called the Mojo solver and maybe
+the diagram is actually more helpful.
+There uh the main solver, the Moko
+solver and it's just syncing the poses
+and velocities uh with the VBD solver.
+So the VBD is taking care of the
+contacts between the gripper and the
+cable and the Moko solver is handling
+the uh the articulation, the actual
+robot arm itself.
+lot of different solvers built into uh
+Newton. Not worth like pausing on this
+slide. This is just taken straight from
+the website. Uh this is just like the
+the pizzazz. I wanted to show it at
+least once up on the screen without
+having to track down uh the website.
+Okay. Something else built into Newton
+that's not built into every uh physics
+engine that you'll just find off the
+shelf um are kinematics or inverse
+kinematics I should say.
+So the reason that we can get away with
+um the code being fairly short and it's
+fairly short in the learning path uh and
+the reason that I can say that there's
+no learning going on here but we still
+have this great pick and place motion
+with a deformable object is because
+inverse kinematics is built into Newton.
+So we can just specify locations for the
+uh the gripper the the tool tip and
+Newton has uh IK solvers built into it
+that'll do the rest of us. So it'll
+it'll help us plot out this different
+motion where we um move to above the
+cable, descend, grasp, lift, and then
+transport. And so that code gets a lot
+simpler with something like Newton where
+that's built in. And you don't have to
+reach for another uh third party uh
+software uh for that.
+Okay. So we've already seen uh the
+simulation and recording through once.
+Uh so I won't have to show you this
+because the live demo is actually
+working. Uh but there's a few different
+uh nicities built into it. So, let me
+show you those. And I'll some of these
+are just like my own particular uh
+preferences for the workflow. And I'll
+just show you those because I have a bit
+of a captive audience here.
+Uh my preferred way to do this is to
+break my scripts into two.
+Uh so I'm going to have a simulate side.
+And if I spelled simulate right, it
+would help.
+And I'm just gonna say quiet because I
+don't need every all the the background
+noise popping up um when I press this.
+Uh actually, I'm going to kill that
+immediately uh because I forgot to show
+my favorite part here, which is just how
+nice this workflow works with something
+like T-M.
+Uh let's call this Oh,
+All right. So, I can run simulation on
+one side and that'll run with a lot less
+noise just because I quieted it down.
+You can tell uh Newton to be a little
+bit quieter. uh and actually it's warp
+behind the scenes that's spitting out
+all that information about uh uh cached
+compute graphs. Um and then on a second
+screen here I can
+and I'm just going to use the same port
+that we were using before. So what was
+that?
+All right. So, that's now playing in the
+background. And if I refresh this, I'll
+get a slightly different view. And so,
+this is my typical workflow. I'll run a
+simulation. I'll never stop the uh uh
+playback server and then I'll just
+refresh it whenever I've got a new
+recording that I want to look at. And
+so, by default, this uh simulation that
+we have here will run four of these
+robots in parallel.
+And so let's talk a little bit about why
+you might want to run a few of these in
+parallel. And let me start by just
+increasing the number. So I'll run it
+again.
+>> And this time we'll increase the number
+of worlds.
+I'll increase it to 16. And then let's
+change the spacing. Uh these are not
+built into Newton. These are just part
+of my script. So again, I took the
+learning path. I've got the end result
+of it. And I just added a few of these
+options on there because adding uh
+changing the number of worlds is as
+simple as if I jump back to the slides
+as calling a replicate. And so I just
+have, you know, a little if statement
+around that that says, hey, if the user
+wants to change this, then let them
+change it. And then same thing for world
+spacing. [snorts] And I'm just going to
+make that really small. And so assuming
+I didn't type anything wrong there, uh,
+this will simulate again. And if you
+notice, it's not that much slower. Even
+though I was running four and now I'm
+running 16, it's certainly not four
+times slower. Uh maybe just a little
+bit.
+And we can jump back over here and run
+it again. And this lets me show a couple
+of things that are going on behind the
+scenes that Newton just handles for you.
+The kind of things that got me very
+excited about using Newton as a as a
+tool. So, we have 16 robot arms all
+working in parallel. They're all doing
+the exact same task. Uh, you notice I I
+changed the spacing so that they're
+basically right on top of each other.
+And I did that because I wanted to show
+that Newton has this idea of like
+collision spaces just built in another
+first class citizen. And so, they're all
+in their own individual collision
+spaces. Every arm uh does not interact
+with every other arm. So, each world has
+a robot arm and a deformable cable and
+they're all independent from one
+another. Uh, but they do share a ground
+plane. So, there are ways to to share
+some uh objects among the different
+worlds. Uh, and I would never normally
+put these on top of each other like
+that, but I thought it would be a nice
+little way to demonstrate that if I
+spread them out nicely, uh, we would get
+the exact same result. Um, except uh, it
+would just visually be much nicer.
+And thought it'll take a few seconds to
+run. So, maybe now's a good time. I've
+been talking for quite a while. Maybe
+now's
+>> I'm putting some comments on the screen.
+People are loving watching this. Uh,
+it's really cool to see it live. Uh,
+look that just came in from Oario. Uh,
+um, yeah, very, very I also saw Scott
+Dempsey and my Omniverse ambassador is
+watching. Uh, also very impressed. Um,
+and, uh, maybe while we're waiting here,
+we've got a quick question on LinkedIn.
+Maybe you guys want to tackle really
+quick. What are the core features of
+Newton Physics Engine that make it
+suitable for robotic simulations? What's
+a what's the what's the quick answer to
+that?
+>> Quick answer. Oh, man. uh as somebody
+who's played around with way too many
+different physics engines and numerical
+uh simulation engines, uh just the
+things that I had I've mentioned so far,
+but I'll give a quick recap if I can
+remember them. Uh GPU compute as a first
+class citizen for it. It means you don't
+have to do any sort of strange wrangling
+to try to get it to work well on a GPU.
+You don't have to write weird code for
+it. Uh that would be one. It's built for
+a a bunch of in parallel processing. So,
+it works really well with something like
+Isaac Lab where you're trying to do um a
+bunch of in parallel rollouts and
+collect a bunch of data all at the same
+time, but you don't have to put them all
+in different processes. You can have a
+single Newton process with for example
+here 16 arms all going in parallel. Um
+those are a couple of my highlights.
+>> That's good. What do you do reshop? That
+covers it.
+I think Tony covered pretty much
+everything, but one one call out I think
+in general I think like like we've been
+seeing since the past couple of years as
+robots are becoming like more and more
+general purpose, you expect robots to
+interact with and like deal with a lot
+of everyday objects and things you see
+in everyday life. So I think like the
+solver coupling which Tony just showed
+over here is super useful. So cable is
+just a representation of a deformable
+over here but the imagination is
+basically a remmit. Right? You can have
+a human which is trying to pick up
+something like a cup which might be like
+looks like a rigid body but I'm sure if
+I apply some sort of a force on this
+like this paper cup bends. So being able
+to simulate all of this and have robots
+actually work with them and learn from
+the environments before they touch
+anything in the real world. I think that
+is super useful and being directly plug
+and play into Isaac lab as well into the
+back end allows you to like scale out
+your robot learning pipelines on the GPU
+over multiple nodes for example and uh
+really train and make the most of like
+uh all the functionality you have your
+before you touch your real robot.
+I think yeah just being able to simulate
+all the real world physics would expect
+your robot to be able to like interact
+with inside Newton before you even touch
+anything on the real robot that's what
+makes it so powerful
+>> very cool that's very helpful everybody
+um I also see another Omniverse
+ambassador watching congratulating you
+on this great work Tony uh this is it
+maybe we'll put uh our community page in
+the live chat so people will look up all
+of our Omniverse ambassadors one page
+but itar is a great she's a amazing
+professor uh based in Brazil
+um doing really cool work. So I would
+recommend you follow her LinkedIn page.
+She's always sharing really cool work.
+Okay. All right, Tony, it's all yours.
+Oh, wait. One more question here.
+>> One more question.
+>> Okay, good. Go [laughter] ahead. You got
+it.
+>> Oh, yeah. I think the question is mainly
+around can we run hundreds of trials in
+Newton simulation, find the best robot
+movements and transfer them to the real
+robot directly. So I'm guessing if this
+is without a robot learning based
+workflow where you're not expecting your
+robot to actually learn through the
+simulation environment, sure you can do
+something like this. Uh this can be like
+a starting point for someone to actually
+transfer something on the real robot.
+But I think like the fun and more cool
+parts is when like you see your robot
+actually learn to do things inside
+simulation which it has no clue about
+and learns to do it from scratch and
+then do it on the real robot as well. So
+do so to the answer the question uh yes
+for sure you should be able to do it and
+that's a great starting point. I don't
+know if Tony wants to add something on
+top of that.
+>> No I completely agree. I guess I do want
+to add something. Uh but I completely
+agree and what I would add is uh you
+could use Newton as sort of uh what what
+people have in a long time used other
+simulation engines for which is sort of
+a proxy for the real thing. Maybe you
+have a an algorithm you want to try out
+or you want to do a little bit of tuning
+of a PID controller and I say like very
+little because it PD parameters aren't
+going to transfer perfectly but high
+level um does your algorithm actually
+drive a robot from point A to point B.
+You're not going to get so so that would
+work very well. Uh things that don't
+work well are things that require like
+very pre precise type of physics. And so
+for that uh you'd want something like
+SIS ID involved or some sort of feedback
+loop where you're improving the
+simulation based on real results.
+Amazing.
+>> Thank you so much. I think we can we can
+hand it back to Tony to continue through
+whatever else he had in mind.
+>> Yeah. Uh I I have uh I have a several
+more things to show, but we can cut it
+off pretty much at any point in time to
+to do uh a longer uh question and answer
+time. So feel free to interrupt me at
+any any point in time. Um I won't say I
+like hearing myself talk, but sometimes
+I just keep talking. Um
+>> it's okay. So I I'll just wrap up this
+discussion on the the number of worlds
+here just by mentioning uh we were a
+little bit slower when we ran it with 16
+worlds versus four. Um but if you count
+it by uh frames per second, you actually
+get a huge increase in the total number
+of frames that you can process per
+second when you do these in parallel. So
+that would be the takeaway there.
+Uh something else I'll mention. I won't
+show these demonstrations directly just
+because um it just involves us waiting
+and sitting and watching the CPU version
+of this running for a long time instead
+of uh doing more fun things. Uh but uh
+Newton's built on warp. Warp does have
+the ability to offload things onto the
+CPU instead of a GPU. And so if you were
+to test that out, what's the benefit
+inside Newton of moving from CPU to to
+GPU? There's a huge benefit. So for one
+world uh you might take about 104
+milliseconds per frame uh on a CPU but
+on a GPU that's uh 23 so a speed up of a
+factor of four and then the second you
+start increasing that to 16 worlds the
+the speed up gets pretty dramatic. Um so
+these are the kind of things that you
+want to to to think about uh when you're
+sort of gauging do I want to use
+something like Newton versus an
+alternative.
+Another huge draw and I forgot to
+mention this when they asked what are
+one of the huge um selling points of
+Newton is this idea of custom warp warp
+kernels. So if you have some additional
+compute that you just want sped up uh
+this works very nicely alongside Newton
+and I'll talk a little bit about it in a
+slide or two here and uh a demonstration
+or two here. But since Newton is built
+on warp, it's built on this concept of
+compute graphs and basically doing some
+a little bit of pre-processing work to
+save yourself a lot of time on a per per
+frame basis. You can include your own
+kernels. So the the learning path has a
+few examples
+and I'll just mention one here which is
+uh for each of these parallelized
+worlds. So if I have 16 worlds or 128
+worlds, you can scale this up uh as far
+as you need to. Um, what if I also want
+to compute some sort of metric like the
+distance away, the placement error, the
+distance away from where the deformable
+object was placed, uh, compared to where
+I wanted it placed. That computation can
+be kind of expensive if you're just
+writing regular Python code for it. Uh,
+but you can offload that to the GPU and
+it can look like regular Python code
+here. Uh, we used the decorator that at
+warp.kernel put it just on top of any
+other regular uh, Python function. And
+now this is something that will run
+directly on the GPU. Um, and more than
+that, since this function gets called as
+part of like a frame step, it gets part
+of it gets built into the compute graph.
+And so it's all accelerated and and it's
+done very nicely for you. You don't have
+to do a lot of work behind the scenes.
+Um, I highly encourage people to to to
+look into warp in addition to Newton.
+It's just a fun piece of technology uh
+built on sort of multiple instruction uh
+multiple threads. Now I forget the
+acronym for that. Uh, Rishad, do you
+want to save me with that one?
+>> I'm not sure which one you're referring
+to.
+>> That's okay. I'll move past it.
+>> Uh, and this is this is um what I'm
+talking about in terms of uh the compute
+graph. It's you should always use the
+compute graph unless there's some very
+specific reason not to. And you very
+easily on just like a small number of
+worlds can get like a four times
+increase um in doing so. So there's a
+lot of stuff shown here on the slide.
+I'll just highlight that this is what
+happens at the beginning. You say a
+scoped capture and then you call uh step
+essentially and here I called it
+framework because there's a lot of work
+that happens in a single frame for my
+little demo here including some of the
+um the the code to generate videos and
+so that's all part of step work. Uh and
+then when you actually call step frame
+you got a couple of options. If you're
+using the compute graph, then you just
+call a capture launch and it just takes
+that exact same graph and uh executes it
+with new uh input state data or you can
+do it all manually again. Um and on this
+really simple scene uh it's a four times
+increase to use the compute graph and
+that scales uh better than linear. So
+typically the more work you're doing the
+better this increase actually gets.
+And so this is what I I'm I'm obsessed
+with showing things in code and then
+showing things in diagrams and then
+showing the the code ramifications. So
+forgive me for like repeating myself. Um
+the uh simulate function will call this
+scoped capture that'll capture a graph
+and then on a each frame basis you just
+call capture launch on that graph uh to
+step yourself forward and that saves you
+a lot of work.
+Uh, something else that you'll notice,
+and here's where I'll jump back to
+simulation
+and run this in a couple of different
+ways.
+So, here's what we just saw with the
+quiet flag. I'll let this run a little
+bit and then I'll kill it. No reason to
+wait for the full execution.
+And then if I do this again, but remove
+the quiet flag, uh you'll see what
+warp's doing behind behind the scenes
+for you.
+All this discussion up here um about
+update gradient locals, discussion of
+devices, talking about Mujoko warp,
+that's all information related to uh the
+compute graph. And a lot of that can be
+cached. And so you might run something
+you're like, "Oh man, Newton is
+incredibly slow." It's usually only slow
+on the first run. So for example, if I
+run the simulation after a clean, the
+first frame can take up to 31 seconds
+depending on how complicated I try to
+make it. Uh and then first frame and se
+subsequent runs can take less than a
+second. So uh if you're wondering why
+you get such large differences from run
+to run, it's usually has something to do
+with the cache. And uh something else
+that I'll mention on that is if I make a
+big change to it
+and I do something that's uh not cache
+friendly, it'll have to build a new
+cache for a new type of simulation. So
+for example, changing the number of
+worlds, I believe it'll uh reconstruct a
+different simulation for that. So it'll
+build the cache a new each time you do
+it.
+All right, one last thing that I want to
+show here.
+Uh skipping through a couple things that
+are just related to the the scoped
+cache.
+Uh, one thing I want to show here is
+just because I've replicated this um,
+exact setup in 16 different environments
+doesn't mean they all have to be uh,
+exactly identical.
+And so, let me give myself the command
+here so I don't have to have it
+memorized.
+I can say UV run main simulate.
+And I'll add some
+uh essentially what what would would be
+useful for domain randomization here.
+And this is not a configuration that
+I've run before. So that's why this is
+going to take a little bit of time to
+get started. And uh this will be the
+last thing that I end up showing. Um,
+but the whole point here is to address
+the question that we've had a few
+different times now, which is if I do
+something in Newton, that's nice. It can
+be kind of pretty. I could use OV tech
+or sorry, RTX rendering and make it even
+prettier. Um, I can do what Rishab did
+earlier and drag around my little agents
+in the interactive window. Um, and
+that's fun, but is it useful if I don't
+try to then put it on some sort of real
+device? And that's really what I'm
+trying to show.
+uh with this last demo here is that one
+of the techniques that you do when
+you're trying to put something on the
+real device
+is not make all of these uh simulations
+identical. You want to try a bunch of
+different things. And then a lot of
+times when you try these different
+things, you're feeding that information
+into something like a a learning
+algorithm.
+So in this case, all of these different
+arms have slightly different uh
+parameters. So different friction
+contacts with the cable. The cables have
+different stiffnesses. Uh they have
+slightly different control uh kinematic
+policies just based on the timing and
+that is also very easy to do in Newton
+and parallelize and make very fast. Um
+so that's actually the last point that I
+wanted to to make sure I had a chance to
+to shoehorn into this um office hours.
+>> Well, you made a lot of amazing uh
+points here. So such a great
+presentation um and showand tell um and
+also doing a live is is double awesome.
+Um and FOMO Mac [laughter]
+triple
+um really great great great though uh
+presentation. So thank you for preparing
+all this Tony. Uh w I'm so excited that
+you're able to come on today uh with
+Rishab. Um all right we've got a we've
+got a bunch of start questions. Now some
+of these uh look a little involved. So
+based on the time, what I'm going to
+suggest is um so we can get through as
+many as possible, try to answer as
+briefly and concisely as possible um
+pointing to maybe further discussion on
+the GitHub page or our Discord thread
+which we started up for this live stream
+episode. Um so uh if you if if a
+question is way too involved, just say
+that up front when I put it on the
+screen. Um although actually what you
+can
+>> Oh, go ahead. I can start pulling up
+questions at one and I think uh we can
+keep in mind that we'll try to be as
+brief and concise as possible keeping in
+mind that we are very close to time.
+>> Yeah.
+>> But uh yeah I think the first one uh
+thank you so much Zen. Uh we have this
+is more of a general question. I think
+it's using ROS in simulation
+environments such as Mojo and Isaxim.
+[snorts] They're using unitary G1. I'm
+not sure what Talos is but uh the
+question is should we be using physical
+hardware projects after building
+simulation models
+and our software only projects enough
+for the future or is hands-on or
+hardware exp I think this is more of a
+general question it's not Newton
+specific uh I'm going to hide the
+question right now so that we can also
+see Tony as he answers the question I I
+want Tony to take a first stab at the
+question though I think if you remember
+it's basically is just software and
+simulation good enough for robotics or
+do you want to touch real robot hardware
+as
+>> [sighs]
+>> Deep breath. [laughter]
+>> Yeah. Uh there is a lot of good robotics
+work that's simulation only. Um
+I personally love hardware and all the
+headaches that it brings along uh for
+the ride. Uh there's a lot of really fun
+things you can do simulation only. A lot
+of really good research, a lot of really
+good um useful work that's simulation
+only.
+>> True. I think I completely agree with uh
+Tony. I think like there's a lot of
+things you could do on the simulation
+side and it's obviously interesting to
+see what is possible over there but I I
+feel like I've enjoyed the most
+especially for robotics when actually I
+see like a real robot doing things which
+I've trained it to do. So uh yeah I'm
+more than happy to spend 80% of my time
+on simulation making sure things look
+good over there before touching the real
+robot but I am not a person who would
+not touch the real robot as well because
+I think robots are going to be in the
+real world as well doing things. So
+having any sort of experience in terms
+of uh debugging on the real robot,
+setting up sensors, deploying from
+simulation to real. So real robot uh the
+whole space even inside over there is
+pretty big. So I would strongly suggest
+like do simulation and do real world as
+well. Improve simulation and improve
+real world too. So maybe not the best
+answer but do everything. [laughter]
+>> Have a big team.
+>> Sure. It's all fun in game simulation.
+And then you start getting center
+drifting, overheating, and then you cry
+in a corner. That's from by Richard.
+>> That's just part of the game.
+>> And
+>> you have to have you have to have to
+designate a corner for that. [laughter]
+>> Got
+sensor stuff. You can you can you can
+add noise inside the simulation. And you
+can mimic a lot of random noise as well
+for sensors which we support everywhere.
+But uh the temperature stuff and crying
+in the corner, I think that's a personal
+choice. [laughter]
+All right, awesome. Okay, Vishab, what
+do you else LCC hair you want to take?
+>> Uh, yeah, I think this might be a little
+relevant. Uh, when using agents, the
+models drift into non- kernel workflows,
+reducing incredible neuron performance.
+I've been experimenting on side to
+monitor GPU to CPU transfers. Is this a
+good workflow? I think this touches upon
+a few of the crucial pieces even which
+we sort of see right now with like a lot
+of developments on the agentic side of
+things. We see all of that coming out
+onto the robotic side as well especially
+for like building words building
+simulation actually improving like
+policies inside simulation. So agents
+[snorts] are helping a lot to build
+robots inside sim and then also deploy
+to real for the specific question of
+like them building non- kernel workflows
+at times I've in my personal experience
+I've seen agents tend to be a bit lazy
+as well that try to find the shortest
+path and the easiest lift to make things
+work. So maybe an agents.mmd which sort
+of specifies if you have a GPU make sure
+you're utilizing the most of it or or
+something similar to that. Uh just
+making sure that the agent knows and has
+access to a local GPU and can actually
+run code on top of that uh should be
+good enough and any tooling like I think
+insight is good enough for you to
+actually monitor if like there are
+bottlenecks between GPU CPU but is there
+anything else you would like to add on
+top of that Tony? I think this is this
+is a good
+>> good setup. It's a great question. The
+only thing I would add on top of it is
+you're not doing anything wrong. Uh
+Newton's new enough that there's just
+not a ton of great uh like large code
+bases out there using Newton showing
+best practices, but that'll be developed
+over time. And I would expect agents to
+do a lot better with this over time as
+well.
+>> Thank you.
+>> Oh, a couple people did save me. Uh
+single instruction multiple threads.
+That was the acronym I could not
+remember earlier. Yeah. Sim.
+>> Oh, Sim. Oh, yeah. [laughter]
+Uh, we've answered a couple of um,
+uh, hi Keith. I'm a bare metal local
+first systems architect and assimulate
+spacecrafts with robotic arms to collect
+space debris. How could your software
+help me?
+>> Well, if you're using uh, if you need
+any sort of simulation, Newton can
+definitely help with that. Uh, like
+we've mentioned before, Newton is not
+training any sort of policy. Uh even
+then though um if you're using Isaac lab
+with Newton uh I've plenty of times
+trained a policy exported to something
+like Onyx and run it on a bare metal
+device uh something like a 32-bit
+microcontroller. You're not going to get
+it to run on something smaller than
+that. But if you're talking about
+spacecraft, I imagine you may even have
+full-blown operating systems running uh
+on whatever uh bare metal device you
+have.
+>> Yeah, I think um I think pretty much
+everything we said would be relevant for
+that kind of scenario. Yeah, I think
+100%. Uh just just like Tony mentioned
+right here like you should be able to
+leverage Newton standalone as well if
+you don't want to do any robot learning
+at all. So just to simulate the physics
+of whatever sort of environment you want
+to set up. So robots and different
+physics parameters like Newton should be
+able to help you simulate all of that
+[snorts] in terms of going to deployment
+as well with uh anything robot learning
+specific. So if you utilize Isaac lab
+maybe to train your robots to do
+something in space. Uh I've seen people
+do cool things with Isaac SIM for that
+specifically. But be curious to see if
+people are actually using Isaac lab as
+well for space related stuff and train
+your policies, train your robots on that
+and then basically export that uh train
+policy onto a real robot and uh deploy
+it on there. So yeah, you can run Newton
+Newton is like you can just do a UV
+install or a pip install. So you can run
+bare metal as well. You can also
+containerize it if you want, but it's
+totally up to you. Bare metal is
+certainly possible.
+Okay, this is a long question by Emma.
+I'm working on a human gate inspired
+robotic system here in Pakistan,
+particularly swingphase motion. Can
+Newton help simulate gate dynamics and
+actuator loads while accounting for real
+world effects such as friction and
+physical interaction? And what would be
+the best workflow to transfer simulation
+to a real robot?
+Yeah, I can start. So,
+>> sure.
+>> I would say uh Newton is now by far and
+and not just because I work at an NVIDIA
+and get to work with the team that works
+on it. Uh by far my favorite uh robotics
+physics engine. Um and so I'm going to
+recommend it for pretty much any
+robotics work. And you're talking about
+uh swing phase motion. uh it the IK
+solvers built in might not handle your
+exact uh case scenarios, but it's going
+to have all the primitives you need in
+there um to have your own custom uh
+inverse kinematic models or um if you
+are trying to then learn something on
+top of it instead of relying just bas uh
+on IK then you can go up a level of
+abstraction and use something like Isaac
+Lab like we've mentioned a few times.
+But if you're just wanting to simulate
+and say like, okay, well, what are the
+dynamics? What are some of the things
+like um how much do I need how much can
+my center of mass um get out from
+underneath or uh can lever out from over
+top of the the two feet? That's
+something that Newton would be great at.
+Um you can do a lot of prototyping
+inside Newton um before you try to put
+something on a real robot. So that's
+probably how I would use it. And then
+when you're talking about things like uh
+friction and physical interactions, that
+depends on how much work you want to put
+into modeling those interactions. So if
+you're just putting things on a flat
+plane, then maybe it's enough to just
+have some parameters for like the
+coefficient of friction between the the
+ground and the robot feet. But if you're
+talking about rough terrain um and
+different types of terrain, then it's up
+to you to figure out how much effort you
+want to put into um
+discovering those parameters using
+something like system identification.
+>> I think yeah uh the answer Tony gave was
+pretty comprehensive. You should be able
+to simulate all of this with the help of
+Newton and you should also be able to go
+to the real world as well. the inverse
+kynyatics and all the parameters you can
+set up uh in order to model the friction
+between joints or even between like the
+robot foot and the ground. All of that
+is possible. It it depends up to you
+into uh how much of the parameters do
+you understand how much they accurately
+reflect the real world as well and you
+can bring back into simulation to make
+sure like the real to sim side of things
+looks pretty good. [snorts] I think we
+can take a couple of more questions uh
+if that's okay with you guys. I know we
+are like 5 minutes overboard but uh
+>> I think we have a question on are there
+any references or examples of cable
+simulation in omnivorous using nuden
+physics particularly with robot gripper
+interactions why most of the examples
+are in mujoko I think this is a good
+question and it's also something which
+uh Tony had on a slide earlier where uh
+inside the Newton physics engine there's
+a solver called the mujoko solver so
+that spec that specializes in dealing
+with rigid bodies themselves
+what we showed over here was not
+standalone Mojo. It was like standalone
+Newton. And for the omniverse side of
+things, I think on the Isaac Sim and
+Isaac Lab side, we have uh support with
+Newton integration. So even Isaac sim
+has an experimental back end which
+allows you to like simulate physics with
+Newton and Isaac lab already has
+functionality in terms of using Newton
+as the back end and being able to have
+robots uh do things with uh Newton
+inside a robot learning framework. So uh
+the answer to this question is yes you
+can use Isaac sim Isaac lab and uh the
+related omniverse things as well for
+Newton specifically uh with physics and
+the solvers inside Newton can be
+different one of them is the mojo co-op
+solver but like we've got VBD
+Featherstone and a bunch of other
+solvers which specialize in certain
+things. Is there anything you would like
+to add Tony on top of this? Actually no
+that was that was great. Thank you.
+Oh, got a basic question. Is slay robot
+supported?
+>> I don't remember off the top of my head
+if that's an asset built in.
+>> Uh, I think they're asking more about
+not the asset itself like the data type.
+So the
+layer robot data type which has been
+data format or data standard which has
+been super popular amongst the community
+in general. I know like uh Grood and
+Isaac lab do have support to plug into
+layer robot. I'm not sure if standalone
+Newton has support for that, but we can
+circle back and let you know. We're not
+sure right now.
+>> I think that was it. We did cover most
+of the questions. If there's anything
+else you feel which is remaining, I I
+can see a few of them, but I think like
+uh some of the questions which we
+covered also had overlaps with like uh
+the ones which we see on the chat yet.
+So, I think we're in good shape.
+>> Okay, great. Well, it's funny while we
+were talking just now. You guys probably
+see my head going over the place because
+I'm getting a lot of messages. Um, a lot
+of people loving what they're watching.
+But also, I just noticed uh a post
+coming in from uh uh UC Berkeley, PhD.
+Let me see if I could show this really
+quick. Just going right to my LinkedIn
+page. So um it's pretty pretty imprompt
+too but um uh
+this gentleman is talking about
+leveraging uh Newton physics uh for
+something called Robboim Studio. Um but
+really cool example here.
+So I think it goes to show um that and
+you know lots of engagement already in
+the past couple of hours. So um I'll
+post a link to this if people want to
+check more about this. It's pretty
+exciting to see the uh the type of work
+being done um research uh including
+researchers um for the uh you know real
+to sim to real uh leveraging tools uh
+like uh like GPP in this case um uh they
+leveraged Astra it looks like um so very
+cool um and really exciting to see how
+many developers out there in the
+community are already leveraging and
+fooling around with it and now I'm
+excited to see what people do with all
+the information that reshop and Tony
+provided today Um, so let us know about
+your projects. Um, we'd love to share
+these. We share a lot when we see this
+stuff online, whether it's LinkedIn or X
+or Reddit. Uh, we try to share it
+internally, too, because it's very
+inspiring for us to see what what
+developers are doing with this work. Um,
+and also feel free to let us know if
+there are topics that you'd like to see
+us cover in more detail. Um, but I if
+anyone caught a recent live stream, uh,
+this was just last week, um, but we
+talked about the video to data
+challenge. Let me show this slide up
+too. Um, so we're going to go into the
+slide in the new section here. Um, this
+is a great challenge that's in progress
+right now. You can leverage this QR code
+to find out more about it. There's three
+tracks uh with great awards. U nice cash
+involved too for different prizes. Um um
+and there's plenty of time. I think you
+have at least three weeks left. I think
+it's goes till I think mid November,
+early November. So, still plenty of time
+left, but you'd want to act now to get
+involved. So, video data challenge,
+check that out. You can watch, um, our
+YouTube live stream last week, uh, when
+we dove into this. I think it was last
+Wednesday, uh, if you're watching this
+live. So, check that out if you want to
+get involved. Um, we also today,
+obviously, we talked we did touch on
+warp, um, uh, very, uh, very aligned
+with, uh, with, um, Newton, obviously.
+Check out this QR code uh for this live
+stream to watch more about how to
+accelerate computational engineering
+with warp. Um and if you want to get
+started with some of the fundamentals uh
+that QR code will bring you there. I
+believe that's for our learning path.
+Um and more use cases here for physics
+simulation which obviously we touched on
+a lot today. That QR code will bring you
+there.
+Uh Coral 2026 I I don't even know when
+the date I don't have the date on this
+slide. Uh but Coral 26 Austin, Texas,
+let us know if you will be there. Uh we
+will definitely have folks from the team
+there. Um and it would be great to
+connect.
+Next week we have a big keynote from our
+CEO Jensen Huang uh at at GTC Berlin. Uh
+this keynote uh is going to have a
+really nice uh and fun pregame show. Uh,
+so I believe um I believe the action
+starts at uh 9:00 a.m. local time in uh
+in Berlin, Germany. Uh but it's going to
+be broadcast live for the world. Uh so
+feel free to tune in no matter where you
+are. And if you are going to GTC, let me
+know so we can um we can connect. We
+actually have a really uh lively
+WhatsApp group for community members
+that are attending GTC Berlin. Dozens of
+developers are there chatting and
+networking and discussing what they're
+going to be doing next week. Um we have
+lots of great sessions uh happening in
+Berlin. Um here are some of the ones
+that focused on robotics and that QR
+code will bring you more. Um the other
+thing to note is that even if you can't
+make it, these sessions will eventually
+appear on NVIDIA on demand. So NVIDIA on
+demand is your go-to source to check out
+content from recent conferences,
+especially GTC and CGA where you can uh
+watch some of these sessions at your
+convenience and whatever um and pause
+it, watch in double speed, however you
+like it. Lots of great content happening
+next week with uh developers and
+partners and Nvidia colleagues.
+Of course, we have Build-A-Claw. Where
+don't we have Build-A-Claw? Build a claw
+is everywhere. Um so we have one
+happening at GTC Berlin on Saturday.
+I'll actually be working at the check-in
+desk. So if you're going to be in Berlin
+and heading to build a call, maybe I'll
+get to meet you. Um that is going to be
+really exciting way to chat with
+developers uh to show you different
+demos on the whole workflow of
+leveraging Aentic AI. um that QR code
+will show you more information about
+that. And um we're trying to wrap this
+up now because we got a study group
+happening if you're watching live at
+12:30 p.m. Pacific every Wednesday.
+Isaac Sim and Isaac Lab study group uh
+gets together. Normally led by Scott
+Dempsey, but sometimes we have different
+people in the community helping. These
+are community study groups. Um we have
+OpenUSD study groups also happening on
+Fridays. One is on Discord and one is on
+Zoom. These are all managed by community
+members. Uh so and once in a while we'll
+pop in also and and uh and try to help
+and and u and give an expert to talk
+about a specific topic. Risha, have you
+been to the Isaac Sim and Isaac Lab one?
+Ray,
+>> I think I have. We had just like
+robotics uh
+branded like uh community discord
+channels, right?
+>> Like Isaac Sim Isaac Lab specifically.
+>> Yeah, they cover Isaac Sim. Yeah, you
+should pop if you have a few minutes
+after this live stream, pop in. It
+starts in 15 [laughter] minutes. Um but
+this is a great it's a great opportunity
+to chat with other developers who are
+working on uh either Isaac semisic lab
+for today's or open USD for Fridays. Um
+and they just dive into it. Usually what
+they do is they talk about what we
+discuss on this live stream. It has to
+do with robotics. So um they usually
+some nice chatter there and I saw a
+couple of people who attend in our in
+our chat including Scott Dempsey. So
+it's super exciting. Um that QR code
+will bring you more information on those
+study groups and also let us know if you
+want to start your own study group. Uh
+we'd be happy to help promote it. Um,
+and as I mentioned earlier, every live
+stream we do, we set up a thread so you
+can talk about this specific live stream
+at any time, any point in time. And that
+QR code will bring you to that section.
+And you just look for the date and time
+of the live stream you're looking for,
+and there's a nice thread on it with
+resources. Uh, so if we didn't get to
+your question today, that's a great way
+to follow up on it. And I mentioned
+earlier that we have a community site
+where all of our ambassadors are listed.
+So that's a link all the way on the
+right there. That QR code to bring you
+to our community page. Uh you could see
+read about Scott and Edmar Juna Matthews
+I saw posted a comment earlier. I think
+Rishop took it. Um another Omniverse
+ambassador. Great great group of people.
+There's some more coming too. Super
+exciting. We'll share more on those new
+folks too. Our Discord servers there if
+you want to engage with the community
+including our study groups. Uh our
+forums you can leverage for uh support.
+But more and more we're pushing people
+towards the Isaac's uh the GitHub um
+issues area and discussion page. Um and
+then that first link there is for our ad
+event page which will show you all of
+our upcoming live streams, our office
+hours, our study groups, all our big
+keynotes, those are all there. So follow
+that ad event page. It's very easy to
+add anything from that calendar to your
+own calendar with one click. Um, really
+exciting too for next week. Speaking of
+the admin page, we are planning some
+live streams from GTC Berlin. It's
+actually a few of them. Uh, I'll be
+helping out, but my my great colleague
+Zach Low is really managing a lot of the
+content there uh with our team. Um, we
+are very excited to bring some live
+action. So, even if you can't make it
+through GC Berlin, go to our advent
+calendar and make sure you check out
+those live streams. Um, we are going to
+try to bring the show to you no matter
+where you are in the world. I'm really
+excited. Um I'm not even know if I'm
+allowed to say this, but I think I uh I
+am actually sitting down with Pollen
+Robotics. Um and uh um and I will also
+be chatting with the Hugging Face folks,
+too. They're all kind of one family now,
+obviously. And uh um one big family, I
+should say. Uh and now um uh there's
+been so much excitement over the micro
+duck. Uh and we're going to try to bring
+one of these micro ducks up on the stage
+with us when we do this live stream. Um,
+I has been it has been so awesome and
+inspiring to see the excitement over the
+micro duck. Um, and I think there's some
+exciting stuff in store for for GTC
+Berlin. I won't give away more than
+that, but you'll probably see them
+walking around. Uh, or waddling. I don't
+know. What do ducks do? They waddle.
+What do they speaking of gate? I don't
+know. What do they It has a name for it,
+but um Millie, you can let us know. Um,
+anyway, super exciting. um to robotics
+is at a such an
+fantastic point in history right now
+that you could actually buy something
+like the micro duck for a few hundred
+dollars and start fooling around in sim
+um and with the real robot itself uh
+teaching it new things and also sharing
+those things with other people in the
+community which is actually the most
+exciting thing about it. Um, uh, I don't
+know. Did Rishab or Tony is a micro duck
+on your, uh, on your Christmas list?
+>> Yes, if I can get my hands on one.
+[laughter]
+>> It's not yet on my desk, but it should
+be.
+>> Okay, cool. Yeah, I think I think we're
+going to be seeing a lot of cool work
+with Micro. Very, very exciting time.
+Um, speaking of exciting time, thank you
+for this very exciting uh live stream
+today, Rishab and Tony. What an amazing
+debut to uh to working at NVIDIA and
+this live stream. What a great
+presentation. I'm so excited to see more
+of you work here at NVIDIA and you're
+obviously welcome to come on the live
+stream whenever you want to show off. Um
+I think you've uh you've you built a
+nice fan base today. So, so now you got
+to come back soon.
+>> This was a blast.
+Well, thank you guys both for putting
+all the presentation together, materials
+together, and I also want to thank
+Raphael helping out the background with
+some questions. Um, Austin who also
+helped with the with the pre-show
+planning. Um, and our great producer
+Amelia who's been also helping in the
+chat in the background. And for all of
+you, there's Scott Dempsey right there
+on the screen. And for all of you, look
+at those comments. Uh, all for you
+watching. Thank you for participating.
+You're the only reason we do these
+things. and your comments and questions
+are a big part of why why we love doing
+these so much. So, thank you so much. Uh
+I will see you on on Discord on LinkedIn
+on X or uh maybe you'll be tuning in to
+the live stream and or maybe I'll see
+you at GTC Berlin next week if you're
+coming. Uh let me know so I can add you
+to the WhatsApp group. Just hit send me
+note on LinkedIn. You can get to my
+LinkedIn page very easily. Just go to
+edmar.net. That'll go right there. Send
+me your note and tell me you're going to
+GTC and and uh we will make plans and
+coffeey's on me. All right, Vishab Tony,
+thank you. Oh, look at that. Your spirit
+animal. I knew these fans were gonna pop
+out of the woodwork. [laughter]
+Actually, it's funny. Tony, I also got a
+message from I don't know if you know
+our colleague uh Stefan uh at Nvidia,
+but he um he works uh he works in
+Europe, so we're going to see him next
+week at GTC Berlin, but uh he wrote to
+me on our side. He said, "Wow, Tonyy's
+awesome. Uh so, you're making some some
+great friends around the world." Um,
+there's a nice note from Muhammad there.
+All right, everybody. Thank you so much.
+Really appreciate it. We'll see you.
+We'll see you next time.
+>> Thank you so much, guys.
+>> Bye.
+>> Yeah. Thanks, everyone.

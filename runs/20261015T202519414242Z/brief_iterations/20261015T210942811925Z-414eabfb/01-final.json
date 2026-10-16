@@ -1,0 +1,125 @@
+{
+  "piece_id": "01",
+  "title": "CAD’s Near-Term Shift Is Connected, Checkable Workflow—Not Autonomous Engineering",
+  "question": "What changed, and which developments matter most to this audience?",
+  "argument": "The consequential change is not proof of autonomous engineering, but a growing ability to create editable CAD output and connect design information across configuration, analysis, review, and lifecycle workflows. Frontier models appear useful for first-draft parametric work, while established CAD vendors are shipping or previewing workflow features that make structured design artifacts easier to propagate and inspect. Engineering leaders should evaluate bounded workflows with explicit checks and approvals rather than treat a valid model, workflow demonstration, or simulation environment as evidence of manufacturability or physical readiness.",
+  "synthesis": "MIT-CDFG separates evidence that models can produce editable parametric artifacts from the still-missing checks for tolerance conformance and manufacturability. PTC supplies a concrete released-workflow example—configuration propagation and assembly center-of-mass display—while Cadalyst documents Autodesk’s move toward connected manufacturing and lifecycle workflows; NVIDIA’s Newton presentation supports the related robotics trend toward simulation infrastructure rather than proving transfer to hardware. Together, these sources indicate that the near-term change is an inspectable handoff loop around structured CAD and simulation artifacts: the observed checks concern editability, information propagation, display, or availability, not whether a part can be manufactured or a simulated robot behavior transfers physically.",
+  "limitations": "The accepted evidence contains no AI-native startup that can satisfy Piece 01’s required startup-watch role as a feasibility signal; this is a coverage gap. It also contains no podcast evidence, so the series does not yet meet its cross-format podcast requirement. The robotics evidence is an NVIDIA presentation and establishes a product statement, not simulator fidelity or sim-to-real transfer; likewise, vendor workflow videos and conference reporting do not independently establish productivity, tolerance, or manufacturability gains.",
+  "claims": [
+    {
+      "claim_id": "01-c1",
+      "statement": "The MIT-CDFG survey reports that frontier models build editable parametric CAD parts and assemblies, while tolerance specifications and manufacturability have not been tested on physical parts.",
+      "type": "reported_fact",
+      "evidence": [
+        {
+          "item_id": "feed:https://mit-cdfg.github.io/Survey-AI-for-3D-modeling-Robotics/#view-stats",
+          "version_id": "08b1c2cdebb5796d7332d57e8928784a621aec9f82db91448016eaa53ea51fe5",
+          "locator": {
+            "type": "text",
+            "quote": "Models build parametric parts and assemblies, and solid models of up to 511 bodies, that remain editable in native CAD tools"
+          }
+        },
+        {
+          "item_id": "feed:https://mit-cdfg.github.io/Survey-AI-for-3D-modeling-Robotics/#view-stats",
+          "version_id": "08b1c2cdebb5796d7332d57e8928784a621aec9f82db91448016eaa53ea51fe5",
+          "locator": {
+            "type": "text",
+            "quote": "Tolerance specifications and manufacturability have not been tested on physical parts."
+          }
+        }
+      ]
+    },
+    {
+      "claim_id": "01-c2",
+      "statement": "PTC says its Onshape release can propagate configuration inputs to reference part studios, assemblies, and variable studios, and can display a persistent assembly center of mass as components move.",
+      "type": "source_claim",
+      "evidence": [
+        {
+          "item_id": "youtube:7i5XHQozfQI",
+          "version_id": "582b91bc01228116ecd2d1c461bae76ac4715fc7ed39fa319cf08c96874fdc2e",
+          "locator": {
+            "type": "segment",
+            "segment_id": "s0004"
+          }
+        },
+        {
+          "item_id": "youtube:7i5XHQozfQI",
+          "version_id": "582b91bc01228116ecd2d1c461bae76ac4715fc7ed39fa319cf08c96874fdc2e",
+          "locator": {
+            "type": "segment",
+            "segment_id": "s0007"
+          }
+        },
+        {
+          "item_id": "youtube:7i5XHQozfQI",
+          "version_id": "582b91bc01228116ecd2d1c461bae76ac4715fc7ed39fa319cf08c96874fdc2e",
+          "locator": {
+            "type": "segment",
+            "segment_id": "s0009"
+          }
+        }
+      ]
+    },
+    {
+      "claim_id": "01-c3",
+      "statement": "Cadalyst reports that Autodesk Assistant capabilities are already appearing in manufacturing products, while several larger automation and connected-client capabilities remain announced or in development.",
+      "type": "reported_fact",
+      "evidence": [
+        {
+          "item_id": "feed:https://blog.cadalyst.com/cadmanagement/autodesk-university-2026-what-the-announcements-mean-for-cad-teams",
+          "version_id": "e991bf7bc957baf20c6e947cff7b9a0d159ef7a1b8b9d5f500f7e1c95d47573b",
+          "locator": {
+            "type": "text",
+            "quote": "Autodesk Assistant capabilities are already appearing in manufacturing products, while several of the larger automation and connected-client capabilities remain announced or in development."
+          }
+        }
+      ]
+    },
+    {
+      "claim_id": "01-c4",
+      "statement": "NVIDIA says Newton is completely open source, a simulation-development signal that does not itself establish physical transfer for robot workflows.",
+      "type": "source_claim",
+      "evidence": [
+        {
+          "item_id": "youtube:4dbaTrlaLJ8",
+          "version_id": "b92f49a0aeaa5497e59c4087239e6125670fea5992a0c80ba51d2162575d7ffa",
+          "locator": {
+            "type": "segment",
+            "segment_id": "s0489"
+          }
+        }
+      ]
+    },
+    {
+      "claim_id": "01-c5",
+      "statement": "The evidence supports separately evaluating editable CAD output, design-information traceability, and downstream engineering requirements because the cited checks do not establish manufacturability.",
+      "type": "inference",
+      "evidence": [
+        {
+          "item_id": "feed:https://mit-cdfg.github.io/Survey-AI-for-3D-modeling-Robotics/#view-stats",
+          "version_id": "08b1c2cdebb5796d7332d57e8928784a621aec9f82db91448016eaa53ea51fe5",
+          "locator": {
+            "type": "text",
+            "quote": "These outputs are now reliable enough to serve as first drafts, but the record does not yet show that they meet engineering requirements such as tolerances, manufacturability or safe unsupervised operation."
+          }
+        },
+        {
+          "item_id": "youtube:7i5XHQozfQI",
+          "version_id": "582b91bc01228116ecd2d1c461bae76ac4715fc7ed39fa319cf08c96874fdc2e",
+          "locator": {
+            "type": "segment",
+            "segment_id": "s0015"
+          }
+        },
+        {
+          "item_id": "feed:https://blog.cadalyst.com/cadmanagement/autodesk-university-2026-what-the-announcements-mean-for-cad-teams",
+          "version_id": "e991bf7bc957baf20c6e947cff7b9a0d159ef7a1b8b9d5f500f7e1c95d47573b",
+          "locator": {
+            "type": "text",
+            "quote": "Generating or modifying a design faster does little good if review, approval, data quality, or downstream production becomes the new constraint."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+How do we stop losing money on cable assembly quotes?
+by Aidan Vrobel
+Oct 15, 2026
+Short answer:
+Most money lost on cable assembly and wire harness quotes comes from four places. First, what the customer's drawing doesn't define: terminals, seals, cavity plugs, backshells, wire lengths and coverings that only surface on the manufacturing floor. Second, pricing that never gets compared across the whole supply chain. Third, labor that two estimators count two different ways. Fourth, plain data-entry mistakes: typos, wrong part numbers, missed zeros and misplaced decimal points. Fix them in that order.
+Key facts
+The costliest quoting mistakes are usually engineering gaps in the customer's drawing, not math errors.
+A 10-assembly RFQ with 40 parts each, 5 price breaks and 20 possible distributors is 40,000 price points. No estimator can compare that by hand.
+Cableteque flags likely-missing terminals, seals and cavity plugs on every drawing, prices through your own distributor accounts (20+ distributors), and fills your existing labor template 60–80% automatically.
+Resco Electronics cut standard quotes from 5+ days to 2–3 days with Cableteque and eliminated its 30-day peak backlogs.
+1. What the customer's drawing doesn't define
+This is the biggest leak, and it's an engineering problem, not an estimating one. Customer drawings routinely leave out information the manufacturing floor needs to build the harness:
+Cavity plugs, terminals, wire seals and backshells
+The wrong wire, or wire that doesn't match the connector
+Wire lengths, which are hard to calculate when the drawing doesn't state them
+Coverings, or the wrong coverings for the application
+Labels and other build details that "everyone knows" but nobody wrote down
+Sometimes the customer simply made a mistake on the drawing. Either way, under turnaround pressure nobody catches it at quote time. It shows up on the manufacturing floor, after you've bought the wrong parts or parts that don't work together. By then the price is locked and the margin is gone.
+How to fix it:
+review every drawing for what's missing, not just what's listed. Check that every connector has its terminals, seals and plugs, that the wire matches the connector, and that lengths and coverings are defined. Send the customer questions before you price, not after you win.
+2. Pricing nobody can fully compare
+Stale pricing is part of the problem: last month's spreadsheet price is not today's negotiated rate. But the bigger issue is that most shops never look at the whole supply chain. Checking 20 vendors for every part, across 5 price breaks, across 10 assemblies is thousands of combinations. A person can't do that, so they check one or two favorite distributors and move on, and the best price and availability get missed.
+How to fix it:
+price every quote on the day you send it, at your own negotiated rates, across every distributor you buy from and every quantity break the customer asked for.
+3. Labor counted two different ways
+Give the same harness to two estimators and you'll often get two labor numbers. One counts every termination, the other estimates by feel. One remembers the overmold, the other doesn't. The quote that wins is often the one that undercounted.
+How to fix it:
+put everyone on one standard labor template and count operations against it the same way on every quote.
+4. Data-entry mistakes
+Every manual quote means retyping: part numbers from the drawing into a spreadsheet, prices from a distributor website, quantities across every price break. People make typos. A transcription error, a wrong part number, a missed zero or a misplaced decimal point can mean buying the wrong part or pricing a line at a tenth of what it costs. These aren't rare. They happen all the time, and they come straight out of margin.
+How to fix it:
+retype as little as possible. Pull part numbers, quantities and prices straight from the source instead of copying them by hand, and double-check any line that looks out of range before the quote goes out.
+How Cableteque fixes all four
+Missing information:
+Cableteque reads the customer's drawing as it arrives (PDF, scanned print, Excel, or a CAD export), builds the BOM, and flags likely-missing terminals, seals and cavity plugs based on connector and wire compatibility, plus any part it doesn't recognize. Gaps get caught at quote time instead of on the floor.
+Pricing:
+it prices through your own distributor API keys (20+ distributors), so every part is checked at your negotiated rates across every connected distributor and quantity break.
+Labor:
+it loads your existing labor template as-is and fills 60–80% of it automatically. Your engineer adjusts the judgment calls.
+Data entry:
+it builds the BOM straight from the drawing and pulls prices directly from your vendors, so nobody retypes part numbers, quantities or prices.
+Proof: Resco Electronics
+Resco Electronics cut standard quotes from 5+ days to 2–3 days and eliminated the 30-day backlogs it used to hit at peak.
+"Before Cableteque, a normal quote took at least five days… Now, we've cut that time in half, and the backlog is gone—even during our busiest months." — Kelly Grato, VP of Procurement and Estimating, Resco Electronics
+Read the case studies
+or
+see how Cableteque Quote works
+.
+Related:
+How much business does slow wire harness quoting actually cost a manufacturer?
+·
+Choosing the right wire harness quoting software
+·
+How do we keep a retiring estimator's quoting knowledge?
+·
+How do I build a BOM from a customer's wire harness drawing faster?
+FAQ
+What's the most common reason cable assembly quotes lose money?
+Information the customer's drawing doesn't define, such as terminals, seals, cavity plugs, backshells, wire lengths and coverings. It usually isn't caught until the manufacturing floor, after parts are bought.
+How often should I re-price a quote?
+On the day you send it. Distributor prices and availability move constantly, so a price from last month's spreadsheet is a guess.
+Why can't my estimators just check more distributors?
+Because the combinations multiply fast. Twenty vendors, five price breaks and ten assemblies is thousands of price points per RFQ. Software can check them all; a person can't.
+Can I keep my own labor template?
+Yes. Cableteque loads your existing template as-is and fills 60–80% of it automatically, so every estimator counts labor the same way.
+Wire Harness Quoting
+Industry Insights & Business Strategy
+Recommended articles
+Wire Harness Quoting
+How do we keep a retiring estimator's quoting knowledge?
+When your senior estimator retires, he takes your quoting process, customer, parts, vendor and labor knowledge with him. Here's how to keep it.
+by Aidan Vrobel
+Oct 15, 2026
+Wire Harness Quoting
+Instant quote generation vs. week-long waiting game: how Cableteque transforms the contract manufacturing landscape
+Instant quote generation vs. week-long waiting game: how Cableteque transforms the contract manufacturing landscape
+by Arik Vrobel
+Feb 12, 2025
+Wire Harness Quoting
+Why Your Competitors Are Winning: The AI-Powered Quoting Revolution You Can’t Afford to Ignore
+Why Your Competitors Are Winning: The AI-Powered Quoting Revolution You Can’t Afford to Ignore
+by Arik Vrobel
+Jan 29, 2025

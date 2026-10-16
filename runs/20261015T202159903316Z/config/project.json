@@ -1,0 +1,9 @@
+{
+  "publication_name": "Agentic 3D",
+  "topic": "Frontier AI for 3D modeling, CAD, and intelligent systems that act in physical space, including robotics, with attention to what AI-native startups are shipping.",
+  "audience": "Technical product managers and engineering leaders deciding where to build on frontier models for spatial and geometric work. They understand LLMs and basic 3D and CAD concepts (parametric vs. mesh, simulation) but do not follow benchmarks or demos daily.",
+  "central_question": "Which spatial and geometric capabilities moved from demo toward dependable this month, which AI-native startups are shipping them, and does the evidence behind each claim match what it claims?",
+  "freshness_window_days": 45,
+  "max_items_per_source": 3,
+  "whisper_model": "tiny"
+}

@@ -1,0 +1,398 @@
+[
+  {
+    "segment_id": "s0001",
+    "start_seconds": 1.68,
+    "end_seconds": 4.56,
+    "text": "Unifab is a custom manufacturer."
+  },
+  {
+    "segment_id": "s0002",
+    "start_seconds": 4.56,
+    "end_seconds": 6.88,
+    "text": "We're a family business, started by a fair."
+  },
+  {
+    "segment_id": "s0003",
+    "start_seconds": 6.88,
+    "end_seconds": 10.64,
+    "text": "My dad 35 years ago, we've grown quite a bit over the years"
+  },
+  {
+    "segment_id": "s0004",
+    "start_seconds": 10.64,
+    "end_seconds": 14.48,
+    "text": "to about a 230,000 square feet plan."
+  },
+  {
+    "segment_id": "s0005",
+    "start_seconds": 14.48,
+    "end_seconds": 15.92,
+    "text": "Right now, as we're continuing to grow,"
+  },
+  {
+    "segment_id": "s0006",
+    "start_seconds": 15.92,
+    "end_seconds": 19.36,
+    "text": "it's all about efficiencies and how to make that process smoother."
+  },
+  {
+    "segment_id": "s0007",
+    "start_seconds": 19.36,
+    "end_seconds": 21.76,
+    "text": "We have more machines coming in the door here."
+  },
+  {
+    "segment_id": "s0008",
+    "start_seconds": 21.76,
+    "end_seconds": 24.24,
+    "text": "How do we get them all communicating in the same way?"
+  },
+  {
+    "segment_id": "s0009",
+    "start_seconds": 24.24,
+    "end_seconds": 27.92,
+    "text": "And get the machine us communicating to each other more efficiently too?"
+  },
+  {
+    "segment_id": "s0010",
+    "start_seconds": 27.92,
+    "end_seconds": 31.28,
+    "text": "When we're choosing tools or machine or software any piece of that,"
+  },
+  {
+    "segment_id": "s0011",
+    "start_seconds": 31.28,
+    "end_seconds": 33.6,
+    "text": "we really rely on our managers."
+  },
+  {
+    "segment_id": "s0012",
+    "start_seconds": 33.6,
+    "end_seconds": 35.76,
+    "text": "They're the ones that know what's going on day to day."
+  },
+  {
+    "segment_id": "s0013",
+    "start_seconds": 35.76,
+    "end_seconds": 38.24,
+    "text": "They know what struggles they're in place have."
+  },
+  {
+    "segment_id": "s0014",
+    "start_seconds": 38.24,
+    "end_seconds": 46.1,
+    "text": "When I first came in, we were using a mix of Bobcat and Mastercam."
+  },
+  {
+    "segment_id": "s0015",
+    "start_seconds": 46.1,
+    "end_seconds": 51.78,
+    "text": "And my main goal was to transition our department to be on one software"
+  },
+  {
+    "segment_id": "s0016",
+    "start_seconds": 51.78,
+    "end_seconds": 55.94,
+    "text": "with the added benefit of having connectivity through the cloud."
+  },
+  {
+    "segment_id": "s0017",
+    "start_seconds": 55.94,
+    "end_seconds": 60.18,
+    "text": "So that parts tooling and machines could be accessed by the whole team."
+  },
+  {
+    "segment_id": "s0018",
+    "start_seconds": 60.18,
+    "end_seconds": 64.02,
+    "text": "So there's multiple stages within Unifab where we use Fusion"
+  },
+  {
+    "segment_id": "s0019",
+    "start_seconds": 64.02,
+    "end_seconds": 68.66,
+    "text": "starting from the front end of the company all the way to where products come off in"
+  },
+  {
+    "segment_id": "s0020",
+    "start_seconds": 68.66,
+    "end_seconds": 69.46,
+    "text": "machining."
+  },
+  {
+    "segment_id": "s0021",
+    "start_seconds": 69.46,
+    "end_seconds": 73.3,
+    "text": "Part of that process is opening larger assemblies,"
+  },
+  {
+    "segment_id": "s0022",
+    "start_seconds": 73.3,
+    "end_seconds": 77.3,
+    "text": "assessing files at the job entry state."
+  },
+  {
+    "segment_id": "s0023",
+    "start_seconds": 77.3,
+    "end_seconds": 82.42,
+    "text": "And our next stage is where files are actually processed, prepared,"
+  },
+  {
+    "segment_id": "s0024",
+    "start_seconds": 82.42,
+    "end_seconds": 85.46,
+    "text": "colored and verified prior to machining."
+  },
+  {
+    "segment_id": "s0025",
+    "start_seconds": 85.46,
+    "end_seconds": 88.74,
+    "text": "And from there, products move into machining."
+  },
+  {
+    "segment_id": "s0026",
+    "start_seconds": 88.74,
+    "end_seconds": 93.78,
+    "text": "One big advance we made early on was a part that was traditionally done on a custom"
+  },
+  {
+    "segment_id": "s0027",
+    "start_seconds": 93.78,
+    "end_seconds": 94.58,
+    "text": "fixture."
+  },
+  {
+    "segment_id": "s0028",
+    "start_seconds": 94.58,
+    "end_seconds": 99.62,
+    "text": "Instead, we were able to transition to cutting the entire part just using 3D toolpaths"
+  },
+  {
+    "segment_id": "s0029",
+    "start_seconds": 99.62,
+    "end_seconds": 105.86,
+    "text": "and two setups, which reduce our overall runtime from three and a half hours to 45 minutes."
+  },
+  {
+    "segment_id": "s0030",
+    "start_seconds": 105.86,
+    "end_seconds": 109.62,
+    "text": "Over the last few years, we've had a number of machine acquisitions."
+  },
+  {
+    "segment_id": "s0031",
+    "start_seconds": 109.62,
+    "end_seconds": 114.9,
+    "text": "Throughout those acquisitions, we've been utilizing Fusion on all of our new equipment."
+  },
+  {
+    "segment_id": "s0032",
+    "start_seconds": 114.9,
+    "end_seconds": 120.02,
+    "text": "We've grown from having just six machines to now having nine machines."
+  },
+  {
+    "segment_id": "s0033",
+    "start_seconds": 120.02,
+    "end_seconds": 124.1,
+    "text": "And we have full machine simulation through Fusion on all of those."
+  },
+  {
+    "segment_id": "s0034",
+    "start_seconds": 124.1,
+    "end_seconds": 128.98,
+    "text": "It's really helped us ensure we're running things safely and effectively."
+  },
+  {
+    "segment_id": "s0035",
+    "start_seconds": 128.98,
+    "end_seconds": 133.14,
+    "text": "One of the things I love the most about Fusion is just that I'm able to jump on the cloud."
+  },
+  {
+    "segment_id": "s0036",
+    "start_seconds": 133.14,
+    "end_seconds": 138.02,
+    "text": "And I can program multiple machines, multiple tool libraries right from one workstation,"
+  },
+  {
+    "segment_id": "s0037",
+    "start_seconds": 138.02,
+    "end_seconds": 139.46,
+    "text": "which is pretty sweet."
+  },
+  {
+    "segment_id": "s0038",
+    "start_seconds": 139.46,
+    "end_seconds": 144.5,
+    "text": "Fusion really helps with efficiency because of standardization across the board."
+  },
+  {
+    "segment_id": "s0039",
+    "start_seconds": 144.5,
+    "end_seconds": 147.46,
+    "text": "If we hand a job off maybe from day shift to night shift,"
+  },
+  {
+    "segment_id": "s0040",
+    "start_seconds": 147.46,
+    "end_seconds": 149.78,
+    "text": "we can just walk in and jump right in there."
+  },
+  {
+    "segment_id": "s0041",
+    "start_seconds": 149.78,
+    "end_seconds": 154.1,
+    "text": "Everybody's on the same standardized tool libraries, speed speeds."
+  },
+  {
+    "segment_id": "s0042",
+    "start_seconds": 154.1,
+    "end_seconds": 159.94,
+    "text": "Since standardizing with Autodesk Fusion, we've almost doubled the size of our machina's team"
+  },
+  {
+    "segment_id": "s0043",
+    "start_seconds": 159.94,
+    "end_seconds": 162.26,
+    "text": "and been able to grow our machines as well."
+  },
+  {
+    "segment_id": "s0044",
+    "start_seconds": 162.26,
+    "end_seconds": 167.3,
+    "text": "Being able to upper time on the machine allows us to get more projects through quicker."
+  },
+  {
+    "segment_id": "s0045",
+    "start_seconds": 167.3,
+    "end_seconds": 172.42,
+    "text": "For our customers, this means that we can optimize some of the tooling that we're using across the board"
+  },
+  {
+    "segment_id": "s0046",
+    "start_seconds": 172.42,
+    "end_seconds": 175.62,
+    "text": "as well as be able to process some more complex parts."
+  },
+  {
+    "segment_id": "s0047",
+    "start_seconds": 176.66,
+    "end_seconds": 182.42,
+    "text": "We use the adaptive tool path quite frequently, some more effective strategy,"
+  },
+  {
+    "segment_id": "s0048",
+    "start_seconds": 182.42,
+    "end_seconds": 188.42,
+    "text": "than traditional face milling as we encounter large variations in differences of material."
+  },
+  {
+    "segment_id": "s0049",
+    "start_seconds": 188.42,
+    "end_seconds": 192.74,
+    "text": "So we may have three mill of material on one side, six on the other."
+  },
+  {
+    "segment_id": "s0050",
+    "start_seconds": 192.74,
+    "end_seconds": 194.9,
+    "text": "The adaptive tool path doesn't care."
+  },
+  {
+    "segment_id": "s0051",
+    "start_seconds": 194.9,
+    "end_seconds": 197.62,
+    "text": "We have our tooling set up to effectively handle that."
+  },
+  {
+    "segment_id": "s0052",
+    "start_seconds": 198.5,
+    "end_seconds": 203.38,
+    "text": "My favorite aspect of Fusion is just how intuitive the software feels."
+  },
+  {
+    "segment_id": "s0053",
+    "start_seconds": 203.94,
+    "end_seconds": 206.98,
+    "text": "Over the years I've used a number of CAD cam software,"
+  },
+  {
+    "segment_id": "s0054",
+    "start_seconds": 206.98,
+    "end_seconds": 211.06,
+    "text": "but none of them have given me the feeling that they understand what I'm truly"
+  },
+  {
+    "segment_id": "s0055",
+    "start_seconds": 211.06,
+    "end_seconds": 213.3,
+    "text": "trying to do the way the Fusion does."
+  },
+  {
+    "segment_id": "s0056",
+    "start_seconds": 213.3,
+    "end_seconds": 215.06,
+    "text": "It's very simple to get started."
+  },
+  {
+    "segment_id": "s0057",
+    "start_seconds": 215.06,
+    "end_seconds": 216.5,
+    "text": "The training tools are great."
+  },
+  {
+    "segment_id": "s0058",
+    "start_seconds": 216.5,
+    "end_seconds": 218.66,
+    "text": "It explains a very detailed detail."
+  },
+  {
+    "segment_id": "s0059",
+    "start_seconds": 218.66,
+    "end_seconds": 221.62,
+    "text": "Our mission here at Unifab is to bring ideas to life."
+  },
+  {
+    "segment_id": "s0060",
+    "start_seconds": 221.62,
+    "end_seconds": 225.78,
+    "text": "The way Unifab gets business is through relationships with our customer."
+  },
+  {
+    "segment_id": "s0061",
+    "start_seconds": 225.78,
+    "end_seconds": 228.58,
+    "text": "They trust us to have good quality and be on time."
+  },
+  {
+    "segment_id": "s0062",
+    "start_seconds": 228.58,
+    "end_seconds": 229.78,
+    "text": "Every minute counts."
+  },
+  {
+    "segment_id": "s0063",
+    "start_seconds": 229.78,
+    "end_seconds": 234.9,
+    "text": "So the better quality we can offer, the more jobs and the bigger jobs we get as well."
+  },
+  {
+    "segment_id": "s0064",
+    "start_seconds": 234.9,
+    "end_seconds": 238.74,
+    "text": "And so when we're looking at these big complex parts,"
+  },
+  {
+    "segment_id": "s0065",
+    "start_seconds": 238.74,
+    "end_seconds": 240.74,
+    "text": "and how we're going to be able to attack them,"
+  },
+  {
+    "segment_id": "s0066",
+    "start_seconds": 240.74,
+    "end_seconds": 245.62,
+    "text": "Autodesk Fusion has really allowed us to produce amazing product and continue to grow."
+  }
+]

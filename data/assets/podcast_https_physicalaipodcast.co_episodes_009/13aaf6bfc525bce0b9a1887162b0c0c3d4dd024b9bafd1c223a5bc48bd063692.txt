@@ -1,0 +1,140 @@
+Hey everyone, welcome back to the researchers guide to physical AI podcast.
+My name is Shobam and every week I go through what moved in robots, embodied intelligence,
+and the research behind machines that work in the real world.
+This week Boston Dynamics gave Atlas a new hand and left the little finger off it,
+and an analyst count of this year's humanoid production says only about one and eight
+of those robots walks on two legs.
+A lab at Tsinghua rebuilt the two main designs for world action models side by side,
+and the fast one falls apart on anything it wasn't trained on.
+Then there's a startup that published how much of its factory demo a human was driving
+and a new California law that makes employers name the machine that replaced their workers.
+Okay, so let me start with Boston Dynamics, which showed a new hand for its humanoid
+Atlas this week, and the thing everyone noticed is the finger that isn't there.
+The old hand had seven degrees of freedom, which just means seven separate ways it could move.
+The new one has 13, the thumb gets four, and three fingers get three each, and there's no pinky.
+How they decided that is my favorite detail of the week.
+The team taped their own pinkies to their ring fingers and went through a whole day like that,
+and they came away convinced that three more degrees of freedom weren't worth the size,
+the cost, and the power.
+Alberto Rodriguez, who leads robot behavior at Boston Dynamics, told IEEE Spectrum
+that hands are a ruthless design trade-off, and that you're always giving up on something.
+What they kept tells you what they're designing for.
+Most robot hands keep their motors in the palm or the forearm and pull each finger with a cable,
+which people call a tendon.
+A cable stretches and wears, so the same motor command gives a slightly different
+force at the finger tip as the hand ages, and a simulator can't predict where it has never seen.
+Boston Dynamics took the tendon out, every joint runs on the same type of motor,
+sealed inside the joint, so the force at the joint follows the motor's current,
+the same way every time, and each of those motor modules can be swapped out by itself.
+The finger tips and the palm are covered in pressure sensing, and it can carry a loaded
+mini fridge, and it's designed for a hundred thousand units a year, built so a simulator can
+model it accurately because they want to train it with reinforcement learning in simulation
+before it touches anything real. So every reason they gave was about building it, fixing it,
+or simulating it. The production numbers point the same way. The investment bank, BTIG, put out
+the first breakdown I've seen of what the industry has been counting as humanoids.
+They counted roughly 31,000 humanoids made this year by the leading makers,
+unitary among them. About a third of those are full size, and only 13% walk on two legs.
+Most of the rest are half size machines going to schools and research labs. So if you've been
+reading the shipment number as robots going into factories, it was answering a narrower question
+than that. I'd hold it loosely though, because the note isn't public, and every report
+quotes the same three figures. Flourish robots came at it from the cheap end, with a wheeled home
+robot at $3,555 that lives about three pounds. You teach it a chore by guiding it through the
+task with a phone app. My honest read is that the price comes from taking capability out,
+and for picking toys up off a floor, I think that's a reasonable trade. Atlas's new hand
+will learn mostly in simulation. The other big place this field gets its training signal
+is ordinary video, and a lab at Tsinghua, just settled the longest running argument about
+how a robot should use it. Let me briefly set up what a world action model is. A robot policy
+takes in a camera image and an instruction, and puts out the next short burst of movement,
+which people call an action chunk. A world action model is a policy that also learns to predict
+what the camera will see next. The reason to bother is that predicting video
+teaches the model how things move, and there's vastly more video in the world than there is robot
+data. Those predicted frames come out of a video generator, which starts from pure noise
+and cleans it up over a series of steps until there's a picture. That's called denoising,
+and it's slow. So the field split into explicit world action models generate the future frames
+every time they act. Latent ones learn to predict the future during training, then skip
+generating it when the robot is running, which makes them much faster. Fast one, which I covered
+back in the first episode was the case for the latent side. Its claim was that you could train
+with the imagined future, act without it, and lose almost nothing. Leap lab at Tsinghua built
+both kinds on the same backbone, with the same data, and the same compute budget, and their
+baselines are named after fast-wem. On the tasks the models were trained on, the two come out
+level, which is what fast-wem said, then they test what happens off the training data.
+Let me give you the example that matters most. You show the robot ordinary video of a task
+it has never been trained on with no robot actions attached, and then you ask it to do that task.
+The explicit model succeeds about 70% of the time. The latent model succeeds about
+6% of the time. On a real robot, on a task held out of training entirely, the latent model got
+10%. So fast-wem was right on the tasks it was measured on, and the shortcut breaks exactly
+when the robot meets something new, which is the moment anybody cares about. What struck me is
+where the gap comes from. They trace nearly all of it to the first denoising step. The explicit
+model gets its benefit from starting to work out the future, and almost nothing from
+finishing the picture. The author's own phrase is that the value is in preparing the future,
+not generating it. So their method, simple wham, gives the model a set of placeholder slots for
+the future video filled with pure noise and runs a single forward pass over them alongside the action.
+It never draws a frame. They also change the noise schedule in training to match that one step
+. It beats both of the older designs on generalisation. It beats the full explicit model
+on that real held out task, and it's nearly four times faster than generating the frames.
+They check that the noise is doing the work too. When they swap those noisy slots for
+learned tokens or for zeros, every generalisation score collapsed. I was thinking about
+why that would be, and here's my reading which I might be wrong about. To take that first step
+from noise toward a future frame, the model has to commit to what's about to happen in the scene.
+That's the computation the action needs. Everything after it is detailed about pixels
+and the robot never needed the pixels. Now, there are some caveats with this. Most of these results
+come from simulation benchmarks. The real robot result is one task, and the paper is five days old.
+But the code and the weights are out. So anyone can check it, and I'd much rather see an argument
+settled this way, with both sides rebuilt on the same budget, then by whichever camp ships
+the bigger model. Out in a real factory, when a robot meets something it wasn't trained for,
+a person takes over. This week, one company published how much of the time that happens.
+New clears is a startup running modified unitary g1 humanoids inside a German industrial
+customer's plant, and its founder Melvin Schwartz posted close to two hours of uncut footage
+of them picking parts, loading shelves, and pushing carts. The hesitations are in there, and so are
+the moments a human steps in. He then told humanoids daily that this demo was about 60% autonomous,
+and 40% teleoperated, meaning a person was steering the robot remotely for 40% of it.
+For a long time, I've wanted a company to publish the number that makes it look worse,
+and this is it. There are two things to be careful about, and to be fair,
+both outlets that reported it, flagged them without being asked. The split describes this demo,
+not the company's robots in general, and nucleus hasn't said how it worked the percent is out.
+Nucleus also argues the teleoperation is part of the plan. Every time a person corrects the
+robot, that correction gets recorded and goes back in as training data. Diner Robotics came at
+the same problem from the measuring side. It launched a robot called Taku this week,
+with a human-shaped upper body, two arms, a torso that folds to reach high and low,
+and four steerable wheels instead of legs. The demo is a full commercial laundry shift,
+running washers and dryers, folding towels, and shelving them, and Diner says the field should
+stop quoting per task success rates and quote mean time between interventions instead,
+which is how long the robot goes before somebody has to touch it. That's commercial laundry
+again, the same works Sunday Robotics used last week to argue with figures numbers. I think
+Diner has the right metric because it's the one of facilities manager would actually buy
+against, but Diner hasn't published its own, so that's three companies with three different ways
+of counting, and still nothing you could put side-by-side in a table. Nucleus counted how much
+a human was doing. California is about to count what the machines replaced. Governor Gavin Newsom
+signed 13 more AI bills on Wednesday, and the coverage has mostly been about robot bosses,
+meaning the bill that stops an employer firing someone on an automated systems say so alone.
+The one I'd watch is SB951, the worker technological displacement act. Here's the background you need.
+California already has a law called CalWorn, which makes larger employers give 60 days notice
+before a mass layoff. Under this bill, if the layoff comes wholly or substantially from an AI
+system or other automated technology, the notice has to say so at the top in those words,
+that this notice is for a technology displacement. The employer has to describe the job
+functions being automated and name the kind of technology that replaced them. Then the states
+employment development department publishes the notices along with a statewide summary every quarter.
+So for instance, a warehouse with a few hundred staff that lays off 60 pickers,
+because it brought in robot arms would have to say that in writing, and the state would put it
+on a public list. The phrase I keep coming back to is, or other automated technology,
+because it pulls a physical robot in alongside software. Every humanoid pitch I've seen
+rests on a labor number, nobody can check. Starting next year, California publishes one
+with the employer naming the machine. There's a handful of other things worth keeping an eye on.
+Reporters have now gone through anthropic straf prospectus, including its 80 pages of
+wrist factors, and no report on it mentions robots. A team in Taiwan says robot policies ignore
+the instruction because training never forces them to use it, and they showed a fix on a real arm
+and microns says the memory shortage gets worse through 2028, which raises the cost of every
+robot that runs its model on board. Okay, so let me pull the week together. Boston Dynamics
+left a pinky off Atlas's new hand, and every reason it gave was about manufacturing, repair,
+or simulation. BTIG's count says only about one humanoid in eight made this year walks on two legs,
+and flourish is selling a wheeled home robot for a few thousand dollars. Leap lab at Tsinghua
+showed the fast world action models fall apart off their training data, and that one noisy
+step toward the future brings the generalization back at a fraction of the cost.
+Nucleus published how much of its factory demo a human was driving, and Dinah once the field
+counting the time between interventions, and California will publish a quarterly count of jobs
+taken by automation. With the machine named, the thing I'll be following is that intervention
+number. Nucleus hasn't said how it computed its split, and Dinah hasn't published a mean time
+between interventions of its own. The first company to put out an intervention rate with the
+method written down, and the first customer to make one a contract term will tell us more about
+where these robots are than any demo. Thanks for listening. The written deep dive has the papers,
+the numbers, and the links, and it's all at physicalaipardcast.co. I'll see you next week.

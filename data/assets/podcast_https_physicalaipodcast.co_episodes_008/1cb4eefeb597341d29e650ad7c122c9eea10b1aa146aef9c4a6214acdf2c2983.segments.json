@@ -1,0 +1,824 @@
+[
+  {
+    "segment_id": "s0001",
+    "start_seconds": 8.69,
+    "end_seconds": 14.27,
+    "text": "They everyone welcome back to the researchers guide to physical AI podcast. My name is Shubham"
+  },
+  {
+    "segment_id": "s0002",
+    "start_seconds": 14.27,
+    "end_seconds": 20.95,
+    "text": "And this is your weekly briefing on robots embodied intelligence and the research that gets machines working in the real world"
+  },
+  {
+    "segment_id": "s0003",
+    "start_seconds": 20.95,
+    "end_seconds": 27.71,
+    "text": "The model that topped Nvidia's robot leaderboard this week came out of a company that makes pictures and the part"
+  },
+  {
+    "segment_id": "s0004",
+    "start_seconds": 27.71,
+    "end_seconds": 35.21,
+    "text": "I keep coming back to is what they did after they won it. They sent it to an outside firm to be tested blind on an arm"
+  },
+  {
+    "segment_id": "s0005",
+    "start_seconds": 35.21,
+    "end_seconds": 37.89,
+    "text": "They don't own and published whatever came back"
+  },
+  {
+    "segment_id": "s0006",
+    "start_seconds": 38.39,
+    "end_seconds": 46.01,
+    "text": "Then figures trial count for its home robot result came out and the chief executive of a rival company quoted it back at them and"
+  },
+  {
+    "segment_id": "s0007",
+    "start_seconds": 46.53,
+    "end_seconds": 49.01,
+    "text": "Anthropic named the first outside evaluator"
+  },
+  {
+    "segment_id": "s0008",
+    "start_seconds": 49.01,
+    "end_seconds": 52.77,
+    "text": "It will let inside its own lab and it turned out to be a consulting firm"
+  },
+  {
+    "segment_id": "s0009",
+    "start_seconds": 53.05,
+    "end_seconds": 59.37,
+    "text": "This was the week company started showing how many attempts sat behind their numbers and the numbers look for it"
+  },
+  {
+    "segment_id": "s0010",
+    "start_seconds": 65.93,
+    "end_seconds": 70.41,
+    "text": "Okay, so the biggest thing in physical AI this week landed on Wednesday"
+  },
+  {
+    "segment_id": "s0011",
+    "start_seconds": 70.41,
+    "end_seconds": 74.13,
+    "text": "Out of black forest labs if the name doesn't ring a bell"
+  },
+  {
+    "segment_id": "s0012",
+    "start_seconds": 74.33,
+    "end_seconds": 78.25,
+    "text": "That's the company behind flux the image generation models"
+  },
+  {
+    "segment_id": "s0013",
+    "start_seconds": 78.53,
+    "end_seconds": 83.53,
+    "text": "What they released is flux reaction and it's a world action model with open weights"
+  },
+  {
+    "segment_id": "s0014",
+    "start_seconds": 83.89,
+    "end_seconds": 90.09,
+    "text": "Let me briefly talk about what a world action model is because it's the shape a lot of this field is conferreding on a"
+  },
+  {
+    "segment_id": "s0015",
+    "start_seconds": 90.29,
+    "end_seconds": 99.05,
+    "text": "Robot policy takes a camera frame the robots own joint positions and a sentence telling it what to do and it puts out the next few movements a"
+  },
+  {
+    "segment_id": "s0016",
+    "start_seconds": 99.05,
+    "end_seconds": 106.37,
+    "text": "World action model does that and it also predicts what the camera will see next and the reason people want that is video"
+  },
+  {
+    "segment_id": "s0017",
+    "start_seconds": 106.73,
+    "end_seconds": 113.05,
+    "text": "Think about how much video of the physical world is sitting around already and how little robot data there is"
+  },
+  {
+    "segment_id": "s0018",
+    "start_seconds": 113.21,
+    "end_seconds": 117.37,
+    "text": "If most of your understanding of how objects behave comes out of video"
+  },
+  {
+    "segment_id": "s0019",
+    "start_seconds": 117.69,
+    "end_seconds": 120.33,
+    "text": "You need far fewer hours on a real arm"
+  },
+  {
+    "segment_id": "s0020",
+    "start_seconds": 121.05,
+    "end_seconds": 123.37,
+    "text": "flux three action leans on that hard"
+  },
+  {
+    "segment_id": "s0021",
+    "start_seconds": 123.93,
+    "end_seconds": 130.61,
+    "text": "Nearly all of its pre-training tokens were video and only then does it learn to act across a range of robot bodies"
+  },
+  {
+    "segment_id": "s0022",
+    "start_seconds": 130.89,
+    "end_seconds": 140.41,
+    "text": "It came first on Nvidia's leaderboard of 120 simulated tasks ahead of Nvidia's own Cosmos 3 nano policy at less than half the size"
+  },
+  {
+    "segment_id": "s0023",
+    "start_seconds": 140.41,
+    "end_seconds": 147.41,
+    "text": "I mean a leaderboard in simulation ranks models against each other and it tells you little about a real arm"
+  },
+  {
+    "segment_id": "s0024",
+    "start_seconds": 147.65,
+    "end_seconds": 152.95,
+    "text": "What struck me was where the method came from the training framework underneath it is called"
+  },
+  {
+    "segment_id": "s0025",
+    "start_seconds": 152.95,
+    "end_seconds": 156.55,
+    "text": "Self-flow and it's a march paper about generating images"
+  },
+  {
+    "segment_id": "s0026",
+    "start_seconds": 156.79,
+    "end_seconds": 164.75,
+    "text": "Here's what it changes these models are normally trained by flow matching, which teaches the model to carry noise to a finished frame"
+  },
+  {
+    "segment_id": "s0027",
+    "start_seconds": 165.35,
+    "end_seconds": 168.11,
+    "text": "Self-flow gives it a second job at the same time"
+  },
+  {
+    "segment_id": "s0028",
+    "start_seconds": 169.03,
+    "end_seconds": 172.59,
+    "text": "Reconstructing its own internal features of what it's looking at"
+  },
+  {
+    "segment_id": "s0029",
+    "start_seconds": 172.79,
+    "end_seconds": 181.41,
+    "text": "So one model learns to represent a scene and to generate one in the same past and that representation is what the robot side turns out to need"
+  },
+  {
+    "segment_id": "s0030",
+    "start_seconds": 181.77,
+    "end_seconds": 185.21,
+    "text": "berid in the paper is one robotics experiment where"
+  },
+  {
+    "segment_id": "s0031",
+    "start_seconds": 185.81,
+    "end_seconds": 189.29,
+    "text": "manipulation success goes from 42% to 71"
+  },
+  {
+    "segment_id": "s0032",
+    "start_seconds": 189.69,
+    "end_seconds": 196.65,
+    "text": "It's sad their half a year before robotics came looking, but the leaderboard is the least interesting thing in the announcement"
+  },
+  {
+    "segment_id": "s0033",
+    "start_seconds": 196.81,
+    "end_seconds": 204.29,
+    "text": "There's a question this field has been avoiding which is who reproduces a robotics claim on hardware the claimant doesn't own"
+  },
+  {
+    "segment_id": "s0034",
+    "start_seconds": 204.49,
+    "end_seconds": 209.13,
+    "text": "If you've ever tried to line robot papers up against each other, you know why that matters"
+  },
+  {
+    "segment_id": "s0035",
+    "start_seconds": 209.49,
+    "end_seconds": 216.69,
+    "text": "This week somebody did it black forest labs had a firm called positronic robotics run a blind evaluation on a franca arm"
+  },
+  {
+    "segment_id": "s0036",
+    "start_seconds": 216.73,
+    "end_seconds": 225.43,
+    "text": "They ran 10 manipulation tasks three attempts each with the same time window and the same scoring sheet for every model and the operator was"
+  },
+  {
+    "segment_id": "s0037",
+    "start_seconds": 225.43,
+    "end_seconds": 232.21,
+    "text": "entold which model was driving flux three action finished 28 of 30 and videos cause most three nano"
+  },
+  {
+    "segment_id": "s0038",
+    "start_seconds": 232.57,
+    "end_seconds": 236.25,
+    "text": "The same family as the leaderboard entry came in one behind at"
+  },
+  {
+    "segment_id": "s0039",
+    "start_seconds": 236.25,
+    "end_seconds": 239.65,
+    "text": "27 so I think you have to call those two tied and"
+  },
+  {
+    "segment_id": "s0040",
+    "start_seconds": 240.09,
+    "end_seconds": 246.05,
+    "text": "pi 0.5 a policy from physical intelligence that people compare against finished 13"
+  },
+  {
+    "segment_id": "s0041",
+    "start_seconds": 246.49,
+    "end_seconds": 251.93,
+    "text": "Now that's a small sample and I wouldn't build a ranking on it the license is non-commercial too"
+  },
+  {
+    "segment_id": "s0042",
+    "start_seconds": 251.93,
+    "end_seconds": 257.75,
+    "text": "So open weights is the honest word and open source is the wrong one and it's still a vendor paying for the"
+  },
+  {
+    "segment_id": "s0043",
+    "start_seconds": 258.47,
+    "end_seconds": 265.99,
+    "text": "Evaluation it then one, but the point is the protocol is what I want other people to copy the arm was in somebody else's hands"
+  },
+  {
+    "segment_id": "s0044",
+    "start_seconds": 266.37,
+    "end_seconds": 272.21,
+    "text": "The operator was blind every model got the same tasks and the same clock and the whole thing is on video"
+  },
+  {
+    "segment_id": "s0045",
+    "start_seconds": 272.73,
+    "end_seconds": 278.45,
+    "text": "Black forest labs volunteered its numbers figures trial count came out to and that went differently"
+  },
+  {
+    "segment_id": "s0046",
+    "start_seconds": 279.09,
+    "end_seconds": 281.57,
+    "text": "Figure builds humanoid robots and last week"
+  },
+  {
+    "segment_id": "s0047",
+    "start_seconds": 281.57,
+    "end_seconds": 286.77,
+    "text": "I covered the result where those humanoids walked into 30 houses nobody had collected data in"
+  },
+  {
+    "segment_id": "s0048",
+    "start_seconds": 286.77,
+    "end_seconds": 293.25,
+    "text": "I said the trial count behind it hadn't been published and I was wrong Forbes reported the counts and Tony Zhao"
+  },
+  {
+    "segment_id": "s0049",
+    "start_seconds": 293.29,
+    "end_seconds": 298.25,
+    "text": "quoted them straight from figures page there were four hundred and twenty trials and"
+  },
+  {
+    "segment_id": "s0050",
+    "start_seconds": 298.57,
+    "end_seconds": 301.21,
+    "text": "237 of them worked that"
+  },
+  {
+    "segment_id": "s0051",
+    "start_seconds": 301.21,
+    "end_seconds": 306.17,
+    "text": "420 is the denominator which just means how many tries a success rate came out of"
+  },
+  {
+    "segment_id": "s0052",
+    "start_seconds": 306.93,
+    "end_seconds": 313.25,
+    "text": "Tiding toys off a floor was the worst of the three chores and came in under half Tony Zhao runs"
+  },
+  {
+    "segment_id": "s0053",
+    "start_seconds": 313.81,
+    "end_seconds": 320.41,
+    "text": "Sunday robotics and what he said about those numbers in public was that failing half the time is not useful work"
+  },
+  {
+    "segment_id": "s0054",
+    "start_seconds": 320.77,
+    "end_seconds": 328.41,
+    "text": "His own company's figure from July is roughly 99% on folding laundry across a pile of garments in home"
+  },
+  {
+    "segment_id": "s0055",
+    "start_seconds": 328.41,
+    "end_seconds": 333.17,
+    "text": "It had never seen and here's the thing worth sitting with because that comparison doesn't hold up"
+  },
+  {
+    "segment_id": "s0056",
+    "start_seconds": 333.53,
+    "end_seconds": 340.13,
+    "text": "Sunday scores one garment per attempt figure scores a whole chore so if the robot folds every towel"
+  },
+  {
+    "segment_id": "s0057",
+    "start_seconds": 340.13,
+    "end_seconds": 345.77,
+    "text": "But one the entire trial is a failure and a person stepping in for safety is a failure to"
+  },
+  {
+    "segment_id": "s0058",
+    "start_seconds": 346.29,
+    "end_seconds": 353.09,
+    "text": "Those two percentages are counting different things. I think the honest reading is that neither headline means"
+  },
+  {
+    "segment_id": "s0059",
+    "start_seconds": 353.21,
+    "end_seconds": 360.89,
+    "text": "What it looks like it means and notice what that does to the incentive the more honest your denominator the worse your number looks"
+  },
+  {
+    "segment_id": "s0060",
+    "start_seconds": 361.13,
+    "end_seconds": 365.93,
+    "text": "There's a second problem with success rates a group released a benchmark called"
+  },
+  {
+    "segment_id": "s0061",
+    "start_seconds": 366.45,
+    "end_seconds": 372.61,
+    "text": "Robo follow and their claim is that success rates barely measure whether the robot understood the instruction"
+  },
+  {
+    "segment_id": "s0062",
+    "start_seconds": 373.13,
+    "end_seconds": 376.73,
+    "text": "Let me give you an example say you put a robot in front of a table"
+  },
+  {
+    "segment_id": "s0063",
+    "start_seconds": 377.09,
+    "end_seconds": 383.41,
+    "text": "There's a single object on it and a single sensible thing to do with that object. You say pick up the cup"
+  },
+  {
+    "segment_id": "s0064",
+    "start_seconds": 383.41,
+    "end_seconds": 386.89,
+    "text": "It picks up the cup and you score that as instruction following"
+  },
+  {
+    "segment_id": "s0065",
+    "start_seconds": 387.09,
+    "end_seconds": 392.25,
+    "text": "But a policy that ignored your sentence and just did the only available thing scores the same"
+  },
+  {
+    "segment_id": "s0066",
+    "start_seconds": 392.77,
+    "end_seconds": 399.85,
+    "text": "So Robo follow bill scenes where several different tasks are possible then escalates through four levels"
+  },
+  {
+    "segment_id": "s0067",
+    "start_seconds": 400.29,
+    "end_seconds": 406.65,
+    "text": "Changing what the scene looks like and what the words mean nine policies went in and strong performance on the"
+  },
+  {
+    "segment_id": "s0068",
+    "start_seconds": 406.65,
+    "end_seconds": 413.29,
+    "text": "Plainest level didn't carry to the harder ones. They also tried four fixes all of them ways of making the robot"
+  },
+  {
+    "segment_id": "s0069",
+    "start_seconds": 413.29,
+    "end_seconds": 419.21,
+    "text": "Pay more attention to the words for instance a bigger language model not one of them close the gap"
+  },
+  {
+    "segment_id": "s0070",
+    "start_seconds": 419.21,
+    "end_seconds": 422.13,
+    "text": "That's a hidden problem in how the field measures"
+  },
+  {
+    "segment_id": "s0071",
+    "start_seconds": 422.29,
+    "end_seconds": 425.65,
+    "text": "There's another one and it sits inside the video models themselves"
+  },
+  {
+    "segment_id": "s0072",
+    "start_seconds": 426.01,
+    "end_seconds": 432.85,
+    "text": "They've been getting physics wrong for as long as anyone has been scoring them and a group in Beijing thinks it has found the cause"
+  },
+  {
+    "segment_id": "s0073",
+    "start_seconds": 433.21,
+    "end_seconds": 439.65,
+    "text": "The failure is easy to picture imagine you ask one of these models for a mug rolling off the edge of a table"
+  },
+  {
+    "segment_id": "s0074",
+    "start_seconds": 439.85,
+    "end_seconds": 446.97,
+    "text": "The mug looks like a mug the table looks like a table and the mug moves in a way no mug has ever moved"
+  },
+  {
+    "segment_id": "s0075",
+    "start_seconds": 447.33,
+    "end_seconds": 455.93,
+    "text": "The assumed fix was always more data or a physics prior bolted on the side a group at Beijing University of posts and telecommunications"
+  },
+  {
+    "segment_id": "s0076",
+    "start_seconds": 456.13,
+    "end_seconds": 462.61,
+    "text": "Looked inside the generation process instead and I'll say this. It's the first paper. I've seen that"
+  },
+  {
+    "segment_id": "s0077",
+    "start_seconds": 462.77,
+    "end_seconds": 468.53,
+    "text": "Explains the failure rather than scoring it. Let me walk you through how these models make a video because"
+  },
+  {
+    "segment_id": "s0078",
+    "start_seconds": 468.65,
+    "end_seconds": 473.93,
+    "text": "The causes in there they start from pure noise and clean it up over a sequence of steps"
+  },
+  {
+    "segment_id": "s0079",
+    "start_seconds": 474.17,
+    "end_seconds": 481.45,
+    "text": "Which is called denoising at each step the model works out how much every part of the picture should influence every other part"
+  },
+  {
+    "segment_id": "s0080",
+    "start_seconds": 481.65,
+    "end_seconds": 484.89,
+    "text": "To know where anything sits in the frame and in time"
+  },
+  {
+    "segment_id": "s0081",
+    "start_seconds": 484.89,
+    "end_seconds": 488.89,
+    "text": "It uses a position encoding borrowed from language models"
+  },
+  {
+    "segment_id": "s0082",
+    "start_seconds": 489.21,
+    "end_seconds": 495.61,
+    "text": "What this group found is that the encoding lets distant parts of the picture influence each other far too little"
+  },
+  {
+    "segment_id": "s0083",
+    "start_seconds": 496.09,
+    "end_seconds": 501.61,
+    "text": "So in the earliest steps parts of the scene lock into positions that are already wrong and"
+  },
+  {
+    "segment_id": "s0084",
+    "start_seconds": 501.85,
+    "end_seconds": 505.53,
+    "text": "Everything afterwards gets built on top of them. The fix is"
+  },
+  {
+    "segment_id": "s0085",
+    "start_seconds": 505.69,
+    "end_seconds": 509.93,
+    "text": "Re-scaling a single frequency in that encoding as denoising goes along"
+  },
+  {
+    "segment_id": "s0086",
+    "start_seconds": 510.33,
+    "end_seconds": 517.61,
+    "text": "It needs no new data set and no physics module and it works without retraining and the more I look at that paper"
+  },
+  {
+    "segment_id": "s0087",
+    "start_seconds": 517.77,
+    "end_seconds": 521.13,
+    "text": "The more I think the physics gap was never about physics"
+  },
+  {
+    "segment_id": "s0088",
+    "start_seconds": 521.29,
+    "end_seconds": 524.41,
+    "text": "It may be a design choice inherited from text"
+  },
+  {
+    "segment_id": "s0089",
+    "start_seconds": 524.97,
+    "end_seconds": 531.37,
+    "text": "Sitting in a part of the model nobody was looking at I might be wrong about how far that goes and I want"
+  },
+  {
+    "segment_id": "s0090",
+    "start_seconds": 531.61,
+    "end_seconds": 536.09,
+    "text": "Somebody to rerun those physics tests with this turned on before I get excited"
+  },
+  {
+    "segment_id": "s0091",
+    "start_seconds": 536.57,
+    "end_seconds": 543.69,
+    "text": "But if it holds up, it's the cheapest result of the year a fix that cheap only helps if it reaches the shared code every"
+  },
+  {
+    "segment_id": "s0092",
+    "start_seconds": 543.69,
+    "end_seconds": 548.65,
+    "text": "Robotics team builds on and more of that code is ending up inside chip companies"
+  },
+  {
+    "segment_id": "s0093",
+    "start_seconds": 549.29,
+    "end_seconds": 556.65,
+    "text": "This week Qualcomm agreed to buy picnic the company that maintains move it the default motion planner in Ross"
+  },
+  {
+    "segment_id": "s0094",
+    "start_seconds": 556.97,
+    "end_seconds": 562.49,
+    "text": "The robot operating system if you've ever told a robot arm to put its gripper over there"
+  },
+  {
+    "segment_id": "s0095",
+    "start_seconds": 562.97,
+    "end_seconds": 568.49,
+    "text": "Move it is most likely what found a path the joints could follow without the elbow going through a shelf"
+  },
+  {
+    "segment_id": "s0096",
+    "start_seconds": 568.97,
+    "end_seconds": 574.97,
+    "text": "Qualcomm says move it stays open source and that the company will wire it tightly to its own robot chips"
+  },
+  {
+    "segment_id": "s0097",
+    "start_seconds": 575.29,
+    "end_seconds": 581.93,
+    "text": "And this is the second time lately flux three action downloads through hugging faces open robot learning library"
+  },
+  {
+    "segment_id": "s0098",
+    "start_seconds": 582.33,
+    "end_seconds": 585.45,
+    "text": "And in video agreed to buy hugging face a few weeks ago"
+  },
+  {
+    "segment_id": "s0099",
+    "start_seconds": 585.93,
+    "end_seconds": 591.85,
+    "text": "So the model hub is going to one chip company and the default motion planner is going to another"
+  },
+  {
+    "segment_id": "s0100",
+    "start_seconds": 592.25,
+    "end_seconds": 602.41,
+    "text": "Look, I don't think anybody here is breaking a promise the thing is nobody is measuring whether support for outside hardware keeps pace with support for the owner's own"
+  },
+  {
+    "segment_id": "s0101",
+    "start_seconds": 602.81,
+    "end_seconds": 604.81,
+    "text": "Not everything went the other way"
+  },
+  {
+    "segment_id": "s0102",
+    "start_seconds": 604.81,
+    "end_seconds": 611.69,
+    "text": "Alphabet's intrinsic put the core of its industrial robotics platform out under Apache 2.0 which means"
+  },
+  {
+    "segment_id": "s0103",
+    "start_seconds": 611.93,
+    "end_seconds": 619.45,
+    "text": "You can build a business on it. That is the thing flux three actions license won't let you do. Nobody is measuring at the frontier labs either"
+  },
+  {
+    "segment_id": "s0104",
+    "start_seconds": 620.01,
+    "end_seconds": 625.45,
+    "text": "Anthropic had promised to put outsiders inside its own lab with employee level access"
+  },
+  {
+    "segment_id": "s0105",
+    "start_seconds": 625.93,
+    "end_seconds": 632.09,
+    "text": "Red teaming the models and testing the safeguards that arrangement has a name now the embedded evaluator"
+  },
+  {
+    "segment_id": "s0106",
+    "start_seconds": 632.65,
+    "end_seconds": 634.97,
+    "text": "It's Accenture the consulting firm"
+  },
+  {
+    "segment_id": "s0107",
+    "start_seconds": 635.37,
+    "end_seconds": 640.73,
+    "text": "Each side is putting in at least a billion dollars and I think most people writing about this"
+  },
+  {
+    "segment_id": "s0108",
+    "start_seconds": 640.73,
+    "end_seconds": 644.41,
+    "text": "Assumed the answer would be one of the AI safety nonprofits"
+  },
+  {
+    "segment_id": "s0109",
+    "start_seconds": 645.29,
+    "end_seconds": 647.69,
+    "text": "The part that matters is still missing"
+  },
+  {
+    "segment_id": "s0110",
+    "start_seconds": 647.69,
+    "end_seconds": 652.33,
+    "text": "Nobody has written down what access and evaluator gets or what they may publish"
+  },
+  {
+    "segment_id": "s0111",
+    "start_seconds": 652.73,
+    "end_seconds": 655.77,
+    "text": "So it stays a private contract between two companies"
+  },
+  {
+    "segment_id": "s0112",
+    "start_seconds": 656.81,
+    "end_seconds": 659.13,
+    "text": "On the day Anthropic named Accenture"
+  },
+  {
+    "segment_id": "s0113",
+    "start_seconds": 659.53,
+    "end_seconds": 661.85,
+    "text": "California's governor Gavin Newsom"
+  },
+  {
+    "segment_id": "s0114",
+    "start_seconds": 662.25,
+    "end_seconds": 669.05,
+    "text": "Signed an executive order it asks a working group whether frontier models should have to carry an emergency stop and"
+  },
+  {
+    "segment_id": "s0115",
+    "start_seconds": 669.05,
+    "end_seconds": 676.73,
+    "text": "Whether frontier AI companies should be required to have independent outsiders inside and what I find odd is that"
+  },
+  {
+    "segment_id": "s0116",
+    "start_seconds": 677.13,
+    "end_seconds": 683.77,
+    "text": "Neither the order nor the expert panel the state named says a word about robots or anything else that moves"
+  },
+  {
+    "segment_id": "s0117",
+    "start_seconds": 684.89,
+    "end_seconds": 691.29,
+    "text": "A few other things move this week Boston Dynamics opened a training center inside Hyundai motor group"
+  },
+  {
+    "segment_id": "s0118",
+    "start_seconds": 691.37,
+    "end_seconds": 696.33,
+    "text": "Metaplante America in Georgia and Atlas's job there is putting parts in order"
+  },
+  {
+    "segment_id": "s0119",
+    "start_seconds": 696.97,
+    "end_seconds": 704.81,
+    "text": "The international Federation of robotics counted five million industrial robots at work worldwide and still lists no separate"
+  },
+  {
+    "segment_id": "s0120",
+    "start_seconds": 704.81,
+    "end_seconds": 710.57,
+    "text": "Category for humanoids and Bobby says it's truck drove Dallas to San Antonio with no new data"
+  },
+  {
+    "segment_id": "s0121",
+    "start_seconds": 711.13,
+    "end_seconds": 715.77,
+    "text": "No simulation and no fine tuning for that route and nobody took over the wheel"
+  },
+  {
+    "segment_id": "s0122",
+    "start_seconds": 716.09,
+    "end_seconds": 718.57,
+    "text": "Bobby hasn't said how many runs that covers"
+  },
+  {
+    "segment_id": "s0123",
+    "start_seconds": 718.97,
+    "end_seconds": 720.97,
+    "text": "Okay, so let me pull the week together"
+  },
+  {
+    "segment_id": "s0124",
+    "start_seconds": 721.37,
+    "end_seconds": 726.65,
+    "text": "Black forest labs put an open weights model on top of Nvidia's simulated leaderboard"
+  },
+  {
+    "segment_id": "s0125",
+    "start_seconds": 727.21,
+    "end_seconds": 730.41,
+    "text": "Then had a stranger run it blind on somebody else's arm"
+  },
+  {
+    "segment_id": "s0126",
+    "start_seconds": 731.05,
+    "end_seconds": 738.33,
+    "text": "Figures trial counts were in its post all along a competitor quoted them back and the two companies numbers were never comparable anyway"
+  },
+  {
+    "segment_id": "s0127",
+    "start_seconds": 738.89,
+    "end_seconds": 745.45,
+    "text": "Robo follows has a good chunk of what we call instruction following is the robot doing the only thing the scene allows"
+  },
+  {
+    "segment_id": "s0128",
+    "start_seconds": 746.33,
+    "end_seconds": 754.17,
+    "text": "A group in Beijing traced the physics failures in video models to a position encoding borrowed from language and that still needs checking"
+  },
+  {
+    "segment_id": "s0129",
+    "start_seconds": 754.89,
+    "end_seconds": 761.53,
+    "text": "Another piece of the open robotic stack is on its way inside a chip company and Anthropics first embedded"
+  },
+  {
+    "segment_id": "s0130",
+    "start_seconds": 761.53,
+    "end_seconds": 768.41,
+    "text": "Evaluator turned out to be Accenture with still no standards for what an evaluator may see or say the thread"
+  },
+  {
+    "segment_id": "s0131",
+    "start_seconds": 768.41,
+    "end_seconds": 774.01,
+    "text": "I'll be following is that blind evaluation black forest labs commissioned it and won it"
+  },
+  {
+    "segment_id": "s0132",
+    "start_seconds": 774.41,
+    "end_seconds": 778.81,
+    "text": "The question is whether anyone whose model might lose does the same thing if"
+  },
+  {
+    "segment_id": "s0133",
+    "start_seconds": 779.29,
+    "end_seconds": 785.61,
+    "text": "Figure or skilled or physical intelligence hands a checkpoint to an outside lab and publishes whatever comes back"
+  },
+  {
+    "segment_id": "s0134",
+    "start_seconds": 786.01,
+    "end_seconds": 788.81,
+    "text": "The evidence in this field changes overnight"
+  },
+  {
+    "segment_id": "s0135",
+    "start_seconds": 789.29,
+    "end_seconds": 794.09,
+    "text": "If nobody does then what we saw this week was marketing with a good protocol attached"
+  },
+  {
+    "segment_id": "s0136",
+    "start_seconds": 794.25,
+    "end_seconds": 801.21,
+    "text": "Thanks for listening every episode ships with a written deep dive carrying the tables the benchmarks and the links"
+  },
+  {
+    "segment_id": "s0137",
+    "start_seconds": 801.85,
+    "end_seconds": 805.77,
+    "text": "And you'll find it at physicalaipardcast.co. I'll see you next week"
+  }
+]

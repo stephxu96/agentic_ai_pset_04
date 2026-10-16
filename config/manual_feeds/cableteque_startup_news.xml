@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Cableteque startup developments — manually curated pages</title>
+    <link>https://cableteque.com/news</link>
+    <description>Manually curated discovery feed for dated Cableteque pages. This is not a Cableteque-provided RSS feed and does not update automatically. Company-authored claims require independent checking.</description>
+    <item>
+      <title>Cableteque Brings AI-Powered Wire Harness Quoting Platform to Europe</title>
+      <link>https://cableteque.com/news/ai-wire-harness-quoting-europe</link>
+      <guid isPermaLink="true">https://cableteque.com/news/ai-wire-harness-quoting-europe</guid>
+      <pubDate>Tue, 29 Sep 2026 00:00:00 GMT</pubDate>
+      <description>Company announcement dated September 29, 2026 in context of its September 30, 2026 EU-hosting availability statement. Midnight UTC encodes a date, not a reported publication time. Market availability and product performance are company claims.</description>
+    </item>
+    <item>
+      <title>Does Cableteque Quote extract BOMs automatically from customer PDF drawings?</title>
+      <link>https://cableteque.com/blog/does-cableteque-quote-extract-boms-automatically-from-customer-pdf-drawings</link>
+      <guid isPermaLink="true">https://cableteque.com/blog/does-cableteque-quote-extract-boms-automatically-from-customer-pdf-drawings</guid>
+      <pubDate>Wed, 16 Sep 2026 00:00:00 GMT</pubDate>
+      <description>Company technical explainer dated September 16, 2026. Midnight UTC encodes a date, not a reported publication time. Its speed and accuracy figures are vendor claims; this explains an existing capability rather than documenting a newly launched one.</description>
+    </item>
+  </channel>
+</rss>

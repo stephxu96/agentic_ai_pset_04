@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Onshape Product Innovation Blog — manually curated articles</title>
+    <link>https://www.onshape.com/en/blog/</link>
+    <description>Manually curated discovery feed for two dated Onshape articles. This is not an Onshape-provided RSS feed and will not discover future posts automatically.</description>
+    <item>
+      <title>Introducing AI Descriptive Image Search from Onshape Labs</title>
+      <link>https://www.onshape.com/en/blog/ai-generated-thumbnail-description-search</link>
+      <guid isPermaLink="true">https://www.onshape.com/en/blog/ai-generated-thumbnail-description-search</guid>
+      <pubDate>Mon, 05 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Onshape dates the article 2026-10-05. Midnight UTC encodes the published date; Onshape does not provide a publication time on the page. The described Labs feature is opt-in and currently applies to public documents.</description>
+    </item>
+    <item>
+      <title>5 Ways Teams Can Leverage the Onshape FeatureScript MCP Server</title>
+      <link>https://www.onshape.com/en/blog/featurescript-mcp-server-use-cases-text-code-cad</link>
+      <guid isPermaLink="true">https://www.onshape.com/en/blog/featurescript-mcp-server-use-cases-text-code-cad</guid>
+      <pubDate>Wed, 30 Sep 2026 00:00:00 GMT</pubDate>
+      <description>Onshape dates the article 2026-09-30. Midnight UTC encodes the published date; Onshape does not provide a publication time on the page. Product examples and outcomes in the article are vendor claims, not independently measured results.</description>
+    </item>
+  </channel>
+</rss>

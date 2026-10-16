@@ -1,0 +1,1 @@
+{"stage": "editorial/select_items.sh", "status": "completed", "input_count": 0, "output_count": 0, "started_at": "2026-10-15T20:21:16Z", "finished_at": "2026-10-15T20:21:16Z", "tools": ["Codex CLI (not invoked; no eligible items)"], "model": "default, name not reported", "cost_usd": null}

@@ -1,0 +1,257 @@
+<title>Agentic 3D Pipeline</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Sans+Condensed:wght@600&display=swap">
+<style>
+/* Layout: one technical drawing filling the frame, with a CAD-style title block above it. */
+:root{
+  --bg:#F5F7F9; --sheet:#FFFFFF; --ink:#18232E; --muted:#5B6B7A; --rule:#C9D2DB;
+  --lane:#EEF2F6; --accent:#1C64A8; --accent-ink:#FFFFFF; --human:#A55F00; --human-bg:#FBF3E7;
+  --store:#2C7354; --store-bg:#ECF5F0;
+  --f-display:"IBM Plex Sans Condensed","Arial Narrow",system-ui,sans-serif;
+  --f-body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0F151B; --sheet:#151D25; --ink:#E4EAF0; --muted:#93A3B2; --rule:#33424F;
+  --lane:#1B2530; --accent:#5AA2E6; --accent-ink:#0B1520; --human:#E8A44A; --human-bg:#2A2116;
+  --store:#62C095; --store-bg:#17271F; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0F151B; --sheet:#151D25; --ink:#E4EAF0; --muted:#93A3B2; --rule:#33424F;
+  --lane:#1B2530; --accent:#5AA2E6; --accent-ink:#0B1520; --human:#E8A44A; --human-bg:#2A2116;
+  --store:#62C095; --store-bg:#17271F; color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body)}
+.wrap{max-width:1640px;margin:0 auto;padding-block:20px 28px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:14px}
+.tb{display:grid;grid-template-columns:minmax(0,1fr) auto auto auto;border:1.5px solid var(--ink);background:var(--sheet)}
+.tb>div{padding:10px 16px;border-left:1px solid var(--rule);min-width:0}
+.tb>div:first-child{border-left:0}
+.tb .k{font:600 10.5px/1 var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.tb .v{font:400 14px/1.3 var(--f-mono);margin-top:6px;font-variant-numeric:tabular-nums}
+.tb h1{font:600 26px/1.1 var(--f-display);margin:4px 0 0;text-wrap:balance;letter-spacing:.01em}
+@media (max-width:760px){.tb{grid-template-columns:1fr 1fr}.tb>div:first-child{grid-column:1/-1}.tb>div:nth-child(2){border-left:0}.tb>div{border-top:1px solid var(--rule)}}
+.sheet{background:var(--sheet);border:1.5px solid var(--ink);overflow-x:auto}
+svg{display:block;width:100%;min-width:1100px;height:auto}
+svg text{fill:var(--ink)}
+.lane{fill:var(--lane);stroke:none}
+.lane-h{fill:var(--human-bg);stroke:var(--human);stroke-width:1;stroke-dasharray:5 4}
+.store-p{fill:var(--store-bg);stroke:var(--store);stroke-width:1.2}
+.leg{fill:none;stroke:var(--rule)}
+.callout{fill:none;stroke:var(--accent);stroke-width:1;stroke-dasharray:3 3}
+.b rect{fill:var(--sheet);stroke:var(--ink);stroke-width:1.1}
+.b.entry rect{stroke-width:2.4}
+.b.input rect{fill:var(--lane);stroke-dasharray:4 3}
+.b.human rect,.b-h{fill:var(--sheet);stroke:var(--human);stroke-width:2}
+.b.store rect,.b-s{fill:var(--sheet);stroke:var(--store);stroke-width:1.6}
+.b rect.tag,.tag{fill:var(--accent);stroke:none}
+.tagt{fill:var(--accent-ink)!important;font:600 11px var(--f-mono);letter-spacing:.08em}
+.t{font-size:14px;font-weight:600}
+.t.mono{font-family:var(--f-mono)}
+.t.sans{font-family:var(--f-body);font-size:15.5px}
+.b.human .t{fill:var(--human)}
+.b.store .t{fill:var(--store)}
+.d{font:400 13px var(--f-body);fill:var(--muted)!important}
+.o{font:400 12.5px var(--f-mono)}
+.lt{font:600 17px var(--f-mono)}
+.lt-s{font:600 15px var(--f-mono)}
+.ls{font:400 13px var(--f-body);fill:var(--muted)!important;letter-spacing:.02em}
+.ln-num{font:600 18px var(--f-display);fill:var(--accent)!important}
+.mode{font:600 13px var(--f-mono)}
+.lbl{font:400 11.5px var(--f-body);fill:var(--muted)!important}
+.lbl-m{font:400 12.5px var(--f-mono);fill:var(--muted)!important}
+.note{font:400 13px var(--f-body);fill:var(--muted)!important}
+.note-b{font:600 13px var(--f-body)}
+.ln{fill:none;stroke:var(--ink);stroke-width:1.3}
+.ah{fill:var(--ink)}
+</style>
+<div class="wrap">
+  <header class="tb">
+    <div><div class="k">Drawing</div><h1>Agentic 3D · Pipeline architecture</h1></div>
+    <div><div class="k">Course</div><div class="v">MIT 1.125 · PS 04</div></div>
+    <div><div class="k">Required scripts</div><div class="v">16 of 16</div></div>
+    <div><div class="k">Reference run</div><div class="v">20261016T164638172713Z</div></div>
+  </header>
+  <div class="sheet">
+    <svg viewBox="0 0 1600 960" role="img" aria-label="Pipeline: run.sh calls collect_sources, then create_series, then human review, packaging and publication.">
+      <defs>
+        <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="ah" d="M0,0 L10,5 L0,10 z"/></marker>
+        <marker id="as" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="ah" d="M10,0 L0,5 L10,10 z"/></marker>
+      </defs>
+<g class="b input"><rect x="40" y="24" width="330" height="80" rx="5"/>
+<text class="t mono" x="54" y="50">config/  +  prompts/</text>
+<text class="d" x="54" y="72">project · sources · policy · 4 prompts</text>
+<text class="o" x="54" y="90">copied into each run</text>
+</g>
+<polyline class="ln" points="370,64 428,64" marker-end="url(#ah)" />
+<text class="lbl" x="399" y="56" text-anchor="middle">snapshot</text>
+<g class="b entry"><rect x="430" y="24" width="400" height="80" rx="5"/>
+<text class="t mono" x="444" y="50">bash run.sh</text>
+<text class="d" x="444" y="72">workflows/run_pipeline.py</text>
+<text class="o" x="444" y="90">→ runs/RUN_ID/run.json</text>
+</g>
+<g class="modes">
+<text class="mode" x="860" y="44" text-anchor="start">--with-backup</text>
+<text class="d" x="1040" y="44" text-anchor="start">add backup-tier sources</text>
+<text class="mode" x="860" y="68" text-anchor="start">--replay --as-of DATE</text>
+<text class="d" x="1040" y="68" text-anchor="start">labeled replay, no collection</text>
+<text class="mode" x="860" y="92" text-anchor="start">--package RUN</text>
+<text class="d" x="1040" y="92" text-anchor="start">build the production handoff</text>
+</g>
+<g class="b stage"><rect x="1268" y="24" width="302" height="80" rx="5"/>
+<text class="t mono" x="1282" y="50">reporting/summarize_run.sh</text>
+<text class="d" x="1282" y="72">after every run, even on failure</text>
+<text class="o" x="1282" y="90">→ summary.json</text>
+</g>
+<polyline class="ln" points="560,104 560,138" marker-end="url(#ah)" />
+<rect class="lane" x="30" y="140" width="1195" height="305" rx="8"/>
+<text class="ln-num" x="50" y="170">1</text><text class="lt" x="76" y="170">workflows/collect_sources.sh</text><text class="ls" x="384.40000000000003" y="170">collect · extract · store · filter</text>
+<g class="b stage"><rect x="55" y="185" width="255" height="76" rx="5"/>
+<text class="t mono" x="69" y="211">collectors/fetch_feeds.sh</text>
+<text class="d" x="69" y="233">RSS + hand-listed feeds</text>
+<text class="o" x="69" y="247">→ candidates/feeds.jsonl</text>
+</g>
+<polyline class="ln" points="310,223 332,223"  />
+<g class="b stage"><rect x="55" y="271" width="255" height="76" rx="5"/>
+<text class="t mono" x="69" y="297">collectors/fetch_youtube.sh</text>
+<text class="d" x="69" y="319">channel feeds</text>
+<text class="o" x="69" y="333">→ candidates/youtube.jsonl</text>
+</g>
+<polyline class="ln" points="310,309 332,309"  />
+<g class="b stage"><rect x="55" y="357" width="255" height="76" rx="5"/>
+<text class="t mono" x="69" y="383">collectors/fetch_podcasts.sh</text>
+<text class="d" x="69" y="405">episodes + audio URLs</text>
+<text class="o" x="69" y="419">→ candidates/podcasts.jsonl</text>
+</g>
+<polyline class="ln" points="310,395 332,395"  />
+<polyline class="ln" points="332,223 332,395"  />
+<polyline class="ln" points="332,309 358,309" marker-end="url(#ah)" />
+<g class="b stage"><rect x="360" y="270" width="270" height="78" rx="5"/>
+<text class="t mono" x="374" y="296">processing/extract_content.sh</text>
+<text class="d" x="374" y="318">captions, else faster-whisper tiny</text>
+<text class="o" x="374" y="334">→ items.jsonl</text>
+</g>
+<polyline class="ln" points="630,309 648,309 648,252 668,252" marker-end="url(#ah)" />
+<g class="b stage"><rect x="670" y="214" width="230" height="78" rx="5"/>
+<text class="t mono" x="684" y="240">data/store.sh upsert</text>
+<text class="d" x="684" y="262">dedupe on item_id + version</text>
+<text class="o" x="684" y="278">→ changes.jsonl</text>
+</g>
+<polyline class="ln" points="785,292 785,350" marker-end="url(#ah)" />
+<g class="b stage"><rect x="670" y="352" width="230" height="78" rx="5"/>
+<text class="t mono" x="684" y="378">data/store.sh list</text>
+<text class="d" x="684" y="400">export the stored corpus</text>
+<text class="o" x="684" y="416">→ corpus.jsonl</text>
+</g>
+<polyline class="ln" points="900,391 926,391" marker-end="url(#ah)" />
+<g class="b stage"><rect x="928" y="352" width="288" height="78" rx="5"/>
+<text class="t mono" x="942" y="378">processing/filter_items.sh</text>
+<text class="d" x="942" y="400">30-day window, from run snapshot</text>
+<text class="o" x="942" y="416">→ eligible.jsonl, exclusions.jsonl</text>
+</g>
+<text class="note" x="940" y="264" text-anchor="start">Unchanged versions are not reprocessed.</text>
+<text class="note" x="940" y="284" text-anchor="start">Run 2 (Oct 16): 16 of 16 items unchanged.</text>
+<text class="note" x="940" y="310" text-anchor="start">A failed collector keeps partial results</text>
+<text class="note" x="940" y="330" text-anchor="start">and the workflow exits 1.</text>
+<rect class="store-p" x="1250" y="140" width="320" height="305" rx="8"/>
+<text class="lt-s" x="1270" y="170" text-anchor="start">Evidence store  ·  data/</text>
+<g class="b store"><rect x="1268" y="186" width="284" height="72" rx="5"/>
+<text class="t mono" x="1282" y="212">evidence/index.sqlite3</text>
+<text class="d" x="1282" y="234">read/write only through store.sh</text>
+</g>
+<g class="b store"><rect x="1268" y="270" width="284" height="72" rx="5"/>
+<text class="t mono" x="1282" y="296">assets/</text>
+<text class="d" x="1282" y="318">versioned text + timestamped segments</text>
+</g>
+<g class="b store"><rect x="1268" y="354" width="284" height="72" rx="5"/>
+<text class="t mono" x="1282" y="380">media/</text>
+<text class="d" x="1282" y="402">audio and video, kept locally</text>
+</g>
+<polyline class="ln" points="900,232 1240,232 1240,222 1266,222" marker-end="url(#ah)" marker-start="url(#as)"/>
+<text class="lbl" x="1080" y="224" text-anchor="middle">only path in or out</text>
+<polyline class="ln" points="1075,430 1075,467 182,467 182,563" marker-end="url(#ah)" />
+<text class="lbl-m" x="640" y="461" text-anchor="middle">eligible.jsonl</text>
+<rect class="lane" x="30" y="490" width="1540" height="255" rx="8"/>
+<text class="ln-num" x="50" y="520">2</text><text class="lt" x="76" y="520">workflows/create_series.sh</text><text class="ls" x="363.8" y="520">decide · brief · write · check</text>
+<g class="b stage"><rect x="55" y="565" width="255" height="90" rx="5"/>
+<text class="t mono" x="69" y="591">editorial/select_items.sh</text>
+<text class="d" x="69" y="613">applies the editorial policy</text>
+<text class="o" x="69" y="641">→ decisions.jsonl</text>
+<rect class="tag" x="249.0" y="555" width="53.0" height="20" rx="3"/><text class="tagt" x="275.5" y="569" text-anchor="middle">CODEX</text>
+</g>
+<polyline class="ln" points="310,610 348,610" marker-end="url(#ah)" />
+<g class="b stage"><rect x="350" y="565" width="290" height="90" rx="5"/>
+<text class="t mono" x="364" y="591">editorial/create_briefs.sh</text>
+<text class="d" x="364" y="613">lead plan → draft → audit → revise</text>
+<text class="o" x="364" y="641">→ briefs.jsonl</text>
+<rect class="tag" x="556.8" y="555" width="75.2" height="20" rx="3"/><text class="tagt" x="594.4" y="569" text-anchor="middle">CODEX ×4</text>
+</g>
+<polyline class="ln" points="640,610 665,610"  />
+<polyline class="ln" points="665,560 665,662"  />
+<polyline class="ln" points="665,561 688,561" marker-end="url(#ah)" />
+<polyline class="ln" points="665,661 688,661" marker-end="url(#ah)" />
+<g class="b stage"><rect x="690" y="522" width="275" height="78" rx="5"/>
+<text class="t mono" x="704" y="548">content/write_articles.sh</text>
+<text class="d" x="704" y="570">3 drafts with claim markers</text>
+<text class="o" x="704" y="586">→ articles.jsonl</text>
+<rect class="tag" x="904.0" y="512" width="53.0" height="20" rx="3"/><text class="tagt" x="930.5" y="526" text-anchor="middle">CODEX</text>
+</g>
+<g class="b stage"><rect x="690" y="622" width="275" height="78" rx="5"/>
+<text class="t mono" x="704" y="648">content/write_video_scripts.sh</text>
+<text class="d" x="704" y="670">3 scene-by-scene scripts</text>
+<text class="o" x="704" y="686">→ video_scripts.jsonl</text>
+<rect class="tag" x="904.0" y="612" width="53.0" height="20" rx="3"/><text class="tagt" x="930.5" y="626" text-anchor="middle">CODEX</text>
+</g>
+<polyline class="ln" points="965,561 995,561 995,661 965,661"  />
+<polyline class="ln" points="995,610 1023,610" marker-end="url(#ah)" />
+<g class="b stage"><rect x="1025" y="565" width="250" height="90" rx="5"/>
+<text class="t mono" x="1039" y="591">review/check_content.sh</text>
+<text class="d" x="1039" y="613">references, freshness, length</text>
+<text class="o" x="1039" y="641">→ review.json</text>
+</g>
+<rect class="callout" x="1305" y="522" width="245" height="178" rx="5"/>
+<text class="note-b" x="1322" y="550" text-anchor="start">Every model call:</text>
+<text class="note" x="1322" y="574" text-anchor="start">Codex CLI, strict JSONL</text>
+<text class="note" x="1322" y="598" text-anchor="start">validation, one retry,</text>
+<text class="note" x="1322" y="622" text-anchor="start">then the stage fails.</text>
+<text class="note" x="1322" y="646" text-anchor="start">Each attempt is saved</text>
+<text class="note" x="1322" y="670" text-anchor="start">in runs/RUN_ID/logs/.</text>
+<text class="note" x="55" y="728" text-anchor="start">Briefs and writers quote exact cited versions from data/assets/. Every output above is saved in runs/RUN_ID/.</text>
+<polyline class="ln" points="1150,655 1150,762 205,762 205,828" marker-end="url(#ah)" />
+<text class="lbl-m" x="640" y="756" text-anchor="middle">drafts + review.json</text>
+<rect class="lane-h" x="30" y="785" width="1205" height="160" rx="8"/>
+<text class="ln-num" x="50" y="815">3</text><text class="lt" x="76" y="815">Human review and publication</text><text class="ls" x="384.40000000000003" y="815">manual steps</text>
+<g class="b human"><rect x="55" y="830" width="300" height="90" rx="5"/>
+<text class="t sans" x="69" y="856">Editorial review</text>
+<text class="d" x="69" y="878">drafts checked against transcripts</text>
+<text class="o" x="69" y="906">→ human_corrections.md, approval.json</text>
+</g>
+<polyline class="ln" points="355,875 393,875" marker-end="url(#ah)" />
+<g class="b stage"><rect x="395" y="830" width="300" height="90" rx="5"/>
+<text class="t mono" x="409" y="856">bash run.sh --package RUN</text>
+<text class="d" x="409" y="878">prepare_package.sh re-checks first</text>
+<text class="o" x="409" y="906">→ package/  (needs matching approval)</text>
+</g>
+<polyline class="ln" points="695,875 733,875" marker-end="url(#ah)" />
+<g class="b human"><rect x="735" y="830" width="225" height="90" rx="5"/>
+<text class="t sans" x="749" y="856">PowerPoint + Chatterbox</text>
+<text class="d" x="749" y="878">slides + cloned voiceover</text>
+<text class="o" x="749" y="906">→ 3 videos</text>
+</g>
+<polyline class="ln" points="960,875 998,875" marker-end="url(#ah)" />
+<g class="b human"><rect x="1000" y="830" width="225" height="90" rx="5"/>
+<text class="t sans" x="1014" y="856">Substack + YouTube</text>
+<text class="d" x="1014" y="878">publish and record links</text>
+<text class="o" x="1014" y="906">→ publication_links.json</text>
+</g>
+<g class="legend"><rect class="leg" x="1260" y="785" width="310" height="160" rx="8"/>
+<text class="lt-s" x="1280" y="808" text-anchor="start">Legend</text>
+<rect class="tag" x="1280" y="822" width="58" height="20" rx="3"/><text class="tagt" x="1309" y="836" text-anchor="middle">CODEX</text>
+<text class="d" x="1352" y="837" text-anchor="start">model call</text>
+<rect class="b-h" x="1280" y="852" width="58" height="22" rx="4"/>
+<text class="d" x="1352" y="868" text-anchor="start">manual step</text>
+<rect class="b-s" x="1280" y="884" width="58" height="22" rx="4"/>
+<text class="d" x="1352" y="900" text-anchor="start">persistent evidence store</text>
+<text class="o" x="1280" y="930" text-anchor="start">→ file.jsonl</text>
+<text class="d" x="1376" y="930" text-anchor="start">output saved in the run</text>
+</g>
+    </svg>
+  </div>
+</div>

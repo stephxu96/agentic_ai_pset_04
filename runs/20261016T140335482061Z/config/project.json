@@ -1,0 +1,9 @@
+{
+  "publication_name": "Agentic 3D",
+  "topic": "Frontier AI for 3D modeling, CAD, and manufacturing design (design for manufacturing, process planning, quoting, and production-ready geometry), plus intelligent systems that act in physical space, including robotics, with attention to AI-native startups when substantive evidence is available.",
+  "audience": "Technical product managers and engineering leaders deciding where to build on frontier models for spatial, geometric, and manufacturing-design work. They understand LLMs and basic 3D and CAD concepts (parametric vs. mesh, simulation) but do not follow benchmarks or demos daily.",
+  "central_question": "Which spatial, geometric, and manufacturing-design capabilities moved from demo toward dependable this month, and does the evidence behind each claim match what it claims? When relevant AI-native startups appear, what are they shipping?",
+  "freshness_window_days": 30,
+  "max_items_per_source": 3,
+  "whisper_model": "tiny"
+}

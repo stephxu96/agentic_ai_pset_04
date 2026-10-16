@@ -1,0 +1,9 @@
+{
+  "piece_id": "01",
+  "ready": false,
+  "issues": [
+    "Missing AI-native startup in the required Piece 01 feasibility-signal role.",
+    "Missing robotics evidence in a supporting role.",
+    "No podcast evidence; the series cross-format requirement remains unmet."
+  ]
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>MIT CDFG 3D Modeling, Computational Design and Robotics Survey</title>
+    <link>https://mit-cdfg.github.io/Survey-AI-for-3D-modeling-Robotics/</link>
+    <description>Manual one-item discovery feed for the survey webpage. This feed does not track repository commits or subsequent page revisions.</description>
+    <item>
+      <title>On the Opportunities and Risks of Frontier Models for 3D Modeling, Computational Design and Robotics</title>
+      <link>https://mit-cdfg.github.io/Survey-AI-for-3D-modeling-Robotics/#view-stats</link>
+      <guid isPermaLink="true">https://mit-cdfg.github.io/Survey-AI-for-3D-modeling-Robotics/#view-stats</guid>
+      <pubDate>Tue, 22 Sep 2026 00:00:00 GMT</pubDate>
+      <description>The publication date is the survey page's citation_publication_date (2026/09/22). The time is set to midnight UTC to encode that date in RSS.</description>
+    </item>
+  </channel>
+</rss>
